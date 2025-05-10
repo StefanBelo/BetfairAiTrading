@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Projects\\BetfairAiTrading\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4EAAB10F-C942-45EE-819F-E7105AEE9A7A}|src\\App\\App.fsproj|e:\\projects\\betfairaitrading\\src\\app\\program.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EAAB10F-C942-45EE-819F-E7105AEE9A7A}|src\\App\\App.fsproj|solutionrelative:src\\app\\program.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 422,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.fs",
+              "DocumentMoniker": "E:\\Projects\\BetfairAiTrading\\src\\App\\Program.fs",
+              "RelativeDocumentMoniker": "src\\App\\Program.fs",
+              "ToolTip": "E:\\Projects\\BetfairAiTrading\\src\\App\\Program.fs",
+              "RelativeToolTip": "src\\App\\Program.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-07T16:41:45.685Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
