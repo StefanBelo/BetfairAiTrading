@@ -1,0 +1,16 @@
+{
+    "BetEvents": [
+        "Horse Racing - GB and IE.betevents"
+    ],
+    "Scripts": [
+        "E:\\Projects\\BetfairAiTrading\\src\\Strategies\\Horse Racing\\HorseRacingRaceDistanceBotTrigger.fsx"
+    ],
+    "Strategies": [
+        "Horse Racing - Race Distance.bots"
+    ],
+    "Execute": {
+        "BetEvent": "Horse Racing - GB and IE",
+        "Strategy": "Horse Racing - Race Distance",
+        "TimeSpanInSeconds": -30
+    }
+}
