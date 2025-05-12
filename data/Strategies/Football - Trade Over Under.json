@@ -1,0 +1,15 @@
+{
+    "BetEvents": [
+        "Football - Over Under 2_5 Goals.betevents"
+    ],
+    "Scripts": [
+    ],
+    "Strategies": [
+        "Trade 2 Ticks Profit or 10 Ticks Loss.bots"
+    ],
+    "Execute": {
+        "BetEvent": "Football - Over/Under 2.5 Goals",
+        "Strategy": "Trade 2 Ticks Profit or 10 Ticks Loss",
+        "TimeSpanInSeconds": -30
+    }
+}
