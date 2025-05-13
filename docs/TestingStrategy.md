@@ -47,4 +47,4 @@ The end of the script file execution.
 ## Links
 
 * [Bfexplorer latest release](http://Bfexplorer.net/Community/BlogContent/596#Bfexplorer%202025%20Preview)
-* [Bfexplorer scheme protocol registry file](blob:https://github.com/ede2902b-26b3-454a-baed-e42d09f87c25)
+* [Bfexplorer scheme protocol registry file](https://github.com/StefanBelo/BetfairAiTrading/blob/main/data/BfexplorerSchemeProtocol.reg)
