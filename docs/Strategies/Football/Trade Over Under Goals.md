@@ -2,7 +2,7 @@
 
 This approach focuses on identifying value, managing risk, and capitalizing on price movements during matches.
 
-To test this strategy on the Betfair Exchange using BFExplorer, click here, to **[Open Bfexplorer](bfexplorer://testStrategy?fileName=Football - Trade Over Under.json)**
+To test this strategy on the Betfair Exchange using BFExplorer, click here, to Open Bfexplorer: <bfexplorer://testStrategy?fileName=Football%20-%20Trade%20Over%20Under.json>
 
 ## Core Strategy: Goal Expectancy Gap Trading
 
