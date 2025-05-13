@@ -8,7 +8,7 @@ To test this strategy on the Betfair Exchange using Bfexplorer app, copy the fol
 bfexplorer://testStrategy?fileName=FootballTradeOverUnder.json
 ```
 
-![Bfexplorer running Trade Over/Under 2.5 Goals strategy!](/docs/Strategies/Football/images/Trade%20Over%20Under%20Goals.png "Bfexplorer running Trade Over/Under 2.5 Goals strategy")
+![Bfexplorer running Trade Over/Under 2.5 Goals strategy!](/docs/Strategies/Football/images/TradeOverUnderGoals.png "Bfexplorer running Trade Over/Under 2.5 Goals strategy")
 
 ## Core Strategy: Goal Expectancy Gap Trading
 

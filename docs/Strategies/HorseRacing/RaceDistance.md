@@ -8,7 +8,7 @@ To test this strategy on the Betfair Exchange using Bfexplorer app, copy the fol
 bfexplorer://testStrategy?fileName=HorseRacingRaceDistance.json
 ```
 
-![Bfexplorer running a Race Distance strategy!](/docs/Strategies/Horse%20Racing/images/RaceDistance.png "Bfexplorer running a Race Distance strategy")
+![Bfexplorer running a Race Distance strategy!](/docs/Strategies/HorseRacing/images/RaceDistance.png "Bfexplorer running a Race Distance strategy")
 
 ## The Distance-Specific Edge
 

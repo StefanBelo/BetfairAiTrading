@@ -14,10 +14,10 @@ Here is an example of such a script file:
 ```json
 {
     "BetEvents": [
-        "Horse Racing - GB and IE.betevents"
+        "HorseRacingGBandIE.betevents"
     ],
     "Scripts": [
-        "/Strategies/Horse Racing/HorseRacingRaceDistanceBotTrigger.fsx"
+        "/Strategies/HorseRacing/HorseRacingRaceDistanceBotTrigger.fsx"
     ],
     "Strategies": [
         "Horse Racing - Race Distance.bots"
