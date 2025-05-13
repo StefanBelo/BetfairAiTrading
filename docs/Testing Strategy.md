@@ -2,9 +2,9 @@
 
 ## Requirements
 
-If you want to test any of the published strategies, you must first create a [Betfair account](https://register.betfair.com/account/registration). Then, install the Bfxplorer app from [this link](https://drive.google.com/file/d/1_Ta7K3Spv9WoPV_m5GLzQvJm9x8GqN_J/view?usp=sharing) and enable the URL scheme for opening the Bfxplorer app by [importing it](https://github.com/StefanBelo/BetfairAiTrading/raw/refs/heads/main/data/BfexplorerSchemeProtocol.reg) into your computer's registry.
+If you want to test any of the published strategies, you must first create a [Betfair account](https://register.betfair.com/account/registration). Then, install the Bfxplorer app from [this link](https://drive.google.com/file/d/1_Ta7K3Spv9WoPV_m5GLzQvJm9x8GqN_J/view?usp=sharing) and enable the URL scheme for opening the Bfxplorer app by [importing it](blob:https://github.com/ede2902b-26b3-454a-baed-e42d09f87c25) into your computer's registry.
 
-![Open Bfxplorer?!](/docs/images/OpenBfxplorerURI.png "Open Bfxplorer?")
+![Open Bfxplorer!](/docs/images/OpenBfxplorerURI.png "Open Bfxplorer")
 
 ## How does it work?
 
@@ -46,5 +46,5 @@ The end of the script file execution.
 
 ## Links
 
-* [Bfxplorer lattest release](http://Bfxplorer.net/Community/BlogContent/596#Bfxplorer%202025%20Preview)
+* [Bfxplorer latest release](http://Bfxplorer.net/Community/BlogContent/596#Bfxplorer%202025%20Preview)
 * [Bfxplorer scheme protocol registry file](/data/BfxplorerSchemeProtocol.reg)
