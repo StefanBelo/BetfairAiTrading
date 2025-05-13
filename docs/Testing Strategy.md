@@ -47,4 +47,4 @@ The end of the script file execution.
 ## Links
 
 * [Bfxplorer latest release](http://Bfxplorer.net/Community/BlogContent/596#Bfxplorer%202025%20Preview)
-* [Bfxplorer scheme protocol registry file](/data/BfxplorerSchemeProtocol.reg)
+* [Bfxplorer scheme protocol registry file](blob:https://github.com/ede2902b-26b3-454a-baed-e42d09f87c25)
