@@ -2,7 +2,7 @@
 
 This approach focuses on identifying value, managing risk, and capitalizing on price movements during matches.
 
-To test this strategy on the Betfair Exchange using BFExplorer, click here, to Open Bfexplorer: <bfexplorer://testStrategy?fileName=Football%20-%20Trade%20Over%20Under.json>
+To test this strategy on the Betfair Exchange using Bfexplorer app, copy the following URI **bfexplorer://testStrategy?fileName=Football - Trade Over Under.json** and open it in your web broswer.
 
 ![Bfexplorer running Trade Over/Under 2.5 Goals strategy!](/docs/Strategies/Football/images/Trade%20Over%20Under%20Goals.png "Bfexplorer running Trade Over/Under 2.5 Goals strategy")
 
@@ -84,5 +84,3 @@ This is where the strategy becomes dynamic:
    - Track results to identify which scenarios yield highest ROI
 
 This strategy works because the over/under markets tend to overreact to match circumstances, creating trading opportunities. By having a systematic approach to entering and exiting positions, you can capitalize on these inefficiencies while maintaining proper risk management.
-
-Would you like me to elaborate on any particular aspect of this strategy or provide specific examples of how to calculate the trade amounts?
