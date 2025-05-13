@@ -2,10 +2,10 @@
 
 This approach focuses on identifying value, managing risk, and capitalizing on price movements during matches.
 
-To test this strategy on the Betfair Exchange using Bfexplorer app, copy the following URI [Open Bfexplorer](bfexplorer://testStrategy?fileName=Football%20-%20Trade%20Over%20Under.json) and open it in your web broswer.
+To test this strategy on the Betfair Exchange using Bfexplorer app, copy the following URI [Open Bfexplorer](bfexplorer://testStrategy?fileName=FootballTradeOverUnder.json) and open it in your web broswer.
 
 ```
-bfexplorer://testStrategy?fileName=Football%20-%20Trade%20Over%20Under.json
+bfexplorer://testStrategy?fileName=FootballTradeOverUnder.json
 ```
 
 ![Bfexplorer running Trade Over/Under 2.5 Goals strategy!](/docs/Strategies/Football/images/Trade%20Over%20Under%20Goals.png "Bfexplorer running Trade Over/Under 2.5 Goals strategy")

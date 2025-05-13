@@ -2,10 +2,10 @@
 
 In the world of horse racing betting, the specialists often outperform the generalists. This strategy focuses on exploiting one of racing's most fundamental variables: race distance.
 
-To test this strategy on the Betfair Exchange using Bfexplorer app, copy the following URI [Open Bfexplorer](bfexplorer://testStrategy?fileName=Horse%20Racing%20-%20Race%20Distance.json) and open it in your web broswer.
+To test this strategy on the Betfair Exchange using Bfexplorer app, copy the following URI [Open Bfexplorer](bfexplorer://testStrategy?fileName=HorseRacingRaceDistance.json) and open it in your web broswer.
 
 ```
-bfexplorer://testStrategy?fileName=Horse%20Racing%20-%20Race%20Distance.json
+bfexplorer://testStrategy?fileName=HorseRacingRaceDistance.json
 ```
 
 ![Bfexplorer running a Race Distance strategy!](/docs/Strategies/Horse%20Racing/images/RaceDistance.png "Bfexplorer running a Race Distance strategy")
