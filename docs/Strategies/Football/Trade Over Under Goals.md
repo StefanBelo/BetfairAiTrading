@@ -4,6 +4,8 @@ This approach focuses on identifying value, managing risk, and capitalizing on p
 
 To test this strategy on the Betfair Exchange using BFExplorer, click here, to Open Bfexplorer: <bfexplorer://testStrategy?fileName=Football%20-%20Trade%20Over%20Under.json>
 
+![Bfexplorer running Trade Over/Under 2.5 Goals strategy!](/docs/Strategies/Football/images/Trade%20Over%20Under%20Goals.png "Bfexplorer running Trade Over/Under 2.5 Goals strategy")
+
 ## Core Strategy: Goal Expectancy Gap Trading
 
 This strategy exploits the difference between market expectations and actual in-play dynamics by:
