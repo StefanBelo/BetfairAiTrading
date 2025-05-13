@@ -2,13 +2,13 @@
 
 ## Requirements
 
-If you want to test any of the published strategies, you must first create a [Betfair account](https://register.betfair.com/account/registration). Then, install the Bfxplorer app from [this link](https://drive.google.com/file/d/1_Ta7K3Spv9WoPV_m5GLzQvJm9x8GqN_J/view?usp=sharing) and enable the URL scheme for opening the Bfxplorer app by [importing it](blob:https://github.com/ede2902b-26b3-454a-baed-e42d09f87c25) into your computer's registry.
+If you want to test any of the published strategies, you must first create a [Betfair account](https://register.betfair.com/account/registration). Then, install the Bfexplorer app from [this link](https://drive.google.com/file/d/1_Ta7K3Spv9WoPV_m5GLzQvJm9x8GqN_J/view?usp=sharing) and enable the URL scheme for opening the Bfexplorer app by [importing it](blob:https://github.com/ede2902b-26b3-454a-baed-e42d09f87c25) into your computer's registry.
 
-![Open Bfxplorer!](/docs/images/OpenBfexplorerURI.png "Open Bfxplorer")
+![Open Bfexplorer!](/docs/images/OpenBfexplorerURI.png "Open Bfexplorer")
 
 ## How does it work?
 
-When the URI is opened, the script file is executed by the Bfxplorer app. This script provides the necessary instructions to configure all required data within the app to successfully run a test strategy.
+When the URI is opened, the script file is executed by the Bfexplorer app. This script provides the necessary instructions to configure all required data within the app to successfully run a test strategy.
 Here is an example of such a script file:
 
 ```json
@@ -30,7 +30,7 @@ Here is an example of such a script file:
 }
 ```
 
-And here is the result of executing such a script in the Bfxplorer app?
+And here is the result of executing such a script in the Bfexplorer app?
 
 ```
 Starting to execute the script file:
@@ -46,5 +46,5 @@ The end of the script file execution.
 
 ## Links
 
-* [Bfxplorer latest release](http://Bfxplorer.net/Community/BlogContent/596#Bfxplorer%202025%20Preview)
-* [Bfxplorer scheme protocol registry file](blob:https://github.com/ede2902b-26b3-454a-baed-e42d09f87c25)
+* [Bfexplorer latest release](http://Bfexplorer.net/Community/BlogContent/596#Bfexplorer%202025%20Preview)
+* [Bfexplorer scheme protocol registry file](blob:https://github.com/ede2902b-26b3-454a-baed-e42d09f87c25)
