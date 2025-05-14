@@ -1,5 +1,13 @@
 # Tennis Data to Spreadsheet
 
+To test this strategy on the Betfair Exchange using Bfexplorer app, copy the following URI [Open Bfexplorer](bfexplorer://testStrategy?fileName=TennisDataToSpreadsheet.json) and open it in your web broswer.
+
+```
+bfexplorer://testStrategy?fileName=TennisDataToSpreadsheet.json
+```
+
+![Bfexplorer running a Tennis Data to Spreadsheet!](/docs/Strategies/Tennis/images/DataToSpreadsheet.png "Bfexplorer running a Tennis Data to Spreadsheet")
+
 - **File path**: `src/Strategies/Tennis/TennisDataToSpreadsheet.fsx`
 
 ## Description
