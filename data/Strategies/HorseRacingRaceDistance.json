@@ -1,6 +1,6 @@
 {
     "BetEvents": [
-        "Horse Racing - GB and IE.betevents"
+        "HorseRacingGBandIE.betevents"
     ],
     "Scripts": [
         "/Strategies/Horse Racing/HorseRacingRaceDistanceBotTrigger.fsx"
