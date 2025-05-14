@@ -3,10 +3,10 @@
         "HorseRacingGBandIE.betevents"
     ],
     "Scripts": [
-        "/Strategies/Horse Racing/HorseRacingRaceDistanceBotTrigger.fsx"
+        "/Strategies/HorseRacing/HorseRacingRaceDistanceBotTrigger.fsx"
     ],
     "Strategies": [
-        "Horse Racing - Race Distance.bots"
+        "HorseRacingRaceDistance.bots"
     ],
     "Execute": {
         "BetEvent": "Horse Racing - GB and IE",

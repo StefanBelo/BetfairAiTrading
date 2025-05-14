@@ -1,0 +1,16 @@
+{
+    "BetEvents": [
+        "TennisInPlayNow.betevents"
+    ],
+    "Scripts": [
+        "/Strategies/Tennis/TennisDataToSpreadsheet.fsx"
+    ],
+    "Strategies": [
+        "TennisDataToSpreadsheet.bots"
+    ],
+    "Execute": {
+        "BetEvent": "Tennis - In-Play Now",
+        "Strategy": "Tennis - Data to Spreadsheet",
+        "TimeSpanInSeconds": -30
+    }
+}
