@@ -8,7 +8,7 @@ bfexplorer://testStrategy?fileName=TennisDataToSpreadsheet.json
 
 ![Bfexplorer running a Tennis Data to Spreadsheet!](/docs/Strategies/Tennis/images/DataToSpreadsheet.png "Bfexplorer running a Tennis Data to Spreadsheet")
 
-- **File path**: `src/Strategies/Tennis/TennisDataToSpreadsheet.fsx`
+- **File path**: [/src/Strategies/Tennis/TennisDataToSpreadsheet.fsx](/src/Strategies/Tennis/TennisDataToSpreadsheet.fsx)
 
 ## Description
 

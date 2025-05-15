@@ -10,6 +10,8 @@ bfexplorer://testStrategy?fileName=HorseRacingRaceDistance.json
 
 ![Bfexplorer running a Race Distance strategy!](/docs/Strategies/HorseRacing/images/RaceDistance.png "Bfexplorer running a Race Distance strategy")
 
+- **File path**: [/src/Strategies/HorseRacing/HorseRacingRaceDistanceBotTrigger.fsx](/src/Strategies/HorseRacing/HorseRacingRaceDistanceBotTrigger.fsx)
+
 ## The Distance-Specific Edge
 
 Horses, like human athletes, often specialize at certain distances. Some are sprinters, others are stayers, and many fall somewhere in between. This strategy capitalizes on this specialization by:

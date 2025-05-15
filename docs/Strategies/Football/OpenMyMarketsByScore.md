@@ -8,6 +8,8 @@ bfexplorer://testStrategy?fileName=FootballOpenMyMarketsByScore.json
 
 ![Bfexplorer running Open my Markets by Score!](/docs/Strategies/Football/images/OpenMyMarketsByScore.png "Bfexplorer running Open my Markets by Score")
 
+- **File path**: [/src/Strategies/Football/OpenMyFootballMarketsByScore.fsx](/src/Strategies/Football/OpenMyFootballMarketsByScore.fsx)
+
 ## What This Tool Does
 
 This is a handy automation tool that watches football (soccer) matches in real-time and automatically opens Betfair trading markets based on the current scores. Think of it as your personal assistant that monitors games and gets your trading screens ready exactly when interesting scoring situations develop.

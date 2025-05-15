@@ -10,6 +10,8 @@ bfexplorer://testStrategy?fileName=HorseRacingBookmakersOdds.json
 
 ![Bfexplorer running a Bookmakers Odds strategy!](/docs/Strategies/HorseRacing/images/BookmakersOdds.png "Bfexplorer running a Bookmakers Odds strategy")
 
+- **File path**: [/src/Strategies/HorseRacing/HorseRacingBookmakersOddsBotTrigger.fsx](/src/Strategies/HorseRacing/HorseRacingBookmakersOddsBotTrigger.fsx)
+
 ## The Price Disparity Principle
 
 When bookmaker odds and Betfair prices diverge significantly just before a race, it often signals valuable information that hasn't been fully incorporated into the exchange market. This strategy harnesses these discrepancies to identify value opportunities on Betfair.
