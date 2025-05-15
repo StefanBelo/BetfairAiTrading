@@ -10,7 +10,8 @@
     ],
     "Execute": {
         "BetEvent": "Tennis - In-Play Now",
-        "Strategy": "Tennis - Data to Spreadsheet",
-        "TimeSpanInSeconds": -30
+        "StrategyOrScriptName": "Tennis - Data to Spreadsheet",
+        "TimeSpanInSeconds": -30,
+        "IsConsoleScript": false
     }
 }
