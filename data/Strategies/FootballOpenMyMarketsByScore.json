@@ -1,0 +1,16 @@
+{
+    "BetEvents": [
+        "FootballInPlayNow.betevents"
+    ],
+    "Scripts": [
+        "/Strategies/Football/OpenMyFootballMarketsByScore.fsx"
+    ],
+    "Strategies": [
+    ],
+    "Execute": {
+        "BetEvent": "Football - In-Play Now",
+        "StrategyOrScriptName": "OpenMyFootballMarketsByScore.fsx",
+        "TimeSpanInSeconds": -30,
+        "IsConsoleScript": true
+    }
+}

@@ -24,8 +24,9 @@ Here is an example of such a script file:
     ],
     "Execute": {
         "BetEvent": "Horse Racing - GB and IE",
-        "Strategy": "Horse Racing - Race Distance",
-        "TimeSpanInSeconds": -30
+        "StrategyOrScriptName": "Horse Racing - Race Distance",
+        "TimeSpanInSeconds": -30,
+        "IsConsoleScript": false
     }
 }
 ```
