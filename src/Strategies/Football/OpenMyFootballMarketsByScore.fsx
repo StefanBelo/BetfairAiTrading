@@ -4,9 +4,7 @@
 
 module BfexplorerScript
 
-#I @"E:\Projects\Bfexplorer\Development\Applications\BeloSoft.Bfexplorer.App\bin\Debug\net9.0-windows\"
-
-//#I @"C:\Program Files\BeloSoft\Bfexplorer\"
+#I @"C:\Program Files\BeloSoft\Bfexplorer\"
 
 #r "DevExpress.Spreadsheet.v24.2.Core.dll"
 
