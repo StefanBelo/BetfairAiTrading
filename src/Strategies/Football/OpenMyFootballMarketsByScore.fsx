@@ -30,7 +30,7 @@ let Execute (bfexplorerConsole : IBfexplorerConsole) =
         footballMatch.ScoreDifference > 0y
 
     let isAwayTeamDominatingEarly (footballMatch : FootballMatch) =
-        footballMatch.MatchTime <= 60 && footballMatch.AwayScore - footballMatch.HomeScore >= 2uy
+        footballMatch.MatchTime <= 60 && footballMatch.ScoreDifference >= 2y
 
     let footballScoreProvider = FootballScoreProvider (bfexplorerConsole.BfexplorerService)
 
