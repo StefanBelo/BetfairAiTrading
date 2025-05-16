@@ -47,7 +47,7 @@ let Execute (bfexplorerConsole : IBfexplorerConsole) =
 
                     do! report (
                             footballMatches
-                            |> List.map (fun footballMatche -> footballMatche.ToString ())
+                            |> List.map (fun footballMatch -> footballMatch.ToString ())
                             |> String.concat "\n"
                         )
 
