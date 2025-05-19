@@ -15,3 +15,4 @@
 - [Arbitrage in Motion: The Pre-Race Odds Comparison Strategy for Betfair Horse Racing](Strategies/HorseRacing/BookmakersOdds.md)
 - [Tennis Data to Spreadsheet](Strategies/Tennis/DataToSpreadsheet.md)
 - [Football Score-Based Market Opener Guide](Strategies/Football/OpenMyMarketsByScore.md)
+- [Tennis Score-Based Market Opener Guide](Strategies/Tennis/OpenMyMarketsByScore.md)
