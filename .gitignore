@@ -1,3 +1,5 @@
+bin/
+obj/
 *.fs.js
 dist/
 .idea/
