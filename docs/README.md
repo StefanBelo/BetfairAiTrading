@@ -8,6 +8,10 @@
 
 - [Testing Strategy](TestingStrategy.md)
 
+## AI Agents
+
+- [The Rise of AI Agents in Automated Betting on Betfair Exchange with BFExplorer](Automation/TheRiseOfAIAgentsInAutomatedBetting.md)
+
 ## Strategies
 
 - [Football Betfair Trading Strategy: Over/Under Goals Market](Strategies/Football/TradeOverUnderGoals.md)
