@@ -11,6 +11,7 @@
 ## AI Agents
 
 - [The Rise of AI Agents in Automated Betting on Betfair Exchange with BFExplorer](Automation/TheRiseOfAIAgentsInAutomatedBetting.md)
+- [BFExplorer AI Agent: Your Betfair Trading Assistant](Automation/AIAgentYourBetfairTradingAssistant.md)
 
 ## Strategies
 
