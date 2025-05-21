@@ -1,5 +1,6 @@
 # BFExplorer AI Agent: Your Betfair Trading Assistant
 
+
 BFExplorer's AI agent serves as your intelligent interface to Betfair markets, offering seamless access to trading data and strategy execution. Using the MCP Server methods, the agent can:
 
 ## Core Capabilities
