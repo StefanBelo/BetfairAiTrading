@@ -21,6 +21,14 @@ This directory contains specialized prompts for AI-powered analysis of Betfair m
 - Provides insights into trends that may not be captured in statistical models
 - **Best for:** Identifying value based on recent form narratives and behavioral patterns
 
+#### [HorseRacingEVAnalysisWithDutchBetting.md](HorseRacingEVAnalysisWithDutchBetting.md)
+**Expected Value Analysis with Automated Dutch Betting**
+- Combines semantic performance analysis with mathematical EV calculations
+- Automatically selects three most qualified horses for Dutch betting strategy
+- Executes automated Dutch betting via BFExplorer "Dutch to profit 10 Euro" strategy
+- Provides risk diversification across multiple value selections
+- **Best for:** Automated multi-horse betting with risk management and value optimization
+
 ### Specialized Analysis Prompts
 
 #### [HorseRacingAnalyzingLastRaces.md](HorseRacingAnalyzingLastRaces.md)
@@ -33,6 +41,11 @@ This directory contains specialized prompts for AI-powered analysis of Betfair m
 **Condensed Form Analysis**
 - Streamlined version of form analysis for quick assessments
 - **Best for:** Rapid form evaluation when time is limited
+
+#### [HorseRacingEVAnalysisWithBetting.md](HorseRacingEVAnalysisWithBetting.md)
+**Expected Value Analysis with Single Selection Betting**
+- Semantic analysis combined with automated single selection betting
+- **Best for:** Focused betting on highest value individual selections
 
 ### System Integration
 
@@ -67,6 +80,14 @@ Use **HorseRacingExpectedValueAnalysis.md** when:
 - Looking for value that statistical models might miss
 - Analyzing behavioral and tactical factors
 
+### For Automated Dutch Betting
+Use **HorseRacingEVAnalysisWithDutchBetting.md** when:
+- You want risk diversification across multiple selections
+- Seeking automated execution of Dutch betting strategies
+- Looking for comprehensive market coverage with multiple value horses
+- Wanting professional risk management through multi-horse betting
+- Requiring systematic approach to profit optimization across selections
+
 ### For Quick Analysis
 Use the condensed prompts when:
 - Time constraints require rapid assessment
@@ -79,6 +100,9 @@ All prompts are designed to work with the BFExplorer API and MCP integration, ac
 - Real-time market data via `GetActiveBetfairMarket`
 - Horse racing data via `GetDataContextForBetfairMarket`
 - Current prices and selection information
+- Automated betting execution via `ExecuteBfexplorerStrategySettingsOnSelections`
+- Dutch betting strategies including "Dutch to profit 10 Euro"
+- Market activation via `ActivateBetfairMarketSelection`
 
 ## Expected Outputs
 
@@ -89,6 +113,9 @@ Each prompt provides:
 - Risk assessments and portfolio suggestions
 - Market efficiency insights
 - Methodology transparency and limitations
+- Automated betting execution (where applicable)
+- Dutch betting strategy analysis and execution
+- Multi-selection risk diversification reports
 
 ## Best Practices
 

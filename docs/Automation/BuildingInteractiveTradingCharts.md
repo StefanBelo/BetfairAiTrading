@@ -4,6 +4,8 @@ Have you ever wondered how professional traders analyze market data with those i
 
 ![Building Interactive Trading Charts: A Guide for Everyone!](/docs/Automation/images/BuildingInteractiveTradingCharts.png "Building Interactive Trading Charts: A Guide for Everyone")
 
+- **File path**: [/examples/html/BetfairTradingChartDynamic.html](/examples/html/BetfairTradingChartDynamic.html)
+
 ## What Are Interactive Trading Charts?
 
 Interactive trading charts are visual representations of financial data that you can explore, zoom into, and analyze in real-time. Unlike static images, these charts respond to your mouse movements, allow you to zoom into specific time periods, and provide detailed information when you hover over data points.
