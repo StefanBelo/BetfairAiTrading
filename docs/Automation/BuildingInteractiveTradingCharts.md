@@ -2,7 +2,7 @@
 
 Have you ever wondered how professional traders analyze market data with those impressive, interactive charts you see on financial websites? What looks like complex magic is actually achievable technology that can help anyone understand and visualize trading data. Let's break down what's possible when you combine trading data with modern chart-building tools.
 
-![Building Interactive Trading Charts: A Guide for Everyone!](/docs/Automation/images/BuildingInteractiveTradingCharts.png.png "Building Interactive Trading Charts: A Guide for Everyone")
+![Building Interactive Trading Charts: A Guide for Everyone!](/docs/Automation/images/BuildingInteractiveTradingCharts.png "Building Interactive Trading Charts: A Guide for Everyone")
 
 ## What Are Interactive Trading Charts?
 
