@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betfair Trading Chart - Hey Tru Blue</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+            font-weight: 300;
+            background: linear-gradient(45deg, #4299e1, #63b3ed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .market-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        
+        .info-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #a0aec0;
+            display: block;
+            font-size: 0.8em;
+        }
+        
+        .info-value {
+            font-size: 1.1em;
+            color: #ffffff;
+        }
+        
+        .chart-container {
+            background-color: #2d3748;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+        
+        .chart-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #e2e8f0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .stats-card {
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #4a5568;
+        }
+        
+        .stats-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #63b3ed;
+        }
+        
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .stat-label {
+            color: #a0aec0;
+        }
+        
+        .stat-value {
+            font-weight: 600;
+            color: #ffffff;
+        }
+        
+        .price-up {
+            color: #48bb78;
+        }
+        
+        .price-down {
+            color: #f56565;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.2em;
+            color: #a0aec0;
+        }
+        
+        .error {
+            background-color: #fed7d7;
+            color: #742a2a;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #f56565;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .market-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Betfair Trading Analysis</h1>
+            <div class="market-info">
+                <div class="info-item">
+                    <span class="info-label">Selection</span>
+                    <span class="info-value">Hey Tru Blue</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Market</span>
+                    <span class="info-value">Leicester - 6f Mdn Stks</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Current Price</span>
+                    <span class="info-value">2.86</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Race Time</span>
+                    <span class="info-value">May 27, 2025 15:00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title">Price Movement & Trading Volume</div>
+            <div id="priceChart" style="height: 500px;"></div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title">Volume Analysis</div>
+            <div id="volumeChart" style="height: 300px;"></div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stats-card">
+                <div class="stats-title">Price Statistics</div>
+                <div id="priceStats"></div>
+            </div>
+            <div class="stats-card">
+                <div class="stats-title">Volume Statistics</div>
+                <div id="volumeStats"></div>
+            </div>
+            <div class="stats-card">
+                <div class="stats-title">Trading Activity</div>
+                <div id="tradingStats"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample data from the MCP server response
+        const marketData = {
+            "market": {
+                "marketId": "1.244208674",
+                "startTime": "2025-05-27T15:00:00+02:00",
+                "eventType": "Horse Racing",
+                "eventName": "Leicester",
+                "marketName": "6f Mdn Stks",
+                "status": 2
+            },
+            "selections": [{
+                "selection": {
+                    "selectionId": "84080039_0.00",
+                    "name": "Hey Tru Blue",
+                    "price": 2.86,
+                    "status": 1
+                },
+                "tradedPricesAndVolume": [
+                    {"time":"2025-05-26T17:27:50+02:00","price":4.7,"volume":2},
+                    {"time":"2025-05-26T17:31:37+02:00","price":4.3,"volume":0.19},
+                    {"time":"2025-05-26T17:31:37+02:00","price":4.3,"volume":0.19},
+                    {"time":"2025-05-26T17:31:37+02:00","price":4.2,"volume":6.4},
+                    {"time":"2025-05-26T17:31:56+02:00","price":4.1,"volume":13.22},
+                    {"time":"2025-05-26T17:32:50+02:00","price":4.1,"volume":0.71},
+                    {"time":"2025-05-26T17:32:50+02:00","price":4.1,"volume":0.71},
+                    {"time":"2025-05-26T17:32:50+02:00","price":3.95,"volume":5.18},
+                    {"time":"2025-05-26T17:34:02+02:00","price":3.9,"volume":4},
+                    {"time":"2025-05-26T17:40:46+02:00","price":3.55,"volume":0.47},
+                    {"time":"2025-05-26T17:40:46+02:00","price":3.55,"volume":0.47},
+                    {"time":"2025-05-26T17:40:46+02:00","price":3.5,"volume":20},
+                    {"time":"2025-05-26T17:41:23+02:00","price":3.1,"volume":4},
+                    {"time":"2025-05-26T17:54:50+02:00","price":3.05,"volume":4},
+                    {"time":"2025-05-26T18:02:45+02:00","price":3,"volume":4},
+                    {"time":"2025-05-26T18:05:47+02:00","price":2.94,"volume":4},
+                    {"time":"2025-05-26T18:05:55+02:00","price":3,"volume":16},
+                    {"time":"2025-05-26T18:06:15+02:00","price":2.92,"volume":4},
+                    {"time":"2025-05-26T18:06:23+02:00","price":3,"volume":30},
+                    {"time":"2025-05-26T18:20:12+02:00","price":2.92,"volume":0.57},
+                    {"time":"2025-05-26T18:20:12+02:00","price":2.92,"volume":0.57},
+                    {"time":"2025-05-26T18:20:12+02:00","price":2.9,"volume":4},
+                    {"time":"2025-05-26T18:20:56+02:00","price":2.88,"volume":4},
+                    {"time":"2025-05-26T18:21:07+02:00","price":2.86,"volume":4},
+                    {"time":"2025-05-26T18:21:47+02:00","price":2.84,"volume":4},
+                    {"time":"2025-05-26T18:22:04+02:00","price":2.82,"volume":4},
+                    {"time":"2025-05-26T18:25:15+02:00","price":2.66,"volume":10},
+                    {"time":"2025-05-26T18:25:27+02:00","price":2.68,"volume":0.95},
+                    {"time":"2025-05-26T18:25:27+02:00","price":2.68,"volume":0.95},
+                    {"time":"2025-05-26T18:25:27+02:00","price":2.66,"volume":4.1},
+                    {"time":"2025-05-26T18:30:20+02:00","price":2.74,"volume":4},
+                    {"time":"2025-05-26T18:30:51+02:00","price":2.8,"volume":3},
+                    {"time":"2025-05-26T18:30:51+02:00","price":2.8,"volume":1},
+                    {"time":"2025-05-26T18:30:51+02:00","price":2.84,"volume":3},
+                    {"time":"2025-05-26T18:34:11+02:00","price":2.68,"volume":10},
+                    {"time":"2025-05-26T19:04:51+02:00","price":2.78,"volume":3.11},
+                    {"time":"2025-05-26T19:05:54+02:00","price":2.76,"volume":100},
+                    {"time":"2025-05-26T19:06:10+02:00","price":2.78,"volume":3.6},
+                    {"time":"2025-05-26T19:06:23+02:00","price":2.84,"volume":27.5},
+                    {"time":"2025-05-26T19:15:38+02:00","price":2.76,"volume":12},
+                    {"time":"2025-05-26T19:17:39+02:00","price":2.72,"volume":1},
+                    {"time":"2025-05-26T19:17:39+02:00","price":2.72,"volume":1.83},
+                    {"time":"2025-05-26T19:17:39+02:00","price":2.72,"volume":0.83},
+                    {"time":"2025-05-26T19:17:39+02:00","price":2.7,"volume":56.34},
+                    {"time":"2025-05-26T19:19:00+02:00","price":2.76,"volume":70.3},
+                    {"time":"2025-05-26T19:23:38+02:00","price":2.76,"volume":2},
+                    {"time":"2025-05-26T19:23:38+02:00","price":2.74,"volume":8.68},
+                    {"time":"2025-05-26T19:23:57+02:00","price":2.76,"volume":0.02},
+                    {"time":"2025-05-26T19:23:57+02:00","price":2.76,"volume":0.02},
+                    {"time":"2025-05-26T19:23:57+02:00","price":2.78,"volume":17.02},
+                    {"time":"2025-05-26T20:50:20+02:00","price":2.74,"volume":10.01},
+                    {"time":"2025-05-26T20:52:19+02:00","price":2.72,"volume":0.02},
+                    {"time":"2025-05-26T21:58:33+02:00","price":2.68,"volume":32.06},
+                    {"time":"2025-05-26T22:11:40+02:00","price":2.6,"volume":20},
+                    {"time":"2025-05-26T22:12:31+02:00","price":2.52,"volume":50.26},
+                    {"time":"2025-05-26T22:16:51+02:00","price":2.66,"volume":10.18},
+                    {"time":"2025-05-26T22:17:02+02:00","price":2.7,"volume":12},
+                    {"time":"2025-05-26T22:17:16+02:00","price":2.72,"volume":48.76},
+                    {"time":"2025-05-26T22:17:19+02:00","price":2.74,"volume":28.86},
+                    {"time":"2025-05-26T22:20:05+02:00","price":2.84,"volume":18},
+                    {"time":"2025-05-26T23:51:39+02:00","price":2.72,"volume":56.19},
+                    {"time":"2025-05-27T00:00:30+02:00","price":2.7,"volume":46.36},
+                    {"time":"2025-05-27T00:35:55+02:00","price":2.76,"volume":39.16},
+                    {"time":"2025-05-27T00:39:47+02:00","price":2.78,"volume":36.46},
+                    {"time":"2025-05-27T00:39:51+02:00","price":2.8,"volume":174.76},
+                    {"time":"2025-05-27T01:04:59+02:00","price":2.76,"volume":100},
+                    {"time":"2025-05-27T01:11:49+02:00","price":2.8,"volume":118.15},
+                    {"time":"2025-05-27T02:44:03+02:00","price":2.96,"volume":13.04},
+                    {"time":"2025-05-27T02:44:34+02:00","price":2.98,"volume":12.92},
+                    {"time":"2025-05-27T02:47:49+02:00","price":3,"volume":6},
+                    {"time":"2025-05-27T05:23:09+02:00","price":2.98,"volume":81.35},
+                    {"time":"2025-05-27T05:52:58+02:00","price":3,"volume":33.47},
+                    {"time":"2025-05-27T06:29:16+02:00","price":3,"volume":107.77},
+                    {"time":"2025-05-27T07:10:31+02:00","price":3,"volume":66.39},
+                    {"time":"2025-05-27T07:49:01+02:00","price":2.98,"volume":32.76},
+                    {"time":"2025-05-27T07:49:26+02:00","price":2.96,"volume":28.35},
+                    {"time":"2025-05-27T07:49:31+02:00","price":2.86,"volume":4.08},
+                    {"time":"2025-05-27T07:55:26+02:00","price":2.7,"volume":4.7},
+                    {"time":"2025-05-27T08:25:58+02:00","price":2.82,"volume":19.36},
+                    {"time":"2025-05-27T08:35:48+02:00","price":2.86,"volume":12.36}
+                ]
+            }]
+        };
+
+        // Process and clean the data
+        function processData(rawData) {
+            const trades = rawData.selections[0].tradedPricesAndVolume;
+            
+            // Sort by timestamp and remove duplicates
+            const processedTrades = trades
+                .map(trade => ({
+                    timestamp: new Date(trade.time),
+                    price: parseFloat(trade.price),
+                    volume: parseFloat(trade.volume)
+                }))
+                .sort((a, b) => a.timestamp - b.timestamp);
+
+            // Aggregate volume by price level for the same timestamp
+            const aggregatedData = [];
+            let currentGroup = null;
+
+            processedTrades.forEach(trade => {
+                if (!currentGroup || 
+                    currentGroup.timestamp.getTime() !== trade.timestamp.getTime() ||
+                    currentGroup.price !== trade.price) {
+                    if (currentGroup) {
+                        aggregatedData.push(currentGroup);
+                    }
+                    currentGroup = {
+                        timestamp: trade.timestamp,
+                        price: trade.price,
+                        volume: trade.volume
+                    };
+                } else {
+                    currentGroup.volume += trade.volume;
+                }
+            });
+            
+            if (currentGroup) {
+                aggregatedData.push(currentGroup);
+            }
+
+            return aggregatedData;
+        }
+
+        // Calculate moving averages
+        function calculateMovingAverage(data, period) {
+            const result = [];
+            for (let i = period - 1; i < data.length; i++) {
+                const sum = data.slice(i - period + 1, i + 1)
+                    .reduce((acc, item) => acc + item.price, 0);
+                result.push({
+                    timestamp: data[i].timestamp,
+                    value: sum / period
+                });
+            }
+            return result;
+        }
+
+        // Calculate VWAP
+        function calculateVWAP(data) {
+            let cumulativeVolumePrice = 0;
+            let cumulativeVolume = 0;
+            
+            return data.map(trade => {
+                cumulativeVolumePrice += trade.price * trade.volume;
+                cumulativeVolume += trade.volume;
+                return {
+                    timestamp: trade.timestamp,
+                    value: cumulativeVolumePrice / cumulativeVolume
+                };
+            });
+        }
+
+        // Create price chart
+        function createPriceChart(data) {
+            const ma20 = calculateMovingAverage(data, Math.min(20, Math.floor(data.length / 3)));
+            const ma50 = calculateMovingAverage(data, Math.min(50, Math.floor(data.length / 2)));
+            const vwap = calculateVWAP(data);
+
+            const traces = [
+                {
+                    x: data.map(d => d.timestamp),
+                    y: data.map(d => d.price),
+                    type: 'scatter',
+                    mode: 'lines+markers',
+                    name: 'Price',
+                    line: {
+                        color: '#4299e1',
+                        width: 2
+                    },
+                    marker: {
+                        size: 4,
+                        color: data.map(d => d.volume > 10 ? '#48bb78' : '#4299e1'),
+                        line: {
+                            width: 1,
+                            color: '#ffffff'
+                        }
+                    },
+                    hovertemplate: '<b>%{fullData.name}</b><br>' +
+                                  'Time: %{x}<br>' +
+                                  'Price: %{y:.3f}<br>' +
+                                  '<extra></extra>'
+                }
+            ];
+
+            if (ma20.length > 0) {
+                traces.push({
+                    x: ma20.map(d => d.timestamp),
+                    y: ma20.map(d => d.value),
+                    type: 'scatter',
+                    mode: 'lines',
+                    name: `MA${Math.min(20, Math.floor(data.length / 3))}`,
+                    line: {
+                        color: '#ed8936',
+                        width: 1,
+                        dash: 'dash'
+                    },
+                    hovertemplate: '<b>%{fullData.name}</b><br>' +
+                                  'Time: %{x}<br>' +
+                                  'Value: %{y:.3f}<br>' +
+                                  '<extra></extra>'
+                });
+            }
+
+            if (ma50.length > 0) {
+                traces.push({
+                    x: ma50.map(d => d.timestamp),
+                    y: ma50.map(d => d.value),
+                    type: 'scatter',
+                    mode: 'lines',
+                    name: `MA${Math.min(50, Math.floor(data.length / 2))}`,
+                    line: {
+                        color: '#9f7aea',
+                        width: 1,
+                        dash: 'dot'
+                    },
+                    hovertemplate: '<b>%{fullData.name}</b><br>' +
+                                  'Time: %{x}<br>' +
+                                  'Value: %{y:.3f}<br>' +
+                                  '<extra></extra>'
+                });
+            }
+
+            traces.push({
+                x: vwap.map(d => d.timestamp),
+                y: vwap.map(d => d.value),
+                type: 'scatter',
+                mode: 'lines',
+                name: 'VWAP',
+                line: {
+                    color: '#38b2ac',
+                    width: 2,
+                    dash: 'dashdot'
+                },
+                hovertemplate: '<b>%{fullData.name}</b><br>' +
+                              'Time: %{x}<br>' +
+                              'Value: %{y:.3f}<br>' +
+                              '<extra></extra>'
+            });
+
+            const layout = {
+                title: {
+                    text: 'Price Movement with Technical Indicators',
+                    font: { color: '#e2e8f0', size: 16 }
+                },
+                xaxis: {
+                    title: 'Time',
+                    gridcolor: '#4a5568',
+                    color: '#e2e8f0',
+                    tickfont: { color: '#a0aec0' }
+                },
+                yaxis: {
+                    title: 'Price',
+                    gridcolor: '#4a5568',
+                    color: '#e2e8f0',
+                    tickfont: { color: '#a0aec0' }
+                },
+                plot_bgcolor: '#2d3748',
+                paper_bgcolor: '#2d3748',
+                font: { color: '#e2e8f0' },
+                legend: {
+                    bgcolor: 'rgba(45, 55, 72, 0.8)',
+                    bordercolor: '#4a5568',
+                    borderwidth: 1
+                },
+                hovermode: 'x unified',
+                showlegend: true
+            };
+
+            const config = {
+                responsive: true,
+                displayModeBar: true,
+                modeBarButtonsToRemove: ['pan2d', 'lasso2d'],
+                displaylogo: false
+            };
+
+            Plotly.newPlot('priceChart', traces, layout, config);
+        }
+
+        // Create volume chart
+        function createVolumeChart(data) {
+            const traces = [{
+                x: data.map(d => d.timestamp),
+                y: data.map(d => d.volume),
+                type: 'bar',
+                name: 'Volume',
+                marker: {
+                    color: data.map((d, i) => {
+                        if (i === 0) return '#718096';
+                        return d.price > data[i-1].price ? '#48bb78' : '#f56565';
+                    }),
+                    line: {
+                        width: 0
+                    }
+                },
+                hovertemplate: '<b>Volume</b><br>' +
+                              'Time: %{x}<br>' +
+                              'Volume: %{y:.2f}<br>' +
+                              '<extra></extra>'
+            }];
+
+            const layout = {
+                title: {
+                    text: 'Trading Volume',
+                    font: { color: '#e2e8f0', size: 16 }
+                },
+                xaxis: {
+                    title: 'Time',
+                    gridcolor: '#4a5568',
+                    color: '#e2e8f0',
+                    tickfont: { color: '#a0aec0' }
+                },
+                yaxis: {
+                    title: 'Volume',
+                    gridcolor: '#4a5568',
+                    color: '#e2e8f0',
+                    tickfont: { color: '#a0aec0' }
+                },
+                plot_bgcolor: '#2d3748',
+                paper_bgcolor: '#2d3748',
+                font: { color: '#e2e8f0' },
+                showlegend: false,
+                hovermode: 'x'
+            };
+
+            const config = {
+                responsive: true,
+                displayModeBar: true,
+                modeBarButtonsToRemove: ['pan2d', 'lasso2d'],
+                displaylogo: false
+            };
+
+            Plotly.newPlot('volumeChart', traces, layout, config);
+        }
+
+        // Calculate and display statistics
+        function displayStatistics(data) {
+            const prices = data.map(d => d.price);
+            const volumes = data.map(d => d.volume);
+            
+            const priceStats = {
+                current: prices[prices.length - 1],
+                high: Math.max(...prices),
+                low: Math.min(...prices),
+                average: prices.reduce((a, b) => a + b, 0) / prices.length,
+                change: prices[prices.length - 1] - prices[0],
+                changePercent: ((prices[prices.length - 1] - prices[0]) / prices[0]) * 100
+            };
+
+            const volumeStats = {
+                total: volumes.reduce((a, b) => a + b, 0),
+                average: volumes.reduce((a, b) => a + b, 0) / volumes.length,
+                max: Math.max(...volumes),
+                min: Math.min(...volumes)
+            };
+
+            const tradingStats = {
+                totalTrades: data.length,
+                tradingPeriod: `${Math.round((data[data.length - 1].timestamp - data[0].timestamp) / (1000 * 60 * 60))} hours`,
+                avgTradeSize: volumeStats.average,
+                volatility: Math.sqrt(prices.map(p => Math.pow(p - priceStats.average, 2)).reduce((a, b) => a + b, 0) / prices.length)
+            };
+
+            // Update price stats
+            document.getElementById('priceStats').innerHTML = `
+                <div class="stat-item">
+                    <span class="stat-label">Current:</span>
+                    <span class="stat-value">${priceStats.current.toFixed(3)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">High:</span>
+                    <span class="stat-value price-up">${priceStats.high.toFixed(3)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Low:</span>
+                    <span class="stat-value price-down">${priceStats.low.toFixed(3)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Average:</span>
+                    <span class="stat-value">${priceStats.average.toFixed(3)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Change:</span>
+                    <span class="stat-value ${priceStats.change >= 0 ? 'price-up' : 'price-down'}">
+                        ${priceStats.change >= 0 ? '+' : ''}${priceStats.change.toFixed(3)} (${priceStats.changePercent.toFixed(1)}%)
+                    </span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Volatility:</span>
+                    <span class="stat-value">${tradingStats.volatility.toFixed(4)}</span>
+                </div>
+            `;
+
+            // Update volume stats
+            document.getElementById('volumeStats').innerHTML = `
+                <div class="stat-item">
+                    <span class="stat-label">Total Volume:</span>
+                    <span class="stat-value">${volumeStats.total.toFixed(2)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Average:</span>
+                    <span class="stat-value">${volumeStats.average.toFixed(2)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Largest Trade:</span>
+                    <span class="stat-value">${volumeStats.max.toFixed(2)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Smallest Trade:</span>
+                    <span class="stat-value">${volumeStats.min.toFixed(2)}</span>
+                </div>
+            `;
+
+            // Update trading stats
+            document.getElementById('tradingStats').innerHTML = `
+                <div class="stat-item">
+                    <span class="stat-label">Total Trades:</span>
+                    <span class="stat-value">${tradingStats.totalTrades}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Trading Period:</span>
+                    <span class="stat-value">${tradingStats.tradingPeriod}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Avg Trade Size:</span>
+                    <span class="stat-value">${tradingStats.avgTradeSize.toFixed(2)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Trades/Hour:</span>
+                    <span class="stat-value">${(tradingStats.totalTrades / parseInt(tradingStats.tradingPeriod)).toFixed(1)}</span>
+                </div>
+            `;
+        }
+
+        // Initialize the dashboard
+        function initializeDashboard() {
+            try {
+                const processedData = processData(marketData);
+                
+                if (processedData.length === 0) {
+                    throw new Error('No valid trading data found');
+                }
+
+                createPriceChart(processedData);
+                createVolumeChart(processedData);
+                displayStatistics(processedData);
+
+            } catch (error) {
+                console.error('Error initializing dashboard:', error);
+                document.querySelector('.container').innerHTML = `
+                    <div class="error">
+                        <strong>Error:</strong> ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        // Start the application
+        document.addEventListener('DOMContentLoaded', initializeDashboard);
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            Plotly.Plots.resize('priceChart');
+            Plotly.Plots.resize('volumeChart');
+        });
+    </script>
+</body>
+</html>

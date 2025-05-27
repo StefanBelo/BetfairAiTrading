@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betfair Trading Chart - Dynamic Data</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+            font-weight: 300;
+            background: linear-gradient(45deg, #4299e1, #63b3ed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .market-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        
+        .info-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #a0aec0;
+            display: block;
+            font-size: 0.8em;
+        }
+        
+        .info-value {
+            font-size: 1.1em;
+            color: #ffffff;
+        }
+        
+        .chart-container {
+            background-color: #2d3748;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+        
+        .chart-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #e2e8f0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .stats-card {
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #4a5568;
+        }
+        
+        .stats-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #63b3ed;
+        }
+        
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .stat-label {
+            color: #a0aec0;
+        }
+        
+        .stat-value {
+            font-weight: 600;
+            color: #ffffff;
+        }
+        
+        .price-up {
+            color: #48bb78;
+        }
+        
+        .price-down {
+            color: #f56565;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.2em;
+            color: #a0aec0;
+        }
+        
+        .error {
+            background-color: #fed7d7;
+            color: #742a2a;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #f56565;
+        }
+        
+        .data-input {
+            background-color: #2d3748;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #4a5568;
+        }
+        
+        .data-input h3 {
+            color: #63b3ed;
+            margin-bottom: 15px;
+        }
+        
+        .data-input textarea {
+            width: 100%;
+            height: 150px;
+            background-color: #1a202c;
+            border: 1px solid #4a5568;
+            border-radius: 5px;
+            color: #ffffff;
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            resize: vertical;
+        }
+        
+        .data-input button {
+            background: linear-gradient(135deg, #4299e1 0%, #63b3ed 100%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .data-input button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(66, 153, 225, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .market-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Betfair Trading Analysis</h1>
+            <div class="market-info" id="marketInfo">
+                <div class="info-item">
+                    <span class="info-label">Status</span>
+                    <span class="info-value">Ready for Data</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="data-input">
+            <h3>MCP Server Data Input</h3>
+            <p style="color: #a0aec0; margin-bottom: 15px;">
+                Paste JSON data from GetDataContextForBetfairMarketSelection or GetDataContextForBetfairMarket calls:
+            </p>
+            <textarea id="mcpDataInput" placeholder='Paste your MCP JSON data here, for example:
+{
+  "market": {
+    "marketId": "1.244208674",
+    "eventName": "Leicester",
+    "marketName": "6f Mdn Stks"
+  },
+  "selections": [{
+    "selection": {
+      "name": "Horse Name",
+      "price": 2.86
+    },
+    "tradedPricesAndVolume": [
+      {"time": "2025-05-26T17:27:50+02:00", "price": 4.7, "volume": 2},
+      {"time": "2025-05-26T17:31:37+02:00", "price": 4.3, "volume": 0.19}
+    ]
+  }]
+}'></textarea>
+            <button onclick="loadMCPData()">Load and Analyze Data</button>
+        </div>        <div id="chartSection" style="display: none;">
+            <div class="selection-controls" style="margin-bottom: 20px;">
+                <label for="selectionDropdown" style="color: #a0aec0; margin-right: 10px;">Select Market Selection:</label>
+                <select id="selectionDropdown" onchange="onSelectionChange()" style="background-color: #2d3748; color: #ffffff; border: 1px solid #4a5568; border-radius: 5px; padding: 8px 12px; font-size: 1em;">
+                    <!-- Options will be populated dynamically -->
+                </select>
+            </div>
+            
+            <div class="chart-container">
+                <div class="chart-title">Price Movement & Trading Volume</div>
+                <div id="priceChart" style="height: 500px;"></div>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-title">Volume Analysis</div>
+                <div id="volumeChart" style="height: 300px;"></div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stats-card">
+                    <div class="stats-title">Price Statistics</div>
+                    <div id="priceStats"></div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-title">Volume Statistics</div>
+                    <div id="volumeStats"></div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-title">Trading Activity</div>
+                    <div id="tradingStats"></div>
+                </div>
+            </div>
+        </div>
+    </div>    <script>
+        let currentData = null;
+        let currentSelectionIndex = 0;
+
+        // Load and parse MCP data
+        function loadMCPData() {
+            const input = document.getElementById('mcpDataInput').value.trim();
+            
+            if (!input) {
+                alert('Please paste your MCP data first');
+                return;
+            }
+
+            try {
+                const mcpData = JSON.parse(input);
+                validateMCPData(mcpData);
+                currentData = mcpData;
+                currentSelectionIndex = 0; // Reset to first selection
+                populateSelectionDropdown(mcpData);
+                updateMarketInfo(mcpData, currentSelectionIndex);
+                initializeCharts(mcpData, currentSelectionIndex);
+                document.getElementById('chartSection').style.display = 'block';
+            } catch (error) {
+                alert('Error parsing data: ' + error.message);
+                console.error('Data parsing error:', error);
+            }
+        }
+
+        // Populate the selection dropdown
+        function populateSelectionDropdown(data) {
+            const dropdown = document.getElementById('selectionDropdown');
+            dropdown.innerHTML = '';
+            
+            data.selections.forEach((selectionData, index) => {
+                const option = document.createElement('option');
+                option.value = index;
+                option.textContent = `${selectionData.selection.name || `Selection ${index + 1}`} (${selectionData.selection.price || 'N/A'})`;
+                dropdown.appendChild(option);
+            });
+            
+            dropdown.value = currentSelectionIndex;
+        }
+
+        // Handle selection change
+        function onSelectionChange() {
+            const dropdown = document.getElementById('selectionDropdown');
+            currentSelectionIndex = parseInt(dropdown.value);
+            
+            if (currentData) {
+                updateMarketInfo(currentData, currentSelectionIndex);
+                initializeCharts(currentData, currentSelectionIndex);
+            }
+        }        // Validate MCP data structure
+        function validateMCPData(data) {
+            if (!data.market) {
+                throw new Error('Missing market information');
+            }
+            
+            if (!data.selections || !Array.isArray(data.selections) || data.selections.length === 0) {
+                throw new Error('Missing or empty selections data');
+            }
+
+            // Validate each selection has required data
+            data.selections.forEach((selectionData, index) => {
+                if (!selectionData.selection) {
+                    throw new Error(`Missing selection information for selection ${index + 1}`);
+                }
+                
+                if (!selectionData.tradedPricesAndVolume || !Array.isArray(selectionData.tradedPricesAndVolume)) {
+                    throw new Error(`Missing trading data for selection ${index + 1}: ${selectionData.selection.name || 'Unknown'}`);
+                }
+
+                if (selectionData.tradedPricesAndVolume.length === 0) {
+                    throw new Error(`No trading history found for selection ${index + 1}: ${selectionData.selection.name || 'Unknown'}`);
+                }
+
+                // Validate data format for first trade of this selection
+                const sampleTrade = selectionData.tradedPricesAndVolume[0];
+                if (!sampleTrade.time || !sampleTrade.price || !sampleTrade.volume) {
+                    throw new Error(`Invalid trade data format for selection ${index + 1}. Expected: {time, price, volume}`);
+                }
+            });
+        }        // Update market information display
+        function updateMarketInfo(data, selectionIndex = 0) {
+            const market = data.market;
+            const selection = data.selections[selectionIndex].selection;
+            
+            const marketInfo = document.getElementById('marketInfo');
+            marketInfo.innerHTML = `
+                <div class="info-item">
+                    <span class="info-label">Selection</span>
+                    <span class="info-value">${selection.name || 'Unknown'}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Market</span>
+                    <span class="info-value">${market.eventName || 'Unknown'} - ${market.marketName || 'Unknown'}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Current Price</span>
+                    <span class="info-value">${selection.price || 'N/A'}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Selection Status</span>
+                    <span class="info-value">${selection.status || 'Unknown'}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Market ID</span>
+                    <span class="info-value">${market.marketId || 'Unknown'}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Total Selections</span>
+                    <span class="info-value">${data.selections.length}</span>
+                </div>
+                ${market.startTime ? `
+                <div class="info-item">
+                    <span class="info-label">Start Time</span>
+                    <span class="info-value">${new Date(market.startTime).toLocaleString()}</span>
+                </div>
+                ` : ''}
+            `;
+        }        // Process and clean the data
+        function processData(rawData, selectionIndex = 0) {
+            const trades = rawData.selections[selectionIndex].tradedPricesAndVolume;
+            
+            // Sort by timestamp and remove duplicates
+            const processedTrades = trades
+                .map(trade => ({
+                    timestamp: new Date(trade.time),
+                    price: parseFloat(trade.price),
+                    volume: parseFloat(trade.volume)
+                }))
+                .filter(trade => !isNaN(trade.timestamp.getTime()) && !isNaN(trade.price) && !isNaN(trade.volume))
+                .sort((a, b) => a.timestamp - b.timestamp);
+
+            if (processedTrades.length === 0) {
+                throw new Error('No valid trades found in the data');
+            }
+
+            // Aggregate volume by price level for the same timestamp
+            const aggregatedData = [];
+            let currentGroup = null;
+
+            processedTrades.forEach(trade => {
+                if (!currentGroup || 
+                    currentGroup.timestamp.getTime() !== trade.timestamp.getTime() ||
+                    Math.abs(currentGroup.price - trade.price) > 0.001) {
+                    if (currentGroup) {
+                        aggregatedData.push(currentGroup);
+                    }
+                    currentGroup = {
+                        timestamp: trade.timestamp,
+                        price: trade.price,
+                        volume: trade.volume
+                    };
+                } else {
+                    currentGroup.volume += trade.volume;
+                }
+            });
+            
+            if (currentGroup) {
+                aggregatedData.push(currentGroup);
+            }
+
+            return aggregatedData;
+        }
+
+        // Calculate moving averages
+        function calculateMovingAverage(data, period) {
+            if (data.length < period) return [];
+            
+            const result = [];
+            for (let i = period - 1; i < data.length; i++) {
+                const sum = data.slice(i - period + 1, i + 1)
+                    .reduce((acc, item) => acc + item.price, 0);
+                result.push({
+                    timestamp: data[i].timestamp,
+                    value: sum / period
+                });
+            }
+            return result;
+        }
+
+        // Calculate VWAP
+        function calculateVWAP(data) {
+            let cumulativeVolumePrice = 0;
+            let cumulativeVolume = 0;
+            
+            return data.map(trade => {
+                cumulativeVolumePrice += trade.price * trade.volume;
+                cumulativeVolume += trade.volume;
+                return {
+                    timestamp: trade.timestamp,
+                    value: cumulativeVolumePrice / cumulativeVolume
+                };
+            });
+        }
+
+        // Create price chart
+        function createPriceChart(data) {
+            const ma20Period = Math.min(20, Math.floor(data.length / 3));
+            const ma50Period = Math.min(50, Math.floor(data.length / 2));
+            
+            const ma20 = ma20Period > 1 ? calculateMovingAverage(data, ma20Period) : [];
+            const ma50 = ma50Period > 1 ? calculateMovingAverage(data, ma50Period) : [];
+            const vwap = calculateVWAP(data);
+
+            const traces = [
+                {
+                    x: data.map(d => d.timestamp),
+                    y: data.map(d => d.price),
+                    type: 'scatter',
+                    mode: 'lines+markers',
+                    name: 'Price',
+                    line: {
+                        color: '#4299e1',
+                        width: 2
+                    },
+                    marker: {
+                        size: 4,
+                        color: data.map(d => d.volume > (data.reduce((a, b) => a + b.volume, 0) / data.length) ? '#48bb78' : '#4299e1'),
+                        line: {
+                            width: 1,
+                            color: '#ffffff'
+                        }
+                    },
+                    hovertemplate: '<b>%{fullData.name}</b><br>' +
+                                  'Time: %{x}<br>' +
+                                  'Price: %{y:.3f}<br>' +
+                                  '<extra></extra>'
+                }
+            ];
+
+            if (ma20.length > 0) {
+                traces.push({
+                    x: ma20.map(d => d.timestamp),
+                    y: ma20.map(d => d.value),
+                    type: 'scatter',
+                    mode: 'lines',
+                    name: `MA${ma20Period}`,
+                    line: {
+                        color: '#ed8936',
+                        width: 1,
+                        dash: 'dash'
+                    },
+                    hovertemplate: '<b>%{fullData.name}</b><br>' +
+                                  'Time: %{x}<br>' +
+                                  'Value: %{y:.3f}<br>' +
+                                  '<extra></extra>'
+                });
+            }
+
+            if (ma50.length > 0 && ma50Period !== ma20Period) {
+                traces.push({
+                    x: ma50.map(d => d.timestamp),
+                    y: ma50.map(d => d.value),
+                    type: 'scatter',
+                    mode: 'lines',
+                    name: `MA${ma50Period}`,
+                    line: {
+                        color: '#9f7aea',
+                        width: 1,
+                        dash: 'dot'
+                    },
+                    hovertemplate: '<b>%{fullData.name}</b><br>' +
+                                  'Time: %{x}<br>' +
+                                  'Value: %{y:.3f}<br>' +
+                                  '<extra></extra>'
+                });
+            }
+
+            traces.push({
+                x: vwap.map(d => d.timestamp),
+                y: vwap.map(d => d.value),
+                type: 'scatter',
+                mode: 'lines',
+                name: 'VWAP',
+                line: {
+                    color: '#38b2ac',
+                    width: 2,
+                    dash: 'dashdot'
+                },
+                hovertemplate: '<b>%{fullData.name}</b><br>' +
+                              'Time: %{x}<br>' +
+                              'Value: %{y:.3f}<br>' +
+                              '<extra></extra>'
+            });
+
+            const layout = {
+                title: {
+                    text: 'Price Movement with Technical Indicators',
+                    font: { color: '#e2e8f0', size: 16 }
+                },
+                xaxis: {
+                    title: 'Time',
+                    gridcolor: '#4a5568',
+                    color: '#e2e8f0',
+                    tickfont: { color: '#a0aec0' }
+                },
+                yaxis: {
+                    title: 'Price',
+                    gridcolor: '#4a5568',
+                    color: '#e2e8f0',
+                    tickfont: { color: '#a0aec0' }
+                },
+                plot_bgcolor: '#2d3748',
+                paper_bgcolor: '#2d3748',
+                font: { color: '#e2e8f0' },
+                legend: {
+                    bgcolor: 'rgba(45, 55, 72, 0.8)',
+                    bordercolor: '#4a5568',
+                    borderwidth: 1
+                },
+                hovermode: 'x unified',
+                showlegend: true
+            };
+
+            const config = {
+                responsive: true,
+                displayModeBar: true,
+                modeBarButtonsToRemove: ['pan2d', 'lasso2d'],
+                displaylogo: false
+            };
+
+            Plotly.newPlot('priceChart', traces, layout, config);
+        }
+
+        // Create volume chart
+        function createVolumeChart(data) {
+            const traces = [{
+                x: data.map(d => d.timestamp),
+                y: data.map(d => d.volume),
+                type: 'bar',
+                name: 'Volume',
+                marker: {
+                    color: data.map((d, i) => {
+                        if (i === 0) return '#718096';
+                        return d.price > data[i-1].price ? '#48bb78' : '#f56565';
+                    }),
+                    line: {
+                        width: 0
+                    }
+                },
+                hovertemplate: '<b>Volume</b><br>' +
+                              'Time: %{x}<br>' +
+                              'Volume: %{y:.2f}<br>' +
+                              '<extra></extra>'
+            }];
+
+            const layout = {
+                title: {
+                    text: 'Trading Volume',
+                    font: { color: '#e2e8f0', size: 16 }
+                },
+                xaxis: {
+                    title: 'Time',
+                    gridcolor: '#4a5568',
+                    color: '#e2e8f0',
+                    tickfont: { color: '#a0aec0' }
+                },
+                yaxis: {
+                    title: 'Volume',
+                    gridcolor: '#4a5568',
+                    color: '#e2e8f0',
+                    tickfont: { color: '#a0aec0' }
+                },
+                plot_bgcolor: '#2d3748',
+                paper_bgcolor: '#2d3748',
+                font: { color: '#e2e8f0' },
+                showlegend: false,
+                hovermode: 'x'
+            };
+
+            const config = {
+                responsive: true,
+                displayModeBar: true,
+                modeBarButtonsToRemove: ['pan2d', 'lasso2d'],
+                displaylogo: false
+            };
+
+            Plotly.newPlot('volumeChart', traces, layout, config);
+        }
+
+        // Calculate and display statistics
+        function displayStatistics(data) {
+            const prices = data.map(d => d.price);
+            const volumes = data.map(d => d.volume);
+            
+            const priceStats = {
+                current: prices[prices.length - 1],
+                high: Math.max(...prices),
+                low: Math.min(...prices),
+                average: prices.reduce((a, b) => a + b, 0) / prices.length,
+                change: prices[prices.length - 1] - prices[0],
+                changePercent: ((prices[prices.length - 1] - prices[0]) / prices[0]) * 100
+            };
+
+            const volumeStats = {
+                total: volumes.reduce((a, b) => a + b, 0),
+                average: volumes.reduce((a, b) => a + b, 0) / volumes.length,
+                max: Math.max(...volumes),
+                min: Math.min(...volumes)
+            };
+
+            const tradingPeriodHours = Math.round((data[data.length - 1].timestamp - data[0].timestamp) / (1000 * 60 * 60));
+            const tradingStats = {
+                totalTrades: data.length,
+                tradingPeriod: tradingPeriodHours > 0 ? `${tradingPeriodHours} hours` : 'Less than 1 hour',
+                avgTradeSize: volumeStats.average,
+                volatility: Math.sqrt(prices.map(p => Math.pow(p - priceStats.average, 2)).reduce((a, b) => a + b, 0) / prices.length),
+                tradesPerHour: tradingPeriodHours > 0 ? data.length / tradingPeriodHours : data.length
+            };
+
+            // Update price stats
+            document.getElementById('priceStats').innerHTML = `
+                <div class="stat-item">
+                    <span class="stat-label">Current:</span>
+                    <span class="stat-value">${priceStats.current.toFixed(3)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">High:</span>
+                    <span class="stat-value price-up">${priceStats.high.toFixed(3)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Low:</span>
+                    <span class="stat-value price-down">${priceStats.low.toFixed(3)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Average:</span>
+                    <span class="stat-value">${priceStats.average.toFixed(3)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Change:</span>
+                    <span class="stat-value ${priceStats.change >= 0 ? 'price-up' : 'price-down'}">
+                        ${priceStats.change >= 0 ? '+' : ''}${priceStats.change.toFixed(3)} (${priceStats.changePercent.toFixed(1)}%)
+                    </span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Volatility:</span>
+                    <span class="stat-value">${tradingStats.volatility.toFixed(4)}</span>
+                </div>
+            `;
+
+            // Update volume stats
+            document.getElementById('volumeStats').innerHTML = `
+                <div class="stat-item">
+                    <span class="stat-label">Total Volume:</span>
+                    <span class="stat-value">${volumeStats.total.toFixed(2)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Average:</span>
+                    <span class="stat-value">${volumeStats.average.toFixed(2)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Largest Trade:</span>
+                    <span class="stat-value">${volumeStats.max.toFixed(2)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Smallest Trade:</span>
+                    <span class="stat-value">${volumeStats.min.toFixed(2)}</span>
+                </div>
+            `;
+
+            // Update trading stats
+            document.getElementById('tradingStats').innerHTML = `
+                <div class="stat-item">
+                    <span class="stat-label">Total Trades:</span>
+                    <span class="stat-value">${tradingStats.totalTrades}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Trading Period:</span>
+                    <span class="stat-value">${tradingStats.tradingPeriod}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Avg Trade Size:</span>
+                    <span class="stat-value">${tradingStats.avgTradeSize.toFixed(2)}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Trades/Hour:</span>
+                    <span class="stat-value">${tradingStats.tradesPerHour.toFixed(1)}</span>
+                </div>
+            `;
+        }        // Initialize charts with new data
+        function initializeCharts(mcpData, selectionIndex = 0) {
+            try {
+                const processedData = processData(mcpData, selectionIndex);
+                
+                if (processedData.length === 0) {
+                    throw new Error('No valid trading data found');
+                }
+
+                createPriceChart(processedData);
+                createVolumeChart(processedData);
+                displayStatistics(processedData);
+
+            } catch (error) {
+                console.error('Error initializing charts:', error);
+                alert('Error creating charts: ' + error.message);
+            }
+        }
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (document.getElementById('chartSection').style.display !== 'none') {
+                Plotly.Plots.resize('priceChart');
+                Plotly.Plots.resize('volumeChart');
+            }
+        });
+
+        // Allow data input via URL parameters for automation
+        window.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const dataParam = urlParams.get('data');
+            
+            if (dataParam) {
+                try {
+                    const decodedData = decodeURIComponent(dataParam);
+                    document.getElementById('mcpDataInput').value = decodedData;
+                    loadMCPData();
+                } catch (error) {
+                    console.error('Error loading data from URL:', error);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

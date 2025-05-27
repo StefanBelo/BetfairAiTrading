@@ -12,6 +12,15 @@
 
 - [The Rise of AI Agents in Automated Betting on Betfair Exchange with BFExplorer](Automation/TheRiseOfAIAgentsInAutomatedBetting.md)
 - [BFExplorer AI Agent: Your Betfair Trading Assistant](Automation/AIAgentYourBetfairTradingAssistant.md)
+- [Building Interactive Trading Charts: A Guide for Everyone](Automation/BuildingInteractiveTradingCharts.md)
+
+## AI Analysis Prompts
+
+- [Horse Racing Combined Expected Value Analysis](Prompts/HorseRacingCombinedEVAnalysis.md) - Dual methodology combining prediction scores with semantic analysis
+- [Horse Racing Expected Value Analysis](Prompts/HorseRacingExpectedValueAnalysis.md) - Semantic-only analysis approach
+- [Horse Racing Last Races Analysis](Prompts/HorseRacingAnalyzingLastRaces.md) - Detailed form analysis prompts
+- [Trading Chart Creation](Prompts/TradingChartCreation.md) - Interactive financial chart creation from MCP time series data
+- [BFExplorer MCP Integration System Prompt](Prompts/BfexplorerMCPIntegrationSystemPrompt.md) - System integration guidance
 
 ## Strategies
 
