@@ -1,54 +1,162 @@
-# Unlock Advanced Betfair Trading with Bfexplorer: Features That Give You an Edge
+# 🚀 Betfair AI Trading Community
 
-**Meta Description**: Discover Bfexplorer, the ultimate Betfair trading software with advanced automation, real-time data, and customizable tools. Elevate your trading strategy today!
+**Welcome to Betfair AI Trading, the ultimate community for Betfair enthusiasts, traders, and tech-savvy bettors!**
 
-**Keywords**: Betfair trading software, Bfexplorer, automated Betfair trading, Betfair bot development, real-time Betfair data, customizable trading interfaces, Betfair automation tools, sports trading software, F# trading bots, Betfair SDK.
+Whether you're new to the Betfair Exchange or a seasoned trader, this is your hub to explore, share, and master betting and trading strategies powered by **machine learning**, **artificial intelligence**, and **advanced statistical analysis**.
 
-## Introduction
-In the fast-paced world of Betfair trading, having the right tools can make all the difference. [Bfexplorer](http://Bfexplorer.net/) is a cutting-edge trading platform designed to empower traders with advanced features, seamless automation, and unparalleled flexibility. Whether you're a seasoned trader or just starting out, Bfexplorer offers a suite of tools to help you maximize your potential on the Betfair Exchange.
+🌐 **[Visit Our Community Website](https://stefanbelo.github.io/)** - Explore more resources and connect with fellow traders!
 
-## Key Features of Bfexplorer
+## 🎯 What We're About
 
-### Customizable User Interfaces
-Bfexplorer provides three distinct user interfaces tailored to your trading needs. Whether you prefer ladder trading or executing Betfair bots, you can design your ideal workspace. Customize the layout to match your strategy, ensuring a smooth and productive trading experience.
+Our community is dedicated to bridging the gap between traditional sports betting and cutting-edge technology. We help members learn and apply:
 
-### Advanced Event and Market Management
-Easily create and access your favorite events for quick navigation to the markets you want to trade. With advanced searching, sorting, and filtering capabilities, you can quickly find and focus on the most relevant opportunities. The market grid view and data analysis tools provide comprehensive insights into market and selection data.
+- 🤖 **AI Agents** for automated trading and betting
+- 📊 **Machine Learning** models for prediction and analysis  
+- 📈 **Statistical Analysis** for data-driven decision making
+- ⚡ **Algorithmic Trading** on the Betfair Exchange
+- 🔧 **BFExplorer Integration** for advanced automation
 
-### Real-Time Monitoring and Control
-Stay on top of your trades with real-time monitoring of odds trends and profit/loss on open bet positions. Bfexplorer allows you to close individual bet positions, entire markets, or all open positions at once, giving you full control over your trading strategy.
+## 🌟 What You'll Find Here
 
-### Automation and Bot Support
-Take your trading to the next level with Bfexplorer's robust automation features. Support for automated trading with various Betfair bots, including trading bots and trailing stop loss, ensures you can execute strategies efficiently. The practice mode lets you test your strategies without risking real money.
+### 📚 Learning Resources
 
-### Developer-Friendly SDK
-For those who want to build bespoke trading solutions, Bfexplorer offers an SDK written in F#. This allows you to create custom bots and strategies, tailoring the software to your exact needs. For example, you can develop bots like the "FootballNextGoalStrategyBotTrigger," which automates trading based on real-time football match data, dynamically opens new markets, and executes strategies when specific conditions are met.
+#### For Beginners
+- **[Non-Developer Guide](docs/NonDevelopers.md)** - Get started with AI assistance even without coding experience
+- **[Getting Started with BFExplorer](BFExplorer.md)** - Master the ultimate Betfair trading platform
+- **[Testing Strategies](docs/TestingStrategy.md)** - Learn how to validate your approaches safely
 
-### Advanced Trading Tools
-Bfexplorer includes a range of advanced tools such as the Multiple Market Dutching tool, which helps you place Dutch bets across multiple markets. The software also supports placing Dutch bets and closing bet positions on selections or entire markets, enhancing your trading flexibility.
+#### AI & Automation Guides
+- **[AI Agents in Automated Betting](docs/Automation/TheRiseOfAIAgentsInAutomatedBetting.md)** - The future of trading
+- **[Your Betfair AI Trading Assistant](docs/Automation/AIAgentYourBetfairTradingAssistant.md)** - Build your own AI helper
+- **[Interactive Trading Charts](docs/Automation/BuildingInteractiveTradingCharts.md)** - Visualize market data like a pro
 
-### Real-Time Data and Analytics
-With integration to the Betfair API, Bfexplorer provides real-time data essential for making informed trading decisions. Live scores for tennis and football, along with NinjaTrader advanced charting, give you the insights you need to stay ahead of the market.
+### 🧠 AI Analysis Prompts
 
-### Extensive Plugin Support
-Extend Bfexplorer's functionality with built-in plugin support, offering more than 10 different tools. This extensibility allows you to customize your trading environment further, integrating third-party tools and data sources.
+Ready-to-use AI prompts for various sports and analysis types:
 
-## Why Choose Bfexplorer?
-Bfexplorer stands out in the crowded field of Betfair trading software due to its combination of advanced features, user-friendly interfaces, and developer-friendly options. The ability to create custom bots and strategies using the F# SDK sets it apart, catering to both traders and developers who want to push the boundaries of automated trading. Unlike generic trading software, Bfexplorer is purpose-built for Betfair, ensuring seamless integration and optimal performance.
+#### Horse Racing
+- **[Combined EV Analysis](docs/Prompts/HorseRacingCombinedEVAnalysis.md)** - Dual methodology with prediction scores
+- **[Expected Value Analysis](docs/Prompts/HorseRacingExpectedValueAnalysis.md)** - Semantic analysis approach
+- **[Dutch Betting Strategy](docs/Prompts/HorseRacingEVAnalysisWithDutchBetting.md)** - Risk diversification
+- **[Form Analysis](docs/Prompts/HorseRacingAnalyzingLastRaces.md)** - Detailed race history evaluation
 
-## Comparison with Competitors
-While many Betfair trading software options exist, Bfexplorer offers unique advantages:
-- **Custom Bot Development**: The F# SDK allows for bespoke bot creation, a feature not commonly found in competitors.
-- **Dynamic Market Creation**: Bfexplorer can open new markets based on in-game events, providing a competitive edge in in-play trading.
-- **Extensive Automation**: With support for over 10 different bots and advanced scripting, Bfexplorer offers unparalleled automation capabilities.
-- **Developer-Friendly**: The SDK caters to developers, enabling them to build custom solutions tailored to their strategies.
+#### General Trading
+- **[Trading Chart Creation](docs/Prompts/TradingChartCreation.md)** - Create interactive financial charts
+- **[BFExplorer MCP Integration](docs/Prompts/BfexplorerMCPIntegrationSystemPrompt.md)** - System integration guide
 
-Common features across Betfair trading software include real-time data, automation, charting tools, and practice modes. Bfexplorer not only matches these but exceeds them with its advanced SDK and dynamic market capabilities.
+### 🛠️ Ready-to-Use Strategies
 
-## Get Started with Bfexplorer
-Ready to transform your Betfair trading experience? Visit [Bfexplorer.net](http://Bfexplorer.net/) to explore the platform, download the software, and start trading smarter. Join a community of traders who trust Bfexplorer to deliver results.
+**[📖 Complete Strategies Index](docs/Strategies/README.md)**
 
-**Call to Action**: Don’t miss out! Sign up for a free trial today and discover why Bfexplorer is the go-to Betfair trading software for traders worldwide.
+Pre-built strategies for multiple sports:
 
-## Conclusion
-Bfexplorer is more than just a trading platform; it’s a comprehensive solution that combines powerful automation, real-time data, and customizable tools to help you succeed in Betfair trading. With its unique features like the F# SDK for bot development and dynamic market creation, Bfexplorer is poised to be your ultimate trading companion.
+#### Football ⚽
+- Over/Under 2.5 Goals analysis
+- In-play trading strategies
+- Match outcome predictions
+
+#### Horse Racing 🐎
+- Bookmaker odds comparison
+- Race distance analysis
+- Form-based selections
+
+#### Tennis 🎾
+- In-play momentum strategies
+- Set-based trading approaches
+- Data export to spreadsheets
+
+### 💻 Code & Development
+
+#### Source Code (`src/`)
+- **F# Applications** - Robust trading applications
+- **Strategy Implementations** - Sport-specific algorithms
+- **BFExplorer Integration** - Seamless automation tools
+
+#### Interactive Examples (`examples/`)
+- **Real-time Price Charts** - Live Betfair market visualization
+- **Dynamic Trading Charts** - Interactive market analysis
+- **HTML Trading Interfaces** - Web-based trading tools
+
+#### Analysis Notebooks (`tests/notebooks/`)
+- **Real-Time Market Monitoring** - Live data analysis
+- **Trading Performance Analysis** - Strategy backtesting
+- **Python Trading Analysis** - Cross-language implementations
+
+## 🚀 Getting Started
+
+### 1. **Choose Your Path**
+- **👶 Beginner**: Start with our [Non-Developer Guide](docs/NonDevelopers.md)
+- **💻 Developer**: Explore the `src/` folder and example code
+- **📊 Analyst**: Check out our Jupyter notebooks in `tests/notebooks/`
+- **🤖 AI Enthusiast**: Dive into our AI prompts in `docs/Prompts/`
+
+### 2. **Set Up BFExplorer**
+- **[Download BFExplorer](https://drive.google.com/file/d/1_Ta7K3Spv9WoPV_m5GLzQvJm9x8GqN_J/view?usp=sharing)** - Get the official BFExplorer application
+- Read our [BFExplorer guide](BFExplorer.md) to understand the platform
+- Install and configure using files in `data/`
+- Test with our sample strategies in `data/Strategies/`
+
+**📋 Important Requirements:**
+- **Betfair Exchange Account Required**: To use BFExplorer, you'll need an active Betfair Exchange account
+- **Free for Active Community Members**: The BFExplorer application is available at no cost for our community members
+- **No Betfair Account?** Don't worry! Many of our strategy examples can be adapted for use on any sports bookmaker website, and our AI analysis prompts can be applied generally for data analysis, research, and developing betting or trading strategy ideas
+
+### 3. **Try a Strategy**
+- Browse pre-built strategies in `docs/Strategies/`
+- Test in demo mode first (see [Testing Guide](docs/TestingStrategy.md))
+- Gradually move to live trading
+
+### 4. **Join the Learning**
+- Experiment with AI prompts for analysis
+- Build your own trading charts
+- Share your results and learn from others
+
+## 🎯 Key Sports We Cover
+
+| Sport | Focus Areas | Resources |
+|-------|-------------|-----------|
+| **🐎 Horse Racing** | Form analysis, EV calculations, Dutch betting | [Strategies](docs/Strategies/) \| [AI Prompts](docs/Prompts/) |
+| **⚽ Football** | Over/Under markets, in-play trading | [Examples](examples/) \| [Notebooks](tests/notebooks/) |
+| **🎾 Tennis** | Momentum trading, set analysis | [Code](src/Strategies/Tennis/) \| [Data](data/Strategies/) |
+
+## 🔧 Technology Stack
+
+- **BFExplorer** - Primary trading platform
+- **F#** - Core development language
+- **Python** - Data analysis and ML
+- **JavaScript/HTML** - Interactive charts
+- **Jupyter Notebooks** - Research and backtesting
+- **AI/LLM Integration** - Strategy enhancement
+
+## 🤝 Community Guidelines
+
+- **Share Knowledge**: Help others learn and grow
+- **Test Responsibly**: Always validate strategies before live trading
+- **Stay Ethical**: Follow Betfair's terms and responsible gambling practices
+- **Collaborate**: Build upon each other's work
+- **Learn Continuously**: The market evolves, so should we
+
+## ⚠️ Important Disclaimer
+
+**This repository is for educational purposes only.** All trading and betting involves risk, and past performance doesn't guarantee future results. Always:
+
+- Trade/bet responsibly within your means
+- Test strategies thoroughly before going live
+- Understand the risks involved
+- Comply with all applicable laws and regulations
+- Follow responsible gambling practices
+
+## 📞 Get Involved
+
+- **Contribute**: Submit pull requests with new strategies or improvements
+- **Ask Questions**: Use issues for technical questions
+- **Share Results**: Document your successes and learnings
+- **Build Together**: Collaborate on new AI-driven approaches
+
+---
+
+*Ready to revolutionize your Betfair trading with AI? Let's build the future of intelligent betting together!* 🚀
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
