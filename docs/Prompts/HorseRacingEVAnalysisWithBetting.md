@@ -18,6 +18,12 @@ Instructions:
    - Do not make any reports during data collection phase
 
 3. **Semantic Performance Analysis**
+
+   **CRITICAL: Price-Probability Relationship**
+   - **Probability = 1 / Price** (e.g., price 4.0 = 25% probability, price 2.0 = 50% probability)
+   - **Price Shortening** = Price DECREASING = Probability INCREASING = Positive market signal
+   - **Price Drifting/Lengthening** = Price INCREASING = Probability DECREASING = Negative market signal
+
    - Analyze each horse's data in the 'lastRacesDescription' field ONLY
    - Completely ignore the 'predictionScore' field
    - Perform deep semantic analysis of recent race descriptions focusing on:

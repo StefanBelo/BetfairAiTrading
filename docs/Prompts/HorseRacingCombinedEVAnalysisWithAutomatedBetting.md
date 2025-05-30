@@ -18,29 +18,33 @@ Instructions:
    - Focus on 'tradedPricesData' field from trading context and 'horsesData' field from racing post context
    - Do not make any reports during data collection phase
 
-3. **Dual Analysis Framework**
+3. **Dual Analysis Framework**   **CRITICAL: Price-Probability Relationship and Movement Analysis**
+   - **Probability = 1 / Price** (e.g., price 4.0 = 25% probability, price 2.0 = 50% probability)
+   - **Price Shortening** = Price DECREASING = Probability INCREASING = Positive market signal
+   - **Price Drifting/Lengthening** = Price INCREASING = Probability DECREASING = Negative market signal
+   - **IMPORTANT**: Calculate probability changes, not price changes, for market confidence assessment
+   - **Example**: Price 7.4→6.4 = Probability 13.5%→15.6% = +15.6% probability improvement (POSITIVE signal)
    
    **A) Trading Pattern Analysis:**
    - Analyze each horse's trading data focusing on price movements and market confidence
    - Perform deep analysis of trading patterns focusing on:
-     
-     i) **Price Movement Patterns:**
-        - Direction and magnitude of price changes from start to current
-        - Price stability vs volatility (min/max price range)
-        - Trend consistency (steady shortening/drifting vs erratic movement)
-        - Current position relative to trading range
+       i) **Probability Movement Patterns:**
+        - Direction and magnitude of probability changes from start to current (calculate as probability percentages, not price percentages)
+        - Probability stability vs volatility (derived from min/max price range converted to probabilities)
+        - Trend consistency (steady probability increases/decreases vs erratic movement)
+        - Current probability position relative to trading range
      
      ii) **Market Confidence Indicators:**
         - Traded volume as indicator of market interest and confidence
-        - Price shortening with high volume (strong money backing)
-        - Price drifting with low volume (lack of support)
-        - Sudden price movements indicating insider information or market shifts
+        - Probability increasing (price shortening) with high volume (strong money backing)
+        - Probability decreasing (price drifting) with low volume (lack of support)
+        - Sudden probability movements indicating insider information or market shifts
      
      iii) **Value Identification Signals:**
-        - Horses whose current price is near or at maximum traded price (potential overlays)
-        - Horses with consistent price shortening and strong volume (market confidence)
-        - Horses with minimal price movement but reasonable volume (stable assessment)
-        - Horses showing price lengthening despite trading activity (potential value emerging)
+        - Horses whose current probability is near minimum traded probability (potential overlays)
+        - Horses with consistent probability increases and strong volume (market confidence)
+        - Horses with minimal probability movement but reasonable volume (stable assessment)
+        - Horses showing probability decreases despite trading activity (potential value emerging)
 
    **B) Semantic Performance Analysis:**
    - Analyze each horse's data in the 'lastRacesDescription' field ONLY
@@ -114,7 +118,7 @@ Instructions:
 
    **D) EV Rankings Table:**
    - All horses ranked by Expected Value (highest to lowest)
-   - Include: Horse Name, Current Price, Start Price, Price Change, Traded Volume, Trading Signal, Performance Signal, Combined Win Probability, EV, EV Rating
+   - Include: Horse Name, Current Price, Start Price, Probability Change %, Traded Volume, Trading Signal, Performance Signal, Combined Win Probability, EV, EV Rating
    - Highlight the selected horse for betting
 
    **E) Selection Justification:**
@@ -173,9 +177,9 @@ Selection Criteria Priority:
 **Combined Analysis Framework:**
 
 **Trading Data Interpretation Guidelines:**
-- **Strong Positive Signals:** Price shortening with high traded volume
-- **Moderate Positive Signals:** Minimal price movement with steady volume
-- **Negative Signals:** Price drifting with declining volume
+- **Strong Positive Signals:** Probability increasing (price shortening) with high traded volume
+- **Moderate Positive Signals:** Minimal probability movement with steady volume
+- **Negative Signals:** Probability decreasing (price drifting) with declining volume
 
 **Performance Data Interpretation Guidelines:**
 - **Strong Positive Signals:** Recent wins, consistent strong finishes, competitive performances
@@ -240,9 +244,9 @@ The analysis will automatically select the horse that best combines:
 - **Appropriate Probability Range** - Betting (>15%) or Trading (8-15%) suitability
 
 **Secondary Criteria:**
-- **Market Confidence** - Strong volume supporting price movements
+- **Market Confidence** - Strong volume supporting probability movements
 - **Performance Consistency** - Solid recent racing form and behavior
-- **Price Positioning** - Favorable position within trading range
+- **Probability Positioning** - Favorable position within trading range (converted from prices)
 - **Strategy Suitability** - Clear betting value vs trading opportunity signals
 
 ## Combined Data Analysis Framework

@@ -12,12 +12,19 @@ Instructions:
    - Save marketId for subsequent data retrieval
    - Make no preliminary reports during data collection
 
-2. **Performance Data Collection**
+2. **Multi-Context Data Collection**
+   - Using tool: GetDataContextForBetfairMarket retrieves comprehensive data context for a specific market in BfexplorerApp
+   - Retrieve the data context with the name 'MarketSelectionsTradedPricesData' for the betfair market using tool: GetDataContextForBetfairMarket
    - Retrieve the data context with the name 'RacingpostDataForHorsesInfo' for the betfair market using tool: GetDataContextForBetfairMarket
-   - Extract both 'predictionScore' and 'lastRacesDescription' fields from 'horsesData'
+   - Focus on 'tradedPricesData' field from trading context and 'horsesData' field from racing post context
    - Do not make any reports during data collection phase
 
 3. **Dual Analysis Methodology**
+
+   **CRITICAL: Price-Probability Relationship**
+   - **Probability = 1 / Price** (e.g., price 4.0 = 25% probability, price 2.0 = 50% probability)
+   - **Price Shortening** = Price DECREASING = Probability INCREASING = Positive market signal
+   - **Price Drifting/Lengthening** = Price INCREASING = Probability DECREASING = Negative market signal
 
    **A) Semantic Performance Analysis**
    - Analyze each horse's 'lastRacesDescription' field for qualitative insights
