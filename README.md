@@ -93,7 +93,6 @@ Pre-built strategies for multiple sports:
 ### 2. **Set Up BFExplorer**
 - **[Download BFExplorer](https://drive.google.com/file/d/1_Ta7K3Spv9WoPV_m5GLzQvJm9x8GqN_J/view?usp=sharing)** - Get the official BFExplorer application
 - Read our [BFExplorer guide](BFExplorer.md) to understand the platform
-- Install and configure using files in `data/`
 - Test with our sample strategies in `data/Strategies/`
 
 **📋 Important Requirements:**
