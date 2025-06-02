@@ -11,8 +11,9 @@ Strategies focused on football (soccer) markets including over/under goals and s
 - [Football Score-Based Market Opener Guide](Football/OpenMyMarketsByScore.md)
 
 ### [Horse Racing](HorseRacing/README.md)
-Specialized strategies for horse racing markets leveraging distance analysis and odds comparison.
+Specialized strategies for horse racing markets leveraging AI analysis, distance analysis and odds comparison.
 
+- [How to Use AI Agents for Smarter Horse Racing Betting: A Beginner's Guide](HorseRacing/HowToUseAIAgentForHorseRacingBetting.md)
 - [The Distance Advantage: A Specialized Betfair Horse Racing Strategy](HorseRacing/RaceDistance.md)
 - [Arbitrage in Motion: The Pre-Race Odds Comparison Strategy for Betfair Horse Racing](HorseRacing/BookmakersOdds.md)
 

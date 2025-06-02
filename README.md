@@ -35,10 +35,12 @@ Our community is dedicated to bridging the gap between traditional sports bettin
 Ready-to-use AI prompts for various sports and analysis types:
 
 #### Horse Racing
+- **[Base Form Data Analysis](docs/Prompts/HorseRacingBaseFormDataAnalysis.md)** - Core betting metrics analysis
 - **[Combined EV Analysis](docs/Prompts/HorseRacingCombinedEVAnalysis.md)** - Dual methodology with prediction scores
 - **[Expected Value Analysis](docs/Prompts/HorseRacingExpectedValueAnalysis.md)** - Semantic analysis approach
-- **[Dutch Betting Strategy](docs/Prompts/HorseRacingEVAnalysisWithDutchBetting.md)** - Risk diversification
-- **[Form Analysis](docs/Prompts/HorseRacingAnalyzingLastRaces.md)** - Detailed race history evaluation
+- **[Conservative Betting Strategy](docs/Prompts/HorseRacingEVAnalysisWithConservativeBetting.md)** - Risk-managed favorite evaluation
+- **[Dutch Betting Strategy](docs/Prompts/HorseRacingEVAnalysisWithDutchBetting.md)** - Risk diversification across multiple selections
+- **[Automated Betting Analysis](docs/Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)** - High-confidence automated execution
 
 #### General Trading
 - **[Trading Chart Creation](docs/Prompts/TradingChartCreation.md)** - Create interactive financial charts
@@ -56,6 +58,7 @@ Pre-built strategies for multiple sports:
 - Match outcome predictions
 
 #### Horse Racing 🐎
+- **[AI Agent Betting Guide](docs/Strategies/HorseRacing/HowToUseAIAgentForHorseRacingBetting.md)** - Complete beginner's guide
 - Bookmaker odds comparison
 - Race distance analysis
 - Form-based selections

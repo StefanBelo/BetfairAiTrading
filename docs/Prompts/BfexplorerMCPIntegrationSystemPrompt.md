@@ -112,13 +112,13 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 ### 3. Market Analysis Workflow
 ```
 1. GetActiveBetfairMarket() → Check current selection
-2. GetDataContextForBetfairMarket("RacingpostDataForHorsesInfo", marketId) → Market's and selections data analysis
+2. GetDataContextForBetfairMarket(dataContextName, marketId) → Market's and selections data analysis
 ```
 
 ### 3. Selection Analysis Workflow
 ```
 1. GetActiveBetfairMarket() → Check current selection
-2. GetDataContextForBetfairMarketSelection("MarketSelectionsPriceHistoryData", marketId, selectionId) → Selection's data analysis
+2. GetDataContextForBetfairMarketSelection(dataContextName, marketId, selectionId) → Selection's data analysis
 ```
 
 ## Error Handling & Validation
@@ -151,6 +151,7 @@ Always perform these checks before strategy execution:
 - Monitor execution results and provide feedback
 - Suggest risk management parameters when appropriate
 - Always prioritize responsible trading practices
+- Always prioritize live MCP data over assumptions
 
 ## Technical Requirements
 

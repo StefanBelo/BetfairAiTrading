@@ -2,7 +2,7 @@
 
 ## Requirements
 
-If you want to test any of the published strategies, you must first create a [Betfair account](https://register.betfair.com/account/registration). Then, install the Bfexplorer app from [this link](https://drive.google.com/file/d/1_Ta7K3Spv9WoPV_m5GLzQvJm9x8GqN_J/view?usp=sharing) and enable the URL scheme for opening the Bfexplorer app by [importing it](blob:https://github.com/ede2902b-26b3-454a-baed-e42d09f87c25) into your computer's registry.
+If you want to test any of the published strategies, you must first create a [Betfair account](https://register.betfair.com/account/registration). Then, install the Bfexplorer app from [this link](https://drive.google.com/file/d/1_Ta7K3Spv9WoPV_m5GLzQvJm9x8GqN_J/view?usp=sharing) and enable the URL scheme for opening the Bfexplorer app by importing the registry file located at `data/BfexplorerSchemeProtocol.reg` into your computer's registry.
 
 ![Open Bfexplorer!](/docs/images/OpenBfexplorerURI.png "Open Bfexplorer")
 
