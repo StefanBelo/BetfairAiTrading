@@ -43,6 +43,13 @@ This directory contains specialized prompts for AI-powered analysis of Betfair m
 - Prioritizes capital preservation and consistent value identification
 - **Best for:** Risk-averse betting with systematic favorite evaluation
 
+#### [HorseRacingEVAnalysisWithConservativeTradingData.md](HorseRacingEVAnalysisWithConservativeTradingData.md)
+**Conservative EV Analysis with Trading Data Integration**
+- Enhanced conservative betting analysis incorporating trading pattern data
+- Focuses on market favorites with comprehensive trading data analysis
+- Combines trading patterns with conservative execution strategies
+- **Best for:** Conservative betting with enhanced trading data insights
+
 #### [HorseRacingEVAnalysisWithDutchBetting.md](HorseRacingEVAnalysisWithDutchBetting.md)
 **Expected Value Analysis with Automated Dutch Betting**
 - Combines semantic performance analysis with mathematical EV calculations
@@ -85,6 +92,16 @@ This directory contains specialized prompts for AI-powered analysis of Betfair m
 **Quick Rankings Table Generation**
 - Simplified output focusing on essential EV rankings
 - **Best for:** Rapid analysis when only rankings are needed
+
+#### [HorseRacingEVAnalysisMinimal.md](HorseRacingEVAnalysisMinimal.md)
+**Minimal EV Analysis with Silent Execution**
+- Silent analysis with minimal output and conservative betting approach
+- **Best for:** Quiet operation with essential analysis only
+
+#### [HorseRacingEVAnalysisMinimalExecution.md](HorseRacingEVAnalysisMinimalExecution.md)
+**Minimal EV Analysis with Strategy Execution**
+- Silent analysis with automated favorite evaluation and execution
+- **Best for:** Automated conservative betting with minimal reporting
 
 ### System Integration
 

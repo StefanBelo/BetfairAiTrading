@@ -3,7 +3,7 @@
 ## Conservative EV Analysis and Betting Execution Prompt
 
 ```
-Task: Perform comprehensive Expected Value (EV) analysis for horse racing betting opportunities with a conservative betting approach that only backs the market favorite when it demonstrates fair or better expected value. This analysis combines semantic interpretation of racing performance with mathematical EV calculations to identify value in favorites only.
+Task: Perform comprehensive Expected Value (EV) analysis for horse racing betting opportunities with a conservative betting approach that only backs the market favorite when it demonstrates fair or better expected value AND has a win probability advantage of at least 8% over the second-best horse. This analysis combines semantic interpretation of racing performance with mathematical EV calculations to identify dominant favorites with value.
 
 Instructions:
 
@@ -82,6 +82,7 @@ Instructions:
      a) The horse is the market favorite (lowest price)
      b) The favorite's EV rating is "Fair" or better (EV ≥ -0.05)
      c) The favorite shows no major recent form concerns
+     d) The favorite's win probability exceeds the second-best horse by at least 8%
    - If criteria not met, analyze all horses but do NOT place any bet
    - Document reasoning for betting decision or no-bet decision
 
@@ -92,11 +93,10 @@ Instructions:
 
 9. **Final Analysis Report and Conservative Selection**
 
-   Provide structured report containing:
-
-   **A) Executive Summary:**
+   Provide structured report containing:   **A) Executive Summary:**
    - Market favorite identification and current price
    - Favorite's EV rating and calculated expected value
+   - Favorite's win probability vs second-best horse (probability advantage)
    - **BETTING DECISION**: Whether favorite meets conservative criteria
    - Clear justification for bet/no-bet decision
    - Risk assessment for conservative approach
@@ -108,16 +108,18 @@ Instructions:
    - Calculated Expected Value and EV rating
    - Assessment of recent performance trends
    - Identification of any concerning form indicators
+   - Probability advantage over second-best horse
 
    **C) Complete Field EV Rankings Table:**
    - All horses ranked by Expected Value (highest to lowest)
    - Include: Horse Name, Current Price, Win Probability, EV, EV Rating
-   - Highlight the market favorite
+   - Highlight the market favorite and second-best horse by probability
    - Show which horses (if any) have superior EV to favorite
 
    **D) Conservative Selection Justification:**
    - Detailed explanation of conservative betting philosophy
-   - Why favorite does/doesn't meet betting criteria
+   - Why favorite does/doesn't meet betting criteria (including probability advantage)
+   - Probability dominance assessment (8% minimum advantage requirement)
    - Comparison of favorite's value versus field alternatives
    - Risk-reward assessment of conservative approach
    - Market efficiency evaluation
@@ -145,8 +147,9 @@ Conservative Selection Criteria (ALL must be met):
 2. **Minimum EV Standard** - EV Rating of "Fair" or better (EV ≥ -0.05)
 3. **Form Reliability** - No major recent performance concerns
 4. **Competitive Viability** - Recent form shows consistent competitiveness
+5. **Probability Dominance** - Favorite's win probability exceeds second-best horse by at least 8%
 
-Note: This conservative approach prioritizes capital preservation and consistent value identification over aggressive profit maximization. The strategy acknowledges that favorites often represent the most reliable betting opportunities when they offer fair value, while avoiding the higher variance associated with backing outsiders.
+Note: This conservative approach prioritizes capital preservation and consistent value identification over aggressive profit maximization. The strategy acknowledges that favorites often represent the most reliable betting opportunities when they offer fair value AND demonstrate clear probability dominance over the field, while avoiding the higher variance associated with backing outsiders or closely contested races.
 ```
 
 ## Usage Instructions
@@ -179,6 +182,7 @@ The analysis will automatically evaluate the favorite against these criteria:
 - **Fair Value Minimum** - EV Rating ≥ "Fair" (EV ≥ -0.05)
 - **Form Stability** - No major recent performance deterioration
 - **Competitive Evidence** - Recent races show consistent involvement
+- **Probability Advantage** - Win probability exceeds second-best horse by at least 8%
 
 **Risk Management Benefits:**
 - **Capital Preservation** - Only bet when value is demonstrable
@@ -196,4 +200,4 @@ The analysis will automatically evaluate the favorite against these criteria:
 6. **IF criteria NOT met**: Activate favorite and execute "Lay 10 Euro" strategy
 7. Confirm execution status (bet placed or lay bet placed)
 
-This conservative prompt ensures systematic evaluation while executing bets when the market favorite demonstrates acceptable expected value, or laying the favorite when it doesn't, prioritizing consistent value identification and active betting decisions.
+This conservative prompt ensures systematic evaluation while executing bets when the market favorite demonstrates acceptable expected value AND clear probability dominance (8%+ advantage), or laying the favorite when it doesn't meet these stricter criteria, prioritizing consistent value identification and active betting decisions in races with clear standout performers.

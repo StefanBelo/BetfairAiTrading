@@ -20,6 +20,14 @@ This directory contains comprehensive guides on implementing AI-powered automati
 - Customization and optimization strategies
 - **Best for:** Hands-on implementation of AI trading assistance
 
+### [AI Agent Integration to BfexplorerApp](AIAgentIntegrationToBfexplorerApp.md)
+**Two Approaches for Automated Betting Strategies**
+- Detailed guide covering C# and Python implementation approaches
+- MCP server integration with BfexplorerApp
+- Architecture patterns for automated strategy execution
+- Technical implementation examples and best practices
+- **Best for:** Advanced developers implementing automated betting systems
+
 ### [Building Interactive Trading Charts: A Guide for Everyone](BuildingInteractiveTradingCharts.md)
 **Data Visualization and Analysis Tools**
 - Creating professional interactive charts for market analysis

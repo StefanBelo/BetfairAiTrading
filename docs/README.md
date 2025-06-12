@@ -13,6 +13,7 @@
 
 - [The Rise of AI Agents in Automated Betting on Betfair Exchange with BFExplorer](Automation/TheRiseOfAIAgentsInAutomatedBetting.md)
 - [BFExplorer AI Agent: Your Betfair Trading Assistant](Automation/AIAgentYourBetfairTradingAssistant.md)
+- [AI Agent Integration to BfexplorerApp](Automation/AIAgentIntegrationToBfexplorerApp.md) - Two approaches for automated betting strategies
 - [Building Interactive Trading Charts: A Guide for Everyone](Automation/BuildingInteractiveTradingCharts.md)
 
 ## AI Analysis Prompts
@@ -26,12 +27,15 @@
 - [Horse Racing Combined EV Analysis with Data Export](Prompts/HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md) - Structured data output for integration
 - [Horse Racing Expected Value Analysis](Prompts/HorseRacingExpectedValueAnalysis.md) - Semantic-only analysis approach
 - [Horse Racing EV Analysis with Conservative Betting](Prompts/HorseRacingEVAnalysisWithConservativeBetting.md) - Risk-managed favorite evaluation with smart execution
+- [Horse Racing EV Analysis with Conservative Trading Data](Prompts/HorseRacingEVAnalysisWithConservativeTradingData.md) - Enhanced conservative betting with trading data
 - [Horse Racing EV Analysis with Dutch Betting](Prompts/HorseRacingEVAnalysisWithDutchBetting.md) - Automated Dutch betting strategy with risk diversification
 - [Horse Racing EV Analysis with Dutch Betting (OLBG Tips)](Prompts/HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md) - Community tips integration
 - [Horse Racing EV Analysis with Betting](Prompts/HorseRacingEVAnalysisWithBetting.md) - Single selection betting automation
 - [Horse Racing EV Analysis with Trading Data](Prompts/HorseRacingEVAnalysisWithBetting_TradingData.md) - Enhanced with trading data
 - [Horse Racing Numerical Data Analysis](Prompts/HorseRacingEVAnalysisNumericalData.md) - Quantitative metrics focus
 - [Horse Racing EV Rankings Table Only](Prompts/HorseRacingEVRankingsTableOnly.md) - Quick rankings generation
+- [Horse Racing EV Analysis Minimal](Prompts/HorseRacingEVAnalysisMinimal.md) - Silent analysis with minimal output
+- [Horse Racing EV Analysis Minimal Execution](Prompts/HorseRacingEVAnalysisMinimalExecution.md) - Automated conservative betting with minimal reporting
 
 ### General Tools
 - [Trading Chart Creation](Prompts/TradingChartCreation.md) - Interactive financial chart creation from MCP time series data

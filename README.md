@@ -28,6 +28,7 @@ Our community is dedicated to bridging the gap between traditional sports bettin
 #### AI & Automation Guides
 - **[AI Agents in Automated Betting](docs/Automation/TheRiseOfAIAgentsInAutomatedBetting.md)** - The future of trading
 - **[Your Betfair AI Trading Assistant](docs/Automation/AIAgentYourBetfairTradingAssistant.md)** - Build your own AI helper
+- **[AI Agent Integration to BFExplorer](docs/Automation/AIAgentIntegrationToBfexplorerApp.md)** - Two approaches for automated betting strategies
 - **[Interactive Trading Charts](docs/Automation/BuildingInteractiveTradingCharts.md)** - Visualize market data like a pro
 
 ### 🧠 AI Analysis Prompts
@@ -39,8 +40,11 @@ Ready-to-use AI prompts for various sports and analysis types:
 - **[Combined EV Analysis](docs/Prompts/HorseRacingCombinedEVAnalysis.md)** - Dual methodology with prediction scores
 - **[Expected Value Analysis](docs/Prompts/HorseRacingExpectedValueAnalysis.md)** - Semantic analysis approach
 - **[Conservative Betting Strategy](docs/Prompts/HorseRacingEVAnalysisWithConservativeBetting.md)** - Risk-managed favorite evaluation
+- **[Conservative Trading Data Strategy](docs/Prompts/HorseRacingEVAnalysisWithConservativeTradingData.md)** - Enhanced conservative betting with trading data
 - **[Dutch Betting Strategy](docs/Prompts/HorseRacingEVAnalysisWithDutchBetting.md)** - Risk diversification across multiple selections
 - **[Automated Betting Analysis](docs/Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)** - High-confidence automated execution
+- **[Minimal Execution Analysis](docs/Prompts/HorseRacingEVAnalysisMinimal.md)** - Silent analysis with minimal output
+- **[Minimal Strategy Execution](docs/Prompts/HorseRacingEVAnalysisMinimalExecution.md)** - Automated conservative betting with minimal reporting
 
 #### General Trading
 - **[Trading Chart Creation](docs/Prompts/TradingChartCreation.md)** - Create interactive financial charts

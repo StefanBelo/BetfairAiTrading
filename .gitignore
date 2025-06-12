@@ -358,3 +358,6 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+src/AiAgent/fastagent.secrets.yaml
+src/AiAgentPython/fastagent.secrets.yaml
+src/AiAgentPython/fastagent.jsonl
