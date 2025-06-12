@@ -1,5 +1,13 @@
 # Documentation Index
 
+## Quick Start
+
+### [Reddit Community Introduction](../reddit_post.md)
+**🚀 AI Agents + Betfair Trading = Game Changer**
+- Quick 2-minute overview of revolutionary AI-powered trading
+- Key benefits: 30-60 min analysis → 10 seconds with AI agents
+- Simple MCP SSE setup for immediate results
+
 ## For Beginners
 
 - [How Non-Developers Can Update Code with AI Assistance](NonDevelopers.md)
@@ -11,6 +19,7 @@
 
 ## AI Agents
 
+- [Getting Started with Agentic Bfexplorer App](Automation/HowToStartWithAgenticBfexplorerApp.md) - **🌟 COMPLETE SETUP GUIDE** for revolutionary AI-powered trading
 - [The Rise of AI Agents in Automated Betting on Betfair Exchange with BFExplorer](Automation/TheRiseOfAIAgentsInAutomatedBetting.md)
 - [BFExplorer AI Agent: Your Betfair Trading Assistant](Automation/AIAgentYourBetfairTradingAssistant.md)
 - [AI Agent Integration to BfexplorerApp](Automation/AIAgentIntegrationToBfexplorerApp.md) - Two approaches for automated betting strategies

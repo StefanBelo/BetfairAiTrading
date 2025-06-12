@@ -51,7 +51,7 @@ The C# implementation uses the `ModelContextProtocol.Client` package to create a
 ### Project Structure
 ```
 AiAgentCSharp/
-├── Program.cs                 # Main application entry point
+├── Program.cs                # Main application entry point
 ├── AiAgentHelpers.cs         # AI client creation helpers
 ├── MyPrompts.cs              # Predefined betting strategy prompts
 └── AiAgentCSharp.csproj      # Project configuration

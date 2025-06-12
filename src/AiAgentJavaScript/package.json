@@ -1,0 +1,30 @@
+{
+  "name": "ai-agent-javascript",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "JavaScript AI Agent for BfexplorerApp integration",
+  "main": "agent_interactive.js",
+  "scripts": {
+    "start": "node agent_interactive.js",
+    "dev": "node agent_interactive.js",
+    "interactive": "node agent_interactive.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@azure-rest/ai-inference": "^1.0.0-beta.6",
+    "@azure/core-auth": "^1.5.0",
+    "eventsource": "^4.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "keywords": [
+    "ai",
+    "betfair",
+    "trading",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.0.1"
+  }
+}

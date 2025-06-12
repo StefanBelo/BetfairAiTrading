@@ -1,5 +1,59 @@
 # Horse Racing EV Rankings Table
 
+## AI-Powered Betting Analysis: MCP Servers & Agentic Applications
+
+### Introduction to Modern AI Betting Solutions
+
+This document demonstrates how **Model Context Protocol (MCP) Servers** and **Agentic Applications** revolutionize sports betting analysis, particularly for Betfair exchange trading. Using horse racing Expected Value (EV) analysis as our primary use case, we'll explore how AI agents can transform complex data interpretation into actionable betting insights for everyday users.
+
+### What are MCP Servers?
+
+**Model Context Protocol (MCP) Servers** are specialized data service endpoints that provide AI agents with structured access to real-time information. In the context of sports betting:
+
+- **Real-time Market Data**: Live odds, price movements, and trading volumes
+- **Historical Performance**: Past race results, form guides, and statistical trends  
+- **External Data Sources**: Weather conditions, track information, jockey/trainer statistics
+- **Standardized Communication**: Consistent data formats across different betting platforms
+
+### Understanding Agentic Applications
+
+**Agentic Applications** are AI-powered systems that can autonomously analyze data, make decisions, and execute actions on behalf of users. For Betfair traders, these agents can:
+
+- **Continuous Market Monitoring**: 24/7 surveillance of betting opportunities
+- **Automated Analysis**: Instant processing of complex form data and market signals
+- **Risk Management**: Automatic position sizing and loss limitation
+- **Strategic Execution**: Implementing sophisticated betting strategies without manual intervention
+
+### How AI Agents Transform Betfair Trading for Regular Users
+
+#### 1. **Complexity Reduction**
+Traditional betting analysis requires understanding of:
+- Statistical probability calculations
+- Form reading and interpretation  
+- Market psychology and price movements
+- Risk management principles
+
+**AI Solution**: Agents convert raw data into simple recommendations with confidence ratings.
+
+#### 2. **Time Efficiency**
+Manual analysis of a single horse race can take 30-60 minutes for thorough evaluation.
+
+**AI Solution**: Complete analysis delivered in seconds, allowing users to evaluate multiple markets simultaneously.
+
+#### 3. **Emotional Discipline**
+Human traders often make impulsive decisions based on recent wins/losses or personal biases.
+
+**AI Solution**: Consistent, emotion-free analysis based purely on data and probability mathematics.
+
+#### 4. **Access to Professional-Level Tools**
+Previously, sophisticated analysis tools were only available to professional traders.
+
+**AI Solution**: Democratizes access to advanced analytics for recreational bettors.
+
+### The Horse Racing EV Analysis Use Case
+
+The following prompt demonstrates a sophisticated AI agent designed to perform dual-methodology Expected Value analysis - combining quantitative market data with qualitative performance interpretation.
+
 ## Silent Dual-Method EV Analysis for Rankings Output
 
 ```
