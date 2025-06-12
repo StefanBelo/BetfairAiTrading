@@ -219,14 +219,12 @@ Once connected, test your setup with our sophisticated **Horse Racing EV Analysi
 
 #### Sample Output Structure:
 
-```
 **Race:** Newmarket 1m Maiden Stakes (Market ID: 1.234567890) - June 12, 2025 14:30
 
 | Rank | Horse | Price | Price Move | Semantic Prob | Combined Prob | Semantic EV | Combined EV | Rating |
 |------|-------|-------|------------|---------------|---------------|-------------|-------------|---------|
 | 1 | **Thunder Bay** | 3.50 | ↘ | 32% | 35% | +0.125 | **+0.225** | ⭐⭐ |
 | 2 | **Silver Storm** | 5.00 | → | 18% | 20% | -0.100 | **+0.000** | ❌ |
-```
 
 This provides instant, professional-level analysis that would traditionally take 30-45 minutes of manual research.
 
