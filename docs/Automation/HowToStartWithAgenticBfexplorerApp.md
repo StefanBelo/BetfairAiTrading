@@ -403,18 +403,6 @@ LLM Reality:
 3. Integrate external data sources and indicators
 4. Develop personalized risk management protocols
 
-### GitHub-Compatible Table Format Verification
-
-Our documentation uses GitHub Flavored Markdown tables that render correctly on GitHub Pages:
-
-```markdown
-| Column 1 | Column 2 | Column 3 |
-|----------|----------|----------|
-| Data 1   | Data 2   | Data 3   |
-```
-
-All tables in this documentation follow this format for optimal GitHub Pages compatibility.
-
 ## Advanced Features and Benefits
 
 ### Continuous Market Monitoring
