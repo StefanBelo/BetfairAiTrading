@@ -4,13 +4,13 @@ using ModelContextProtocol.Client;
 
 try
 {
-    // Chat client
-    IChatClient chatClient = 
+    // Sampling Chat client
+    IChatClient samplingClient = 
         //AiAgentHelpers.CreateGithubChatClient("openai/gpt-4.1");
         AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
 
     // Test the AI model
-    await foreach (var update in chatClient.GetStreamingResponseAsync("Who are you?"))
+    await foreach (var update in samplingClient.GetStreamingResponseAsync("Who are you?"))
     {
         Console.Write(update);
     }
@@ -28,7 +28,7 @@ try
             ),
             new McpClientOptions
             {
-                Capabilities = new() { Sampling = new() { SamplingHandler = chatClient.CreateSamplingHandler() } }
+                Capabilities = new() { Sampling = new() { SamplingHandler = samplingClient.CreateSamplingHandler() } }
             }
         );
 
@@ -48,6 +48,11 @@ try
         { 
             Tools = [.. tools] 
         };
+
+    // Chat client
+    IChatClient chatClient = 
+        //AiAgentHelpers.CreateGithubChatClient("openai/gpt-4.1");
+        AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
 
     // Get the response
     List<ChatResponseUpdate> updates = [];

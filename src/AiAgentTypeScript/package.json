@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "type": "module",
   "description": "JavaScript AI Agent for BfexplorerApp integration",
-  "main": "agent_interactive.js",
+  "main": "agent_interactive.js",  
   "scripts": {
-    "start": "node agent_interactive.js",
-    "dev": "node agent_interactive.js",
-    "interactive": "node agent_interactive.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "agent": "node dist/agent.js",
+    "agent_interactive": "node dist/agent_interactive.js",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/agent_interactive.js"
   },
   "dependencies": {
     "@azure-rest/ai-inference": "^1.0.0-beta.6",
     "@azure/core-auth": "^1.5.0",
+    "@modelcontextprotocol/sdk": "^1.12.1",
     "eventsource": "^4.0.0",
     "node-fetch": "^3.3.2"
   },
