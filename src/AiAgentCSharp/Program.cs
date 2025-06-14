@@ -64,7 +64,7 @@ try
         updates.Add(update);
     }
 
-    Console.WriteLine("\nEnd of the execution");
+    Console.WriteLine("\nEnd of the execution.");
 }
 catch(Exception ex)
 {
