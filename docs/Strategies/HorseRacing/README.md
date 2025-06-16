@@ -4,6 +4,43 @@ This directory contains specialized trading strategies designed for horse racing
 
 ## Available Strategies
 
+### Core Trading Strategies
+
+#### Machine Learning & AI Strategies
+- **[Horse Racing Db-ML Trigger Bot](Horse-Racing-Db-ML-Trigger-Bot.md)** - Database-driven machine learning trigger system
+- **[Horse Racing ML Trigger Bot](Horse-Racing-ML-Trigger-Bot.md)** - Advanced machine learning prediction triggers
+- **[Horse Racing Evaluate ML Trigger Bot](Horse-Racing-Evaluate-ML-Trigger-Bot.md)** - ML evaluation and scoring system
+- **[Horse Racing Evaluate Favourite ML Trigger Bot](Horse-Racing-Evaluate-Favourite-ML-Trigger-Bot.md)** - ML-based favorite analysis
+
+#### Form & Rating Strategies
+- **[My Horse Racing Strategy](My-Horse-Racing-Strategy.md)** - Comprehensive personal horse racing strategy
+- **[My Timeform Strategy](My-Timeform-Strategy.md)** - Timeform data-based selection strategy
+- **[Horse Racing Star Rating Strategy](Horse-Racing-Star-Rating-Strategy.md)** - Multi-factor star rating system
+- **[Horse Racing Jockey Strategy](Horse-Racing-Jockey-Strategy.md)** - Jockey performance-based betting
+
+#### Market Analysis & Data
+- **[Race Status](Race-Status.md)** - Real-time race status monitoring
+- **[Horse Racing Data Statistics](Horse-Racing-Data-Statistics.md)** - Comprehensive data analysis
+- **[Horse Racing Sportinglife Strategy](Horse-Racing-Sportinglife-Strategy.md)** - Sportinglife data integration
+- **[Horse Racing Betfair SP Strategy](Horse-Racing-Betfair-SP-Strategy.md)** - Starting price-based strategy
+- **[Horse Racing Trigger Bot](Horse-Racing-Trigger-Bot.md)** - Multi-factor trigger system
+
+#### Data Recording & Reporting
+- **[Race Data to Spreadsheet](Race-Data-to-Spreadsheet.md)** - Export race data for analysis
+- **[Horse Racing Db-ML Report Data to Spreadsheet](Horse-Racing-Db-ML-Report-Data-to-Spreadsheet.md)** - ML analysis data export
+- **[Horse Racing Db-ML Report Predictions Data to Spreadsheet](Horse-Racing-Db-ML-Report-Predictions-Data-to-Spreadsheet.md)** - ML prediction reporting
+- **[Horse Racing Report Data to Spreadsheet](Horse-Racing-Report-Data-to-Spreadsheet.md)** - General race reporting
+
+### Specialized Analysis Strategies
+
+#### Expert & Third-Party Integration
+- **[Horse Racing Expert Selections](Horse-Racing-Expert-Selections.md)** - Expert tipster selection system
+- **[AtTheRaces Data to Spreadsheet](AtTheRaces-Data-to-Spreadsheet.md)** - AtTheRaces data integration
+- **[AtTheRaces Bot Trigger](AtTheRaces-Bot-Trigger.md)** - AtTheRaces-based triggers
+- **[Racingpost Data to Spreadsheet](Racingpost-Data-to-Spreadsheet.md)** - Racing Post data integration
+
+### Legacy Documentation
+
 ### [How to Use AI Agents for Smarter Horse Racing Betting: A Beginner's Guide](HowToUseAIAgentForHorseRacingBetting.md)
 **Complete Beginner's Guide to AI-Powered Betting**
 - Comprehensive introduction to Expected Value concepts

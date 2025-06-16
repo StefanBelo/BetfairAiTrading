@@ -28,18 +28,6 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 
 ### Strategy Management
 
-#### GetBfexplorerStrategyTemplates
-- **Purpose**: Lists all available strategy templates in Bfexplorer
-- **Parameters**: None
-- **Returns**: JSON array of strategy template names and their configurations
-- **Use Case**: Discover available trading strategies before execution
-
-#### GetBfexplorerStrategySettings
-- **Purpose**: Retrieves available strategy configurations and settings
-- **Parameters**: None  
-- **Returns**: JSON object containing strategy settings and parameters
-- **Use Case**: Understand configurable parameters for strategies before execution
-
 #### ExecuteBfexplorerStrategySettings
 - **Purpose**: Executes a trading strategy on a selected market/selection
 - **Parameters**:
@@ -82,7 +70,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 - Must correspond to active selections in the specified market
 
 ### Strategy Names
-- Must exactly match strategy names from `GetBfexplorerStrategySettings`
+- Must exactly match strategy names from `BfexplorerStrategySettings`
 - Case-sensitive string matching
 - Common examples might include: "Bet 10 Euro", "Trade 3 ticks"
 

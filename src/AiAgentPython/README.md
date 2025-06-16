@@ -148,7 +148,6 @@ The agents have access to these MCP tools through BfexplorerApp:
 - `GetDataContextForBetfairMarketSelection`: Get selection-specific information
 
 ### Strategy Execution
-- `GetBfexplorerStrategySettings`: List available strategies
 - `ExecuteBfexplorerStrategySettings`: Execute strategy on selection
 - `ExecuteBfexplorerStrategySettingsOnSelections`: Execute on multiple selections
 

@@ -147,7 +147,6 @@ Both implementations have access to these BfexplorerApp MCP tools:
 - `GetDataContextForBetfairMarketSelection`: Get selection-specific information
 
 ### Strategy Execution
-- `GetBfexplorerStrategySettings`: List available strategies
 - `ExecuteBfexplorerStrategySettings`: Execute strategy on selection
 - `ExecuteBfexplorerStrategySettingsOnSelections`: Execute on multiple selections
 

@@ -8,7 +8,7 @@ Whether you're new to the Betfair Exchange or a seasoned trader, this is your hu
 
 ## 🚀 Quick Start: AI Agents + Betfair Trading
 
-**New to AI-powered trading?** Check out our **[Reddit Community Post](reddit_post.md)** for a quick introduction to how AI agents can revolutionize your Betfair trading experience - turning 30-60 minute race analysis into 10-second professional insights!
+**New to AI-powered trading?** Check out our comprehensive documentation to learn how AI agents can revolutionize your Betfair trading experience - turning 30-60 minute race analysis into 10-second professional insights!
 
 ## 🎯 What We're About
 

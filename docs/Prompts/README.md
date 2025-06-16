@@ -103,6 +103,18 @@ This directory contains specialized prompts for AI-powered analysis of Betfair m
 - Silent analysis with automated favorite evaluation and execution
 - **Best for:** Automated conservative betting with minimal reporting
 
+#### [HorseRacingExecutionOnlyNoReports.md](HorseRacingExecutionOnlyNoReports.md)
+**Silent Execution Strategy with No Analysis Reports**
+- Pure execution strategy with no analysis output or reports
+- **Best for:** Silent automated execution without analysis documentation
+
+### Football Analysis
+
+#### [FootballMatchFSharpCodeCreation.md](FootballMatchFSharpCodeCreation.md)
+**Football Match F# Code Generation**
+- Generates F# code for football match analysis and trading strategies
+- **Best for:** Developers creating custom football analysis applications
+
 ### System Integration
 
 #### [BfexplorerMCPIntegrationSystemPrompt.md](BfexplorerMCPIntegrationSystemPrompt.md)

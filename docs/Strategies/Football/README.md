@@ -1,23 +1,17 @@
-# Football Trading Strategies
+# Football Strategies
 
-This directory contains specialized trading strategies for football (soccer) markets on the Betfair Exchange.
+This directory contains Bfexplorer strategies specifically designed for football (soccer) betting and trading. These strategies leverage live match data, score analysis, and specialized football betting approaches.
 
 ## Available Strategies
 
-### [Football Betfair Trading Strategy: Over/Under Goals Market](TradeOverUnderGoals.md)
-**In-Play Over/Under 2.5 Goals Trading**
-- Focuses on the popular Over/Under 2.5 goals market
-- In-play trading approach with dynamic odds analysis
-- Risk management techniques for goal-based markets
-- Entry and exit timing strategies
-- **Best for:** Traders interested in goal-based markets with clear statistical patterns
+### Core Football Strategies
+- **[Football Strategy](Football-Strategy.md)** - Comprehensive football strategy with match time, score, and score difference triggers
+- **[Football Draw Strategy](Football-Draw-Strategy.md)** - Specialized strategy for managing draw positions based on match time
+- **[Football Statarea Strategy](Football-Statarea-Strategy.md)** - Strategy that integrates with Statarea tipster data for informed betting decisions
 
-### [Football Score-Based Market Opener Guide](OpenMyMarketsByScore.md)
-**Automated Market Opening Based on Match Scores**
-- Automatically opens relevant markets when specific score conditions are met
-- Customizable score triggers for different trading opportunities
-- Integration with BFExplorer for seamless execution
-- Multiple market type support
+### Legacy Trading Strategies
+- **[Football Betfair Trading Strategy: Over/Under Goals Market](TradeOverUnderGoals.md)** - In-play Over/Under 2.5 goals trading approach
+- **[Football Score-Based Market Opener Guide](OpenMyMarketsByScore.md)** - Automated market opening based on match scores
 - **Best for:** Traders wanting automated market access based on live match developments
 
 ## Market Focus Areas

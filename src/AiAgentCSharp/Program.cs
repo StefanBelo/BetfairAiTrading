@@ -4,6 +4,7 @@ using ModelContextProtocol.Client;
 
 try
 {
+    #if UseSamplingClient
     // Sampling Chat client
     IChatClient samplingClient = 
         //AiAgentHelpers.CreateGithubChatClient("openai/gpt-4.1");
@@ -14,6 +15,7 @@ try
     {
         Console.Write(update);
     }
+    #endif
 
     Console.WriteLine("\n\nTools available:");
 
@@ -28,7 +30,9 @@ try
             ),
             new McpClientOptions
             {
+                #if UseSamplingClient
                 Capabilities = new() { Sampling = new() { SamplingHandler = samplingClient.CreateSamplingHandler() } }
+                #endif
             }
         );
 
@@ -46,7 +50,7 @@ try
 
     var chatOptions = new ChatOptions 
         { 
-            Tools = [.. tools] 
+            Tools = [.. tools]
         };
 
     // Chat client

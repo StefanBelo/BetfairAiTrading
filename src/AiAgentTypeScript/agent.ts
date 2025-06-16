@@ -79,8 +79,6 @@ class MCPAgent {
     const toolMapping: Record<string, string> = {
       "active market": "mcp_bfexplorerapp_GetActiveBetfairMarket",
       "monitored markets": "mcp_bfexplorerapp_GetBetfairMonitoredMarkets",
-      "strategy settings": "mcp_bfexplorerapp_GetBfexplorerStrategySettings",
-      "strategy templates": "mcp_bfexplorerapp_GetBfexplorerStrategyTemplates"
     };
 
     // Find matching tool

@@ -2,16 +2,9 @@
 
 ## Quick Start
 
-### [Reddit Community Introduction](../reddit_post.md)
-**🚀 AI Agents + Betfair Trading = Game Changer**
-- Quick 2-minute overview of revolutionary AI-powered trading
-- Key benefits: 30-60 min analysis → 10 seconds with AI agents
-- Simple MCP SSE setup for immediate results
-
 ## For Beginners
 
 - [How Non-Developers Can Update Code with AI Assistance](NonDevelopers.md)
-- [MCP Resource Subscription for Real-Time Analysis](MCP_Resource_Subscription.md) - Server-Sent Events integration guide
 
 ## How to Test
 
@@ -45,6 +38,10 @@
 - [Horse Racing EV Rankings Table Only](Prompts/HorseRacingEVRankingsTableOnly.md) - Quick rankings generation
 - [Horse Racing EV Analysis Minimal](Prompts/HorseRacingEVAnalysisMinimal.md) - Silent analysis with minimal output
 - [Horse Racing EV Analysis Minimal Execution](Prompts/HorseRacingEVAnalysisMinimalExecution.md) - Automated conservative betting with minimal reporting
+- [Horse Racing Execution Only No Reports](Prompts/HorseRacingExecutionOnlyNoReports.md) - Silent execution strategy with no analysis reports
+
+### Football Code Generation
+- [Football Match F# Code Creation](Prompts/FootballMatchFSharpCodeCreation.md) - Generate F# code for football match analysis
 
 ### General Tools
 - [Trading Chart Creation](Prompts/TradingChartCreation.md) - Interactive financial chart creation from MCP time series data

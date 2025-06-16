@@ -2,15 +2,6 @@
 
 This directory contains comprehensive guides on implementing AI-powered automation for Betfair trading using BFExplorer.
 
-## Quick Start
-
-### [Reddit Community Introduction](../../reddit_post.md)
-**🚀 AI Agents + Betfair Trading = Game Changer**
-- Quick 2-minute overview of the technology and benefits
-- Key advantages: 30-60 min analysis → 10 seconds with AI
-- Simple setup instructions for immediate results
-- **Best for:** First-time users wanting a quick introduction
-
 ## Comprehensive Setup Guide
 
 ### [Getting Started with Agentic Bfexplorer App](HowToStartWithAgenticBfexplorerApp.md)

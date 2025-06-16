@@ -1,4 +1,5 @@
 import asyncio
+from mcp_agent import RequestParams
 from mcp_agent.core.fastagent import FastAgent
 
 # Create the application
@@ -7,7 +8,12 @@ fast = FastAgent("Bfexplorer Assistant")
 # Define the agent
 @fast.agent(name="BfexplorerApp", 
     instruction="You are a helpful AI Agent executing betting/trading strategies on bfexplorer.", 
-    model="deepseek-chat", 
+    model="deepseek-chat",
+    request_params=RequestParams(
+      maxTokens=8192,
+      use_history=False,
+      max_iterations=10
+    ), 
     servers=["BfexplorerApp"]
 )
 async def main():
