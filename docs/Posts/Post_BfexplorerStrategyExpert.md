@@ -3,7 +3,10 @@
 ## TL;DR: Used an AI assistant with the Bfexplorer Strategy Expert prompt to solve complex betting strategy combinations instantly.
 
 ### My Problem:
-I wanted to place a **100 Euro back bet to be first in the queue**, then **close the position using a 3-tick trailing stop loss**. Sounds simple, but I had no idea which of the 100+ Bfexplorer strategies to use or how to combine them.
+
+"I want to place a back bet of 100 Euro to be first in the queue, then close the position using a trailing stop loss of 3 ticks. Can you advise what strategies to use to combine this execution approach?" 
+
+Sounds simple, but I had no idea which of the 100+ Bfexplorer strategies to use or how to combine them.
 
 ### The Magic Solution:
 Found this **Strategy Expert System Prompt** in the BetfairAiTrading repo that turns any AI assistant into a Bfexplorer expert. Here's what happened:

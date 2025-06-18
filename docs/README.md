@@ -53,6 +53,7 @@
 **[📖 Complete Posts Index](Posts/README.md)**
 
 ### Real-World Experiences
+- [AI Agent Horse Racing Analysis: The Power of Backtesting & Continuous Learning](Posts/Post_AIAgentBacktestingAndLearning.md) - Building adaptive AI agents that learn from results
 - [How I Became a Betfair Strategy Expert in Minutes](Posts/Post_BfexplorerStrategyExpert.md) - Real success story using AI strategy assistance
 
 ## Strategies

@@ -4,6 +4,14 @@ This directory contains community posts, articles, and real-world examples showc
 
 ## Available Posts
 
+### [AI Agent Horse Racing Analysis: The Power of Backtesting & Continuous Learning](Post_AIAgentBacktestingAndLearning.md)
+**AI Learning & Improvement**
+- Real-world example of AI agent analyzing Royal Ascot race
+- Demonstrates dual-source EV analysis (trading patterns + performance semantics)
+- Proposes backtesting framework for AI agent improvement
+- Technical implementation of learning feedback loops
+- **Best for:** Understanding how to build adaptive AI agents that learn from results
+
 ### [How I Became a Betfair Strategy Expert in Minutes (Real Example)](Post_BfexplorerStrategyExpert.md)
 **Real-World Success Story**
 - Personal experience using the BfexplorerStrategyExpert AI prompt
@@ -31,6 +39,8 @@ This directory contains community posts, articles, and real-world examples showc
 - Time-saving automation examples
 - Learning curve experiences and breakthrough moments
 - Technical implementation insights
+- AI backtesting and continuous improvement frameworks
+- Adaptive learning systems and feedback loops
 
 ## Community Guidelines
 
