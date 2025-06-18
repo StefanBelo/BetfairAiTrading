@@ -44,7 +44,7 @@ This turned me from a confused newbie into someone who understands strategy comb
 - "What's the best way to dutch multiple selections with trailing stops?"
 - "How do I automate tennis serve break strategies?"
 
-**Link to the repo:** [BetfairAiTrading on GitHub](https://github.com/yourusername/BetfairAiTrading)
+**Link to the repo:** [BetfairAiTrading on GitHub](https://github.com/StefanBelo/BetfairAiTrading)
 
 Anyone else using AI assistants for trading strategy development? This approach has completely changed my game.
 
