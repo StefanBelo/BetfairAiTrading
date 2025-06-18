@@ -46,6 +46,14 @@
 ### General Tools
 - [Trading Chart Creation](Prompts/TradingChartCreation.md) - Interactive financial chart creation from MCP time series data
 - [BFExplorer MCP Integration System Prompt](Prompts/BfexplorerMCPIntegrationSystemPrompt.md) - System integration guidance
+- [BFExplorer Strategy Expert Prompt](Prompts/BfexplorerStrategyExpertPrompt.md) - AI assistant for strategy selection and configuration
+
+## Community Posts
+
+**[📖 Complete Posts Index](Posts/README.md)**
+
+### Real-World Experiences
+- [How I Became a Betfair Strategy Expert in Minutes](Posts/Post_BfexplorerStrategyExpert.md) - Real success story using AI strategy assistance
 
 ## Strategies
 
@@ -63,3 +71,22 @@
 ### Tennis
 - [Tennis Data to Spreadsheet](Strategies/Tennis/DataToSpreadsheet.md)
 - [Tennis Score-Based Market Opener Guide](Strategies/Tennis/OpenMyMarketsByScore.md)
+
+## AI Agent Implementations
+
+Ready-to-use AI agents for automated trading:
+
+### [Python AI Agent](../src/AiAgentPython/README.md)
+- FastAgent framework with MCP integration
+- Automated horse racing EV analysis with conservative betting
+- Interactive mode for manual testing and exploration
+
+### [C# AI Agent](../src/AiAgentCSharp/README.md)
+- Multi-AI provider support (OpenAI GPT-4, DeepSeek)
+- Model Context Protocol client integration
+- Strategy automation capabilities
+
+### [JavaScript AI Agent](../src/AiAgentTypeScript/README.md)
+- Interactive chat console for betting analysis
+- GitHub Models integration
+- Educational and exploratory AI assistant

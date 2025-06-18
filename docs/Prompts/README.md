@@ -123,6 +123,14 @@ This directory contains specialized prompts for AI-powered analysis of Betfair m
 - Technical guidance for MCP (Model Context Protocol) integration
 - **Best for:** Setting up automated AI analysis workflows
 
+#### [BfexplorerStrategyExpertPrompt.md](BfexplorerStrategyExpertPrompt.md)
+**BFExplorer Strategy Expert System**
+- Comprehensive AI assistant prompt for strategy selection and configuration
+- Expert knowledge of all 60+ BFExplorer strategy templates and parameters
+- Plain English strategy recommendations with exact parameter settings
+- Covers betting, trading, risk management, and sport-specific strategies
+- **Best for:** Getting expert-level strategy advice and configuration help instantly
+
 ### Data Visualization
 
 #### [TradingChartCreation.md](TradingChartCreation.md)

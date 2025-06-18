@@ -10,6 +10,8 @@ Whether you're new to the Betfair Exchange or a seasoned trader, this is your hu
 
 **New to AI-powered trading?** Check out our comprehensive documentation to learn how AI agents can revolutionize your Betfair trading experience - turning 30-60 minute race analysis into 10-second professional insights!
 
+**Want instant strategy expertise?** Try our **[BFExplorer Strategy Expert Prompt](docs/Prompts/BfexplorerStrategyExpertPrompt.md)** - turn any AI assistant into a strategy configuration expert with knowledge of all 60+ BFExplorer strategies!
+
 ## 🎯 What We're About
 
 Our community is dedicated to bridging the gap between traditional sports betting and cutting-edge technology. We help members learn and apply:
@@ -53,6 +55,14 @@ Ready-to-use AI prompts for various sports and analysis types:
 #### General Trading
 - **[Trading Chart Creation](docs/Prompts/TradingChartCreation.md)** - Create interactive financial charts
 - **[BFExplorer MCP Integration](docs/Prompts/BfexplorerMCPIntegrationSystemPrompt.md)** - System integration guide
+- **[BFExplorer Strategy Expert](docs/Prompts/BfexplorerStrategyExpertPrompt.md)** - AI assistant for strategy selection and configuration
+
+### 🗣️ Community Stories & Posts
+
+**[📖 Complete Posts Index](docs/Posts/README.md)**
+
+Real experiences from community members:
+- **[How I Became a Strategy Expert in Minutes](docs/Posts/Post_BfexplorerStrategyExpert.md)** - Success story using AI strategy assistance
 
 ### 🛠️ Ready-to-Use Strategies
 
@@ -78,7 +88,10 @@ Pre-built strategies for multiple sports:
 
 ### 💻 Code & Development
 
-#### Source Code (`src/`)
+#### AI Agent Implementations (`src/`)
+- **[Python AI Agent](src/AiAgentPython/README.md)** - Advanced FastAgent-based automation with MCP integration
+- **[C# AI Agent](src/AiAgentCSharp/README.md)** - Multi-AI provider support with Model Context Protocol client
+- **[JavaScript AI Agent](src/AiAgentTypeScript/README.md)** - Interactive AI assistant for betting analysis
 - **F# Applications** - Robust trading applications
 - **Strategy Implementations** - Sport-specific algorithms
 - **BFExplorer Integration** - Seamless automation tools
@@ -105,6 +118,7 @@ Pre-built strategies for multiple sports:
 - **[Download BFExplorer](https://drive.google.com/file/d/1_Ta7K3Spv9WoPV_m5GLzQvJm9x8GqN_J/view?usp=sharing)** - Get the official BFExplorer application
 - Read our [BFExplorer guide](BFExplorer.md) to understand the platform
 - Test with our sample strategies in `data/Strategies/`
+- Try the **[Strategy Expert Prompt](docs/Prompts/BfexplorerStrategyExpertPrompt.md)** for instant strategy advice
 
 **📋 Important Requirements:**
 - **Betfair Exchange Account Required**: To use BFExplorer, you'll need an active Betfair Exchange account
@@ -125,18 +139,23 @@ Pre-built strategies for multiple sports:
 
 | Sport | Focus Areas | Resources |
 |-------|-------------|-----------|
-| **🐎 Horse Racing** | Form analysis, EV calculations, Dutch betting | [Strategies](docs/Strategies/) \| [AI Prompts](docs/Prompts/) |
-| **⚽ Football** | Over/Under markets, in-play trading | [Examples](examples/) \| [Notebooks](tests/notebooks/) |
-| **🎾 Tennis** | Momentum trading, set analysis | [Code](src/Strategies/Tennis/) \| [Data](data/Strategies/) |
+| **🐎 Horse Racing** | Form analysis, EV calculations, Dutch betting | [Strategies](docs/Strategies/HorseRacing/) \| [AI Prompts](docs/Prompts/) |
+| **⚽ Football** | Over/Under markets, in-play trading | [Strategies](docs/Strategies/Football/) \| [Examples](examples/) |
+| **🎾 Tennis** | Momentum trading, set analysis, serve strategies | [Strategies](docs/Strategies/Tennis/) \| [Data](data/Strategies/) |
+| **🏀 Basketball** | ML-based scoring analysis | [Strategies](docs/Strategies/Basketball/) |
+| **🐕 Greyhound Racing** | ML ratings, dutching strategies | [Strategies](docs/Strategies/GreyhoundRacing/) |
 
 ## 🔧 Technology Stack
 
-- **BFExplorer** - Primary trading platform
-- **F#** - Core development language
-- **Python** - Data analysis and ML
-- **JavaScript/HTML** - Interactive charts
+- **BFExplorer** - Primary trading platform with MCP server integration
+- **AI Agents** - Python (FastAgent), C# (ModelContextProtocol.Client), JavaScript implementations
+- **F#** - Core development language for robust trading applications
+- **Python** - Data analysis, ML, and FastAgent-based automation
+- **C#** - Multi-AI provider integration with MCP clients
+- **JavaScript/HTML** - Interactive charts and web interfaces
 - **Jupyter Notebooks** - Research and backtesting
-- **AI/LLM Integration** - Strategy enhancement
+- **AI/LLM Integration** - Strategy enhancement with multiple model providers (OpenAI, DeepSeek, Claude)
+- **Model Context Protocol (MCP)** - Real-time data exchange and strategy execution
 
 ## 🤝 Community Guidelines
 

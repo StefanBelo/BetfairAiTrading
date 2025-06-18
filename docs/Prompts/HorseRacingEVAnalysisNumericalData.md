@@ -59,22 +59,31 @@ Instructions:
         - Risk filter: Penalize consistently low performers
 
 4. **Win Probability Assessment**
-   - Calculate win probabilities based on combined performance scores
+   - Calculate realistic win probabilities using market-adjusted methodology
    - **Calculation Methodology:**
      - Horse Performance Score: `(horseInPlayRating × 4.0) + (isPreviousWinner ? 2.0 : 0) + (horseInPlayRatingTrend × 1.0) - (isBeatenFavourite ? 1.0 : 0)`
      - Jockey Performance Score: `(jockeyInPlayRating × 2.0) + (jockeyWinnerPercentageInLastX × 3.0) + (jockeyInPlayRatingTrend × 1.5)`
      - Combined Score: `(Horse Score × 0.7) + (Jockey Score × 0.3)`
-     - Win Probability: Normalize combined scores to ensure total ≈ 100%
-   - Factor in trend momentum and consistency indicators
-   - Apply minimum probability thresholds (≥1% per horse)
-   - Document calculation methodology for each probability assignment
+     - **Market-Implied Probabilities:** Calculate baseline using `1/decimal_odds` for each horse
+     - **Performance Adjustment:** Modify market probabilities based on performance scores:
+       - High performers (score > 2.0): Multiply market probability by 1.5-2.5
+       - Average performers (score 0.8-2.0): Multiply market probability by 0.9-1.1  
+       - Poor performers (score < 0.8): Multiply market probability by 0.6-0.9
+     - **Final Probabilities:** Normalize adjusted probabilities to ensure total = 100%
+   - Apply conservative adjustment factors to maintain market efficiency principles
+   - Document both market-implied and performance-adjusted probabilities
 
 5. **Expected Value Calculations**
    - Calculate EV for backing each horse using formula:
-     EV = (Win Probability × (Decimal Odds - 1)) - (1 - Win Probability)
-   - Identify horses with positive EV (value bets)
-   - Identify horses with significantly negative EV (lay opportunities)
+     EV = (Adjusted Win Probability × (Decimal Odds - 1)) - (1 - Adjusted Win Probability)
+   - Express EV as both absolute value (profit per unit bet) and percentage
+   - **Realistic EV Expectations:**
+     - Typical positive EV range: +5% to +50% (exceptional circumstances may show higher)
+     - Values above +100% should be rare and carefully validated
+     - Negative EV indicates overvalued horses in the market
+   - Identify horses with positive EV (value bets) using conservative probability adjustments
    - Rank all horses by EV from highest to lowest
+   - **EV Validation:** Compare calculated probabilities with market-implied probabilities to ensure realistic edges
 
 6. **Dutch Betting Qualification Analysis**
    - Identify the top 3 horses based on combined criteria:
@@ -119,11 +128,11 @@ Instructions:
    - Combined performance score calculation
    - Assigned win probability with calculation basis
    - Calculated Expected Value
-   - Final ranking position
-
-   **C) EV Rankings Table:**
+   - Final ranking position   **C) EV Rankings Table:**
    - All horses ranked by Expected Value (highest to lowest)
-   - Include: Horse Name, Current Price, Win Probability, EV %, Performance Score
+   - Include: Horse Name, Current Price, Market Prob, Adjusted Prob, Win Probability, EV %, Performance Score
+   - Show both market-implied and performance-adjusted probabilities for transparency
+   - Highlight horses with EV > +10% as potential value bets
    - Highlight the three selected horses for Dutch betting
 
    **D) Dutch Selections Summary Table:**
@@ -156,6 +165,11 @@ Instructions:
      - Jockey win percentage vs market expectations
      - Trend momentum predictive value
      - Risk factor identification (low ratings, negative trends)
+   - **Market Efficiency Analysis:**
+     - Comparison of market-implied vs performance-adjusted probabilities
+     - Identification of significant probability gaps (>5% difference)
+     - Assessment of market biases and potential mispricing
+     - Validation of EV calculations against realistic expectations
    - Comparative analysis of selected horses vs field
    - Data-driven confidence levels for selections
 
@@ -221,7 +235,7 @@ Note: This analysis relies purely on quantitative evaluation of numerical perfor
 The analysis will automatically select three horses that best combine:
 
 **Primary Criteria:**
-- **Positive Expected Value** - Mathematical edge based on numerical analysis
+- **Realistic Positive Expected Value** - Conservative mathematical edge based on market-adjusted probability analysis (typically +10% to +50%)
 - **Strong Performance Scores** - High `horseInPlayRating` and `jockeyInPlayRating` combinations
 - **High Combined Probability** - Combined win probability must be >= 70% for execution
 
@@ -233,8 +247,9 @@ The analysis will automatically select three horses that best combine:
 
 **Numerical Data Advantages:**
 - **Objective Analysis** - No subjective interpretation required
-- **Consistent Methodology** - Repeatable and standardized approach
-- **Statistical Reliability** - Data-driven probability calculations
+- **Market-Aware Methodology** - Balances performance data with market efficiency
+- **Conservative EV Calculations** - Realistic expectation management
+- **Statistical Reliability** - Data-driven probability calculations with market validation
 - **Comprehensive Coverage** - All available performance metrics utilized
 
 ## Automated Execution Sequence

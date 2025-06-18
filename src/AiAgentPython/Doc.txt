@@ -4,6 +4,8 @@ MCP
 
 uvx mcpo --port 10044 --server-type "sse" -- http://localhost:10043/sse
 
+npx -y mcp-remote http://localhost:10043/sse
+
 npx @modelcontextprotocol/inspector
 
 npx @mcpjam/inspector

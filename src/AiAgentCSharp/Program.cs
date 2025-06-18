@@ -44,10 +44,6 @@ try
     }
 
     // The main prompt  
-    string prompt = MyPrompts.ActiveBetfairMarket;
-
-    Console.WriteLine($"Question: {prompt}\n\nResponse:\n\n");
-
     var chatOptions = new ChatOptions 
         { 
             Tools = [.. tools]
@@ -57,6 +53,18 @@ try
     IChatClient chatClient = 
         //AiAgentHelpers.CreateGithubChatClient("openai/gpt-4.1");
         AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
+
+#if !UseSamplingClient
+    // Test the AI model
+    await foreach (var update in chatClient.GetStreamingResponseAsync("Who are you?"))
+    {
+        Console.Write(update);
+    }
+#endif
+
+    string prompt = MyPrompts.ActiveBetfairMarket;
+
+    Console.WriteLine($"\n\nQuestion: {prompt}\n\nResponse:\n\n");
 
     // Get the response
     List<ChatResponseUpdate> updates = [];
