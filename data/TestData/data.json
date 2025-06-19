@@ -1,0 +1,685 @@
+{
+  "analysis_metadata": {
+    "timestamp": "2025-06-19T16:10:00.000Z",
+    "market_id": "1.244896271",
+    "race_info": {
+      "event_name": "Ripon",
+      "race_name": "6f Hcap",
+      "start_time": "2025-06-19T18:10:00+02:00",
+      "total_runners": 12
+    },
+    "strategy_criteria": {
+      "expert_tips_weight": 0.4,
+      "performance_weight": 0.3,
+      "market_data_weight": 0.3,
+      "min_ev_betting": 0.1,
+      "min_probability_betting": 0.15,
+      "favorites_filter_applied": true,
+      "max_favorite_rank_for_execution": 3
+    }
+  },
+  "horses": [
+    {
+      "name": "Profiteer",
+      "selection_id": "47288_0.00",
+      "current_price": 6.2,
+      "price_rank": 1,
+      "favorite_status": 1,
+      "ev_rank": 1,
+      "execution_eligible": true,
+      "olbg_data": {
+        "total_tips": 1,
+        "nap_count": 0,
+        "nb_count": 0,
+        "win_tips": 1,
+        "ew_tips": 0,
+        "expert_consensus": "Moderate - single strong tip",
+        "tipster_quality": "Good analysis depth",
+        "confidence_level": "33% confidence with detailed reasoning"
+      },
+      "performance_data": {
+        "semantic_analysis": "Mixed recent form - led and hung right when headed last time, showing racing ability but some consistency issues",
+        "performance_signal": "Generally competitive with some wins and places, stays on in races",
+        "recent_form_summary": "Led over 1f out but hung right and headed - shows ability but some tactical issues",
+        "performance_confidence": "Moderate - consistent but some quirks"
+      },
+      "market_data": {
+        "opening_price": 6.0,
+        "price_movement": "Slight drift from 5.9 to 6.2",
+        "volume_traded": 3187.41,
+        "back_lay_ratio": 1.2,
+        "market_sentiment": "Strong support - highest volume",
+        "steam_moves": [],
+        "drift_analysis": "Minor price drift but high volume suggests confidence",
+        "liquidity_assessment": "Excellent - highest volume traded",
+        "price_stability": "Good - narrow trading range",
+        "volume_rank": 1
+      },
+      "analysis_results": {
+        "market_probability": 0.161,
+        "adjusted_probability": 0.185,
+        "expert_contribution": 0.066,
+        "performance_contribution": 0.055,
+        "market_contribution": 0.064,
+        "expected_value": 0.147,
+        "ev_rating": "Strong positive",
+        "ranking": 1,
+        "confidence_score": 0.78,
+        "tri_source_alignment": "Good convergence across sources"
+      }
+    },
+    {
+      "name": "Bulmer Bank",
+      "selection_id": "58383347_0.00",
+      "current_price": 8.2,
+      "price_rank": 2,
+      "favorite_status": 2,
+      "ev_rank": 2,
+      "execution_eligible": true,
+      "olbg_data": {
+        "total_tips": 1,
+        "nap_count": 0,
+        "nb_count": 0,
+        "win_tips": 1,
+        "ew_tips": 0,
+        "expert_consensus": "Moderate support - looking for maiden breakthrough",
+        "tipster_quality": "Reasonable assessment",
+        "confidence_level": "4% confidence - speculative"
+      },
+      "performance_data": {
+        "semantic_analysis": "Maiden after 13 starts with several places, showing ability but lacking winning edge",
+        "performance_signal": "Consistent placing record but struggling to win, gradual improvement signs",
+        "recent_form_summary": "Slowly away, outpaced but rallied - typical pattern for this horse",
+        "performance_confidence": "Moderate - consistent placer but unproven winner"
+      },
+      "market_data": {
+        "opening_price": 10.0,
+        "price_movement": "Strong contraction from 10.0 to 8.2",
+        "volume_traded": 1919.28,
+        "back_lay_ratio": 1.35,
+        "market_sentiment": "Positive - significant price contraction",
+        "steam_moves": [
+          "Price dropped from 10.0 to 8.2"
+        ],
+        "drift_analysis": "Strong steam move indicating informed money",
+        "liquidity_assessment": "Good volume for price level",
+        "price_stability": "Volatile - significant price movement",
+        "volume_rank": 6
+      },
+      "analysis_results": {
+        "market_probability": 0.122,
+        "adjusted_probability": 0.138,
+        "expert_contribution": 0.041,
+        "performance_contribution": 0.041,
+        "market_contribution": 0.056,
+        "expected_value": 0.087,
+        "ev_rating": "Moderate positive",
+        "ranking": 2,
+        "confidence_score": 0.65,
+        "tri_source_alignment": "Moderate convergence with market leading"
+      }
+    },
+    {
+      "name": "Marks Choice",
+      "selection_id": "18557498_0.00",
+      "current_price": 8.4,
+      "price_rank": 3,
+      "favorite_status": 3,
+      "ev_rank": 3,
+      "execution_eligible": true,
+      "olbg_data": {
+        "total_tips": 1,
+        "nap_count": 0,
+        "nb_count": 0,
+        "win_tips": 1,
+        "ew_tips": 0,
+        "expert_consensus": "Strong course specialist with excellent Ripon record",
+        "tipster_quality": "Excellent detailed analysis",
+        "confidence_level": "Confident backing with detailed reasoning"
+      },
+      "performance_data": {
+        "semantic_analysis": "Seasoned campaigner with strong course record, recent 4th at Thirsk shows current form",
+        "performance_signal": "Prolific course winner with 7 wins at Ripon, staying on well recently",
+        "recent_form_summary": "In touch with leaders, headway 2f out, kept on inside final furlong",
+        "performance_confidence": "High - proven course specialist"
+      },
+      "market_data": {
+        "opening_price": 10.0,
+        "price_movement": "Moderate contraction from 10.0 to 8.4",
+        "volume_traded": 1839.22,
+        "back_lay_ratio": 1.25,
+        "market_sentiment": "Positive - steady support",
+        "steam_moves": [],
+        "drift_analysis": "Gradual price contraction with consistent support",
+        "liquidity_assessment": "Adequate volume",
+        "price_stability": "Stable downward trend",
+        "volume_rank": 7
+      },
+      "analysis_results": {
+        "market_probability": 0.119,
+        "adjusted_probability": 0.135,
+        "expert_contribution": 0.054,
+        "performance_contribution": 0.051,
+        "market_contribution": 0.030,
+        "expected_value": 0.069,
+        "ev_rating": "Moderate positive",
+        "ranking": 3,
+        "confidence_score": 0.72,
+        "tri_source_alignment": "Good convergence with performance strength"
+      }
+    },
+    {
+      "name": "South Shore",
+      "selection_id": "55581778_0.00",
+      "current_price": 8.8,
+      "price_rank": 4,
+      "favorite_status": 4,
+      "ev_rank": 4,
+      "execution_eligible": false,
+      "olbg_data": {
+        "total_tips": 1,
+        "nap_count": 0,
+        "nb_count": 0,
+        "win_tips": 1,
+        "ew_tips": 0,
+        "expert_consensus": "Recent winner with positive momentum",
+        "tipster_quality": "Good analysis with recent form focus",
+        "confidence_level": "11% confidence"
+      },
+      "performance_data": {
+        "semantic_analysis": "Recent winner at Wetherby, took keen hold and burrowed up far rail to win",
+        "performance_signal": "Improving form with recent win, first-time hood helped",
+        "recent_form_summary": "Led narrowly inside final furlong, just held on - winning mentality",
+        "performance_confidence": "High - recent winner in good form"
+      },
+      "market_data": {
+        "opening_price": 10.0,
+        "price_movement": "Slight contraction from 10.0 to 8.8",
+        "volume_traded": 2334.32,
+        "back_lay_ratio": 1.15,
+        "market_sentiment": "Moderate positive",
+        "steam_moves": [],
+        "drift_analysis": "Steady support with good volume",
+        "liquidity_assessment": "Good - strong volume",
+        "price_stability": "Stable with minor contraction",
+        "volume_rank": 4
+      },
+      "analysis_results": {
+        "market_probability": 0.114,
+        "adjusted_probability": 0.125,
+        "expert_contribution": 0.025,
+        "performance_contribution": 0.060,
+        "market_contribution": 0.040,
+        "expected_value": 0.049,
+        "ev_rating": "Moderate positive",
+        "ranking": 4,
+        "confidence_score": 0.68,
+        "tri_source_alignment": "Performance leading with market support"
+      }
+    },
+    {
+      "name": "Roundhay Park",
+      "selection_id": "13356104_0.00",
+      "current_price": 10.0,
+      "price_rank": 5,
+      "favorite_status": 5,
+      "ev_rank": 8,
+      "execution_eligible": false,
+      "olbg_data": {
+        "total_tips": 1,
+        "nap_count": 0,
+        "nb_count": 0,
+        "win_tips": 1,
+        "ew_tips": 0,
+        "expert_consensus": "Veteran with course form but regressive",
+        "tipster_quality": "Mixed assessment",
+        "confidence_level": "4% confidence - speculative"
+      },
+      "performance_data": {
+        "semantic_analysis": "Regressive veteran with inconsistent recent form, multiple issues in races",
+        "performance_signal": "Struggling this year with various excuses, past his best",
+        "recent_form_summary": "Towards rear, waiting for room, outpaced - typical recent pattern",
+        "performance_confidence": "Low - veteran in decline"
+      },
+      "market_data": {
+        "opening_price": 11.0,
+        "price_movement": "Minor contraction from 11.0 to 10.0",
+        "volume_traded": 1917.17,
+        "back_lay_ratio": 1.0,
+        "market_sentiment": "Neutral to slight positive",
+        "steam_moves": [],
+        "drift_analysis": "Modest price contraction",
+        "liquidity_assessment": "Moderate volume",
+        "price_stability": "Stable minor improvement",
+        "volume_rank": 8
+      },
+      "analysis_results": {
+        "market_probability": 0.100,
+        "adjusted_probability": 0.090,
+        "expert_contribution": 0.018,
+        "performance_contribution": 0.018,
+        "market_contribution": 0.054,
+        "expected_value": -0.009,
+        "ev_rating": "Slight negative",
+        "ranking": 8,
+        "confidence_score": 0.42,
+        "tri_source_alignment": "Poor - all sources show weakness"
+      }
+    },
+    {
+      "name": "Raft Up",
+      "selection_id": "56776810_0.00",
+      "current_price": 12.5,
+      "price_rank": 6,
+      "favorite_status": 6,
+      "ev_rank": 5,
+      "execution_eligible": false,
+      "olbg_data": {
+        "total_tips": 1,
+        "nap_count": 0,
+        "nb_count": 0,
+        "win_tips": 1,
+        "ew_tips": 0,
+        "expert_consensus": "Recent winner but penalized",
+        "tipster_quality": "Good assessment of recent form",
+        "confidence_level": "11% confidence"
+      },
+      "performance_data": {
+        "semantic_analysis": "Won last time at Doncaster, staying on strongly but facing penalty",
+        "performance_signal": "Recent winner with good finishing kick, in form",
+        "recent_form_summary": "Led over 1f out, ridden briefly, kept on well - winning form",
+        "performance_confidence": "High - recent winner"
+      },
+      "market_data": {
+        "opening_price": 10.5,
+        "price_movement": "Drifted from 10.0 to 12.5",
+        "volume_traded": 2270.09,
+        "back_lay_ratio": 0.85,
+        "market_sentiment": "Negative - drifting",
+        "steam_moves": [],
+        "drift_analysis": "Significant drift suggests market doubts",
+        "liquidity_assessment": "Good volume",
+        "price_stability": "Poor - significant drift",
+        "volume_rank": 5
+      },
+      "analysis_results": {
+        "market_probability": 0.080,
+        "adjusted_probability": 0.105,
+        "expert_contribution": 0.025,
+        "performance_contribution": 0.045,
+        "market_contribution": 0.035,
+        "expected_value": 0.029,
+        "ev_rating": "Small positive",
+        "ranking": 5,
+        "confidence_score": 0.58,
+        "tri_source_alignment": "Mixed - performance vs market divergence"
+      }
+    },
+    {
+      "name": "Glendown",
+      "selection_id": "44148970_0.00",
+      "current_price": 11.5,
+      "price_rank": 7,
+      "favorite_status": 7,
+      "ev_rank": 6,
+      "execution_eligible": false,
+      "olbg_data": {
+        "total_tips": 1,
+        "nap_count": 0,
+        "nb_count": 0,
+        "win_tips": 1,
+        "ew_tips": 0,
+        "expert_consensus": "Well handicapped in lower class",
+        "tipster_quality": "Basic assessment",
+        "confidence_level": "Minimal confidence"
+      },
+      "performance_data": {
+        "semantic_analysis": "Mixed form with some recent improvement, ran too free issues",
+        "performance_signal": "Inconsistent with occasional good efforts",
+        "recent_form_summary": "Ducked right start, took keen hold, weakened over 1f out",
+        "performance_confidence": "Low - inconsistent performer"
+      },
+      "market_data": {
+        "opening_price": 16.0,
+        "price_movement": "Strong contraction from 16.0 to 11.5",
+        "volume_traded": 1781.90,
+        "back_lay_ratio": 1.4,
+        "market_sentiment": "Positive - significant backing",
+        "steam_moves": [
+          "Price dropped from 16.0 to 11.5"
+        ],
+        "drift_analysis": "Major steam move indicating strong support",
+        "liquidity_assessment": "Good volume",
+        "price_stability": "Very volatile - major movement",
+        "volume_rank": 9
+      },
+      "analysis_results": {
+        "market_probability": 0.087,
+        "adjusted_probability": 0.095,
+        "expert_contribution": 0.019,
+        "performance_contribution": 0.019,
+        "market_contribution": 0.057,
+        "expected_value": 0.022,
+        "ev_rating": "Small positive",
+        "ranking": 6,
+        "confidence_score": 0.45,
+        "tri_source_alignment": "Market leading with limited other support"
+      }
+    },
+    {
+      "name": "Brian The Snail",
+      "selection_id": "11773233_0.00",
+      "current_price": 13.5,
+      "price_rank": 8,
+      "favorite_status": 8,
+      "ev_rank": 7,
+      "execution_eligible": false,
+      "olbg_data": {
+        "total_tips": 5,
+        "nap_count": 1,
+        "nb_count": 0,
+        "win_tips": 5,
+        "ew_tips": 2,
+        "expert_consensus": "Strong veteran support with multiple tips",
+        "tipster_quality": "Very good with multiple expert backing",
+        "confidence_level": "22% confidence - highest among field"
+      },
+      "performance_data": {
+        "semantic_analysis": "Veteran showing no signs of age wearing, recent win and good second",
+        "performance_signal": "Excellent recent form with win and places, late runner",
+        "recent_form_summary": "Dwelt start, switched right, challenging inside final furlong, kept on",
+        "performance_confidence": "High - proven recent form"
+      },
+      "market_data": {
+        "opening_price": 13.0,
+        "price_movement": "Slight drift from 12.5 to 13.5",
+        "volume_traded": 1623.59,
+        "back_lay_ratio": 0.9,
+        "market_sentiment": "Neutral to slight negative",
+        "steam_moves": [],
+        "drift_analysis": "Minor drift despite expert support",
+        "liquidity_assessment": "Moderate volume",
+        "price_stability": "Stable with minor drift",
+        "volume_rank": 10
+      },
+      "analysis_results": {
+        "market_probability": 0.074,
+        "adjusted_probability": 0.098,
+        "expert_contribution": 0.059,
+        "performance_contribution": 0.039,
+        "market_contribution": 0.000,
+        "expected_value": 0.020,
+        "ev_rating": "Small positive",
+        "ranking": 7,
+        "confidence_score": 0.69,
+        "tri_source_alignment": "Expert and performance vs market divergence"
+      }
+    },
+    {
+      "name": "Hurstwood",
+      "selection_id": "23798673_0.00",
+      "current_price": 15.5,
+      "price_rank": 9,
+      "favorite_status": 9,
+      "ev_rank": 9,
+      "execution_eligible": false,
+      "olbg_data": {
+        "total_tips": 1,
+        "nap_count": 0,
+        "nb_count": 0,
+        "win_tips": 1,
+        "ew_tips": 0,
+        "expert_consensus": "Recent course winner",
+        "tipster_quality": "Basic",
+        "confidence_level": "4% confidence"
+      },
+      "performance_data": {
+        "semantic_analysis": "Recent course winner but facing penalty, mixed recent form",
+        "performance_signal": "Recent winner but inconsistent overall",
+        "recent_form_summary": "Led over 1f out, faced challenge, just did enough",
+        "performance_confidence": "Moderate - recent winner but inconsistent"
+      },
+      "market_data": {
+        "opening_price": 12.5,
+        "price_movement": "Drifted significantly from 12.5 to 15.5",
+        "volume_traded": 1486.37,
+        "back_lay_ratio": 0.8,
+        "market_sentiment": "Negative - significant drift",
+        "steam_moves": [],
+        "drift_analysis": "Major drift suggests market doubts about penalty",
+        "liquidity_assessment": "Moderate volume",
+        "price_stability": "Poor - significant drift",
+        "volume_rank": 11
+      },
+      "analysis_results": {
+        "market_probability": 0.065,
+        "adjusted_probability": 0.075,
+        "expert_contribution": 0.015,
+        "performance_contribution": 0.030,
+        "market_contribution": 0.030,
+        "expected_value": -0.003,
+        "ev_rating": "Slight negative",
+        "ranking": 9,
+        "confidence_score": 0.48,
+        "tri_source_alignment": "Weak across all sources"
+      }
+    },
+    {
+      "name": "Rock Of England",
+      "selection_id": "46250273_0.00",
+      "current_price": 14.5,
+      "price_rank": 10,
+      "favorite_status": 10,
+      "ev_rank": 10,
+      "execution_eligible": false,
+      "olbg_data": {
+        "total_tips": 1,
+        "nap_count": 0,
+        "nb_count": 0,
+        "win_tips": 1,
+        "ew_tips": 0,
+        "expert_consensus": "Disappointing recent form",
+        "tipster_quality": "Basic",
+        "confidence_level": "4% confidence"
+      },
+      "performance_data": {
+        "semantic_analysis": "Poor recent form with multiple disappointments, various excuses",
+        "performance_signal": "Struggling with form, multiple issues in races",
+        "recent_form_summary": "In touch with leaders, no impression from over 1f out",
+        "performance_confidence": "Low - poor current form"
+      },
+      "market_data": {
+        "opening_price": 14.0,
+        "price_movement": "Slight drift from 13.0 to 14.5",
+        "volume_traded": 1444.96,
+        "back_lay_ratio": 0.85,
+        "market_sentiment": "Negative",
+        "steam_moves": [],
+        "drift_analysis": "Gradual drift with limited support",
+        "liquidity_assessment": "Lower volume",
+        "price_stability": "Stable drift pattern",
+        "volume_rank": 12
+      },
+      "analysis_results": {
+        "market_probability": 0.069,
+        "adjusted_probability": 0.065,
+        "expert_contribution": 0.013,
+        "performance_contribution": 0.013,
+        "market_contribution": 0.039,
+        "expected_value": -0.011,
+        "ev_rating": "Negative",
+        "ranking": 10,
+        "confidence_score": 0.38,
+        "tri_source_alignment": "Poor convergence - all sources weak"
+      }
+    },
+    {
+      "name": "Flavius Titus",
+      "selection_id": "12942934_0.00",
+      "current_price": 85,
+      "price_rank": 11,
+      "favorite_status": 11,
+      "ev_rank": 11,
+      "execution_eligible": false,
+      "olbg_data": {
+        "total_tips": 1,
+        "nap_count": 0,
+        "nb_count": 0,
+        "win_tips": 1,
+        "ew_tips": 0,
+        "expert_consensus": "Course form but poor overall",
+        "tipster_quality": "Minimal",
+        "confidence_level": "4% confidence"
+      },
+      "performance_data": {
+        "semantic_analysis": "Poor overall form with occasional placed efforts, often slow start",
+        "performance_signal": "Weak form with limited ability",
+        "recent_form_summary": "Dwelt start, in rear, outpaced, nearest finish - typical pattern",
+        "performance_confidence": "Very low - limited ability shown"
+      },
+      "market_data": {
+        "opening_price": 55.0,
+        "price_movement": "Massive drift from 50.0 to 85.0",
+        "volume_traded": 557.27,
+        "back_lay_ratio": 0.3,
+        "market_sentiment": "Very negative",
+        "steam_moves": [],
+        "drift_analysis": "Massive drift with minimal support",
+        "liquidity_assessment": "Low volume",
+        "price_stability": "Very poor - major drift",
+        "volume_rank": 13
+      },
+      "analysis_results": {
+        "market_probability": 0.012,
+        "adjusted_probability": 0.020,
+        "expert_contribution": 0.004,
+        "performance_contribution": 0.004,
+        "market_contribution": 0.012,
+        "expected_value": -0.030,
+        "ev_rating": "Strongly negative",
+        "ranking": 11,
+        "confidence_score": 0.25,
+        "tri_source_alignment": "Poor across all sources"
+      }
+    },
+    {
+      "name": "Brazen Rascal",
+      "selection_id": "28467174_0.00",
+      "current_price": 70,
+      "price_rank": 12,
+      "favorite_status": 12,
+      "ev_rank": 12,
+      "execution_eligible": false,
+      "olbg_data": {
+        "total_tips": 1,
+        "nap_count": 0,
+        "nb_count": 0,
+        "win_tips": 1,
+        "ew_tips": 0,
+        "expert_consensus": "No recommendation",
+        "tipster_quality": "Minimal",
+        "confidence_level": "4% confidence"
+      },
+      "performance_data": {
+        "semantic_analysis": "Very poor form with no wins from 11 starts, consistent struggles",
+        "performance_signal": "No ability shown, consistent poor form",
+        "recent_form_summary": "Midfield, outpaced, weakened gradually - typical poor effort",
+        "performance_confidence": "Very low - no wins from 11 starts"
+      },
+      "market_data": {
+        "opening_price": 110.0,
+        "price_movement": "Strengthened from 120.0 to 70.0",
+        "volume_traded": 341.20,
+        "back_lay_ratio": 0.4,
+        "market_sentiment": "Very negative despite price contraction",
+        "steam_moves": [],
+        "drift_analysis": "Price contraction but still very weak",
+        "liquidity_assessment": "Very low volume",
+        "price_stability": "Volatile but at weak levels",
+        "volume_rank": 14
+      },
+      "analysis_results": {
+        "market_probability": 0.014,
+        "adjusted_probability": 0.015,
+        "expert_contribution": 0.003,
+        "performance_contribution": 0.003,
+        "market_contribution": 0.009,
+        "expected_value": -0.035,
+        "ev_rating": "Strongly negative",
+        "ranking": 12,
+        "confidence_score": 0.20,
+        "tri_source_alignment": "Very poor across all sources"
+      }
+    }
+  ],
+  "selection": {
+    "selected_horse": "Profiteer",
+    "selection_reasoning": "Highest EV horse (0.147) among top 3 favorites with strong convergence across all data sources",
+    "strategy_chosen": "Back trailing stop loss trading",
+    "strategy_reasoning": "High confidence with EV > 0.1, win probability 18.5%, excellent volume support and expert backing",
+    "execution_status": "Executed",
+    "risk_assessment": "Low risk - favorite with strong support across all sources",
+    "favorites_constraint_applied": true,
+    "favorite_rank_of_selection": 1,
+    "ev_rank_of_selection": 1,
+    "best_ev_horse_was_favorite": true,
+    "tri_source_convergence": "Excellent - expert tip, strong performance signals, and highest market volume",
+    "alternative_selections": [
+      "Bulmer Bank (2nd favorite, EV 0.087)",
+      "Marks Choice (3rd favorite, EV 0.069)"
+    ]
+  },
+  "market_analysis": {
+    "efficiency_assessment": "Market generally efficient with some value opportunities in favorites",
+    "value_opportunities": [
+      "Profiteer - strong EV with highest volume",
+      "Bulmer Bank - steam move from 10.0 to 8.2",
+      "Marks Choice - course specialist with solid backing"
+    ],
+    "market_biases": [
+      "Overvaluing recent winners with penalties",
+      "Underestimating course specialists",
+      "Strong volume bias toward shorter-priced horses"
+    ],
+    "expert_consensus_summary": "Mixed field with Profiteer and course specialist Marks Choice getting strongest expert support",
+    "top_3_favorites": [
+      "Profiteer (6.2)",
+      "Bulmer Bank (8.2)",
+      "Marks Choice (8.4)"
+    ],
+    "overall_market_sentiment": "Concentrated on shorter-priced horses with clear favorite emerging",
+    "volume_distribution": {
+      "total_volume": 20703.45,
+      "top_3_volume_share": 0.35,
+      "profiteer_dominance": true
+    },
+    "price_movement_summary": "Mixed movements with steam moves on Bulmer Bank and Glendown, drifts on outsiders",
+    "steam_activity": [
+      "Bulmer Bank: 10.0 to 8.2",
+      "Glendown: 16.0 to 11.5"
+    ],
+    "drift_patterns": [
+      "Raft Up: 10.0 to 12.5",
+      "Hurstwood: 12.5 to 15.5",
+      "Flavius Titus: 50.0 to 85.0"
+    ],
+    "liquidity_analysis": {
+      "excellent_liquidity": [
+        "Profiteer"
+      ],
+      "good_liquidity": [
+        "Raft Up",
+        "South Shore",
+        "Bulmer Bank",
+        "Marks Choice"
+      ],
+      "moderate_liquidity": [
+        "Roundhay Park",
+        "Brian The Snail",
+        "Glendown",
+        "Hurstwood"
+      ]
+    },
+    "market_efficiency_score": 0.75
+  }
+}

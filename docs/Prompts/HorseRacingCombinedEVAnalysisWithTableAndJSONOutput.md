@@ -128,13 +128,12 @@ Instructions:
    - All horses ranked by Expected Value (highest to lowest)
    - Include: Horse Name, Current Price, Start Price, **Probability Change (%)**, Traded Volume, Trading Signal, Performance Signal, Combined Win Probability, EV, EV Rating
    - Highlight the selected horse for betting
-   - Format as clear markdown table for easy reading
-
-   **D) Complete Horse Analysis JSON:**
+   - Format as clear markdown table for easy reading   **D) Complete Horse Analysis JSON Storage:**
    - Generate comprehensive JSON containing all horses with detailed analysis data
    - Include all calculated metrics, trading signals, performance indicators
    - Structure for easy data processing and further analysis
-   - Format for API consumption or database storage
+   - Store JSON data to BfexplorerApp using tool: SetAIAgentDataContextForBetfairMarket
+   - Use dataContextName: "HorseRacingEVAnalysisResults"
    - Include metadata about race, market conditions, and analysis parameters
    - Structure should include:
      * Race metadata (market ID, event, race name, start time)
@@ -164,10 +163,11 @@ Instructions:
    - Risk assessment for the chosen strategy type
    - Expected outcome based on strategy selection
 
-8. **Automated Strategy Execution**
+8. **Automated Strategy Execution and Data Storage**
    - After completing the analysis and identifying the best horse
+   - Store comprehensive analysis JSON data using tool: SetAIAgentDataContextForBetfairMarket with dataContextName "HorseRacingEVAnalysisResults"
    - Activate the selected horse's market and selection using tool: ActivateBetfairMarketSelection
-   - Apply conditional strategy selection:     * **Use "Back trailing stop loss trading"** when selection meets betting criteria:
+   - Apply conditional strategy selection:* **Use "Back trailing stop loss trading"** when selection meets betting criteria:
        - Positive Expected Value (EV > 0.1)
        - Win probability ≥ 15%
        - Strong convergence between trading confidence and performance indicators
@@ -178,11 +178,11 @@ Instructions:
        - Win probability between 8-15%
        - Volatile price movements with trading opportunities
        - Mixed signals between trading and performance data
-       - Strategy takes exactly 20% profit from the opening back bet when available
-   - Execute the appropriate strategy using tool: ExecuteBfexplorerStrategySettings
+       - Strategy takes exactly 20% profit from the opening back bet when available   - Execute the appropriate strategy using tool: ExecuteBfexplorerStrategySettings
    - Confirm strategy execution and document reasoning for strategy choice
+   - Update stored JSON data with final execution results
 
-Format: Present the final analysis in clear, actionable format with emphasis on the single best opportunity. Provide both human-readable table format and machine-readable JSON format. After analysis completion, automatically execute either the betting or trading strategy on the selected horse based on suitability criteria.
+Format: Present the final analysis in clear, actionable format with emphasis on the single best opportunity. Provide human-readable table format and store comprehensive machine-readable JSON format in BfexplorerApp. After analysis completion, automatically execute either the betting or trading strategy on the selected horse based on suitability criteria.
 
 Selection Criteria Priority:
 1. Positive Expected Value (EV > 0)
@@ -205,7 +205,9 @@ Selection Criteria Priority:
 - Sortable by EV ranking
 - Human-friendly labels and descriptions
 
-**JSON Format:**
+**JSON Data Storage:**
+- Store comprehensive analysis data using SetAIAgentDataContextForBetfairMarket tool
+- Use dataContextName: "HorseRacingEVAnalysisResults"
 - Valid, well-structured JSON with consistent naming
 - Nested objects for logical grouping
 - Arrays for multiple horses data
@@ -325,6 +327,7 @@ The analysis will automatically select the horse that best combines:
 - **Signal indicators** using descriptive text (Strong/Moderate/Weak)
 
 ### JSON Format Requirements
+The comprehensive analysis data should be stored using the SetAIAgentDataContextForBetfairMarket tool with the following structure:
 ```json
 {
   "analysis_metadata": {
@@ -336,7 +339,6 @@ The analysis will automatically select the horse that best combines:
       "start_time": "ISO 8601 format",
       "total_runners": "number"
     },
-    "analysis_version": "string",
     "strategy_criteria": {
       "trading_weight": "number",
       "performance_weight": "number",
@@ -347,7 +349,8 @@ The analysis will automatically select the horse that best combines:
   "horses": [
     {
       "name": "string",
-      "selection_id": "string",      "current_price": "number",
+      "selection_id": "string",      
+      "current_price": "number",
       "start_price": "number",
       "price_change": "number",
       "price_change_percentage": "number",
@@ -400,13 +403,14 @@ The analysis will automatically select the horse that best combines:
 
 1. Complete comprehensive dual-source EV analysis (silent phase)
 2. Generate final report with best horse selection and strategy determination
-3. **Output both table and JSON formats** for different consumption needs
-4. Activate selected horse's market and selection
-5. Execute appropriate strategy automatically:
+3. **Output human-readable table format** for immediate decision review
+4. **Store comprehensive JSON analysis data** using SetAIAgentDataContextForBetfairMarket tool
+5. Activate selected horse's market and selection
+6. Execute appropriate strategy automatically:
    - **"Back trailing stop loss trading"** for high-confidence convergent opportunities
    - **"Trade 20% profit"** for moderate confidence or mixed signal opportunities
-6. Confirm successful strategy execution with reasoning
-7. **Update JSON output** with execution results and final status
+7. Confirm successful strategy execution with reasoning
+8. **Update stored JSON data** with execution results and final status
 
 ## Benefits of Dual Output Format
 
@@ -416,12 +420,12 @@ The analysis will automatically select the horse that best combines:
 - **Presentation ready** - Can be directly used in reports or discussions
 - **Familiar format** - Standard racing analysis presentation style
 
-**JSON Format Benefits:**
-- **Machine-readable** - Easy integration with other systems
-- **API compatible** - Standard format for web services and applications
-- **Database ready** - Can be directly stored or processed by databases
-- **Automation friendly** - Enables automated decision making and backtesting
-- **Version control** - Easy to track changes and maintain historical data
-- **Extensible** - New fields can be added without breaking existing consumers
+**JSON Data Storage Benefits:**
+- **Persistent storage** - Data maintained in BfexplorerApp for future reference
+- **API accessible** - Other systems can retrieve analysis data via MCP tools
+- **Automated processing** - Enables automated decision making and backtesting
+- **Version control** - Historical analysis data preserved for learning
+- **Integration ready** - Seamless connection with trading systems and databases
+- **Structured format** - Consistent data structure for reliable processing
 
-This enhanced prompt ensures the most comprehensive analysis possible by combining market intelligence (what the crowd thinks via trading patterns) with performance intelligence (what the horse has actually done) while providing both human-friendly and machine-friendly output formats for maximum utility across different use cases.
+This enhanced prompt ensures the most comprehensive analysis possible by combining market intelligence (what the crowd thinks via trading patterns) with performance intelligence (what the horse has actually done) while providing both human-friendly table output and persistent machine-readable JSON data storage in BfexplorerApp for maximum utility across different use cases.

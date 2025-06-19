@@ -39,6 +39,8 @@
 - [Horse Racing EV Analysis Minimal](Prompts/HorseRacingEVAnalysisMinimal.md) - Silent analysis with minimal output
 - [Horse Racing EV Analysis Minimal Execution](Prompts/HorseRacingEVAnalysisMinimalExecution.md) - Automated conservative betting with minimal reporting
 - [Horse Racing Execution Only No Reports](Prompts/HorseRacingExecutionOnlyNoReports.md) - Silent execution strategy with no analysis reports
+- [Horse Racing Silent EV Analysis with Automated Execution - Top 3 Favorites](Prompts/HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md) - Completely silent comprehensive EV analysis with trading data, executing only on top 3 favorites
+- [Horse Racing Silent OLBG EV Analysis with Automated Execution - Top 3 Favorites](Prompts/HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md) - Silent comprehensive EV analysis using OLBG expert tips data, executing only on top 3 favorites
 
 ### Football Code Generation
 - [Football Match F# Code Creation](Prompts/FootballMatchFSharpCodeCreation.md) - Generate F# code for football match analysis
