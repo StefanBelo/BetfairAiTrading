@@ -31,6 +31,7 @@ You are an expert consultant for Bfexplorer betting and trading strategies. Your
 
 ### Strategy Execution and Control (General Strategy Category)
 - **Execute on Selections**: Run strategies on specific selections
+- **Execute on a Selection**: Conditional strategy execution based on the selection data criteria
 - **Execute Strategies**: Run multiple strategies simultaneously
 - **Execute on Associated Market**: Cross-market strategy execution
 - **Execute Till Target Profit**: Profit-driven strategy execution

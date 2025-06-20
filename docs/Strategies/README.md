@@ -1,17 +1,17 @@
 # Bfexplorer Strategy Documentation
 
-This section contains comprehensive documentation for all 121+ Bfexplorer strategies across multiple categories. Each strategy includes detailed parameter descriptions, usage examples, and best practices.
+This section contains comprehensive documentation for all 122+ Bfexplorer strategies across multiple categories. Each strategy includes detailed parameter descriptions, usage examples, and best practices.
 
 ## Strategy Categories Overview
 
-### [General](General/README.md) - 28 Strategies
+### [General](General/README.md) - 29 Strategies
 Core betting and strategy execution strategies that work across all sports and markets.
 
 **Key Strategies:**
 - Place Bet, Place Bet - Be the First in Queue, Place Bet - Fill or Kill
 - Place Dutching Bets, Place SP Bet
-- Execute Strategies, Execute on Selections, Execute at Time
-- If Then Else, Sequence Execution, Concurrent Execution
+- Execute Strategies, Execute on Selections, Execute on a Selection
+- Execute at Time, If Then Else, Sequence Execution, Concurrent Execution
 - Repeat Until, Execute Till Target Profit
 - Dutch Bet Aggregation, Stake Percentage Of Available Balance
 

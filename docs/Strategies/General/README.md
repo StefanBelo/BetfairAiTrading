@@ -35,6 +35,7 @@ This directory contains comprehensive documentation for all general Bfexplorer s
 
 ### Multi-Strategy Execution
 - **[Execute on Selections](Execute-on-Selections.md)** - Run strategies across multiple selections
+- **[Execute on a Selection](Execute-On-A-Selection.md)** - Conditional strategy execution based on real-time market data criteria
 - **[Execute Strategies](Execute-Strategies.md)** - Execute multiple strategies simultaneously
 - **[Sequence Execution](Sequence-Execution.md)** - Run strategies in sequential order
 - **[Concurrent Execution](Concurrent-Execution.md)** - Run strategies in parallel
@@ -49,6 +50,7 @@ This directory contains comprehensive documentation for all general Bfexplorer s
 
 ### Conditional & Timing Control
 - **[If Then Else](If-Then-Else.md)** - Conditional strategy execution based on criteria
+- **[Execute on a Selection](Execute-On-A-Selection.md)** - Advanced conditional execution using real-time market data
 - **[Execute at Time](Execute-at-Time.md)** - Time-based strategy execution control
 - **[Execute Till Target Profit](Execute-Till-Target-Profit.md)** - Profit-targeting with Martingale and staking management
 - **[Repeat Until](Repeat-Until.md)** - Repeat strategies until conditions are met
@@ -60,14 +62,15 @@ This directory contains comprehensive documentation for all general Bfexplorer s
 
 ### By Complexity Level
 - **Beginner**: Place Bet, Execute at Time
-- **Intermediate**: Close Position strategies, Dutching, SP Betting
-- **Advanced**: Multi-strategy execution, Conditional logic, Trading combinations
+- **Intermediate**: Close Position strategies, Dutching, SP Betting, Execute on a Selection
+- **Advanced**: Multi-strategy execution, Conditional logic combinations, Trading combinations
 
 ### By Use Case
 - **Simple Betting**: Place Bet, SP Bet
 - **Risk Management**: Close Position strategies, Stop Strategies, Trailing Stop
 - **Trading**: Tick Offset, Scratch Trading, Position management
 - **Automation**: Execute Till Target Profit, Repeat Until, Multi-strategy execution
+- **Conditional Logic**: If Then Else, Execute on a Selection
 - **Portfolio Management**: Close Market Position, Dutching, Multi-selection strategies
 
 ### By Market Type
@@ -93,8 +96,9 @@ This directory contains comprehensive documentation for all general Bfexplorer s
 
 1. **New Users**: Start with [Place Bet](Place-Bet.md) to understand basic betting
 2. **Traders**: Explore [Tick Offset](Tick-Offset.md) and position management strategies
-3. **Advanced Users**: Combine multiple strategies using execution control strategies
-4. **Risk Management**: Implement [Stop Strategies](Stop-Strategies-and-Cancel-Bets.md) and position limits
+3. **Conditional Logic**: Try [Execute on a Selection](Execute-On-A-Selection.md) for data-driven automation
+4. **Advanced Users**: Combine multiple strategies using execution control strategies
+5. **Risk Management**: Implement [Stop Strategies](Stop-Strategies-and-Cancel-Bets.md) and position limits
 
 ## Best Practices
 

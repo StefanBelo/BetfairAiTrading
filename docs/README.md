@@ -62,6 +62,9 @@
 
 **[📖 Complete Strategies Index](Strategies/README.md)**
 
+### General
+- [Execute on a Selection Strategy](Strategies/General/Execute-On-A-Selection.md) - Advanced conditional strategy execution using real-time market data
+
 ### Football
 - [Football Betfair Trading Strategy: Over/Under Goals Market](Strategies/Football/TradeOverUnderGoals.md)
 - [Football Score-Based Market Opener Guide](Strategies/Football/OpenMyMarketsByScore.md)

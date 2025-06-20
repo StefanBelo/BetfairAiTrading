@@ -10,7 +10,7 @@ Whether you're new to the Betfair Exchange or a seasoned trader, this is your hu
 
 **New to AI-powered trading?** Check out our comprehensive documentation to learn how AI agents can revolutionize your Betfair trading experience - turning 30-60 minute race analysis into 10-second professional insights!
 
-**Want instant strategy expertise?** Try our **[BFExplorer Strategy Expert Prompt](docs/Prompts/BfexplorerStrategyExpertPrompt.md)** - turn any AI assistant into a strategy configuration expert with knowledge of all 60+ BFExplorer strategies!
+**Want instant strategy expertise?** Try our **[BFExplorer Strategy Expert Prompt](docs/Prompts/BfexplorerStrategyExpertPrompt.md)** - turn any AI assistant into a strategy configuration expert with knowledge of all 120+ BFExplorer strategies!
 
 ## 🎯 What We're About
 
