@@ -170,9 +170,8 @@ Format: Complete all analysis silently, then execute strategy automatically. Onl
       "performance_weight": "number",
       "min_ev_betting": "number",
       "min_probability_betting": "number"
-    }
-  },
-  "horses": [
+    },
+    "horses": [
     {
       "name": "string",
       "selection_id": "string",      

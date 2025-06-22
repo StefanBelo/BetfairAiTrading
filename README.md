@@ -64,7 +64,14 @@ Ready-to-use AI prompts for various sports and analysis types:
 Real experiences from community members:
 - **[How I Became a Strategy Expert in Minutes](docs/Posts/Post_BfexplorerStrategyExpert.md)** - Success story using AI strategy assistance
 
-### 🛠️ Ready-to-Use Strategies
+### � Analysis Reports
+
+**[📖 Complete Analysis Index](docs/Analysis/README.md)**
+
+Performance analysis and strategy evaluation:
+- **[Horse Racing EV Analysis Results - June 22, 2025](docs/Analysis/HorseRacingEVAnalysisResults_22June2025.md)** - Comprehensive analysis of AI-driven Expected Value betting strategy performance across 12 races with strategic recommendations
+
+### �🛠️ Ready-to-Use Strategies
 
 **[📖 Complete Strategies Index](docs/Strategies/README.md)**
 

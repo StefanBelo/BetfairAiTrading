@@ -225,7 +225,8 @@ Format: Complete analysis of ALL horses in COMPLETE SILENCE, then execute strate
       "race_name": "string", 
       "start_time": "ISO 8601 format",
       "total_runners": "number"
-    },    "strategy_criteria": {
+    },    
+    "strategy_criteria": {
       "expert_tips_weight": "number",
       "performance_weight": "number", 
       "market_data_weight": "number",
@@ -233,9 +234,8 @@ Format: Complete analysis of ALL horses in COMPLETE SILENCE, then execute strate
       "min_probability_betting": "number",
       "favorites_filter_applied": true,
       "max_favorite_rank_for_execution": 3
-    }
-  },
-  "horses": [
+    },
+    "horses": [
     {
       "name": "string",
       "selection_id": "string",
@@ -253,12 +253,14 @@ Format: Complete analysis of ALL horses in COMPLETE SILENCE, then execute strate
         "expert_consensus": "string",
         "tipster_quality": "string",
         "confidence_level": "string"
-      },      "performance_data": {
+      },      
+      "performance_data": {
         "semantic_analysis": "string",
         "performance_signal": "string",
         "recent_form_summary": "string",
         "performance_confidence": "string"
-      },      "market_data": {
+      },      
+      "market_data": {
         "opening_price": "number",
         "price_movement": "string",
         "volume_traded": "number",
@@ -269,7 +271,8 @@ Format: Complete analysis of ALL horses in COMPLETE SILENCE, then execute strate
         "liquidity_assessment": "string",
         "price_stability": "string",
         "volume_rank": "number"
-      },      "analysis_results": {
+      },      
+      "analysis_results": {
         "market_probability": "number",
         "adjusted_probability": "number",
         "expert_contribution": "number",
@@ -282,7 +285,8 @@ Format: Complete analysis of ALL horses in COMPLETE SILENCE, then execute strate
         "tri_source_alignment": "string"
       }
     }
-  ],  "selection": {
+  ],  
+  "selection": {
     "selected_horse": "string",
     "selection_reasoning": "string",
     "strategy_chosen": "string",
@@ -295,7 +299,8 @@ Format: Complete analysis of ALL horses in COMPLETE SILENCE, then execute strate
     "best_ev_horse_was_favorite": "boolean",
     "tri_source_convergence": "string",
     "alternative_selections": "array"
-  },  "market_analysis": {
+  },  
+  "market_analysis": {
     "efficiency_assessment": "string",
     "value_opportunities": "array",
     "market_biases": "array",

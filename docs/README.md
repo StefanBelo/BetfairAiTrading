@@ -58,6 +58,13 @@
 - [AI Agent Horse Racing Analysis: The Power of Backtesting & Continuous Learning](Posts/Post_AIAgentBacktestingAndLearning.md) - Building adaptive AI agents that learn from results
 - [How I Became a Betfair Strategy Expert in Minutes](Posts/Post_BfexplorerStrategyExpert.md) - Real success story using AI strategy assistance
 
+## Analysis Reports
+
+**[📖 Complete Analysis Index](Analysis/README.md)**
+
+### Performance Analysis
+- [Horse Racing EV Analysis Results - June 22, 2025](Analysis/HorseRacingEVAnalysisResults_22June2025.md) - Comprehensive analysis of AI-driven Expected Value betting strategy performance across 12 races with strategic recommendations
+
 ## Strategies
 
 **[📖 Complete Strategies Index](Strategies/README.md)**

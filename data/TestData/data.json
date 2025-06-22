@@ -1,264 +1,632 @@
 {
-  "analysis_metadata": {
-    "timestamp": "2025-06-20T17:37:00+02:00",
-    "market_id": "1.244921352",
-    "race_info": {
-      "event_name": "Newmarket",
-      "race_name": "1m2f Nov Stks",
-      "start_time": "2025-06-20T19:37:00+02:00",
-      "total_runners": 4
+  "RacesResults": [
+    {
+      "analysis_metadata": {
+        "timestamp": "2025-06-22T16:05:00+02:00",
+        "market_id": "1.244972734",
+        "race_info": {
+          "event_name": "Pontefract",
+          "race_name": "1m4f Hcap",
+          "start_time": "2025-06-22T16:10:00+02:00",
+          "total_runners": 3
+        },
+        "strategy_criteria": {
+          "expert_tips_weight": 0.4,
+          "performance_weight": 0.3,
+          "market_data_weight": 0.3,
+          "min_ev_betting": 0,
+          "min_probability_betting": 0.1,
+          "favorites_filter_applied": true,
+          "max_favorite_rank_for_execution": 3
+        }
+      },
+      "horses": [
+        {
+          "name": "Lieber Power",
+          "selection_id": "48500507_0.00",
+          "is_winner": false,
+          "current_price": 2.06,
+          "price_rank": 1,
+          "favorite_status": 1,
+          "ev_rank": 1,
+          "execution_eligible": true,
+          "olbg_data": {
+            "total_tips": 1,
+            "nap_count": 0,
+            "nb_count": 0,
+            "win_tips": 1,
+            "ew_tips": 0,
+            "expert_consensus": "strong",
+            "tipster_quality": "high",
+            "confidence_level": "high"
+          },
+          "performance_data": {
+            "semantic_analysis": "consistent competitive positions, strong finishes",
+            "performance_signal": "positive",
+            "recent_form_summary": "improving",
+            "performance_confidence": "high"
+          },
+          "market_data": {
+            "opening_price": 1.99,
+            "price_movement": "stable",
+            "volume_traded": 56196.53,
+            "back_lay_ratio": 1.2,
+            "market_sentiment": "positive",
+            "steam_moves": [],
+            "drift_analysis": "none",
+            "liquidity_assessment": "high",
+            "price_stability": "high",
+            "volume_rank": 1
+          },
+          "analysis_results": {
+            "market_probability": 0.4854,
+            "adjusted_probability": 0.55,
+            "expert_contribution": 0.22,
+            "performance_contribution": 0.165,
+            "market_contribution": 0.165,
+            "expected_value": 0.102,
+            "ev_rating": "positive",
+            "ranking": 1,
+            "confidence_score": 0.9,
+            "tri_source_alignment": "strong"
+          }
+        },
+        {
+          "name": "Expert Witness",
+          "selection_id": "2101054_0.00",
+          "is_winner": false,
+          "current_price": 2.92,
+          "price_rank": 2,
+          "favorite_status": 2,
+          "ev_rank": 2,
+          "execution_eligible": false,
+          "olbg_data": {
+            "total_tips": 1,
+            "nap_count": 0,
+            "nb_count": 0,
+            "win_tips": 1,
+            "ew_tips": 0,
+            "expert_consensus": "moderate",
+            "tipster_quality": "medium",
+            "confidence_level": "medium"
+          },
+          "performance_data": {
+            "semantic_analysis": "mixed performances, some strong finishes",
+            "performance_signal": "neutral",
+            "recent_form_summary": "inconsistent",
+            "performance_confidence": "medium"
+          },
+          "market_data": {
+            "opening_price": 3.05,
+            "price_movement": "stable",
+            "volume_traded": 36150.54,
+            "back_lay_ratio": 1.1,
+            "market_sentiment": "neutral",
+            "steam_moves": [],
+            "drift_analysis": "none",
+            "liquidity_assessment": "medium",
+            "price_stability": "medium",
+            "volume_rank": 2
+          },
+          "analysis_results": {
+            "market_probability": 0.3425,
+            "adjusted_probability": 0.38,
+            "expert_contribution": 0.152,
+            "performance_contribution": 0.114,
+            "market_contribution": 0.114,
+            "expected_value": 0.012,
+            "ev_rating": "neutral",
+            "ranking": 2,
+            "confidence_score": 0.6,
+            "tri_source_alignment": "moderate"
+          }
+        },
+        {
+          "name": "Sol Cayo",
+          "selection_id": "44249467_0.00",
+          "is_winner": true,
+          "current_price": 5.7,
+          "price_rank": 3,
+          "favorite_status": 3,
+          "ev_rank": 3,
+          "execution_eligible": false,
+          "olbg_data": {
+            "total_tips": 1,
+            "nap_count": 0,
+            "nb_count": 0,
+            "win_tips": 1,
+            "ew_tips": 0,
+            "expert_consensus": "weak",
+            "tipster_quality": "low",
+            "confidence_level": "low"
+          },
+          "performance_data": {
+            "semantic_analysis": "some strong finishes, but inconsistent",
+            "performance_signal": "neutral",
+            "recent_form_summary": "mixed",
+            "performance_confidence": "low"
+          },
+          "market_data": {
+            "opening_price": 5.8,
+            "price_movement": "stable",
+            "volume_traded": 23398.21,
+            "back_lay_ratio": 1.0,
+            "market_sentiment": "neutral",
+            "steam_moves": [],
+            "drift_analysis": "none",
+            "liquidity_assessment": "low",
+            "price_stability": "medium",
+            "volume_rank": 3
+          },
+          "analysis_results": {
+            "market_probability": 0.1754,
+            "adjusted_probability": 0.2,
+            "expert_contribution": 0.08,
+            "performance_contribution": 0.06,
+            "market_contribution": 0.06,
+            "expected_value": -0.05,
+            "ev_rating": "negative",
+            "ranking": 3,
+            "confidence_score": 0.4,
+            "tri_source_alignment": "weak"
+          }
+        }
+      ],
+      "selection": {
+        "selected_horse": "Lieber Power",
+        "selection_reasoning": "highest EV among top 3 favorites",
+        "strategy_chosen": "Bet 10 Euro",
+        "strategy_reasoning": "positive EV, strong convergence",
+        "execution_status": "executed",
+        "risk_assessment": "low",
+        "favorites_constraint_applied": true,
+        "favorite_rank_of_selection": 1,
+        "ev_rank_of_selection": 1,
+        "best_ev_horse_was_favorite": true,
+        "tri_source_convergence": "strong",
+        "alternative_selections": [],
+        "betting_amount": 10
+      },
+      "market_analysis": {
+        "efficiency_assessment": "efficient",
+        "value_opportunities": [],
+        "market_biases": [],
+        "expert_consensus_summary": "strong for Lieber Power",
+        "top_3_favorites": [
+          "Lieber Power",
+          "Expert Witness",
+          "Sol Cayo"
+        ],
+        "overall_market_sentiment": "positive",
+        "volume_distribution": {
+          "Lieber Power": 56196.53,
+          "Expert Witness": 36150.54,
+          "Sol Cayo": 23398.21
+        },
+        "price_movement_summary": "stable",
+        "steam_activity": [],
+        "drift_patterns": [],
+        "liquidity_analysis": {
+          "Lieber Power": "high",
+          "Expert Witness": "medium",
+          "Sol Cayo": "low"
+        },
+        "market_efficiency_score": 0.85
+      }
     },
-    "strategy_criteria": {
-      "expert_tips_weight": 0.4,
-      "performance_weight": 0.3,
-      "market_data_weight": 0.3,
-      "min_ev_betting": 0,
-      "min_probability_betting": 0.1,
-      "favorites_filter_applied": true,
-      "max_favorite_rank_for_execution": 3
+    {
+      "analysis_metadata": {
+        "timestamp": "2025-06-22T14:18:00+02:00",
+        "market_id": "1.244973000",
+        "race_info": {
+          "event_name": "Hexham",
+          "race_name": "2m7f Nov Hcap Hrd",
+          "start_time": "2025-06-22T16:18:00+02:00",
+          "total_runners": 7
+        },
+        "strategy_criteria": {
+          "expert_tips_weight": 0.4,
+          "performance_weight": 0.3,
+          "market_data_weight": 0.3,
+          "min_ev_betting": 0,
+          "min_probability_betting": 0.1,
+          "favorites_filter_applied": true,
+          "max_favorite_rank_for_execution": 3
+        }
+      },
+      "horses": [
+        {
+          "name": "Man Of Action",
+          "selection_id": "4282280_0.00",
+          "is_winner": false,
+          "current_price": 2.38,
+          "price_rank": 1,
+          "favorite_status": 1,
+          "ev_rank": 1,
+          "execution_eligible": true,
+          "olbg_data": {
+            "total_tips": 6,
+            "nap_count": 1,
+            "nb_count": 0,
+            "win_tips": 6,
+            "ew_tips": 0,
+            "expert_consensus": "strong",
+            "tipster_quality": "high",
+            "confidence_level": "high"
+          },
+          "performance_data": {
+            "semantic_analysis": "consistent competitive positions, strong finishes",
+            "performance_signal": "positive",
+            "recent_form_summary": "won last two races",
+            "performance_confidence": "high"
+          },
+          "market_data": {
+            "opening_price": 2.44,
+            "price_movement": "stable",
+            "volume_traded": 33155.82,
+            "back_lay_ratio": 1.2,
+            "market_sentiment": "positive",
+            "steam_moves": [],
+            "drift_analysis": "none",
+            "liquidity_assessment": "high",
+            "price_stability": "high",
+            "volume_rank": 1
+          },
+          "analysis_results": {
+            "market_probability": 0.42,
+            "adjusted_probability": 0.55,
+            "expert_contribution": 0.22,
+            "performance_contribution": 0.165,
+            "market_contribution": 0.165,
+            "expected_value": 0.231,
+            "ev_rating": "high",
+            "ranking": 1,
+            "confidence_score": 0.9,
+            "tri_source_alignment": "strong"
+          }
+        },
+        {
+          "name": "Fortune The Brave",
+          "selection_id": "72489703_0.00",
+          "is_winner": false,
+          "current_price": 5.2,
+          "price_rank": 2,
+          "favorite_status": 2,
+          "ev_rank": 2,
+          "execution_eligible": true,
+          "olbg_data": {
+            "total_tips": 2,
+            "nap_count": 1,
+            "nb_count": 0,
+            "win_tips": 2,
+            "ew_tips": 0,
+            "expert_consensus": "moderate",
+            "tipster_quality": "medium",
+            "confidence_level": "medium"
+          },
+          "performance_data": {
+            "semantic_analysis": "inconsistent, some mistakes",
+            "performance_signal": "neutral",
+            "recent_form_summary": "unseated last race",
+            "performance_confidence": "medium"
+          },
+          "market_data": {
+            "opening_price": 5.2,
+            "price_movement": "stable",
+            "volume_traded": 10404.54,
+            "back_lay_ratio": 1.1,
+            "market_sentiment": "neutral",
+            "steam_moves": [],
+            "drift_analysis": "none",
+            "liquidity_assessment": "medium",
+            "price_stability": "medium",
+            "volume_rank": 2
+          },
+          "analysis_results": {
+            "market_probability": 0.192,
+            "adjusted_probability": 0.25,
+            "expert_contribution": 0.1,
+            "performance_contribution": 0.075,
+            "market_contribution": 0.075,
+            "expected_value": 0.05,
+            "ev_rating": "medium",
+            "ranking": 2,
+            "confidence_score": 0.7,
+            "tri_source_alignment": "moderate"
+          }
+        },
+        {
+          "name": "Foxwood",
+          "selection_id": "52561005_0.00",
+          "is_winner": false,
+          "current_price": 7.4,
+          "price_rank": 3,
+          "favorite_status": 3,
+          "ev_rank": 3,
+          "execution_eligible": true,
+          "olbg_data": {
+            "total_tips": 1,
+            "nap_count": 0,
+            "nb_count": 0,
+            "win_tips": 1,
+            "ew_tips": 0,
+            "expert_consensus": "weak",
+            "tipster_quality": "low",
+            "confidence_level": "low"
+          },
+          "performance_data": {
+            "semantic_analysis": "some headway, weakened",
+            "performance_signal": "neutral",
+            "recent_form_summary": "fourth last race",
+            "performance_confidence": "low"
+          },
+          "market_data": {
+            "opening_price": 7.4,
+            "price_movement": "stable",
+            "volume_traded": 3751.54,
+            "back_lay_ratio": 1.0,
+            "market_sentiment": "neutral",
+            "steam_moves": [],
+            "drift_analysis": "none",
+            "liquidity_assessment": "low",
+            "price_stability": "medium",
+            "volume_rank": 3
+          },
+          "analysis_results": {
+            "market_probability": 0.135,
+            "adjusted_probability": 0.15,
+            "expert_contribution": 0.06,
+            "performance_contribution": 0.045,
+            "market_contribution": 0.045,
+            "expected_value": 0.015,
+            "ev_rating": "low",
+            "ranking": 3,
+            "confidence_score": 0.5,
+            "tri_source_alignment": "weak"
+          }
+        },
+        {
+          "name": "Brave Adam",
+          "selection_id": "62072096_0.00",
+          "is_winner": false,
+          "current_price": 9.2,
+          "price_rank": 4,
+          "favorite_status": 4,
+          "ev_rank": 4,
+          "execution_eligible": false,
+          "olbg_data": {
+            "total_tips": 1,
+            "nap_count": 0,
+            "nb_count": 0,
+            "win_tips": 1,
+            "ew_tips": 0,
+            "expert_consensus": "weak",
+            "tipster_quality": "low",
+            "confidence_level": "low"
+          },
+          "performance_data": {
+            "semantic_analysis": "weakened quickly, pulled up",
+            "performance_signal": "negative",
+            "recent_form_summary": "pulled up last race",
+            "performance_confidence": "low"
+          },
+          "market_data": {
+            "opening_price": 9.0,
+            "price_movement": "stable",
+            "volume_traded": 6011.52,
+            "back_lay_ratio": 1.0,
+            "market_sentiment": "neutral",
+            "steam_moves": [],
+            "drift_analysis": "none",
+            "liquidity_assessment": "medium",
+            "price_stability": "medium",
+            "volume_rank": 4
+          },
+          "analysis_results": {
+            "market_probability": 0.109,
+            "adjusted_probability": 0.1,
+            "expert_contribution": 0.04,
+            "performance_contribution": 0.03,
+            "market_contribution": 0.03,
+            "expected_value": -0.009,
+            "ev_rating": "negative",
+            "ranking": 4,
+            "confidence_score": 0.4,
+            "tri_source_alignment": "weak"
+          }
+        },
+        {
+          "name": "Belladinotte",
+          "selection_id": "68073089_0.00",
+          "is_winner": true,
+          "current_price": 13,
+          "price_rank": 5,
+          "favorite_status": 5,
+          "ev_rank": 5,
+          "execution_eligible": false,
+          "olbg_data": {
+            "total_tips": 1,
+            "nap_count": 0,
+            "nb_count": 0,
+            "win_tips": 1,
+            "ew_tips": 0,
+            "expert_consensus": "weak",
+            "tipster_quality": "low",
+            "confidence_level": "low"
+          },
+          "performance_data": {
+            "semantic_analysis": "midfield, some headway",
+            "performance_signal": "neutral",
+            "recent_form_summary": "second last race",
+            "performance_confidence": "medium"
+          },
+          "market_data": {
+            "opening_price": 12.5,
+            "price_movement": "stable",
+            "volume_traded": 2391.23,
+            "back_lay_ratio": 1.0,
+            "market_sentiment": "neutral",
+            "steam_moves": [],
+            "drift_analysis": "none",
+            "liquidity_assessment": "low",
+            "price_stability": "medium",
+            "volume_rank": 5
+          },
+          "analysis_results": {
+            "market_probability": 0.077,
+            "adjusted_probability": 0.08,
+            "expert_contribution": 0.032,
+            "performance_contribution": 0.024,
+            "market_contribution": 0.024,
+            "expected_value": -0.02,
+            "ev_rating": "negative",
+            "ranking": 5,
+            "confidence_score": 0.3,
+            "tri_source_alignment": "weak"
+          }
+        },
+        {
+          "name": "Balally Park",
+          "selection_id": "53227191_0.00",
+          "is_winner": false,
+          "current_price": 18.5,
+          "price_rank": 6,
+          "favorite_status": 6,
+          "ev_rank": 6,
+          "execution_eligible": false,
+          "olbg_data": {
+            "total_tips": 1,
+            "nap_count": 0,
+            "nb_count": 0,
+            "win_tips": 1,
+            "ew_tips": 0,
+            "expert_consensus": "weak",
+            "tipster_quality": "low",
+            "confidence_level": "low"
+          },
+          "performance_data": {
+            "semantic_analysis": "midfield, weakened",
+            "performance_signal": "negative",
+            "recent_form_summary": "ninth last race",
+            "performance_confidence": "low"
+          },
+          "market_data": {
+            "opening_price": 19.0,
+            "price_movement": "stable",
+            "volume_traded": 2317.7,
+            "back_lay_ratio": 1.0,
+            "market_sentiment": "neutral",
+            "steam_moves": [],
+            "drift_analysis": "none",
+            "liquidity_assessment": "low",
+            "price_stability": "medium",
+            "volume_rank": 6
+          },
+          "analysis_results": {
+            "market_probability": 0.054,
+            "adjusted_probability": 0.05,
+            "expert_contribution": 0.02,
+            "performance_contribution": 0.015,
+            "market_contribution": 0.015,
+            "expected_value": -0.029,
+            "ev_rating": "negative",
+            "ranking": 6,
+            "confidence_score": 0.2,
+            "tri_source_alignment": "weak"
+          }
+        },
+        {
+          "name": "Perfect Poli",
+          "selection_id": "54148240_0.00",
+          "is_winner": false,
+          "current_price": 55,
+          "price_rank": 7,
+          "favorite_status": 7,
+          "ev_rank": 7,
+          "execution_eligible": false,
+          "olbg_data": {
+            "total_tips": 1,
+            "nap_count": 0,
+            "nb_count": 0,
+            "win_tips": 1,
+            "ew_tips": 0,
+            "expert_consensus": "weak",
+            "tipster_quality": "low",
+            "confidence_level": "low"
+          },
+          "performance_data": {
+            "semantic_analysis": "always behind, pulled up",
+            "performance_signal": "negative",
+            "recent_form_summary": "pulled up last race",
+            "performance_confidence": "low"
+          },
+          "market_data": {
+            "opening_price": 55,
+            "price_movement": "stable",
+            "volume_traded": 723.53,
+            "back_lay_ratio": 1.0,
+            "market_sentiment": "neutral",
+            "steam_moves": [],
+            "drift_analysis": "none",
+            "liquidity_assessment": "low",
+            "price_stability": "medium",
+            "volume_rank": 7
+          },
+          "analysis_results": {
+            "market_probability": 0.018,
+            "adjusted_probability": 0.02,
+            "expert_contribution": 0.008,
+            "performance_contribution": 0.006,
+            "market_contribution": 0.006,
+            "expected_value": -0.038,
+            "ev_rating": "negative",
+            "ranking": 7,
+            "confidence_score": 0.1,
+            "tri_source_alignment": "weak"
+          }
+        }
+      ],
+      "selection": {
+        "selected_horse": "Man Of Action",
+        "selection_reasoning": "highest EV among top 3 favorites",
+        "strategy_chosen": "Bet 10 Euro",
+        "strategy_reasoning": "positive EV, high confidence, strong convergence",
+        "execution_status": "executed",
+        "risk_assessment": "low",
+        "favorites_constraint_applied": true,
+        "favorite_rank_of_selection": 1,
+        "ev_rank_of_selection": 1,
+        "best_ev_horse_was_favorite": true,
+        "tri_source_convergence": "strong",
+        "alternative_selections": [],
+        "betting_amount": 10
+      },
+      "market_analysis": {
+        "efficiency_assessment": "efficient",
+        "value_opportunities": [],
+        "market_biases": [],
+        "expert_consensus_summary": "strong consensus for Man Of Action",
+        "top_3_favorites": [
+          "Man Of Action",
+          "Fortune The Brave",
+          "Foxwood"
+        ],
+        "overall_market_sentiment": "positive",
+        "volume_distribution": {
+          "Man Of Action": 33155.82,
+          "Fortune The Brave": 10404.54,
+          "Foxwood": 3751.54
+        },
+        "price_movement_summary": "stable",
+        "steam_activity": [],
+        "drift_patterns": [],
+        "liquidity_analysis": {
+          "Man Of Action": "high",
+          "Fortune The Brave": "medium",
+          "Foxwood": "low"
+        },
+        "market_efficiency_score": 0.85
+      }
     }
-  },
-  "horses": [
-    {
-      "name": "Noble Horizon",
-      "selection_id": "77319119_0.00",
-      "current_price": 1.52,
-      "price_rank": 1,
-      "favorite_status": 1,
-      "ev_rank": 1,
-      "execution_eligible": true,
-      "olbg_data": {
-        "total_tips": 1,
-        "nap_count": 0,
-        "nb_count": 0,
-        "win_tips": 1,
-        "ew_tips": 0,
-        "expert_consensus": "well backed lto beaten by a length in a maiden race conditions should be spot on and fallon should be getting this horse home",
-        "tipster_quality": "high",
-        "confidence_level": "high"
-      },
-      "performance_data": {
-        "semantic_analysis": "bumped start and slowly into stride, soon led narrowly, joined 2f out, led again 1f out, kept on but headed inside final 110yds",
-        "performance_signal": "positive",
-        "recent_form_summary": "consistent",
-        "performance_confidence": "high"
-      },
-      "market_data": {
-        "opening_price": 1.56,
-        "price_movement": "contraction",
-        "volume_traded": 7200.69,
-        "back_lay_ratio": 1.2,
-        "market_sentiment": "strong",
-        "steam_moves": [],
-        "drift_analysis": "none",
-        "liquidity_assessment": "high",
-        "price_stability": "stable",
-        "volume_rank": 1
-      },
-      "analysis_results": {
-        "market_probability": 0.6579,
-        "adjusted_probability": 0.7,
-        "expert_contribution": 0.28,
-        "performance_contribution": 0.21,
-        "market_contribution": 0.21,
-        "expected_value": 0.042,
-        "ev_rating": "positive",
-        "ranking": 1,
-        "confidence_score": 0.9,
-        "tri_source_alignment": "strong"
-      }
-    },
-    {
-      "name": "I Am I Said",
-      "selection_id": "26830448_0.00",
-      "current_price": 4.1,
-      "price_rank": 2,
-      "favorite_status": 2,
-      "ev_rank": 2,
-      "execution_eligible": true,
-      "olbg_data": {
-        "total_tips": 1,
-        "nap_count": 0,
-        "nb_count": 0,
-        "win_tips": 1,
-        "ew_tips": 0,
-        "expert_consensus": "This is a much easier race than the GP3 he ran in last time. Even so, he started at only 3/1 for that race and disappointed, but he should be more than capable of winning this",
-        "tipster_quality": "medium",
-        "confidence_level": "medium"
-      },
-      "performance_data": {
-        "semantic_analysis": "slowly into stride, in rear, in touch with leaders 3f out, weakened over 1f out",
-        "performance_signal": "mixed",
-        "recent_form_summary": "inconsistent",
-        "performance_confidence": "medium"
-      },
-      "market_data": {
-        "opening_price": 3.9,
-        "price_movement": "expansion",
-        "volume_traded": 1604.45,
-        "back_lay_ratio": 0.8,
-        "market_sentiment": "neutral",
-        "steam_moves": [],
-        "drift_analysis": "moderate",
-        "liquidity_assessment": "medium",
-        "price_stability": "moderate",
-        "volume_rank": 2
-      },
-      "analysis_results": {
-        "market_probability": 0.2439,
-        "adjusted_probability": 0.25,
-        "expert_contribution": 0.1,
-        "performance_contribution": 0.075,
-        "market_contribution": 0.075,
-        "expected_value": -0.006,
-        "ev_rating": "neutral",
-        "ranking": 2,
-        "confidence_score": 0.6,
-        "tri_source_alignment": "moderate"
-      }
-    },
-    {
-      "name": "Native Spirit",
-      "selection_id": "77999599_0.00",
-      "current_price": 10.5,
-      "price_rank": 3,
-      "favorite_status": 3,
-      "ev_rank": 3,
-      "execution_eligible": false,
-      "olbg_data": {
-        "total_tips": 0,
-        "nap_count": 0,
-        "nb_count": 0,
-        "win_tips": 0,
-        "ew_tips": 0,
-        "expert_consensus": "",
-        "tipster_quality": "low",
-        "confidence_level": "low"
-      },
-      "performance_data": {
-        "semantic_analysis": "raced in third, outpaced from 3f out, no impression from over 1f out",
-        "performance_signal": "negative",
-        "recent_form_summary": "poor",
-        "performance_confidence": "low"
-      },
-      "market_data": {
-        "opening_price": 11,
-        "price_movement": "contraction",
-        "volume_traded": 351.56,
-        "back_lay_ratio": 0.6,
-        "market_sentiment": "weak",
-        "steam_moves": [],
-        "drift_analysis": "none",
-        "liquidity_assessment": "low",
-        "price_stability": "moderate",
-        "volume_rank": 3
-      },
-      "analysis_results": {
-        "market_probability": 0.0952,
-        "adjusted_probability": 0.05,
-        "expert_contribution": 0.02,
-        "performance_contribution": 0.015,
-        "market_contribution": 0.015,
-        "expected_value": -0.045,
-        "ev_rating": "negative",
-        "ranking": 3,
-        "confidence_score": 0.3,
-        "tri_source_alignment": "weak"
-      }
-    },
-    {
-      "name": "Arcimboldo",
-      "selection_id": "82997536_0.00",
-      "current_price": 80,
-      "price_rank": 4,
-      "favorite_status": 4,
-      "ev_rank": 4,
-      "execution_eligible": false,
-      "olbg_data": {
-        "total_tips": 0,
-        "nap_count": 0,
-        "nb_count": 0,
-        "win_tips": 0,
-        "ew_tips": 0,
-        "expert_consensus": "",
-        "tipster_quality": "low",
-        "confidence_level": "low"
-      },
-      "performance_data": {
-        "semantic_analysis": "awkward start and slowly away, always behind (jockey said gelding missed the break)",
-        "performance_signal": "negative",
-        "recent_form_summary": "very poor",
-        "performance_confidence": "low"
-      },
-      "market_data": {
-        "opening_price": 110,
-        "price_movement": "expansion",
-        "volume_traded": 139.84,
-        "back_lay_ratio": 0.4,
-        "market_sentiment": "very weak",
-        "steam_moves": [],
-        "drift_analysis": "strong",
-        "liquidity_assessment": "very low",
-        "price_stability": "unstable",
-        "volume_rank": 4
-      },
-      "analysis_results": {
-        "market_probability": 0.0125,
-        "adjusted_probability": 0.0,
-        "expert_contribution": 0.0,
-        "performance_contribution": 0.0,
-        "market_contribution": 0.0,
-        "expected_value": -0.012,
-        "ev_rating": "negative",
-        "ranking": 4,
-        "confidence_score": 0.1,
-        "tri_source_alignment": "very weak"
-      }
-    }
-  ],
-  "selection": {
-    "selected_horse": "Noble Horizon",
-    "selection_reasoning": "Highest EV among top 3 favorites, strong expert consensus, positive performance signals, and strong market sentiment.",
-    "strategy_chosen": "Bet 10 Euro",
-    "strategy_reasoning": "Positive Expected Value (EV > 0), win probability >= 10%, strong convergence between expert consensus, performance indicators, AND market sentiment.",
-    "execution_status": "executed",
-    "risk_assessment": "low",
-    "favorites_constraint_applied": true,
-    "favorite_rank_of_selection": 1,
-    "ev_rank_of_selection": 1,
-    "best_ev_horse_was_favorite": true,
-    "tri_source_convergence": "strong",
-    "alternative_selections": [],
-    "betting_amount": 10
-  },
-  "market_analysis": {
-    "efficiency_assessment": "efficient",
-    "value_opportunities": [
-      "Noble Horizon"
-    ],
-    "market_biases": [],
-    "expert_consensus_summary": "strong backing for Noble Horizon",
-    "top_3_favorites": [
-      "Noble Horizon",
-      "I Am I Said",
-      "Native Spirit"
-    ],
-    "overall_market_sentiment": "positive",
-    "volume_distribution": {
-      "Noble Horizon": 7200.69,
-      "I Am I Said": 1604.45,
-      "Native Spirit": 351.56,
-      "Arcimboldo": 139.84
-    },
-    "price_movement_summary": "contraction for Noble Horizon, expansion for others",
-    "steam_activity": [],
-    "drift_patterns": [],
-    "liquidity_analysis": {
-      "Noble Horizon": "high",
-      "I Am I Said": "medium",
-      "Native Spirit": "low",
-      "Arcimboldo": "very low"
-    },
-    "market_efficiency_score": 0.8
-  }
+  ]
 }

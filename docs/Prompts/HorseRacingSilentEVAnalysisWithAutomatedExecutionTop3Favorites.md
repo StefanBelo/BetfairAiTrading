@@ -210,9 +210,8 @@ Format: Complete analysis of ALL horses in COMPLETE SILENCE, then execute strate
       "min_probability_betting": "number",
       "favorites_filter_applied": true,
       "max_favorite_rank_for_execution": 3
-    }
-  },
-  "horses": [
+    },
+    "horses": [
     {
       "name": "string",
       "selection_id": "string",      

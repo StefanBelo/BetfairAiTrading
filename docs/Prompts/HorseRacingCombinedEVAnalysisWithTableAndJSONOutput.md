@@ -344,9 +344,8 @@ The comprehensive analysis data should be stored using the SetAIAgentDataContext
       "performance_weight": "number",
       "min_ev_betting": "number",
       "min_probability_betting": "number"
-    }
-  },
-  "horses": [
+    },
+    "horses": [
     {
       "name": "string",
       "selection_id": "string",      

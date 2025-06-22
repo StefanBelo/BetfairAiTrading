@@ -9,8 +9,10 @@ fast = FastAgent("Bfexplorer Assistant")
 @fast.agent(name="BfexplorerApp", 
     instruction="You are a helpful AI Agent executing betting/trading strategies on bfexplorer.", 
     model="deepseek-chat",
+    #model="generic.openai/gpt-4.1",
     request_params=RequestParams(
       maxTokens=8192,
+      #maxTokens=8000,
       use_history=False,
       max_iterations=10
     ), 
@@ -243,9 +245,8 @@ Format: Complete analysis of ALL horses in COMPLETE SILENCE, then execute bettin
       "min_probability_betting": 0.1,
       "favorites_filter_applied": true,
       "max_favorite_rank_for_execution": 3
-    }
-  },
-  "horses": [
+    },
+    "horses": [
     {
       "name": "string",
       "selection_id": "string",

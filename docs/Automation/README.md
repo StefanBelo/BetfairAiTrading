@@ -76,6 +76,7 @@ This directory contains comprehensive guides on implementing AI-powered automati
 
 - **[AI Analysis Prompts](../Prompts/README.md)** - Ready-to-use prompts for various analysis types
 - **[Trading Strategies](../Strategies/README.md)** - Proven strategies for different sports
+- **[Analysis Reports](../Analysis/README.md)** - Strategy performance analysis and evaluation results
 - **[Testing Guidelines](../TestingStrategy.md)** - How to safely test your automation
 
 ## Prerequisites

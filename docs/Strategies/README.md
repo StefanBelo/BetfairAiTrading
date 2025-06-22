@@ -220,4 +220,6 @@ Each strategy includes:
 
 *For specific strategy documentation, navigate to the appropriate category folder above.*
 
-For AI-powered analysis and automation, see the [AI Analysis Prompts](../Prompts/README.md) section.
+**Related Resources:**
+- [AI Analysis Prompts](../Prompts/README.md) - AI-powered analysis and automation
+- [Analysis Reports](../Analysis/README.md) - Strategy performance analysis and evaluation results
