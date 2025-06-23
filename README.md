@@ -63,6 +63,7 @@ Ready-to-use AI prompts for various sports and analysis types:
 
 Real experiences from community members:
 - **[How I Became a Strategy Expert in Minutes](docs/Posts/Post_BfexplorerStrategyExpert.md)** - Success story using AI strategy assistance
+- **[Crowd Wisdom vs. Betting Value](docs/Posts/Post_CrowdWisdomVsBettingValue.md)** - Deep analysis of market efficiency and systematic value identification
 
 ### � Analysis Reports
 

@@ -29,6 +29,23 @@ This directory contains community posts, articles, and real-world examples showc
 - Real race data from 12 races with detailed before/after analysis
 - **Best for:** Understanding how to refine AI strategies and communicate results to community
 
+### [Crowd Wisdom vs. Betting Value: Finding Edges in Efficient Markets](Post_CrowdWisdomVsBettingValue.md)
+**Market Analysis & Betting Strategy**
+- Deep dive into crowd wisdom theory on Betfair betting exchanges
+- Analysis of where value opportunities persist despite collective intelligence
+- Systematic approach to finding edges in efficient markets
+- Practical framework for respecting vs. exploiting crowd wisdom
+- Expected Value calculations and realistic performance expectations
+- **Best for:** Understanding market efficiency and identifying profitable betting opportunities
+
+### [Reddit Post: Crowd Wisdom vs. Betting Value (Condensed)](RedditPost_CrowdWisdomVsBettingValue.md)
+**Community Discussion Version**
+- Reddit-ready condensed version of crowd wisdom analysis
+- Practical insights for betting exchange value identification
+- Community-friendly format for discussion and engagement
+- Mathematical frameworks and realistic expectations
+- **Best for:** Sharing insights with betting communities and forums
+
 ## What You'll Find Here
 
 ### Real User Experiences

@@ -1,0 +1,395 @@
+{
+  "raceAnalysis": {
+    "marketId": "1.244997594",
+    "marketName": "7f Hcap",
+    "eventName": "Chepstow",
+    "startTime": "2025-06-23T17:55:00+02:00",
+    "analysisTimestamp": "2025-06-23T17:52:00+02:00"
+  },
+  "selectedHorse": {
+    "horseName": "My Clementine",
+    "selectionId": "4496595_0.00",
+    "betPrice": 4.7,
+    "compositeScore": 80.89,
+    "strategyRationale": "LIVE BET EXECUTED: Meets all selection criteria despite price shortening - Semantic 85≥70✓, Composite 80.89≥60✓, EV +327.7%≥5%✓, strong trainer-confirmed improvement factors"
+  },
+  "allHorses": [
+    {
+      "horseName": "My Clementine",
+      "selectionId": "4496595_0.00",
+      "currentPrice": 4.7,
+      "predictionScore": 100,
+      "forecastPrice": 7.0,
+      "officialRating": 0,
+      "form": "5640-65",
+      "weight": 135,
+      "compositeScore": 80.89,
+      "scoreBreakdown": {
+        "semanticFormScore": 29.75,
+        "valueScore": 12.25,
+        "predictionScore": 25.0,
+        "stabilityScore": 13.89
+      },
+      "marketData": {
+        "minPrice": 4.5,
+        "maxPrice": 5.0,
+        "tradedVolume": 6743.58,
+        "priceStability": 11.1
+      },
+      "valueAssessment": {
+        "valueMargin": 48.9,
+        "isValue": true,
+        "priceMovement": "shortening",
+        "expectedValue": 327.7,
+        "winProbability": 91.0,
+        "impliedProbability": 21.3,
+        "isPositiveEV": true
+      },
+      "formAnalysis": {
+        "semanticFormScore": 85.0,
+        "recentFormTrend": "improving",
+        "performanceQuality": "strong",
+        "distanceSuitability": "perfect",
+        "trackSuitability": "excellent",
+        "runningStyle": "front_runner",
+        "positiveIndicators": ["led narrowly", "ran on well", "kept on well inside final furlong", "clear 1f out", "benefitted from first-time cheekpieces"],
+        "negativeIndicators": ["outpaced over 2f out", "weakened inside final furlong"],
+        "keyRaceComments": "trainer said filly benefitted from fitting of first-time cheekpieces and step down in trip"
+      },
+      "selectionReason": "PRIMARY SELECTION - BET PLACED: All criteria met, strong market support (price shortening), exceptional EV despite reduced value"
+    },
+    {
+      "horseName": "Ajrad",
+      "selectionId": "35455949_0.00",
+      "currentPrice": 4.2,
+      "predictionScore": 97.72,
+      "forecastPrice": 4.33,
+      "officialRating": 46,
+      "form": "874450",
+      "weight": 131,
+      "compositeScore": 67.87,
+      "scoreBreakdown": {
+        "semanticFormScore": 25.2,
+        "valueScore": 0.77,
+        "predictionScore": 24.4,
+        "stabilityScore": 17.5
+      },
+      "marketData": {
+        "minPrice": 4.0,
+        "maxPrice": 4.3,
+        "tradedVolume": 5929.95,
+        "priceStability": 7.5
+      },
+      "valueAssessment": {
+        "valueMargin": 3.1,
+        "isValue": false,
+        "priceMovement": "shortening",
+        "expectedValue": 245.7,
+        "winProbability": 82.3,
+        "impliedProbability": 23.8,
+        "isPositiveEV": true
+      },
+      "formAnalysis": {
+        "semanticFormScore": 72.0,
+        "recentFormTrend": "improving",
+        "performanceQuality": "solid",
+        "distanceSuitability": "suitable",
+        "trackSuitability": "good",
+        "runningStyle": "closer",
+        "positiveIndicators": ["led towards finish", "kept on well", "ran on inside final furlong", "just prevailed"],
+        "negativeIndicators": ["weakened final 110yds", "outpaced over 1f out"],
+        "keyRaceComments": "recent wins show resilience and finishing ability"
+      },
+      "selectionReason": "QUALIFIED SECONDARY - Strong market support (shortening), meets all criteria but ranked second"
+    },
+    {
+      "horseName": "Too Much Trevor",
+      "selectionId": "55256796_0.00",
+      "currentPrice": 9.2,
+      "predictionScore": 97.07,
+      "forecastPrice": 11.0,
+      "officialRating": 49,
+      "form": "5-06267",
+      "weight": 134,
+      "compositeScore": 57.3,
+      "scoreBreakdown": {
+        "semanticFormScore": 14.0,
+        "valueScore": 4.89,
+        "predictionScore": 24.27,
+        "stabilityScore": 14.15
+      },
+      "marketData": {
+        "minPrice": 8.2,
+        "maxPrice": 9.6,
+        "tradedVolume": 3049.33,
+        "priceStability": 17.1
+      },
+      "valueAssessment": {
+        "valueMargin": 19.6,
+        "isValue": true,
+        "priceMovement": "drifting",
+        "expectedValue": 51.6,
+        "winProbability": 63.0,
+        "impliedProbability": 10.9,
+        "isPositiveEV": true
+      },
+      "formAnalysis": {
+        "semanticFormScore": 40.0,
+        "recentFormTrend": "declining",
+        "performanceQuality": "weak",
+        "distanceSuitability": "questionable",
+        "trackSuitability": "poor",
+        "runningStyle": "hold_up",
+        "positiveIndicators": ["kept on from 3f out", "went second inside final furlong"],
+        "negativeIndicators": ["slowly away", "hung left", "no extra", "outpaced", "always behind"],
+        "keyRaceComments": "consistent starting problems and behavioral issues"
+      },
+      "selectionReason": "REJECTED - Semantic 40<70✗, Composite 57.3<60✗, behavioral concerns override positive EV"
+    },
+    {
+      "horseName": "Lambournghini",
+      "selectionId": "81825080_0.00",
+      "currentPrice": 5.8,
+      "predictionScore": 0,
+      "forecastPrice": 3.5,
+      "officialRating": 47,
+      "form": "87024",
+      "weight": 123,
+      "compositeScore": 28.6,
+      "scoreBreakdown": {
+        "semanticFormScore": 12.25,
+        "valueScore": 0.0,
+        "predictionScore": 0.0,
+        "stabilityScore": 16.38
+      },
+      "marketData": {
+        "minPrice": 5.3,
+        "maxPrice": 5.9,
+        "tradedVolume": 4297.2,
+        "priceStability": 11.3
+      },
+      "valueAssessment": {
+        "valueMargin": -39.7,
+        "isValue": false,
+        "priceMovement": "drifting",
+        "expectedValue": -0.83,
+        "winProbability": 14.0,
+        "impliedProbability": 17.2,
+        "isPositiveEV": false
+      },
+      "formAnalysis": {
+        "semanticFormScore": 35.0,
+        "recentFormTrend": "declining",
+        "performanceQuality": "weak",
+        "distanceSuitability": "questionable",
+        "trackSuitability": "poor",
+        "runningStyle": "stalker",
+        "positiveIndicators": ["pressed leader", "went second again"],
+        "negativeIndicators": ["always behind", "never better than midfield", "weakening"],
+        "keyRaceComments": "limited recent form data, mostly poor performances"
+      },
+      "selectionReason": "REJECTED - Semantic 35<70✗, Composite 28.6<60✗, EV -0.83%<5%✗, zero prediction score"
+    },
+    {
+      "horseName": "Marisitta",
+      "selectionId": "54944555_0.00",
+      "currentPrice": 8.6,
+      "predictionScore": 81.43,
+      "forecastPrice": 8.0,
+      "officialRating": 46,
+      "form": "6-88427",
+      "weight": 131,
+      "compositeScore": 54.8,
+      "scoreBreakdown": {
+        "semanticFormScore": 19.25,
+        "valueScore": 1.74,
+        "predictionScore": 20.36,
+        "stabilityScore": 13.47
+      },
+      "marketData": {
+        "minPrice": 7.4,
+        "maxPrice": 10.0,
+        "tradedVolume": 4141.48,
+        "priceStability": 35.1
+      },
+      "valueAssessment": {
+        "valueMargin": 7.5,
+        "isValue": true,
+        "priceMovement": "drifting",
+        "expectedValue": 25.1,
+        "winProbability": 58.9,
+        "impliedProbability": 11.6,
+        "isPositiveEV": true
+      },
+      "formAnalysis": {
+        "semanticFormScore": 55.0,
+        "recentFormTrend": "stable",
+        "performanceQuality": "moderate",
+        "distanceSuitability": "suitable",
+        "trackSuitability": "average",
+        "runningStyle": "stalker",
+        "positiveIndicators": ["kept on well inside final furlong", "nearest finish", "went second again"],
+        "negativeIndicators": ["weakened inside final furlong", "hung right"],
+        "keyRaceComments": "shows ability but inconsistent efforts"
+      },
+      "selectionReason": "REJECTED - Semantic 55<70✗, Composite 54.8<60✗, below minimum thresholds"
+    },
+    {
+      "horseName": "Letter Of The Law",
+      "selectionId": "41377415_0.00",
+      "currentPrice": 14.5,
+      "predictionScore": 94.14,
+      "forecastPrice": 7.0,
+      "officialRating": 0,
+      "form": "9-90278",
+      "weight": 130,
+      "compositeScore": 49.7,
+      "scoreBreakdown": {
+        "semanticFormScore": 17.5,
+        "valueScore": 0.0,
+        "predictionScore": 23.54,
+        "stabilityScore": 8.67
+      },
+      "marketData": {
+        "minPrice": 13.0,
+        "maxPrice": 17.5,
+        "tradedVolume": 3571.51,
+        "priceStability": 34.6
+      },
+      "valueAssessment": {
+        "valueMargin": -51.7,
+        "isValue": false,
+        "priceMovement": "drifting",
+        "expectedValue": 40.2,
+        "winProbability": 62.0,
+        "impliedProbability": 6.9,
+        "isPositiveEV": true
+      },
+      "formAnalysis": {
+        "semanticFormScore": 50.0,
+        "recentFormTrend": "stable",
+        "performanceQuality": "moderate",
+        "distanceSuitability": "questionable",
+        "trackSuitability": "average",
+        "runningStyle": "front_runner",
+        "positiveIndicators": ["led", "made all", "kept on well"],
+        "negativeIndicators": ["weakened", "headed", "stopped quickly"],
+        "keyRaceComments": "front-running pattern but often weakens in final stages"
+      },
+      "selectionReason": "REJECTED - Semantic 50<70✗, Composite 49.7<60✗, poor value despite positive EV"
+    },
+    {
+      "horseName": "Rotation",
+      "selectionId": "2050552_0.00",
+      "currentPrice": 14.5,
+      "predictionScore": 89.58,
+      "forecastPrice": 13.0,
+      "officialRating": 0,
+      "form": "7647-66",
+      "weight": 131,
+      "compositeScore": 48.8,
+      "scoreBreakdown": {
+        "semanticFormScore": 15.75,
+        "valueScore": 2.88,
+        "predictionScore": 22.4,
+        "stabilityScore": 7.73
+      },
+      "marketData": {
+        "minPrice": 14.0,
+        "maxPrice": 19.0,
+        "tradedVolume": 2587.1,
+        "priceStability": 35.7
+      },
+      "valueAssessment": {
+        "valueMargin": 11.5,
+        "isValue": true,
+        "priceMovement": "shortening",
+        "expectedValue": 29.7,
+        "winProbability": 59.7,
+        "impliedProbability": 6.9,
+        "isPositiveEV": true
+      },
+      "formAnalysis": {
+        "semanticFormScore": 45.0,
+        "recentFormTrend": "stable",
+        "performanceQuality": "moderate",
+        "distanceSuitability": "suitable",
+        "trackSuitability": "average",
+        "runningStyle": "hold_up",
+        "positiveIndicators": ["led over 2f out", "kept on inside final furlong"],
+        "negativeIndicators": ["never better than midfield", "ran too free", "ran green"],
+        "keyRaceComments": "limited recent data but shows some ability"
+      },
+      "selectionReason": "REJECTED - Semantic 45<70✗, Composite 48.8<60✗, inexperience concerns"
+    },
+    {
+      "horseName": "Pipkin",
+      "selectionId": "1134151_0.00",
+      "currentPrice": 55.0,
+      "predictionScore": 0,
+      "forecastPrice": 13.0,
+      "officialRating": 0,
+      "form": "09-97",
+      "weight": 121,
+      "compositeScore": 21.9,
+      "scoreBreakdown": {
+        "semanticFormScore": 8.75,
+        "valueScore": 0.0,
+        "predictionScore": 0.0,
+        "stabilityScore": 13.12
+      },
+      "marketData": {
+        "minPrice": 40.0,
+        "maxPrice": 80.0,
+        "tradedVolume": 1038.14,
+        "priceStability": 100.0
+      },
+      "valueAssessment": {
+        "valueMargin": -76.4,
+        "isValue": false,
+        "priceMovement": "shortening",
+        "expectedValue": -0.82,
+        "winProbability": 10.0,
+        "impliedProbability": 1.8,
+        "isPositiveEV": false
+      },
+      "formAnalysis": {
+        "semanticFormScore": 25.0,
+        "recentFormTrend": "declining",
+        "performanceQuality": "weak",
+        "distanceSuitability": "unsuitable",
+        "trackSuitability": "poor",
+        "runningStyle": "hold_up",
+        "positiveIndicators": [],
+        "negativeIndicators": ["always behind", "slowly away", "weakened", "hung left"],
+        "keyRaceComments": "consistent poor performances across multiple runs"
+      },
+      "selectionReason": "REJECTED - Semantic 25<70✗, Composite 21.9<60✗, EV -0.82%<5%✗, all criteria failed"
+    }
+  ],
+  "executedBet": {
+    "strategy": "Bet 10 Euro",
+    "status": "executed",
+    "timestamp": "2025-06-23T17:52:00+02:00",
+    "betAmount": 10.0,
+    "currency": "EUR",
+    "recommendation": "My Clementine - Live Bet Executed",
+    "reasoning": "Primary selection with strong market support, meets all criteria despite price movement reducing value component"
+  },
+  "strategyMetrics": {
+    "totalHorsesAnalyzed": 8,
+    "horsesAboveSemanticThreshold": 2,
+    "horsesAbovePredictionThreshold": 6,
+    "horsesWithPositiveEV": 6,
+    "horsesAboveCompositeThreshold": 2,
+    "averageCompositeScore": 53.1,
+    "averageSemanticFormScore": 51.4,
+    "averageExpectedValue": 112.2,
+    "highestScoringHorse": "My Clementine",
+    "highestSemanticFormHorse": "My Clementine", 
+    "highestEVHorse": "My Clementine",
+    "qualifiedSelections": ["My Clementine", "Ajrad"],
+    "marketConditions": "Strong shortening on qualified selections, high confidence",
+    "confidenceLevel": "high"
+  }
+}

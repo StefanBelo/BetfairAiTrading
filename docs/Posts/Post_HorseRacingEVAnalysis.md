@@ -21,7 +21,7 @@ Just completed a comprehensive analysis of an AI-driven Expected Value betting s
 After analyzing patterns, I created stricter criteria:
 - Confidence score ≥0.9 (vs ≥0.85)
 - Expert tips ≥5 with at least 1 NAP
-- Trading volume >20K EUR (vs >15K)
+- Trading volume >20K EUR (vs >15K)/
 - Strong tri-source alignment only
 
 **Backtesting the Refined Strategy:**
