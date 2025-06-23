@@ -20,6 +20,15 @@ This directory contains community posts, articles, and real-world examples showc
 - Example of combining "Place Bet - Be the First in Queue" with "Trailing Stop Loss"
 - **Best for:** Understanding the practical value of AI assistance in strategy development
 
+### [Reddit Post: AI Horse Racing EV Analysis - Strategy Refinement Success](RedditPost_HorseRacingEVAnalysis.md)
+**Strategy Optimization & Results Comparison**
+- Community-ready post about AI-driven horse racing analysis
+- Compares original vs refined betting strategy performance
+- Shows 33% to 66.7% win rate improvement through systematic refinement
+- Demonstrates backtesting approach to strategy optimization
+- Real race data from 12 races with detailed before/after analysis
+- **Best for:** Understanding how to refine AI strategies and communicate results to community
+
 ## What You'll Find Here
 
 ### Real User Experiences
