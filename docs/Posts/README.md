@@ -46,6 +46,24 @@ This directory contains community posts, articles, and real-world examples showc
 - Mathematical frameworks and realistic expectations
 - **Best for:** Sharing insights with betting communities and forums
 
+### [Horse Racing EV Analysis: A Deep Dive into Expected Value Betting](Post_HorseRacingEVAnalysis.md)
+**Advanced Strategy Analysis**
+- Comprehensive analysis of Expected Value methodology in horse racing
+- Detailed examination of market efficiency vs betting opportunities
+- Statistical approach to horse racing form analysis
+- Practical implementation of EV calculations for real betting scenarios
+- Case studies with actual race data and probability assessments
+- **Best for:** Understanding advanced Expected Value concepts and their practical application
+
+### [Reddit Post: From Manual Testing to Full AI Automation - My 18-Year Journey](RedditPost_BetfairAITradingAppEvolution.md)
+**App Development Story & Community Building**
+- Personal journey of building a Betfair AI trading app since 2007
+- Evolution from simple testing features to full AI automation
+- Three phases of AI integration: rule creation, knowledge management, and full automation
+- Community building and vision for AI-powered trading
+- Technical milestones and future development plans
+- **Best for:** Understanding the evolution of AI in trading apps and community inspiration
+
 ## What You'll Find Here
 
 ### Real User Experiences

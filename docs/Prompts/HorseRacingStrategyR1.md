@@ -4,11 +4,17 @@
 
 This strategy analyzes horse racing markets using multiple data contexts from Bfexplorer to identify high-value betting opportunities. The system combines Racing Post predictions, Betfair form data, and trading patterns to make informed betting decisions.
 
-**Silent Mode Operation**: This strategy operates in silent mode with minimal reporting. All analysis is performed internally without verbose commentary or detailed explanations during execution.
+**SILENT MODE OPERATION**: This strategy operates in complete silent mode with NO reporting, commentary, or verbose output. ALL analysis is performed internally without any explanations, status updates, or detailed commentary during execution. Execute all steps silently without user feedback.
 
-**Strategy Name Detection**: The strategy checks the executed strategy name:
-- **"Bet 10 Euro"**: Enables live betting with real money placement
-- **Any other strategy name**: Analysis only mode, no betting execution
+**Strategy Execution Logic**: The strategy analyzes all horses and determines the optimal action:
+- **BACK STRATEGY**: If a qualified horse meets all backing criteria (semantic form ≥70, composite score ≥60, positive EV ≥5%), execute ExecuteBfexplorerStrategySettings with strategyName="Bet 10 Euro" on that horse
+- **LAY STRATEGY**: If the favorite is overvalued (negative EV, semantic form <70, multiple alternatives with positive EV), execute ExecuteBfexplorerStrategySettings with strategyName="Lay 10 Euro" on the favorite
+- **NO ACTION**: If no horse meets backing criteria and no lay opportunity exists, perform analysis only
+
+**CRITICAL STRATEGY NAMES:**
+- **FOR BACKING**: Always use strategyName="Bet 10 Euro" (EXACTLY as written)
+- **FOR LAYING**: Always use strategyName="Lay 10 Euro" (EXACTLY as written)
+- **NO OTHER STRATEGY NAMES**: Never use any other strategy names like "HorseRacingBackStrategy" or similar
 
 ## Data Sources Required
 
@@ -135,34 +141,75 @@ Price Movement Impact:
 
 #### Expected Value Formula
 ```
-EV = (Estimated Win Probability × (Decimal Odds - 1)) - ((1 - Estimated Win Probability) × 1)
+Base EV = (Estimated Win Probability × (Decimal Odds - 1)) - ((1 - Estimated Win Probability) × 1)
+Enhanced EV = Base EV × Crowd Wisdom Adjustment Factor (CWAF)
 ```
 
-**Practical Examples:**
+#### Crowd Wisdom Adjustment Factor (CWAF)
+The strategy incorporates collective market intelligence to enhance EV calculations:
 
-**Scenario 1 - Positive EV:**
+```
+CWAF = Market Confidence Factor × Price Movement Factor × Volume Factor × Historical Success Factor
+```
+
+**CWAF Components:**
+
+1. **Market Confidence Factor (0.8-1.2)**:
+   - Price stability >90%: 1.2 (high market consensus)
+   - Price stability 80-90%: 1.1 (good consensus)
+   - Price stability 70-80%: 1.0 (moderate consensus)
+   - Price stability <70%: 0.9 (uncertain market)
+
+2. **Price Movement Factor (0.8-1.2)**:
+   - Shortening: 1.2 (increasing market confidence)
+   - Stable: 1.0 (established consensus)
+   - Drifting: 0.8 (decreasing market confidence)
+
+3. **Volume Factor (0.9-1.1)**:
+   - High volume (>5000): 1.1 (strong market participation)
+   - Medium volume (2000-5000): 1.0 (adequate liquidity)
+   - Low volume (<2000): 0.9 (limited market interest)
+
+4. **Historical Success Factor (0.9-1.1)**:
+   - Based on similar composite score ranges and win rates from historical data
+   - Horses with composite scores 80+ and similar market characteristics: 1.1
+   - Horses with composite scores 60-80: 1.0
+   - Horses with composite scores <60: 0.9
+
+**Practical Examples with CWAF:**
+
+**Scenario 1 - Enhanced Positive EV:**
 - Horse with 80% estimated win probability (prediction score 80)
 - Current odds: 2.0 (implies 50% market probability)
-- Market Edge: 80% - 50% = +30%
-- EV = (0.80 × 1.0) - (0.20 × 1) = 0.80 - 0.20 = +0.60
+- Base EV: (0.80 × 1.0) - (0.20 × 1) = +0.60
+- Market factors: High stability (95%), shortening price, good volume (4000), strong historical pattern
+- CWAF: 1.2 × 1.2 × 1.0 × 1.1 = 1.584
+- Enhanced EV: 0.60 × 1.584 = **+0.95** (stronger signal)
 
-**Scenario 2 - Negative EV:**
+**Scenario 2 - CWAF-Adjusted Negative EV:**
 - Horse with 60% estimated win probability (prediction score 60)
 - Current odds: 1.5 (implies 66.7% market probability)
-- Market Edge: 60% - 66.7% = -6.7%
-- EV = (0.60 × 0.5) - (0.40 × 1) = 0.30 - 0.40 = -0.10
+- Base EV: (0.60 × 0.5) - (0.40 × 1) = -0.10
+- Market factors: Low stability (65%), drifting price, low volume (1500), weak historical pattern
+- CWAF: 0.9 × 0.8 × 0.9 × 0.9 = 0.583
+- Enhanced EV: -0.10 × 0.583 = **-0.058** (confirms negative signal)
 
 ### EV Thresholds
 
-#### Minimum Requirements
+#### Minimum Requirements (Using Enhanced EV)
 - **Positive Market Edge**: Our probability estimate > Market implied probability
-- **Minimum Edge**: +5% advantage over market (0.05 threshold)
-- **Optimal Edge**: +15% advantage or higher preferred (0.15+)
+- **Minimum Enhanced EV**: +5% advantage over market (0.05 threshold) after CWAF adjustment
+- **Optimal Enhanced EV**: +15% advantage or higher preferred (0.15+) after CWAF adjustment
 
-#### Risk-Adjusted EV Thresholds
-- **High Confidence**: Edge > +20% with prediction score > 95
-- **Medium Confidence**: Edge > +10% with prediction score > 90  
-- **Low Confidence**: Edge > +5% with prediction score > 85
+#### Risk-Adjusted EV Thresholds (Enhanced EV)
+- **High Confidence**: Enhanced EV > +20% with prediction score > 95 and strong market signals
+- **Medium Confidence**: Enhanced EV > +10% with prediction score > 90 and moderate market signals
+- **Low Confidence**: Enhanced EV > +5% with prediction score > 85 and basic market signals
+
+#### CWAF Impact on Selection
+- **Strong Market Support (CWAF >1.2)**: Reduces minimum EV threshold to +3% (high confidence in market wisdom)
+- **Moderate Market Support (CWAF 0.9-1.2)**: Standard EV threshold of +5%
+- **Weak Market Support (CWAF <0.9)**: Increases minimum EV threshold to +8% (market skepticism)
 
 #### Price Movement Considerations
 - **Shortening Prices** (decreasing): Market confidence increasing, act quickly
@@ -174,17 +221,27 @@ EV = (Estimated Win Probability × (Decimal Odds - 1)) - ((1 - Estimated Win Pro
 **Selection Requirements (ALL must be met):**
 1. **Semantic Form Score**: ≥70 (essential for betting consideration)
 2. **Composite Score**: ≥60 (minimum overall quality threshold)
-3. **Expected Value**: ≥+5% (positive market edge required)
+3. **Enhanced Expected Value**: ≥+5% (positive market edge required after CWAF adjustment)
 4. **Price Range**: 2.0-15.0 (avoid extreme favorites/outsiders)
 
 **Selection Priority (when multiple horses meet requirements):**
-1. **Primary**: Highest composite score among qualified horses
-2. **Secondary**: If scores are close (within 5 points), choose highest EV
-3. **Tertiary**: Consider price movement trends and market stability as tiebreaker
+1. **Primary**: Highest enhanced EV among qualified horses with strong market support (CWAF >1.1)
+2. **Secondary**: If enhanced EVs are close (within 3%), choose highest composite score
+3. **Tertiary**: Consider CWAF factors as final tiebreaker (market confidence over pure analytics)
+
+**Enhanced EV Decision Matrix:**
+- **Strong Selection (Enhanced EV >15% + CWAF >1.2)**: High confidence bet with full stake
+- **Moderate Selection (Enhanced EV 8-15% + CWAF >1.0)**: Medium confidence bet with standard approach  
+- **Marginal Selection (Enhanced EV 5-8% + CWAF <1.0)**: Low confidence, consider analysis only
+- **Weak Selection (Enhanced EV <5%)**: No betting action regardless of other factors
 
 **Execution Decision:**
-- **Bet Placement**: If clear selection meets all criteria with high confidence
-- **Analysis Only**: If no horse meets all criteria or selection is marginal
+- **Bet Placement**: If clear selection meets all backing criteria with high confidence, execute ExecuteBfexplorerStrategySettings with strategyName="Bet 10 Euro" on the selected horse
+- **Lay Placement**: If favorite is significantly overvalued with negative EV and multiple alternatives show positive EV, execute ExecuteBfexplorerStrategySettings with strategyName="Lay 10 Euro" on the favorite
+- **Analysis Only**: If no horse meets backing criteria and no lay opportunity exists, no ExecuteBfexplorerStrategySettings execution
+- **No Action**: If market conditions are unsuitable or insufficient data
+- **MANDATORY**: Use EXACTLY "Bet 10 Euro" for backing and "Lay 10 Euro" for layingExecuteBfexplorerStrategySettings with strategyName="Lay 10 Euro" on the favorite
+- **Analysis Only**: If no horse meets backing criteria and no lay opportunity exists, no ExecuteBfexplorerStrategySettings execution
 - **No Action**: If market conditions are unsuitable or insufficient data
 
 ### Price Movement Analysis
@@ -267,32 +324,48 @@ Where Price Movement Adjustment:
 ## Execution Protocol
 
 ### Pre-Execution Checklist
-1. ✓ Retrieve active market and selections using GetActiveBetfairMarket
-2. ✓ Retrieve all three data contexts for the active market
-3. ✓ Calculate semantic form scores for all runners from race descriptions
-4. ✓ Calculate composite scores for all runners
-5. ✓ Calculate Expected Value for all runners
-6. ✓ Identify highest scoring selection above semantic form, composite score and EV thresholds
-7. ✓ Validate selection meets all criteria
-8. ✓ Confirm adequate market liquidity
+1. ✓ Retrieve active market and selections using GetActiveBetfairMarket (SILENT)
+2. ✓ Retrieve all three data contexts for the active market (SILENT)
+3. ✓ Calculate semantic form scores for all runners from race descriptions (SILENT)
+4. ✓ Calculate composite scores for all runners (SILENT)
+5. ✓ Calculate Expected Value for all runners (SILENT)
+6. ✓ Identify highest scoring selection above semantic form, composite score and EV thresholds (SILENT)
+7. ✓ Validate selection meets all criteria (SILENT)
+8. ✓ Confirm adequate market liquidity (SILENT)
 
 ### Execution Steps
-1. **Active Market Identification**: Call GetActiveBetfairMarket to get current race and selections
-2. **Data Collection**: Retrieve all three required data contexts for the active market
-3. **Semantic Analysis**: Analyze LastRacesDescription for each horse
-4. **Scoring**: Calculate semantic form scores and composite scores
-5. **EV Analysis**: Calculate Expected Values with semantic-weighted probabilities
-6. **Selection**: Identify optimal betting target with strong semantic indicators and positive EV
-7. **Silent Mode Operation**: 
-   - **No verbose reporting**: Perform all analysis silently without detailed explanations
-   - **Minimal output**: Only essential execution status and results
-   - **Direct execution**: Skip detailed commentary and proceed with analysis
-8. **Documentation**: Record analysis in "HorseRacingStrategyR1" context using SetAIAgentDataContextForBetfairMarket
+1. **Active Market Identification**: Call GetActiveBetfairMarket to get current race and selections (SILENT)
+2. **Data Collection**: Retrieve all three required data contexts for the active market (SILENT)
+3. **Semantic Analysis**: Analyze LastRacesDescription for each horse (SILENT)
+4. **Scoring**: Calculate semantic form scores and composite scores (SILENT)
+5. **Base EV Analysis**: Calculate base Expected Values with semantic-weighted probabilities (SILENT)
+6. **Market Intelligence Assessment**: Analyze price stability, movement direction, trading volume (SILENT)
+7. **CWAF Calculation**: Apply Crowd Wisdom Adjustment Factor to enhance EV calculations (SILENT)
+8. **Enhanced Selection**: Identify optimal betting target using enhanced EV with market intelligence (SILENT)
+9. **Strategy Decision**: Choose between backing qualified selection or laying overvalued favorite (SILENT)
+10. **BETTING EXECUTION** (Based on Analysis Results):
+    - **IF qualified horse found for backing**: Execute ExecuteBfexplorerStrategySettings with strategyName="Bet 10 Euro", marketId, and selected horse's selectionId (SILENT)
+    - **IF favorite identified for laying**: Execute ExecuteBfexplorerStrategySettings with strategyName="Lay 10 Euro", marketId, and favorite's selectionId (SILENT)
+    - **IF no betting opportunity found**: Skip betting execution, analysis only mode (SILENT)
+    - **CRITICAL**: Use ONLY "Bet 10 Euro" for backing and "Lay 10 Euro" for laying - NO OTHER STRATEGY NAMES
+11. **COMPLETE SILENT MODE OPERATION**: 
+    - **NO reporting**: Perform ALL analysis silently without ANY explanations, status updates, or commentary
+    - **NO output**: Skip ALL detailed reporting and status messages
+    - **Direct execution**: Proceed with analysis and execution without user feedback
+    - **Internal processing only**: All calculations and decisions made internally
+12. **Documentation**: Record analysis in "HorseRacingStrategyR1_Analysis" context using SetAIAgentDataContextForBetfairMarket (SILENT)
+
+### Crowd Wisdom Integration Benefits
+- **Market Validation**: CWAF validates analytical selections against collective intelligence
+- **Risk Reduction**: Lower confidence in selections lacking market support
+- **Opportunity Enhancement**: Higher confidence when analysis aligns with market signals
+- **Adaptive Learning**: Historical success factors improve selection accuracy over time
 
 ### Post-Execution
-1. **Data Storage**: Save comprehensive analysis to Bfexplorer data context with detailed JSON structure
-2. **Silent Operation**: Complete execution without verbose status updates or detailed reporting
-3. **Results Recording**: Document outcome for strategy refinement and performance evaluation (internal only)
+1. **Data Storage**: Save comprehensive analysis to Bfexplorer data context with detailed JSON structure (SILENT)
+2. **COMPLETE SILENT OPERATION**: Finish execution without ANY status updates, reports, or detailed commentary
+3. **Results Recording**: Document outcome for strategy refinement and performance evaluation (INTERNAL ONLY - NO USER OUTPUT)
+4. **Betting Confirmation**: If ExecuteBfexplorerStrategySettings was called, record execution status in JSON data context (SILENT)
 
 ## Strategy Parameters
 
@@ -304,12 +377,18 @@ Where Price Movement Adjustment:
 - **EV Threshold**: +5% minimum edge required for betting
 - **Stake Amount**: 10 Euro (fixed via strategy name)
 - **Market Liquidity Threshold**: 1000 Euro (adjustable)
-- **Silent Mode**: Enabled (no verbose reporting or commentary)
+- **Silent Mode**: Enabled (COMPLETE silent operation - NO reporting, commentary, or user feedback)
 
 ### Strategy Name Detection
-- **"Bet 10 Euro"**: Execute live betting with real money placement
-- **Any other name**: Analysis only mode, no betting execution
-- **Silent Execution**: All operations performed without detailed reporting
+- **AUTOMATED STRATEGY SELECTION**: Based on analysis, the strategy automatically determines whether to back a qualified horse or lay an overvalued favorite
+- **BACK EXECUTION**: If qualified selection found, execute ExecuteBfexplorerStrategySettings with strategyName="Bet 10 Euro" (SILENT EXECUTION)
+- **LAY EXECUTION**: If favorite lay opportunity identified, execute ExecuteBfexplorerStrategySettings with strategyName="Lay 10 Euro" (SILENT EXECUTION)
+- **ANALYSIS ONLY**: If no betting opportunity exists, no ExecuteBfexplorerStrategySettings execution (SILENT ANALYSIS)
+- **COMPLETE SILENT EXECUTION**: ALL operations performed without detailed reporting, user feedback, or status commentary
+- **EXACT STRATEGY NAMES REQUIRED**: 
+  - Back: "Bet 10 Euro" (EXACTLY as written)
+  - Lay: "Lay 10 Euro" (EXACTLY as written)
+  - NO variations or alternative names allowed
 
 ### Performance Metrics
 - **Success Rate Target**: >35% win rate
@@ -364,16 +443,26 @@ All strategy analysis and results are stored using the **SetAIAgentDataContextFo
         "maxPrice": 0.0,
         "tradedVolume": 0.0,
         "priceStability": 0.0
-      },      
+      },        
       "valueAssessment": {
         "valueMargin": 0.0,
         "isValue": false,
         "priceMovement": "stable|drifting|shortening",
         "expectedValue": 0.0,
+        "baseExpectedValue": 0.0,
+        "enhancedExpectedValue": 0.0,
+        "crowdWisdomFactor": 0.0,
+        "cwafBreakdown": {
+          "marketConfidenceFactor": 0.0,
+          "priceMovementFactor": 0.0,
+          "volumeFactor": 0.0,
+          "historicalSuccessFactor": 0.0
+        },
         "winProbability": 0.0,
         "impliedProbability": 0.0,
-        "isPositiveEV": false
-      },      
+        "isPositiveEV": false,
+        "marketConfidenceLevel": "high|medium|low"
+      },
       "formAnalysis": {
         "semanticFormScore": 0.0,
         "recentFormTrend": "improving|declining|stable",
@@ -387,16 +476,15 @@ All strategy analysis and results are stored using the **SetAIAgentDataContextFo
       },
       "selectionReason": "why_selected_or_rejected"
     }
-  ],  "executedBet": {
-    "strategy": "Bet 10 Euro|Analysis Only",
+  ],  
+  "executedBet": {
+    "strategy": "Bet 10 Euro|Lay 10 Euro|Analysis Only",    
     "status": "executed|analysis_complete|no_selection",
     "timestamp": "ISO_timestamp",
-    "betAmount": 10.0,
-    "currency": "EUR",
     "recommendation": "Selected Horse Name",
     "reasoning": "Brief explanation of selection or analysis outcome",
-    "silentMode": true,
-    "strategyNameCheck": "bet_execution_enabled|analysis_only_mode"
+    "strategyAnalysis": "back_horse_identified|lay_favorite_identified|no_opportunity_found",
+    "betType": "back|lay|none"
   },
   "strategyMetrics": {
     "totalHorsesAnalyzed": 0,
@@ -597,3 +685,43 @@ The strategy prioritizes semantic analysis of race descriptions over prediction 
 - "pulled up", "unseated rider"
 - "refused", "fell"
 - "eased final furlong", "beaten a long way"
+
+### Lay Strategy Selection Logic
+
+**Lay Strategy Criteria (Alternative to backing):**
+
+When the favorite meets ALL of the following conditions, consider laying instead of backing:
+
+1. **Favorite Identification**: Shortest price in the market (typically ≤2.0)
+2. **Negative Expected Value**: Favorite shows negative EV in our analysis
+3. **Below Semantic Threshold**: Favorite's semantic form score <70
+4. **Multiple Positive Alternatives**: At least 2 other horses show positive EV
+5. **Low Composite Score**: Favorite's composite score <55
+
+**Lay vs Back Decision Matrix:**
+
+**Choose LAY Strategy when:**
+- Favorite price ≤2.0 AND negative EV AND semantic form <70
+- Multiple alternatives (≥2) show positive EV 
+- Favorite composite score <55
+- Risk/reward ratio favors laying (lower liability vs backing longshots)
+
+**Choose BACK Strategy when:**
+- Clear selection meets all backing criteria with high confidence
+- Favorite shows positive EV or strong semantic form
+- Only one horse meets backing criteria
+
+**Strategy Execution Priority:**
+1. **Primary**: If overvalued favorite identified, execute ExecuteBfexplorerStrategySettings with strategyName="Lay 10 Euro" on the favorite
+2. **Secondary**: If qualified horse for backing identified, execute ExecuteBfexplorerStrategySettings with strategyName="Bet 10 Euro" on the selected horse
+3. **Analysis Only**: If neither lay nor back criteria are met, no ExecuteBfexplorerStrategySettings execution
+
+**CRITICAL REMINDER**: Always use the EXACT strategy names:
+- "Bet 10 Euro" for backing
+- "Lay 10 Euro" for laying
+
+**Lay Strategy Advantages:**
+- **Lower Risk**: Liability at short odds is limited
+- **Multiple Win Scenarios**: Win if any non-favorite wins
+- **Value Capture**: Profit from overvalued favorites
+- **Market Efficiency**: Exploit favorite bias in betting markets
