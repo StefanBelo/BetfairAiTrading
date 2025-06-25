@@ -27,13 +27,15 @@ try
                     Endpoint = new Uri("http://localhost:10043/sse"),
                     TransportMode = HttpTransportMode.Sse
                 }
-            ),
+            )
+            #if UseSamplingClient
+            ,
             new McpClientOptions
             {
-                #if UseSamplingClient
                 Capabilities = new() { Sampling = new() { SamplingHandler = samplingClient.CreateSamplingHandler() } }
-                #endif
+
             }
+            #endif
         );
 
     var tools = await mcpClient.ListToolsAsync();
@@ -54,13 +56,13 @@ try
         //AiAgentHelpers.CreateGithubChatClient("openai/gpt-4.1");
         AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
 
-#if !UseSamplingClient
+    #if !UseSamplingClient
     // Test the AI model
     await foreach (var update in chatClient.GetStreamingResponseAsync("Who are you?"))
     {
         Console.Write(update);
     }
-#endif
+    #endif
 
     string prompt = MyPrompts.ActiveBetfairMarket;
 

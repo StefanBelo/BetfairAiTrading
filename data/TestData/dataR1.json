@@ -1,43 +1,43 @@
 {
   "raceAnalysis": {
-    "marketId": "1.245015971",
-    "marketName": "1m Hcap",
-    "eventName": "Brighton",
-    "startTime": "2025-06-24T17:00:00+02:00",
-    "analysisTimestamp": "2025-06-24T16:30:00+02:00"
+    "marketId": "1.245051552",
+    "marketName": "7f Hcap",
+    "eventName": "Kempton",
+    "startTime": "2025-06-25T19:00:00+02:00",
+    "analysisTimestamp": "2025-06-25T18:45:00+02:00"
   },
   "selectedHorse": {
-    "horseName": "Alices Impact",
-    "selectionId": "58821820_0.00",
-    "betPrice": 2.86,
-    "compositeScore": 85.7,
-    "strategyRationale": "High prediction score (100), positive EV (+12%), strong semantic form score (90), and stable price movement."
+    "horseName": "Stella Hogan",
+    "selectionId": "54449503_0.00",
+    "betPrice": 7.8,
+    "compositeScore": 85.5,
+    "strategyRationale": "High prediction score (100), strong semantic form analysis, positive EV (8.5%), and stable market behavior."
   },
   "allHorses": [
     {
-      "horseName": "Banksman",
-      "selectionId": "73038130_0.00",
-      "currentPrice": 2.12,
-      "predictionScore": 99.22,
-      "forecastPrice": 2.75,
-      "officialRating": 52,
-      "form": "846211",
-      "weight": 130,
-      "compositeScore": 82.5,
+      "horseName": "Mahras Love",
+      "selectionId": "74823457_0.00",
+      "currentPrice": 2.48,
+      "predictionScore": 95.71,
+      "forecastPrice": 3.5,
+      "officialRating": 70,
+      "form": "5-233",
+      "weight": 135,
+      "compositeScore": 78.2,
       "scoreBreakdown": {
-        "semanticFormScore": 85,
-        "valueScore": 22.9,
-        "predictionScore": 99.22,
-        "stabilityScore": 94.4
+        "semanticFormScore": 75.0,
+        "valueScore": 15.0,
+        "predictionScore": 95.71,
+        "stabilityScore": 80.0
       },
       "marketData": {
-        "minPrice": 2.04,
-        "maxPrice": 2.16,
-        "tradedVolume": 10705.49,
-        "priceStability": 94.4
+        "minPrice": 2.36,
+        "maxPrice": 2.64,
+        "tradedVolume": 15930.79,
+        "priceStability": 80.0
       },
       "valueAssessment": {
-        "valueMargin": -22.9,
+        "valueMargin": -29.14,
         "isValue": false,
         "priceMovement": "stable",
         "expectedValue": -0.05,
@@ -47,62 +47,61 @@
         "cwafBreakdown": {
           "marketConfidenceFactor": 1.0,
           "priceMovementFactor": 1.0,
-          "volumeFactor": 1.1,
+          "volumeFactor": 1.0,
           "historicalSuccessFactor": 1.0
         },
-        "winProbability": 0.47,
-        "impliedProbability": 0.47,
+        "winProbability": 0.4,
+        "impliedProbability": 0.4032,
         "isPositiveEV": false,
-        "marketConfidenceLevel": "high"
+        "marketConfidenceLevel": "medium"
       },
       "formAnalysis": {
-        "semanticFormScore": 85,
-        "recentFormTrend": "improving",
+        "semanticFormScore": 75.0,
+        "recentFormTrend": "stable",
         "performanceQuality": "strong",
         "distanceSuitability": "suitable",
         "trackSuitability": "good",
-        "runningStyle": "front_runner",
+        "runningStyle": "stalker",
         "positiveIndicators": [
-          "led against far rail",
-          "smooth headway",
-          "kept on"
+          "kept on well",
+          "ran on strongly"
         ],
         "negativeIndicators": [
-          "hung left-handed"
+          "weakened inside final furlong"
         ],
-        "keyRaceComments": "travelled strongly, held up in rear, switched left and smooth headway over 2f out, challenging over 1f out, pushed along to lead inside final furlong, ridden out, comfortably"
+        "keyRaceComments": "led inside final furlong, ridden out, won going away"
       },
       "selectionReason": "High prediction score but negative EV and value margin."
     },
     {
-      "horseName": "Alices Impact",
-      "selectionId": "58821820_0.00",
-      "currentPrice": 2.86,
-      "predictionScore": 100,
-      "forecastPrice": 3.75,
-      "officialRating": 0,
-      "form": "424142",
-      "weight": 133,
-      "compositeScore": 85.7,
+      "horseName": "Maids Head",
+      "selectionId": "71661941_0.00",
+      "currentPrice": 6.2,
+      "predictionScore": 92.86,
+      "forecastPrice": 7.0,
+      "officialRating": 70,
+      "form": "3-32641",
+      "weight": 135,
+      "compositeScore": 82.1,
       "scoreBreakdown": {
-        "semanticFormScore": 90,
-        "valueScore": 23.7,
-        "predictionScore": 100,
-        "stabilityScore": 100
+        "semanticFormScore": 80.0,
+        "valueScore": 10.0,
+        "predictionScore": 92.86,
+        "stabilityScore": 85.0
       },
       "marketData": {
-        "minPrice": 2.86,
-        "maxPrice": 3.05,
-        "tradedVolume": 8208.26,
-        "priceStability": 100
+        "minPrice": 6.0,
+        "maxPrice": 6.6,
+        "tradedVolume": 5724.1,
+        "priceStability": 85.0
       },
       "valueAssessment": {
-        "valueMargin": 23.7,
-        "isValue": true,
+        "valueMargin": -11.43,
+        "isValue": false,
         "priceMovement": "stable",
-        "expectedValue": 0.12,
-        "baseExpectedValue": 0.12,
-        "enhancedExpectedValue": 0.12,
+        "expectedValue": 0.02,
+        "baseExpectedValue": 0.02,
+        "enhancedExpectedValue": 0.02,
         "crowdWisdomFactor": 1.0,
         "cwafBreakdown": {
           "marketConfidenceFactor": 1.0,
@@ -110,166 +109,563 @@
           "volumeFactor": 1.0,
           "historicalSuccessFactor": 1.0
         },
-        "winProbability": 0.35,
-        "impliedProbability": 0.35,
-        "isPositiveEV": true,
-        "marketConfidenceLevel": "high"
-      },
-      "formAnalysis": {
-        "semanticFormScore": 90,
-        "recentFormTrend": "stable",
-        "performanceQuality": "strong",
-        "distanceSuitability": "suitable",
-        "trackSuitability": "good",
-        "runningStyle": "prominent",
-        "positiveIndicators": [
-          "prominent, led over 2f out",
-          "midfield, outpaced 2f out, stayed on final furlong",
-          "prominent, headway to lead over 1f out, ran on well inside final furlong"
-        ],
-        "negativeIndicators": [],
-        "keyRaceComments": "prominent, led over 2f out, faced challenge over 1f out, headed inside final furlong, kept on towards finish"
-      },
-      "selectionReason": "High prediction score, positive EV, strong semantic form score, and stable price movement."
-    },
-    {
-      "horseName": "Monks Mead",
-      "selectionId": "56183961_0.00",
-      "currentPrice": 10,
-      "predictionScore": 82.68,
-      "forecastPrice": 4,
-      "officialRating": 52,
-      "form": "89-0792",
-      "weight": 134,
-      "compositeScore": 68.3,
-      "scoreBreakdown": {
-        "semanticFormScore": 75,
-        "valueScore": 150,
-        "predictionScore": 82.68,
-        "stabilityScore": 89.1
-      },
-      "marketData": {
-        "minPrice": 9.8,
-        "maxPrice": 11,
-        "tradedVolume": 2966.95,
-        "priceStability": 89.1
-      },
-      "valueAssessment": {
-        "valueMargin": 150,
-        "isValue": true,
-        "priceMovement": "stable",
-        "expectedValue": 0.08,
-        "baseExpectedValue": 0.08,
-        "enhancedExpectedValue": 0.08,
-        "crowdWisdomFactor": 1.0,
-        "cwafBreakdown": {
-          "marketConfidenceFactor": 1.0,
-          "priceMovementFactor": 1.0,
-          "volumeFactor": 0.9,
-          "historicalSuccessFactor": 1.0
-        },
-        "winProbability": 0.1,
-        "impliedProbability": 0.1,
-        "isPositiveEV": true,
+        "winProbability": 0.15,
+        "impliedProbability": 0.1613,
+        "isPositiveEV": false,
         "marketConfidenceLevel": "medium"
       },
       "formAnalysis": {
-        "semanticFormScore": 75,
-        "recentFormTrend": "stable",
-        "performanceQuality": "solid",
-        "distanceSuitability": "suitable",
-        "trackSuitability": "average",
-        "runningStyle": "prominent",
-        "positiveIndicators": [
-          "reared start, slowly away, soon in touch with leaders on outer, headway and pressed leaders over 2f out"
-        ],
-        "negativeIndicators": [
-          "outpaced over 1f out"
-        ],
-        "keyRaceComments": "reared start, slowly away, soon in touch with leaders on outer, headway and pressed leaders over 2f out, outpaced over 1f out, rallied when hung left and pressed winner inside final 110yds, kept on"
-      },
-      "selectionReason": "Positive EV but lower prediction score and semantic form score."
-    },
-    {
-      "horseName": "River Wharfe",
-      "selectionId": "30333278_0.00",
-      "currentPrice": 11.5,
-      "predictionScore": 92.41,
-      "forecastPrice": 5,
-      "officialRating": 55,
-      "form": "476514",
-      "weight": 137,
-      "compositeScore": 75.2,
-      "scoreBreakdown": {
-        "semanticFormScore": 80,
-        "valueScore": 130,
-        "predictionScore": 92.41,
-        "stabilityScore": 84.6
-      },
-      "marketData": {
-        "minPrice": 11,
-        "maxPrice": 13,
-        "tradedVolume": 2996.46,
-        "priceStability": 84.6
-      },
-      "valueAssessment": {
-        "valueMargin": 130,
-        "isValue": true,
-        "priceMovement": "stable",
-        "expectedValue": 0.1,
-        "baseExpectedValue": 0.1,
-        "enhancedExpectedValue": 0.1,
-        "crowdWisdomFactor": 1.0,
-        "cwafBreakdown": {
-          "marketConfidenceFactor": 1.0,
-          "priceMovementFactor": 1.0,
-          "volumeFactor": 0.9,
-          "historicalSuccessFactor": 1.0
-        },
-        "winProbability": 0.09,
-        "impliedProbability": 0.09,
-        "isPositiveEV": true,
-        "marketConfidenceLevel": "medium"
-      },
-      "formAnalysis": {
-        "semanticFormScore": 80,
+        "semanticFormScore": 80.0,
         "recentFormTrend": "improving",
         "performanceQuality": "strong",
         "distanceSuitability": "suitable",
         "trackSuitability": "good",
-        "runningStyle": "towards rear",
+        "runningStyle": "front_runner",
         "positiveIndicators": [
-          "towards rear, headway over 2f out, no extra final 110yds",
-          "in touch with leaders, headway over 2f out, pressed winner inside final 110yds, joined winner post, forced dead-heat"
+          "led over 1f out",
+          "kept on inside final furlong"
         ],
         "negativeIndicators": [
-          "slowly away, in rear, steady headway from over 1f out, kept on"
+          "outpaced 2f out"
         ],
-        "keyRaceComments": "towards rear, headway over 2f out, no extra final 110yds"
+        "keyRaceComments": "led over 1f out, ridden and kept on inside final furlong, all out"
       },
-      "selectionReason": "Positive EV and high prediction score but lower semantic form score."
+      "selectionReason": "High prediction score but negative EV and value margin."
+    },
+    {
+      "horseName": "Stella Hogan",
+      "selectionId": "54449503_0.00",
+      "currentPrice": 7.8,
+      "predictionScore": 100.0,
+      "forecastPrice": 6.0,
+      "officialRating": 65,
+      "form": "213614",
+      "weight": 139,
+      "compositeScore": 85.5,
+      "scoreBreakdown": {
+        "semanticFormScore": 85.0,
+        "valueScore": 30.0,
+        "predictionScore": 100.0,
+        "stabilityScore": 80.0
+      },
+      "marketData": {
+        "minPrice": 7.4,
+        "maxPrice": 9.0,
+        "tradedVolume": 4111.34,
+        "priceStability": 80.0
+      },
+      "valueAssessment": {
+        "valueMargin": 30.0,
+        "isValue": true,
+        "priceMovement": "stable",
+        "expectedValue": 0.085,
+        "baseExpectedValue": 0.085,
+        "enhancedExpectedValue": 0.085,
+        "crowdWisdomFactor": 1.0,
+        "cwafBreakdown": {
+          "marketConfidenceFactor": 1.0,
+          "priceMovementFactor": 1.0,
+          "volumeFactor": 1.0,
+          "historicalSuccessFactor": 1.0
+        },
+        "winProbability": 0.128,
+        "impliedProbability": 0.1282,
+        "isPositiveEV": true,
+        "marketConfidenceLevel": "medium"
+      },
+      "formAnalysis": {
+        "semanticFormScore": 85.0,
+        "recentFormTrend": "improving",
+        "performanceQuality": "elite",
+        "distanceSuitability": "perfect",
+        "trackSuitability": "excellent",
+        "runningStyle": "closer",
+        "positiveIndicators": [
+          "led inside final furlong",
+          "ran on well"
+        ],
+        "negativeIndicators": [
+          "dwelt start"
+        ],
+        "keyRaceComments": "led inside final furlong, ridden out, won going away"
+      },
+      "selectionReason": "High prediction score, positive EV, and strong semantic form analysis."
+    },
+    {
+      "horseName": "Eliza Bennet",
+      "selectionId": "70085726_0.00",
+      "currentPrice": 12.0,
+      "predictionScore": 67.14,
+      "forecastPrice": 15.0,
+      "officialRating": 70,
+      "form": "972-58",
+      "weight": 135,
+      "compositeScore": 60.5,
+      "scoreBreakdown": {
+        "semanticFormScore": 65.0,
+        "valueScore": 20.0,
+        "predictionScore": 67.14,
+        "stabilityScore": 70.0
+      },
+      "marketData": {
+        "minPrice": 11.5,
+        "maxPrice": 15.5,
+        "tradedVolume": 3010.96,
+        "priceStability": 70.0
+      },
+      "valueAssessment": {
+        "valueMargin": 20.0,
+        "isValue": true,
+        "priceMovement": "drifting",
+        "expectedValue": 0.03,
+        "baseExpectedValue": 0.03,
+        "enhancedExpectedValue": 0.03,
+        "crowdWisdomFactor": 1.0,
+        "cwafBreakdown": {
+          "marketConfidenceFactor": 1.0,
+          "priceMovementFactor": 1.0,
+          "volumeFactor": 1.0,
+          "historicalSuccessFactor": 1.0
+        },
+        "winProbability": 0.083,
+        "impliedProbability": 0.0833,
+        "isPositiveEV": false,
+        "marketConfidenceLevel": "medium"
+      },
+      "formAnalysis": {
+        "semanticFormScore": 65.0,
+        "recentFormTrend": "declining",
+        "performanceQuality": "moderate",
+        "distanceSuitability": "questionable",
+        "trackSuitability": "average",
+        "runningStyle": "hold_up",
+        "positiveIndicators": [
+          "some headway over 2f out"
+        ],
+        "negativeIndicators": [
+          "weakened gradually over 1f out"
+        ],
+        "keyRaceComments": "in touch with leaders, weakened gradually over 1f out"
+      },
+      "selectionReason": "Low prediction score and declining form."
+    },
+    {
+      "horseName": "Rajinoora",
+      "selectionId": "82354617_0.00",
+      "currentPrice": 16.0,
+      "predictionScore": 0.0,
+      "forecastPrice": 13.0,
+      "officialRating": 66,
+      "form": "787",
+      "weight": 131,
+      "compositeScore": 50.0,
+      "scoreBreakdown": {
+        "semanticFormScore": 50.0,
+        "valueScore": 0.0,
+        "predictionScore": 0.0,
+        "stabilityScore": 60.0
+      },
+      "marketData": {
+        "minPrice": 14.5,
+        "maxPrice": 18.0,
+        "tradedVolume": 2751.96,
+        "priceStability": 60.0
+      },
+      "valueAssessment": {
+        "valueMargin": 0.0,
+        "isValue": false,
+        "priceMovement": "stable",
+        "expectedValue": -0.1,
+        "baseExpectedValue": -0.1,
+        "enhancedExpectedValue": -0.1,
+        "crowdWisdomFactor": 1.0,
+        "cwafBreakdown": {
+          "marketConfidenceFactor": 1.0,
+          "priceMovementFactor": 1.0,
+          "volumeFactor": 1.0,
+          "historicalSuccessFactor": 1.0
+        },
+        "winProbability": 0.062,
+        "impliedProbability": 0.0625,
+        "isPositiveEV": false,
+        "marketConfidenceLevel": "low"
+      },
+      "formAnalysis": {
+        "semanticFormScore": 50.0,
+        "recentFormTrend": "declining",
+        "performanceQuality": "weak",
+        "distanceSuitability": "unsuitable",
+        "trackSuitability": "poor",
+        "runningStyle": "hold_up",
+        "positiveIndicators": [],
+        "negativeIndicators": [
+          "weakened from 2f out"
+        ],
+        "keyRaceComments": "took keen hold, prominent, lost position but in touch with leaders after 2f, hung left and weakened from 2f out"
+      },
+      "selectionReason": "Low composite score and negative EV."
+    },
+    {
+      "horseName": "Beauty Beyond",
+      "selectionId": "83129686_0.00",
+      "currentPrice": 34.0,
+      "predictionScore": 64.29,
+      "forecastPrice": 8.0,
+      "officialRating": 66,
+      "form": "478",
+      "weight": 131,
+      "compositeScore": 55.0,
+      "scoreBreakdown": {
+        "semanticFormScore": 60.0,
+        "valueScore": -5.0,
+        "predictionScore": 64.29,
+        "stabilityScore": 50.0
+      },
+      "marketData": {
+        "minPrice": 24.0,
+        "maxPrice": 36.0,
+        "tradedVolume": 1406.9,
+        "priceStability": 50.0
+      },
+      "valueAssessment": {
+        "valueMargin": -5.0,
+        "isValue": false,
+        "priceMovement": "drifting",
+        "expectedValue": -0.15,
+        "baseExpectedValue": -0.15,
+        "enhancedExpectedValue": -0.15,
+        "crowdWisdomFactor": 1.0,
+        "cwafBreakdown": {
+          "marketConfidenceFactor": 1.0,
+          "priceMovementFactor": 1.0,
+          "volumeFactor": 1.0,
+          "historicalSuccessFactor": 1.0
+        },
+        "winProbability": 0.029,
+        "impliedProbability": 0.0294,
+        "isPositiveEV": false,
+        "marketConfidenceLevel": "low"
+      },
+      "formAnalysis": {
+        "semanticFormScore": 60.0,
+        "recentFormTrend": "stable",
+        "performanceQuality": "moderate",
+        "distanceSuitability": "suitable",
+        "trackSuitability": "average",
+        "runningStyle": "hold_up",
+        "positiveIndicators": [
+          "ran green"
+        ],
+        "negativeIndicators": [
+          "weakened quickly inside final furlong"
+        ],
+        "keyRaceComments": "led, headed 2f out, soon no chance with winner, lost second 1f out, weakened quickly inside final furlong"
+      },
+      "selectionReason": "Low composite score and negative EV."
+    },
+    {
+      "horseName": "Shimaleyah",
+      "selectionId": "80105999_0.00",
+      "currentPrice": 22.0,
+      "predictionScore": 0.0,
+      "forecastPrice": 34.0,
+      "officialRating": 67,
+      "form": "84500",
+      "weight": 132,
+      "compositeScore": 45.0,
+      "scoreBreakdown": {
+        "semanticFormScore": 40.0,
+        "valueScore": 0.0,
+        "predictionScore": 0.0,
+        "stabilityScore": 50.0
+      },
+      "marketData": {
+        "minPrice": 19.5,
+        "maxPrice": 25.0,
+        "tradedVolume": 1381.61,
+        "priceStability": 50.0
+      },
+      "valueAssessment": {
+        "valueMargin": 0.0,
+        "isValue": false,
+        "priceMovement": "drifting",
+        "expectedValue": -0.2,
+        "baseExpectedValue": -0.2,
+        "enhancedExpectedValue": -0.2,
+        "crowdWisdomFactor": 1.0,
+        "cwafBreakdown": {
+          "marketConfidenceFactor": 1.0,
+          "priceMovementFactor": 1.0,
+          "volumeFactor": 1.0,
+          "historicalSuccessFactor": 1.0
+        },
+        "winProbability": 0.045,
+        "impliedProbability": 0.0455,
+        "isPositiveEV": false,
+        "marketConfidenceLevel": "low"
+      },
+      "formAnalysis": {
+        "semanticFormScore": 40.0,
+        "recentFormTrend": "declining",
+        "performanceQuality": "weak",
+        "distanceSuitability": "unsuitable",
+        "trackSuitability": "poor",
+        "runningStyle": "hold_up",
+        "positiveIndicators": [],
+        "negativeIndicators": [
+          "weakening when not clear run 1f out"
+        ],
+        "keyRaceComments": "midfield, disputing fourth 3f out, weakening when not clear run 1f out"
+      },
+      "selectionReason": "Low composite score and negative EV."
+    },
+    {
+      "horseName": "Chadleeny",
+      "selectionId": "73420635_0.00",
+      "currentPrice": 34.0,
+      "predictionScore": 0.0,
+      "forecastPrice": 11.0,
+      "officialRating": 64,
+      "form": "8655-",
+      "weight": 129,
+      "compositeScore": 40.0,
+      "scoreBreakdown": {
+        "semanticFormScore": 35.0,
+        "valueScore": 0.0,
+        "predictionScore": 0.0,
+        "stabilityScore": 45.0
+      },
+      "marketData": {
+        "minPrice": 23.0,
+        "maxPrice": 36.0,
+        "tradedVolume": 1094.46,
+        "priceStability": 45.0
+      },
+      "valueAssessment": {
+        "valueMargin": 0.0,
+        "isValue": false,
+        "priceMovement": "drifting",
+        "expectedValue": -0.25,
+        "baseExpectedValue": -0.25,
+        "enhancedExpectedValue": -0.25,
+        "crowdWisdomFactor": 1.0,
+        "cwafBreakdown": {
+          "marketConfidenceFactor": 1.0,
+          "priceMovementFactor": 1.0,
+          "volumeFactor": 1.0,
+          "historicalSuccessFactor": 1.0
+        },
+        "winProbability": 0.029,
+        "impliedProbability": 0.0294,
+        "isPositiveEV": false,
+        "marketConfidenceLevel": "low"
+      },
+      "formAnalysis": {
+        "semanticFormScore": 35.0,
+        "recentFormTrend": "declining",
+        "performanceQuality": "weak",
+        "distanceSuitability": "unsuitable",
+        "trackSuitability": "poor",
+        "runningStyle": "hold_up",
+        "positiveIndicators": [],
+        "negativeIndicators": [
+          "weakened inside final furlong"
+        ],
+        "keyRaceComments": "prominent on inner, pressed leaders over 1f out, ridden inside final furlong, no extra inside final 110yds"
+      },
+      "selectionReason": "Low composite score and negative EV."
+    },
+    {
+      "horseName": "Thundering Breeze",
+      "selectionId": "69259104_0.00",
+      "currentPrice": 32.0,
+      "predictionScore": 0.0,
+      "forecastPrice": 26.0,
+      "officialRating": 0,
+      "form": "473687-",
+      "weight": 130,
+      "compositeScore": 35.0,
+      "scoreBreakdown": {
+        "semanticFormScore": 30.0,
+        "valueScore": 0.0,
+        "predictionScore": 0.0,
+        "stabilityScore": 40.0
+      },
+      "marketData": {
+        "minPrice": 26.0,
+        "maxPrice": 36.0,
+        "tradedVolume": 1504.86,
+        "priceStability": 40.0
+      },
+      "valueAssessment": {
+        "valueMargin": 0.0,
+        "isValue": false,
+        "priceMovement": "drifting",
+        "expectedValue": -0.3,
+        "baseExpectedValue": -0.3,
+        "enhancedExpectedValue": -0.3,
+        "crowdWisdomFactor": 1.0,
+        "cwafBreakdown": {
+          "marketConfidenceFactor": 1.0,
+          "priceMovementFactor": 1.0,
+          "volumeFactor": 1.0,
+          "historicalSuccessFactor": 1.0
+        },
+        "winProbability": 0.031,
+        "impliedProbability": 0.0313,
+        "isPositiveEV": false,
+        "marketConfidenceLevel": "low"
+      },
+      "formAnalysis": {
+        "semanticFormScore": 30.0,
+        "recentFormTrend": "declining",
+        "performanceQuality": "weak",
+        "distanceSuitability": "unsuitable",
+        "trackSuitability": "poor",
+        "runningStyle": "hold_up",
+        "positiveIndicators": [],
+        "negativeIndicators": [
+          "weakened inside final furlong"
+        ],
+        "keyRaceComments": "midfield, hampered and dropped to rear over 3f out, headway when short of room and hampered over 1f out, kept on inside final 110yds, not reach leaders"
+      },
+      "selectionReason": "Low composite score and negative EV."
+    },
+    {
+      "horseName": "Marchetti",
+      "selectionId": "13250184_0.00",
+      "currentPrice": 48.0,
+      "predictionScore": 75.0,
+      "forecastPrice": 15.0,
+      "officialRating": 52,
+      "form": "23239-5",
+      "weight": 126,
+      "compositeScore": 60.0,
+      "scoreBreakdown": {
+        "semanticFormScore": 65.0,
+        "valueScore": 0.0,
+        "predictionScore": 75.0,
+        "stabilityScore": 50.0
+      },
+      "marketData": {
+        "minPrice": 30.0,
+        "maxPrice": 50.0,
+        "tradedVolume": 847.04,
+        "priceStability": 50.0
+      },
+      "valueAssessment": {
+        "valueMargin": 0.0,
+        "isValue": false,
+        "priceMovement": "drifting",
+        "expectedValue": -0.1,
+        "baseExpectedValue": -0.1,
+        "enhancedExpectedValue": -0.1,
+        "crowdWisdomFactor": 1.0,
+        "cwafBreakdown": {
+          "marketConfidenceFactor": 1.0,
+          "priceMovementFactor": 1.0,
+          "volumeFactor": 1.0,
+          "historicalSuccessFactor": 1.0
+        },
+        "winProbability": 0.021,
+        "impliedProbability": 0.0208,
+        "isPositiveEV": false,
+        "marketConfidenceLevel": "low"
+      },
+      "formAnalysis": {
+        "semanticFormScore": 65.0,
+        "recentFormTrend": "stable",
+        "performanceQuality": "moderate",
+        "distanceSuitability": "suitable",
+        "trackSuitability": "average",
+        "runningStyle": "hold_up",
+        "positiveIndicators": [
+          "ran on well inside final furlong"
+        ],
+        "negativeIndicators": [
+          "not clear run inside final furlong"
+        ],
+        "keyRaceComments": "in rear on outer, headway 2f out, no impression final furlong"
+      },
+      "selectionReason": "Low composite score and negative EV."
+    },
+    {
+      "horseName": "Sangara",
+      "selectionId": "73847586_0.00",
+      "currentPrice": 95.0,
+      "predictionScore": 0.0,
+      "forecastPrice": 15.0,
+      "officialRating": 0,
+      "form": "955-",
+      "weight": 130,
+      "compositeScore": 30.0,
+      "scoreBreakdown": {
+        "semanticFormScore": 25.0,
+        "valueScore": 0.0,
+        "predictionScore": 0.0,
+        "stabilityScore": 35.0
+      },
+      "marketData": {
+        "minPrice": 70.0,
+        "maxPrice": 110.0,
+        "tradedVolume": 694.56,
+        "priceStability": 35.0
+      },
+      "valueAssessment": {
+        "valueMargin": 0.0,
+        "isValue": false,
+        "priceMovement": "drifting",
+        "expectedValue": -0.35,
+        "baseExpectedValue": -0.35,
+        "enhancedExpectedValue": -0.35,
+        "crowdWisdomFactor": 1.0,
+        "cwafBreakdown": {
+          "marketConfidenceFactor": 1.0,
+          "priceMovementFactor": 1.0,
+          "volumeFactor": 1.0,
+          "historicalSuccessFactor": 1.0
+        },
+        "winProbability": 0.011,
+        "impliedProbability": 0.0105,
+        "isPositiveEV": false,
+        "marketConfidenceLevel": "low"
+      },
+      "formAnalysis": {
+        "semanticFormScore": 25.0,
+        "recentFormTrend": "declining",
+        "performanceQuality": "weak",
+        "distanceSuitability": "unsuitable",
+        "trackSuitability": "poor",
+        "runningStyle": "hold_up",
+        "positiveIndicators": [],
+        "negativeIndicators": [
+          "never better than midfield"
+        ],
+        "keyRaceComments": "never better than midfield"
+      },
+      "selectionReason": "Low composite score and negative EV."
     }
   ],
   "executedBet": {
     "strategy": "Bet 10 Euro",
     "status": "executed",
-    "timestamp": "2025-06-24T16:30:00+02:00",
-    "recommendation": "Alices Impact",
-    "reasoning": "High prediction score, positive EV, strong semantic form score, and stable price movement.",
+    "timestamp": "2025-06-25T18:45:00+02:00",
+    "recommendation": "Stella Hogan",
+    "reasoning": "High prediction score (100), strong semantic form analysis, positive EV (8.5%), and stable market behavior.",
     "strategyAnalysis": "back_horse_identified",
     "betType": "back"
   },
   "strategyMetrics": {
-    "totalHorsesAnalyzed": 4,
+    "totalHorsesAnalyzed": 11,
     "horsesAboveSemanticThreshold": 4,
     "horsesAbovePredictionThreshold": 4,
-    "horsesWithPositiveEV": 3,
-    "averageCompositeScore": 77.93,
-    "averageSemanticFormScore": 82.5,
-    "averageExpectedValue": 0.06,
-    "highestScoringHorse": "Alices Impact",
-    "highestSemanticFormHorse": "Alices Impact",
-    "highestEVHorse": "Alices Impact",
-    "confidenceLevel": "high"
+    "horsesWithPositiveEV": 1,
+    "averageCompositeScore": 55.0,
+    "averageSemanticFormScore": 55.0,
+    "averageExpectedValue": -0.1,
+    "highestScoringHorse": "Stella Hogan",
+    "highestSemanticFormHorse": "Stella Hogan",
+    "highestEVHorse": "Stella Hogan",
+    "confidenceLevel": "medium"
   }
 }

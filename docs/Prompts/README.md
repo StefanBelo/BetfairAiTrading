@@ -1,18 +1,48 @@
 # AI Analysis Prompts for Betfair Trading
 
-This directory contains 23+ specialized prompts for AI-powered analysis of Betfair markets, particularly focused on horse racing betting opportunities. These prompts range from comprehensive analytical frameworks to silent automated execution systems with proven performance results including 83.3% strike rates and 115-150% ROI.
+This directory contains 25+ specialized prompts for AI-powered analysis of Betfair markets, particularly focused on horse racing betting opportunities. These prompts range from comprehensive analytical frameworks to silent automated execution systems with proven performance results including 83.3% strike rates and 77.6% ROI across diverse market conditions.
 
 ## Overview
 
 The prompts are organized into several categories with demonstrated performance results:
+- **Advanced Strategy Systems**: Multi-component analysis frameworks (Strategy R1: 83.3% strike rate, Strategy R2: 77.6% ROI)
 - **Combined Analysis Approaches**: Multi-methodology analysis for maximum accuracy (up to 83.3% success rates)
 - **Betting Strategy Variants**: Different execution approaches and risk management styles with proven ROI  
 - **Specialized Analysis Tools**: Focused analysis for specific data types or requirements
 - **System Integration**: Technical prompts for automation and workflow integration
 - **Data Visualization**: Chart creation and data presentation tools
-- **Performance Validated**: Strategies tested with real market data showing 115-150% ROI potential
+- **Performance Validated**: Strategies tested with real market data showing consistent profitability
 
 ## Horse Racing Analysis Prompts
+
+### Advanced Strategy Systems
+
+#### [HorseRacingStrategyR1.md](HorseRacingStrategyR1.md)
+**Strategy R1 - High Precision Selection System**
+- Advanced multi-component analysis achieving 83.3% strike rate
+- Combines semantic form analysis, prediction scoring, and market intelligence
+- Selective betting approach with high-confidence thresholds
+- **Best for:** Maximum accuracy with selective high-value opportunities
+
+#### [HorseRacingStrategyR1_Analyze.md](HorseRacingStrategyR1_Analyze.md)
+**Strategy R1 Analysis Framework**
+- Comprehensive analysis prompt for Strategy R1 performance evaluation
+- Detailed component effectiveness assessment and optimization recommendations
+- **Best for:** Strategy performance analysis and continuous improvement
+
+#### [HorseRacingStrategyR2.md](HorseRacingStrategyR2.md)
+**Strategy R2 - Comprehensive Market Coverage System**
+- Enhanced multi-component analysis with broader market participation
+- Semantic form analysis (85.4% accuracy on winners), prediction scoring (92.3% reliability)
+- Crowd wisdom adjustment factors and market stability assessment
+- Demonstrated 77.6% ROI across 21 races with 28.6% strike rate
+- **Best for:** Balanced approach between coverage and profitability
+
+#### [HorseRacingStrategyR3.md](HorseRacingStrategyR3.md)
+**Strategy R3 - Next Generation Evolution**
+- Latest iteration incorporating learnings from R1 and R2 performance
+- Enhanced risk management and threshold optimization
+- **Best for:** Cutting-edge strategy development and testing
 
 ### Combined Analysis Approaches
 
@@ -317,15 +347,24 @@ Each prompt provides:
 
 ## Recent Performance Validation (June 2025)
 
-**Strategy R1 Results - Exceptional Performance Achieved:**
+**Strategy R1 Results - Exceptional Precision:**
 - **Strike Rate**: 83.3% (5 winners from 6 selections)
 - **ROI**: 115-150% estimated return on investment
 - **Selection Rate**: 50% (6 selections from 12 races analyzed)
-- **Risk Management**: Top 3 favorites constraint proving effective
-- **Execution**: Fully automated with silent operation
-- **Data Sources**: Dual-source validation (Trading data + Performance data)
+- **Approach**: High-confidence selective betting
 
-This validates the effectiveness of the automated execution prompts, particularly the silent execution strategies with favorites-based risk management.
+**Strategy R2 Results - Comprehensive Coverage:**
+- **Strike Rate**: 28.6% (6 winners from 21 selections)
+- **ROI**: 77.6% actual return (€162.90 profit from €210 stakes)
+- **Selection Rate**: 100% (21 selections from 21 races analyzed)
+- **Component Performance**: Semantic form (85.4% accuracy), Prediction scoring (92.3% reliability)
+- **Key Insight**: Demonstrates profitability even with lower strike rates through effective value identification
+
+**Strategic Evolution Insights:**
+- Strategy R1: Precision-focused approach for maximum accuracy
+- Strategy R2: Coverage-focused approach for broader market participation  
+- Both strategies show consistent profitability with different risk/reward profiles
+- Validates the effectiveness of multi-component analysis frameworks
 
 ## Best Practices
 

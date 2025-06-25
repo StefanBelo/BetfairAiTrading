@@ -20,6 +20,15 @@ This directory contains community posts, articles, and real-world examples showc
 - Example of combining "Place Bet - Be the First in Queue" with "Trailing Stop Loss"
 - **Best for:** Understanding the practical value of AI assistance in strategy development
 
+### [Reddit Post: Horse Racing AI Strategy Delivers 77.6% ROI in Single Day](RedditPost_HorseRacingStrategyR2_77PercentROI.md)
+**Strategy R2 Performance Analysis & Community Discussion**
+- Reddit-ready post about Strategy R2 delivering 77.6% ROI across 21 races
+- Transparent analysis of 28.6% strike rate but strong profitability
+- Discussion of AI strategy components: semantic form analysis, prediction scoring, market stability
+- Honest assessment of areas needing improvement and next steps
+- Community engagement focused on automated racing strategies
+- **Best for:** Understanding how to communicate strategy results transparently to betting communities
+
 ### [Reddit Post: AI Horse Racing EV Analysis - Strategy Refinement Success](RedditPost_HorseRacingEVAnalysis.md)
 **Strategy Optimization & Results Comparison**
 - Community-ready post about AI-driven horse racing analysis
