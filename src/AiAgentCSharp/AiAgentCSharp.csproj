@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>$(DefineConstants);UseSamplingClient</DefineConstants>
+    <DefineConstants>$(DefineConstants);UseSamplingClientNo</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>

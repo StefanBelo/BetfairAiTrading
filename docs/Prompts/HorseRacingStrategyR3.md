@@ -90,8 +90,13 @@ Distance Bonuses: Exact distance +3pts, similar ±2pts, unproven -3pts
 
 ## Execution Protocol
 
-1. **GetActiveBetfairMarket** - Identify current race (SILENT)
-2. **Retrieve Data Contexts**: RacingpostDataForHorsesInfo, HorsesBaseBetfairFormData, MarketSelectionsTradedPricesData (SILENT)
+**SEQUENTIAL EXECUTION REQUIRED**: All steps must be executed in order, one after another. Do not proceed to the next step until the current step is completed.
+
+1. **Retrieve Active Betfair Market** - GetActiveBetfairMarket() - Retrieves base market data including market ID, selections, current prices, and market status that will be used by all subsequent tools (SILENT)
+2. **Retrieve Market Data Contexts**: 
+   - GetDataContextForBetfairMarket("RacingpostDataForHorsesInfo") - Professional racing analysis data
+   - GetDataContextForBetfairMarket("HorsesBaseBetfairFormData") - Historical form and forecast prices
+   - GetDataContextForBetfairMarket("MarketSelectionsTradedPricesData") - Trading volume and price movement data (SILENT)
 3. **Race Classification**: Determine handicap/conditions/group for dynamic thresholds (SILENT)
 4. **Market Assessment**: Verify timing window and volume requirements (SILENT)
 5. **Systematic Analysis**: Apply R3 criteria to all horses (SILENT)
@@ -147,8 +152,7 @@ Classification: HIGH=80-100, MEDIUM=60-79, LOW=40-59, VERY LOW=0-39
   },
   "r3Metrics": {
     "totalAnalyzed": 0, "tier1Candidates": 0, "tier2Candidates": 0,
-    "raceType": "handicap|conditions|group", "marketTiming": "optimal|suboptimal",
-    "portfolioStatus": {"dailyBets": 0, "riskLimitsBreached": false}
+    "raceType": "handicap|conditions|group", "marketTiming": "optimal|suboptimal"
   }
 }
 ```

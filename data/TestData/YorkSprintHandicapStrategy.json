@@ -1,0 +1,170 @@
+{
+  "strategyName": "York Sprint Handicap AI Strategy",
+  "marketType": "Horse Racing",
+  "description": "AI-driven strategy for York 5f Handicap based on Racing Post data analysis",
+  "marketId": "1.245129754",
+  "analysisDate": "2025-06-28",
+  "raceDetails": {
+    "venue": "York",
+    "distance": "5f",
+    "raceType": "Handicap",
+    "startTime": "2025-06-28T16:00:00+02:00"
+  },
+  "selections": [
+    {
+      "selectionId": "48438078_0.00",
+      "name": "Azure Angel",
+      "rank": 1,
+      "confidence": "HIGH",
+      "currentPrice": 5.1,
+      "recommendedAction": "BACK",
+      "stake": "HIGH",
+      "reasoning": "Outstanding recent form - won just 6 days ago 'comfortably'. Despite low official rating (93), Racing Post rating of 112 suggests class. Fresh and in-form.",
+      "keyFactors": [
+        "Won 6 days ago",
+        "Racing Post Rating: 112",
+        "Comfortable recent victory",
+        "Fresh and race-fit"
+      ]
+    },
+    {
+      "selectionId": "40563001_0.00",
+      "name": "Regal Envoy",
+      "rank": 2,
+      "confidence": "HIGH",
+      "currentPrice": 6.6,
+      "recommendedAction": "BACK",
+      "stake": "MEDIUM",
+      "reasoning": "Excellent front-running ability, won 18 days ago 'made all'. Strong recent form with multiple wins. Official rating 95 at 6.6 offers value.",
+      "keyFactors": [
+        "Won 18 days ago",
+        "Strong front-runner",
+        "Multiple recent wins",
+        "Good value at 6.6"
+      ]
+    },
+    {
+      "selectionId": "44514333_0.00",
+      "name": "Jm Jungle",
+      "rank": 3,
+      "confidence": "MEDIUM",
+      "currentPrice": 3.3,
+      "recommendedAction": "LAY",
+      "stake": "SMALL",
+      "reasoning": "Market favorite but price too short. High class (OR 101, RP 113) but won 20 days ago and may be vulnerable to fresher horses.",
+      "keyFactors": [
+        "Market favorite - possibly over-bet",
+        "Won 20 days ago - not as fresh",
+        "High official rating but short price",
+        "Consistent but may lack recent spark"
+      ]
+    },
+    {
+      "selectionId": "36845496_0.00",
+      "name": "Squealer",
+      "rank": 4,
+      "confidence": "MEDIUM",
+      "currentPrice": 7.0,
+      "recommendedAction": "EACH WAY",
+      "stake": "SMALL",
+      "reasoning": "Consistent placer with high prediction score (98.46). 2nd place 20 days ago shows current form. Good each-way value.",
+      "keyFactors": [
+        "High AI prediction score: 98.46",
+        "Consistent recent placings",
+        "Good each-way value at 7.0",
+        "Racing Post rating 112"
+      ]
+    },
+    {
+      "selectionId": "6002664_0.00",
+      "name": "Venture Capital",
+      "rank": 5,
+      "confidence": "LOW",
+      "currentPrice": 9.6,
+      "recommendedAction": "AVOID",
+      "stake": "NONE",
+      "reasoning": "Poor recent form (10th 27 days ago). Despite wins earlier in career, current form doesn't justify backing.",
+      "keyFactors": [
+        "Poor recent run (10th)",
+        "Form appears to be declining",
+        "Better options available"
+      ]
+    },
+    {
+      "selectionId": "43930428_0.00",
+      "name": "Democracy Dilemma",
+      "rank": 6,
+      "confidence": "LOW",
+      "currentPrice": 13.0,
+      "recommendedAction": "AVOID",
+      "stake": "NONE",
+      "reasoning": "Despite highest AI prediction score (100), very inconsistent form. Unreliable performer despite high official rating.",
+      "keyFactors": [
+        "Inconsistent recent form",
+        "Unreliable despite ability",
+        "Better value elsewhere"
+      ]
+    },
+    {
+      "selectionId": "56460595_0.00",
+      "name": "Seven Questions",
+      "rank": 7,
+      "confidence": "LOW",
+      "currentPrice": 34.0,
+      "recommendedAction": "AVOID",
+      "stake": "NONE",
+      "reasoning": "Outsider with patchy form. Recent runs show inconsistency. Price reflects true chances.",
+      "keyFactors": [
+        "Inconsistent form",
+        "Long odds reflect chances",
+        "Recent runs uninspiring"
+      ]
+    }
+  ],
+  "raceStrategy": {
+    "primaryBet": {
+      "type": "WIN",
+      "selection": "Azure Angel",
+      "stake": "3 units",
+      "expectedPrice": "5.0+",
+      "reasoning": "Best recent form and value"
+    },
+    "secondaryBet": {
+      "type": "WIN",
+      "selection": "Regal Envoy",
+      "stake": "2 units",
+      "expectedPrice": "6.0+",
+      "reasoning": "Strong front-runner with good value"
+    },
+    "layBet": {
+      "type": "LAY",
+      "selection": "Jm Jungle",
+      "stake": "1 unit",
+      "maxPrice": "3.5",
+      "reasoning": "Overpriced favorite"
+    },
+    "eachWayBet": {
+      "type": "EACH_WAY",
+      "selection": "Squealer",
+      "stake": "1 unit",
+      "expectedPrice": "7.0+",
+      "reasoning": "Consistent placer with value"
+    }
+  },
+  "riskManagement": {
+    "maxLoss": "10% of bank",
+    "stopLoss": "If Azure Angel drifts beyond 7.0",
+    "profitTarget": "20% bank growth",
+    "hedgingStrategy": "Lay back Azure Angel if price shortens to 3.0"
+  },
+  "keyInsights": [
+    "Recent form is crucial in sprint handicaps",
+    "Azure Angel's 6-day gap since last win is optimal",
+    "Front-runners often succeed over 5f at York",
+    "Market may be overrating the favorite Jm Jungle",
+    "AI prediction scores correlate with consistency rather than win probability"
+  ],
+  "confidence": "HIGH",
+  "expectedROI": "15-25%",
+  "created": "2025-06-28T14:30:00Z"
+}

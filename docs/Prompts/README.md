@@ -44,6 +44,29 @@ The prompts are organized into several categories with demonstrated performance 
 - Enhanced risk management and threshold optimization
 - **Best for:** Cutting-edge strategy development and testing
 
+#### [HorseRacingStrategyR4_Ideas.md](HorseRacingStrategyR4_Ideas.md)
+**Strategy R4 - Multi-Context Integration Framework**
+- Advanced multi-context analysis integrating form data and trading patterns
+- Enhanced evaluation with confidence scoring and market stability assessment
+- Comprehensive betting logic with sophisticated NO BET conditions
+- **Best for:** Comprehensive analysis with multiple data source validation
+
+#### [HorseRacingStrategyR5_Ideas.md](HorseRacingStrategyR5_Ideas.md)
+**Strategy R5 - Advanced Multi-Context Analysis System**
+- Revolutionary three-context integration: Racing form data, base Betfair form, and trading patterns
+- Enhanced evaluation framework with weighted scoring and confidence assessment
+- Advanced NO BET logic with comprehensive market condition analysis
+- Updated JSON output format with "HorseRacingR5_Analysis" data context
+- **Best for:** Maximum analytical depth with triple data source validation and enhanced decision-making
+
+#### [HorseRacingStrategyR5.md](HorseRacingStrategyR5.md)
+**Strategy R5 - Silent Execution Version**
+- Silent implementation of R5 strategy with no intermediate reporting
+- Performs complete three-context analysis internally
+- Outputs only final one-sentence result while storing comprehensive analysis
+- Uses "HorseRacingR5_Analysis" data context for silent data storage
+- **Best for:** Automated silent execution with full R5 analytical power and minimal output
+
 ### Combined Analysis Approaches
 
 #### [HorseRacingCombinedEVAnalysis.md](HorseRacingCombinedEVAnalysis.md)
@@ -207,6 +230,17 @@ The prompts are organized into several categories with demonstrated performance 
 - Covers betting, trading, risk management, and sport-specific strategies
 - **Best for:** Getting expert-level strategy advice and configuration help instantly
 
+### Market Analysis and Trading Opportunities
+
+#### [BetfairMarketAnalysisPrompt.md](BetfairMarketAnalysisPrompt.md)
+**Comprehensive Betfair Market Analysis and Trading Opportunities**
+- Advanced market analysis framework for identifying professional betting patterns and trading opportunities
+- Analyzes price movements, volume patterns, and professional activity indicators
+- Provides specific back/lay/trade recommendations with tick-level profit/loss targets
+- Includes risk assessment framework and comprehensive trading pattern recognition
+- Delivers structured analysis with summary tables and clear trading strategies
+- **Best for:** Real-time market analysis with actionable trading recommendations and risk management
+
 ### Data Visualization
 
 #### [TradingChartCreation.md](TradingChartCreation.md)
@@ -225,6 +259,16 @@ Use **HorseRacingBaseFormDataAnalysis.md** when:
 - Looking for fundamental value based on proven racing metrics
 - Prefer analysis based on established handicapping principles
 - Want to understand market confidence through price movements
+
+### For Real-Time Market Analysis and Trading
+Use **BetfairMarketAnalysisPrompt.md** when:
+- You need comprehensive real-time market analysis with trading recommendations
+- Want to identify professional betting patterns and volume indicators
+- Seeking specific back/lay/trade opportunities with tick-level targets
+- Need risk assessment and confidence levels for each selection
+- Want structured analysis with clear summary tables and trading strategies
+- Looking for market-wide pattern recognition and professional activity indicators
+- Require actionable trading recommendations with profit/loss parameters
 
 ### For Conservative Risk Management
 Use **HorseRacingEVAnalysisWithConservativeBetting.md** when:
@@ -389,12 +433,16 @@ When creating new prompts:
 
 | Use Case | Risk Level | Automation | Performance Record | Best Prompt |
 |----------|------------|------------|-------------------|-------------|
+| Real-time market analysis & trading | Medium | Manual | Professional patterns | BetfairMarketAnalysisPrompt.md |
 | Maximum accuracy betting | Medium | Manual | 83.3% strike rate* | HorseRacingCombinedEVAnalysis.md |
 | Conservative automated betting | Low | Full | Stable ROI | HorseRacingEVAnalysisWithConservativeBetting.md |
 | Silent automated execution (favorites only) | Low-Medium | Full | **83.3% strike rate, 115-150% ROI** | HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md |
 | Silent automated execution (all horses) | Medium-High | Full | High potential | HorseRacingSilentEVAnalysisWithAutomatedExecution.md |
 | Expert tips integration | Medium | Full | Expert validated | HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md |
 | Multi-horse Dutch betting | Medium | Full | Risk diversified | HorseRacingEVAnalysisWithDutchBetting.md |
+| Advanced multi-context analysis | Medium | Manual | Enhanced evaluation | HorseRacingStrategyR4_Ideas.md |
+| **Revolutionary triple-context analysis** | **Medium-High** | **Manual** | **Maximum analytical depth** | **HorseRacingStrategyR5_Ideas.md** |
+| **Silent triple-context execution** | **Medium** | **Full** | **Automated R5 power** | **HorseRacingStrategyR5.md** |
 | Quick analysis only | Low | None | Analysis only | HorseRacingEVRankingsTableOnly.md |
 | Fundamental handicapping | Medium | Manual | Traditional approach | HorseRacingBaseFormDataAnalysis.md |
 | Data export and integration | Medium | Manual | Structured output | HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md |
@@ -404,5 +452,5 @@ When creating new prompts:
 
 ---
 
-*Last updated: June 24, 2025*  
+*Last updated: June 28, 2025*  
 *Performance data based on real market testing with Strategy R1 achieving 83.3% strike rate and 115-150% ROI*

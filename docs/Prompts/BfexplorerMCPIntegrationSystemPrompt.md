@@ -104,6 +104,22 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 - **Returns**: JSON confirmation of data context setting
 - **Use Case**: Store AI-generated analysis or predictions for market context
 
+### Historical Data & Results
+
+#### GetAllBetResults
+- **Purpose**: Retrieves all bet results from closed Betfair markets
+- **Parameters**: None required
+- **Returns**: Complete betting history with results and profit/loss data
+- **Use Case**: Performance analysis, strategy evaluation, historical review of all betting activity
+
+#### GetAllDataContextForBetfairMarket
+- **Purpose**: Retrieves multiple data contexts for a market efficiently in a single call
+- **Parameters**:
+  - `dataContextNames` (array of strings, required): List of data context names to retrieve
+  - `marketId` (string, required): The Betfair market ID
+- **Returns**: JSON object containing all requested data contexts for the market
+- **Use Case**: Comprehensive market analysis requiring multiple data types simultaneously, reducing API calls for bulk data retrieval
+
 ## Parameter Format Requirements
 
 ### Market IDs
@@ -129,6 +145,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 
 ### Data Context Names
 - Must correspond to available data contexts in Bfexplorer
+- Use `GetAllDataContextForBetfairMarket()` for efficient bulk retrieval of multiple contexts
 - Common contexts may include:
   - "MarketData": Current market prices and volumes
   - "PriceHistory": Historical price movements
@@ -179,6 +196,21 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 4. ExecuteBfexplorerStrategySettings with AI-informed decisions
 ```
 
+### 7. Historical Analysis & Performance Review Workflow
+```
+1. GetAllBetResults() → Retrieve complete betting history and performance metrics
+2. Analyze historical performance to inform strategy selection
+3. GetAllDataContextForBetfairMarket(dataContextNames, marketId) → Bulk retrieve multiple market contexts for comprehensive analysis
+```
+
+### 8. Comprehensive Market Analysis Workflow
+```
+1. GetActiveBetfairMarket() → Get current market selection
+2. GetAllDataContextForBetfairMarket([dataContextName1, dataContextName2, ...], marketId) → Retrieve multiple data contexts efficiently
+3. Perform comprehensive analysis using all available data types
+4. SetAIAgentDataContextForBetfairMarket() to store analysis results
+```
+
 ## Error Handling & Validation
 
 ### Common Error Scenarios
@@ -207,6 +239,8 @@ Always perform these checks before strategy execution:
 ### Best Practices
 - Use `GetAllBfexplorerStrategySettings()` to discover available strategies before recommendations
 - Retrieve current market data before making recommendations
+- Use `GetAllDataContextForBetfairMarket()` for efficient bulk data retrieval when multiple contexts are needed
+- Leverage `GetAllBetResults()` for historical performance analysis to inform strategy selection
 - Explain strategy logic and expected outcomes using `GetBfexplorerStrategySetting()`
 - Monitor execution results and provide feedback
 - Suggest risk management parameters when appropriate
@@ -258,3 +292,6 @@ Use `GetAllBfexplorerStrategySettings()` to get the complete, up-to-date list of
 - Maintain data consistency across multiple tool calls
 
 When users ask about Betfair trading, market analysis, or strategy execution, use these tools systematically to provide accurate, real-time information from their Bfexplorer instance. Always prioritize user education and risk awareness in financial trading contexts.
+
+---
+*Last updated: June 28, 2025*

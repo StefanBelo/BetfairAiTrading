@@ -2,6 +2,17 @@
 
 This directory contains community posts, articles, and real-world examples showcasing the practical application of Betfair AI trading strategies and tools.
 
+## Latest Strategy Evolution: R4 & R5 Development
+
+### Advanced Multi-Context Strategy Development
+- **Strategy R4**: Multi-context integration framework with enhanced evaluation and confidence scoring
+- **Strategy R5**: Revolutionary three-context analysis system featuring:
+  - Triple data integration: Racing form data, base Betfair form, and trading patterns
+  - Enhanced weighted scoring system with comprehensive confidence assessment
+  - Advanced NO BET logic with sophisticated market condition analysis
+  - "HorseRacingR5_Analysis" data context for structured analysis storage
+  - Silent execution version for automated deployment with minimal output
+
 ## Available Posts
 
 ### [AI Agent Horse Racing Analysis: The Power of Backtesting & Continuous Learning](Post_AIAgentBacktestingAndLearning.md)

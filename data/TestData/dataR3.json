@@ -1,0 +1,160 @@
+{
+    "raceAnalysis": {
+        "marketId": "1.245077204",
+        "strategyVersion": "R3",
+        "enhancedCriteria": {
+            "predictionThreshold": 98,
+            "semanticThreshold": 75,
+            "enhancedEVThreshold": 0.10,
+            "volumeThreshold": 10000
+        }
+    },
+    "selectedHorse": {
+        "horseName": "Kohayln",
+        "selectionId": "85225504_0.00",
+        "compositeScore": 100,
+        "confidenceTier": "tier1"
+    },
+    "allHorses": [
+        {
+            "horseName": "Heart of Eternity",
+            "currentPrice": 2.68,
+            "predictionScore": 50,
+            "semanticFormScore": 0.0,
+            "enhancedEV": 0.0,
+            "marketConfidence": "high",
+            "meetsAllCriteria": false,
+            "failedCriteria": [
+                "Prediction Score",
+                "Semantic Form",
+                "Enhanced EV"
+            ]
+        },
+        {
+            "horseName": "Miss Cartesian",
+            "currentPrice": 2.42,
+            "predictionScore": 37.78,
+            "semanticFormScore": 0.0,
+            "enhancedEV": 0.0,
+            "marketConfidence": "high",
+            "meetsAllCriteria": false,
+            "failedCriteria": [
+                "Prediction Score",
+                "Semantic Form",
+                "Enhanced EV"
+            ]
+        },
+        {
+            "horseName": "Kohayln",
+            "currentPrice": 10.5,
+            "predictionScore": 100,
+            "semanticFormScore": 0.0,
+            "enhancedEV": 0.0,
+            "marketConfidence": "medium",
+            "meetsAllCriteria": false,
+            "failedCriteria": [
+                "Semantic Form",
+                "Enhanced EV"
+            ]
+        },
+        {
+            "horseName": "Flightofthephoenix",
+            "currentPrice": 12,
+            "predictionScore": 33.33,
+            "semanticFormScore": 0.0,
+            "enhancedEV": 0.0,
+            "marketConfidence": "medium",
+            "meetsAllCriteria": false,
+            "failedCriteria": [
+                "Prediction Score",
+                "Semantic Form",
+                "Enhanced EV"
+            ]
+        },
+        {
+            "horseName": "Rhyme Dust",
+            "currentPrice": 55,
+            "predictionScore": 22.22,
+            "semanticFormScore": 0.0,
+            "enhancedEV": 0.0,
+            "marketConfidence": "low",
+            "meetsAllCriteria": false,
+            "failedCriteria": [
+                "Prediction Score",
+                "Semantic Form",
+                "Enhanced EV"
+            ]
+        },
+        {
+            "horseName": "Love Of Life",
+            "currentPrice": 75,
+            "predictionScore": 100,
+            "semanticFormScore": 0.0,
+            "enhancedEV": 0.0,
+            "marketConfidence": "low",
+            "meetsAllCriteria": false,
+            "failedCriteria": [
+                "Semantic Form",
+                "Enhanced EV"
+            ]
+        },
+        {
+            "horseName": "Tardaff",
+            "currentPrice": 240,
+            "predictionScore": 0,
+            "semanticFormScore": 0.0,
+            "enhancedEV": 0.0,
+            "marketConfidence": "low",
+            "meetsAllCriteria": false,
+            "failedCriteria": [
+                "Prediction Score",
+                "Semantic Form",
+                "Enhanced EV"
+            ]
+        },
+        {
+            "horseName": "Havanita",
+            "currentPrice": 690,
+            "predictionScore": 0,
+            "semanticFormScore": 0.0,
+            "enhancedEV": 0.0,
+            "marketConfidence": "low",
+            "meetsAllCriteria": false,
+            "failedCriteria": [
+                "Prediction Score",
+                "Semantic Form",
+                "Enhanced EV"
+            ]
+        },
+        {
+            "horseName": "Making Moves",
+            "currentPrice": 1000,
+            "predictionScore": 0,
+            "semanticFormScore": 0.0,
+            "enhancedEV": 0.0,
+            "marketConfidence": "low",
+            "meetsAllCriteria": false,
+            "failedCriteria": [
+                "Prediction Score",
+                "Semantic Form",
+                "Enhanced EV"
+            ]
+        }
+    ],
+    "executedBet": {
+        "strategy": "Analysis Only",
+        "status": "analysis_complete",
+        "confidenceLevel": "high"
+    },
+    "r3Metrics": {
+        "totalAnalyzed": 9,
+        "tier1Candidates": 1,
+        "tier2Candidates": 0,
+        "raceType": "conditions",
+        "marketTiming": "optimal",
+        "portfolioStatus": {
+            "dailyBets": 0,
+            "riskLimitsBreached": false
+        }
+    }
+}

@@ -9,6 +9,11 @@ This folder contains detailed analysis reports from AI-driven betting strategies
 - **[HorseRacingStrategyR1Results_24June2025.md](HorseRacingStrategyR1Results_24June2025.md)** - Advanced Strategy R1 performance analysis with exceptional 83.3% strike rate across 6 selections and 115-150% ROI
 - **[HorseRacingStrategyR2Results_25June2025.md](HorseRacingStrategyR2Results_25June2025.md)** - Strategy R2 comprehensive analysis with 28.6% strike rate across 21 races delivering 77.6% ROI and detailed component performance evaluation
 
+### Advanced Strategy Evolution
+- **Strategy R4** - Multi-context integration framework with enhanced evaluation and confidence scoring
+- **Strategy R5** - Revolutionary three-context analysis system integrating racing form data, base Betfair form, and trading patterns with advanced NO BET logic and "HorseRacingR5_Analysis" data storage
+- **Strategy R5 Silent** - Silent execution version performing complete analysis internally with minimal output for automated deployment
+
 ## Analysis Methodology
 
 The reports in this folder analyze real betting strategy performance using:
@@ -20,6 +25,9 @@ The reports in this folder analyze real betting strategy performance using:
 - **Tri-Source Convergence** - Alignment between expert tips, performance data, and market indicators
 - **AI-Driven Selection Criteria** - Advanced algorithmic filtering and confidence scoring
 - **Real-Time Performance Tracking** - Live monitoring and results validation
+- **Multi-Context Analysis** - Integration of three data contexts (Racing form, base Betfair form, trading patterns)
+- **Weighted Scoring Systems** - Advanced evaluation frameworks with confidence assessment
+- **Silent Execution Monitoring** - Automated analysis with minimal output and comprehensive data storage
 
 ## Key Metrics Tracked
 

@@ -24,8 +24,8 @@ try
             new SseClientTransport(
                 new SseClientTransportOptions
                 {
-                    Endpoint = new Uri("http://localhost:10043/sse"),
-                    TransportMode = HttpTransportMode.Sse
+                    Endpoint = new Uri("http://localhost:10043"),
+                    TransportMode = HttpTransportMode.StreamableHttp
                 }
             )
             #if UseSamplingClient
@@ -33,7 +33,6 @@ try
             new McpClientOptions
             {
                 Capabilities = new() { Sampling = new() { SamplingHandler = samplingClient.CreateSamplingHandler() } }
-
             }
             #endif
         );

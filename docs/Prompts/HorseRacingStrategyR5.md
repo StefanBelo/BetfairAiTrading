@@ -1,27 +1,3 @@
-import asyncio
-from mcp_agent import RequestParams
-from mcp_agent.core.fastagent import FastAgent
-
-# Create the application
-fast = FastAgent("Bfexplorer Assistant")
-
-# Define the agent
-@fast.agent(name="BfexplorerApp", 
-    instruction="You are a helpful AI Agent executing betting/trading strategies on bfexplorer.", 
-    model="deepseek-chat",
-    #model="generic.openai/o3",
-    request_params=RequestParams(
-      maxTokens=8192,
-      #maxTokens=8000,
-      use_history=False,
-      max_iterations=10
-    ), 
-    servers=["BfexplorerApp"]
-)
-async def main():
-    async with fast.run() as agent:
-        await agent(
-"""
 # Horse Racing Strategy R5 - Silent Execution Prompt
 
 ## Overview
@@ -78,9 +54,6 @@ The full analysis data is always stored as the final step, regardless of whether
 - Use: SetAIAgentDataContextForBetfairMarket (dataContextName: "HorseRacingR5_Analysis")
 ```
 
-Execute all actions silently
-```
-
 ## Enhanced Analysis Framework (Internal Processing)
 
 ### Multi-Source Form Analysis
@@ -96,9 +69,9 @@ Execute all actions silently
 
 ### Enhanced Probability Calculation
 ```
-Final Probability = (Enhanced Form * 0.35) + (Multi-Rating * 0.25) + (AI Score * 0.25) + (Market Sentiment * 0.15)
+Final Probability = (Enhanced Form × 0.35) + (Multi-Rating × 0.25) + (AI Score × 0.25) + (Market Sentiment × 0.15)
 
-Enhanced EV = (Probability * (Odds - 1)) - (1 - Probability)
+Enhanced EV = (Probability × (Odds - 1)) - (1 - Probability)
 
 Cross-validation confidence intervals applied
 ```
@@ -323,7 +296,7 @@ Selection identified but execution failed - [Horse Name] at [Price].
 ### Performance Targets
 - **Strike Rate**: 50%+ (enhanced selectivity)
 - **ROI**: 35%+ per profitable race
-- **EV Accuracy**: +/-2% of calculated values
+- **EV Accuracy**: ±2% of calculated values
 - **Discipline Rate**: 75%+ NO BET decisions
 - **Cross-Validation Accuracy**: 90%+ data consistency
 
@@ -353,8 +326,3 @@ Selection identified but execution failed - [Horse Name] at [Price].
 **Version**: R5.0 - Silent Execution
 **Last Updated**: June 28, 2025
 **Strategy Type**: Silent multi-source analysis with single-sentence outcome
-"""
-        )
-
-if __name__ == "__main__":
-    asyncio.run(main())

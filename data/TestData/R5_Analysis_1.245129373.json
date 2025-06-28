@@ -1,0 +1,57 @@
+
+{
+  "marketId": "1.245129373",
+  "marketName": "6f Hcap",
+  "eventName": "Doncaster",
+  "startTime": "2025-06-28T18:50:00+02:00",
+  "analysis": {
+    "strategy": "R5",
+    "timestamp": "2025-06-28T18:45:00Z",
+    "decision": "NO_BET",
+    "reasoning": "No selection met the high-confidence criteria for a BACK or LAY bet after cross-validating form, ratings, and market sentiment. Smart Vision was a strong contender but market drift and mixed recent form narratives advised caution. Ingleby Archie showed recent wins but a poor last run and negative market sentiment were significant detractors. Other runners lacked compelling data to justify a position.",
+    "selections": [
+      {
+        "selectionId": "12548178_0.00",
+        "name": "Smart Vision",
+        "evaluation": {
+          "semanticAnalysis": "Recent form descriptions show resilience ('rallied', 'kept on') but also limitations ('no match for winner', 'weakened'). A recent close second suggests capability, but not dominance.",
+          "formScore": 8,
+          "ratingAnalysis": "Very strong positive. RP Rating (98) is significantly higher than Official Rating (80), and Prediction Score is at maximum (100).",
+          "marketSentiment": "Negative. Price drifted from 4.4 to 4.9, indicating weakening market confidence despite high volume.",
+          "probability": 0.25,
+          "expectedValue": 0.225,
+          "finalRank": 1,
+          "betAction": "MONITOR"
+        }
+      },
+      {
+        "selectionId": "59363297_0.00",
+        "name": "Ingleby Archie",
+        "evaluation": {
+          "semanticAnalysis": "Mixed signals. Two recent wins described as 'made all' and 'gamely', but the most recent run was a significant disappointment ('weakened final furlong').",
+          "formScore": 6,
+          "ratingAnalysis": "Positive. RP Rating (97) is well above Official Rating (81).",
+          "marketSentiment": "Negative. Significant price drift from 6.8 to 7.6 suggests the market is reacting to the poor recent performance.",
+          "probability": 0.15,
+          "expectedValue": -0.095,
+          "finalRank": 3,
+          "betAction": "AVOID"
+        }
+      },
+      {
+        "selectionId": "2555756_0.00",
+        "name": "Tourist",
+        "evaluation": {
+          "semanticAnalysis": "Recent win was described as 'kept on', but prior races show weakening. Jockey comments ('stopped quickly') are a major concern.",
+          "formScore": 5,
+          "ratingAnalysis": "Positive. RP Rating (96) is higher than Official Rating (85). Prediction score is high (93.6).",
+          "marketSentiment": "Neutral. Price is relatively stable, but volume is lower than top contenders.",
+          "probability": 0.11,
+          "expectedValue": -0.035,
+          "finalRank": 2,
+          "betAction": "AVOID"
+        }
+      }
+    ]
+  }
+}
