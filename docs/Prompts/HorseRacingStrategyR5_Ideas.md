@@ -1,7 +1,13 @@
 # Horse Racing Strategy R5 - Enhanced Multi-Context Analysis & Execution Prompt
 
 ## Overview
-This enhanced prompt provides a comprehensive systematic approach to analyzing horse racing markets using three integrated data sources: Racing Post data, Betfair base form data, and market trading price data to identify optimal betting opportunities with unprecedented accuracy.
+This enhanced prompt provides a comprehensive systematic approach to analyzing horse racing markets using three integrated data sources: Racing Post data, Betfair base form data, and market trading price data to identify optimal betting oppor### Revised Performance Targets (Based on Results Analysis)
+- **Strike Rate**: 35%+ for win bets (realistic target based on data)
+- **ROI**: 25%+ per profitable race (achievable with revised thresholds)
+- **EV Accuracy**: ±5% of calculated values (more realistic tolerance)
+- **Discipline Rate**: 60%+ NO BET decisions when criteria not met (reduced from 75%)
+- **Market Timing**: 75%+ accuracy in sentiment prediction (more realistic)
+- **Opportunity Capture**: Minimum 30% of races should meet betting criteria (NEW TARGET)es with unprecedented accuracy.
 
 ## System Instructions
 
@@ -82,7 +88,7 @@ After completing analysis (whether bet placed or NO BET):
 
 Use: SetAIAgentDataContextForBetfairMarket
 Parameters:
-- dataContextName: "HorseRacingR5_Analysis"
+- dataContextName: "HorseRacingR5_1_Analysis"
 - marketId: [from Step 1]
 - jsonData: [Enhanced analysis results in JSON format - see Data Format section]
 
@@ -94,6 +100,53 @@ Purpose: Store comprehensive multi-context analysis data for:
 - Trading pattern analysis and market timing optimization
 ```
 
+## CRITICAL LESSONS FROM RESULTS ANALYSIS
+
+### Key Findings from HorseRacingR5_Analysis Performance Data:
+1. **100% NO BET Rate Across 5 Races** - Strategy was over-conservative
+2. **Missed Both Actual Winners**: Meblesh (5.1) and Diomed Duke (11.5) - both outsiders
+3. **Favorite Bias Problem**: Consistently analyzed short-priced horses that didn't win
+4. **Probability Calculation Issues**: Over-estimated favorite chances (65% for 3.75 odds)
+5. **Form Score Disconnect**: High form scores (90+) for non-winners, lower scores for actual winners
+
+### Mandatory Adjustments Based on Results:
+
+#### 1. **Systematic Full-Field Analysis**
+- **MUST analyze ALL runners in every race**, not just top 2-3 favorites
+- Create comprehensive analysis table for every horse
+- Identify outsider value opportunities specifically
+
+#### 2. **Probability Recalibration**
+- Apply favorite bias correction (0.85 multiplier for odds <3.0)
+- Apply outsider value boost (1.15 multiplier for improving horses 8.0+)
+- Weight recent form more heavily (50% vs 35%)
+
+#### 3. **Enhanced Outsider Detection Protocol**
+```
+For horses 8/1+ (8.0+), apply special analysis:
+- Recent form improvement trend
+- Significant rating discrepancies
+- Market drift patterns
+- Trainer/jockey form when available
+- Lower EV threshold (15% vs 20%) for outsiders with strong improving metrics
+```
+
+#### 4. **Revised Analysis Priorities**
+- **Primary Focus**: Value identification across entire field
+- **Secondary Focus**: Market efficiency gaps
+- **Tertiary Focus**: Favorite validation (reduced emphasis)
+
+#### 5. **Practical Betting Frequency Target**
+- **Minimum 25% of races** should produce a betting opportunity
+- If falling below this rate, review and adjust criteria
+- Balance discipline with opportunity capture
+
+**Version Update**: R5.1 - Results-Calibrated Analysis
+**Implementation Date**: June 28, 2025
+**Key Change**: Reduced over-conservatism based on actual performance data
+
+---
+
 ## Enhanced Analysis Framework
 
 ### Step 5: Multi-Source Data Validation & Cross-Reference
@@ -102,22 +155,24 @@ Purpose: Store comprehensive multi-context analysis data for:
 - Validate forecast prices against trading patterns
 - Identify discrepancies that may indicate value opportunities
 - Check form strings against detailed race descriptions
+- **CRITICAL ADDITION**: Systematically analyze ALL runners, not just top 2-3 favorites
 
 ### Step 6: Enhanced Form Analysis Methodology
 
-#### Integrated Form Scoring (0-100 scale)
-**Racing Post Component (40% weight):**
+#### Revised Form Scoring (0-100 scale) - Calibrated Based on Results
+**Racing Post Component (50% weight - increased based on results analysis):**
 - **Last 7 days**: 100 points for win, 80 for 2nd, 60 for 3rd
 - **8-14 days**: 90 points for win, 70 for 2nd, 50 for 3rd  
 - **15-30 days**: 80 points for win, 60 for 2nd, 40 for 3rd
 - **31+ days**: Reduce by 10% per additional week
+- **ADDITION**: Bonus points for improving trend patterns (+10 for clear improvement)
 
-**Betfair Form String Component (30% weight):**
+**Betfair Form String Component (25% weight - reduced):**
 - Recent numerical form analysis (1-9 scale)
 - Consistency patterns and improvement trends
 - Performance under similar conditions
 
-**Market Sentiment Component (30% weight):**
+**Market Sentiment Component (25% weight - reduced due to over-reliance on market):**
 - Price movement analysis (backing vs laying pressure)
 - Volume-weighted price changes
 - Forecast vs current price variance
@@ -201,7 +256,7 @@ Market Sentiment = Weighted combination of:
 - Market timing: Early vs late market moves
 ```
 
-#### Enhanced Probability Calculation
+#### Revised Probability Calculation
 ```
 Multi-Source Probability = Base calculation with validation layers:
 
@@ -209,35 +264,51 @@ Multi-Source Probability = Base calculation with validation layers:
 2. Rating Validation: Ensure OR, RP, and market ratings alignment
 3. Market Validation: Confirm probability matches trading patterns
 4. Historical Validation: Compare to similar race scenarios
+5. **CRITICAL ADDITION - Outsider Adjustment**: Apply probability boost for improving outsiders
 
-Final Probability = Raw Probability × Confidence Factor × Market Efficiency Factor
+**Probability Calibration Adjustments Based on Results Analysis:**
+- Reduce favorite bias by applying 0.85 multiplier to horses <3.0
+- Apply 1.15 multiplier to improving horses 8.0+
+- Weight recent form more heavily (increase to 50% vs 35%)
+- Reduce AI score influence for favorites (reduce to 15% vs 25%)
+
+Final Probability = Raw Probability × Confidence Factor × Market Efficiency Factor × Bias Adjustment
 ```
 
 ## Enhanced Strategy Execution Rules
 
-### Upgraded Single Selection Criteria
-**Only recommend ONE bet per race that meets ALL enhanced criteria:**
+### Revised Pragmatic Selection Criteria
+**Based on analysis of actual results, criteria have been adjusted for better balance between selectivity and opportunity capture:**
 
 **For BACK Bets:**
-- EV must be > +30% (Increased threshold due to enhanced accuracy)
-- Enhanced Form Score > 75 (Multi-source validation)
-- AI Score > 85 OR Multi-Rating Differential > +20% (Cross-validated advantage)
+- EV must be > +15% (Reduced from 30% - analysis showed 30% threshold missed profitable opportunities)
+- Enhanced Form Score > 65 (Reduced from 75 - high scorers didn't always win)
+- AI Score > 80 OR Multi-Rating Differential > +15% (Slightly lowered thresholds)
 - Market Sentiment positive OR significant value despite negative sentiment
-- Maximum odds of 20.0 (Reasonable probability maintenance)
-- Multi-source data consistency check passed
+- Maximum odds of 25.0 (Increased to capture more outsider value)
+- Multi-source data consistency check passed (>70% alignment)
+
+**CRITICAL ADDITION - Outsider Value Detection:**
+- Special consideration for horses 8/1+ (8.0+) with:
+  - Improving recent form trend
+  - AI Score > 75
+  - Market drift suggesting hidden support
+  - EV > +20% despite lower overall scores
 
 **For LAY Bets:**
-- EV must be < -30% (Increased threshold for enhanced confidence)
+- EV must be < -20% (Reduced from 30% for more opportunities)
 - Clear form concerns across multiple data sources
 - Negative market sentiment with volume confirmation
 - Overpriced in market with supporting data discrepancies
 
-**If no selection meets enhanced criteria: RECOMMEND NO BET**
+**If no selection meets revised criteria: RECOMMEND NO BET**
 
-### Enhanced Betting Thresholds (Single Selection Only)
-- **Premium Back**: EV > +50% with full validation (⭐⭐⭐⭐⭐)
-- **Strong Back**: EV +30% to +50% with high confidence (⭐⭐⭐⭐)
-- **Strong Lay**: EV < -30% with multi-source confirmation (⭐⭐⭐⭐⭐ LAY)
+### Revised Betting Thresholds (Based on Results Analysis)
+- **Premium Back**: EV > +35% with full validation (⭐⭐⭐⭐⭐)
+- **Strong Back**: EV +20% to +35% with high confidence (⭐⭐⭐⭐)
+- **Value Back**: EV +15% to +20% with reasonable confidence (⭐⭐⭐)
+- **Outsider Special**: EV +20%+ for horses 8/1+ with improving metrics (⭐⭐⭐⭐)
+- **Strong Lay**: EV < -20% with multi-source confirmation (⭐⭐⭐⭐⭐ LAY)
 - **NO BET**: All other scenarios including mixed signals
 
 ### Advanced Risk Management
@@ -436,11 +507,12 @@ NEXT ACTIONS:
 
 **Note**: This enhanced framework leverages three comprehensive data sources to identify exceptional value opportunities with increased accuracy and confidence. The enhanced criteria and cross-validation requirements will result in higher NO BET percentages but significantly improved success rates when selections are made.
 
-**CRITICAL REQUIREMENT**: ALL analyses must utilize GetAllDataContextForBetfairMarket with all three data contexts and store results using SetAIAgentDataContextForBetfairMarket with dataContextName "HorseRacingR5_Analysis" for comprehensive multi-source model tracking and validation.
+**CRITICAL REQUIREMENT**: ALL analyses must utilize GetAllDataContextForBetfairMarket with all three data contexts and store results using SetAIAgentDataContextForBetfairMarket with dataContextName "HorseRacingR5_1_Analysis" for comprehensive multi-source model tracking and validation.
 
-**Version**: R5.0 - Enhanced Multi-Context Analysis with Cross-Validation
+**Version**: R5.1 - Results-Calibrated Multi-Context Analysis
 **Last Updated**: June 28, 2025
-**Strategy Type**: Advanced multi-source value-based approach with comprehensive validation
+**Strategy Type**: Advanced multi-source value-based approach with results-based calibration
+**Key Changes**: Reduced over-conservatism, improved outsider detection, systematic full-field analysis
 
 ## Enhanced Analysis Data Format for Storage
 

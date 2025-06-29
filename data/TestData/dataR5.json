@@ -1,13 +1,13 @@
 {
     "analysisMetadata": {
-        "timestamp": "2025-06-28T18:00:00Z",
+        "timestamp": "2025-06-29T12:00:00Z",
         "strategyVersion": "R5.0",
-        "marketId": "1.245129697",
-        "venue": "Lingfield",
+        "marketId": "1.245177310",
+        "venue": "Curragh",
         "raceType": "1m1f Hcap",
-        "startTime": "2025-06-28T19:45:00+02:00",
-        "analysisDate": "2025-06-28",
-        "fieldSize": 3,
+        "startTime": "2025-06-29T14:15:00+02:00",
+        "analysisDate": "2025-06-29",
+        "fieldSize": 13,
         "dataSourcesUsed": [
             "RacingpostDataForHorsesInfo",
             "HorsesBaseBetfairFormData",
@@ -17,9 +17,9 @@
     },
     "enhancedHorseAnalysis": [
         {
-            "selectionId": "72249662_0.00",
-            "name": "Hot Dancer",
-            "currentPrice": 1.51,
+            "selectionId": "4670158_0.00",
+            "name": "Mississippi River",
+            "currentPrice": 2.38,
             "multiSourceFormAnalysis": {
                 "racingPostForm": {
                     "formScore": 98,
@@ -77,110 +77,50 @@
             }
         },
         {
-            "selectionId": "81903315_0.00",
-            "name": "Meblesh",
-            "currentPrice": 5.1,
-            "multiSourceFormAnalysis": {
-                "racingPostForm": {
-                    "formScore": 94,
-                    "semanticAnalysis": {
-                        "finishQuality": "moderate",
-                        "runningStyle": "prominent",
-                        "troubleInRunning": "none",
-                        "paceAnalysis": "steady"
-                    },
-                    "trendAnalysis": "inconsistent"
-                },
-                "betfairForm": {
-                    "formScore": 80,
-                    "recentPattern": "declining"
-                },
-                "combinedFormScore": 87,
-                "crossValidationScore": 85
-            },
-            "multiSourceRatingAnalysis": {
-                "averageExternalRating": 80,
-                "ratingDifferential": 14,
-                "ratingConsistency": 80
-            },
-            "marketSentimentAnalysis": {
-                "sentimentScore": 75,
-                "sentimentDirection": "neutral",
-                "marketConfidence": 78,
-                "driftFromForecast": -15,
-                "movementDirection": "steady"
-            },
-            "aiAnalysis": {
-                "predictionScore": 98.48,
-                "confidence": "high",
-                "crossValidationResult": "confirmed"
-            },
-            "enhancedProbabilityCalculation": {
-                "finalProbability": 55.0,
-                "trueOdds": 1.82
-            },
-            "enhancedExpectedValue": {
-                "expectedValue": 15.5,
-                "edgePercentage": 8.5,
-                "classification": "marginal_value"
-            },
-            "enhancedCriteriaAssessment": {
-                "evThresholdMet": false,
-                "formScoreMet": true,
-                "aiScoreOrRatingDiffMet": false,
-                "marketSentimentMet": false,
-                "crossValidationMet": false,
-                "overallAssessment": "ev_threshold_failure"
-            },
-            "riskAssessment": {
-                "overallRiskRating": "medium"
-            }
-        },
-        {
-            "selectionId": "70832742_0.00",
-            "name": "Big Sip",
+            "selectionId": "70395943_0.00",
+            "name": "Shiota",
             "currentPrice": 6.8,
             "multiSourceFormAnalysis": {
                 "racingPostForm": {
-                    "formScore": 94,
+                    "formScore": 93,
                     "semanticAnalysis": {
-                        "finishQuality": "moderate",
-                        "runningStyle": "prominent",
+                        "finishQuality": "strong",
+                        "runningStyle": "midfield",
                         "troubleInRunning": "none",
                         "paceAnalysis": "steady"
                     },
-                    "trendAnalysis": "inconsistent"
+                    "trendAnalysis": "improving"
                 },
                 "betfairForm": {
-                    "formScore": 78,
-                    "recentPattern": "declining"
+                    "formScore": 93,
+                    "recentPattern": "consistent"
                 },
-                "combinedFormScore": 86,
-                "crossValidationScore": 82
+                "combinedFormScore": 93,
+                "crossValidationScore": 90
             },
             "multiSourceRatingAnalysis": {
-                "averageExternalRating": 82,
-                "ratingDifferential": 12,
-                "ratingConsistency": 75
+                "averageExternalRating": 93,
+                "ratingDifferential": 0,
+                "ratingConsistency": 95
             },
             "marketSentimentAnalysis": {
-                "sentimentScore": 70,
-                "sentimentDirection": "neutral",
-                "marketConfidence": 72,
-                "driftFromForecast": -10,
+                "sentimentScore": 85,
+                "sentimentDirection": "positive",
+                "marketConfidence": 88,
+                "driftFromForecast": -10.0,
                 "movementDirection": "steady"
             },
             "aiAnalysis": {
-                "predictionScore": 85.23,
+                "predictionScore": 47.1,
                 "confidence": "medium",
-                "crossValidationResult": "confirmed"
+                "crossValidationResult": "partial"
             },
             "enhancedProbabilityCalculation": {
                 "finalProbability": 50.0,
                 "trueOdds": 2.0
             },
             "enhancedExpectedValue": {
-                "expectedValue": 10.0,
+                "expectedValue": 15.0,
                 "edgePercentage": 5.0,
                 "classification": "marginal_value"
             },
@@ -188,12 +128,672 @@
                 "evThresholdMet": false,
                 "formScoreMet": true,
                 "aiScoreOrRatingDiffMet": false,
-                "marketSentimentMet": false,
-                "crossValidationMet": false,
+                "marketSentimentMet": true,
+                "crossValidationMet": true,
                 "overallAssessment": "ev_threshold_failure"
             },
             "riskAssessment": {
                 "overallRiskRating": "medium"
+            }
+        },
+        {
+            "selectionId": "70679605_0.00",
+            "name": "Thunder Wonder",
+            "currentPrice": 12,
+            "multiSourceFormAnalysis": {
+                "racingPostForm": {
+                    "formScore": 97,
+                    "semanticAnalysis": {
+                        "finishQuality": "strong",
+                        "runningStyle": "prominent",
+                        "troubleInRunning": "none",
+                        "paceAnalysis": "steady"
+                    },
+                    "trendAnalysis": "consistent"
+                },
+                "betfairForm": {
+                    "formScore": 97,
+                    "recentPattern": "consistent"
+                },
+                "combinedFormScore": 97,
+                "crossValidationScore": 92
+            },
+            "multiSourceRatingAnalysis": {
+                "averageExternalRating": 97,
+                "ratingDifferential": 0,
+                "ratingConsistency": 95
+            },
+            "marketSentimentAnalysis": {
+                "sentimentScore": 80,
+                "sentimentDirection": "neutral",
+                "marketConfidence": 85,
+                "driftFromForecast": 0.0,
+                "movementDirection": "steady"
+            },
+            "aiAnalysis": {
+                "predictionScore": 38.5,
+                "confidence": "low",
+                "crossValidationResult": "partial"
+            },
+            "enhancedProbabilityCalculation": {
+                "finalProbability": 45.0,
+                "trueOdds": 2.22
+            },
+            "enhancedExpectedValue": {
+                "expectedValue": 10.0,
+                "edgePercentage": 2.5,
+                "classification": "low_value"
+            },
+            "enhancedCriteriaAssessment": {
+                "evThresholdMet": false,
+                "formScoreMet": true,
+                "aiScoreOrRatingDiffMet": false,
+                "marketSentimentMet": true,
+                "crossValidationMet": true,
+                "overallAssessment": "ev_threshold_failure"
+            },
+            "riskAssessment": {
+                "overallRiskRating": "medium"
+            }
+        },
+        {
+            "selectionId": "72454037_0.00",
+            "name": "Lady In Paris",
+            "currentPrice": 13,
+            "multiSourceFormAnalysis": {
+                "racingPostForm": {
+                    "formScore": 84,
+                    "semanticAnalysis": {
+                        "finishQuality": "moderate",
+                        "runningStyle": "prominent",
+                        "troubleInRunning": "none",
+                        "paceAnalysis": "steady"
+                    },
+                    "trendAnalysis": "consistent"
+                },
+                "betfairForm": {
+                    "formScore": 84,
+                    "recentPattern": "consistent"
+                },
+                "combinedFormScore": 84,
+                "crossValidationScore": 85
+            },
+            "multiSourceRatingAnalysis": {
+                "averageExternalRating": 84,
+                "ratingDifferential": 0,
+                "ratingConsistency": 88
+            },
+            "marketSentimentAnalysis": {
+                "sentimentScore": 75,
+                "sentimentDirection": "neutral",
+                "marketConfidence": 80,
+                "driftFromForecast": 0.0,
+                "movementDirection": "steady"
+            },
+            "aiAnalysis": {
+                "predictionScore": 43.3,
+                "confidence": "low",
+                "crossValidationResult": "partial"
+            },
+            "enhancedProbabilityCalculation": {
+                "finalProbability": 40.0,
+                "trueOdds": 2.5
+            },
+            "enhancedExpectedValue": {
+                "expectedValue": 8.0,
+                "edgePercentage": 2.0,
+                "classification": "low_value"
+            },
+            "enhancedCriteriaAssessment": {
+                "evThresholdMet": false,
+                "formScoreMet": false,
+                "aiScoreOrRatingDiffMet": false,
+                "marketSentimentMet": true,
+                "crossValidationMet": true,
+                "overallAssessment": "ev_threshold_failure"
+            },
+            "riskAssessment": {
+                "overallRiskRating": "medium"
+            }
+        },
+        {
+            "selectionId": "1523839_0.00",
+            "name": "Iron Fist",
+            "currentPrice": 17,
+            "multiSourceFormAnalysis": {
+                "racingPostForm": {
+                    "formScore": 84,
+                    "semanticAnalysis": {
+                        "finishQuality": "moderate",
+                        "runningStyle": "midfield",
+                        "troubleInRunning": "none",
+                        "paceAnalysis": "steady"
+                    },
+                    "trendAnalysis": "consistent"
+                },
+                "betfairForm": {
+                    "formScore": 84,
+                    "recentPattern": "consistent"
+                },
+                "combinedFormScore": 84,
+                "crossValidationScore": 85
+            },
+            "multiSourceRatingAnalysis": {
+                "averageExternalRating": 84,
+                "ratingDifferential": 0,
+                "ratingConsistency": 88
+            },
+            "marketSentimentAnalysis": {
+                "sentimentScore": 70,
+                "sentimentDirection": "neutral",
+                "marketConfidence": 75,
+                "driftFromForecast": 0.0,
+                "movementDirection": "steady"
+            },
+            "aiAnalysis": {
+                "predictionScore": 96.2,
+                "confidence": "high",
+                "crossValidationResult": "confirmed"
+            },
+            "enhancedProbabilityCalculation": {
+                "finalProbability": 35.0,
+                "trueOdds": 2.86
+            },
+            "enhancedExpectedValue": {
+                "expectedValue": 6.0,
+                "edgePercentage": 1.5,
+                "classification": "low_value"
+            },
+            "enhancedCriteriaAssessment": {
+                "evThresholdMet": false,
+                "formScoreMet": false,
+                "aiScoreOrRatingDiffMet": false,
+                "marketSentimentMet": true,
+                "crossValidationMet": true,
+                "overallAssessment": "ev_threshold_failure"
+            },
+            "riskAssessment": {
+                "overallRiskRating": "medium"
+            }
+        },
+        {
+            "selectionId": "71525965_0.00",
+            "name": "Sujet",
+            "currentPrice": 18,
+            "multiSourceFormAnalysis": {
+                "racingPostForm": {
+                    "formScore": 78,
+                    "semanticAnalysis": {
+                        "finishQuality": "moderate",
+                        "runningStyle": "midfield",
+                        "troubleInRunning": "none",
+                        "paceAnalysis": "steady"
+                    },
+                    "trendAnalysis": "consistent"
+                },
+                "betfairForm": {
+                    "formScore": 77,
+                    "recentPattern": "consistent"
+                },
+                "combinedFormScore": 77.5,
+                "crossValidationScore": 80
+            },
+            "multiSourceRatingAnalysis": {
+                "averageExternalRating": 77.5,
+                "ratingDifferential": 0,
+                "ratingConsistency": 82
+            },
+            "marketSentimentAnalysis": {
+                "sentimentScore": 65,
+                "sentimentDirection": "neutral",
+                "marketConfidence": 70,
+                "driftFromForecast": 0.0,
+                "movementDirection": "steady"
+            },
+            "aiAnalysis": {
+                "predictionScore": 0.0,
+                "confidence": "low",
+                "crossValidationResult": "partial"
+            },
+            "enhancedProbabilityCalculation": {
+                "finalProbability": 30.0,
+                "trueOdds": 3.33
+            },
+            "enhancedExpectedValue": {
+                "expectedValue": 4.0,
+                "edgePercentage": 1.0,
+                "classification": "low_value"
+            },
+            "enhancedCriteriaAssessment": {
+                "evThresholdMet": false,
+                "formScoreMet": false,
+                "aiScoreOrRatingDiffMet": false,
+                "marketSentimentMet": true,
+                "crossValidationMet": true,
+                "overallAssessment": "ev_threshold_failure"
+            },
+            "riskAssessment": {
+                "overallRiskRating": "high"
+            }
+        },
+        {
+            "selectionId": "72890928_0.00",
+            "name": "Its All Peachy",
+            "currentPrice": 30,
+            "multiSourceFormAnalysis": {
+                "racingPostForm": {
+                    "formScore": 78,
+                    "semanticAnalysis": {
+                        "finishQuality": "moderate",
+                        "runningStyle": "midfield",
+                        "troubleInRunning": "none",
+                        "paceAnalysis": "steady"
+                    },
+                    "trendAnalysis": "consistent"
+                },
+                "betfairForm": {
+                    "formScore": 77,
+                    "recentPattern": "consistent"
+                },
+                "combinedFormScore": 77.5,
+                "crossValidationScore": 80
+            },
+            "multiSourceRatingAnalysis": {
+                "averageExternalRating": 77.5,
+                "ratingDifferential": 0,
+                "ratingConsistency": 82
+            },
+            "marketSentimentAnalysis": {
+                "sentimentScore": 60,
+                "sentimentDirection": "neutral",
+                "marketConfidence": 65,
+                "driftFromForecast": 0.0,
+                "movementDirection": "steady"
+            },
+            "aiAnalysis": {
+                "predictionScore": 0.0,
+                "confidence": "low",
+                "crossValidationResult": "partial"
+            },
+            "enhancedProbabilityCalculation": {
+                "finalProbability": 25.0,
+                "trueOdds": 4.0
+            },
+            "enhancedExpectedValue": {
+                "expectedValue": 3.0,
+                "edgePercentage": 0.75,
+                "classification": "low_value"
+            },
+            "enhancedCriteriaAssessment": {
+                "evThresholdMet": false,
+                "formScoreMet": false,
+                "aiScoreOrRatingDiffMet": false,
+                "marketSentimentMet": true,
+                "crossValidationMet": true,
+                "overallAssessment": "ev_threshold_failure"
+            },
+            "riskAssessment": {
+                "overallRiskRating": "high"
+            }
+        },
+        {
+            "selectionId": "73656103_0.00",
+            "name": "Calrissiana",
+            "currentPrice": 30,
+            "multiSourceFormAnalysis": {
+                "racingPostForm": {
+                    "formScore": 78,
+                    "semanticAnalysis": {
+                        "finishQuality": "moderate",
+                        "runningStyle": "midfield",
+                        "troubleInRunning": "none",
+                        "paceAnalysis": "steady"
+                    },
+                    "trendAnalysis": "consistent"
+                },
+                "betfairForm": {
+                    "formScore": 78,
+                    "recentPattern": "consistent"
+                },
+                "combinedFormScore": 78,
+                "crossValidationScore": 82
+            },
+            "multiSourceRatingAnalysis": {
+                "averageExternalRating": 78,
+                "ratingDifferential": 0,
+                "ratingConsistency": 85
+            },
+            "marketSentimentAnalysis": {
+                "sentimentScore": 55,
+                "sentimentDirection": "neutral",
+                "marketConfidence": 60,
+                "driftFromForecast": 0.0,
+                "movementDirection": "steady"
+            },
+            "aiAnalysis": {
+                "predictionScore": 91.3,
+                "confidence": "high",
+                "crossValidationResult": "confirmed"
+            },
+            "enhancedProbabilityCalculation": {
+                "finalProbability": 20.0,
+                "trueOdds": 5.0
+            },
+            "enhancedExpectedValue": {
+                "expectedValue": 2.0,
+                "edgePercentage": 0.5,
+                "classification": "low_value"
+            },
+            "enhancedCriteriaAssessment": {
+                "evThresholdMet": false,
+                "formScoreMet": false,
+                "aiScoreOrRatingDiffMet": false,
+                "marketSentimentMet": true,
+                "crossValidationMet": true,
+                "overallAssessment": "ev_threshold_failure"
+            },
+            "riskAssessment": {
+                "overallRiskRating": "high"
+            }
+        },
+        {
+            "selectionId": "71629567_0.00",
+            "name": "Dignam",
+            "currentPrice": 32,
+            "multiSourceFormAnalysis": {
+                "racingPostForm": {
+                    "formScore": 89,
+                    "semanticAnalysis": {
+                        "finishQuality": "moderate",
+                        "runningStyle": "midfield",
+                        "troubleInRunning": "none",
+                        "paceAnalysis": "steady"
+                    },
+                    "trendAnalysis": "consistent"
+                },
+                "betfairForm": {
+                    "formScore": 89,
+                    "recentPattern": "consistent"
+                },
+                "combinedFormScore": 89,
+                "crossValidationScore": 90
+            },
+            "multiSourceRatingAnalysis": {
+                "averageExternalRating": 89,
+                "ratingDifferential": 0,
+                "ratingConsistency": 92
+            },
+            "marketSentimentAnalysis": {
+                "sentimentScore": 50,
+                "sentimentDirection": "neutral",
+                "marketConfidence": 55,
+                "driftFromForecast": 0.0,
+                "movementDirection": "steady"
+            },
+            "aiAnalysis": {
+                "predictionScore": 0.0,
+                "confidence": "low",
+                "crossValidationResult": "partial"
+            },
+            "enhancedProbabilityCalculation": {
+                "finalProbability": 15.0,
+                "trueOdds": 6.67
+            },
+            "enhancedExpectedValue": {
+                "expectedValue": 1.0,
+                "edgePercentage": 0.25,
+                "classification": "low_value"
+            },
+            "enhancedCriteriaAssessment": {
+                "evThresholdMet": false,
+                "formScoreMet": false,
+                "aiScoreOrRatingDiffMet": false,
+                "marketSentimentMet": true,
+                "crossValidationMet": true,
+                "overallAssessment": "ev_threshold_failure"
+            },
+            "riskAssessment": {
+                "overallRiskRating": "high"
+            }
+        },
+        {
+            "selectionId": "76590775_0.00",
+            "name": "Triple Double A",
+            "currentPrice": 32,
+            "multiSourceFormAnalysis": {
+                "racingPostForm": {
+                    "formScore": 78,
+                    "semanticAnalysis": {
+                        "finishQuality": "moderate",
+                        "runningStyle": "midfield",
+                        "troubleInRunning": "none",
+                        "paceAnalysis": "steady"
+                    },
+                    "trendAnalysis": "consistent"
+                },
+                "betfairForm": {
+                    "formScore": 78,
+                    "recentPattern": "consistent"
+                },
+                "combinedFormScore": 78,
+                "crossValidationScore": 82
+            },
+            "multiSourceRatingAnalysis": {
+                "averageExternalRating": 78,
+                "ratingDifferential": 0,
+                "ratingConsistency": 85
+            },
+            "marketSentimentAnalysis": {
+                "sentimentScore": 45,
+                "sentimentDirection": "neutral",
+                "marketConfidence": 50,
+                "driftFromForecast": 0.0,
+                "movementDirection": "steady"
+            },
+            "aiAnalysis": {
+                "predictionScore": 0.0,
+                "confidence": "low",
+                "crossValidationResult": "partial"
+            },
+            "enhancedProbabilityCalculation": {
+                "finalProbability": 10.0,
+                "trueOdds": 10.0
+            },
+            "enhancedExpectedValue": {
+                "expectedValue": 0.0,
+                "edgePercentage": 0.0,
+                "classification": "no_value"
+            },
+            "enhancedCriteriaAssessment": {
+                "evThresholdMet": false,
+                "formScoreMet": false,
+                "aiScoreOrRatingDiffMet": false,
+                "marketSentimentMet": true,
+                "crossValidationMet": true,
+                "overallAssessment": "ev_threshold_failure"
+            },
+            "riskAssessment": {
+                "overallRiskRating": "high"
+            }
+        },
+        {
+            "selectionId": "70902351_0.00",
+            "name": "Viking Invasion",
+            "currentPrice": 30,
+            "multiSourceFormAnalysis": {
+                "racingPostForm": {
+                    "formScore": 91,
+                    "semanticAnalysis": {
+                        "finishQuality": "moderate",
+                        "runningStyle": "midfield",
+                        "troubleInRunning": "none",
+                        "paceAnalysis": "steady"
+                    },
+                    "trendAnalysis": "consistent"
+                },
+                "betfairForm": {
+                    "formScore": 91,
+                    "recentPattern": "consistent"
+                },
+                "combinedFormScore": 91,
+                "crossValidationScore": 93
+            },
+            "multiSourceRatingAnalysis": {
+                "averageExternalRating": 91,
+                "ratingDifferential": 0,
+                "ratingConsistency": 94
+            },
+            "marketSentimentAnalysis": {
+                "sentimentScore": 40,
+                "sentimentDirection": "neutral",
+                "marketConfidence": 45,
+                "driftFromForecast": 0.0,
+                "movementDirection": "steady"
+            },
+            "aiAnalysis": {
+                "predictionScore": 0.0,
+                "confidence": "low",
+                "crossValidationResult": "partial"
+            },
+            "enhancedProbabilityCalculation": {
+                "finalProbability": 5.0,
+                "trueOdds": 20.0
+            },
+            "enhancedExpectedValue": {
+                "expectedValue": 0.0,
+                "edgePercentage": 0.0,
+                "classification": "no_value"
+            },
+            "enhancedCriteriaAssessment": {
+                "evThresholdMet": false,
+                "formScoreMet": false,
+                "aiScoreOrRatingDiffMet": false,
+                "marketSentimentMet": true,
+                "crossValidationMet": true,
+                "overallAssessment": "ev_threshold_failure"
+            },
+            "riskAssessment": {
+                "overallRiskRating": "high"
+            }
+        },
+        {
+            "selectionId": "70465632_0.00",
+            "name": "Nyman",
+            "currentPrice": 55,
+            "multiSourceFormAnalysis": {
+                "racingPostForm": {
+                    "formScore": 78,
+                    "semanticAnalysis": {
+                        "finishQuality": "moderate",
+                        "runningStyle": "midfield",
+                        "troubleInRunning": "none",
+                        "paceAnalysis": "steady"
+                    },
+                    "trendAnalysis": "consistent"
+                },
+                "betfairForm": {
+                    "formScore": 75,
+                    "recentPattern": "consistent"
+                },
+                "combinedFormScore": 76.5,
+                "crossValidationScore": 80
+            },
+            "multiSourceRatingAnalysis": {
+                "averageExternalRating": 76.5,
+                "ratingDifferential": 0,
+                "ratingConsistency": 82
+            },
+            "marketSentimentAnalysis": {
+                "sentimentScore": 35,
+                "sentimentDirection": "neutral",
+                "marketConfidence": 40,
+                "driftFromForecast": 0.0,
+                "movementDirection": "steady"
+            },
+            "aiAnalysis": {
+                "predictionScore": 0.0,
+                "confidence": "low",
+                "crossValidationResult": "partial"
+            },
+            "enhancedProbabilityCalculation": {
+                "finalProbability": 2.5,
+                "trueOdds": 40.0
+            },
+            "enhancedExpectedValue": {
+                "expectedValue": 0.0,
+                "edgePercentage": 0.0,
+                "classification": "no_value"
+            },
+            "enhancedCriteriaAssessment": {
+                "evThresholdMet": false,
+                "formScoreMet": false,
+                "aiScoreOrRatingDiffMet": false,
+                "marketSentimentMet": true,
+                "crossValidationMet": true,
+                "overallAssessment": "ev_threshold_failure"
+            },
+            "riskAssessment": {
+                "overallRiskRating": "high"
+            }
+        },
+        {
+            "selectionId": "71880415_0.00",
+            "name": "Tangapour",
+            "currentPrice": 160,
+            "multiSourceFormAnalysis": {
+                "racingPostForm": {
+                    "formScore": 83,
+                    "semanticAnalysis": {
+                        "finishQuality": "moderate",
+                        "runningStyle": "midfield",
+                        "troubleInRunning": "none",
+                        "paceAnalysis": "steady"
+                    },
+                    "trendAnalysis": "consistent"
+                },
+                "betfairForm": {
+                    "formScore": 83,
+                    "recentPattern": "consistent"
+                },
+                "combinedFormScore": 83,
+                "crossValidationScore": 85
+            },
+            "multiSourceRatingAnalysis": {
+                "averageExternalRating": 83,
+                "ratingDifferential": 0,
+                "ratingConsistency": 88
+            },
+            "marketSentimentAnalysis": {
+                "sentimentScore": 30,
+                "sentimentDirection": "neutral",
+                "marketConfidence": 35,
+                "driftFromForecast": 0.0,
+                "movementDirection": "steady"
+            },
+            "aiAnalysis": {
+                "predictionScore": 0.0,
+                "confidence": "low",
+                "crossValidationResult": "partial"
+            },
+            "enhancedProbabilityCalculation": {
+                "finalProbability": 1.0,
+                "trueOdds": 100.0
+            },
+            "enhancedExpectedValue": {
+                "expectedValue": 0.0,
+                "edgePercentage": 0.0,
+                "classification": "no_value"
+            },
+            "enhancedCriteriaAssessment": {
+                "evThresholdMet": false,
+                "formScoreMet": false,
+                "aiScoreOrRatingDiffMet": false,
+                "marketSentimentMet": true,
+                "crossValidationMet": true,
+                "overallAssessment": "ev_threshold_failure"
+            },
+            "riskAssessment": {
+                "overallRiskRating": "high"
             }
         }
     ],
@@ -201,9 +801,9 @@
         "recommendation": "NO_BET",
         "reasoning": "insufficient_ev_despite_strong_signals",
         "topCandidate": {
-            "name": "Hot Dancer",
-            "selectionId": "72249662_0.00",
-            "price": 1.51,
+            "name": "Mississippi River",
+            "selectionId": "4670158_0.00",
+            "price": 2.38,
             "expectedValue": 20.3,
             "failureReason": "ev_below_enhanced_30_percent_threshold"
         },
@@ -227,8 +827,8 @@
     },
     "executionDetails": {
         "strategyExecuted": false,
-        "decisionTime": "2025-06-28T18:00:00Z",
-        "analysisCompletionTime": "2025-06-28T18:00:45Z",
+        "decisionTime": "2025-06-29T12:00:00Z",
+        "analysisCompletionTime": "2025-06-29T12:00:45Z",
         "dataRetrievalTime": 12.5,
         "analysisTime": 33.2,
         "totalProcessingTime": 45.7
