@@ -44,6 +44,20 @@ The prompts are organized into several categories with demonstrated performance 
 - Enhanced risk management and threshold optimization
 - **Best for:** Cutting-edge strategy development and testing
 
+#### [HorseRacingStrategyR3_DS.md](HorseRacingStrategyR3_DS.md)
+**Strategy R3 - Optimized Data Structure Version**
+- Silent mode operation with optimized data structure and decision logic
+- Analyzes all horses to determine optimal action: BACK, LAY, or NO ACTION
+- Enhanced selection criteria with semantic form analysis and composite scoring
+- **Best for:** Automated decision-making with structured data analysis
+
+#### [HorseRacingStrategyR4.md](HorseRacingStrategyR4.md)
+**Strategy R4 - Silent Execution Implementation**
+- Silent execution of comprehensive market analysis with minimal output
+- Combines Racing Post data, form analysis, and Expected Value calculations
+- Single best value opportunity identification with strict value thresholds
+- **Best for:** Automated silent execution with comprehensive analysis
+
 #### [HorseRacingStrategyR4_Ideas.md](HorseRacingStrategyR4_Ideas.md)
 **Strategy R4 - Multi-Context Integration Framework**
 - Advanced multi-context analysis integrating form data and trading patterns
@@ -206,6 +220,17 @@ The prompts are organized into several categories with demonstrated performance 
 - ABSOLUTELY NO intermediate outputs - only final execution confirmation or no-execution message
 - Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingOlbgEVAnalysisResults"
 - **Best for:** Leveraging professional tipster expertise with automated silent execution and favorites risk management
+
+#### [HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md](HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md)
+**Silent OLBG EV Analysis with Fixed 10 Euro Betting - Top 3 Favorites Only**
+- Completely silent comprehensive Expected Value analysis using OLBG expert tipster consensus
+- Fixed 10 Euro betting execution on best value selection among top 3 favorites
+- Combines expert tipster analysis with mathematical EV calculations
+- **CRITICAL RESTRICTION:** Betting execution ONLY on horses among the top 3 favorites by current price
+- Uses dual-source analysis with focus on tipster consensus and semantic performance patterns
+- Automatically executes "Bet 10 Euro" strategy on qualified selections
+- ABSOLUTELY NO intermediate outputs - only final betting execution confirmation
+- **Best for:** Fixed stake automated betting with expert tipster guidance and risk management
 
 ### Football Analysis
 
@@ -439,8 +464,11 @@ When creating new prompts:
 | Silent automated execution (favorites only) | Low-Medium | Full | **83.3% strike rate, 115-150% ROI** | HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md |
 | Silent automated execution (all horses) | Medium-High | Full | High potential | HorseRacingSilentEVAnalysisWithAutomatedExecution.md |
 | Expert tips integration | Medium | Full | Expert validated | HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md |
+| Fixed stake expert betting | Low-Medium | Full | Expert guided | HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md |
 | Multi-horse Dutch betting | Medium | Full | Risk diversified | HorseRacingEVAnalysisWithDutchBetting.md |
 | Advanced multi-context analysis | Medium | Manual | Enhanced evaluation | HorseRacingStrategyR4_Ideas.md |
+| Silent comprehensive market analysis | Medium | Full | Automated execution | HorseRacingStrategyR4.md |
+| Optimized data structure analysis | Medium | Full | Structured decisions | HorseRacingStrategyR3_DS.md |
 | **Revolutionary triple-context analysis** | **Medium-High** | **Manual** | **Maximum analytical depth** | **HorseRacingStrategyR5_Ideas.md** |
 | **Silent triple-context execution** | **Medium** | **Full** | **Automated R5 power** | **HorseRacingStrategyR5.md** |
 | Quick analysis only | Low | None | Analysis only | HorseRacingEVRankingsTableOnly.md |

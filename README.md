@@ -57,6 +57,9 @@ Ready-to-use AI prompts for various sports and analysis types:
 - **[BFExplorer MCP Integration](docs/Prompts/BfexplorerMCPIntegrationSystemPrompt.md)** - System integration guide
 - **[BFExplorer Strategy Expert](docs/Prompts/BfexplorerStrategyExpertPrompt.md)** - AI assistant for strategy selection and configuration
 
+#### Betfair Trading Strategy Execution Prompt
+- **[Betfair Trading Strategy Execution Prompt](docs/Prompts/BetfairTradingStrategyExecutionPrompt.md)** - Step-by-step adaptive trading analysis and execution for Betfair Exchange markets. Includes market analysis, selection identification, parameter optimization, and automated strategy execution logic.
+
 ### 🗣️ Community Stories & Posts
 
 **[📖 Complete Posts Index](docs/Posts/README.md)**

@@ -1,0 +1,17 @@
+{
+  "BotName": "Place Bet and Close Selection Bet Position",
+  "Parameters": {
+    "OpenBetPosition": {
+      "BetType": "Back",
+      "Stake": 100.0,
+      "StakeType": "Stake"
+    },
+    "CloseBetPosition": {
+      "ProfitLossType": "Percentage",
+      "Profit": 10.0,
+      "Loss": 20.0,
+      "HedgingEnabled": true,
+      "ClosePositionImmediately": true
+    }
+  }
+}

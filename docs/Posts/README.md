@@ -31,6 +31,30 @@ This directory contains community posts, articles, and real-world examples showc
 - Example of combining "Place Bet - Be the First in Queue" with "Trailing Stop Loss"
 - **Best for:** Understanding the practical value of AI assistance in strategy development
 
+### [Semantic Analysis of Horse Racing Form Data: AI-Powered Insights](Post_SemanticAnalysisOfHorseRacingFormData.md)
+**Advanced AI Form Analysis**
+- Deep dive into semantic analysis of horse racing form data
+- AI-powered interpretation of complex racing statistics and trends
+- Natural language processing applied to form guides and racing information
+- Practical implementation of semantic understanding in betting strategies
+- **Best for:** Understanding how AI can interpret and analyze complex form data beyond basic statistics
+
+### [Reddit Post: AI Price Trend Analysis and Tool Feedback](RedditPost_AIPriceTrendAnalysisAndToolFeedback.md)
+**AI Trading Automation Discussion**
+- Community discussion about AI agent analyzing Betfair price trends like a professional trader
+- Explores odds movement, volatility analysis, and financial trading patterns applied to betting
+- Debate on giving AI agents dynamic parameter control vs pre-configured settings
+- Technical discussion of `ExecuteBfexplorerStrategySettings` tool enhancement
+- **Best for:** Understanding the evolution toward autonomous AI trading and community perspectives on automation
+
+### [Reddit Post: Horse Racing AI Achieves 83% Strike Rate](RedditPost_HorseRacingAI_83PercentStrikeRate.md)
+**High-Performance Strategy Results**
+- Community post showcasing exceptional 83% strike rate achievement
+- Analysis of what drives such high success rates in AI horse racing strategies
+- Discussion of the balance between strike rate and profitability
+- Technical insights into strategy optimization for consistent performance
+- **Best for:** Understanding high-performance AI strategy results and their underlying mechanisms
+
 ### [Reddit Post: Horse Racing AI Strategy Delivers 77.6% ROI in Single Day](RedditPost_HorseRacingStrategyR2_77PercentROI.md)
 **Strategy R2 Performance Analysis & Community Discussion**
 - Reddit-ready post about Strategy R2 delivering 77.6% ROI across 21 races
@@ -83,6 +107,12 @@ This directory contains community posts, articles, and real-world examples showc
 - Community building and vision for AI-powered trading
 - Technical milestones and future development plans
 - **Best for:** Understanding the evolution of AI in trading apps and community inspiration
+
+### [Reddit Post: What AI Agents & Models Are You Actually Using?](RedditPost_AIAgentAndModelUsage.md)
+**Community Discussion**
+- Asks the community about their experiences with different AI agents and models.
+- Discusses the pros and cons of GitHub Copilot Pro, Claude, DeepSeek, and Gemini.
+- **Best for:** Understanding the current landscape of AI development tools and workflows.
 
 ## What You'll Find Here
 
