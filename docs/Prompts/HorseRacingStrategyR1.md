@@ -34,11 +34,11 @@ This strategy analyzes horse racing markets using multiple data contexts from Bf
   - Weight carried
 
 ### 3. MarketSelectionsTradedPricesData
-- **Purpose**: Market behavior and price movements
+- **Purpose**: Market behavior and probability movements
 - **Key Metrics**:
   - Price stability (min/max ranges)
   - Traded volumes
-  - Price drift patterns
+  - Probability drift patterns
   - Market confidence indicators
 
 ## Selection Criteria
@@ -64,9 +64,9 @@ This strategy analyzes horse racing markets using multiple data contexts from Bf
    - Elite: Scores of 95+
 
 4. **Market Stability** (15% weight)
-   - Price range should be narrow (< 20% variance)
+   - Probability range should be narrow (< 20% variance)
    - High traded volume indicates market confidence
-   - Minimal price drift suggests informed money
+   - Minimal probability drift suggests informed money
 
 ### Secondary Filters
 
@@ -134,9 +134,9 @@ Market Implied Probability = 1 / Decimal Odds
 ```
 Implied Probability = 1 / Decimal Odds
 Market Edge = Estimated Win Probability - Implied Probability
-Price Movement Impact:
-- Price shortening (going down) = Market confidence increasing
-- Price drifting (going up) = Market confidence decreasing
+Probability Movement Impact:
+- Probability increasing (price shortening) = Market confidence increasing
+- Probability decreasing (price drifting) = Market confidence decreasing
 ```
 
 #### Expected Value Formula
@@ -149,21 +149,21 @@ Enhanced EV = Base EV × Crowd Wisdom Adjustment Factor (CWAF)
 The strategy incorporates collective market intelligence to enhance EV calculations:
 
 ```
-CWAF = Market Confidence Factor × Price Movement Factor × Volume Factor × Historical Success Factor
+CWAF = Market Confidence Factor × Probability Movement Factor × Volume Factor × Historical Success Factor
 ```
 
 **CWAF Components:**
 
 1. **Market Confidence Factor (0.8-1.2)**:
-   - Price stability >90%: 1.2 (high market consensus)
-   - Price stability 80-90%: 1.1 (good consensus)
-   - Price stability 70-80%: 1.0 (moderate consensus)
-   - Price stability <70%: 0.9 (uncertain market)
+   - Probability stability >90%: 1.2 (high market consensus)
+   - Probability stability 80-90%: 1.1 (good consensus)
+   - Probability stability 70-80%: 1.0 (moderate consensus)
+   - Probability stability <70%: 0.9 (uncertain market)
 
-2. **Price Movement Factor (0.8-1.2)**:
-   - Shortening: 1.2 (increasing market confidence)
+2. **Probability Movement Factor (0.8-1.2)**:
+   - Probability increasing (price shortening): 1.2 (increasing market confidence)
    - Stable: 1.0 (established consensus)
-   - Drifting: 0.8 (decreasing market confidence)
+   - Probability decreasing (price drifting): 0.8 (decreasing market confidence)
 
 3. **Volume Factor (0.9-1.1)**:
    - High volume (>5000): 1.1 (strong market participation)
@@ -182,7 +182,7 @@ CWAF = Market Confidence Factor × Price Movement Factor × Volume Factor × His
 - Horse with 80% estimated win probability (prediction score 80)
 - Current odds: 2.0 (implies 50% market probability)
 - Base EV: (0.80 × 1.0) - (0.20 × 1) = +0.60
-- Market factors: High stability (95%), shortening price, good volume (4000), strong historical pattern
+- Market factors: High stability (95%), probability increasing, good volume (4000), strong historical pattern
 - CWAF: 1.2 × 1.2 × 1.0 × 1.1 = 1.584
 - Enhanced EV: 0.60 × 1.584 = **+0.95** (stronger signal)
 
@@ -190,7 +190,7 @@ CWAF = Market Confidence Factor × Price Movement Factor × Volume Factor × His
 - Horse with 60% estimated win probability (prediction score 60)
 - Current odds: 1.5 (implies 66.7% market probability)
 - Base EV: (0.60 × 0.5) - (0.40 × 1) = -0.10
-- Market factors: Low stability (65%), drifting price, low volume (1500), weak historical pattern
+- Market factors: Low stability (65%), probability decreasing, low volume (1500), weak historical pattern
 - CWAF: 0.9 × 0.8 × 0.9 × 0.9 = 0.583
 - Enhanced EV: -0.10 × 0.583 = **-0.058** (confirms negative signal)
 
@@ -211,8 +211,8 @@ CWAF = Market Confidence Factor × Price Movement Factor × Volume Factor × His
 - **Moderate Market Support (CWAF 0.9-1.2)**: Standard EV threshold of +5%
 - **Weak Market Support (CWAF <0.9)**: Increases minimum EV threshold to +8% (market skepticism)
 
-#### Price Movement Considerations
-- **Shortening Prices** (decreasing): Market confidence increasing, act quickly
+#### Probability Movement Considerations
+- **Increasing Probabilities** (prices shortening): Market confidence increasing, act quickly
 - **Drifting Prices** (increasing): Market confidence decreasing, potential value emerging
 - **Stable Prices**: Market consensus established, focus on fundamental analysis
 
@@ -266,16 +266,16 @@ Market Implied Probability = 1 / Decimal Odds
 - **Odds 5.0**: 20% implied probability (1/5.0 = 0.20)
 - **Odds 10.0**: 10% implied probability (1/10.0 = 0.10)
 
-#### Price Movement Interpretation
+#### Probability Movement Interpretation
 
 **Shortening Prices (Going Down):**
-- 3.0 → 2.5: Probability increases from 33.3% to 40%
+- 3.0 → 2.5: Probability increases from 33.3% to 40% (6.7% probability improvement)
 - Market becoming more confident in horse's chances
 - Indicates positive information or money flow
 - **Strategy Implication**: Act quickly if our analysis supports the move
 
 **Drifting Prices (Going Up):**
-- 2.5 → 3.0: Probability decreases from 40% to 33.3%
+- 2.5 → 3.0: Probability decreases from 40% to 33.3% (6.7% probability decrease)
 - Market losing confidence in horse's chances
 - May indicate negative information or lack of support
 - **Strategy Implication**: Potential value opportunity if our analysis disagrees
@@ -288,22 +288,22 @@ Market Implied Probability = 1 / Decimal Odds
 ### Incorporating Price Movement into Strategy
 
 #### Pre-Race Analysis
-1. **Historical Price Range**: Compare current price to min/max trading range
-2. **Price Trend**: Identify shortening/drifting patterns
-3. **Volume Analysis**: High volume with price movement indicates informed money
+1. **Historical Probability Range**: Compare current probability to min/max trading range
+2. **Probability Trend**: Identify increasing/decreasing patterns
+3. **Volume Analysis**: High volume with probability movement indicates informed money
 
 #### Value Assessment Enhancement
 ```
-Enhanced Value Score = Base Value Score + Price Movement Adjustment
+Enhanced Value Score = Base Value Score + Probability Movement Adjustment
 
-Where Price Movement Adjustment:
-- Shortening: -5 points (less value as price decreases)
+Where Probability Movement Adjustment:
+- Probability Increasing (price shortening): -5 points (less value as probability increases)
 - Stable: 0 points (neutral)
-- Drifting: +5 points (more value as price increases)
+- Probability Decreasing (price drifting): +5 points (more value as probability decreases)
 ```
 
 #### Market Timing Considerations
-- **Early Betting**: Capture value before significant price movements
+- **Early Betting**: Capture value before significant probability movements
 - **Late Betting**: React to final market sentiment and information
 - **Sweet Spot**: 15-60 minutes before race when most information is available
 

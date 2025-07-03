@@ -21,3 +21,20 @@ MODELS
 https://github.com/features/models
 
 https://github.com/marketplace?type=models
+
+AI CODE AGENTS
+
+https://cloud.google.com/gemini/docs/codeassist/gemini-cli
+
+    https://www.geminicli.app/docs/getting-started
+
+https://www.anthropic.com/claude-code
+
+    https://medium.com/ai-insights-cobet/comprehensive-guide-to-setting-up-claude-code-on-windows-using-wsl-d3a3f3b5a128
+
+    mcp:
+        https://docs.anthropic.com/en/docs/claude-code/mcp
+
+        http://192.168.1.103:10043/sse
+
+    https://github.com/getAsterisk/claudia

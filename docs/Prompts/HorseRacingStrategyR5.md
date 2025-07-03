@@ -1,7 +1,7 @@
-# Horse Racing Strategy R5.1 - Silent Execution Prompt (Results-Calibrated)
+# Horse Racing Strategy R5.2 - Silent Execution Prompt (Updated Data Structure)
 
 ## Overview
-Silent execution version of the results-calibrated multi-context horse racing analysis strategy. Performs comprehensive analysis using three integrated data sources with revised thresholds based on actual performance data. Produces only a final one-sentence outcome indicating bet placement or NO BET decision.
+Silent execution version of the results-calibrated multi-context horse racing analysis strategy. Updated to work with current data structure without predictionScore field. Performs comprehensive analysis using three integrated data sources with revised thresholds based on actual performance data. Produces only a final one-sentence outcome indicating bet placement or NO BET decision.
 
 ## System Instructions
 
@@ -31,18 +31,27 @@ Internal processing only - no output required
 #### Step 2: Silent Multi-Context Analysis (Results-Calibrated)
 ```
 Internal Analysis Framework:
-- Enhanced Form Scoring (0-100): RP Form (50% - increased based on results) + Betfair Form (25%) + Market Sentiment (25%)
-- Multi-Source Rating Analysis: OR vs RP vs Betfair ratings with differential calculations
+- Enhanced Form Scoring (0-100): Recent Form Analysis (50% - increased based on results) + Class Rating Analysis (25%) + Market Sentiment (25%)
+- Multi-Source Rating Analysis: OR vs RP ratings with differential calculations
 - Market Sentiment Assessment: Price movement, volume analysis, forecast variance
 - Enhanced EV Calculation: Multi-source probability estimation with bias adjustments
 - Cross-validation scoring across all data sources
 - **CRITICAL**: Systematic analysis of ALL runners, not just top favorites
 
+Enhanced Form Score Calculation:
+Form Score = (Recent Win Bonus × 40) + (Class Rating Advantage × 30) + (Market Support × 20) + (Form Consistency × 10)
+
+Where:
+- Recent Win Bonus = 100 if won last race, 80 if won within 14 days, 60 if won within 30 days
+- Class Rating Advantage = (Horse Rating - Field Average Rating) × 5
+- Market Support = Price contraction percentage × 3
+- Form Consistency = Analysis of recent race descriptions and positions
+
 Revised Selection Criteria (Based on Results Analysis):
 - Enhanced EV > +15% for BACK bets (reduced from 30% - was too conservative)
 - Enhanced EV < -20% for LAY bets (reduced from 30%)
 - Enhanced Form Score > 65 (reduced from 75 - high scorers didn't always win)
-- AI Score > 80 OR Multi-Rating Differential > +15%
+- Class Rating Advantage > +3 OR Recent Win within 30 days
 - Cross-validation consistency > 70% (reduced from 80%)
 - **SPECIAL**: Outsider consideration for horses 8/1+ with EV > +20% and improving metrics
 
@@ -50,7 +59,7 @@ Probability Calibration Adjustments:
 - Apply 0.85 multiplier to horses <3.0 (favorite bias correction)
 - Apply 1.15 multiplier to improving horses 8.0+
 - Weight recent form more heavily (50% vs 35%)
-- Reduce AI score influence for favorites
+- Reduce form score influence for favorites
 
 Target: Minimum 25% of races should produce betting opportunities
 
@@ -73,19 +82,30 @@ The full analysis data is always stored as the final step, regardless of whether
 ## Enhanced Analysis Framework (Internal Processing - Results-Calibrated)
 
 ### Multi-Source Form Analysis (Revised Weighting)
-- **Racing Post Component (50% - increased)**: Recent race descriptions, beaten distances, semantic analysis, improvement trend bonuses
-- **Betfair Form Component (25% - reduced)**: Form strings, consistency patterns, improvement trends  
+- **Recent Form Component (50% - increased)**: Recent race descriptions, beaten distances, win/place analysis, improvement trend bonuses
+- **Class Rating Component (25% - revised)**: Official ratings vs field average, rating differential analysis
 - **Market Sentiment Component (25% - reduced)**: Volume-weighted price movements, forecast variance
 
+### Available Data Analysis Framework
+- **Racing Post Data**: Use lastRacesDescriptions, officialRating, and rpRating for comprehensive form analysis
+- **Betfair Form Data**: Analyze form strings, forecastPrice vs current price, weight analysis
+- **Market Trading Data**: Price movements, volume confirmation, liquidity assessment
+
 ### Cross-Validated Rating System
-- **Official Ratings**: Handicapper assessments across sources
-- **Racing Post Ratings**: Expert form-based evaluations
-- **Market-Implied Ratings**: Price-derived performance expectations
-- **Differential Analysis**: Multi-source rating variance identification
+- **Official Ratings**: Handicapper assessments from Racing Post and Betfair data
+- **Racing Post Ratings**: Expert form-based evaluations using rpRating
+- **Market-Implied Ratings**: Price-derived performance expectations from trading data
+- **Differential Analysis**: Multi-source rating variance identification using available data fields
 
 ### Enhanced Probability Calculation (Results-Calibrated)
 ```
-Base Calculation = (Enhanced Form × 0.50) + (Multi-Rating × 0.25) + (AI Score × 0.15) + (Market Sentiment × 0.10)
+Base Calculation = (Enhanced Form Score × 0.50) + (Class Rating Score × 0.25) + (Market Support Score × 0.15) + (Recent Form Score × 0.10)
+
+Where:
+- Enhanced Form Score = Calculated using new form score methodology (0-100)
+- Class Rating Score = (Official Rating - Field Average) × 2, capped at 100
+- Market Support Score = Volume-weighted price movement analysis (0-100)
+- Recent Form Score = Win/place analysis from last 3 runs using race descriptions (0-100)
 
 Bias Adjustments:
 - Favorite bias correction: 0.85 multiplier for horses <3.0
@@ -96,7 +116,7 @@ Final Probability = Base Calculation × Bias Adjustment × Confidence Factor
 
 Enhanced EV = (Final Probability × (Odds - 1)) - (1 - Final Probability)
 
-Cross-validation confidence intervals applied
+Cross-validation confidence intervals applied using available data fields
 ```
 
 ### Selection Thresholds (Results-Calibrated)
@@ -190,7 +210,7 @@ Cross-validation confidence intervals applied
         "movementDirection": "strong_shortening"
       },
       "aiAnalysis": {
-        "predictionScore": 100,
+        "formScore": 100,
         "confidence": "maximum",
         "crossValidationResult": "confirmed"
       },

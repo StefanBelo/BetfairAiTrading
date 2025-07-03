@@ -47,6 +47,15 @@ This directory contains community posts, articles, and real-world examples showc
 - Technical discussion of `ExecuteBfexplorerStrategySettings` tool enhancement
 - **Best for:** Understanding the evolution toward autonomous AI trading and community perspectives on automation
 
+### [Reddit Post: Cracking the Weight of Money Code - AI Market Psychology Expert](RedditPost_WeightOfMoneyTrading.md)
+**Weight of Money Analysis & Trading Psychology**
+- Community post explaining weight of money analysis as a systematic trading edge
+- Deep dive into BetType interpretation and market sentiment reading
+- AI-powered confidence scoring system for automated strategy execution
+- Personal experience narrative about transitioning from guessing to reading market intelligence
+- Technical setup with BFExplorer MCP integration and automated execution thresholds
+- **Best for:** Understanding advanced market sentiment analysis and systematic trading psychology
+
 ### [Reddit Post: Horse Racing AI Achieves 83% Strike Rate](RedditPost_HorseRacingAI_83PercentStrikeRate.md)
 **High-Performance Strategy Results**
 - Community post showcasing exceptional 83% strike rate achievement

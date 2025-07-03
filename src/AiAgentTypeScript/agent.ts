@@ -149,7 +149,7 @@ class ModelChatAgent {
 // Usage example
 async function main() {
   // --- MCPAgent usage ---
-  const agent = new MCPAgent('http://localhost:10043/sse');
+  const agent = new MCPAgent('http://192.168.1.103:10043/sse');
   // --- ModelChatAgent usage ---
   let modelAgent: ModelChatAgent | undefined = undefined;
   try {

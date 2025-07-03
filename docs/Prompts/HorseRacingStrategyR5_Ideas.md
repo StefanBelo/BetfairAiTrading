@@ -1,13 +1,15 @@
-# Horse Racing Strategy R5 - Enhanced Multi-Context Analysis & Execution Prompt
+# Horse Racing Strategy R5.2 - Enhanced Multi-Context Analysis & Execution Prompt (Updated Data Structure)
 
 ## Overview
-This enhanced prompt provides a comprehensive systematic approach to analyzing horse racing markets using three integrated data sources: Racing Post data, Betfair base form data, and market trading price data to identify optimal betting oppor### Revised Performance Targets (Based on Results Analysis)
+This enhanced prompt provides a comprehensive systematic approach to analyzing horse racing markets using three integrated data sources: Racing Post data, Betfair base form data, and market trading price data to identify optimal betting opportunities. Updated to work with current data structure without predictionScore field, using enhanced form analysis methodology.
+
+### Revised Performance Targets (Based on Results Analysis)
 - **Strike Rate**: 35%+ for win bets (realistic target based on data)
 - **ROI**: 25%+ per profitable race (achievable with revised thresholds)
 - **EV Accuracy**: ±5% of calculated values (more realistic tolerance)
 - **Discipline Rate**: 60%+ NO BET decisions when criteria not met (reduced from 75%)
 - **Market Timing**: 75%+ accuracy in sentiment prediction (more realistic)
-- **Opportunity Capture**: Minimum 30% of races should meet betting criteria (NEW TARGET)es with unprecedented accuracy.
+- **Opportunity Capture**: Minimum 30% of races should meet betting criteria (NEW TARGET)
 
 ## System Instructions
 
@@ -43,10 +45,10 @@ Parameters:
 Purpose: Get comprehensive multi-source data including:
 
 From RacingpostDataForHorsesInfo:
-- Detailed race descriptions and performances
-- Official ratings and Racing Post ratings  
-- Last run dates and beaten distances
-- AI prediction scores based on form analysis
+- Detailed race descriptions and performances from lastRacesDescriptions
+- Official ratings and Racing Post ratings (officialRating, rpRating)
+- Last run dates and beaten distances from race data
+- Form analysis based on race descriptions and position trends
 
 From HorsesBaseBetfairFormData:
 - Betfair forecast prices vs current market prices
@@ -568,7 +570,7 @@ NEXT ACTIONS:
         "movementDirection": "strong_shortening"
       },
       "aiAnalysis": {
-        "predictionScore": 100,
+        "formScore": 100,
         "confidence": "maximum",
         "crossValidationResult": "confirmed"
       },
@@ -632,7 +634,7 @@ NEXT ACTIONS:
   },
   "enhancedModelValidation": {
     "multiSourceAccuracy": {
-      "racingPostPredictions": 87.3,
+      "racingPostFormAnalysis": 87.3,
       "betfairFormAccuracy": 84.1,
       "marketSentimentAccuracy": 91.2,
       "combinedAccuracy": 88.7
@@ -646,7 +648,7 @@ NEXT ACTIONS:
     },
     "confidenceMetrics": {
       "dataQuality": 94.2,
-      "predictionConfidence": 89.6,
+      "formConfidence": 89.6,
       "marketTimingAccuracy": 86.8
     }
   },

@@ -1,6 +1,6 @@
 # AI Analysis Prompts for Betfair Trading
 
-This directory contains 25+ specialized prompts for AI-powered analysis of Betfair markets, particularly focused on horse racing betting opportunities. These prompts range from comprehensive analytical frameworks to silent automated execution systems with proven performance results including 83.3% strike rates and 77.6% ROI across diverse market conditions.
+This directory contains 26+ specialized prompts for AI-powered analysis of Betfair markets, particularly focused on horse racing betting opportunities and market analysis. These prompts range from comprehensive analytical frameworks to silent automated execution systems with proven performance results including 83.3% strike rates and 77.6% ROI across diverse market conditions.
 
 ## Overview
 
@@ -9,6 +9,7 @@ The prompts are organized into several categories with demonstrated performance 
 - **Combined Analysis Approaches**: Multi-methodology analysis for maximum accuracy (up to 83.3% success rates)
 - **Betting Strategy Variants**: Different execution approaches and risk management styles with proven ROI  
 - **Specialized Analysis Tools**: Focused analysis for specific data types or requirements
+- **Market Analysis Tools**: Weight of money analysis and trading opportunity identification
 - **System Integration**: Technical prompts for automation and workflow integration
 - **Data Visualization**: Chart creation and data presentation tools
 - **Performance Validated**: Strategies tested with real market data showing consistent profitability
@@ -153,6 +154,14 @@ The prompts are organized into several categories with demonstrated performance 
 
 ### Specialized Analysis Tools
 
+#### [WeightOfMoneyAnalysisPrompt.md](WeightOfMoneyAnalysisPrompt.md)
+**Weight of Money Market Analysis**
+- Comprehensive framework for analyzing Betfair market liquidity distribution
+- Price movement prediction based on backing vs laying volume analysis
+- Trading opportunity identification with confidence scoring
+- Market inefficiency detection and arbitrage opportunity assessment
+- **Best for:** Real-time market analysis, price movement prediction, and trading opportunity identification
+
 #### [HorseRacingBaseFormDataAnalysis.md](HorseRacingBaseFormDataAnalysis.md)
 **Core Betting Metrics Analysis**
 - Analyzes fundamental handicapping metrics: Forecast Price, Form, Official Rating, and Weight
@@ -256,6 +265,14 @@ The prompts are organized into several categories with demonstrated performance 
 - **Best for:** Getting expert-level strategy advice and configuration help instantly
 
 ### Market Analysis and Trading Opportunities
+
+#### [WeightOfMoneyAnalysisPrompt.md](WeightOfMoneyAnalysisPrompt.md)
+**Weight of Money Market Analysis Framework**
+- Advanced liquidity distribution analysis for price movement prediction
+- Comprehensive framework for analyzing backing vs laying volume patterns
+- Trading opportunity identification with confidence scoring and risk assessment
+- Market inefficiency detection with expected price ranges and movement direction
+- **Best for:** Real-time market analysis, arbitrage opportunity identification, and price movement prediction
 
 #### [BetfairMarketAnalysisPrompt.md](BetfairMarketAnalysisPrompt.md)
 **Comprehensive Betfair Market Analysis and Trading Opportunities**

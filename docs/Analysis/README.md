@@ -14,6 +14,9 @@ This folder contains detailed analysis reports from AI-driven betting strategies
 - **Strategy R5** - Revolutionary three-context analysis system integrating racing form data, base Betfair form, and trading patterns with advanced NO BET logic and "HorseRacingR5_Analysis" data storage
 - **Strategy R5 Silent** - Silent execution version performing complete analysis internally with minimal output for automated deployment
 
+### Weight of Money Analysis
+- **[WeightOfMoneyAnalysis_TipperaryRace_03July2025.md](WeightOfMoneyAnalysis_TipperaryRace_03July2025.md)** - Comprehensive weight of money analysis for Tipperary 2m7f Handicap Hurdle with price movement predictions, confidence scoring, and trading opportunities identification
+
 ## Analysis Methodology
 
 The reports in this folder analyze real betting strategy performance using:
@@ -28,6 +31,8 @@ The reports in this folder analyze real betting strategy performance using:
 - **Multi-Context Analysis** - Integration of three data contexts (Racing form, base Betfair form, trading patterns)
 - **Weighted Scoring Systems** - Advanced evaluation frameworks with confidence assessment
 - **Silent Execution Monitoring** - Automated analysis with minimal output and comprehensive data storage
+- **Weight of Money Analysis** - Market liquidity distribution analysis for price movement prediction
+- **Trading Opportunity Identification** - Real-time market inefficiency detection and arbitrage opportunities
 
 ## Key Metrics Tracked
 
@@ -53,13 +58,15 @@ These analyses provide actionable insights for:
 
 ## Recent Performance Highlights
 
+- **July 3, 2025**: Weight of Money Analysis for Tipperary race identifying major price inefficiencies with Very High confidence trades
 - **June 25, 2025**: Strategy R2 delivering 77.6% ROI across 21 races with comprehensive component analysis
 - **June 24, 2025**: Strategy R1 achieving exceptional results with 83.3% strike rate and 115-150% ROI
 - **June 22, 2025**: Foundational EV analysis establishing baseline performance metrics
-- **Strategy Evolution**: Progression from basic EV analysis to advanced multi-component AI strategies
+- **Strategy Evolution**: Progression from basic EV analysis to advanced multi-component AI strategies and real-time market analysis
 - **Component Performance**: Semantic form analysis (85.4% accuracy), prediction scoring (92.3% reliability)
-- **Market Intelligence**: Crowd wisdom adjustment factors and market stability assessments
-- **Continuous Learning**: Real-time strategy optimization based on performance feedback
+- **Market Intelligence**: Crowd wisdom adjustment factors, market stability assessments, and liquidity distribution analysis
+- **Trading Innovation**: Implementation of weight of money analysis for identifying arbitrage opportunities and price movement prediction
+- **Continuous Learning**: Real-time strategy optimization based on performance feedback and market dynamics
 
 ---
 

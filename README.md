@@ -51,11 +51,14 @@ Ready-to-use AI prompts for various sports and analysis types:
 - **[Automated Betting Analysis](docs/Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)** - High-confidence automated execution
 - **[Minimal Execution Analysis](docs/Prompts/HorseRacingEVAnalysisMinimal.md)** - Silent analysis with minimal output
 - **[Minimal Strategy Execution](docs/Prompts/HorseRacingEVAnalysisMinimalExecution.md)** - Automated conservative betting with minimal reporting
+- **[Strategy R5 Trading Ideas](docs/Prompts/HorseRacingStrategyR5_Trade_Ideas.md)** - Enhanced multi-context trading analysis with comprehensive reporting
+- **[Strategy R5 Silent Trading](docs/Prompts/HorseRacingStrategyR5_Trade.md)** - Silent mode R5.1 trading execution with minimal reporting
 
 #### General Trading
 - **[Trading Chart Creation](docs/Prompts/TradingChartCreation.md)** - Create interactive financial charts
 - **[BFExplorer MCP Integration](docs/Prompts/BfexplorerMCPIntegrationSystemPrompt.md)** - System integration guide
 - **[BFExplorer Strategy Expert](docs/Prompts/BfexplorerStrategyExpertPrompt.md)** - AI assistant for strategy selection and configuration
+- **[Weight of Money Strategy](docs/Prompts/WeightOfMoneyStrategy.md)** - Advanced market sentiment analysis with automated strategy execution based on weight of money indicators
 
 #### Betfair Trading Strategy Execution Prompt
 - **[Betfair Trading Strategy Execution Prompt](docs/Prompts/BetfairTradingStrategyExecutionPrompt.md)** - Step-by-step adaptive trading analysis and execution for Betfair Exchange markets. Includes market analysis, selection identification, parameter optimization, and automated strategy execution logic.

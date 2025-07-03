@@ -24,7 +24,7 @@ try
             new SseClientTransport(
                 new SseClientTransportOptions
                 {
-                    Endpoint = new Uri("http://localhost:10043"),
+                    Endpoint = new Uri("http://192.168.1.103:10043"),
                     TransportMode = HttpTransportMode.StreamableHttp
                 }
             )
