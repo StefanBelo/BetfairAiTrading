@@ -123,6 +123,12 @@ This directory contains community posts, articles, and real-world examples showc
 - Discusses the pros and cons of GitHub Copilot Pro, Claude, DeepSeek, and Gemini.
 - **Best for:** Understanding the current landscape of AI development tools and workflows.
 
+### [CloseByPositionDifferenceBotTrigger Strategy Documentation](../Strategies/HorseRacing/CloseByPositionDifferenceBotTrigger_R1.md)
+**Automated Horse Racing Strategy**
+- Detailed explanation of the CloseByPositionDifferenceBotTrigger strategy
+- Focuses on position difference and odds monitoring for automated trading
+- **Best for:** Users interested in advanced horse racing trading strategies
+
 ## What You'll Find Here
 
 ### Real User Experiences

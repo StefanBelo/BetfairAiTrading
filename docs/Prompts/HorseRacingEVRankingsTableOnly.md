@@ -69,7 +69,7 @@ Instructions:
 2. **Multi-Context Data Collection**
    - Retrieve the data context with the name 'MarketSelectionsTradedPricesData' for the betfair market using tool: GetDataContextForBetfairMarket
    - Retrieve the data context with the name 'RacingpostDataForHorsesInfo' for the betfair market using tool: GetDataContextForBetfairMarket
-   - Focus on 'tradedPricesData' field from trading context and 'horsesData' field from racing post context
+   - Focus on 'tradedPricesData' field from trading context and 'racingpostHorseData' field from racing post context
    - Make NO reports during data collection phase
 
 3. **Silent Analysis Process**
@@ -80,7 +80,10 @@ Instructions:
    - **Price Drifting/Lengthening** = Price INCREASING = Probability DECREASING = Negative market signal   
    
    **A) Internal Semantic Performance Analysis**
-   - Silently analyze each horse's 'lastRacesDescription' field for qualitative insights
+   - Silently analyze each horse's 'lastRacesDescriptions' field for qualitative insights (note: plural form)
+   - Extract 'raceDescription' text from each race entry
+   - Utilize additional structured data: 'beatenDistance', 'lastRunInDays', 'position' for context
+   - Consider 'rpRating' (Racing Post Rating) when available for form assessment
    - Focus on:
      - Performance patterns and consistency
      - Strong finishes vs weakening patterns
@@ -109,13 +112,15 @@ Instructions:
 4. **Silent Probability Assessment**
    
    **Semantic-Only Probabilities:**
-   - Assign win probabilities based purely on semantic analysis
+   - Assign win probabilities based purely on semantic analysis and structured performance data
+   - Consider recent form timing (lastRunInDays), finishing positions, beaten distances
+   - Factor in Racing Post ratings (rpRating) when available
    - Ensure probabilities sum to approximately 100%
 
    **Combined Probabilities:**
-   - Integrate trading patterns with semantic analysis
-   - Weight based on consistency between market movement and recent form
-   - Price shortening should generally correlate with better recent form
+   - Integrate trading patterns with semantic analysis and structured data
+   - Weight based on consistency between market movement and recent form indicators
+   - Price shortening should generally correlate with better recent form and higher ratings
 
 5. **Silent Expected Value Calculations**
    

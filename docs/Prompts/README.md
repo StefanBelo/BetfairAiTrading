@@ -1,6 +1,6 @@
 # AI Analysis Prompts for Betfair Trading
 
-This directory contains 26+ specialized prompts for AI-powered analysis of Betfair markets, particularly focused on horse racing betting opportunities and market analysis. These prompts range from comprehensive analytical frameworks to silent automated execution systems with proven performance results including 83.3% strike rates and 77.6% ROI across diverse market conditions.
+This directory contains 40+ specialized prompts for AI-powered analysis of Betfair markets, particularly focused on horse racing betting opportunities and market analysis. These prompts range from comprehensive analytical frameworks to silent automated execution systems with proven performance results including 83.3% strike rates and 77.6% ROI across diverse market conditions.
 
 ## Overview
 
@@ -82,6 +82,20 @@ The prompts are organized into several categories with demonstrated performance 
 - Uses "HorseRacingR5_Analysis" data context for silent data storage
 - **Best for:** Automated silent execution with full R5 analytical power and minimal output
 
+#### [HorseRacingStrategyR5_Trade.md](HorseRacingStrategyR5_Trade.md)
+**Strategy R5 - Trading Implementation**
+- R5 strategy optimized for trading execution rather than straight betting
+- Incorporates trading-specific logic and execution patterns
+- Uses "HorseRacingR5_Trade" data context for trading-focused analysis
+- **Best for:** Automated trading execution with R5 analytical framework
+
+#### [HorseRacingStrategyR5_Trade_Ideas.md](HorseRacingStrategyR5_Trade_Ideas.md)
+**Strategy R5 - Trading Framework Development**
+- Development version of R5 trading strategy with comprehensive analysis output
+- Enhanced trading logic with detailed reasoning and methodology
+- Multi-context trading pattern analysis and execution recommendations
+- **Best for:** Trading strategy development and optimization with full analytical transparency
+
 ### Combined Analysis Approaches
 
 #### [HorseRacingCombinedEVAnalysis.md](HorseRacingCombinedEVAnalysis.md)
@@ -141,6 +155,13 @@ The prompts are organized into several categories with demonstrated performance 
 - Incorporates OLBG (Online Betting Guide) tips into Dutch betting strategy
 - Combines AI analysis with community expert opinions
 - **Best for:** Leveraging community wisdom alongside AI analysis
+
+#### [HorseRacingEVAnalysisR1.md](HorseRacingEVAnalysisR1.md)
+**Expected Value Analysis with Conditional Betting**
+- Performs semantic analysis of race descriptions to estimate "true" probabilities.
+- Calculates Expected Value (EV) for each horse.
+- Executes a "Bet 10 Euro" strategy only on horses with positive EV and an estimated probability > 20%.
+- **Best for:** Value betting with a focus on higher probability selections.
 
 #### [HorseRacingEVAnalysisWithBetting.md](HorseRacingEVAnalysisWithBetting.md)
 **Expected Value Analysis with Single Selection Betting**
@@ -266,31 +287,269 @@ The prompts are organized into several categories with demonstrated performance 
 
 ### Market Analysis and Trading Opportunities
 
+#### [BetfairTradingStrategyExecutionPrompt.md](BetfairTradingStrategyExecutionPrompt.md)
+**Betfair Trading Strategy Execution Framework**
+- Comprehensive trading strategy execution and management system
+- Advanced position management with entry/exit criteria
+- Risk management and portfolio optimization for trading strategies
+- **Best for:** Professional trading strategy execution and position management
+
+#### [WeightOfMoneyStrategy.md](WeightOfMoneyStrategy.md)
+**Weight of Money Trading Strategy**
+- Trading strategy based on weight of money analysis principles
+- Combines liquidity analysis with automated trading execution
+- Market flow interpretation for trading opportunity identification
+- **Best for:** Automated trading based on market liquidity patterns
+
+#### [WeightOfMoneyStrategyR1.md](WeightOfMoneyStrategyR1.md)
+**Weight of Money Strategy R1 - Advanced Implementation**
+- Enhanced weight of money analysis with R1-level precision
+- Advanced market flow analysis and trading pattern recognition
+- Optimized execution logic for weight of money trading opportunities
+- **Best for:** Professional-grade weight of money trading with proven analytical framework
+
 #### [WeightOfMoneyAnalysisPrompt.md](WeightOfMoneyAnalysisPrompt.md)
-**Weight of Money Market Analysis Framework**
-- Advanced liquidity distribution analysis for price movement prediction
-- Comprehensive framework for analyzing backing vs laying volume patterns
-- Trading opportunity identification with confidence scoring and risk assessment
-- Market inefficiency detection with expected price ranges and movement direction
-- **Best for:** Real-time market analysis, arbitrage opportunity identification, and price movement prediction
+**Weight of Money Market Analysis**
+- Comprehensive framework for analyzing Betfair market liquidity distribution
+- Price movement prediction based on backing vs laying volume analysis
+- Trading opportunity identification with confidence scoring
+- Market inefficiency detection and arbitrage opportunity assessment
+- **Best for:** Real-time market analysis, price movement prediction, and trading opportunity identification
 
-#### [BetfairMarketAnalysisPrompt.md](BetfairMarketAnalysisPrompt.md)
-**Comprehensive Betfair Market Analysis and Trading Opportunities**
-- Advanced market analysis framework for identifying professional betting patterns and trading opportunities
-- Analyzes price movements, volume patterns, and professional activity indicators
-- Provides specific back/lay/trade recommendations with tick-level profit/loss targets
-- Includes risk assessment framework and comprehensive trading pattern recognition
-- Delivers structured analysis with summary tables and clear trading strategies
-- **Best for:** Real-time market analysis with actionable trading recommendations and risk management
+#### [HorseRacingBaseFormDataAnalysis.md](HorseRacingBaseFormDataAnalysis.md)
+**Core Betting Metrics Analysis**
+- Analyzes fundamental handicapping metrics: Forecast Price, Form, Official Rating, and Weight
+- Price movement analysis and market confidence indicators
+- Form pattern recognition and performance evaluation
+- **Best for:** Fundamental analysis based on core racing metrics and traditional handicapping principles
 
-### Data Visualization
+#### [HorseRacingEVAnalysisNumericalData.md](HorseRacingEVAnalysisNumericalData.md)
+**Numerical Data Focused Analysis**
+- Emphasizes quantitative metrics and statistical analysis
+- **Best for:** Data-driven analysis with focus on numerical performance indicators
 
-#### [TradingChartCreation.md](TradingChartCreation.md)
-**Interactive Financial Chart Creation**
-- Creates professional candlestick and volume charts from MCP time series data
-- Includes technical analysis features like moving averages and VWAP
-- Provides responsive, interactive charts with zoom, pan, and hover tooltips
-- **Best for:** Visualizing price history and trading patterns for market analysis
+#### [HorseRacingEVRankingsTableOnly.md](HorseRacingEVRankingsTableOnly.md)
+**Quick Rankings Table Generation**
+- Simplified output focusing on essential EV rankings
+- **Best for:** Rapid analysis when only rankings are needed
+
+#### [HorseRacingEVAnalysisMinimal.md](HorseRacingEVAnalysisMinimal.md)
+**Minimal EV Analysis with Silent Execution**
+- Silent analysis with minimal output and conservative betting approach
+- **Best for:** Quiet operation with essential analysis only
+
+#### [HorseRacingEVAnalysisMinimalExecution.md](HorseRacingEVAnalysisMinimalExecution.md)
+**Minimal EV Analysis with Strategy Execution**
+- Silent analysis with automated favorite evaluation and execution
+- **Best for:** Automated conservative betting with minimal reporting
+
+#### [HorseRacingExecutionOnlyNoReports.md](HorseRacingExecutionOnlyNoReports.md)
+**Silent Execution Strategy with No Analysis Reports**
+- Pure execution strategy with no analysis output or reports
+- **Best for:** Silent automated execution without analysis documentation
+
+#### [HorseRacingSilentEVAnalysisWithAutomatedExecution.md](HorseRacingSilentEVAnalysisWithAutomatedExecution.md)
+**Silent Comprehensive EV Analysis with Trading Data - All Horses**
+- Completely silent comprehensive Expected Value analysis using trading patterns and performance data
+- Combines trading pattern interpretation with semantic performance analysis for optimal betting opportunity identification
+- Analyzes ALL horses in the race with no favorites restriction
+- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorsesInfo (40%)
+- Automatically executes "Back trailing stop loss trading" or "Trade 20% profit" strategies
+- ABSOLUTELY NO intermediate outputs - only final execution confirmation
+- Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingEVAnalysisResults"
+- **Best for:** Automated silent operation with full field analysis and unrestricted selection
+
+#### [HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md)
+**Silent Comprehensive EV Analysis with Trading Data - Top 3 Favorites Only**
+- Completely silent comprehensive Expected Value analysis using trading patterns and performance data
+- Combines trading pattern interpretation with semantic performance analysis for optimal betting opportunity identification
+- **CRITICAL RESTRICTION:** Strategy execution ONLY on horses among the top 3 favorites by current price
+- Analyzes ALL horses but applies favorites filter at execution decision point
+- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorsesInfo (40%)
+- Automatically executes "Back trailing stop loss trading" or "Trade 20% profit" strategies
+- ABSOLUTELY NO intermediate outputs - only final execution confirmation or no-execution message
+- Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingEVAnalysisResults"
+- **Best for:** Automated silent operation with risk management through favorites constraint and dual-source validation
+
+#### [HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md)
+**Silent Comprehensive EV Analysis with OLBG Expert Tips - Top 3 Favorites Only**
+- Completely silent comprehensive Expected Value analysis using OLBG expert tipster consensus and performance data
+- Combines professional tipster analysis with semantic performance analysis for expert-guided betting opportunities
+- **CRITICAL RESTRICTION:** Strategy execution ONLY on horses among the top 3 favorites by current price
+- Analyzes ALL horses but applies favorites filter at execution decision point
+- Uses dual-source analysis: OlbgTipsDataForHorsesInfo (60%) + RacingpostDataForHorsesInfo (40%)
+- Evaluates tipster consensus patterns, expert confidence indicators, and value identification signals
+- Automatically executes "Back trailing stop loss trading" or "Trade 20% profit" strategies based on expert consensus
+- ABSOLUTELY NO intermediate outputs - only final execution confirmation or no-execution message
+- Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingOlbgEVAnalysisResults"
+- **Best for:** Leveraging professional tipster expertise with automated silent execution and favorites risk management
+
+#### [HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md](HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md)
+**Silent OLBG EV Analysis with Fixed 10 Euro Betting - Top 3 Favorites Only**
+- Completely silent comprehensive Expected Value analysis using OLBG expert tipster consensus
+- Fixed 10 Euro betting execution on best value selection among top 3 favorites
+- Combines expert tipster analysis with mathematical EV calculations
+- **CRITICAL RESTRICTION:** Betting execution ONLY on horses among the top 3 favorites by current price
+- Uses dual-source analysis with focus on tipster consensus and semantic performance patterns
+- Automatically executes "Bet 10 Euro" strategy on qualified selections
+- ABSOLUTELY NO intermediate outputs - only final betting execution confirmation
+- **Best for:** Fixed stake automated betting with expert tipster guidance and risk management
+
+### Football Analysis
+
+#### [FootballMatchFSharpCodeCreation.md](FootballMatchFSharpCodeCreation.md)
+**Football Match F# Code Generation**
+- Generates F# code for football match analysis and trading strategies
+- **Best for:** Developers creating custom football analysis applications
+
+### System Integration
+
+#### [BfexplorerMCPIntegrationSystemPrompt.md](BfexplorerMCPIntegrationSystemPrompt.md)
+**BFExplorer Integration Guide**
+- System-level prompt for integrating AI analysis with BFExplorer
+- Technical guidance for MCP (Model Context Protocol) integration
+- **Best for:** Setting up automated AI analysis workflows
+
+#### [BfexplorerStrategyExpertPrompt.md](BfexplorerStrategyExpertPrompt.md)
+**BFExplorer Strategy Expert System**
+- Comprehensive AI assistant prompt for strategy selection and configuration
+- Expert knowledge of all 60+ BFExplorer strategy templates and parameters
+- Plain English strategy recommendations with exact parameter settings
+- Covers betting, trading, risk management, and sport-specific strategies
+- **Best for:** Getting expert-level strategy advice and configuration help instantly
+
+### Market Analysis and Trading Opportunities
+
+#### [BetfairTradingStrategyExecutionPrompt.md](BetfairTradingStrategyExecutionPrompt.md)
+**Betfair Trading Strategy Execution Framework**
+- Comprehensive trading strategy execution and management system
+- Advanced position management with entry/exit criteria
+- Risk management and portfolio optimization for trading strategies
+- **Best for:** Professional trading strategy execution and position management
+
+#### [WeightOfMoneyStrategy.md](WeightOfMoneyStrategy.md)
+**Weight of Money Trading Strategy**
+- Trading strategy based on weight of money analysis principles
+- Combines liquidity analysis with automated trading execution
+- Market flow interpretation for trading opportunity identification
+- **Best for:** Automated trading based on market liquidity patterns
+
+#### [WeightOfMoneyStrategyR1.md](WeightOfMoneyStrategyR1.md)
+**Weight of Money Strategy R1 - Advanced Implementation**
+- Enhanced weight of money analysis with R1-level precision
+- Advanced market flow analysis and trading pattern recognition
+- Optimized execution logic for weight of money trading opportunities
+- **Best for:** Professional-grade weight of money trading with proven analytical framework
+
+#### [WeightOfMoneyAnalysisPrompt.md](WeightOfMoneyAnalysisPrompt.md)
+**Weight of Money Market Analysis**
+- Comprehensive framework for analyzing Betfair market liquidity distribution
+- Price movement prediction based on backing vs laying volume analysis
+- Trading opportunity identification with confidence scoring
+- Market inefficiency detection and arbitrage opportunity assessment
+- **Best for:** Real-time market analysis, price movement prediction, and trading opportunity identification
+
+#### [HorseRacingBaseFormDataAnalysis.md](HorseRacingBaseFormDataAnalysis.md)
+**Core Betting Metrics Analysis**
+- Analyzes fundamental handicapping metrics: Forecast Price, Form, Official Rating, and Weight
+- Price movement analysis and market confidence indicators
+- Form pattern recognition and performance evaluation
+- **Best for:** Fundamental analysis based on core racing metrics and traditional handicapping principles
+
+#### [HorseRacingEVAnalysisNumericalData.md](HorseRacingEVAnalysisNumericalData.md)
+**Numerical Data Focused Analysis**
+- Emphasizes quantitative metrics and statistical analysis
+- **Best for:** Data-driven analysis with focus on numerical performance indicators
+
+#### [HorseRacingEVRankingsTableOnly.md](HorseRacingEVRankingsTableOnly.md)
+**Quick Rankings Table Generation**
+- Simplified output focusing on essential EV rankings
+- **Best for:** Rapid analysis when only rankings are needed
+
+#### [HorseRacingEVAnalysisMinimal.md](HorseRacingEVAnalysisMinimal.md)
+**Minimal EV Analysis with Silent Execution**
+- Silent analysis with minimal output and conservative betting approach
+- **Best for:** Quiet operation with essential analysis only
+
+#### [HorseRacingEVAnalysisMinimalExecution.md](HorseRacingEVAnalysisMinimalExecution.md)
+**Minimal EV Analysis with Strategy Execution**
+- Silent analysis with automated favorite evaluation and execution
+- **Best for:** Automated conservative betting with minimal reporting
+
+#### [HorseRacingExecutionOnlyNoReports.md](HorseRacingExecutionOnlyNoReports.md)
+**Silent Execution Strategy with No Analysis Reports**
+- Pure execution strategy with no analysis output or reports
+- **Best for:** Silent automated execution without analysis documentation
+
+#### [HorseRacingSilentEVAnalysisWithAutomatedExecution.md](HorseRacingSilentEVAnalysisWithAutomatedExecution.md)
+**Silent Comprehensive EV Analysis with Trading Data - All Horses**
+- Completely silent comprehensive Expected Value analysis using trading patterns and performance data
+- Combines trading pattern interpretation with semantic performance analysis for optimal betting opportunity identification
+- Analyzes ALL horses in the race with no favorites restriction
+- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorsesInfo (40%)
+- Automatically executes "Back trailing stop loss trading" or "Trade 20% profit" strategies
+- ABSOLUTELY NO intermediate outputs - only final execution confirmation
+- Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingEVAnalysisResults"
+- **Best for:** Automated silent operation with full field analysis and unrestricted selection
+
+#### [HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md)
+**Silent Comprehensive EV Analysis with Trading Data - Top 3 Favorites Only**
+- Completely silent comprehensive Expected Value analysis using trading patterns and performance data
+- Combines trading pattern interpretation with semantic performance analysis for optimal betting opportunity identification
+- **CRITICAL RESTRICTION:** Strategy execution ONLY on horses among the top 3 favorites by current price
+- Analyzes ALL horses but applies favorites filter at execution decision point
+- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorsesInfo (40%)
+- Automatically executes "Back trailing stop loss trading" or "Trade 20% profit" strategies
+- ABSOLUTELY NO intermediate outputs - only final execution confirmation or no-execution message
+- Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingEVAnalysisResults"
+- **Best for:** Automated silent operation with risk management through favorites constraint and dual-source validation
+
+#### [HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md)
+**Silent Comprehensive EV Analysis with OLBG Expert Tips - Top 3 Favorites Only**
+- Completely silent comprehensive Expected Value analysis using OLBG expert tipster consensus and performance data
+- Combines professional tipster analysis with semantic performance analysis for expert-guided betting opportunities
+- **CRITICAL RESTRICTION:** Strategy execution ONLY on horses among the top 3 favorites by current price
+- Analyzes ALL horses but applies favorites filter at execution decision point
+- Uses dual-source analysis: OlbgTipsDataForHorsesInfo (60%) + RacingpostDataForHorsesInfo (40%)
+- Evaluates tipster consensus patterns, expert confidence indicators, and value identification signals
+- Automatically executes "Back trailing stop loss trading" or "Trade 20% profit" strategies based on expert consensus
+- ABSOLUTELY NO intermediate outputs - only final execution confirmation or no-execution message
+- Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingOlbgEVAnalysisResults"
+- **Best for:** Leveraging professional tipster expertise with automated silent execution and favorites risk management
+
+#### [HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md](HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md)
+**Silent OLBG EV Analysis with Fixed 10 Euro Betting - Top 3 Favorites Only**
+- Completely silent comprehensive Expected Value analysis using OLBG expert tipster consensus
+- Fixed 10 Euro betting execution on best value selection among top 3 favorites
+- Combines expert tipster analysis with mathematical EV calculations
+- **CRITICAL RESTRICTION:** Betting execution ONLY on horses among the top 3 favorites by current price
+- Uses dual-source analysis with focus on tipster consensus and semantic performance patterns
+- Automatically executes "Bet 10 Euro" strategy on qualified selections
+- ABSOLUTELY NO intermediate outputs - only final betting execution confirmation
+- **Best for:** Fixed stake automated betting with expert tipster guidance and risk management
+
+### Football Analysis
+
+#### [FootballMatchFSharpCodeCreation.md](FootballMatchFSharpCodeCreation.md)
+**Football Match F# Code Generation**
+- Generates F# code for football match analysis and trading strategies
+- **Best for:** Developers creating custom football analysis applications
+
+### System Integration
+
+#### [BfexplorerMCPIntegrationSystemPrompt.md](BfexplorerMCPIntegrationSystemPrompt.md)
+**BFExplorer Integration Guide**
+- System-level prompt for integrating AI analysis with BFExplorer
+- Technical guidance for MCP (Model Context Protocol) integration
+- **Best for:** Setting up automated AI analysis workflows
+
+#### [BfexplorerStrategyExpertPrompt.md](BfexplorerStrategyExpertPrompt.md)
+**BFExplorer Strategy Expert System**
+- Comprehensive AI assistant prompt for strategy selection and configuration
+- Expert knowledge of all 60+ BFExplorer strategy templates and parameters
+- Plain English strategy recommendations with exact parameter settings
+- Covers betting, trading, risk management, and sport-specific strategies
+- **Best for:** Getting expert-level strategy advice and configuration help instantly
 
 ## Usage Recommendations
 
@@ -398,6 +657,41 @@ Use **HorseRacingEVAnalysisNumericalData.md** when:
 - Working with data-heavy approaches
 - Want to complement semantic analysis with hard numbers
 
+### For Professional Trading Execution
+Use **BetfairTradingStrategyExecutionPrompt.md** when:
+- You need advanced position management and trading strategy execution
+- Want professional-grade risk management for trading operations
+- Seeking comprehensive entry/exit criteria and portfolio optimization
+- Need systematic trading strategy implementation with advanced controls
+
+### For Weight of Money Trading
+Use **WeightOfMoneyStrategy.md** when:
+- You want to trade based on market liquidity patterns and flow analysis
+- Seeking automated trading execution based on weight of money principles
+- Need market flow interpretation for trading opportunity identification
+- Want to leverage liquidity imbalances for trading profits
+
+### For Advanced Weight of Money Trading
+Use **WeightOfMoneyStrategyR1.md** when:
+- You need professional-grade weight of money analysis with R1-level precision
+- Want enhanced market flow analysis and advanced trading pattern recognition
+- Seeking optimized execution logic for sophisticated weight of money strategies
+- Need proven analytical framework applied to liquidity-based trading
+
+### For R5 Trading Implementation
+Use **HorseRacingStrategyR5_Trade.md** when:
+- You want R5 analytical power optimized specifically for trading execution
+- Need trading-specific logic and execution patterns rather than straight betting
+- Want automated trading with comprehensive three-context analysis
+- Prefer trading-focused data storage and analysis tracking
+
+### For R5 Trading Development
+Use **HorseRacingStrategyR5_Trade_Ideas.md** when:
+- You're developing or optimizing R5-based trading strategies
+- Need comprehensive analysis output for trading strategy refinement
+- Want detailed reasoning and methodology for trading decisions
+- Seeking trading pattern analysis with full analytical transparency
+
 ## Integration with BFExplorer
 
 All prompts are designed to work with the BFExplorer API and MCP integration, accessing:
@@ -488,6 +782,11 @@ When creating new prompts:
 | Optimized data structure analysis | Medium | Full | Structured decisions | HorseRacingStrategyR3_DS.md |
 | **Revolutionary triple-context analysis** | **Medium-High** | **Manual** | **Maximum analytical depth** | **HorseRacingStrategyR5_Ideas.md** |
 | **Silent triple-context execution** | **Medium** | **Full** | **Automated R5 power** | **HorseRacingStrategyR5.md** |
+| **R5 Trading Implementation** | **Medium** | **Full** | **Trading-optimized R5** | **HorseRacingStrategyR5_Trade.md** |
+| **R5 Trading Development** | **Medium-High** | **Manual** | **Trading strategy development** | **HorseRacingStrategyR5_Trade_Ideas.md** |
+| **Professional trading execution** | **Medium-High** | **Full** | **Advanced position management** | **BetfairTradingStrategyExecutionPrompt.md** |
+| **Weight of money trading** | **Medium** | **Full** | **Liquidity-based trading** | **WeightOfMoneyStrategy.md** |
+| **Advanced weight of money trading** | **Medium-High** | **Full** | **Professional WoM trading** | **WeightOfMoneyStrategyR1.md** |
 | Quick analysis only | Low | None | Analysis only | HorseRacingEVRankingsTableOnly.md |
 | Fundamental handicapping | Medium | Manual | Traditional approach | HorseRacingBaseFormDataAnalysis.md |
 | Data export and integration | Medium | Manual | Structured output | HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md |
@@ -497,5 +796,5 @@ When creating new prompts:
 
 ---
 
-*Last updated: June 28, 2025*  
+*Last updated: July 4, 2025*  
 *Performance data based on real market testing with Strategy R1 achieving 83.3% strike rate and 115-150% ROI*

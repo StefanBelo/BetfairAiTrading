@@ -1,7 +1,7 @@
-# Horse Racing Strategy R5.2 - Enhanced Multi-Context Analysis & Execution Prompt (Updated Data Structure)
+# Horse Racing Strategy R5.3 - Enhanced Multi-Context Analysis with Weight of Money Integration
 
 ## Overview
-This enhanced prompt provides a comprehensive systematic approach to analyzing horse racing markets using three integrated data sources: Racing Post data, Betfair base form data, and market trading price data to identify optimal betting opportunities. Updated to work with current data structure without predictionScore field, using enhanced form analysis methodology.
+This enhanced prompt provides a comprehensive systematic approach to analyzing horse racing markets using four integrated data sources: Racing Post data, Betfair base form data, market trading price data, and Weight of Money analysis to identify optimal betting opportunities. Updated to work with current data structure including the new WeightOfMoneyData context for professional betting pattern analysis.
 
 ### Revised Performance Targets (Based on Results Analysis)
 - **Strike Rate**: 35%+ for win bets (realistic target based on data)
@@ -18,6 +18,7 @@ Analyze horse racing markets to identify the single best value betting opportuni
 - Comprehensive Racing Post form analysis  
 - Betfair base form data and ratings
 - Market trading price patterns and volume analysis
+- **NEW**: Weight of Money analysis for professional betting patterns
 - Enhanced Expected Value calculations with multiple data validation
 - Market efficiency and liquidity assessment
 
@@ -39,7 +40,7 @@ Purpose: Retrieve current market information including:
 ```
 Use: GetAllDataContextForBetfairMarket
 Parameters: 
-- dataContextNames: ["RacingpostDataForHorsesInfo", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData"]
+- dataContextNames: ["RacingpostDataForHorsesInfo", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData", "WeightOfMoneyData"]
 - marketId: [from Step 1]
 
 Purpose: Get comprehensive multi-source data including:
@@ -61,11 +62,20 @@ From MarketSelectionsTradedPricesData:
 - Market volume and liquidity indicators
 - Price movement analysis and market sentiment
 - Opening vs current price drift analysis
+
+From WeightOfMoneyData:
+- Professional betting patterns and volume distribution
+- Smart money indicators and institutional backing
+- Market confidence signals from large stake activity
+- Contra-indicator signals from public money vs sharp money
+- Weight of money flow analysis and timing patterns
 ```
 
 #### Step 3: Strategy Execution (When Selection Made)
 ```
 When a dedicated selection is chosen for betting:
+
+**CRITICAL**: Only use the following two strategy names - no other strategies are available:
 
 For BACK bets:
 Use: ExecuteBfexplorerStrategySettings
@@ -80,6 +90,9 @@ Parameters:
 - strategyName: "Lay 10 Euro"
 - marketId: [from Step 1]
 - selectionId: [selected horse's selectionId]
+
+**WARNING**: Do NOT use any other strategy names such as "BackTrade100EuroStrategy" or similar. 
+Only "Bet 10 Euro" and "Lay 10 Euro" are valid strategy names.
 
 Execute immediately after ActivateBetfairMarketSelection
 ```
@@ -159,26 +172,42 @@ For horses 8/1+ (8.0+), apply special analysis:
 - Check form strings against detailed race descriptions
 - **CRITICAL ADDITION**: Systematically analyze ALL runners, not just top 2-3 favorites
 
+**IMPORTANT NOTE**: The scores calculated in Step 6 (Enhanced Form Score, Multi-Rating Score, Market Sentiment, Weight of Money Score) are *not* Expected Value (EV) calculations. They are component scores that contribute to a horse's overall `Total Score`, which is then used to derive a `Normalized Probability` and finally, a single `Enhanced Expected Value` for each horse. Do not interpret these individual component scores as separate EV values.
+
 ### Step 6: Enhanced Form Analysis Methodology
 
-#### Revised Form Scoring (0-100 scale) - Calibrated Based on Results
-**Racing Post Component (50% weight - increased based on results analysis):**
-- **Last 7 days**: 100 points for win, 80 for 2nd, 60 for 3rd
-- **8-14 days**: 90 points for win, 70 for 2nd, 50 for 3rd  
-- **15-30 days**: 80 points for win, 60 for 2nd, 40 for 3rd
-- **31+ days**: Reduce by 10% per additional week
-- **ADDITION**: Bonus points for improving trend patterns (+10 for clear improvement)
+#### Revised Form Scoring (0-100 scale) - Calibrated Based on Results with Weight of Money Integration
+**Racing Post Component (45% weight - adjusted for Weight of Money integration):**
+- Points based on recent top 3 finishes for the last 5 races:
+    - 1st place: 5 points
+    - 2nd place: 3 points
+    - 3rd place: 1 point
+    - Other: 0 points
+- Maximum raw score: 25 points (5 wins). Scale to 0-100 by multiplying by 4.
 
-**Betfair Form String Component (25% weight - reduced):**
-- Recent numerical form analysis (1-9 scale)
-- Consistency patterns and improvement trends
-- Performance under similar conditions
+**Betfair Form String Component (20% weight - reduced for Weight of Money integration):**
+- Points based on recent top 3 finishes for the last 5 races:
+    - 1st place: 5 points
+    - 2nd place: 3 points
+    - 3rd place: 1 point
+    - Other: 0 points
+- Maximum raw score: 25 points (5 wins). Scale to 0-100 by multiplying by 4.
 
-**Market Sentiment Component (25% weight - reduced due to over-reliance on market):**
-- Price movement analysis (backing vs laying pressure)
-- Volume-weighted price changes
-- Forecast vs current price variance
-- Market confidence indicators
+**Market Sentiment Component (20% weight - reduced for Weight of Money integration):**
+- Score based on price movement (-10 to +10). Scale to 0-100 using formula: `(raw_score + 10) * 5`
+    - Strong shortening: +10
+    - Slight shortening: +5
+    - Stable: 0
+    - Slight lengthening: -5
+    - Strong lengthening: -10
+
+**Weight of Money Component (15% weight - NEW ADDITION):**
+- Score based on money flow (-10 to +10). Scale to 0-100 using formula: `(raw_score + 10) * 5`
+    - Strong professional backing: +10
+    - Moderate professional backing: +5
+    - Mixed/Neutral: 0
+    - Potential contra-indicator: -5
+    - Strong contra-indicator: -10
 
 #### Advanced Performance Quality Assessment
 - Semantic analysis of race descriptions for finishing style
@@ -196,24 +225,67 @@ For horses 8/1+ (8.0+), apply special analysis:
 
 ### Step 8: Advanced Expected Value Calculation with Market Analysis
 
+#### Corrected EV Calculation Methodology
+The previous method of calculating probability was flawed. Based on user feedback, the new methodology is as follows:
+1.  For each horse, a `Total Score` is calculated by combining the various data points (Form, Ratings, WoM, etc.).
+2.  These `Total Scores` for all horses in the race are then normalized to create a valid probability distribution that sums to 100%.
+3.  This `Normalized Probability` is then used to calculate the final, correct EV.
+
 #### Enhanced EV Formula
 ```
-EV = (Probability × (Odds - 1)) - (1 - Probability)
+EV = (Normalized Probability × (Odds - 1)) - (1 - Normalized Probability)
 
-Where Enhanced Probability incorporates:
-- Multi-source form validation
-- Market sentiment analysis  
-- Trading pattern confidence
-- Cross-validated rating systems
+Where 'Odds' are the Current Price, and 'Normalized Probability' is calculated as described below.
 ```
 
-#### Multi-Context Probability Estimation Method
+#### Step 1: Total Score Calculation
+This step combines all analytical scores into a single `Total Score` for each horse. This is NOT a probability.
+**IMPORTANT**: While individual scores are on a 0-100 scale, the combination should aim for a `Total Score` that, when normalized, yields realistic probabilities (0-100%). Unusually high `Total Scores` can lead to unrealistic `Normalized Probabilities` and inflated EV values. Consider the relative impact of each component to ensure a balanced `Total Score`.
 ```
-Base Probability = (Enhanced Form Score × 0.35) + (Multi-Rating Score × 0.25) + (AI Score × 0.25) + (Market Sentiment × 0.15)
+Total Score = (RP Form Score * 0.2) + (BF Form Score * 0.15) + (Multi-Rating Score * 0.15) + (AI Score * 0.2) + (Market Sentiment * 0.15) + (Weight of Money * 0.15)
 
-Enhanced Form Score = (RP Form × 0.4) + (Betfair Form × 0.3) + (Trading Pattern × 0.3)
+Enhanced Form Score = (RP Form × 0.45) + (Betfair Form × 0.20) + (Trading Pattern × 0.35)
 Multi-Rating Score = Weighted average of OR, RP, and market-implied ratings
 Market Sentiment = Volume-weighted price movement analysis + forecast variance
+Weight of Money Score = Smart money confidence + institutional backing strength - public money contra-indicators
+```
+
+#### Step 2: Probability Normalization (CRITICAL)
+To ensure the probabilities of all outcomes sum to 100%, the `Total Score` for each horse must be normalized.
+
+1.  Calculate the `Total Score` for every horse in the race.
+2.  Sum all the `Total Scores` together to get a `SumOfAllScores`.
+3.  Calculate the `Normalized Probability` for each horse:
+    `Normalized Probability = Total Score / SumOfAllScores`
+
+**IMPORTANT**: The `Normalized Probability` MUST be a decimal value between 0 and 1 (e.g., 0.25 for 25%). The `Est. Prob %` column in the analysis table should then display this as a percentage.
+
+#### Enhanced EV Formula (Post-Normalization Adjustment)
+After calculating the initial `EV` using the `Normalized Probability`, apply the following adjustments:
+
+-   **Favorite Bias Adjustment**: If Current Price < 3.0 (favorite): `Adjusted EV = EV × 0.9`
+-   **Outsider Value Boost**: If Current Price >= 8.0 (outsider) and has an "improving trend": `Adjusted EV = EV × 1.1`
+-   Otherwise: `Adjusted EV = EV`
+
+**Definition of "Improving Trend"**: An "improving trend" for an outsider is defined as having at least two top-3 finishes (1st, 2nd, or 3rd) in their last five races, with at least one of those being a 1st or 2nd place. This should be derived from the `lastRacesDescriptions` and `form` data.
+
+#### Advanced Weight of Money Analysis
+```
+Weight of Money Indicators:
+- Smart Money Flow: Large stakes placed early vs late public money
+- Professional Patterns: Consistent backing from known sharp accounts
+- Market Maker Activity: Exchange specialist money vs general punter activity
+- Institutional Confidence: Pension fund/syndicate style betting patterns
+- Contra-Indicators: Heavy public money against professional sentiment
+
+Weight of Money Score Calculation:
+- Professional backing strength (0-40 points)
+- Smart money timing advantage (0-30 points)  
+- Institutional confidence level (0-20 points)
+- Contra-indicator adjustments (-10 to +10 points)
+- Final Weight of Money Score (0-100)
+
+**IMPORTANT NOTE on OfferedPrices BetType**: In `OfferedPrices` data, `BetType: 1` (Back) indicates a price offered by a bettor who wants to place a LAY bet (i.e., they are offering to lay the selection). Conversely, `BetType: 2` (Lay) indicates a price offered by a bettor who wants to place a BACK bet (i.e., they are offering to back the selection). This is crucial for correctly interpreting market depth and sentiment.
 ```
 
 #### Market Efficiency Assessment
@@ -226,13 +298,13 @@ Market Efficiency Score = Analysis of:
 - Liquidity depth and market maker presence
 ```
 
-## Enhanced Race Analysis Table Template
+## Enhanced Race Analysis Table Template with Weight of Money
 
-| Horse | Current Price | Form Score | OR | RP | BF Rating | AI Score | Market Sentiment | Est. Prob % | True Odds | Market Odds | EV % | Action | Rating |
+| Horse | Current Price | Form Score | OR | RP | WoM Score | AI Score | Market Sentiment | Est. Prob % | True Odds | Market Odds | EV % | Action | Rating |
 |-------|---------------|------------|----|----|-----------|----------|------------------|-------------|-----------|-------------|-----|--------|--------|
-| Horse A | 5.1 | 95 | 93 | 112 | 89 | 85 | +15% | 27.5% | 3.64 | 5.1 | +40.2% | BACK | ⭐⭐⭐⭐⭐ |
-| Horse B | 6.6 | 88 | 95 | 111 | 92 | 85 | -5% | 16.8% | 5.95 | 6.6 | +10.9% | BACK | ⭐⭐ |
-| Horse C | 3.3 | 82 | 101 | 113 | 98 | 97 | -12% | 20.2% | 4.95 | 3.3 | -33.3% | LAY | ⭐⭐⭐⭐⭐ |
+| Horse A | 5.1 | 95 | 93 | 112 | 85 | 85 | +15% | 27.5% | 3.64 | 5.1 | +40.2% | BACK | ⭐⭐⭐⭐⭐ |
+| Horse B | 6.6 | 88 | 95 | 111 | 65 | 85 | -5% | 16.8% | 5.95 | 6.6 | +10.9% | BACK | ⭐⭐ |
+| Horse C | 3.3 | 82 | 101 | 113 | 45 | 97 | -12% | 20.2% | 4.95 | 3.3 | -33.3% | LAY | ⭐⭐⭐⭐⭐ |
 
 ### Enhanced Column Explanations
 
@@ -251,73 +323,87 @@ Market Efficiency Score = Analysis of:
 
 #### Market Sentiment Analysis
 ```
-Market Sentiment = Weighted combination of:
-- Price drift from forecast: ((Current - Forecast) / Forecast) × 100
-- Volume analysis: High volume + price shortening = Positive sentiment
-- Trading pattern: Consistent backing vs sporadic laying
-- Market timing: Early vs late market moves
+Market Sentiment = Score based on price movement (0-100): If Current Price < Forecast Price (price shortening), score is 100. If Current Price > Forecast Price (price lengthening), score is 0. If Current Price == Forecast Price, score is 50.
+**IMPORTANT**: This score should reflect the strength of the sentiment, not just its direction. Consider volume and speed of price movement for a more nuanced score.
+**IMPORTANT**: This score should reflect the strength of the sentiment, not just its direction. Consider volume and speed of price movement for a more nuanced score.
 ```
 
-#### Revised Probability Calculation
+#### Weight of Money (WoM) Score Analysis
 ```
-Multi-Source Probability = Base calculation with validation layers:
+WoM Score Components (0-100 scale):
+- Professional Money Flow (0-40): Early smart money backing patterns
+- Institutional Confidence (0-30): Large stake patterns from known sharp accounts  
+- Market Timing Advantage (0-20): Early positioning vs late public money
+- Contra-Indicator Signals (0-10): Public money flowing against professional sentiment
 
-1. Form Validation: Cross-check RP descriptions vs Betfair form strings
-2. Rating Validation: Ensure OR, RP, and market ratings alignment
-3. Market Validation: Confirm probability matches trading patterns
-4. Historical Validation: Compare to similar race scenarios
-5. **CRITICAL ADDITION - Outsider Adjustment**: Apply probability boost for improving outsiders
-
-**Probability Calibration Adjustments Based on Results Analysis:**
-- Reduce favorite bias by applying 0.85 multiplier to horses <3.0
-- Apply 1.15 multiplier to improving horses 8.0+
-- Weight recent form more heavily (increase to 50% vs 35%)
-- Reduce AI score influence for favorites (reduce to 15% vs 25%)
-
-Final Probability = Raw Probability × Confidence Factor × Market Efficiency Factor × Bias Adjustment
+WoM Score Interpretation:
+- 80-100: Strong professional backing, high confidence indicator
+- 60-79: Moderate smart money interest, positive signal
+- 40-59: Mixed or neutral money flow, no clear signal
+- 20-39: Potential contra-indicator, public money heavy
+- 0-19: Strong contra-indicator, avoid or consider lay opportunity
 ```
+
+#### Final Probability Normalization
+To ensure the estimated probabilities of all outcomes sum to 100%, the `Total Score` for each horse must be normalized.
+
+1.  Calculate the `Total Score` for every horse in the race.
+2.  Sum all the `Total Scores` together to get a `SumOfAllScores`.
+3.  Calculate the `Normalized Probability` for each horse:
+    `Normalized Probability = Total Score / SumOfAllScores`
+
+The `Est. Prob %` column in the analysis table MUST be this `Normalized Probability`.
+
 
 ## Enhanced Strategy Execution Rules
 
 ### Revised Pragmatic Selection Criteria
 **Based on analysis of actual results, criteria have been adjusted for better balance between selectivity and opportunity capture:**
 
-**For BACK Bets:**
+**Enhanced For BACK Bets with Weight of Money Integration:**
 - EV must be > +15% (Reduced from 30% - analysis showed 30% threshold missed profitable opportunities)
 - Enhanced Form Score > 65 (Reduced from 75 - high scorers didn't always win)
 - AI Score > 80 OR Multi-Rating Differential > +15% (Slightly lowered thresholds)
+- **NEW**: Weight of Money Score > 50 OR EV > +25% despite lower WoM score
 - Market Sentiment positive OR significant value despite negative sentiment
 - Maximum odds of 25.0 (Increased to capture more outsider value)
 - Multi-source data consistency check passed (>70% alignment)
 
-**CRITICAL ADDITION - Outsider Value Detection:**
+**ENHANCED ADDITION - Outsider Value Detection with Weight of Money:**
 - Special consideration for horses 8/1+ (8.0+) with:
   - Improving recent form trend
-  - AI Score > 75
+  - AI Score > 75 OR Weight of Money Score > 60
   - Market drift suggesting hidden support
   - EV > +20% despite lower overall scores
+  - **NEW**: Professional backing despite public dismissal (WoM score high vs market price)
 
-**For LAY Bets:**
+**Enhanced For LAY Bets with Weight of Money:**
 - EV must be < -20% (Reduced from 30% for more opportunities)
 - Clear form concerns across multiple data sources
 - Negative market sentiment with volume confirmation
+- **NEW**: Weight of Money Score < 30 (strong contra-indicator)
+- **NEW**: Heavy public money vs minimal professional backing
 - Overpriced in market with supporting data discrepancies
 
 **If no selection meets revised criteria: RECOMMEND NO BET**
 
-### Revised Betting Thresholds (Based on Results Analysis)
-- **Premium Back**: EV > +35% with full validation (⭐⭐⭐⭐⭐)
-- **Strong Back**: EV +20% to +35% with high confidence (⭐⭐⭐⭐)
-- **Value Back**: EV +15% to +20% with reasonable confidence (⭐⭐⭐)
-- **Outsider Special**: EV +20%+ for horses 8/1+ with improving metrics (⭐⭐⭐⭐)
-- **Strong Lay**: EV < -20% with multi-source confirmation (⭐⭐⭐⭐⭐ LAY)
+### Enhanced Betting Thresholds with Weight of Money Integration
+- **Premium Back**: EV > +35% with full validation + WoM Score > 70 (⭐⭐⭐⭐⭐)
+- **Strong Back**: EV +20% to +35% with high confidence + WoM Score > 60 (⭐⭐⭐⭐)
+- **Value Back**: EV +15% to +20% with reasonable confidence + WoM Score > 50 (⭐⭐⭐)
+- **Professional Backed Outsider**: EV +20%+ for horses 8/1+ with WoM Score > 60 (⭐⭐⭐⭐)
+- **Smart Money Special**: EV +25%+ with WoM Score > 80 regardless of other factors (⭐⭐⭐⭐⭐)
+- **Strong Lay**: EV < -20% with multi-source confirmation + WoM Score < 30 (⭐⭐⭐⭐⭐ LAY)
+- **Contra-Indicator Lay**: EV < -15% with WoM Score < 20 (heavy public money) (⭐⭐⭐⭐ LAY)
 - **NO BET**: All other scenarios including mixed signals
 
-### Advanced Risk Management
-- Cross-validate selection with all three data sources
-- Monitor live price movements against analysis
-- Set dynamic stop-loss based on market sentiment changes
-- Position sizing based on confidence levels across all data sources
+### Advanced Risk Management with Weight of Money Integration
+- Cross-validate selection with all four data sources including Weight of Money
+- Monitor live price movements against analysis AND smart money flow changes
+- Set dynamic stop-loss based on market sentiment changes AND Weight of Money shifts
+- Position sizing based on confidence levels across all data sources AND WoM score strength
+- **NEW**: Alert system for sudden Weight of Money reversals indicating insider information
+- **NEW**: Professional money exit signals monitoring for early position closure
 
 ## Market-Specific Enhanced Adjustments
 
@@ -348,46 +434,46 @@ Final Probability = Raw Probability × Confidence Factor × Market Efficiency Fa
 5. ✅ Check for significant forecast vs market price variances
 6. ✅ Review weather/going conditions with market reaction
 
-### During Enhanced Analysis
-1. ✅ Calculate multi-source form scores with validation
+### Enhanced Analysis with Weight of Money Integration
+1. ✅ Calculate multi-source form scores with Weight of Money validation
 2. ✅ Cross-reference rating systems for anomalies
-3. ✅ Analyze market sentiment and trading patterns
-4. ✅ Calculate enhanced EV with confidence intervals
-5. ✅ Identify single best value opportunity with full validation
-6. ✅ Verify selection meets all enhanced criteria
-7. ✅ Document comprehensive reasoning or NO BET decision
+3. ✅ Analyze market sentiment, trading patterns, AND Weight of Money flows
+4. ✅ Calculate enhanced EV with confidence intervals including WoM factors
+5. ✅ Verify Weight of Money alignment with form analysis
+6. ✅ Identify single best value opportunity with full four-source validation
+7. ✅ Verify selection meets all enhanced criteria including WoM thresholds
+8. ✅ Document comprehensive reasoning or NO BET decision with WoM analysis
 
-### Enhanced Strategy Execution Workflow
+### Enhanced Strategy Execution Workflow with Weight of Money Monitoring
 When a selection is identified:
-1. ✅ Final cross-validation of all data sources
-2. ✅ Use ActivateBetfairMarketSelection for chosen horse
-3. ✅ Execute appropriate strategy:
+1. ✅ Final cross-validation of all four data sources including Weight of Money
+2. ✅ Verify Weight of Money score supports betting decision
+3. ✅ Use ActivateBetfairMarketSelection for chosen horse
+4. ✅ Execute appropriate strategy (ONLY use these exact strategy names):
    - **BACK bets**: Execute "Bet 10 Euro" strategy
    - **LAY bets**: Execute "Lay 10 Euro" strategy
-4. ✅ Confirm strategy execution successful
-5. ✅ Monitor position with live market sentiment tracking
-6. ✅ **Store enhanced analysis data using SetAIAgentDataContextForBetfairMarket**
+   - **CRITICAL**: No other strategy names are valid or available
+5. ✅ Confirm strategy execution successful
+6. ✅ Monitor position with live market sentiment tracking AND Weight of Money changes
+7. ✅ **Store enhanced analysis data using SetAIAgentDataContextForBetfairMarket**
 
-### Enhanced Data Storage Workflow (Required for ALL analyses)
+### Enhanced Data Storage Workflow with Weight of Money (Required for ALL analyses)
 After completing analysis (selection made OR NO BET decision):
-1. ✅ Compile comprehensive multi-context analysis data
-2. ✅ Include cross-validation results and confidence scores
-3. ✅ Document market sentiment analysis and trading patterns
+1. ✅ Compile comprehensive multi-context analysis data including Weight of Money
+2. ✅ Include cross-validation results and confidence scores across all four sources
+3. ✅ Document market sentiment analysis, trading patterns, AND Weight of Money flows
 4. ✅ Use SetAIAgentDataContextForBetfairMarket with:
    - **dataContextName**: "HorseRacingR5_Analysis"
    - **marketId**: [from active market]
-   - **jsonData**: [Enhanced analysis JSON - see Data Format section]
-5. ✅ Confirm data storage successful for comprehensive model tracking
+   - **jsonData**: [Enhanced analysis JSON with Weight of Money - see Data Format section]
+5. ✅ Confirm data storage successful for comprehensive four-source model tracking
 
 ### Enhanced NO BET Documentation Requirements
-When recommending NO BET, must include:
-1. ✅ Cross-source validation failures for top 3 candidates
-2. ✅ Enhanced EV calculations with confidence intervals
-3. ✅ Multi-source form score analysis and threshold comparisons
-4. ✅ Market sentiment analysis and trading pattern assessment
-5. ✅ Data consistency evaluation across all sources
-6. ✅ Strategy discipline reinforcement with enhanced reasoning
-7. ✅ **Store comprehensive NO BET analysis using SetAIAgentDataContextForBetfairMarket**
+
+When recommending NO BET, the following is required:
+1. ✅ A full analysis table for all horses.
+2. ✅ Clear reasoning for the NO BET decision based on the strategy criteria.
+3. ✅ **CRITICAL**: The analysis data for the race MUST be stored. Use `SetAIAgentDataContextForBetfairMarket` with `dataContextName`: "HorseRacingR5_Analysis". This step is mandatory for every race, including those with no bet.
 
 ## Enhanced Success Metrics
 
@@ -420,33 +506,24 @@ RECOMMENDED SELECTION: [Horse Name] ([Price]) ⭐⭐⭐⭐⭐
 - Cross-Validation Score: [X]/100
 
 COMPREHENSIVE CRITERIA VERIFICATION:
-✅ Enhanced EV > +30% (actual: +[X]%)
-✅ Multi-Source Form Score > 75 (actual: [X])
-✅ AI Score > 85 OR Multi-Rating Diff > +20% (actual: +[X])
+✅ Enhanced EV > +15% (actual: +[X]%)
+✅ Enhanced Form Score > 65 (actual: [X])
+✅ AI Score > 80 OR Multi-Rating Diff > +15% (actual: +[X])
 ✅ Market Sentiment positive OR significant value confirmed
 ✅ All data sources consistent and validated
 
-MULTI-SOURCE ANALYSIS:
-Racing Post Data: [Key insights from detailed race descriptions]
-Betfair Form Data: [Form string analysis and rating validation]  
-Trading Data: [Market sentiment and volume analysis]
-
-CROSS-VALIDATION RESULTS:
-- Form Consistency: [X]% alignment across sources
-- Rating Validation: [X] point average difference
-- Market Efficiency: [X]% confidence in price discovery
-- Historical Similarity: [X] comparable scenarios with [Y]% success rate
+FULL RACE ANALYSIS TABLE:
+| Horse | Current Price | Form Score | OR | RP | WoM Score | AI Score | Market Sentiment | Est. Prob % | True Odds | Market Odds | EV % | Action | Rating |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **[Horse Name]** | **[Price]** | **[Form]** | **[OR]** | **[RP]** | **[WoM]** | **[AI]** | **[Sentiment]** | **[Prob]** | **[T. Odds]** | **[M. Odds]** | **[EV]** | **BACK** | ⭐⭐⭐⭐⭐ |
+| [Other Horse 1] | [Price] | [Form] | [OR] | [RP] | [WoM] | [AI] | [Sentiment] | [Prob] | [T. Odds] | [M. Odds] | [EV] | NO BET | ⭐⭐ |
+| [Other Horse 2] | [Price] | [Form] | [OR] | [RP] | [WoM] | [AI] | [Sentiment] | [Prob] | [T. Odds] | [M. Odds] | [EV] | NO BET | ⭐ |
 
 STRATEGY EXECUTION:
 ✅ Selection activated: ActivateBetfairMarketSelection
-✅ Strategy executed: [Bet 10 Euro / Lay 10 Euro]
+✅ Strategy executed: [Bet 10 Euro / Lay 10 Euro] - ONLY these strategy names valid
 ✅ Position confirmed and monitored with live sentiment tracking
 ✅ Enhanced analysis data stored: SetAIAgentDataContextForBetfairMarket("HorseRacingR5_Analysis")
-
-REJECTED SELECTIONS WITH ENHANCED REASONING:
-- [Horse Name]: EV +22% - Below +30% enhanced threshold, mixed data signals
-- [Horse Name]: Form Score 72 - Below 75 enhanced threshold, inconsistent across sources
-- [Horse Name]: Negative market sentiment override despite +25% EV - risk management
 ```
 
 **Option 2: Enhanced No Selection Meets Criteria**
@@ -457,32 +534,19 @@ Market ID: [Market ID from Step 1]
 RECOMMENDATION: NO BET
 
 ENHANCED REASONING FOR NO BET DECISION:
+No selection met the enhanced criteria for a bet. See full analysis below.
 
 ENHANCED CRITERIA FAILURES:
-❌ EV Threshold: No horse meets +30% enhanced minimum for BACK bets
-❌ Cross-Validation: Multiple data source inconsistencies detected
-❌ Market Sentiment: Mixed signals insufficient for confident selection
-❌ Form Requirements: No horse meets 75+ enhanced form score minimum across all sources
+❌ EV Threshold: No horse meets +15% enhanced minimum for BACK bets or < -20% for LAY bets.
+❌ Cross-Validation: Multiple data source inconsistencies detected for top candidates.
+❌ Market Sentiment: Mixed signals insufficient for confident selection.
 
-COMPREHENSIVE ANALYSIS OF TOP CANDIDATES:
-
-1. [Horse Name] ([Price]) - Enhanced EV: +24%
-   - FAILED: EV +24% below +30% enhanced threshold
-   - Multi-Source Form: 73 (below 75 enhanced minimum)
-   - Cross-Validation Score: 68/100 (inconsistent data signals)
-   - Market Sentiment: Neutral (insufficient confidence)
-   - Data Inconsistency: RP rating vs Betfair form mismatch
-
-2. [Horse Name] ([Price]) - Enhanced EV: +27%
-   - FAILED: Mixed market sentiment despite good EV
-   - Multi-Source Form: 78 (meets enhanced minimum)
-   - Trading Pattern: Negative volume indicators
-   - Risk Assessment: High due to conflicting signals
-
-3. [Horse Name] ([Price]) - Enhanced EV: -22%
-   - FAILED: LAY EV -22% above -30% enhanced threshold
-   - Cross-Validation: Multiple source confirmation lacking
-   - Market Sentiment: Insufficient negative confirmation
+FULL RACE ANALYSIS TABLE:
+| Horse | Current Price | Form Score | OR | RP | WoM Score | AI Score | Market Sentiment | Est. Prob % | True Odds | Market Odds | EV % | Action | Rating |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [Horse A] | [Price] | [Form] | [OR] | [RP] | [WoM] | [AI] | [Sentiment] | [Prob] | [T. Odds] | [M. Odds] | [EV] | NO BET | ⭐⭐ |
+| [Horse B] | [Price] | [Form] | [OR] | [RP] | [WoM] | [AI] | [Sentiment] | [Prob] | [T. Odds] | [M. Odds] | [EV] | NO BET | ⭐ |
+| [Horse C] | [Price] | [Form] | [OR] | [RP] | [WoM] | [AI] | [Sentiment] | [Prob] | [T. Odds] | [M. Odds] | [EV] | NO BET | ⭐ |
 
 ENHANCED MARKET ASSESSMENT:
 - Multi-Source Efficiency: [X]% - moderate data alignment
@@ -507,18 +571,19 @@ NEXT ACTIONS:
 
 ---
 
-**Note**: This enhanced framework leverages three comprehensive data sources to identify exceptional value opportunities with increased accuracy and confidence. The enhanced criteria and cross-validation requirements will result in higher NO BET percentages but significantly improved success rates when selections are made.
+**Note**: This enhanced framework leverages four comprehensive data sources including Weight of Money analysis to identify exceptional value opportunities with increased accuracy and confidence. The enhanced criteria and cross-validation requirements will result in higher NO BET percentages but significantly improved success rates when selections are made.
 
-**CRITICAL REQUIREMENT**: ALL analyses must utilize GetAllDataContextForBetfairMarket with all three data contexts and store results using SetAIAgentDataContextForBetfairMarket with dataContextName "HorseRacingR5_1_Analysis" for comprehensive multi-source model tracking and validation.
+**CRITICAL REQUIREMENT**: ALL analyses must utilize GetAllDataContextForBetfairMarket with all four data contexts including "WeightOfMoneyData" and store results using SetAIAgentDataContextForBetfairMarket with dataContextName "HorseRacingR5_1_Analysis" for comprehensive multi-source model tracking and validation.
 
-**Version**: R5.1 - Results-Calibrated Multi-Context Analysis
-**Last Updated**: June 28, 2025
-**Strategy Type**: Advanced multi-source value-based approach with results-based calibration
-**Key Changes**: Reduced over-conservatism, improved outsider detection, systematic full-field analysis
+**Version**: R5.3 - Weight of Money Integration
+**Last Updated**: July 4, 2025
+**Strategy Type**: Advanced four-source value-based approach with professional betting pattern analysis
+**Key Changes**: Added Weight of Money data integration, enhanced EV calculation with smart money factors, professional backing detection
 
 ## Enhanced Analysis Data Format for Storage
 
 ### JSON Structure for SetAIAgentDataContextForBetfairMarket - R5 Enhanced Format
+**Note**: The `enhancedHorseAnalysis` array in the JSON below must include an object for **every horse** that ran in the race, not just the recommended selection or top candidates.
 
 ```json
 {
@@ -531,7 +596,7 @@ NEXT ACTIONS:
     "startTime": "2025-06-28T18:10:00+02:00",
     "analysisDate": "2025-06-28",
     "fieldSize": 8,
-    "dataSourcesUsed": ["RacingpostDataForHorsesInfo", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData"],
+    "dataSourcesUsed": ["RacingpostDataForHorsesInfo", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData", "WeightOfMoneyData"],
     "crossValidationScore": 92.5
   },
   "enhancedHorseAnalysis": [
@@ -569,6 +634,16 @@ NEXT ACTIONS:
         "driftFromForecast": -43.1,
         "movementDirection": "strong_shortening"
       },
+      "weightOfMoneyAnalysis": {
+        "womScore": 75,
+        "professionalBackingStrength": 32,
+        "smartMoneyTiming": 25,
+        "institutionalConfidence": 18,
+        "contraIndicatorSignals": 0,
+        "publicVsProfessionalRatio": "65_35_pro_favored",
+        "moneyFlowDirection": "professional_backing",
+        "confidenceLevel": "high"
+      },
       "aiAnalysis": {
         "formScore": 100,
         "confidence": "maximum",
@@ -593,6 +668,40 @@ NEXT ACTIONS:
       },
       "riskAssessment": {
         "overallRiskRating": "low"
+      }
+    },
+    {
+      "selectionId": "23433961_0.00",
+      "name": "Another Horse",
+      "currentPrice": 8.5,
+      "multiSourceFormAnalysis": {
+        "combinedFormScore": 80
+      },
+      "multiSourceRatingAnalysis": {
+        "averageExternalRating": 70
+      },
+      "marketSentimentAnalysis": {
+        "sentimentScore": 60
+      },
+      "weightOfMoneyAnalysis": {
+        "womScore": 65
+      },
+      "aiAnalysis": {
+        "formScore": 85
+      },
+      "enhancedProbabilityCalculation": {
+        "finalProbability": 15.0,
+        "trueOdds": 6.67
+      },
+      "enhancedExpectedValue": {
+        "expectedValue": 10.5,
+        "classification": "no_value"
+      },
+      "enhancedCriteriaAssessment": {
+        "overallAssessment": "no_bet"
+      },
+      "riskAssessment": {
+        "overallRiskRating": "medium"
       }
     }
   ],

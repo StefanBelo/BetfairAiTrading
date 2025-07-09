@@ -14,12 +14,13 @@ Instructions:
 
 2. **Performance Data Collection**
    - Retrieve the data context with the name 'RacingpostDataForHorsesInfo' for the betfair market using tool: GetDataContextForBetfairMarket
-   - Focus exclusively on the 'horsesData' field
+   - Focus exclusively on the 'selectionsData' field
    - Do not make any reports during data collection phase
 
 3. **Semantic Performance Analysis**
-   - Analyze each horse's data in the 'lastRacesDescription' field ONLY
-   - Completely ignore the 'predictionScore' field
+   - Analyze each horse's data in the 'racingpostHorseData.lastRacesDescriptions' field ONLY
+   - Access race descriptions from the array of race objects within this field
+   - Completely ignore the 'predictionScore' field and focus only on the 'raceDescription' text within each race entry
    - Perform deep semantic analysis of recent race descriptions focusing on:
      
      a) **Performance Patterns:**

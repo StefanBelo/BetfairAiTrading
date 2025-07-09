@@ -14,17 +14,21 @@ Instructions:
 
 2. **Silent Performance Data Collection**
    - Retrieve data context 'RacingpostDataForHorsesInfo' using tool: GetDataContextForBetfairMarket
-   - Focus on 'horsesData' field only
+   - Focus on 'racingpostHorseData' field within selectionsData
    - No output during collection
 
 3. **Silent Semantic Performance Analysis**
-   - Analyze 'lastRacesDescription' field for each horse
-   - Ignore 'predictionScore' field completely
+   - Analyze 'lastRacesDescriptions' field for each horse (note: plural form)
+   - Extract 'raceDescription' text from each race entry
+   - Utilize additional data: 'beatenDistance', 'lastRunInDays', 'position' for context
+   - Consider 'rpRating' (Racing Post Rating) if available
    - Assess performance patterns, indicators, and contextual factors
    - No output during analysis
 
 4. **Silent Win Probability Assessment**
-   - Assign win probabilities based on semantic analysis
+   - Assign win probabilities based on semantic analysis and structured data
+   - Consider recent form (lastRunInDays), finishing positions, and beaten distances
+   - Factor in Racing Post ratings (rpRating) when available
    - Ensure probabilities sum to ~100%
    - No output during assessment
 

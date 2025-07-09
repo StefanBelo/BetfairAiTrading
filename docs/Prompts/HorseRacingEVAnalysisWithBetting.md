@@ -14,7 +14,7 @@ Instructions:
 
 2. **Performance Data Collection**
    - Retrieve the data context with the name 'RacingpostDataForHorsesInfo' for the betfair market using tool: GetDataContextForBetfairMarket
-   - Focus exclusively on the 'horsesData' field
+   - For each selection, focus on the 'racingpostHorseData' field
    - Do not make any reports during data collection phase
 
 3. **Semantic Performance Analysis**
@@ -24,7 +24,7 @@ Instructions:
    - **Price Shortening** = Price DECREASING = Probability INCREASING = Positive market signal
    - **Price Drifting/Lengthening** = Price INCREASING = Probability DECREASING = Negative market signal
 
-   - Analyze each horse's data in the 'lastRacesDescription' field ONLY
+   - Analyze each horse's data in the 'lastRacesDescriptions' field ONLY (note: plural form)
    - Completely ignore the 'predictionScore' field
    - Perform deep semantic analysis of recent race descriptions focusing on:
      

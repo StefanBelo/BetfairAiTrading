@@ -81,6 +81,7 @@
 - [How to Use AI Agents for Smarter Horse Racing Betting: A Beginner's Guide](Strategies/HorseRacing/HowToUseAIAgentForHorseRacingBetting.md) - Complete beginner's guide to Expected Value and AI-powered betting
 - [The Distance Advantage: A Specialized Betfair Horse Racing Strategy](Strategies/HorseRacing/RaceDistance.md)
 - [Arbitrage in Motion: The Pre-Race Odds Comparison Strategy for Betfair Horse Racing](Strategies/HorseRacing/BookmakersOdds.md)
+- [CloseByPositionDifferenceBotTrigger Strategy](Strategies/HorseRacing/CloseByPositionDifferenceBotTrigger_R1.md) - Automated trading strategy for horse racing markets based on position difference and odds.
 
 ### Tennis
 - [Tennis Data to Spreadsheet](Strategies/Tennis/DataToSpreadsheet.md)

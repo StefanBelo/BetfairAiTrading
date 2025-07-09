@@ -9,6 +9,11 @@ Analyze Betfair market weight of money data to predict price movements for all s
 - **Average Back Traded Price & Volume**: Shows where money has been backing the selection
 - **Average Lay Traded Price & Volume**: Shows where money has been laying against the selection
 - **Current Market Price**: The present best back price available
+- **Traded Prices History**: Complete trading history showing volume at each price level
+  - **NEW**: Provides detailed view of where all money has traded
+  - **Price Distribution**: Shows concentration of trading activity across price ranges
+  - **Volume Patterns**: Identifies price levels with highest trading interest
+  - **Volume-Weighted Average Price (VWAP)**: More accurate than simple averages
 - **Offered Prices Ladder**: Distribution of available liquidity at different price levels
   - **CRITICAL**: BetType 1 (Back) volume = Money available to LAY (lay offers)
   - **CRITICAL**: BetType 2 (Lay) volume = Money available to BACK (back offers)
@@ -18,6 +23,10 @@ Analyze Betfair market weight of money data to predict price movements for all s
 
 #### Price Direction Signals:
 - **Current vs Historical Averages**: If current price significantly differs from traded averages
+- **Traded Price Distribution**: Analysis of where the bulk of trading volume has occurred
+  - **High Volume Zones**: Price levels with significant trading activity indicate strong support/resistance
+  - **Price Migration**: Movement of trading volume from higher to lower prices (or vice versa)
+  - **Volume Concentration**: Whether trading is concentrated at few price levels or distributed
 - **Volume Imbalance**: Heavy backing suggests price shortening, heavy laying suggests drifting
 - **Liquidity Distribution**: Where the weight of money is positioned on the price ladder
   - **Backing Pressure**: High volume at BetType 2 (Lay) prices = Strong backing interest
@@ -26,6 +35,10 @@ Analyze Betfair market weight of money data to predict price movements for all s
 #### Strength Indicators:
 - **Volume Magnitude**: Higher volumes indicate stronger signals
 - **Price Deviation**: Larger gaps between current and average prices suggest bigger moves
+- **Traded Volume Distribution**: How trading volume is spread across price levels
+  - **Concentrated Trading**: Most volume at few price levels suggests strong conviction
+  - **Distributed Trading**: Volume spread across many prices suggests uncertainty
+  - **Volume Weighted Average**: Price weighted by actual trading volumes
 - **Market Efficiency**: Consistent patterns across multiple price levels
 
 ### 3. Movement Prediction Categories
@@ -68,13 +81,50 @@ Analyze Betfair market weight of money data to predict price movements for all s
   - Strong backing pressure (high BetType 2 volumes) → Odds likely to shorten
   - Strong laying pressure (high BetType 1 volumes) → Odds likely to drift
 
+## NEW: Traded Prices Analysis Framework
+
+### Understanding Traded Prices Data
+The **tradedPrices** array provides complete trading history showing:
+- **Price**: Each price level where trading occurred
+- **Volume**: Total volume traded at that specific price
+
+### Key Analysis Techniques:
+
+#### 1. Volume-Weighted Average Price (VWAP)
+```
+VWAP = Σ(Price × Volume) / Σ(Volume)
+```
+- More accurate than simple averages
+- Shows true center of trading activity
+- Compare current price to VWAP for direction signals
+
+#### 2. Volume Distribution Analysis
+- **High Volume Zones**: Price levels with >10% of total volume
+- **Support/Resistance**: Prices with significant trading create psychological levels
+- **Volume Concentration**: Calculate what % of volume is in top 3 traded prices
+
+#### 3. Price Migration Patterns
+- **Upward Migration**: Recent trading at higher prices than historical
+- **Downward Migration**: Recent trading at lower prices than historical
+- **Stable Trading**: Consistent price levels over time
+
+#### 4. Market Sentiment Indicators
+- **Heavy Trading Above Current**: Suggests market expects higher prices
+- **Heavy Trading Below Current**: Suggests market expects lower prices
+- **Balanced Distribution**: Uncertain market sentiment
+
 ## Output Format
 
 Provide analysis in the following table format:
 
-| Selection | Current Price | Avg Back | Avg Lay | Volume Ratio (B:L) | Prediction | Confidence | Expected Range |
-|-----------|---------------|----------|---------|-------------------|------------|------------|----------------|
-| Horse Name | 5.2 | 5.34 | 5.48 | 1.3:1 | Drift ⬆️ | 78% 🟡 | 5.5-5.8 |
+| Selection | Current | Avg Back | Avg Lay | VWAP | Vol Ratio (B:L) | Vol Conc | Prediction | Confidence | Expected Range |
+|-----------|---------|----------|---------|------|------------------|----------|------------|------------|----------------|
+| Horse Name | 5.2 | 5.34 | 5.48 | 5.41 | 1.3:1 | 68% | Drift ⬆️ | 78% 🟡 | 5.5-5.8 |
+
+**Column Explanations:**
+- **VWAP**: Volume-Weighted Average Price from complete trading history
+- **Vol Conc**: Volume Concentration - % of total volume in top 3 traded prices
+- **Vol Ratio (B:L)**: Historical backing:laying volume ratio
 
 ## Prediction Symbols
 - ⬆️ Drift (price increase)
@@ -89,32 +139,39 @@ Provide analysis in the following table format:
 ### Confidence Calculation (0-100%):
 Calculate confidence score by summing points from each factor:
 
-#### Historical Volume Signal Strength (0-30 points):
-- **Extreme imbalance** (>2:1 ratio): 30 points
-- **Strong imbalance** (1.5-2:1 ratio): 20 points  
+#### Historical Volume Signal Strength (0-25 points):
+- **Extreme imbalance** (>2:1 ratio): 25 points
+- **Strong imbalance** (1.5-2:1 ratio): 18 points  
 - **Moderate imbalance** (1.2-1.5:1 ratio): 10 points
 - **Balanced** (0.8-1.2:1 ratio): 0 points
 
-#### Price Deviation Signal (0-25 points):
-- **>20% deviation** from historical average: 25 points
+#### Price Deviation Signal (0-20 points):
+- **>20% deviation** from historical average: 20 points
 - **10-20% deviation**: 15 points
 - **5-10% deviation**: 8 points
 - **<5% deviation**: 0 points
 
-#### Offered Prices Signal Strength (0-25 points):
-- **Extreme offered imbalance** (>3:1 ratio): 25 points
-- **Strong offered imbalance** (2-3:1 ratio): 18 points
-- **Moderate offered imbalance** (1.5-2:1 ratio): 12 points
+#### Traded Prices Distribution Analysis (0-20 points):
+- **Strong concentration** (>60% volume in top 3 prices): 20 points
+- **Moderate concentration** (40-60% volume in top 3 prices): 15 points
+- **Balanced distribution** (20-40% volume in top 3 prices): 10 points
+- **Wide distribution** (<20% volume in top 3 prices): 5 points
+
+#### Offered Prices Signal Strength (0-20 points):
+- **Extreme offered imbalance** (>3:1 ratio): 20 points
+- **Strong offered imbalance** (2-3:1 ratio): 15 points
+- **Moderate offered imbalance** (1.5-2:1 ratio): 10 points
 - **Balanced offered prices** (0.8-1.5:1 ratio): 0 points
 
-#### Signal Alignment (0-20 points):
-- **All signals align** (historical + current + offered): 20 points
-- **Two signals align**: 12 points
-- **One signal only**: 5 points
-- **Conflicting signals**: -10 points
+#### Signal Alignment (0-15 points):
+- **All signals align** (historical + current + offered + traded distribution): 15 points
+- **Three signals align**: 12 points
+- **Two signals align**: 8 points
+- **One signal only**: 4 points
+- **Conflicting signals**: -5 points
 
 #### Volume Liquidity Adjustment (Multiplier):
-**Total Traded Volume** = averageBackTraded.volume + averageLayTraded.volume
+**Total Traded Volume** = Sum of all volumes in tradedPrices array
 
 **Volume Adjustment Factor:**
 - **High Volume** (>1000 total): 1.0 (no adjustment)
@@ -142,32 +199,41 @@ Calculate confidence score by summing points from each factor:
 1. **Retrieve WeightOfMoneyData**: Use GetDataContextForBetfairMarket with:
    - dataContextName: "WeightOfMoneyData"
    - marketId: [from Step 1]
-2. **Parse data structure**: Extract average traded prices, volumes, and offered prices for all selections
+2. **Parse data structure**: Extract for all selections:
+   - Average traded prices and volumes (averageBackTraded, averageLayTraded)
+   - Complete trading history (tradedPrices array with price and volume pairs)
+   - Current offered prices ladder (offeredPrices with betType, price, volume)
 
 ### Step 3: Data Analysis Process
 1. Calculate volume ratios (backing:laying) from historical traded data
-2. Compare current price to historical averages for each selection
-3. Assess price deviation percentage for each selection
-4. Analyze offered prices ladder for each selection:
+2. **Calculate Volume-Weighted Average Price (VWAP)** for each selection from tradedPrices
+3. **Analyze trading volume distribution**:
+   - Identify price levels with highest volumes
+   - Calculate volume concentration in top 3 traded prices
+   - Determine if trading is concentrated or distributed
+4. Compare current price to historical averages and VWAP for each selection
+5. Assess price deviation percentage for each selection
+6. Analyze offered prices ladder for each selection:
    - Sum BetType 2 volumes = Available backing liquidity (indicates laying pressure)
    - Sum BetType 1 volumes = Available laying liquidity (indicates backing pressure)
-5. Calculate base confidence score using the numerical system above
-6. **Calculate total traded volume** (averageBackTraded.volume + averageLayTraded.volume)
-7. **Apply volume liquidity adjustment** to reduce confidence for low-volume selections
+7. Calculate base confidence score using the updated numerical system
+8. **Calculate total traded volume** from complete tradedPrices array
+9. **Apply volume liquidity adjustment** to reduce confidence for low-volume selections
 
 ### Step 4: Market Analysis and Predictions
-8. Determine movement direction and strength for each selection based on:
-   - Historical volume imbalances
-   - Current price vs averages
-   - Offered liquidity imbalances
-9. Assign final confidence percentage and category for each selection
-10. Provide expected price range for next significant move for each selection
+10. Determine movement direction and strength for each selection based on:
+    - Historical volume imbalances
+    - Current price vs averages and VWAP
+    - Trading volume distribution patterns
+    - Offered liquidity imbalances
+11. Assign final confidence percentage and category for each selection
+12. Provide expected price range for next significant move for each selection
 
 ### Step 5: Generate Analysis Output
-11. Create comprehensive predictions table with all selections
-12. Identify and highlight key trading opportunities
-13. Provide market dynamics summary
-14. Include risk assessment for identified opportunities
+13. Create comprehensive predictions table with all selections including VWAP and volume concentration
+14. Identify and highlight key trading opportunities
+15. Provide market dynamics summary including volume distribution insights
+16. Include risk assessment for identified opportunities
 
 ## Usage Instructions
 
