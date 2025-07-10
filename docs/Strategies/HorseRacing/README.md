@@ -19,6 +19,7 @@ This directory contains specialized trading strategies designed for horse racing
 - **[Horse Racing Jockey Strategy](Horse-Racing-Jockey-Strategy.md)** - Jockey performance-based betting
 
 #### Market Analysis & Data
+- **[Close By Position Difference Bot Trigger R1](CloseByPositionDifferenceBotTrigger_R1.md)** - Position difference-based trigger
 - **[Race Status](Race-Status.md)** - Real-time race status monitoring
 - **[Horse Racing Data Statistics](Horse-Racing-Data-Statistics.md)** - Comprehensive data analysis
 - **[Horse Racing Sportinglife Strategy](Horse-Racing-Sportinglife-Strategy.md)** - Sportinglife data integration

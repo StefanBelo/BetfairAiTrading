@@ -123,6 +123,11 @@ This directory contains community posts, articles, and real-world examples showc
 - Discusses the pros and cons of GitHub Copilot Pro, Claude, DeepSeek, and Gemini.
 - **Best for:** Understanding the current landscape of AI development tools and workflows.
 
+### [Reddit Post: My Experience with Gemini and F#](RedditPost_gemini_fsharp_experience.md)
+**Community Discussion**
+- Shares a user's experience using Gemini for F# development.
+- **Best for:** F# developers interested in AI-assisted coding.
+
 ### [CloseByPositionDifferenceBotTrigger Strategy Documentation](../Strategies/HorseRacing/CloseByPositionDifferenceBotTrigger_R1.md)
 **Automated Horse Racing Strategy**
 - Detailed explanation of the CloseByPositionDifferenceBotTrigger strategy

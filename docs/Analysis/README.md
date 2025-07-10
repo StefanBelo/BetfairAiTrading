@@ -17,6 +17,9 @@ This folder contains detailed analysis reports from AI-driven betting strategies
 ### Weight of Money Analysis
 - **[WeightOfMoneyAnalysis_TipperaryRace_03July2025.md](WeightOfMoneyAnalysis_TipperaryRace_03July2025.md)** - Comprehensive weight of money analysis for Tipperary 2m7f Handicap Hurdle with price movement predictions, confidence scoring, and trading opportunities identification
 
+### York Sprint Handicap Strategy
+- **[YorkSprintHandicapStrategy_28June2025.md](YorkSprintHandicapStrategy_28June2025.md)** - Analysis of the York Sprint Handicap.
+
 ## Analysis Methodology
 
 The reports in this folder analyze real betting strategy performance using:
