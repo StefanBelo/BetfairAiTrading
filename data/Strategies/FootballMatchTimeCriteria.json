@@ -1,0 +1,16 @@
+{
+    "BetEvents": [
+        "Football.betevents"
+    ],
+    "Scripts": [
+    ],
+    "Strategies": [
+        "Football Strategy"
+    ],
+    "Execute": {
+        "BetEvent": "Football",
+        "StrategyOrScriptName": "Football Strategy",
+        "TimeSpanInSeconds": -30,
+        "IsConsoleScript": false
+    }
+}

@@ -13,9 +13,8 @@ Instructions:
    - Make no preliminary reports during data collection
 
 2. **Multi-Context Data Collection**
-   - Using tool: GetDataContextForBetfairMarket retrieves comprehensive data context for a specific market in BfexplorerApp
-   - Retrieve the data context with the name 'MarketSelectionsTradedPricesData' for the betfair market using tool: GetDataContextForBetfairMarket
-   - Retrieve the data context with the name 'RacingpostDataForHorsesInfo' for the betfair market using tool: GetDataContextForBetfairMarket
+   - Retrieve all required data contexts for the betfair market in a single call using tool: GetAllDataContextForBetfairMarket
+   - Use the following data context names: 'MarketSelectionsTradedPricesData', 'RacingpostDataForHorsesInfo'
    - Focus on 'tradedPricesData' field from trading context and 'horsesData' field from racing post context
    - Do not make any reports during data collection phase
 

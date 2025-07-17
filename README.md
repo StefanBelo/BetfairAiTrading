@@ -88,6 +88,7 @@ Pre-built strategies for multiple sports:
 - Over/Under 2.5 Goals analysis
 - In-play trading strategies
 - Match outcome predictions
+- **[Match Time Criteria Strategy](docs/Strategies/Football/MatchTimeCriteria.md)** - Strategy execution based on match time and live parameters
 
 #### Horse Racing 🐎
 - **[AI Agent Betting Guide](docs/Strategies/HorseRacing/HowToUseAIAgentForHorseRacingBetting.md)** - Complete beginner's guide

@@ -8,17 +8,21 @@ First, identify the active horse racing market using the `GetActiveBetfairMarket
 
 ## Step 2: Retrieve Detailed Horse Information
 
-With the `marketId` from the previous step, use the `GetDataContextForBetfairMarket` tool with the `dataContextName` set to `'RacingpostDataForHorsesInfo'`. This will return detailed information for each horse, including their official rating, Racing Post rating, and descriptions of their last races.
+With the `marketId` from the previous step, use the `GetAllDataContextForBetfairMarket` tool with `dataContextNames` set to `['RacingpostDataForHorsesInfo']`. This will return detailed information for each horse in the `racingpostHorseData` field, including:
+  - `lastRacesDescriptions`: Array of recent races, each with `beatenDistance`, `lastRunInDays`, `position`, and `raceDescription`.
+  - `officialRating`: Official handicap rating.
+  - `rpRating`: Racing Post rating.
 
 ## Step 3: Analyze Last Races Data
 
-For each horse, perform a semantic analysis of the `lastRacesDescriptions` data. The goal is to quantify the horse's recent performance. Consider the following factors from the text descriptions:
+For each horse, perform a semantic analysis of the `lastRacesDescriptions` array in the `racingpostHorseData` field. The goal is to quantify the horse's recent performance. Consider the following factors from the structured data:
 
-*   **Finishing Position:** Winning (1st), placing (2nd, 3rd), or unplaced.
-*   **Beaten Distance:** How far the horse was from the winner. A smaller distance is better.
-*   **Semantic Race Analysis:** For each race, perform a semantic analysis of the `raceDescription`. Determine the overall sentiment (positive, negative, or neutral) and extract the key factors contributing to the horse's performance. Instead of relying on specific keywords, understand the narrative of the race. For example, a description like "finished strongly after a slow start" indicates a positive trajectory, while "faded in the final furlong" suggests a negative one.
-*   **Jockey/Trainer Comments:** Note any specific comments like "jockey said gelding ran too free" or "denied a clear run". These provide crucial context.
-*   **Recency:** Give more weight to more recent races (smaller `lastRunInDays`).
+*   **Finishing Position (`position`)**: Winning (1st), placing (2nd, 3rd), or unplaced.
+*   **Beaten Distance (`beatenDistance`)**: How far the horse was from the winner. A smaller distance is better.
+*   **Semantic Race Analysis (`raceDescription`)**: For each race, analyze the narrative for positive, negative, or neutral sentiment and extract key performance factors. For example, "finished strongly after a slow start" indicates a positive trajectory, while "faded in the final furlong" suggests a negative one.
+*   **Jockey/Trainer Comments**: Note any specific comments in the `raceDescription` (e.g., "jockey said gelding ran too free" or "denied a clear run").
+*   **Recency (`lastRunInDays`)**: Give more weight to more recent races (smaller value).
+*   **Official Ratings**: Use `officialRating` and `rpRating` for additional context in your assessment.
 
 ## Step 4: Calculate Implied Probability and Expected Value (EV)
 

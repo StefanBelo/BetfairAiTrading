@@ -68,7 +68,7 @@ Instructions:
      - Consistent competitive performances
    - Calculate combined win probability of the three selections
    - Assess Dutch betting viability and profit potential
-   - **CRITICAL**: Dutch betting execution will ONLY proceed if combined win probability >= 70%
+   - **CRITICAL**: Dutch betting execution will ONLY proceed if combined win probability >= 60%
 
 7. **Silent Analysis Phase**
    - Complete all analysis without generating interim reports
@@ -131,7 +131,7 @@ Instructions:
 
 9. **Automated Dutch Betting Execution**
    - After completing the analysis and identifying the best three horses
-   - **CONDITIONAL EXECUTION**: Only proceed with betting if combined win probability >= 70%
+   - **CONDITIONAL EXECUTION**: Only proceed with betting if combined win probability >= 60%
    - If threshold met:
      - Activate the selected market using the first horse's selection ID
      - Execute the "Dutch to profit 10 Euro" strategy on selected horses using tool: ExecuteBfexplorerStrategySettingsOnSelections
@@ -139,14 +139,14 @@ Instructions:
      - Confirm strategy execution
    - If threshold not met:
      - Report analysis results without executing bets
-     - Clearly state why Dutch betting was not executed (combined probability < 70%)
+     - Clearly state why Dutch betting was not executed (combined probability < 60%)
 
-Format: Present the final analysis in clear, actionable format with emphasis on the three best horses for Dutch betting. Only execute the Dutch betting strategy automatically if the combined win probability >= 70%.
+Format: Present the final analysis in clear, actionable format with emphasis on the three best horses for Dutch betting. Only execute the Dutch betting strategy automatically if the combined win probability >= 60%.
 
 Selection Criteria Priority:
 1. Combined positive Expected Value or highest EV horses
 2. Strong semantic form indicators for selections
-3. Combined win probability must be >= 70% for execution
+3. Combined win probability must be >= 60% for execution
 4. Manageable risk profile with diversification benefits
 5. Clear competitive advantages based on recent performances
 6. Good market coverage without over-extending
@@ -165,13 +165,13 @@ Note: This analysis relies purely on qualitative interpretation of racing narrat
 2. **Expected Output:**
    - Complete EV analysis for all horses in race
    - Clear identification of best three horses for Dutch betting
-   - Conditional execution of "Dutch to profit 10 Euro" strategy (only if combined probability >= 70%)
+   - Conditional execution of "Dutch to profit 10 Euro" strategy (only if combined probability >= 60%)
    - Confirmation of Dutch bet placement or explanation of why bets were not placed
 
 3. **Automated Process:**
    - Silent data collection and analysis phase
    - Comprehensive final report with three best selections
-   - Conditional Dutch bet execution (only if combined probability >= 70%)
+   - Conditional Dutch bet execution (only if combined probability >= 60%)
    - No user intervention required during process
 
 ## Dutch Selection Framework
@@ -181,7 +181,7 @@ The analysis will automatically select three horses that best combine:
 **Primary Criteria:**
 - **Positive Expected Value** - Mathematical edge in the bets
 - **Strong Form Indicators** - Consistent competitive performances
-- **High Combined Probability** - Combined win probability must be >= 70% for execution
+- **High Combined Probability** - Combined win probability must be >= 60% for execution
 
 **Secondary Criteria:**
 - **Recent Performance Trends** - Improving or consistent form
@@ -199,7 +199,7 @@ The analysis will automatically select three horses that best combine:
 
 1. Complete comprehensive EV analysis (silent phase)
 2. Generate final report with best three horses selection
-3. Check if combined win probability >= 70%
+3. Check if combined win probability >= 60%
 4. If threshold met: Activate selected market and execute "Dutch to profit 10 Euro" strategy
 5. If threshold not met: Report analysis without placing bets and explain why
 6. Confirm execution status (successful bet placement or threshold not met)
@@ -221,4 +221,4 @@ The analysis will automatically select three horses that best combine:
 - Reduced emotional attachment to single selection
 - Mathematical edge through multiple value bets
 
-This prompt ensures thorough analysis while maintaining focus on identifying the three best opportunities available in the current market. Dutch betting execution occurs automatically only when the combined win probability meets or exceeds the 70% threshold, ensuring high-confidence betting decisions.
+This prompt ensures thorough analysis while maintaining focus on identifying the three best opportunities available in the current market. Dutch betting execution occurs automatically only when the combined win probability meets or exceeds the 60% threshold, ensuring high-confidence betting decisions.

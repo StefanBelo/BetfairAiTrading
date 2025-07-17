@@ -8,6 +8,7 @@ This directory contains Bfexplorer strategies specifically designed for football
 - **[Football Strategy](Football-Strategy.md)** - Comprehensive football strategy with match time, score, and score difference triggers
 - **[Football Draw Strategy](Football-Draw-Strategy.md)** - Specialized strategy for managing draw positions based on match time
 - **[Football Statarea Strategy](Football-Statarea-Strategy.md)** - Strategy that integrates with Statarea tipster data for informed betting decisions
+- **[Match Time Criteria](MatchTimeCriteria.md)** - Football strategy configuration using match time and criteria parameters
 
 ### Legacy Trading Strategies
 - **[Football Betfair Trading Strategy: Over/Under Goals Market](TradeOverUnderGoals.md)** - In-play Over/Under 2.5 goals trading approach
@@ -42,15 +43,10 @@ This directory contains Bfexplorer strategies specifically designed for football
 3. **Test in Demo Mode:** Validate strategies with paper trading before live implementation
 4. **Monitor and Optimize:** Track performance and adjust parameters based on results
 
-## Related Resources
-
-- **[AI Analysis Prompts](../../Prompts/README.md)** - AI-powered market analysis
-- **[Testing Guidelines](../../TestingStrategy.md)** - Safe strategy validation methods
-- **[Automation Documentation](../../Automation/README.md)** - Advanced automation techniques
-
 ## Key Benefits
 
 - **Real-Time Execution:** Immediate response to market conditions
 - **Systematic Approach:** Removes emotional decision-making
 - **Scalable Implementation:** Can be applied across multiple matches simultaneously
+- **Risk Management:** Built-in safeguards and position limits
 - **Risk Management:** Built-in safeguards and position limits

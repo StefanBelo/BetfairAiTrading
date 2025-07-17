@@ -16,6 +16,10 @@ cd E:\Examples\CSharp\MCP\csharp-sdk-main\samples\EverythingServer
 
 npx @modelcontextprotocol/inspector dotnet run
 
+Ollama 
+
+uvx mcpo --port 10044 --server-type "sse" -- http://localhost:10043/sse
+
 MODELS
 
 https://github.com/features/models

@@ -1,0 +1,765 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+        "title": "Bfexplorer",
+        "description": "Bfexplorer MCP Server",
+        "version": "3.34.704.30471"
+    },
+    "paths": {
+        "/GetAllBfexplorerStrategyTemplates": {
+            "post": {
+                "summary": "Getallbfexplorerstrategytemplates",
+                "description": "Retrieves the list of available strategy templates in Bfexplorer.",
+                "operationId": "tool_GetAllBfexplorerStrategyTemplates_post",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/SetAIAgentDataContextForBetfairMarket": {
+            "post": {
+                "summary": "Setaiagentdatacontextforbetfairmarket",
+                "description": "Sets the AI agent's data context for the Betfair market in Bfexplorer.",
+                "operationId": "tool_SetAIAgentDataContextForBetfairMarket_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/SetAIAgentDataContextForBetfairMarket_form_model"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "Response Tool Setaiagentdatacontextforbetfairmarket Post"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/ExecuteBfexplorerStrategySettings": {
+            "post": {
+                "summary": "Executebfexplorerstrategysettings",
+                "description": "Execute the strategy on the selected market and selection in Bfexplorer.",
+                "operationId": "tool_ExecuteBfexplorerStrategySettings_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ExecuteBfexplorerStrategySettings_form_model"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "Response Tool Executebfexplorerstrategysettings Post"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetAllBfexplorerStrategySettings": {
+            "post": {
+                "summary": "Getallbfexplorerstrategysettings",
+                "description": "Retrieves the list of available strategy settings in Bfexplorer.",
+                "operationId": "tool_GetAllBfexplorerStrategySettings_post",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetBetfairMonitoredMarkets": {
+            "post": {
+                "summary": "Getbetfairmonitoredmarkets",
+                "description": "Retrieves a list of markets being monitored in Betfair through Bfexplorer.",
+                "operationId": "tool_GetBetfairMonitoredMarkets_post",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetBfexplorerStrategySetting": {
+            "post": {
+                "summary": "Getbfexplorerstrategysetting",
+                "description": "Retrieves the strategy settings in Bfexplorer.",
+                "operationId": "tool_GetBfexplorerStrategySetting_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/GetBfexplorerStrategySetting_form_model"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "Response Tool Getbfexplorerstrategysetting Post"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetDataContextForBetfairMarket": {
+            "post": {
+                "summary": "Getdatacontextforbetfairmarket",
+                "description": "Retrieves the data context for the betfair market in Bfexplorer.",
+                "operationId": "tool_GetDataContextForBetfairMarket_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/GetDataContextForBetfairMarket_form_model"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "Response Tool Getdatacontextforbetfairmarket Post"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/ExecuteBfexplorerStrategySettingsWithParameters": {
+            "post": {
+                "summary": "Executebfexplorerstrategysettingswithparameters",
+                "description": "Execute the strategy on the selected market and selection using the specified parameters in JSON format in Bfexplorer",
+                "operationId": "tool_ExecuteBfexplorerStrategySettingsWithParameters_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ExecuteBfexplorerStrategySettingsWithParameters_form_model"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "Response Tool Executebfexplorerstrategysettingswithparameters Post"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/ExecuteBfexplorerStrategySettingsOnSelections": {
+            "post": {
+                "summary": "Executebfexplorerstrategysettingsonselections",
+                "description": "Execute the strategy on the selected market and the selections in Bfexplorer.",
+                "operationId": "tool_ExecuteBfexplorerStrategySettingsOnSelections_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ExecuteBfexplorerStrategySettingsOnSelections_form_model"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "Response Tool Executebfexplorerstrategysettingsonselections Post"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetDataContextForBetfairMarketSelection": {
+            "post": {
+                "summary": "Getdatacontextforbetfairmarketselection",
+                "description": "Retrieves the data context for the betfair market selection in Bfexplorer.",
+                "operationId": "tool_GetDataContextForBetfairMarketSelection_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/GetDataContextForBetfairMarketSelection_form_model"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "Response Tool Getdatacontextforbetfairmarketselection Post"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetAIAgentDataContextFeedback": {
+            "post": {
+                "summary": "Getaiagentdatacontextfeedback",
+                "description": "Retrieves the AI agent's data context feedback.",
+                "operationId": "tool_GetAIAgentDataContextFeedback_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/GetAIAgentDataContextFeedback_form_model"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "Response Tool Getaiagentdatacontextfeedback Post"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetAllBetResults": {
+            "post": {
+                "summary": "Getallbetresults",
+                "description": "Retrieves all bet results from closed betfair markets.",
+                "operationId": "tool_GetAllBetResults_post",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/ActivateBetfairMarketSelection": {
+            "post": {
+                "summary": "Activatebetfairmarketselection",
+                "description": "Activate both the market and its selection in Bfexplorer.",
+                "operationId": "tool_ActivateBetfairMarketSelection_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ActivateBetfairMarketSelection_form_model"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "Response Tool Activatebetfairmarketselection Post"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetAllDataContextForBetfairMarket": {
+            "post": {
+                "summary": "Getalldatacontextforbetfairmarket",
+                "description": "Retrieves all data context for the betfair market in Bfexplorer.",
+                "operationId": "tool_GetAllDataContextForBetfairMarket_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/GetAllDataContextForBetfairMarket_form_model"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "Response Tool Getalldatacontextforbetfairmarket Post"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetActiveBetfairMarket": {
+            "post": {
+                "summary": "Getactivebetfairmarket",
+                "description": "Retrieves the currently active betfair market being monitored in Bfexplorer.",
+                "operationId": "tool_GetActiveBetfairMarket_post",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "ActivateBetfairMarketSelection_form_model": {
+                "properties": {
+                    "marketId": {
+                        "type": "string",
+                        "title": "Marketid",
+                        "description": "The betfair market id."
+                    },
+                    "selectionId": {
+                        "type": "string",
+                        "title": "Selectionid",
+                        "description": "The betfair selection id."
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "marketId",
+                    "selectionId"
+                ],
+                "title": "ActivateBetfairMarketSelection_form_model"
+            },
+            "ExecuteBfexplorerStrategySettingsOnSelections_form_model": {
+                "properties": {
+                    "strategyName": {
+                        "type": "string",
+                        "title": "Strategyname",
+                        "description": "The strategy name."
+                    },
+                    "marketId": {
+                        "type": "string",
+                        "title": "Marketid",
+                        "description": "The betfair market id."
+                    },
+                    "selectionIds": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Selectionids",
+                        "description": "The array of betfair selection ids."
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "strategyName",
+                    "marketId",
+                    "selectionIds"
+                ],
+                "title": "ExecuteBfexplorerStrategySettingsOnSelections_form_model"
+            },
+            "ExecuteBfexplorerStrategySettingsWithParameters_form_model": {
+                "properties": {
+                    "strategyName": {
+                        "type": "string",
+                        "title": "Strategyname",
+                        "description": "The strategy name."
+                    },
+                    "marketId": {
+                        "type": "string",
+                        "title": "Marketid",
+                        "description": "The betfair market id."
+                    },
+                    "selectionId": {
+                        "type": "string",
+                        "title": "Selectionid",
+                        "description": "The betfair selection id."
+                    },
+                    "parameters": {
+                        "type": "string",
+                        "title": "Parameters",
+                        "description": "The specified parameters for the executed strategy are in JSON format."
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "strategyName",
+                    "marketId",
+                    "selectionId",
+                    "parameters"
+                ],
+                "title": "ExecuteBfexplorerStrategySettingsWithParameters_form_model"
+            },
+            "ExecuteBfexplorerStrategySettings_form_model": {
+                "properties": {
+                    "strategyName": {
+                        "type": "string",
+                        "title": "Strategyname",
+                        "description": "The strategy name."
+                    },
+                    "marketId": {
+                        "type": "string",
+                        "title": "Marketid",
+                        "description": "The betfair market id."
+                    },
+                    "selectionId": {
+                        "type": "string",
+                        "title": "Selectionid",
+                        "description": "The betfair selection id."
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "strategyName",
+                    "marketId",
+                    "selectionId"
+                ],
+                "title": "ExecuteBfexplorerStrategySettings_form_model"
+            },
+            "GetAIAgentDataContextFeedback_form_model": {
+                "properties": {
+                    "dataContextName": {
+                        "type": "string",
+                        "title": "Datacontextname",
+                        "description": "The data context name."
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "dataContextName"
+                ],
+                "title": "GetAIAgentDataContextFeedback_form_model"
+            },
+            "GetAllDataContextForBetfairMarket_form_model": {
+                "properties": {
+                    "dataContextNames": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Datacontextnames",
+                        "description": "All data context names."
+                    },
+                    "marketId": {
+                        "type": "string",
+                        "title": "Marketid",
+                        "description": "The betfair market id."
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "dataContextNames",
+                    "marketId"
+                ],
+                "title": "GetAllDataContextForBetfairMarket_form_model"
+            },
+            "GetBfexplorerStrategySetting_form_model": {
+                "properties": {
+                    "strategyName": {
+                        "type": "string",
+                        "title": "Strategyname",
+                        "description": "The strategy name."
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "strategyName"
+                ],
+                "title": "GetBfexplorerStrategySetting_form_model"
+            },
+            "GetDataContextForBetfairMarketSelection_form_model": {
+                "properties": {
+                    "dataContextName": {
+                        "type": "string",
+                        "title": "Datacontextname",
+                        "description": "The data context name."
+                    },
+                    "marketId": {
+                        "type": "string",
+                        "title": "Marketid",
+                        "description": "The betfair market id."
+                    },
+                    "selectionId": {
+                        "type": "string",
+                        "title": "Selectionid",
+                        "description": "The betfair selection id."
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "dataContextName",
+                    "marketId",
+                    "selectionId"
+                ],
+                "title": "GetDataContextForBetfairMarketSelection_form_model"
+            },
+            "GetDataContextForBetfairMarket_form_model": {
+                "properties": {
+                    "dataContextName": {
+                        "type": "string",
+                        "title": "Datacontextname",
+                        "description": "The data context name."
+                    },
+                    "marketId": {
+                        "type": "string",
+                        "title": "Marketid",
+                        "description": "The betfair market id."
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "dataContextName",
+                    "marketId"
+                ],
+                "title": "GetDataContextForBetfairMarket_form_model"
+            },
+            "HTTPValidationError": {
+                "properties": {
+                    "detail": {
+                        "items": {
+                            "$ref": "#/components/schemas/ValidationError"
+                        },
+                        "type": "array",
+                        "title": "Detail"
+                    }
+                },
+                "type": "object",
+                "title": "HTTPValidationError"
+            },
+            "SetAIAgentDataContextForBetfairMarket_form_model": {
+                "properties": {
+                    "dataContextName": {
+                        "type": "string",
+                        "title": "Datacontextname",
+                        "description": "The data context name."
+                    },
+                    "jsonData": {
+                        "type": "string",
+                        "title": "Jsondata",
+                        "description": "The json data generated by AI Agent."
+                    },
+                    "marketId": {
+                        "type": "string",
+                        "title": "Marketid",
+                        "description": "The betfair market id."
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "dataContextName",
+                    "jsonData",
+                    "marketId"
+                ],
+                "title": "SetAIAgentDataContextForBetfairMarket_form_model"
+            },
+            "ValidationError": {
+                "properties": {
+                    "loc": {
+                        "items": {
+                            "anyOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "integer"
+                                }
+                            ]
+                        },
+                        "type": "array",
+                        "title": "Location"
+                    },
+                    "msg": {
+                        "type": "string",
+                        "title": "Message"
+                    },
+                    "type": {
+                        "type": "string",
+                        "title": "Error Type"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "loc",
+                    "msg",
+                    "type"
+                ],
+                "title": "ValidationError"
+            }
+        }
+    }
+}
