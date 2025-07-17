@@ -51,7 +51,3 @@ This will execute the strategy when the match status is `SecondHalfKickOff` and 
 - Criteria can be combined using logical operators (`And`, `Or`).
 - All parameters are updated live as the match progresses.
 - Make sure your criteria match the expected parameter values for correct triggering.
-
----
-
-For more details, refer to the Bfexplorer documentation or contact support.
