@@ -15,6 +15,14 @@ This directory contains community posts, articles, and real-world examples showc
 
 ## Available Posts
 
+### [Horse Racing EV Analysis R2 - Timeform Edition: Professional AI Racing Strategy](Post_TimeformEVAnalysisR2Strategy.md)
+**Professional Timeform Integration**
+- Revolutionary AI strategy combining Timeform's 75+ years of racing expertise with Expected Value analysis
+- 200-point weighted scoring system using professional star ratings and form indicators
+- Strict quality controls: +10% EV requirement, 3+ Timeform stars, multiple form criteria
+- Advanced risk management with quality multipliers and protective adjustments
+- **Best for:** Professional-grade racing analysis with systematic betting criteria and automated execution
+
 ### [AI Agent Horse Racing Analysis: The Power of Backtesting & Continuous Learning](Post_AIAgentBacktestingAndLearning.md)
 **AI Learning & Improvement**
 - Real-world example of AI agent analyzing Royal Ascot race

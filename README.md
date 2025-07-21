@@ -1,6 +1,15 @@
 # 🚀 Betfair AI Trading Community
 
-**Welcome to Betfair AI Trading, the ultimate community for Betfair enthusiasts, traders, and tech-savvy bettors!**
+**Welcome to Betfair AI Trading, the ult### 📊 Analysis Reports
+
+**[📖 Complete Analysis Index](docs/Analysis/README.md)**
+
+Performance analysis and strategy evaluation:
+- **[Horse Racing EV Analysis Results - June 22, 2025](docs/Analysis/HorseRacingEVAnalysisResults_22June2025.md)** - Comprehensive analysis of AI-driven Expected Value betting strategy performance across 12 races with strategic recommendations
+- **[Horse Racing Strategy R1 Results - June 24, 2025](docs/Analysis/HorseRacingStrategyR1Results_24June2025.md)** - Exceptional performance with 83.3% strike rate across 6 selections and 115-150% ROI
+- **[Horse Racing Strategy R2 Results - June 25, 2025](docs/Analysis/HorseRacingStrategyR2Results_25June2025.md)** - Strong positive results with 77.6% ROI across 21 races and comprehensive performance metrics
+- **[York Sprint Handicap Strategy - June 28, 2025](docs/Analysis/YorkSprintHandicapStrategy_28June2025.md)** - Specialized handicap race analysis and strategy performance
+- **[Weight of Money Analysis - Tipperary Race - July 3, 2025](docs/Analysis/WeightOfMoneyAnalysis_TipperaryRace_03July2025.md)** - Advanced market sentiment and money flow analysiscommunity for Betfair enthusiasts, traders, and tech-savvy bettors!**
 
 Whether you're new to the Betfair Exchange or a seasoned trader, this is your hub to explore, share, and master betting and trading strategies powered by **machine learning**, **artificial intelligence**, and **advanced statistical analysis**.
 
@@ -45,6 +54,9 @@ Ready-to-use AI prompts for various sports and analysis types:
 - **[Base Form Data Analysis](docs/Prompts/HorseRacingBaseFormDataAnalysis.md)** - Core betting metrics analysis
 - **[Combined EV Analysis](docs/Prompts/HorseRacingCombinedEVAnalysis.md)** - Dual methodology with prediction scores
 - **[Expected Value Analysis](docs/Prompts/HorseRacingExpectedValueAnalysis.md)** - Semantic analysis approach
+- **[Expected Value Analysis R2 - Timeform Edition](docs/Prompts/HorseRacingEVAnalysisR2.md)** - Professional Timeform-based analysis system with star ratings and comprehensive quality indicators
+- **[Strategy R1 - High Precision Selection](docs/Prompts/HorseRacingStrategyR1.md)** - Multi-component analysis with 83.3% strike rate and 115-150% ROI
+- **[Strategy R2 - Enhanced Multi-Context Analysis](docs/Prompts/HorseRacingStrategyR2.md)** - Comprehensive market coverage system with optimized thresholds and enhanced decision logic
 - **[Conservative Betting Strategy](docs/Prompts/HorseRacingEVAnalysisWithConservativeBetting.md)** - Risk-managed favorite evaluation
 - **[Conservative Trading Data Strategy](docs/Prompts/HorseRacingEVAnalysisWithConservativeTradingData.md)** - Enhanced conservative betting with trading data
 - **[Dutch Betting Strategy](docs/Prompts/HorseRacingEVAnalysisWithDutchBetting.md)** - Risk diversification across multiple selections
@@ -59,6 +71,7 @@ Ready-to-use AI prompts for various sports and analysis types:
 - **[BFExplorer MCP Integration](docs/Prompts/BfexplorerMCPIntegrationSystemPrompt.md)** - System integration guide
 - **[BFExplorer Strategy Expert](docs/Prompts/BfexplorerStrategyExpertPrompt.md)** - AI assistant for strategy selection and configuration
 - **[Weight of Money Strategy](docs/Prompts/WeightOfMoneyStrategy.md)** - Advanced market sentiment analysis with automated strategy execution based on weight of money indicators
+- **[Weight of Money Strategy R1](docs/Prompts/WeightOfMoneyStrategyR1.md)** - Enhanced silent execution weight of money strategy with advanced market intelligence and optimized thresholds
 
 #### Betfair Trading Strategy Execution Prompt
 - **[Betfair Trading Strategy Execution Prompt](docs/Prompts/BetfairTradingStrategyExecutionPrompt.md)** - Step-by-step adaptive trading analysis and execution for Betfair Exchange markets. Includes market analysis, selection identification, parameter optimization, and automated strategy execution logic.

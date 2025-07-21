@@ -48,7 +48,7 @@ The final output should be a ranked list of horses by their EV, from highest to 
 
 ## Step 6: Execute Bet
 
-Identify the horse with the highest positive EV. If a horse with a positive EV exists **and** its Estimated "True" Probability is greater than 20%, execute a bet on that horse using the `ExecuteBfexplorerStrategySettings` tool. Use the following parameters:
+Identify the horse with the highest positive EV. If a horse with a positive EV exists **and** its Estimated "True" Probability is greater than 10%, execute a bet on that horse using the `ExecuteBfexplorerStrategySettings` tool. Use the following parameters:
 
 *   `marketId`: The ID of the active market.
 *   `selectionId`: The ID of the horse with the highest positive EV.
