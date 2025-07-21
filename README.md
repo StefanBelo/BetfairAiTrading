@@ -46,15 +46,20 @@ Our community is dedicated to bridging the gap between traditional sports bettin
 - **[AI Agent Integration to BFExplorer](docs/Automation/AIAgentIntegrationToBfexplorerApp.md)** - Two approaches for automated betting strategies
 - **[Interactive Trading Charts](docs/Automation/BuildingInteractiveTradingCharts.md)** - Visualize market data like a pro
 
+
+### 📑 Research & Market Insights
+
+- **[Betfair SP (Starting Price) Research - Horse Racing Trading](docs/Research/BetfairSP.md)** - In-depth overview of Betfair SP, its efficiency, market impact, and how professional traders use or avoid it. Includes strategies, mathematical models, and key takeaways for systematic and discretionary traders.
+
 ### 🧠 AI Analysis Prompts
 
 Ready-to-use AI prompts for various sports and analysis types:
 
-#### Horse Racing
 - **[Base Form Data Analysis](docs/Prompts/HorseRacingBaseFormDataAnalysis.md)** - Core betting metrics analysis
 - **[Combined EV Analysis](docs/Prompts/HorseRacingCombinedEVAnalysis.md)** - Dual methodology with prediction scores
 - **[Expected Value Analysis](docs/Prompts/HorseRacingExpectedValueAnalysis.md)** - Semantic analysis approach
 - **[Expected Value Analysis R2 - Timeform Edition](docs/Prompts/HorseRacingEVAnalysisR2.md)** - Professional Timeform-based analysis system with star ratings and comprehensive quality indicators
+- **[Expected Value Analysis Favourite R3](docs/Prompts/HorseRacingEVAnalysisFavouriteR3.md)** - Analyzes all horses and calculates EV, but only bets (or lays) on the favourite. After each strategy execution, a markdown table is included showing the EV analysis for all horses, ranked by adjusted EV, for full transparency and review.
 - **[Strategy R1 - High Precision Selection](docs/Prompts/HorseRacingStrategyR1.md)** - Multi-component analysis with 83.3% strike rate and 115-150% ROI
 - **[Strategy R2 - Enhanced Multi-Context Analysis](docs/Prompts/HorseRacingStrategyR2.md)** - Comprehensive market coverage system with optimized thresholds and enhanced decision logic
 - **[Conservative Betting Strategy](docs/Prompts/HorseRacingEVAnalysisWithConservativeBetting.md)** - Risk-managed favorite evaluation

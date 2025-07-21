@@ -142,7 +142,6 @@ If no horse meets these criteria, do not execute a bet and report "No qualifying
 ## Step 8: Risk Management
 
 ### Additional Safeguards:
-- Only bet if the market has total traded volume > €1000
 - Avoid betting on horses with odds greater than 15.0
 - Do not bet if more than 3 horses have positive EV (market may be too competitive)
 - Consider the race distance and going conditions in your final assessment
