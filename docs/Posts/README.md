@@ -136,6 +136,15 @@ This directory contains community posts, articles, and real-world examples showc
 - Shares a user's experience using Gemini for F# development.
 - **Best for:** F# developers interested in AI-assisted coding.
 
+### [Reddit Post: Getting Started with Betfair Programming - A .NET/F# Developer's Guide](RedditPost_DotNETFSharpBetfairGuide.md)
+**Developer Onboarding & Technology Evolution**
+- Comprehensive guide for .NET and F# developers entering Betfair programming
+- Evolution from SOAP services (£200/month) to modern REST APIs and AI agents
+- Practical getting started steps with Bfexplorer ecosystem
+- Technology stack overview: data analysis, ML models, bot strategies, AI agents
+- Emphasis on Practice Mode for safe experimentation and learning
+- **Best for:** New developers wanting to understand the Betfair development landscape and get started with .NET/F# tools
+
 ### [CloseByPositionDifferenceBotTrigger Strategy Documentation](../Strategies/HorseRacing/CloseByPositionDifferenceBotTrigger_R1.md)
 **Automated Horse Racing Strategy**
 - Detailed explanation of the CloseByPositionDifferenceBotTrigger strategy
