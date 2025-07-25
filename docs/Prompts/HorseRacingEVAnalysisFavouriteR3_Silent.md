@@ -1,22 +1,6 @@
-import asyncio
-from mcp_agent.core.fastagent import FastAgent
-
-# Create the application
-fast = FastAgent("Bfexplorer Assistant")
-
-# Define the agent
-@fast.agent(name="BfexplorerApp",
-    instruction="You are a helpful AI Agent executing betting/trading strategies on bfexplorer.",
-    model="deepseek-chat",
-    servers=["BfexplorerApp"]
-)
-async def main():
-    async with fast.run() as agent:
-        await agent(
-"""
 # Horse Racing Expected Value Analysis (Favourite R3) - Silent Execution
 
-This prompt guides the analysis of horse racing data using Timeform's professional racing analysis system to calculate the Expected Value (EV) for each horse in an active Betfair market, but only the favorite (lowest odds) will be considered for betting. This version executes silently without providing detailed reports to the user.
+This prompt guides the analysis of horse racing data using Timeform's professional racing analysis system to calculate the Expected Value (EV) for each horse in an active Betfair market, but only the favourite (lowest odds) will be considered for betting. This version executes silently without providing detailed reports to the user.
 
 ## Step 1: Retrieve Active Market Data
 
@@ -87,24 +71,24 @@ For each horse, perform a comprehensive analysis of the Timeform boolean indicat
 - If none of the suitability factors are true: Multiply EV by 0.90
 - If `ratingStars` is 1 or 2: Multiply EV by 0.85
 
-## Step 6: Identify and Execute on Favorite Only
+## Step 6: Identify and Execute on Favourite Only
 
-Identify the favorite (the horse with the lowest current odds). Only this horse will be considered for betting.
+Identify the favourite (the horse with the lowest current odds). Only this horse will be considered for betting.
 
-### Betting Criteria for Favorite:
+### Betting Criteria for Favourite:
 - **Positive EV**: Greater than +10% (using normalized EV calculation)
 - **Minimum Quality**: At least 3 Timeform stars OR `timeformTopRated` is true
 - **Form Requirement**: At least one of: `horseInForm`, `horseWinnerLastTimeOut`, or `timeformImprover` is true
 - **Odds Range**: Between 2.0 and 15.0
 
 ### Silent Execution:
-- If the favorite meets all criteria, execute a bet using the `ExecuteBfexplorerStrategySettings` tool with:
+- If the favourite meets all criteria, execute a bet using the `ExecuteBfexplorerStrategySettings` tool with:
   - `marketId`: The ID of the active market
-  - `selectionId`: The ID of the favorite
+  - `selectionId`: The ID of the favourite
   - `strategyName`: "Bet 10 Euro"
-- If the favorite does **not** meet all criteria, execute a lay bet using the `ExecuteBfexplorerStrategySettings` tool with:
+- If the favourite does **not** meet all criteria, execute a lay bet using the `ExecuteBfexplorerStrategySettings` tool with:
   - `marketId`: The ID of the active market
-  - `selectionId`: The ID of the favorite
+  - `selectionId`: The ID of the favourite
   - `strategyName`: "Lay 10 Euro"
 
 ### Confirmation Message Only:
@@ -122,9 +106,4 @@ After executing the strategy, provide only a brief confirmation message indicati
 - Consider the race distance and going conditions in your final assessment
 - All analysis and calculations are performed internally without user visibility
 
-This approach leverages professional racing analysis and systematic risk management, executing silently on the favorite based on value and quality criteria with minimal user feedback.
-"""
-        )
-
-if __name__ == "__main__":
-    asyncio.run(main())
+This approach leverages professional racing analysis and systematic risk management, executing silently on the favourite based on value and quality criteria with minimal user feedback.

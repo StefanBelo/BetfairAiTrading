@@ -38,6 +38,14 @@ This directory contains comprehensive guides on implementing AI-powered automati
 - Technical implementation examples and best practices
 - **Best for:** Advanced developers implementing automated betting systems
 
+### [From Traditional ML to Agentic Strategy Development](FromTraditionalMLToAgenticStrategyDevelopment.md)
+**Paradigm Shift in Betting Strategy Creation**
+- Evolution from traditional machine learning to agentic AI approaches
+- Comparative analysis of development workflows and efficiency
+- Practical examples of traditional vs. agentic implementation
+- Best practices for choosing the right development approach
+- **Best for:** Understanding modern strategy development paradigms and choosing optimal approaches
+
 ### [Building Interactive Trading Charts: A Guide for Everyone](BuildingInteractiveTradingCharts.md)
 **Data Visualization and Analysis Tools**
 - Creating professional interactive charts for market analysis

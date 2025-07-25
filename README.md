@@ -86,6 +86,7 @@ Ready-to-use AI prompts for various sports and analysis types:
 **[📖 Complete Posts Index](docs/Posts/README.md)**
 
 Real experiences from community members:
+- **[The Death of Traditional Betting Strategy Development? AI Agents Are Changing Everything](docs/Posts/Post_TraditionalMLToAgenticStrategyDevelopment.md)** - Revolutionary shift from weeks of coding to hours of conversation-driven strategy development
 - **[How I Became a Strategy Expert in Minutes](docs/Posts/Post_BfexplorerStrategyExpert.md)** - Success story using AI strategy assistance
 - **[Crowd Wisdom vs. Betting Value](docs/Posts/Post_CrowdWisdomVsBettingValue.md)** - Deep analysis of market efficiency and systematic value identification
 

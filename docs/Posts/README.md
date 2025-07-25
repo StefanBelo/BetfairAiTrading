@@ -15,6 +15,15 @@ This directory contains community posts, articles, and real-world examples showc
 
 ## Available Posts
 
+### [The Death of Traditional Betting Strategy Development? AI Agents Are Changing Everything](Post_TraditionalMLToAgenticStrategyDevelopment.md)
+**Revolutionary Paradigm Shift in Strategy Development**
+- Comprehensive comparison of traditional ML vs agentic AI approaches
+- Speed revolution: from weeks of coding to hours of conversation-driven development
+- Real-world examples showing 2-4 weeks reduced to 1-2 hours setup time
+- Technical analysis of hybrid development approaches and best practices
+- Strategic guidance for different trader types: beginners, experienced developers, large operations
+- **Best for:** Understanding the fundamental shift in how betting strategies are developed and choosing the right approach for your situation
+
 ### [Horse Racing EV Analysis R2 - Timeform Edition: Professional AI Racing Strategy](Post_TimeformEVAnalysisR2Strategy.md)
 **Professional Timeform Integration**
 - Revolutionary AI strategy combining Timeform's 75+ years of racing expertise with Expected Value analysis
