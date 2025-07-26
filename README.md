@@ -21,6 +21,21 @@ Whether you're new to the Betfair Exchange or a seasoned trader, this is your hu
 
 **Want instant strategy expertise?** Try our **[BFExplorer Strategy Expert Prompt](docs/Prompts/BfexplorerStrategyExpertPrompt.md)** - turn any AI assistant into a strategy configuration expert with knowledge of all 120+ BFExplorer strategies!
 
+## 🚀 Latest Strategy Evolution: R4 & R5 Development
+
+### Advanced Multi-Context Strategy Development
+Our community has developed cutting-edge AI analysis systems that represent the next generation of automated betting strategies:
+
+- **Strategy R4**: Multi-context integration framework with enhanced evaluation and confidence scoring
+- **Strategy R5**: Revolutionary three-context analysis system featuring:
+  - Triple data integration: Racing form data, base Betfair form, and trading patterns
+  - Enhanced weighted scoring system with comprehensive confidence assessment
+  - Advanced NO BET logic with sophisticated market condition analysis
+  - "HorseRacingR5_Analysis" data context for structured analysis storage
+  - Silent execution version for automated deployment with minimal output
+
+These strategies represent the culmination of community-driven AI development, combining proven performance results with advanced automation capabilities.
+
 ## 🎯 What We're About
 
 Our community is dedicated to bridging the gap between traditional sports betting and cutting-edge technology. We help members learn and apply:
@@ -60,8 +75,15 @@ Ready-to-use AI prompts for various sports and analysis types:
 - **[Expected Value Analysis](docs/Prompts/HorseRacingExpectedValueAnalysis.md)** - Semantic analysis approach
 - **[Expected Value Analysis R2 - Timeform Edition](docs/Prompts/HorseRacingEVAnalysisR2.md)** - Professional Timeform-based analysis system with star ratings and comprehensive quality indicators
 - **[Expected Value Analysis Favourite R3](docs/Prompts/HorseRacingEVAnalysisFavouriteR3.md)** - Analyzes all horses and calculates EV, but only bets (or lays) on the favourite. After each strategy execution, a markdown table is included showing the EV analysis for all horses, ranked by adjusted EV, for full transparency and review.
+- **[Expected Value Analysis Favourite R4](docs/Prompts/HorseRacingEVAnalysisFavouriteR4.md)** - Enhanced favourite-focused analysis with multi-context integration framework
+- **[Expected Value Analysis Favourite R5](docs/Prompts/HorseRacingEVAnalysisFavouriteR5.md)** - Advanced favourite analysis with triple data integration system
 - **[Strategy R1 - High Precision Selection](docs/Prompts/HorseRacingStrategyR1.md)** - Multi-component analysis with 83.3% strike rate and 115-150% ROI
 - **[Strategy R2 - Enhanced Multi-Context Analysis](docs/Prompts/HorseRacingStrategyR2.md)** - Comprehensive market coverage system with optimized thresholds and enhanced decision logic
+- **[Strategy R4 - Multi-Context Integration](docs/Prompts/HorseRacingStrategyR4.md)** - Multi-context integration framework with enhanced evaluation and confidence scoring
+- **[Strategy R4 Trading Ideas](docs/Prompts/HorseRacingStrategyR4_Ideas.md)** - Advanced R4 trading analysis with comprehensive reporting
+- **[Strategy R5 - Revolutionary Analysis System](docs/Prompts/HorseRacingStrategyR5.md)** - Revolutionary three-context analysis system with triple data integration
+- **[Strategy R5 Trading Ideas](docs/Prompts/HorseRacingStrategyR5_Trade_Ideas.md)** - Enhanced multi-context trading analysis with comprehensive reporting
+- **[Strategy R5 Silent Trading](docs/Prompts/HorseRacingStrategyR5_Trade.md)** - Silent mode R5.1 trading execution with minimal reporting
 - **[Conservative Betting Strategy](docs/Prompts/HorseRacingEVAnalysisWithConservativeBetting.md)** - Risk-managed favorite evaluation
 - **[Conservative Trading Data Strategy](docs/Prompts/HorseRacingEVAnalysisWithConservativeTradingData.md)** - Enhanced conservative betting with trading data
 - **[Dutch Betting Strategy](docs/Prompts/HorseRacingEVAnalysisWithDutchBetting.md)** - Risk diversification across multiple selections
@@ -85,10 +107,22 @@ Ready-to-use AI prompts for various sports and analysis types:
 
 **[📖 Complete Posts Index](docs/Posts/README.md)**
 
-Real experiences from community members:
+#### Latest Community Highlights
+- **[Betfair AI Trading Weekly Report - July 26, 2025](docs/Posts/BetfairAiTrading_Weekly_Report_2025-07-26.md)** - Community discussions on ML libraries, horse racing data structuring, and the evolution from traditional to agentic AI approaches
+
+#### Featured Community Experiences
 - **[The Death of Traditional Betting Strategy Development? AI Agents Are Changing Everything](docs/Posts/Post_TraditionalMLToAgenticStrategyDevelopment.md)** - Revolutionary shift from weeks of coding to hours of conversation-driven strategy development
+- **[Horse Racing EV Analysis R2 - Timeform Edition: Professional AI Racing Strategy](docs/Posts/Post_TimeformEVAnalysisR2Strategy.md)** - Professional Timeform integration with 200-point weighted scoring system and advanced quality controls
+- **[AI Agent Horse Racing Analysis: The Power of Backtesting & Continuous Learning](docs/Posts/Post_AIAgentBacktestingAndLearning.md)** - Real-world example of AI agent improvement through backtesting frameworks
 - **[How I Became a Strategy Expert in Minutes](docs/Posts/Post_BfexplorerStrategyExpert.md)** - Success story using AI strategy assistance
+- **[Semantic Analysis of Horse Racing Form Data: AI-Powered Insights](docs/Posts/Post_SemanticAnalysisOfHorseRacingFormData.md)** - Deep dive into AI-powered interpretation of complex racing statistics
 - **[Crowd Wisdom vs. Betting Value](docs/Posts/Post_CrowdWisdomVsBettingValue.md)** - Deep analysis of market efficiency and systematic value identification
+
+#### Popular Reddit Community Posts
+- **[Horse Racing AI Strategy Delivers 77.6% ROI in Single Day](docs/Posts/RedditPost_HorseRacingStrategyR2_77PercentROI.md)** - Strategy R2 performance analysis with transparent results discussion
+- **[Horse Racing AI Achieves 83% Strike Rate](docs/Posts/RedditPost_HorseRacingAI_83PercentStrikeRate.md)** - High-performance strategy results and optimization insights
+- **[Cracking the Weight of Money Code - AI Market Psychology Expert](docs/Posts/RedditPost_WeightOfMoneyTrading.md)** - Advanced market sentiment analysis and systematic trading psychology
+- **[From Manual Testing to Full AI Automation - My 18-Year Journey](docs/Posts/RedditPost_BetfairAITradingAppEvolution.md)** - App development story and community building insights
 
 ### � Analysis Reports
 
