@@ -46,7 +46,7 @@ This directory contains the complete source code implementation for the Betfair 
 ### 📊 Analysis & Monitoring Tools
 
 #### [BetfairMarketAnalyzer/](BetfairMarketAnalyzer/)
-**Professional Technical Analysis System**
+**Professional Technical Analysis System (C# Version)**
 - **Purpose**: Comprehensive technical analysis using financial market indicators
 - **Architecture**:
   - `Models/` - Data models and structures
@@ -59,6 +59,21 @@ This directory contains the complete source code implementation for the Betfair 
 - **Generated Reports**: Live analysis files (`BetfairAnalysis_*.md`)
 - **Features**: RSI, MACD, Bollinger Bands, Support/Resistance detection, Volume analysis, Professional markdown reports
 - **Best For**: Professional market analysis, technical trading strategies, and detailed market reporting
+
+#### [BetfairMarketAnalyzerFSharp/](BetfairMarketAnalyzerFSharp/)
+**Functional Technical Analysis System (F# Version)**
+- **Purpose**: Advanced technical analysis using functional programming principles
+- **Architecture**:
+  - `Models/` - Functional data models
+    - `AnalysisModels.fs` - Analysis result types and discriminated unions
+    - `BetfairModels.fs` - Market data record types
+  - `Services/` - Pure functional services
+    - `TechnicalAnalysisService.fs` - Functional analysis pipeline
+    - `ReportGeneratorService.fs` - Functional report generation
+  - `Program.fs` - Main functional application
+- **Functional Features**: Immutable data structures, pattern matching, option types, function composition
+- **Generated Reports**: Markdown analysis reports with functional programming benefits
+- **Best For**: Functional programming enthusiasts, type-safe analysis, composable analysis pipelines
 
 #### [App/](App/)
 **Core Application Framework**
@@ -124,7 +139,7 @@ This directory contains the complete source code implementation for the Betfair 
 
 ### **Languages & Frameworks**
 - **C#**: Production AI agents, technical analysis, market analyzers
-- **F#**: Advanced trading strategies, mathematical calculations, functional programming approaches
+- **F#**: Functional technical analysis, advanced trading strategies, mathematical calculations, functional programming approaches
 - **Python**: Research and prototyping, FastAgent framework integration
 - **TypeScript/Node.js**: Modern web interfaces, browser-based applications
 
@@ -144,7 +159,7 @@ This directory contains the complete source code implementation for the Betfair 
 ### **Quick Start Paths**
 
 1. **AI Agent Development**: Start with `AiAgentCSharp/` for production or `AiAgentPython/` for research
-2. **Technical Analysis**: Explore `BetfairMarketAnalyzer/` for market analysis capabilities
+2. **Technical Analysis**: Explore `BetfairMarketAnalyzer/` for C# implementation or `BetfairMarketAnalyzerFSharp/` for functional programming approach
 3. **Strategy Development**: Check `Strategies/` for sport-specific implementations
 4. **Learning & Examples**: Review `Examples/` for implementation patterns
 
