@@ -1,6 +1,6 @@
-# Horse Racing Expected Value Analysis (Favourite R6) - EV Range Strategy Edition
+# Horse Racing Expected Value Analysis (Favourite R6) - Silent Execution Edition
 
-This prompt guides the analysis of horse racing data using both Timeform's professional racing analysis system and Racing Post's comprehensive racing data to calculate the Expected Value (EV) for each horse in an active Betfair market, with a specific focus on evaluating the market favourite's performance relative to the competitive strength of the entire field for enhanced betting decisions. **NEW: Introduces EV range criteria where strategies are only executed within specific EV thresholds.**
+This prompt guides the analysis of horse racing data using both Timeform's professional racing analysis system and Racing Post's comprehensive racing data to calculate the Expected Value (EV) for each horse in an active Betfair market, with a specific focus on evaluating the market favourite's performance relative to the competitive strength of the entire field for enhanced betting decisions. **SILENT MODE: Executes strategies without generating reports or status outputs. All analysis must be performed internally without any visible output until strategy execution.**
 
 ## Step 1: Retrieve Active Market Data
 
@@ -116,7 +116,7 @@ Not available in RacingpostDataForHorsesInfo. Do not use these factors.
 
 ## Step 4: Field Competitive Strength Analysis
 
-**NEW: Enhanced Field Assessment**
+**Enhanced Field Assessment**
 
 Before calculating individual EVs, perform a comprehensive field strength analysis:
 
@@ -197,12 +197,12 @@ Apply additional adjustments based on both data sources AND field strength:
 - If all suitability factors from Timeform are positive: Multiply EV by 1.10
 - If semantic analysis shows consistent strong finishes: Multiply EV by 1.08
 
-### **NEW: Field Strength Adjustments for Favourite:**
+### Field Strength Adjustments for Favourite:
 - **WEAK FIELD**: Multiply favourite's EV by 1.15 (easier win opportunity)
 - **MODERATE FIELD**: No adjustment (1.00)
 - **STRONG FIELD**: Multiply favourite's EV by 0.85 (tougher competition)
 
-### **NEW: Opposition Threat Adjustments for Favourite:**
+### Opposition Threat Adjustments for Favourite:
 - **3+ High Threat opponents**: Additional ×0.90 multiplier
 - **5+ Medium Threat opponents**: Additional ×0.95 multiplier
 - **Multiple in-form recent winners**: Additional ×0.90 multiplier
@@ -215,27 +215,20 @@ Apply additional adjustments based on both data sources AND field strength:
 - If long layoff (> 200 days in recent runs): Multiply EV by 0.90
 - If poor recent form (no win/place in last 5 runs) AND negative semantic indicators: Multiply EV by 0.75
 
-## Step 7: Present the Enhanced Results
+## Step 7: Internal Analysis (No Output)
 
-Present the analysis in an enhanced table format:
+**CRITICAL: Perform all calculations internally without generating visible output:**
+- Calculate combined scores for all horses
+- Determine field strength category
+- Calculate threat levels for opposition horses
+- Calculate Expected Values with all adjustments
+- Identify market favourite (lowest decimal odds)
+- Apply all EV range filters and decision logic
+- **DO NOT OUTPUT any analysis, scores, calculations, or reasoning**
 
-### Field Strength Summary:
-- **Field Category**: [WEAK/MODERATE/STRONG]
-- **Average Opposition Rating**: [X points]
-- **High Threat Count**: [X horses]
-- **Quality Depth**: [X horses with 3+ stars or RP Rating > 90]
+## Step 8: EV Range Strategy Framework
 
-### Detailed Results Table:
-| Horse Name | Price | Combined Score | Threat Level | Calculated EV | Key Indicators |
-|------------|-------|----------------|--------------|---------------|----------------|
-| **FAVOURITE** | **X.X** | **XXX** | **N/A** | **±XX%** | **Summary** |
-| Rival 1 | X.X | XXX | High/Med/Low | ±XX% | Summary |
-
-**Important:** Identify the market favourite and highlight field strength analysis for focused betting decision.
-
-## Step 8: **NEW: EV Range Strategy Framework**
-
-### **EV Execution Thresholds:**
+### EV Execution Thresholds:
 
 **BACK Strategy Execution Range:**
 - **Minimum EV for BACK**: +8% (Conservative backing threshold)
@@ -249,7 +242,7 @@ Present the analysis in an enhanced table format:
 - **EV between -8% and +8%**: No strategy executed (insufficient edge)
 - **EV beyond +50%**: No strategy executed (potentially unreliable calculations for BACK)
 
-### **EV Range Decision Logic:**
+### EV Range Decision Logic:
 
 **1. Calculate Final Adjusted EV** (after all field and quality adjustments)
 
@@ -265,11 +258,13 @@ Else:
 
 **3. If within actionable EV range, proceed to enhanced betting criteria**
 
-## Step 9: Enhanced Favourite-Focused Betting Strategy
+## Step 9: Silent Favourite-Focused Strategy Execution
+
+**SILENT EXECUTION ONLY: No analysis output, no explanations, no reasoning visible to user**
 
 **Only proceed with strategy evaluation if EV is within actionable range (±8% to ±50%)**
 
-Identify the market favourite (horse with the lowest decimal odds) and apply the enhanced decision tree:
+Identify the market favourite (horse with the lowest decimal odds) and apply the enhanced decision tree internally:
 
 ### Enhanced Favourite Analysis Criteria:
 1. **EV Range Requirement**: Must be within ±8% to ±50% range
@@ -280,9 +275,9 @@ Identify the market favourite (horse with the lowest decimal odds) and apply the
 6. **Field Advantage**: Favourite must have clear advantages over the field
 7. **Confidence Level**: Must be Medium or High confidence
 
-### Enhanced Favourite Betting Decision Logic:
+### Silent Favourite Betting Decision Logic:
 
-**BACK THE FAVOURITE ("Bet 10 Euro") if ALL of the following are true:**
+**BACK THE FAVOURITE if ALL of the following are true:**
 - **EV Range**: +8% ≤ EV ≤ +50%
 - Favourite has positive EV > +8% (after field adjustments)
 - Both Timeform and Racing Post semantic analysis support the selection
@@ -293,14 +288,14 @@ Identify the market favourite (horse with the lowest decimal odds) and apply the
 - Confidence level is Medium or High
 - No major contradictions between data sources
 
-**BACK THE FAVOURITE ("Bet 10 Euro") - Special Case if ALL of the following are true:**
+**BACK THE FAVOURITE - Special Case if ALL of the following are true:**
 - **EV Range**: +5% ≤ EV ≤ +50% (lower threshold for exceptional favourites)
 - Favourite has exceptional quality (5 stars AND RP Rating > 120)
 - Dominant recent form (multiple recent wins with strong semantic analysis)
 - **STRONG field** but favourite's combined score is >150% of average field score
 - Positive EV > +5% (lower threshold for exceptional favourites)
 
-**LAY THE FAVOURITE ("Lay 10 Euro") if ALL of the following are true:**
+**LAY THE FAVOURITE if ALL of the following are true:**
 - **EV Range**: EV ≤ -8% (more negative = better LAY opportunity)
 - Favourite has negative EV < -8%
 - At least ONE of the following additional criteria:
@@ -318,7 +313,7 @@ Identify the market favourite (horse with the lowest decimal odds) and apply the
 - Data quality concerns (missing critical information)
 - Conflicting signals from multiple sources
 
-### **NEW: Field-Specific EV Range Adjustments:**
+### Field-Specific EV Range Adjustments:
 
 **WEAK FIELD Strategy:**
 - Lower EV threshold for backing: +6% (easier win opportunity)
@@ -332,65 +327,51 @@ Identify the market favourite (horse with the lowest decimal odds) and apply the
 - Higher EV threshold for backing: +10% (tougher competition)
 - Lower EV threshold for laying: -6% (more opportunities to lay - less overvaluation needed)
 
-### Enhanced Favourite Quality Checks:
-- Compare favourite's combined score against field average and top opposition
-- Assess if the favourite's odds accurately reflect both individual merit and field strength
-- Look for value discrepancies created by field strength misassessment
-- Consider if high-threat opposition horses offer better value than the favourite
-
-### **NEW: Execution with EV Range Reporting:**
+### Silent Strategy Execution:
 
 **If BACK criteria are met AND EV in range:**
 Execute using the `ExecuteBfexplorerStrategySettings` tool with:
 - `marketId`: The ID of the active market
 - `selectionId`: The ID of the favourite
 - `strategyName`: "Bet 10 Euro"
-- Report: "BACK executed - EV: [X]% (within +8% to +50% range)"
+**No output or confirmation message**
 
 **If LAY criteria are met AND EV in range:**
 Execute using the `ExecuteBfexplorerStrategySettings` tool with:
 - `marketId`: The ID of the active market
 - `selectionId`: The ID of the favourite
 - `strategyName`: "Lay 10 Euro"
-- Report: "LAY executed - EV: [X]% (≤ -8% range - more negative = better)"
+**No output or confirmation message**
 
 **If NO ACTION:**
-Do not execute any strategy and report:
-- "NO ACTION - EV: [X]% (within neutral zone -8% to +8%)" OR
-- "NO ACTION - EV: [X]% (beyond +50% for BACK)" OR
-- "NO ACTION - Strategy criteria not met despite EV being in range"
+Do not execute any strategy. No output or message.
 
-## Step 10: Enhanced Risk Management with EV Range Controls
+## Step 10: Silent Risk Management
 
-### **NEW: EV Range Risk Assessment:**
+### EV Range Risk Assessment (Internal):
 - **Conservative Range (+8%/-8%)**: Reduces false positives and overconfident betting
 - **Maximum Range (+50%)**: Prevents BACK action on potentially erroneous calculations
 - **No Upper Limit for LAY**: More negative EV = better LAY opportunity
 - **Neutral Zone (-8% to +8%)**: Recognizes markets where edge is insufficient
 
-### Enhanced Confidence Levels:
+### Enhanced Confidence Levels (Internal):
 - **High Confidence**: Both sources strongly agree, clear field advantages, consistent semantic analysis, EV >15% or <-15%
 - **Medium Confidence**: Sources generally agree, some field advantages, mostly consistent patterns, EV 8-15% or -8% to -15%
 - **Low Confidence**: Sources disagree, unclear field position, or conflicting analysis, requires higher EV thresholds
 
-### **NEW: EV Range-Specific Risk Factors:**
-- **High Positive EV (>30%)**: May indicate data anomalies or market inefficiencies
-- **High Negative EV (<-30%)**: May indicate overvalued favourites or strong opposition
-- **Borderline EV (±8-12%)**: Requires additional confirmation from multiple criteria
-- **Neutral EV (-8% to +8%)**: Often indicates efficient market pricing
-
-### Advanced Favourite-Specific Risk Factors:
+### Advanced Risk Factors (Internal Assessment):
 - **False favourites in strong fields**: Market leader without clear superiority
 - **Class advantage masking poor form**: High-rated horse in declining form
 - **Course/distance specialists**: Opposition horses with specific advantages
 - **Trainer/Jockey form cycles**: Connections hitting peak or trough periods
 - **EV calculation reliability**: Ensure sufficient data quality for accurate EV estimation
 
-### **NEW: EV Range Strategy Benefits:**
-1. **Reduced Overconfidence**: Only acts on meaningful edges
-2. **Quality Control**: Filters out potentially erroneous calculations
-3. **Bankroll Protection**: Avoids betting in marginal situations
-4. **Strategic Discipline**: Enforces systematic approach to value betting
-5. **Performance Tracking**: Clear criteria for post-analysis review
+**SILENT MODE**: This strategy performs all analysis and executes appropriate betting actions without generating any visible reports, status messages, or analytical output. The system operates entirely in the background, making informed betting decisions based on the comprehensive EV analysis framework while maintaining complete operational silence.
 
-This enhanced EV range-focused approach provides a sophisticated method for evaluating the market leader within specific Expected Value parameters, significantly improving betting decision accuracy by ensuring only high-confidence, meaningful edges are acted upon while avoiding the risks of betting on marginal or potentially miscalculated scenarios.
+**EXECUTION INSTRUCTIONS FOR AI:**
+1. Retrieve market data using the specified tools
+2. Perform ALL calculations internally without any output
+3. Apply decision logic silently
+4. Execute strategy if criteria are met OR take no action
+5. **NEVER explain reasoning, show calculations, or provide analysis output**
+6. **ONLY execute the strategy tool call if betting criteria are satisfied**

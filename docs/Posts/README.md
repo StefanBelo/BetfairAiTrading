@@ -2,9 +2,17 @@
 
 This directory contains community posts, articles, and real-world examples showcasing the practical application of Betfair AI trading strategies and tools.
 
-## Latest Strategy Evolution: R4 & R5 Development
+## Latest Strategy Evolution: Combined EV Analysis & Multi-Context Development
 
-### Advanced Multi-Context Strategy Development
+### Revolutionary Comprehensive EV Analysis (Latest - July 2025)
+- **Combined EV Analysis with Automated Betting**: Game-changing dual-source analysis framework featuring:
+  - **Trading Pattern Analysis**: Price-probability relationship interpretation with market confidence indicators
+  - **Semantic Performance Analysis**: Deep AI analysis of racing form narratives and performance patterns
+  - **Automated Strategy Execution**: Intelligent selection between "Back trailing stop loss trading" and "Trade 20% profit" strategies
+  - **Silent Analysis Phase**: Complete multi-context evaluation with automated execution
+  - **Real-time Implementation**: Live market activation and strategy deployment based on EV calculations
+
+### Advanced Multi-Context Strategy Development (R4 & R5)
 - **Strategy R4**: Multi-context integration framework with enhanced evaluation and confidence scoring
 - **Strategy R5**: Revolutionary three-context analysis system featuring:
   - Triple data integration: Racing form data, base Betfair form, and trading patterns
@@ -14,6 +22,16 @@ This directory contains community posts, articles, and real-world examples showc
   - Silent execution version for automated deployment with minimal output
 
 ## Available Posts
+
+### [Horse Racing Combined EV Analysis with Automated Betting](../Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
+**Revolutionary Dual-Source Analysis Framework**
+- Comprehensive Expected Value analysis combining market trading data with racing performance data
+- **Trading Pattern Analysis**: Price-probability relationship interpretation, market confidence indicators, value identification signals
+- **Semantic Performance Analysis**: AI-powered deep analysis of race descriptions focusing on performance patterns and behavioral indicators
+- **Automated Strategy Selection**: Intelligent choice between "Back trailing stop loss trading" (high-confidence convergent opportunities) and "Trade 20% profit" (moderate confidence mixed signals)
+- **Silent Analysis Phase**: Complete multi-context evaluation without interim reports, culminating in automated strategy execution
+- **Live Implementation**: Real market activation and betting strategy deployment based on comprehensive EV calculations
+- **Best for:** Professional-grade automated betting with dual-source intelligence and systematic strategy execution
 
 ### [The Death of Traditional Betting Strategy Development? AI Agents Are Changing Everything](Post_TraditionalMLToAgenticStrategyDevelopment.md)
 **Revolutionary Paradigm Shift in Strategy Development**
@@ -145,6 +163,15 @@ This directory contains community posts, articles, and real-world examples showc
 - Shares a user's experience using Gemini for F# development.
 - **Best for:** F# developers interested in AI-assisted coding.
 
+### [Betfair AI Trading Weekly Report - July 26, 2025](BetfairAiTrading_Weekly_Report_2025-07-26.md)
+**Community Insights & Development Trends**
+- Weekly community discussion summary covering ML library preferences vs no-code applications
+- Technical insights on structuring machine learning training data for horse racing (one line per horse vs. one line per race)
+- Community feedback on open-source libraries, flexibility, and customization options
+- Practical implementation challenges and solutions shared by the community
+- Analysis of AI agents revolutionizing betting strategy development approaches
+- **Best for:** Staying current with community trends, development approaches, and practical implementation insights
+
 ### [Reddit Post: Getting Started with Betfair Programming - A .NET/F# Developer's Guide](RedditPost_DotNETFSharpBetfairGuide.md)
 **Developer Onboarding & Technology Evolution**
 - Comprehensive guide for .NET and F# developers entering Betfair programming
@@ -167,12 +194,20 @@ This directory contains community posts, articles, and real-world examples showc
 - Practical implementation examples
 - Lessons learned and optimization tips
 - Before/after comparisons of trading approaches
+- **Live Strategy Execution**: Real-time automated betting based on comprehensive EV analysis
 
 ### Strategy Combinations
 - Complex multi-strategy setups explained
 - Real-world parameter configurations
 - Problem-solving approaches for common challenges
 - Advanced trading scenarios and solutions
+- **Intelligent Strategy Selection**: Automated choice between trailing stop loss and fixed profit strategies
+
+### Advanced Analysis Frameworks
+- **Dual-Source EV Analysis**: Combining market intelligence with performance data
+- **Trading Pattern Recognition**: Price-probability relationship interpretation and market confidence assessment
+- **Semantic Performance Analysis**: AI-powered interpretation of racing form narratives and behavioral patterns
+- **Silent Execution Systems**: Complete analysis and strategy deployment without user intervention
 
 ### AI Integration Stories
 - How AI prompts transformed trading workflows
@@ -181,6 +216,9 @@ This directory contains community posts, articles, and real-world examples showc
 - Technical implementation insights
 - AI backtesting and continuous improvement frameworks
 - Adaptive learning systems and feedback loops
+- **Comprehensive EV Analysis**: Dual-source analysis combining trading patterns with performance semantics
+- **Automated Strategy Execution**: Silent analysis phases with intelligent strategy selection and deployment
+- **Multi-Context Integration**: Revolutionary approaches to combining market data, form analysis, and trading intelligence
 
 ## Community Guidelines
 

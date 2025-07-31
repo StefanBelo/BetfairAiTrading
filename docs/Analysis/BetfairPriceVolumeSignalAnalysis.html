@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Trader's Edge: An Infographic on Betfair Price & Volume Signals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .brand-blue-deep { color: #005082; }
+        .brand-blue-mid { color: #0077B6; }
+        .brand-blue-light { color: #00A1E4; }
+        .brand-bg-deep { background-color: #005082; }
+        .brand-bg-mid { background-color: #0077B6; }
+        .brand-bg-light { background-color: #00A1E4; }
+        .brand-bg-sky { background-color: #CAF0F8; }
+        .brand-border-light { border-color: #00A1E4; }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .kpi-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .kpi-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .flow-arrow {
+            font-size: 2rem;
+            line-height: 1;
+            color: #90E0EF;
+        }
+        .flow-box {
+            border: 2px solid #90E0EF;
+            background-color: rgba(202, 240, 248, 0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black brand-blue-deep mb-2">The Trader's Edge</h1>
+            <p class="text-lg md:text-xl brand-blue-mid max-w-3xl mx-auto">A Visual Guide to Mastering Price & Volume Signals on the Betfair Exchange</p>
+        </header>
+
+        <main>
+            <section id="section1" class="mb-16">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold brand-blue-deep">Decoding the Market's DNA</h2>
+                    <p class="brand-blue-mid mt-2">Successful trading starts with understanding the two sides of market volume: intent versus action.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="kpi-card">
+                        <h3 class="text-xl font-bold brand-blue-deep mb-4">Market Volume: Intent vs. Action</h3>
+                        <p class="text-gray-600 mb-4">The Betfair market is a constant tug-of-war. <b class="brand-blue-mid">Unmatched Liquidity</b> represents the *intent* to trade—money waiting in the order book. <b class="brand-blue-deep">Matched Volume</b> represents confirmed *action*—money that has actually been traded. Distinguishing between them is key to filtering signal from noise.</p>
+                        <div class="flex justify-around text-center mt-6">
+                            <div>
+                                <p class="text-3xl font-bold brand-blue-mid">75%</p>
+                                <p class="text-sm text-gray-500">Market Intent</p>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-bold brand-blue-deep">25%</p>
+                                <p class="text-sm text-gray-500">Confirmed Action</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="chart-container h-64 md:h-auto">
+                            <canvas id="intentVsActionChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section2" class="mb-16">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold brand-blue-deep">The Two Pillars of Analysis: Price & Volume</h2>
+                    <p class="brand-blue-mid mt-2">The most powerful signals emerge when price action and volume analysis converge.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="kpi-card">
+                        <h3 class="text-xl font-bold brand-blue-deep mb-2">Price Action: Support & Resistance</h3>
+                        <p class="text-gray-600 mb-4">Price charts reveal psychological battlegrounds. Support is a price floor where buying interest is strong, while Resistance is a ceiling where selling pressure dominates. Identifying these levels helps anticipate potential trend reversals.</p>
+                        <div class="chart-container">
+                            <canvas id="supportResistanceChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="kpi-card">
+                        <h3 class="text-xl font-bold brand-blue-deep mb-2">Volume: Confirmation vs. Divergence</h3>
+                        <p class="text-gray-600 mb-4">Volume gives purpose to price. A price move on high volume confirms conviction (Confirmation). A price move on weak volume signals the trend may be losing steam (Divergence), often warning of a reversal.</p>
+                        <div class="chart-container">
+                            <canvas id="volumeConfirmationChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section3" class="mb-16">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold brand-blue-deep">Mastering Order Flow: The Signal vs. The Noise</h2>
+                    <p class="brand-blue-mid mt-2">The order book reveals real-time supply and demand, but you must learn to spot manipulation.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
+                     <div class="kpi-card lg:col-span-3">
+                        <h3 class="text-xl font-bold brand-blue-deep mb-2">Signal Reliability</h3>
+                        <p class="text-gray-600 mb-4">Not all signals are created equal. Weight of Flow (WoF), based on actual trades, is a far more reliable indicator of market momentum than Weight of Money (WoM), which can be easily faked by manipulative 'spoof' orders.</p>
+                        <div class="chart-container">
+                            <canvas id="signalReliabilityChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="kpi-card lg:col-span-2">
+                        <h3 class="text-xl font-bold brand-blue-deep mb-4 text-center">Anatomy of a Trade Decision</h3>
+                         <div class="flex flex-col items-center space-y-2">
+                            <div class="p-3 rounded-lg text-center flow-box w-full">
+                                <p class="font-bold brand-blue-deep">Market Data</p>
+                                <p class="text-xs text-gray-600">Price, Volume, Order Book</p>
+                            </div>
+                            <div class="flow-arrow">&#11167;</div>
+                            <div class="p-3 rounded-lg text-center flow-box w-full">
+                                <p class="font-bold brand-blue-deep">Filter for Noise</p>
+                                <p class="text-xs text-red-500">Ignore Spoofing & WoM</p>
+                            </div>
+                             <div class="flow-arrow">&#11167;</div>
+                            <div class="p-3 rounded-lg text-center flow-box w-full">
+                                <p class="font-bold brand-blue-deep">Identify True Signals</p>
+                                <p class="text-xs text-green-600">Focus on WoF & Imbalances</p>
+                            </div>
+                             <div class="flow-arrow">&#11167;</div>
+                             <div class="p-3 rounded-lg text-center brand-bg-deep text-white w-full">
+                                <p class="font-bold">Execute Trade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="section4" class="mb-16">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold brand-blue-deep">From Theory to Practice: Core Trading Strategies</h2>
+                    <p class="brand-blue-mid mt-2">Different strategies suit different market conditions, risk appetites, and sports.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="kpi-card">
+                         <h3 class="text-xl font-bold brand-blue-deep mb-2">Strategy Profile: Scalping vs. Swing Trading</h3>
+                        <p class="text-gray-600 mb-4">Scalping involves high-frequency, low-profit trades exploiting micro-movements. Swing trading aims for larger profits over longer timeframes by capturing significant price swings. Their requirements are vastly different.</p>
+                        <div class="chart-container">
+                            <canvas id="strategyRadarChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="kpi-card">
+                        <h3 class="text-xl font-bold brand-blue-deep mb-4">Sport-Specific Nuances</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-4 brand-blue-light">&#9822;</span>
+                                <div>
+                                    <h4 class="font-bold brand-blue-deep">Horse Racing</h4>
+                                    <p class="text-gray-600 text-sm">Highly liquid and sentiment-driven pre-race. Watch for volume spikes on "gambles" and use relative volume as a leading indicator.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-4 brand-blue-light">&#9917;</span>
+                                <div>
+                                    <h4 class="font-bold brand-blue-deep">Football</h4>
+                                    <p class="text-gray-600 text-sm">Less volatile pre-match. In-play trading reacts strongly to goals, red cards, and natural time decay (e.g., Lay the Draw).</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                 <span class="text-2xl mr-4 brand-blue-light">&#127934;</span>
+                                <div>
+                                    <h4 class="font-bold brand-blue-deep">Tennis</h4>
+                                    <p class="text-gray-600 text-sm">Extremely volatile, especially around break points. The core strategy is often "selling volatility" by trading price swings.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section5" class="mb-16">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold brand-blue-deep">The Modern Trader's Toolkit</h2>
+                    <p class="brand-blue-mid mt-2">In a market measured in milliseconds, technology is not optional—it's your primary weapon.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="kpi-card">
+                        <h3 class="text-xl font-bold brand-blue-deep mb-4">The Need for Speed: Latency is Everything</h3>
+                        <p class="text-gray-600 mb-6">Latency is the delay between a market event and your ability to react. In high-frequency trading, a low-latency connection via the API is a non-negotiable advantage, while relying on the website leaves you trading on stale data.</p>
+                        <div class="relative p-4 border-l-4 brand-border-light space-y-8">
+                            <div class="flex items-center">
+                                <div class="absolute -left-5 w-8 h-8 brand-bg-deep rounded-full flex items-center justify-center text-white font-bold">1</div>
+                                <p class="ml-6 font-semibold">Market Event Occurs</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="absolute -left-5 w-8 h-8 brand-bg-light rounded-full flex items-center justify-center text-white font-bold">2</div>
+                                <p class="ml-6 font-semibold">Low-Latency API Trader Reacts (&lt;100ms)</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="absolute -left-5 w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center text-white font-bold">3</div>
+                                <p class="ml-6 font-semibold text-gray-500">High-Latency Web Trader Reacts (1-5s later)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kpi-card">
+                        <h3 class="text-xl font-bold brand-blue-deep mb-4">Essential Visualization Tools</h3>
+                        <p class="text-gray-600 mb-6">Raw data is overwhelming. Advanced software translates complex order flow into intuitive visual patterns, helping you spot what others miss.</p>
+                        <ul class="space-y-4">
+                            <li><strong class="brand-blue-deep">Ladder Interface:</strong> For one-click trading and viewing market depth.</li>
+                            <li><strong class="brand-blue-deep">Heatmaps:</strong> Visualize liquidity and identify spoofing attempts.</li>
+                            <li><strong class="brand-blue-deep">Footprint Charts:</strong> Reveal buyer/seller imbalances within each price bar.</li>
+                            <li><strong class="brand-blue-deep">Volume Profile:</strong> Pinpoint prices with the highest trading activity.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <footer class="text-center pt-8 border-t border-gray-200">
+                <h2 class="text-2xl font-bold brand-blue-deep">The Ultimate Signal: Discipline</h2>
+                <p class="brand-blue-mid mt-2 max-w-2xl mx-auto">Technology provides the tools, but sustained profitability comes from rigorous risk management, continuous learning, and unwavering emotional resilience. Your mindset is your greatest asset.</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script>
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+
+        const wrapLabel = (label, maxWidth) => {
+            if (label.length <= maxWidth) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            }
+            lines.push(currentLine.trim());
+            return lines;
+        };
+
+        const palette = {
+            deep: '#005082',
+            mid: '#0077B6',
+            light: '#00A1E4',
+            sky: '#90E0EF',
+            cloud: '#CAF0F8'
+        };
+
+        const commonChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                        color: palette.deep,
+                        font: {
+                           weight: 'bold'
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    ticks: { color: palette.mid },
+                    grid: { color: 'rgba(0, 119, 182, 0.1)' }
+                },
+                x: {
+                    ticks: { color: palette.mid },
+                    grid: { display: false }
+                }
+            }
+        };
+
+        new Chart(document.getElementById('intentVsActionChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Unmatched Liquidity (Intent)', 'Matched Volume (Action)'],
+                datasets: [{
+                    label: 'Market Volume Breakdown',
+                    data: [75, 25],
+                    backgroundColor: [palette.light, palette.deep],
+                    borderColor: ['#ffffff'],
+                    borderWidth: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: palette.deep,
+                             font: {
+                                weight: 'bold'
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('supportResistanceChart'), {
+            type: 'line',
+            data: {
+                labels: ['T-10', 'T-9', 'T-8', 'T-7', 'T-6', 'T-5', 'T-4', 'T-3', 'T-2', 'T-1'],
+                datasets: [{
+                    label: 'Odds Movement',
+                    data: [3.5, 3.4, 3.6, 3.2, 3.0, 3.25, 3.1, 2.9, 3.0, 2.8],
+                    borderColor: palette.mid,
+                    backgroundColor: 'rgba(0, 161, 228, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                ...commonChartOptions,
+                plugins: {
+                    ...commonChartOptions.plugins,
+                    annotation: {
+                        annotations: {
+                            resistance: {
+                                type: 'line',
+                                yMin: 3.6,
+                                yMax: 3.6,
+                                borderColor: 'rgb(255, 99, 132)',
+                                borderWidth: 2,
+                                label: {
+                                    content: 'Resistance',
+                                    enabled: true,
+                                    position: 'end'
+                                }
+                            },
+                            support: {
+                                type: 'line',
+                                yMin: 3.0,
+                                yMax: 3.0,
+                                borderColor: 'rgb(75, 192, 192)',
+                                borderWidth: 2,
+                                label: {
+                                    content: 'Support',
+                                    enabled: true,
+                                    position: 'end'
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        
+        new Chart(document.getElementById('volumeConfirmationChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Price Up (Weak)', 'Price Up (Strong)', 'Price Down (Weak)', 'Price Down (Strong)'],
+                datasets: [{
+                    label: 'Traded Volume',
+                    data: [2500, 15000, 3000, 18000],
+                    backgroundColor: [palette.sky, palette.deep, palette.sky, palette.deep],
+                    borderColor: [palette.light, palette.mid, palette.light, palette.mid],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                 ...commonChartOptions,
+                 scales: {
+                    ...commonChartOptions.scales,
+                    x: {
+                        ...commonChartOptions.scales.x,
+                        ticks: {
+                            ...commonChartOptions.scales.x.ticks,
+                            callback: function(value, index, values) {
+                                const label = this.getLabelForValue(value);
+                                return wrapLabel(label, 10);
+                            }
+                        }
+                    }
+                 }
+            }
+        });
+
+        new Chart(document.getElementById('signalReliabilityChart'), {
+            type: 'bar',
+            data: {
+                labels: [
+                    'Weight of Flow (WoF)', 
+                    'Order Book Imbalance', 
+                    'Volume Spikes',
+                    'Price Action Patterns',
+                    'Weight of Money (WoM)',
+                    'Spoofed Orders'
+                ],
+                datasets: [{
+                    label: 'Signal Reliability Score (out of 100)',
+                    data: [90, 85, 80, 70, 30, 5],
+                    backgroundColor: [palette.deep, palette.deep, palette.mid, palette.mid, palette.light, palette.sky],
+                }]
+            },
+            options: {
+                ...commonChartOptions,
+                indexAxis: 'y',
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    x: {
+                        grid: { color: 'rgba(0, 119, 182, 0.1)' },
+                        ticks: { color: palette.mid }
+                    },
+                    y: {
+                        grid: { display: false },
+                        ticks: { 
+                            color: palette.deep,
+                            font: { weight: 'bold' },
+                            callback: function(value, index, values) {
+                                const label = this.getLabelForValue(value);
+                                return wrapLabel(label, 18);
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('strategyRadarChart'), {
+            type: 'radar',
+            data: {
+                labels: ['Frequency', 'Profit/Trade', 'Timeframe', 'Risk Level', 'Tech Reliance'],
+                datasets: [{
+                    label: 'Scalping',
+                    data: [9, 2, 1, 3, 9],
+                    backgroundColor: 'rgba(0, 161, 228, 0.2)',
+                    borderColor: palette.light,
+                    pointBackgroundColor: palette.light
+                }, {
+                    label: 'Swing Trading',
+                    data: [3, 8, 7, 6, 6],
+                    backgroundColor: 'rgba(0, 80, 130, 0.2)',
+                    borderColor: palette.deep,
+                    pointBackgroundColor: palette.deep
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: palette.deep,
+                            font: {
+                                weight: 'bold'
+                            }
+                        }
+                    },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(0, 119, 182, 0.2)' },
+                        grid: { color: 'rgba(0, 119, 182, 0.2)' },
+                        pointLabels: {
+                            color: palette.mid,
+                            font: {
+                                size: 12,
+                                weight: 'bold'
+                            }
+                        },
+                        ticks: {
+                            backdropColor: 'rgba(255, 255, 255, 0.75)',
+                            color: palette.deep
+                        }
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>

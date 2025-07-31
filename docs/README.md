@@ -20,7 +20,14 @@
 
 ## AI Analysis Prompts
 
-**[📖 Complete Prompts Index](Prompts/README.md)**
+**[📖 Complete Prompts Index](Prompts/README.md)** - *100+ specialized AI prompts for comprehensive Betfair market analysis*
+
+### Latest Advanced Strategies (R6 Generation)
+- [Real-Time Betfair Market Analysis](Prompts/BetfairMarketAnalysisPrompt.md) - Professional-grade market analysis with trading recommendations and pattern recognition
+- [Horse Racing Strategy R6 - Optimized](Prompts/HorseRacingStrategyR6.md) - Silent execution with enhanced composite scoring and 4-factor analysis
+- [Horse Racing Strategy R6 - Direct Signal](Prompts/HorseRacingStrategyR6_DS.md) - Ultra-minimal output with direct execution signals only
+- [Horse Racing EV Analysis Favourite R6](Prompts/HorseRacingEVAnalysisFavouriteR6.md) - EV range strategy with Timeform professional data integration
+- [Horse Racing EV Analysis Favourite R6 Silent](Prompts/HorseRacingEVAnalysisFavouriteR6_Silent.md) - Silent favourite analysis with EV range control
 
 ### Horse Racing Analysis
 - [Horse Racing Base Form Data Analysis](Prompts/HorseRacingBaseFormDataAnalysis.md) - Core betting metrics analysis using fundamental handicapping principles
@@ -46,6 +53,7 @@
 - [Football Match F# Code Creation](Prompts/FootballMatchFSharpCodeCreation.md) - Generate F# code for football match analysis
 
 ### General Tools
+- [Real-Time Betfair Market Analysis](Prompts/BetfairMarketAnalysisPrompt.md) - Comprehensive market analysis with professional trading patterns and recommendations
 - [Trading Chart Creation](Prompts/TradingChartCreation.md) - Interactive financial chart creation from MCP time series data
 - [BFExplorer MCP Integration System Prompt](Prompts/BfexplorerMCPIntegrationSystemPrompt.md) - System integration guidance
 - [BFExplorer Strategy Expert Prompt](Prompts/BfexplorerStrategyExpertPrompt.md) - AI assistant for strategy selection and configuration

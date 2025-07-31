@@ -19,14 +19,14 @@ AI agents are revolutionizing how we develop betting strategies - what used to t
 - Minutes per iteration cycle
 - No coding required
 
-## Real Example: Football Over/Under 2.5 Goals
+## Real Example: Horse Racing Expected Value Analysis
 
-**Traditional approach:** Hundreds of lines of F# code, weeks of development, custom data parsing, manual feature engineering.
+**Traditional approach:** Hundreds of lines of F# code, weeks of development, custom data parsing, manual feature engineering for Timeform ratings, Racing Post data, course statistics, and form analysis.
 
 **Agentic approach:** 
-"Analyze football matches for over 2.5 goals opportunities. Consider team scoring averages, recent form, head-to-head records, and weather conditions."
+"Analyze horse racing markets focusing on favourites. Calculate Expected Value using Timeform ratings, Racing Post form data, course suitability factors, and field strength analysis."
 
-Result: 23 profitable opportunities identified, +12.3% average EV, stakes calculated automatically.
+Result: EV-based laying strategy executed automatically, -31% EV identified for Dayzee at Salisbury, field strength assessment completed in seconds.
 
 ## The Speed Difference is Insane
 

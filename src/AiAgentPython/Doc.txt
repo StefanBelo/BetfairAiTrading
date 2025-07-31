@@ -42,3 +42,10 @@ https://www.anthropic.com/claude-code
         http://192.168.1.103:10043/sse
 
     https://github.com/getAsterisk/claudia
+
+AutoGen
+
+https://microsoft.github.io/autogen/dev/index.html
+
+uvx autogenstudio ui --port 8080 --appdir ./
+

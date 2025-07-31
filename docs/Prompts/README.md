@@ -1,6 +1,6 @@
 # AI Analysis Prompts for Betfair Trading
 
-This directory contains 40+ specialized prompts for AI-powered analysis of Betfair markets, particularly focused on horse racing betting opportunities and market analysis. These prompts range from comprehensive analytical frameworks to silent automated execution systems with proven performance results including 83.3% strike rates and 77.6% ROI across diverse market conditions.
+This directory contains 100+ specialized prompts for AI-powered analysis of Betfair markets, particularly focused on horse racing betting opportunities and market analysis. These prompts range from comprehensive analytical frameworks to silent automated execution systems with proven performance results including 83.3% strike rates and 77.6% ROI across diverse market conditions.
 
 ## Overview
 
@@ -89,12 +89,71 @@ The prompts are organized into several categories with demonstrated performance 
 - Uses "HorseRacingR5_Trade" data context for trading-focused analysis
 - **Best for:** Automated trading execution with R5 analytical framework
 
-#### [HorseRacingStrategyR5_Trade_Ideas.md](HorseRacingStrategyR5_Trade_Ideas.md)
-**Strategy R5 - Trading Framework Development**
-- Development version of R5 trading strategy with comprehensive analysis output
-- Enhanced trading logic with detailed reasoning and methodology
-- Multi-context trading pattern analysis and execution recommendations
-- **Best for:** Trading strategy development and optimization with full analytical transparency
+#### [HorseRacingStrategyR6.md](HorseRacingStrategyR6.md)
+**Strategy R6 - Optimized Silent Execution**
+- Silent mode optimization with enhanced composite scoring
+- Advanced decision logic with 4-factor analysis: Semantic Form (35%), Value (25%), Prediction (25%), Stability (15%)
+- Supports both backing and laying strategies with exact 10 Euro execution
+- **Best for:** Silent automated execution with optimized analytical precision
+
+#### [HorseRacingStrategyR6_DS.md](HorseRacingStrategyR6_DS.md)
+**Strategy R6 - Direct Signal Implementation**
+- Ultra-minimal output with direct execution signals only
+- Single line status reporting: "Executed [Back/Lay] on [HorseName]" or "No action taken"
+- Enhanced silent operation for automated trading systems
+- **Best for:** Minimal noise automated execution with direct action feedback
+
+### Market Analysis and Real-Time Trading
+
+#### [BetfairMarketAnalysisPrompt.md](BetfairMarketAnalysisPrompt.md)
+**Comprehensive Real-Time Market Analysis with Trading Recommendations**
+- Professional-grade market analysis with price movement tracking and volume indicators
+- Advanced trading pattern identification and professional betting activity detection
+- Specific back/lay/trade opportunities with tick-level entry and exit targets
+- Risk assessment and confidence levels for each selection with market-wide analysis
+- Trading recommendations with profit/loss parameters and position management
+- Market inefficiency detection and arbitrage opportunity assessment
+- **Best for:** Real-time market analysis, professional trading opportunities, and comprehensive market intelligence
+
+### Favourite-Focused Analysis Systems
+
+#### [HorseRacingEVAnalysisFavouriteR3.md](HorseRacingEVAnalysisFavouriteR3.md)
+**Favourite R3 - Enhanced EV Analysis**
+- Specialized analysis focusing on market favourite performance evaluation
+- Combines Timeform professional analysis with Racing Post comprehensive data
+- Enhanced EV calculations with competitive field strength assessment
+- **Best for:** Market favourite evaluation with professional-grade data integration
+
+#### [HorseRacingEVAnalysisFavouriteR3_Silent.md](HorseRacingEVAnalysisFavouriteR3_Silent.md)
+**Favourite R3 - Silent Mode Implementation**
+- Silent execution version of Favourite R3 analysis
+- Automated favourite evaluation with minimal output
+- **Best for:** Silent automated favourite analysis and execution
+
+#### [HorseRacingEVAnalysisFavouriteR4.md](HorseRacingEVAnalysisFavouriteR4.md)
+**Favourite R4 - Advanced Favourite Analysis System**
+- Enhanced favourite-focused analysis with improved evaluation criteria
+- Advanced competitive field assessment for favourite value identification
+- **Best for:** Advanced favourite evaluation with enhanced analytical depth
+
+#### [HorseRacingEVAnalysisFavouriteR5.md](HorseRacingEVAnalysisFavouriteR5.md)
+**Favourite R5 - Multi-Context Favourite Analysis**
+- Multi-context integration for comprehensive favourite evaluation
+- Enhanced decision-making framework for favourite-based strategies
+- **Best for:** Comprehensive favourite analysis with multiple data source validation
+
+#### [HorseRacingEVAnalysisFavouriteR6.md](HorseRacingEVAnalysisFavouriteR6.md)
+**Favourite R6 - EV Range Strategy Edition**
+- Advanced favourite analysis with EV range criteria implementation
+- Timeform professional racing analysis integration with Racing Post data
+- Specific EV threshold execution for controlled risk management
+- **Best for:** Favourite evaluation with precise EV range control and professional data integration
+
+#### [HorseRacingEVAnalysisFavouriteR6_Silent.md](HorseRacingEVAnalysisFavouriteR6_Silent.md)
+**Favourite R6 - Silent EV Range Implementation**
+- Silent execution version of R6 favourite analysis with EV range criteria
+- Automated favourite evaluation with threshold-based execution control
+- **Best for:** Silent automated favourite analysis with EV range risk management
 
 ### Combined Analysis Approaches
 
@@ -571,6 +630,35 @@ Use **BetfairMarketAnalysisPrompt.md** when:
 - Looking for market-wide pattern recognition and professional activity indicators
 - Require actionable trading recommendations with profit/loss parameters
 
+### For Favourite-Focused Analysis
+Use **HorseRacingEVAnalysisFavouriteR6.md** when:
+- You want specialized analysis focusing on market favourite performance
+- Need EV range criteria for controlled risk management
+- Want professional-grade Timeform and Racing Post data integration
+- Seeking enhanced favourite evaluation with competitive field assessment
+- Prefer favourite-based strategies with precise threshold control
+
+### For Silent Favourite Analysis
+Use **HorseRacingEVAnalysisFavouriteR6_Silent.md** when:
+- You want silent automated favourite evaluation with EV range control
+- Need minimal output automated favourite analysis
+- Prefer threshold-based execution with favourite-focused strategies
+- Want automated favourite assessment with risk management constraints
+
+### For Optimized Silent Execution
+Use **HorseRacingStrategyR6.md** when:
+- You want optimized silent execution with enhanced composite scoring
+- Need advanced 4-factor analysis with weighted decision criteria
+- Prefer both backing and laying capability in silent mode
+- Want automated execution with analytical precision optimization
+
+### For Ultra-Minimal Automated Trading
+Use **HorseRacingStrategyR6_DS.md** when:
+- You need ultra-minimal output with direct execution signals only
+- Want single line status reporting for trading systems
+- Prefer minimal noise automated execution with direct feedback
+- Need simple success/failure reporting for automated trading
+
 ### For Conservative Risk Management
 Use **HorseRacingEVAnalysisWithConservativeBetting.md** when:
 - Capital preservation is the primary goal
@@ -784,6 +872,10 @@ When creating new prompts:
 | **Silent triple-context execution** | **Medium** | **Full** | **Automated R5 power** | **HorseRacingStrategyR5.md** |
 | **R5 Trading Implementation** | **Medium** | **Full** | **Trading-optimized R5** | **HorseRacingStrategyR5_Trade.md** |
 | **R5 Trading Development** | **Medium-High** | **Manual** | **Trading strategy development** | **HorseRacingStrategyR5_Trade_Ideas.md** |
+| **R6 Optimized Silent Execution** | **Medium** | **Full** | **Enhanced composite scoring** | **HorseRacingStrategyR6.md** |
+| **R6 Ultra-Minimal Execution** | **Low-Medium** | **Full** | **Direct signal feedback** | **HorseRacingStrategyR6_DS.md** |
+| **Favourite R6 EV Range Analysis** | **Medium** | **Manual** | **Professional favourite analysis** | **HorseRacingEVAnalysisFavouriteR6.md** |
+| **Favourite R6 Silent Execution** | **Low-Medium** | **Full** | **Silent favourite automation** | **HorseRacingEVAnalysisFavouriteR6_Silent.md** |
 | **Professional trading execution** | **Medium-High** | **Full** | **Advanced position management** | **BetfairTradingStrategyExecutionPrompt.md** |
 | **Weight of money trading** | **Medium** | **Full** | **Liquidity-based trading** | **WeightOfMoneyStrategy.md** |
 | **Advanced weight of money trading** | **Medium-High** | **Full** | **Professional WoM trading** | **WeightOfMoneyStrategyR1.md** |
@@ -796,5 +888,5 @@ When creating new prompts:
 
 ---
 
-*Last updated: July 4, 2025*  
+*Last updated: July 31, 2025*  
 *Performance data based on real market testing with Strategy R1 achieving 83.3% strike rate and 115-150% ROI*
