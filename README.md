@@ -108,6 +108,7 @@ Ready-to-use AI prompts for various sports and analysis types:
 **[📖 Complete Posts Index](docs/Posts/README.md)**
 
 #### Latest Community Highlights
+- **[Betfair AI Trading Weekly Report - August 2, 2025](docs/Posts/BetfairAiTrading_Weekly_Report_2025-08-02.md)** - Community insights on model selection, LLMs as study tools, and deriving place odds from win odds in horse racing
 - **[Betfair AI Trading Weekly Report - July 26, 2025](docs/Posts/BetfairAiTrading_Weekly_Report_2025-07-26.md)** - Community discussions on ML libraries, horse racing data structuring, and the evolution from traditional to agentic AI approaches
 
 #### Featured Community Experiences

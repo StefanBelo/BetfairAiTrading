@@ -75,6 +75,22 @@ This directory contains the complete source code implementation for the Betfair 
 - **Generated Reports**: Markdown analysis reports with functional programming benefits
 - **Best For**: Functional programming enthusiasts, type-safe analysis, composable analysis pipelines
 
+#### [BetfairMarketAnalyzerPython/](BetfairMarketAnalyzerPython/)
+**Python Technical Analysis System**
+- **Purpose**: Professional technical analysis using TA-Lib and pandas for data science approach
+- **Architecture**:
+  - `models/` - Python data models
+    - `analysis_models.py` - Analysis result data classes
+    - `betfair_models.py` - Market data models
+  - `services/` - Analysis and reporting services
+    - `technical_analysis_service.py` - TA-Lib based technical analysis
+    - `report_generator_service.py` - Professional report generation
+  - `main.py` - Main Python application
+  - `requirements.txt` - Python dependencies including TA-Lib
+- **Python Features**: TA-Lib technical indicators, pandas data manipulation, numpy calculations, data science libraries
+- **Generated Reports**: Comprehensive markdown reports with Python-based analysis
+- **Best For**: Data science workflows, Python ecosystem integration, machine learning preparation
+
 #### [App/](App/)
 **Core Application Framework**
 - **Purpose**: Main application framework and shared components
@@ -145,6 +161,8 @@ This directory contains the complete source code implementation for the Betfair 
 
 ### **Key Libraries & Dependencies**
 - **Skender.Stock.Indicators**: Professional technical analysis indicators
+- **TA-Lib**: Python technical analysis library for advanced indicators
+- **pandas & numpy**: Python data manipulation and numerical computing
 - **ModelContextProtocol.Client**: MCP integration for AI agents
 - **FastAgent**: Python AI agent framework
 - **BfexplorerApp MCP Server**: Core trading platform integration
@@ -159,7 +177,7 @@ This directory contains the complete source code implementation for the Betfair 
 ### **Quick Start Paths**
 
 1. **AI Agent Development**: Start with `AiAgentCSharp/` for production or `AiAgentPython/` for research
-2. **Technical Analysis**: Explore `BetfairMarketAnalyzer/` for C# implementation or `BetfairMarketAnalyzerFSharp/` for functional programming approach
+2. **Technical Analysis**: Explore `BetfairMarketAnalyzer/` for C# implementation, `BetfairMarketAnalyzerFSharp/` for functional programming approach, or `BetfairMarketAnalyzerPython/` for data science workflows
 3. **Strategy Development**: Check `Strategies/` for sport-specific implementations
 4. **Learning & Examples**: Review `Examples/` for implementation patterns
 

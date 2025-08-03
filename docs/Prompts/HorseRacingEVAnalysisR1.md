@@ -19,7 +19,7 @@ For each horse, perform a semantic analysis of the `lastRacesDescriptions` array
 
 *   **Finishing Position (`position`)**: Winning (1st), placing (2nd, 3rd), or unplaced.
 *   **Beaten Distance (`beatenDistance`)**: How far the horse was from the winner. A smaller distance is better.
-*   **Semantic Race Analysis (`raceDescription`)**: For each race, analyze the narrative for positive, negative, or neutral sentiment and extract key performance factors. For example, "finished strongly after a slow start" indicates a positive trajectory, while "faded in the final furlong" suggests a negative one.
+*   **Semantic Race Analysis (`raceDescription`)**: For each race, analyze the narrative for positive, negative, or neutral sentiment and extract key performance factors.
 *   **Jockey/Trainer Comments**: Note any specific comments in the `raceDescription` (e.g., "jockey said gelding ran too free" or "denied a clear run").
 *   **Recency (`lastRunInDays`)**: Give more weight to more recent races (smaller value).
 *   **Official Ratings**: Use `officialRating` and `rpRating` for additional context in your assessment.

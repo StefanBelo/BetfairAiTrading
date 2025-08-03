@@ -1,0 +1,7 @@
+pandas>=2.0.0
+numpy>=1.24.0
+# TA-Lib (optional - will use basic implementation if not available)
+# ta-lib>=0.4.26
+# talib-binary>=0.4.26
+plotly>=5.15.0
+python-dateutil>=2.8.2
