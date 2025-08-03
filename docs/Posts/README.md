@@ -25,14 +25,14 @@ This directory contains community posts, articles, and real-world examples showc
 
 ### [Horse Racing Combined EV Analysis with Automated Betting](../Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
 **Revolutionary Dual-Source Analysis Framework**
-- Comprehensive Expected Value analysis combining market trading data with racing performance data
-- **Trading Pattern Analysis**: Price-probability relationship interpretation, market confidence indicators, value identification signals
-- **Semantic Performance Analysis**: AI-powered deep analysis of race descriptions focusing on performance patterns and behavioral indicators
-- **Automated Strategy Selection**: Intelligent choice between "Back trailing stop loss trading" (high-confidence convergent opportunities) and "Trade 20% profit" (moderate confidence mixed signals)
-- **Silent Analysis Phase**: Complete multi-context evaluation without interim reports, culminating in automated strategy execution
-- **Live Implementation**: Real market activation and betting strategy deployment based on comprehensive EV calculations
-- **Best for:** Professional-grade automated betting with dual-source intelligence and systematic strategy execution
 
+### [Reddit Post: The Hidden Truth About Betting Strategies - Why 90% Fail After 30 Days](RedditPost_AIBettingStrategiesRealTimeMonitoring.md)
+**Real-Time AI Strategy Monitoring & Failure Prevention**
+- Reveals why most betting strategies fail after initial success and how to detect early signs of degradation
+- Introduces a real-time monitoring system for AI betting strategies: prediction quality, market environment shifts, edge erosion, and model overconfidence
+- Technical implementation: BfexplorerApp MCP Server, AI Agent with FastAgent, custom logging, and live dashboards
+- Community discussion: best metrics, kill switches, and early warning signs for strategy health
+- **Best for:** Anyone running live AI strategies who wants to avoid hidden failures and build robust monitoring infrastructure
 ### [The Death of Traditional Betting Strategy Development? AI Agents Are Changing Everything](Post_TraditionalMLToAgenticStrategyDevelopment.md)
 **Revolutionary Paradigm Shift in Strategy Development**
 - Comprehensive comparison of traditional ML vs agentic AI approaches
