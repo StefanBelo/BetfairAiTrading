@@ -1,0 +1,510 @@
+{
+  "market": {
+    "marketId": "1.246602992",
+    "startTime": "2025-08-14T18:52:00+02:00",
+    "eventType": "Horse Racing",
+    "eventName": "Cork",
+    "marketName": "5f Hcap",
+    "status": "Open"
+  },
+  "selectionsData": [
+    {
+      "selectionId": "70507307_0.00",
+      "name": "Asdana",
+      "data": {
+        "racingpostHorseData": {
+          "lastRacesDescriptions": [
+            {
+              "beatenDistance": 4.75,
+              "lastRunInDays": 60,
+              "position": 4,
+              "raceDescription": "midfield, waiting for room over 2f out, headway over 1f out, weakened inside final furlong"
+            },
+            {
+              "beatenDistance": 3.25,
+              "lastRunInDays": 61,
+              "position": 3,
+              "raceDescription": "raced near side, prominent, kept on from under 2f out, went second inside final furlong, lost second final 110yds"
+            },
+            {
+              "beatenDistance": 3.25,
+              "lastRunInDays": 68,
+              "position": 3,
+              "raceDescription": "prominent towards near side, ridden over 1f out, kept on inside final furlong, just held third"
+            },
+            {
+              "beatenDistance": 1.5,
+              "lastRunInDays": 76,
+              "position": 4,
+              "raceDescription": "raced in last, headway up the centre over 1f out, edged right inside final furlong, kept on final 110yds, not pace to challenge"
+            },
+            {
+              "beatenDistance": 28,
+              "lastRunInDays": 108,
+              "position": 17,
+              "raceDescription": "ducked left start, midfield, weakened over 1f out"
+            },
+            {
+              "beatenDistance": 6.25,
+              "lastRunInDays": 295,
+              "position": 5,
+              "raceDescription": "prominent and briefly disputed lead alone towards near side, outpaced when ridden over 1f out, weakened inside final 110yds"
+            },
+            {
+              "beatenDistance": 3.5,
+              "lastRunInDays": 301,
+              "position": 4,
+              "raceDescription": "prominent towards near side, challenging over 1f out, no extra final 110yds"
+            },
+            {
+              "beatenDistance": 11.5,
+              "lastRunInDays": 369,
+              "position": 6,
+              "raceDescription": "midfield, headway 1f out, kept on, not reach leaders"
+            },
+            {
+              "beatenDistance": 7.75,
+              "lastRunInDays": 423,
+              "position": 4,
+              "raceDescription": "dwelt start, bumped start, in touch with leaders, nudged along on near side of group from over 2f out, ridden briefly over 1f out, kept on"
+            }
+          ],
+          "officialRating": 67,
+          "rpRating": 73
+        }
+      }
+    },
+    {
+      "selectionId": "69174763_0.00",
+      "name": "El Fontenaro",
+      "data": {
+        "racingpostHorseData": {
+          "lastRacesDescriptions": [
+            {
+              "beatenDistance": 5.25,
+              "lastRunInDays": 19,
+              "position": 8,
+              "raceDescription": "raced centre, midfield, headway over 1f out, no impression inside final furlong"
+            },
+            {
+              "beatenDistance": 2.75,
+              "lastRunInDays": 32,
+              "position": 4,
+              "raceDescription": "prominent, pressed leaders from over 1f out, no extra final 110yds, weakened towards finish (jockey said filly hung right under pressure)"
+            },
+            {
+              "beatenDistance": 1.75,
+              "lastRunInDays": 55,
+              "position": 4,
+              "raceDescription": "in touch with leaders, ran on from over 1f out"
+            },
+            {
+              "beatenDistance": 0.5,
+              "lastRunInDays": 76,
+              "position": 3,
+              "raceDescription": "towards rear, headway over 1f out, went second inside final furlong, kept on but lost second final 110yds"
+            },
+            {
+              "beatenDistance": 11.5,
+              "lastRunInDays": 281,
+              "position": 14,
+              "raceDescription": "midfield, outpaced 2f out, weakened 1f out, dropped to rear when eased inside final 110yds (vet reported the filly to be post race normal)"
+            },
+            {
+              "beatenDistance": 0,
+              "lastRunInDays": 318,
+              "position": 0,
+              "raceDescription": "unsuitable ground"
+            },
+            {
+              "beatenDistance": 1.5,
+              "lastRunInDays": 329,
+              "position": 2,
+              "raceDescription": "in touch with leaders on far side of group, challenging from over 1f out, ran on inside final furlong, 1st of 8 in group"
+            },
+            {
+              "beatenDistance": 6.5,
+              "lastRunInDays": 341,
+              "position": 7,
+              "raceDescription": "disputed lead, headed and weakened inside final furlong"
+            },
+            {
+              "beatenDistance": 7.5,
+              "lastRunInDays": 371,
+              "position": 6,
+              "raceDescription": "prominent, pressed leader after 1f, weakened gradually inside final furlong"
+            },
+            {
+              "beatenDistance": 4.75,
+              "lastRunInDays": 383,
+              "position": 8,
+              "raceDescription": "led, faced challenge under 2f out, headed 1f out, weakened final 110yds"
+            },
+            {
+              "beatenDistance": 16.5,
+              "lastRunInDays": 426,
+              "position": 13,
+              "raceDescription": "towards rear on near side of group, no impression from 2f out"
+            },
+            {
+              "beatenDistance": 12,
+              "lastRunInDays": 447,
+              "position": 16,
+              "raceDescription": "dwelt start, in rear on far side of group, headway over 2f out, hung right and weakening when flashed tail over 1f out"
+            },
+            {
+              "beatenDistance": 0,
+              "lastRunInDays": 460,
+              "position": 0,
+              "raceDescription": "skin allergy"
+            }
+          ],
+          "officialRating": 59,
+          "rpRating": 72
+        }
+      }
+    },
+    {
+      "selectionId": "69557372_0.00",
+      "name": "Tomarlo",
+      "data": {
+        "racingpostHorseData": {
+          "lastRacesDescriptions": [
+            {
+              "beatenDistance": 3.25,
+              "lastRunInDays": 62,
+              "position": 4,
+              "raceDescription": "midfield, headway over 1f out, soon went second, lost two places inside final 110yds"
+            },
+            {
+              "beatenDistance": 8.25,
+              "lastRunInDays": 76,
+              "position": 9,
+              "raceDescription": "dwelt start, pushed along briefly soon after start, in rear, headway but short of room against far rail over 1f out, weakened final 110yds (jockey said gelding was slowly away)"
+            },
+            {
+              "beatenDistance": 2,
+              "lastRunInDays": 96,
+              "position": 5,
+              "raceDescription": "raced near side, midfield, switched left and headway over 1f out, ridden and kept on inside final furlong, not reach leaders, 3rd of 13 in group"
+            },
+            {
+              "beatenDistance": 1.75,
+              "lastRunInDays": 112,
+              "position": 3,
+              "raceDescription": "took keen hold, prominent, led 2f out, outpaced when headed 1f out, no extra final 110yds, lost second towards finish"
+            },
+            {
+              "beatenDistance": 0.5,
+              "lastRunInDays": 216,
+              "position": 2,
+              "raceDescription": "took keen hold, towards rear but in touch with leaders, headway on near side of group over 2f out, challenging going best 1f out, ridden and edged left when no extra inside final 110yds"
+            },
+            {
+              "beatenDistance": 1,
+              "lastRunInDays": 267,
+              "position": 2,
+              "raceDescription": "dwelt start, soon in touch with leaders, headway going easily from over 2f out, led 1f out, soon ridden, headed towards finish"
+            },
+            {
+              "beatenDistance": 0,
+              "lastRunInDays": 281,
+              "position": 1,
+              "raceDescription": "held up in rear, bit short of room home turn, headway on far side of group from over 2f out, led and ran on inside final furlong"
+            },
+            {
+              "beatenDistance": 1.5,
+              "lastRunInDays": 292,
+              "position": 4,
+              "raceDescription": "towards rear, headway from over 1f out, kept on"
+            },
+            {
+              "beatenDistance": 16,
+              "lastRunInDays": 319,
+              "position": 14,
+              "raceDescription": "prominent, weakened over 1f out"
+            },
+            {
+              "beatenDistance": 18,
+              "lastRunInDays": 408,
+              "position": 9,
+              "raceDescription": "prominent on inner, outpaced under 2f out, weakened final furlong (jockey said colt lugged right in straight)"
+            },
+            {
+              "beatenDistance": 10,
+              "lastRunInDays": 438,
+              "position": 10,
+              "raceDescription": "midfield, raced wide on turn 2f out, weakened 1f out (jockey said colt hung right up the straight)"
+            },
+            {
+              "beatenDistance": 5.25,
+              "lastRunInDays": 450,
+              "position": 6,
+              "raceDescription": "in rear, raced near side, some headway and drifted right from over 1f out (jockey said colt drifted right in final furlong)"
+            }
+          ],
+          "officialRating": 64,
+          "rpRating": 72
+        }
+      }
+    },
+    {
+      "selectionId": "70179956_0.00",
+      "name": "Tino Pai",
+      "data": {
+        "racingpostHorseData": {
+          "lastRacesDescriptions": [
+            {
+              "beatenDistance": 5,
+              "lastRunInDays": 28,
+              "position": 3,
+              "raceDescription": "prominent, pressed leader after 2f, outpaced 2f out, lost second inside final furlong, soon weakened"
+            },
+            {
+              "beatenDistance": 1.25,
+              "lastRunInDays": 40,
+              "position": 3,
+              "raceDescription": "prominent behind clear leader, raced in second from over 1f out, headway inside final furlong, ran on but lost second towards finish"
+            },
+            {
+              "beatenDistance": 3,
+              "lastRunInDays": 55,
+              "position": 5,
+              "raceDescription": "in touch with leaders, bit short of room on inner from over 1f out, no extra when in the clear inside final furlong"
+            },
+            {
+              "beatenDistance": 7.5,
+              "lastRunInDays": 61,
+              "position": 9,
+              "raceDescription": "prominent, raced far side, steadied and dropped to rear soon after start, headway from 3f out, weakened inside final furlong"
+            },
+            {
+              "beatenDistance": 5.75,
+              "lastRunInDays": 76,
+              "position": 7,
+              "raceDescription": "disputed lead, pressed leader halfway, led over 1f out, soon hung right, headed and weakened quickly inside final furlong"
+            },
+            {
+              "beatenDistance": 0.5,
+              "lastRunInDays": 183,
+              "position": 2,
+              "raceDescription": "took keen hold early, led, ridden when faced challenge inside final furlong, ran green and headed inside final 110yds, kept on"
+            },
+            {
+              "beatenDistance": 3.5,
+              "lastRunInDays": 197,
+              "position": 5,
+              "raceDescription": "prominent, led after 1f, headed and weakened final 110yds"
+            },
+            {
+              "beatenDistance": 3.25,
+              "lastRunInDays": 253,
+              "position": 5,
+              "raceDescription": "soon led, headed and weakened final 110yds"
+            },
+            {
+              "beatenDistance": 14,
+              "lastRunInDays": 265,
+              "position": 6,
+              "raceDescription": "slowly away, midfield, weakened inside final furlong"
+            },
+            {
+              "beatenDistance": 0,
+              "lastRunInDays": 286,
+              "position": 0,
+              "raceDescription": "coughing"
+            },
+            {
+              "beatenDistance": 3.25,
+              "lastRunInDays": 292,
+              "position": 6,
+              "raceDescription": "towards rear, steady headway towards far side from over 2f out, no extra inside final furlong"
+            },
+            {
+              "beatenDistance": 0,
+              "lastRunInDays": 318,
+              "position": 0,
+              "raceDescription": "coughing"
+            },
+            {
+              "beatenDistance": 6,
+              "lastRunInDays": 329,
+              "position": 6,
+              "raceDescription": "towards rear, switched right after 1f, soon in rear on near side of group, no extra from over 1f out, 4th of 6 in group"
+            },
+            {
+              "beatenDistance": 7.25,
+              "lastRunInDays": 363,
+              "position": 11,
+              "raceDescription": "towards rear throughout"
+            },
+            {
+              "beatenDistance": 12.5,
+              "lastRunInDays": 374,
+              "position": 14,
+              "raceDescription": "took keen hold, towards rear on far side of group, no impression from 2f out"
+            },
+            {
+              "beatenDistance": 2.25,
+              "lastRunInDays": 384,
+              "position": 4,
+              "raceDescription": "dwelt start, towards rear early, in touch with leaders going okay over 2f out, headway when bit short of room and switched right 1f out, kept on final 110yds"
+            },
+            {
+              "beatenDistance": 7.5,
+              "lastRunInDays": 414,
+              "position": 8,
+              "raceDescription": "prominent, joined leaders on near side of group after 1f, weakened gradually from over 1f out"
+            },
+            {
+              "beatenDistance": 7.75,
+              "lastRunInDays": 432,
+              "position": 10,
+              "raceDescription": "ran green throughout, towards rear, some headway over 2f out, never dangerous"
+            }
+          ],
+          "officialRating": 57,
+          "rpRating": 70
+        }
+      }
+    },
+    {
+      "selectionId": "75061130_0.00",
+      "name": "Titan Sun",
+      "data": {
+        "racingpostHorseData": {
+          "lastRacesDescriptions": [
+            {
+              "beatenDistance": 17.5,
+              "lastRunInDays": 55,
+              "position": 15,
+              "raceDescription": "took keen hold, in rear, brief headway halfway, soon outpaced, weakened under 2f out"
+            },
+            {
+              "beatenDistance": 14,
+              "lastRunInDays": 70,
+              "position": 9,
+              "raceDescription": "in rear, bit short of room 2f out, some headway final furlong"
+            },
+            {
+              "beatenDistance": 18,
+              "lastRunInDays": 102,
+              "position": 6,
+              "raceDescription": "in touch with leaders on outer, weakened 2f out"
+            },
+            {
+              "beatenDistance": 4,
+              "lastRunInDays": 301,
+              "position": 5,
+              "raceDescription": "prominent up the centre, switched left under 2f out, challenging over 1f out, no extra final 110yds"
+            }
+          ],
+          "officialRating": 66,
+          "rpRating": 67
+        }
+      }
+    },
+    {
+      "selectionId": "76025606_0.00",
+      "name": "Kayamite",
+      "data": {
+        "racingpostHorseData": {
+          "lastRacesDescriptions": [
+            {
+              "beatenDistance": 11.5,
+              "lastRunInDays": 144,
+              "position": 8,
+              "raceDescription": "prominent, weakened over 1f out"
+            },
+            {
+              "beatenDistance": 4.25,
+              "lastRunInDays": 237,
+              "position": 7,
+              "raceDescription": "prominent, lost position when outpaced 2f out, no impression from over 1f out"
+            },
+            {
+              "beatenDistance": 5.5,
+              "lastRunInDays": 246,
+              "position": 5,
+              "raceDescription": "prominent behind clear leader, weakened over 1f out"
+            },
+            {
+              "beatenDistance": 6.5,
+              "lastRunInDays": 278,
+              "position": 7,
+              "raceDescription": "prominent early, soon dropped to midfield, no extra 1f out"
+            }
+          ],
+          "officialRating": 59,
+          "rpRating": 69
+        }
+      }
+    },
+    {
+      "selectionId": "84381876_0.00",
+      "name": "Jordan Breeze",
+      "data": {
+        "racingpostHorseData": {
+          "lastRacesDescriptions": [
+            {
+              "beatenDistance": 5.75,
+              "lastRunInDays": 27,
+              "position": 11,
+              "raceDescription": "never better than midfield, raced wide home turn, weakened final furlong"
+            },
+            {
+              "beatenDistance": 39,
+              "lastRunInDays": 49,
+              "position": 9,
+              "raceDescription": "took keen hold, prominent, ducked left soon after start, lost ground after 3f, weakened quickly from under 2f out (jockey said gelding ran very free in early part of race)"
+            },
+            {
+              "beatenDistance": 7.5,
+              "lastRunInDays": 61,
+              "position": 8,
+              "raceDescription": "raced far side, prominent, challenging from over 2f out, weakened inside final furlong"
+            },
+            {
+              "beatenDistance": 26,
+              "lastRunInDays": 70,
+              "position": 18,
+              "raceDescription": "towards rear throughout"
+            }
+          ],
+          "officialRating": 53,
+          "rpRating": 72
+        }
+      }
+    },
+    {
+      "selectionId": "80656629_0.00",
+      "name": "Prairie Girl",
+      "data": {
+        "racingpostHorseData": {
+          "lastRacesDescriptions": [
+            {
+              "beatenDistance": 10.5,
+              "lastRunInDays": 40,
+              "position": 6,
+              "raceDescription": "midfield, weakened final furlong"
+            },
+            {
+              "beatenDistance": 7.25,
+              "lastRunInDays": 138,
+              "position": 8,
+              "raceDescription": "midfield, outpaced halfway, brief headway on far side of group 2f out, weakened 1f out"
+            },
+            {
+              "beatenDistance": 5.5,
+              "lastRunInDays": 167,
+              "position": 7,
+              "raceDescription": "dwelt start, held up in rear, ridden and headway over 1f out, no impression inside final furlong"
+            }
+          ],
+          "officialRating": 57,
+          "rpRating": 71
+        }
+      }
+    }
+  ]
+}
