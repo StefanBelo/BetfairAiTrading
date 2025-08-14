@@ -1,0 +1,78 @@
+{
+  "activeBetfairMarket": {
+    "marketId": "1.246598452",
+    "startTime": "2025-08-14T17:00:00Z",
+    "eventType": "Horse Racing",
+    "eventName": "Windsor",
+    "marketName": "1m Hcap",
+    "status": "Open",
+    "selections": [
+      {
+        "selectionId": "71560076_0.00",
+        "name": "Love Is The Law",
+        "price": 5.7,
+        "status": "Active"
+      },
+      {
+        "selectionId": "76221063_0.00",
+        "name": "Nakaaha",
+        "price": 10.5,
+        "status": "Active"
+      },
+      {
+        "selectionId": "76590777_0.00",
+        "name": "Zarathos",
+        "price": 8.4,
+        "status": "Active"
+      },
+      {
+        "selectionId": "81447687_0.00",
+        "name": "Gloriously Sassy",
+        "price": 8,
+        "status": "Active"
+      },
+      {
+        "selectionId": "73193495_0.00",
+        "name": "Sky Advocate",
+        "price": 8,
+        "status": "Active"
+      },
+      {
+        "selectionId": "74011002_0.00",
+        "name": "Eazy On The Eye",
+        "price": 8.6,
+        "status": "Active"
+      },
+      {
+        "selectionId": "73377777_0.00",
+        "name": "Kodi Fire",
+        "price": 11.5,
+        "status": "Active"
+      },
+      {
+        "selectionId": "76636308_0.00",
+        "name": "Radical Design",
+        "price": 10,
+        "status": "Active"
+      },
+      {
+        "selectionId": "26757866_0.00",
+        "name": "Law Degree",
+        "price": 30,
+        "status": "Active"
+      },
+      {
+        "selectionId": "72422010_0.00",
+        "name": "Reddeef",
+        "price": 42,
+        "status": "Active"
+      },
+      {
+        "selectionId": "73768778_0.00",
+        "name": "Its Only Fun",
+        "price": 90,
+        "status": "Active"
+      }
+    ]
+  }
+}
