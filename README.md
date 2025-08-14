@@ -5,11 +5,24 @@
 **[📖 Complete Analysis Index](docs/Analysis/README.md)**
 
 Performance analysis and strategy evaluation:
-- **[Horse Racing EV Analysis Results - June 22, 2025](docs/Analysis/HorseRacingEVAnalysisResults_22June2025.md)** - Comprehensive analysis of AI-driven Expected Value betting strategy performance across 12 races with strategic recommendations
-- **[Horse Racing Strategy R1 Results - June 24, 2025](docs/Analysis/HorseRacingStrategyR1Results_24June2025.md)** - Exceptional performance with 83.3% strike rate across 6 selections and 115-150% ROI
-- **[Horse Racing Strategy R2 Results - June 25, 2025](docs/Analysis/HorseRacingStrategyR2Results_25June2025.md)** - Strong positive results with 77.6% ROI across 21 races and comprehensive performance metrics
-- **[York Sprint Handicap Strategy - June 28, 2025](docs/Analysis/YorkSprintHandicapStrategy_28June2025.md)** - Specialized handicap race analysis and strategy performance
-- **[Weight of Money Analysis - Tipperary Race - July 3, 2025](docs/Analysis/WeightOfMoneyAnalysis_TipperaryRace_03July2025.md)** - Advanced market sentiment and money flow analysiscommunity for Betfair enthusiasts, traders, and tech-savvy bettors!**
+
+## 🧠 Expanded AI Analysis Prompts (New in Prompts Folder)
+
+Explore over 100 specialized AI prompts for Betfair trading in the `docs/Prompts` folder. These cover:
+- Advanced strategy systems (R1–R6, multi-context, silent execution)
+- Combined EV analysis, Dutch betting, conservative and automated strategies
+- Market analysis, weight of money, and trading execution frameworks
+- Favourite-focused, expert-guided, and minimal/no-reporting prompts
+- Integration guides for BFExplorer and MCP workflows
+
+See the [Prompts README](docs/Prompts/README.md) for a full index, usage recommendations, and quick reference table for all available analysis types.
+
+**Recent additions include:**
+- Horse Racing Semantic Analysis, Triple-Context R5, Silent Execution, OLBG Tipster Integration, and more.
+
+These prompts enable instant, professional-grade analysis and fully autonomous strategy execution for horse racing, football, tennis, and more.
+
+---
 
 Whether you're new to the Betfair Exchange or a seasoned trader, this is your hub to explore, share, and master betting and trading strategies powered by **machine learning**, **artificial intelligence**, and **advanced statistical analysis**.
 
@@ -110,6 +123,8 @@ Ready-to-use AI prompts for various sports and analysis types:
 #### Latest Community Highlights
 - **[Betfair AI Trading Weekly Report - August 2, 2025](docs/Posts/BetfairAiTrading_Weekly_Report_2025-08-02.md)** - Community insights on model selection, LLMs as study tools, and deriving place odds from win odds in horse racing
 - **[Betfair AI Trading Weekly Report - July 26, 2025](docs/Posts/BetfairAiTrading_Weekly_Report_2025-07-26.md)** - Community discussions on ML libraries, horse racing data structuring, and the evolution from traditional to agentic AI approaches
+
+- **[Betfair AI Trading Weekly Report - August 9, 2025](docs/Posts/BetfairAiTrading_Weekly_Report_2025-08-09.md)** - Community advice for beginners in algorithmic betting, machine learning model results in soccer draw markets, and reflections on learning and collaboration
 
 #### Featured Community Experiences
 - **[The Death of Traditional Betting Strategy Development? AI Agents Are Changing Everything](docs/Posts/Post_TraditionalMLToAgenticStrategyDevelopment.md)** - Revolutionary shift from weeks of coding to hours of conversation-driven strategy development

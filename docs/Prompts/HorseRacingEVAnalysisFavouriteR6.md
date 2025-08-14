@@ -239,7 +239,7 @@ Present the analysis in an enhanced table format:
 
 **BACK Strategy Execution Range:**
 - **Minimum EV for BACK**: +8% (Conservative backing threshold)
-- **Maximum EV for BACK**: +50% (Upper limit to avoid outlier scenarios)
+- **Maximum EV for BACK**: +100% (Upper limit to avoid outlier scenarios)
 
 **LAY Strategy Execution Range:**
 - **Minimum EV for LAY**: -8% (Conservative laying threshold - horse slightly overvalued)
@@ -255,7 +255,7 @@ Present the analysis in an enhanced table format:
 
 **2. Apply EV Range Filter:**
 ```
-If Adjusted EV >= +8% AND Adjusted EV <= +50%:
+If Adjusted EV >= +8% AND Adjusted EV <= +100%:
     Consider BACK strategy (subject to additional criteria)
 Else If Adjusted EV <= -8%:
     Consider LAY strategy (subject to additional criteria - more negative = better)
@@ -272,7 +272,7 @@ Else:
 Identify the market favourite (horse with the lowest decimal odds) and apply the enhanced decision tree:
 
 ### Enhanced Favourite Analysis Criteria:
-1. **EV Range Requirement**: Must be within ±8% to ±50% range
+1. **EV Range Requirement**: Must be within ±8% to ±100% range
 2. **Positive EV**: Greater than +8% for backing consideration
 3. **Data Agreement**: Both Timeform and Racing Post semantic analysis should support the selection
 4. **Minimum Quality**: At least 3 Timeform stars OR RP Rating > 75 (if available)
@@ -283,7 +283,7 @@ Identify the market favourite (horse with the lowest decimal odds) and apply the
 ### Enhanced Favourite Betting Decision Logic:
 
 **BACK THE FAVOURITE ("Bet 10 Euro") if ALL of the following are true:**
-- **EV Range**: +8% ≤ EV ≤ +50%
+- **EV Range**: +8% ≤ EV ≤ +100%
 - Favourite has positive EV > +8% (after field adjustments)
 - Both Timeform and Racing Post semantic analysis support the selection
 - Meets minimum quality criteria (3+ stars OR RP Rating > 75)
@@ -294,7 +294,7 @@ Identify the market favourite (horse with the lowest decimal odds) and apply the
 - No major contradictions between data sources
 
 **BACK THE FAVOURITE ("Bet 10 Euro") - Special Case if ALL of the following are true:**
-- **EV Range**: +5% ≤ EV ≤ +50% (lower threshold for exceptional favourites)
+- **EV Range**: +5% ≤ EV ≤ +100% (lower threshold for exceptional favourites)
 - Favourite has exceptional quality (5 stars AND RP Rating > 120)
 - Dominant recent form (multiple recent wins with strong semantic analysis)
 - **STRONG field** but favourite's combined score is >150% of average field score

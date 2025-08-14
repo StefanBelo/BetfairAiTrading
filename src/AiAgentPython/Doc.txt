@@ -45,7 +45,18 @@ https://www.anthropic.com/claude-code
 
 AutoGen
 
-https://microsoft.github.io/autogen/dev/index.html
+    https://microsoft.github.io/autogen/dev/index.html
 
-uvx autogenstudio ui --port 8080 --appdir ./
+    uvx autogenstudio ui --port 8080 --appdir ./
 
+Open WebUI
+
+    Install
+        powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+    Run
+        $env:DATA_DIR="C:\open-webui\data"; uvx --python 3.11 open-webui@latest serve        
+
+Convo-Lang
+
+    https://learn.convo-lang.ai/#typescriptjavascript-integration
