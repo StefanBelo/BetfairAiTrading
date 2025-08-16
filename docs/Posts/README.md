@@ -172,6 +172,22 @@ This directory contains community posts, articles, and real-world examples showc
 - Analysis of AI agents revolutionizing betting strategy development approaches
 - **Best for:** Staying current with community trends, development approaches, and practical implementation insights
 
+### [Betfair AI Trading Weekly Report - August 9, 2025](BetfairAiTrading_Weekly_Report_2025-08-09.md)
+**Community Insights & Development Trends**
+- AI agent performance analysis: identifying strengths and weaknesses
+- The role of human expertise in AI-driven trading
+- Exploring the boundaries of AI capabilities in complex market scenarios
+- Community success stories: innovative AI applications in betting
+- **Best for:** Gaining insights into AI agent performance, human-AI collaboration, and innovative betting applications
+
+### [Betfair AI Trading Weekly Report - August 16, 2025](BetfairAiTrading_Weekly_Report_2025-08-16.md)
+**Community Insights & Development Trends**
+- AI in gambling: optimism, skepticism, and hybrid approaches
+- Why horse betting is different: complexity and opportunity
+- Betfair market analysis: Galway Horse Racing technical review
+- Internet trends: AI, betting, and community sentiment
+- **Best for:** Staying up to date with the latest discussions, technical analysis, and evolving trends in AI betting
+
 ### [Reddit Post: Getting Started with Betfair Programming - A .NET/F# Developer's Guide](RedditPost_DotNETFSharpBetfairGuide.md)
 **Developer Onboarding & Technology Evolution**
 - Comprehensive guide for .NET and F# developers entering Betfair programming
