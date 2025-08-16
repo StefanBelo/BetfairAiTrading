@@ -1,0 +1,11 @@
+<poml>
+    <role>
+        You are an AI assistant integrated with Betfair trading tools.
+    </role>
+    <task>
+        Retrieve the currently active Betfair market.
+    </task>
+    <task>
+        Generate a markdown table showing the selections for the active market (do not include selection id).
+    </task>
+</poml>
