@@ -28,20 +28,44 @@ This directory contains community posts, articles, and real-world examples showc
 
 ### [Reddit Post: The Hidden Truth About Betting Strategies - Why 90% Fail After 30 Days](RedditPost_AIBettingStrategiesRealTimeMonitoring.md)
 **Real-Time AI Strategy Monitoring & Failure Prevention**
-- Reveals why most betting strategies fail after initial success and how to detect early signs of degradation
-- Introduces a real-time monitoring system for AI betting strategies: prediction quality, market environment shifts, edge erosion, and model overconfidence
-- Technical implementation: BfexplorerApp MCP Server, AI Agent with FastAgent, custom logging, and live dashboards
-- Community discussion: best metrics, kill switches, and early warning signs for strategy health
-- **Best for:** Anyone running live AI strategies who wants to avoid hidden failures and build robust monitoring infrastructure
-### [The Death of Traditional Betting Strategy Development? AI Agents Are Changing Everything](Post_TraditionalMLToAgenticStrategyDevelopment.md)
-**Revolutionary Paradigm Shift in Strategy Development**
-- Comprehensive comparison of traditional ML vs agentic AI approaches
-- Speed revolution: from weeks of coding to hours of conversation-driven development
-- Real-world examples showing 2-4 weeks reduced to 1-2 hours setup time
-- Technical analysis of hybrid development approaches and best practices
-- Strategic guidance for different trader types: beginners, experienced developers, large operations
-- **Best for:** Understanding the fundamental shift in how betting strategies are developed and choosing the right approach for your situation
 
+### [Gemini CLI + Bfexplorer MCP: AI-Powered Betfair Trading (No Coding Needed)](GeminiCLI_BfexplorerMCP_RedditPost.md)
+**Automate Betfair trading with AI prompts and Bfexplorer—no coding required!**
+### Weekly Reports
+- [Betfair AI Trading Weekly Report - August 16, 2025](BetfairAiTrading_Weekly_Report_2025-08-16.md)
+- [Betfair AI Trading Weekly Report - August 9, 2025](BetfairAiTrading_Weekly_Report_2025-08-09.md)
+- [Betfair AI Trading Weekly Report - August 2, 2025](BetfairAiTrading_Weekly_Report_2025-08-02.md)
+- [Betfair AI Trading Weekly Report - July 26, 2025](BetfairAiTrading_Weekly_Report_2025-07-26.md)
+
+### Featured Posts & Articles
+- [Horse Racing Combined EV Analysis with Automated Betting](../Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
+- [Horse Racing EV Analysis R2 - Timeform Edition: Professional AI Racing Strategy](Post_TimeformEVAnalysisR2Strategy.md)
+- [AI Agent Horse Racing Analysis: The Power of Backtesting & Continuous Learning](Post_AIAgentBacktestingAndLearning.md)
+- [How I Became a Betfair Strategy Expert in Minutes (Real Example)](Post_BfexplorerStrategyExpert.md)
+- [Semantic Analysis of Horse Racing Form Data: AI-Powered Insights](Post_SemanticAnalysisOfHorseRacingFormData.md)
+- [Horse Racing EV Analysis: A Deep Dive into Expected Value Betting](Post_HorseRacingEVAnalysis.md)
+- [Crowd Wisdom vs. Betting Value: Finding Edges in Efficient Markets](Post_CrowdWisdomVsBettingValue.md)
+- [Post: AI Performance - Capitalism vs Communism](Post_AIPerformanceCapitalismVsCommunism.md)
+
+### Reddit Community Posts
+- [Reddit Post: The Hidden Truth About Betting Strategies - Why 90% Fail After 30 Days](RedditPost_AIBettingStrategiesRealTimeMonitoring.md)
+- [Reddit Post: AI Price Trend Analysis and Tool Feedback](RedditPost_AIPriceTrendAnalysisAndToolFeedback.md)
+- [Reddit Post: Cracking the Weight of Money Code - AI Market Psychology Expert](RedditPost_WeightOfMoneyTrading.md)
+- [Reddit Post: Horse Racing AI Achieves 83% Strike Rate](RedditPost_HorseRacingAI_83PercentStrikeRate.md)
+- [Reddit Post: Horse Racing AI Strategy Delivers 77.6% ROI in Single Day](RedditPost_HorseRacingStrategyR2_77PercentROI.md)
+- [Reddit Post: AI Horse Racing EV Analysis - Strategy Refinement Success](RedditPost_HorseRacingEVAnalysis.md)
+- [Reddit Post: Crowd Wisdom vs. Betting Value (Condensed)](RedditPost_CrowdWisdomVsBettingValue.md)
+- [Reddit Post: From Manual Testing to Full AI Automation - My 18-Year Journey](RedditPost_BetfairAITradingAppEvolution.md)
+- [Reddit Post: What AI Agents & Models Are You Actually Using?](RedditPost_AIAgentAndModelUsage.md)
+- [Reddit Post: My Experience with Gemini and F#](RedditPost_gemini_fsharp_experience.md)
+- [Reddit Post: Getting Started with Betfair Programming - A .NET/F# Developer's Guide](RedditPost_DotNETFSharpBetfairGuide.md)
+- [Market Data Context Overview Reddit Post](Market_Data_Context_Overview_Reddit_Post.md)
+- [Financial Signals Betting Reddit Post](FinancialSignalsBettingRedditPost.md)
+
+### Other Notable Content
+- [LLM Services Community Question](LLM_Services_Community_Question.md)
+
+---
 ### [Horse Racing EV Analysis R2 - Timeform Edition: Professional AI Racing Strategy](Post_TimeformEVAnalysisR2Strategy.md)
 **Professional Timeform Integration**
 - Revolutionary AI strategy combining Timeform's 75+ years of racing expertise with Expected Value analysis

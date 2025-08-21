@@ -8,6 +8,7 @@ fast = FastAgent("Bfexplorer Assistant")
 @fast.agent(name="BfexplorerApp",
     instruction="You are a helpful AI Agent executing betting/trading strategies on bfexplorer.",
     model="deepseek-chat",
+    #model="generic.openai/gpt-4.1",
     servers=["BfexplorerApp"]
 )
 async def main():

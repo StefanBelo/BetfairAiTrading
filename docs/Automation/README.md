@@ -46,13 +46,15 @@ This directory contains comprehensive guides on implementing AI-powered automati
 - Best practices for choosing the right development approach
 - **Best for:** Understanding modern strategy development paradigms and choosing optimal approaches
 
-### [Building Interactive Trading Charts: A Guide for Everyone](BuildingInteractiveTradingCharts.md)
 **Data Visualization and Analysis Tools**
-- Creating professional interactive charts for market analysis
-- Technical indicators and pattern recognition
-- Real-time data integration and visualization
-- User interface design for trading applications
-- **Best for:** Developing visual analysis tools and dashboards
+
+### [Using Gemini CLI with Bfexplorer App MCP Server](GeminiCLI_BfexplorerMCP.md)
+**No-Code AI Strategy Automation**
+- Guide to automating Betfair trading strategies using Gemini CLI and Bfexplorer MCP server
+- Prompt-driven approach for executing AI agent strategies
+- Comparison with Python FastAgent scripting
+- Integration with Bfexplorer's Windows PowerShell Executor for external command automation
+- **Best for:** Non-coders and rapid AI strategy deployment
 
 ## Key Topics Covered
 
