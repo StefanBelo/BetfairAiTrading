@@ -32,6 +32,7 @@ This directory contains community posts, articles, and real-world examples showc
 ### [Gemini CLI + Bfexplorer MCP: AI-Powered Betfair Trading (No Coding Needed)](GeminiCLI_BfexplorerMCP_RedditPost.md)
 **Automate Betfair trading with AI prompts and Bfexplorer—no coding required!**
 ### Weekly Reports
+- [Betfair AI Trading Weekly Report - August 22, 2025](BetfairAiTrading_Weekly_Report_2025-08-22.md)
 - [Betfair AI Trading Weekly Report - August 16, 2025](BetfairAiTrading_Weekly_Report_2025-08-16.md)
 - [Betfair AI Trading Weekly Report - August 9, 2025](BetfairAiTrading_Weekly_Report_2025-08-09.md)
 - [Betfair AI Trading Weekly Report - August 2, 2025](BetfairAiTrading_Weekly_Report_2025-08-02.md)
@@ -211,6 +212,13 @@ This directory contains community posts, articles, and real-world examples showc
 - Betfair market analysis: Galway Horse Racing technical review
 - Internet trends: AI, betting, and community sentiment
 - **Best for:** Staying up to date with the latest discussions, technical analysis, and evolving trends in AI betting
+
+### [Betfair AI Trading Weekly Report - August 22, 2025](BetfairAiTrading_Weekly_Report_2025-08-22.md)
+**Community Insights & Development Trends**
+- Comparison of idea-first (fast signal testing) vs. model-first (deep temporal/fundamental modeling) approaches
+- Practical workflows: quick falsification tests, rapid implementation/backtest for simple signals
+- Notes on multi-horizon forecasting: useful but often shifts work to feature engineering and tuning
+- **Best for:** Teams wanting a pragmatic hybrid approach — high-throughput idea testing plus selective deep modeling
 
 ### [Reddit Post: Getting Started with Betfair Programming - A .NET/F# Developer's Guide](RedditPost_DotNETFSharpBetfairGuide.md)
 **Developer Onboarding & Technology Evolution**

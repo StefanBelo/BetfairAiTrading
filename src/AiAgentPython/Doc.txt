@@ -55,7 +55,11 @@ Open WebUI
         powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
     Run
-        $env:DATA_DIR="C:\open-webui\data"; uvx --python 3.11 open-webui@latest serve        
+        $env:DATA_DIR="C:\open-webui\data"; uvx --python 3.11 open-webui@latest serve
+
+    https://github.com/open-webui/open-webui?tab=readme-ov-file
+
+    http://localhost:8080/                
 
 Convo-Lang
 
