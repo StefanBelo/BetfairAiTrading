@@ -1,6 +1,0 @@
-{
-    "poml.languageModel.provider": "openai",
-    "poml.languageModel.model": "gpt-4o",    
-    "poml.languageModel.apiUrl": "https://aihubmix.com/v1",
-    "poml.languageModel.apiKey": "sk-4RrVV5bTYWo67oOsB4583eB5D1E3467a976b4a0034Bc212f",
-}
