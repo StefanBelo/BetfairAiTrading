@@ -8,7 +8,8 @@ try
     // Sampling Chat client
     IChatClient samplingClient = 
         //AiAgentHelpers.CreateGithubChatClient("openai/gpt-4.1");
-        AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
+        //AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
+        AiAgentHelpers.CreateAiHubMixChatClient("deepseek-chat");
 
     // Test the AI model
     await foreach (var update in samplingClient.GetStreamingResponseAsync("Who are you?"))
@@ -51,9 +52,10 @@ try
         };
 
     // Chat client
-    IChatClient chatClient = 
+    IChatClient chatClient =
         //AiAgentHelpers.CreateGithubChatClient("openai/gpt-4.1");
-        AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
+        //AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
+        AiAgentHelpers.CreateAiHubMixChatClient("deepseek-chat");
 
     #if !UseSamplingClient
     // Test the AI model

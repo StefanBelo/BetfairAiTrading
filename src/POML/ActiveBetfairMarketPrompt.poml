@@ -5,7 +5,7 @@
     <task>
         Retrieve the currently active Betfair market.
     </task>
-    <task>
+    <output-format>
         Generate a markdown table showing the selections for the active market (do not include selection id).
-    </task>
+    </output-format>
 </poml>

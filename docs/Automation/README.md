@@ -46,7 +46,23 @@ This directory contains comprehensive guides on implementing AI-powered automati
 - Best practices for choosing the right development approach
 - **Best for:** Understanding modern strategy development paradigms and choosing optimal approaches
 
-**Data Visualization and Analysis Tools**
+### [BFExplorer Data Providers](BfexplorerDataProviders.md)
+**Understanding and Using Data Sources for AI Strategies**
+- Complete guide to available data providers in BFExplorer
+- Integration patterns with AI agent workflows using MCP tools
+- Best practices for combining multiple data sources
+- Custom data provider development guidance
+- **Best for:** Data exploration, strategy development, and understanding available information sources
+
+## Specialized Automation Topics
+
+### [Building Interactive Trading Charts](BuildingInteractiveTradingCharts.md)
+**Professional Data Visualization for Trading**
+- Creating responsive trading charts and analysis interfaces
+- Real-time data integration and display techniques
+- Professional UI/UX design for trading applications
+- Technical analysis chart implementation
+- **Best for:** Developers building custom trading interfaces and analysis tools
 
 ### [Using Gemini CLI with Bfexplorer App MCP Server](GeminiCLI_BfexplorerMCP.md)
 **No-Code AI Strategy Automation**

@@ -79,5 +79,14 @@ namespace AiAgentCSharp
         {
             return CreateChatClient("DEEPSEEK_API_KEY", "https://api.deepseek.com/v1", model);
         }
+
+        /// <summary>
+        /// CreateAiHubMixChatClient
+        /// </summary>
+        /// <returns></returns>
+        public static IChatClient CreateAiHubMixChatClient(string model)
+        {
+            return CreateChatClient("AIHUBMIX_API_KEY", "https://aihubmix.com/v1", model);
+        }
     }
 }

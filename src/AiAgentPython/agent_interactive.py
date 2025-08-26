@@ -9,7 +9,8 @@ fast = FastAgent("Bfexplorer Assistant")
 #@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="gemini-2.5-pro", servers=["BfexplorerApp"])
 #@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="generic.mistral-small:latest", servers=["BfexplorerApp"])
 #@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="mistral-ai/Mistral-Nemo", servers=["BfexplorerApp"])
-@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="generic.openai/gpt-4.1", servers=["BfexplorerApp"])
+#@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="generic.openai/gpt-4.1", servers=["BfexplorerApp"])
+@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="generic.deepseek-chat", servers=["BfexplorerApp"])
 async def main():
     # use the --model command line switch or agent arguments to change model
     async with fast.run() as agent:

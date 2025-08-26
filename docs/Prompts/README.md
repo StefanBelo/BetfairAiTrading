@@ -1,17 +1,19 @@
 # AI Analysis Prompts for Betfair Trading
 
-This directory contains 100+ specialized prompts for AI-powered analysis of Betfair markets, particularly focused on horse racing betting opportunities and market analysis. These prompts range from comprehensive analytical frameworks to silent automated execution systems with proven performance results including 83.3% strike rates and 77.6% ROI across diverse market conditions.
+This directory contains 120+ specialized prompts for AI-powered analysis of Betfair markets, particularly focused on horse racing betting opportunities and market analysis. These prompts range from comprehensive analytical frameworks to silent automated execution systems with proven performance results including 83.3% strike rates and 77.6% ROI across diverse market conditions.
 
 ## Overview
 
 The prompts are organized into several categories with demonstrated performance results:
 - **Advanced Strategy Systems**: Multi-component analysis frameworks (Strategy R1: 83.3% strike rate, Strategy R2: 77.6% ROI)
+- **BetfairSpData Analysis Systems**: Mathematical betting strategies using Betfair's starting price data and forecast models
 - **Combined Analysis Approaches**: Multi-methodology analysis for maximum accuracy (up to 83.3% success rates)
 - **Betting Strategy Variants**: Different execution approaches and risk management styles with proven ROI  
 - **Specialized Analysis Tools**: Focused analysis for specific data types or requirements
 - **Market Analysis Tools**: Weight of money analysis and trading opportunity identification
 - **System Integration**: Technical prompts for automation and workflow integration
 - **Data Visualization**: Chart creation and data presentation tools
+- **Templates & Tutorials**: Platform-specific configurations and educational content
 - **Performance Validated**: Strategies tested with real market data showing consistent profitability
 
 ## Horse Racing Analysis Prompts
@@ -231,6 +233,34 @@ The prompts are organized into several categories with demonstrated performance 
 **EV Analysis with Trading Data Integration**
 - Enhanced betting analysis incorporating additional trading data sources
 - **Best for:** Comprehensive market analysis with multiple data streams
+
+### BetfairSpData Analysis Systems
+
+#### [HorseRacingBetfairSpData.md](HorseRacingBetfairSpData.md)
+**BetfairSpData Optimal Betting Strategy**
+- Comprehensive betting strategy using BetfairSpData context for value identification
+- Combines original Expected Value metrics with user-calculated EV analysis
+- Implements Kelly Criterion for stake sizing with risk management controls
+- Value betting focus with diversification rules and price comparison analysis
+- **Best for:** Mathematical approach to value betting using Betfair's starting price data and forecast models
+
+#### [HorseRacingBetfairSpDataR1.md](HorseRacingBetfairSpDataR1.md)
+**BetfairSpData R1 - AI Agent Optimized Strategy**
+- Advanced optimization of BetfairSpData analysis with transparent metrics and deterministic logic
+- Enhanced probability calculations combining forecast and market probabilities
+- Sophisticated edge detection with probability differential analysis
+- Kelly Fraction implementation with multiple safety caps and risk controls
+- Comprehensive candidate qualification criteria with multi-factor validation
+- **Best for:** Professional-grade betting strategy with mathematical rigor and AI optimization
+
+#### [HorseRacingBetfairSpDataR1_Favourite.md](HorseRacingBetfairSpDataR1_Favourite.md)
+**BetfairSpData R1 - Favourite-Only Strategy**
+- Specialized strategy analyzing all horses but betting exclusively on the market favourite
+- Binary execution logic: Back favourite if candidate criteria met, Lay if not
+- Strict value criteria using forecast vs market probability analysis
+- 4-factor candidate qualification: userEvNet > 0, edgeProbability > 0.01, combinedEv > 0, kellyFraction > 0
+- Fixed 10 Euro betting with automated execution based on favourite's candidate status
+- **Best for:** Conservative favourite-focused strategy with systematic value-based execution
 
 ### Specialized Analysis Tools
 
@@ -834,6 +864,56 @@ Each prompt provides:
 - Both strategies show consistent profitability with different risk/reward profiles
 - Validates the effectiveness of multi-component analysis frameworks
 
+## Templates
+
+The [Templates](Templates/) directory contains AI platform-specific expert system templates for horse racing analysis:
+
+#### [HorseRacingExpert_ChatGPT.md](Templates/HorseRacingExpert_ChatGPT.md)
+**ChatGPT Horse Racing Expert Template**
+- Specialized system prompt for ChatGPT optimization
+- Platform-specific instructions for optimal ChatGPT performance
+- **Best for:** Setting up ChatGPT as a horse racing analysis expert
+
+#### [HorseRacingExpert_Claude.md](Templates/HorseRacingExpert_Claude.md)
+**Claude Horse Racing Expert Template**
+- Optimized system prompt for Claude AI platform
+- Claude-specific analytical approaches and formatting
+- **Best for:** Configuring Claude for horse racing expertise
+
+#### [HorseRacingExpert_Gemini.md](Templates/HorseRacingExpert_Gemini.md)
+**Gemini Horse Racing Expert Template**
+- Google Gemini-optimized expert system configuration
+- Platform-specific analytical frameworks and output formatting
+- **Best for:** Setting up Gemini for horse racing analysis expertise
+
+#### [HorseRacingExpert_Grok.md](Templates/HorseRacingExpert_Grok.md)
+**Grok Horse Racing Expert Template**
+- X.ai Grok-optimized system prompt and configuration
+- Grok-specific analytical capabilities and interaction patterns
+- **Best for:** Configuring Grok for horse racing analysis and betting expertise
+
+## Tutorials
+
+The [Tutorials](Tutorials/) directory contains educational content and optimization guides:
+
+#### [HumanizeAiText.md](Tutorials/HumanizeAiText.md)
+**AI Text Humanization Guide**
+- Techniques for making AI-generated content more natural and engaging
+- Best practices for human-like AI communication
+- **Best for:** Improving AI output quality and readability
+
+#### [PROMETHEIA.md](Tutorials/PROMETHEIA.md)
+**PROMETHEIA Advanced AI Framework**
+- Advanced AI analysis framework and methodology
+- Sophisticated prompt engineering techniques
+- **Best for:** Advanced AI users seeking enhanced analytical capabilities
+
+#### [PromptOptimization.md](Tutorials/PromptOptimization.md)
+**Prompt Engineering Optimization Guide**
+- Comprehensive guide to optimizing prompts for better AI performance
+- Best practices for prompt design and iteration
+- **Best for:** Users wanting to create or improve their own AI prompts
+
 ## Best Practices
 
 1. **Data Quality**: Ensure access to recent, complete race descriptions
@@ -876,6 +956,9 @@ When creating new prompts:
 | **R6 Ultra-Minimal Execution** | **Low-Medium** | **Full** | **Direct signal feedback** | **HorseRacingStrategyR6_DS.md** |
 | **Favourite R6 EV Range Analysis** | **Medium** | **Manual** | **Professional favourite analysis** | **HorseRacingEVAnalysisFavouriteR6.md** |
 | **Favourite R6 Silent Execution** | **Low-Medium** | **Full** | **Silent favourite automation** | **HorseRacingEVAnalysisFavouriteR6_Silent.md** |
+| **BetfairSpData Mathematical Analysis** | **Medium** | **Manual** | **Mathematical value betting** | **HorseRacingBetfairSpData.md** |
+| **BetfairSpData R1 Optimized** | **Medium-High** | **Manual** | **AI-optimized mathematical approach** | **HorseRacingBetfairSpDataR1.md** |
+| **BetfairSpData Favourite-Only** | **Low-Medium** | **Full** | **Conservative favourite strategy** | **HorseRacingBetfairSpDataR1_Favourite.md** |
 | **Professional trading execution** | **Medium-High** | **Full** | **Advanced position management** | **BetfairTradingStrategyExecutionPrompt.md** |
 | **Weight of money trading** | **Medium** | **Full** | **Liquidity-based trading** | **WeightOfMoneyStrategy.md** |
 | **Advanced weight of money trading** | **Medium-High** | **Full** | **Professional WoM trading** | **WeightOfMoneyStrategyR1.md** |
@@ -888,5 +971,5 @@ When creating new prompts:
 
 ---
 
-*Last updated: July 31, 2025*  
+*Last updated: August 25, 2025*  
 *Performance data based on real market testing with Strategy R1 achieving 83.3% strike rate and 115-150% ROI*

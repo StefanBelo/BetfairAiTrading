@@ -1,4 +1,4 @@
-## BetfairAiTrading — Weekly Report (2025-08-22)
+## Betfair AI Trading Weekly Report (34)
 
 ### Summary
 

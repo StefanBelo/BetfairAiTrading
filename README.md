@@ -139,6 +139,7 @@ Ready-to-use AI prompts for various sports and analysis types:
 - **[Horse Racing AI Achieves 83% Strike Rate](docs/Posts/RedditPost_HorseRacingAI_83PercentStrikeRate.md)** - High-performance strategy results and optimization insights
 - **[Cracking the Weight of Money Code - AI Market Psychology Expert](docs/Posts/RedditPost_WeightOfMoneyTrading.md)** - Advanced market sentiment analysis and systematic trading psychology
 - **[From Manual Testing to Full AI Automation - My 18-Year Journey](docs/Posts/RedditPost_BetfairAITradingAppEvolution.md)** - App development story and community building insights
+- **[Reflecting on 67 Followers and the Challenge of Building a Developer Community](docs/Posts/RedditPost_CommunityReflections.md)** - Community growth reflections, developer collaboration challenges, and the reality of building a niche technical community
 
 ### � Analysis Reports
 
