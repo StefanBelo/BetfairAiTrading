@@ -1,6 +1,8 @@
 # CloseByPositionDifferenceBotTrigger – Full Documentation & Variant Analysis
 
-![CloseByPositionDifferenceBotTrigger_GC_R1](/docs/Strategies/HorseRacing/images/CloseByPositionDifferenceBotTrigger_GC_R1.png)
+![CloseByPositionDifferenceBotTrigger_GC_R1](/docs/Strategies/HorseRacing/images/CloseByPositionDifferenceBot- Provide consistent termination condition when all monitored selections are triggered or market invalid.
+
+## 8. Edge Cases & Handling_R1.png)
 
 ## 1. Purpose
 Automatically monitors horse racing WIN markets and closes open bet positions on selections when:
@@ -178,7 +180,6 @@ Aspect highlights:
     - Claude & GPT‑5 R3 variants most extensible (state richness + summary features).
     - Baseline & Grok Code R1 / GPT‑5 R2: Concise & efficient.
     - Grok Code R2 adds throttling (good for performance) but position delta naming could confuse maintenance.
-    - DeepSeek retains semantic deviation in favourite odds logic; requires fix before production.
 |-----------|------|---------|---------------------------|
 | PositionDifference | int | 2 | Minimum positive increase in rank position from initial (e.g., from 2nd to 5th = +3) to trigger closure. |
 | MinimalFavouriteOdds | float | 0.0 | If > 0.0 and current favourite LPT (LastPriceTraded) <= this value, close all non-closed monitored selections immediately. 0.0 disables the rule. |
@@ -206,6 +207,13 @@ Adopt Claude’s richer state plus Baseline’s simple global favourite check se
 | Selection removed/suspended | DeepSeek recomputes from active list; others rely on helper `getActiveSelections` | Rebuild rank set each tick; skip inactive selections. |
 | Tied odds (co-favourites) | Order depends on sort stability | Log when ties detected; could compute average rank or stable secondary key (selection Id). |
 | Very late market changes | Variants just continue | Optional parameter: stop after first trigger event. |
+
+**Additional Considerations:**
+1. Debounce Rank Noise: Require rank persistence over N refresh cycles before counting a drop.
+2. Partial Close Percent: Parameter to scale down exposure instead of full close.
+3. Protective Stop Odds: If a selection's own odds drift beyond a configurable multiple of its initial odds.
+4. Time-Based Cutoff: Stop monitoring X seconds before scheduled start.
+5. Data Export Hook: Serialize final `SelectionPositionData` to CSV/JSON for post-trade analysis.
 
 ## 9. Choosing a Variant (Updated)
 | Preference | Choose | Rationale |
