@@ -1,8 +1,6 @@
 # CloseByPositionDifferenceBotTrigger – Full Documentation & Variant Analysis
 
-![CloseByPositionDifferenceBotTrigger_GC_R1](/docs/Strategies/HorseRacing/images/CloseByPositionDifferenceBot- Provide consistent termination condition when all monitored selections are triggered or market invalid.
-
-## 8. Edge Cases & Handling_R1.png)
+![CloseByPositionDifferenceBotTrigger_GC_R1](/docs/Strategies/HorseRacing/images/CloseByPositionDifferenceBotTrigger_GC_R1.png)
 
 ## 1. Purpose
 Automatically monitors horse racing WIN markets and closes open bet positions on selections when:
