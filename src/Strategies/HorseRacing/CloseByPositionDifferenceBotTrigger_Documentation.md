@@ -180,7 +180,11 @@ Aspect highlights:
     - Claude & GPT‑5 R3 variants most extensible (state richness + summary features).
     - Baseline & Grok Code R1 / GPT‑5 R2: Concise & efficient.
     - Grok Code R2 adds throttling (good for performance) but position delta naming could confuse maintenance.
-|-----------|------|---------|---------------------------|
+
+## 6. Parameters Reference
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
 | PositionDifference | int | 2 | Minimum positive increase in rank position from initial (e.g., from 2nd to 5th = +3) to trigger closure. |
 | MinimalFavouriteOdds | float | 0.0 | If > 0.0 and current favourite LPT (LastPriceTraded) <= this value, close all non-closed monitored selections immediately. 0.0 disables the rule. |
 | ShowPositionChanges | bool | false | If true, log every position change (one line per affected selection). |
