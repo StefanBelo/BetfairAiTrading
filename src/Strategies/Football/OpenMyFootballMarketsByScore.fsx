@@ -6,7 +6,7 @@ module BfexplorerScript
 
 #I @"C:\Program Files\BeloSoft\Bfexplorer\"
 
-#r "DevExpress.Spreadsheet.v24.2.Core.dll"
+#r "DevExpress.Spreadsheet.v25.1.Core.dll"
 
 #r "BeloSoft.Data.dll"
 #r "BeloSoft.Bfexplorer.Domain.dll"

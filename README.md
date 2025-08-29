@@ -1,6 +1,24 @@
 # 🚀 Betfair AI Trading Community
 
-**Welcome to Betfair AI Trading, the ult### 📊 Analysis Reports
+Welcome to Betfair AI Trading – an open, research-driven hub for applying AI agents, quantitative methods, and automation to Betfair Exchange markets.
+
+---
+### 🔗 Quick Navigation
+| Section | Description |
+|---------|-------------|
+| [Analysis Index](docs/Analysis/README.md) | Performance & strategy result reports |
+| [AI Prompts](docs/Prompts/README.md) | 100+ domain-specific analysis & execution prompts |
+| [Strategies](docs/Strategies/README.md) | Ready-to-use configurable strategies |
+| [Research: Betfair SP](docs/Research/BetfairSP.md) | In-depth BSP research & applications |
+| [Research: Structured Horse Racing Market Study](docs/Research/HorseRacing_Structured.md) | Academic synthesis & strategic implications |
+| [Non-Developer Guide](docs/NonDevelopers.md) | Get started without coding |
+| [BFExplorer Guide](BFExplorer.md) | Platform integration & usage |
+| [Testing Strategies](docs/TestingStrategy.md) | Safe validation workflows |
+| [Strategy Expert Prompt](docs/Prompts/BfexplorerStrategyExpertPrompt.md) | Instant config guidance |
+
+---
+
+### 📊 Analysis Reports
 
 **[📖 Complete Analysis Index](docs/Analysis/README.md)**
 
@@ -95,16 +113,14 @@ Ready-to-use AI prompts for various sports and analysis types:
 - **[Strategy R4 - Multi-Context Integration](docs/Prompts/HorseRacingStrategyR4.md)** - Multi-context integration framework with enhanced evaluation and confidence scoring
 - **[Strategy R4 Trading Ideas](docs/Prompts/HorseRacingStrategyR4_Ideas.md)** - Advanced R4 trading analysis with comprehensive reporting
 - **[Strategy R5 - Revolutionary Analysis System](docs/Prompts/HorseRacingStrategyR5.md)** - Revolutionary three-context analysis system with triple data integration
-- **[Strategy R5 Trading Ideas](docs/Prompts/HorseRacingStrategyR5_Trade_Ideas.md)** - Enhanced multi-context trading analysis with comprehensive reporting
-- **[Strategy R5 Silent Trading](docs/Prompts/HorseRacingStrategyR5_Trade.md)** - Silent mode R5.1 trading execution with minimal reporting
+  (See also R5 Trade Ideas & Silent Trading variants below.)
 - **[Conservative Betting Strategy](docs/Prompts/HorseRacingEVAnalysisWithConservativeBetting.md)** - Risk-managed favorite evaluation
 - **[Conservative Trading Data Strategy](docs/Prompts/HorseRacingEVAnalysisWithConservativeTradingData.md)** - Enhanced conservative betting with trading data
 - **[Dutch Betting Strategy](docs/Prompts/HorseRacingEVAnalysisWithDutchBetting.md)** - Risk diversification across multiple selections
 - **[Automated Betting Analysis](docs/Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)** - High-confidence automated execution
 - **[Minimal Execution Analysis](docs/Prompts/HorseRacingEVAnalysisMinimal.md)** - Silent analysis with minimal output
 - **[Minimal Strategy Execution](docs/Prompts/HorseRacingEVAnalysisMinimalExecution.md)** - Automated conservative betting with minimal reporting
-- **[Strategy R5 Trading Ideas](docs/Prompts/HorseRacingStrategyR5_Trade_Ideas.md)** - Enhanced multi-context trading analysis with comprehensive reporting
-- **[Strategy R5 Silent Trading](docs/Prompts/HorseRacingStrategyR5_Trade.md)** - Silent mode R5.1 trading execution with minimal reporting
+  *(R5 Trade Ideas & Silent Trading listed above to avoid duplication)*
 
 #### General Trading
 - **[Trading Chart Creation](docs/Prompts/TradingChartCreation.md)** - Create interactive financial charts
@@ -141,14 +157,14 @@ Ready-to-use AI prompts for various sports and analysis types:
 - **[From Manual Testing to Full AI Automation - My 18-Year Journey](docs/Posts/RedditPost_BetfairAITradingAppEvolution.md)** - App development story and community building insights
 - **[Reflecting on 67 Followers and the Challenge of Building a Developer Community](docs/Posts/RedditPost_CommunityReflections.md)** - Community growth reflections, developer collaboration challenges, and the reality of building a niche technical community
 
-### � Analysis Reports
+### 📊 Analysis Reports
 
 **[📖 Complete Analysis Index](docs/Analysis/README.md)**
 
 Performance analysis and strategy evaluation:
 - **[Horse Racing EV Analysis Results - June 22, 2025](docs/Analysis/HorseRacingEVAnalysisResults_22June2025.md)** - Comprehensive analysis of AI-driven Expected Value betting strategy performance across 12 races with strategic recommendations
 
-### �🛠️ Ready-to-Use Strategies
+### 🛠️ Ready-to-Use Strategies
 
 **[📖 Complete Strategies Index](docs/Strategies/README.md)**
 

@@ -22,7 +22,8 @@
     *   The generated code must be robust and production-ready, following the patterns in other script files ending with `BotTrigger.fsx`.
 4.  **References:**
     *   Use types, interfaces, and methods defined in the signature files located in `E:\Projects\BetfairAiTrading\data\Fsi\*.fsi`.
-    *   Refer to example implementations in files ending with `.fsx` in the `E:\Projects\BetfairAiTrading\src\Strategies` folder that include `*BotTrigger*` in their names.
+    *   Do not use files ending with `.fsx` in the folder `E:\Projects\BetfairAiTrading\src\Strategies\HorseRacing`
+    *   Refer to example implementations in files ending with `.fsx` in the `E:\Projects\BetfairAiTrading\src\Strategies` folder that include `*BotTrigger*` in their names. 
     *   Ensure compatibility with the `BeloSoft.Bfexplorer` libraries.
 
 ---

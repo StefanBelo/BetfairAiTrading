@@ -49,6 +49,7 @@ This directory contains community posts, articles, and real-world examples showc
 - [Post: AI Performance - Capitalism vs Communism](Post_AIPerformanceCapitalismVsCommunism.md)
 
 ### Reddit Community Posts
+- [Reddit Post: From One Prompt to 8 F# Bot Variants - AI Code Generation Experiment](RedditPost_CloseByPositionDifferenceBotTrigger_AIProgress.md)
 - [Reddit Post: The Hidden Truth About Betting Strategies - Why 90% Fail After 30 Days](RedditPost_AIBettingStrategiesRealTimeMonitoring.md)
 - [Reddit Post: How I Simplified Betfair AI Strategy Development with Data Providers](RedditPost_BfexplorerDataProviders.md)
 - [Reddit Post: AI Price Trend Analysis and Tool Feedback](RedditPost_AIPriceTrendAnalysisAndToolFeedback.md)

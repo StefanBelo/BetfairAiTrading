@@ -4,19 +4,19 @@ using ModelContextProtocol.Client;
 
 try
 {
-    #if UseSamplingClient
+#if UseSamplingClient
     // Sampling Chat client
     IChatClient samplingClient = 
         //AiAgentHelpers.CreateGithubChatClient("openai/gpt-4.1");
         //AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
-        AiAgentHelpers.CreateAiHubMixChatClient("deepseek-chat");
+        AiAgentHelpers.CreateAiHubMixChatClient("gpt-4.1");
 
     // Test the AI model
     await foreach (var update in samplingClient.GetStreamingResponseAsync("Who are you?"))
     {
         Console.Write(update);
     }
-    #endif
+#endif
 
     Console.WriteLine("\n\nTools available:");
 
@@ -55,7 +55,7 @@ try
     IChatClient chatClient =
         //AiAgentHelpers.CreateGithubChatClient("openai/gpt-4.1");
         //AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
-        AiAgentHelpers.CreateAiHubMixChatClient("deepseek-chat");
+        AiAgentHelpers.CreateAiHubMixChatClient("gpt-4.1");
 
     #if !UseSamplingClient
     // Test the AI model

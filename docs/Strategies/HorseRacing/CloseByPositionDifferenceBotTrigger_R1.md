@@ -1,5 +1,7 @@
 # CloseByPositionDifferenceBotTrigger Strategy
 
+![CloseByPositionDifferenceBotTrigger_GC_R1](/docs/Strategies/HorseRacing/images/CloseByPositionDifferenceBotTrigger_GC_R1.png)
+
 ## Overview
 The `CloseByPositionDifferenceBotTrigger` is an F# script designed for automated trading on Betfair horse racing markets. This strategy monitors the position of selections (horses) in the market and triggers actions based on changes in their ranking or odds.
 
