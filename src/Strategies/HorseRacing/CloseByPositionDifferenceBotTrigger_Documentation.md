@@ -10,7 +10,7 @@ Automatically monitors horse racing WIN markets and closes open bet positions on
 - The favourite’s odds fall below a configured threshold (interpreted as increased market confidence in the favourite, so we exit others).
 
 ## 2. Origin Inputs
-Source prompt / template: `src/Strategies/HorseRacing/CloseByPositionDifferenceBotTrigger.md` – defines:
+Source prompt / template: [`CloseByPositionDifferenceBotTrigger.md`](CloseByPositionDifferenceBotTrigger.md) – defines:
 - Parameters: `PositionDifference` (int, default 2), `MinimalFavouriteOdds` (float, default 0.0), `ShowPositionChanges` (bool, default false)
 - Market scope: Horse Racing WIN markets
 - Action: Close bet positions for triggered selections
@@ -19,7 +19,7 @@ Source prompt / template: `src/Strategies/HorseRacing/CloseByPositionDifferenceB
 Instead of a wide comparison table, each variant is summarized below for readability.
 
 ### 3.1 Human Baseline (R1)
-- File: `CloseByPositionDifferenceBotTrigger_R1.fsx`
+- File: [`CloseByPositionDifferenceBotTrigger_R1.fsx`](CloseByPositionDifferenceBotTrigger_R1.fsx)
 - Source: Human (your implementation)
 - Module: `module BfexplorerBot`
 - State machine: `Initialize` -> `WaitToClosePosition`
@@ -31,7 +31,7 @@ Instead of a wide comparison table, each variant is summarized below for readabi
 - Style notes: Concise, minimal allocations, imperative mutation for speed
 
 ### 3.2 DeepSeek Variant (DS_R1)
-- File: `CloseByPositionDifferenceBotTrigger_DS_R1.fsx`
+- File: [`CloseByPositionDifferenceBotTrigger_DS_R1.fsx`](CloseByPositionDifferenceBotTrigger_DS_R1.fsx)
 - Source: DeepSeek model
 - Module: Auto-open helper module (no explicit `module BfexplorerBot` wrapper)
 - State machine: `Initialize` then `Monitor of SelectionState list` (state carried functionally)
@@ -48,7 +48,7 @@ Instead of a wide comparison table, each variant is summarized below for readabi
     These mismatches cause compilation errors and/or runtime incompatibility; variant kept only for comparative analysis.
 
 ### 3.3 Claude Variant (CS_R1)
-- File: `CloseByPositionDifferenceBotTrigger_CS_R1.fsx`
+- File: [`CloseByPositionDifferenceBotTrigger_CS_R1.fsx`](CloseByPositionDifferenceBotTrigger_CS_R1.fsx)
 - Source: Claude Sonnet 4
 - Module: `module BfexplorerBot`
 - State machine: `Initialize` -> `Monitor` -> `ClosePositions` -> `EndExecution`
@@ -60,13 +60,13 @@ Instead of a wide comparison table, each variant is summarized below for readabi
 - Style notes: Most extensible; explicit transitional state improves clarity for multi-phase logic
 
 ### 3.4 Claude Variant (CS_R2)
-- File: `CloseByPositionDifferenceBotTrigger_CS_R2.fsx`
+- File: [`CloseByPositionDifferenceBotTrigger_CS_R2.fsx`](CloseByPositionDifferenceBotTrigger_CS_R2.fsx)
 - Source: Claude Sonnet 4 (iteration)
 - Differences from R1: Only minor stylistic refinements; core logic unchanged
 - Purpose: Serves as a stable refined copy; can be baseline for unified version
 
 ### 3.5 Grok Code Variant (GC_R1)
-- File: `CloseByPositionDifferenceBotTrigger_GC_R1.fsx`
+- File: [`CloseByPositionDifferenceBotTrigger_GC_R1.fsx`](CloseByPositionDifferenceBotTrigger_GC_R1.fsx)
 - Source: Grok Code Fast 1
 - Module: `module BfexplorerBot`
 - State machine: `Initialize` -> `Monitor` -> `EndExecution`
@@ -78,7 +78,7 @@ Instead of a wide comparison table, each variant is summarized below for readabi
 - Style notes: Clean, production-ready implementation following established patterns
 
 ### 3.6 Grok Code Variant (GC_R2)
-- File: `CloseByPositionDifferenceBotTrigger_GC_R2.fsx`
+- File: [`CloseByPositionDifferenceBotTrigger_GC_R2.fsx`](CloseByPositionDifferenceBotTrigger_GC_R2.fsx)
 - Source: Grok Code Fast 1 (iteration)
 - Module: `module BfexplorerBot`
 - State machine: `Initialize` -> `Monitor`
@@ -94,7 +94,7 @@ Instead of a wide comparison table, each variant is summarized below for readabi
    - Does not remove / mark closed selections explicitly; relies on `CanCloseBetPosition` filtering.
 
 ### 3.7 GPT‑5 Variant (G5_R2)
-- File: `CloseByPositionDifferenceBotTrigger_G5_R2.fsx`
+- File: [`CloseByPositionDifferenceBotTrigger_G5_R2.fsx`](CloseByPositionDifferenceBotTrigger_G5_R2.fsx)
 - Source: GPT‑5 (Preview) R2
 - Module: `module BfexplorerBot`
 - Type name mismatch: Declares type `CloseByPositionDifferenceBotTrigger_GC_R2` (copy/paste artefact) inside a `G5_R2` file; consider renaming for consistency.
@@ -106,7 +106,7 @@ Instead of a wide comparison table, each variant is summarized below for readabi
 - Improvements vs GC_R1: Explicit NaN handling for disabled threshold, graceful removal of disappeared selections.
 
 ### 3.8 GPT‑5 Variant (G5_R3)
-- File: `CloseByPositionDifferenceBotTrigger_G5_R3.fsx`
+- File: [`CloseByPositionDifferenceBotTrigger_G5_R3.fsx`](CloseByPositionDifferenceBotTrigger_G5_R3.fsx)
 - Source: GPT‑5 (Preview) R3
 - Module: `module BfexplorerBot`
 - State machine: `Initialize` -> `Monitor` (defines but does not actively use `Closing` state)
@@ -119,7 +119,7 @@ Instead of a wide comparison table, each variant is summarized below for readabi
 - Extensibility: Most unified/refined; good candidate baseline for future consolidation.
 
 ### 3.9 DeepSeek Variant (DS_R2)
-- File: `CloseByPositionDifferenceBotTrigger_DS_R2.fsx`
+- File: [`CloseByPositionDifferenceBotTrigger_DS_R2.fsx`](CloseByPositionDifferenceBotTrigger_DS_R2.fsx)
 - Source: DeepSeek Chat (R2)
 - Module: `module BfexplorerBot` (adds explicit module vs DS_R1 omission)
 - State machine: `Initialize` -> `MonitorPositions` -> `ExecuteCloseAction` (loop; no explicit termination state besides external end)
