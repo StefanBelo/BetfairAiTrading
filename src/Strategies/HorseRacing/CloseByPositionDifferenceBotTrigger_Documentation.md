@@ -247,18 +247,18 @@ Adopt Claude’s richer state plus Baseline’s simple global favourite check se
 ## 12. Disclaimer
 Bfexplorer cannot be held responsible for losses or damages. Trade within your risk tolerance. Do not gamble with funds you cannot afford to lose.
 
-## 13. File References (Updated)
-- Prompt Template: `src/Strategies/HorseRacing/CloseByPositionDifferenceBotTrigger.md`
-- Human Implementation: `src/Strategies/HorseRacing/CloseByPositionDifferenceBotTrigger_R1.fsx`
+## 13. File References
+- Prompt Template: [`CloseByPositionDifferenceBotTrigger.md`](CloseByPositionDifferenceBotTrigger.md)
+- Human Implementation: [`CloseByPositionDifferenceBotTrigger_R1.fsx`](CloseByPositionDifferenceBotTrigger_R1.fsx)
 - AI Variants: 
-   - DeepSeek: `src/Strategies/HorseRacing/CloseByPositionDifferenceBotTrigger_DS_R1.fsx`
-   - DeepSeek R2: `src/Strategies/HorseRacing/CloseByPositionDifferenceBotTrigger_DS_R2.fsx`
-  - Claude R1: `src/Strategies/HorseRacing/CloseByPositionDifferenceBotTrigger_CS_R1.fsx`
-  - Claude R2: `src/Strategies/HorseRacing/CloseByPositionDifferenceBotTrigger_CS_R2.fsx`
-  - Grok Code R1: `src/Strategies/HorseRacing/CloseByPositionDifferenceBotTrigger_GC_R1.fsx`
-   - Grok Code R2: `src/Strategies/HorseRacing/CloseByPositionDifferenceBotTrigger_GC_R2.fsx`
-   - GPT‑5 R2: `src/Strategies/HorseRacing/CloseByPositionDifferenceBotTrigger_G5_R2.fsx`
-   - GPT‑5 R3: `src/Strategies/HorseRacing/CloseByPositionDifferenceBotTrigger_G5_R3.fsx`
+   - DeepSeek: [`CloseByPositionDifferenceBotTrigger_DS_R1.fsx`](CloseByPositionDifferenceBotTrigger_DS_R1.fsx)
+   - DeepSeek R2: [`CloseByPositionDifferenceBotTrigger_DS_R2.fsx`](CloseByPositionDifferenceBotTrigger_DS_R2.fsx)
+  - Claude R1: [`CloseByPositionDifferenceBotTrigger_CS_R1.fsx`](CloseByPositionDifferenceBotTrigger_CS_R1.fsx)
+  - Claude R2: [`CloseByPositionDifferenceBotTrigger_CS_R2.fsx`](CloseByPositionDifferenceBotTrigger_CS_R2.fsx)
+  - Grok Code R1: [`CloseByPositionDifferenceBotTrigger_GC_R1.fsx`](CloseByPositionDifferenceBotTrigger_GC_R1.fsx)
+   - Grok Code R2: [`CloseByPositionDifferenceBotTrigger_GC_R2.fsx`](CloseByPositionDifferenceBotTrigger_GC_R2.fsx)
+   - GPT‑5 R2: [`CloseByPositionDifferenceBotTrigger_G5_R2.fsx`](CloseByPositionDifferenceBotTrigger_G5_R2.fsx)
+   - GPT‑5 R3: [`CloseByPositionDifferenceBotTrigger_G5_R3.fsx`](CloseByPositionDifferenceBotTrigger_G5_R3.fsx)
 
 ---
 Prepared: 2025-08-29
