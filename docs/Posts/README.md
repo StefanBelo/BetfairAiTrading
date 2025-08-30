@@ -32,6 +32,7 @@ This directory contains community posts, articles, and real-world examples showc
 ### [Gemini CLI + Bfexplorer MCP: AI-Powered Betfair Trading (No Coding Needed)](GeminiCLI_BfexplorerMCP_RedditPost.md)
 **Automate Betfair trading with AI prompts and Bfexplorer—no coding required!**
 ### Weekly Reports
+- [Betfair AI Trading Weekly Report - August 30, 2025](BetfairAiTrading_Weekly_Report_2025-08-30.md)
 - [Betfair AI Trading Weekly Report - August 22, 2025](BetfairAiTrading_Weekly_Report_2025-08-22.md)
 - [Betfair AI Trading Weekly Report - August 16, 2025](BetfairAiTrading_Weekly_Report_2025-08-16.md)
 - [Betfair AI Trading Weekly Report - August 9, 2025](BetfairAiTrading_Weekly_Report_2025-08-09.md)
@@ -49,6 +50,7 @@ This directory contains community posts, articles, and real-world examples showc
 - [Post: AI Performance - Capitalism vs Communism](Post_AIPerformanceCapitalismVsCommunism.md)
 
 ### Reddit Community Posts
+- [Reddit Post: F# Programmers & LLMs: What's Your Experience?](RedditPost_FSharpLLMExperience.md)
 - [Reddit Post: From One Prompt to 8 F# Bot Variants - AI Code Generation Experiment](RedditPost_CloseByPositionDifferenceBotTrigger_AIProgress.md)
 - [Reddit Post: The Hidden Truth About Betting Strategies - Why 90% Fail After 30 Days](RedditPost_AIBettingStrategiesRealTimeMonitoring.md)
 - [Reddit Post: How I Simplified Betfair AI Strategy Development with Data Providers](RedditPost_BfexplorerDataProviders.md)
@@ -223,6 +225,15 @@ This directory contains community posts, articles, and real-world examples showc
 - Betfair market analysis: Galway Horse Racing technical review
 - Internet trends: AI, betting, and community sentiment
 - **Best for:** Staying up to date with the latest discussions, technical analysis, and evolving trends in AI betting
+
+### [Betfair AI Trading Weekly Report - August 30, 2025](BetfairAiTrading_Weekly_Report_2025-08-30.md)
+**Community Insights & Automated Betting Tools Discussion**
+- Community engagement on automated betting tools and strategies on exchange platforms
+- Exploration of experiences with different automated betting approaches and value betting strategies
+- Analysis of the competitive landscape: simple home-brew solutions vs. sophisticated commercial tools
+- Practical implementation insights: lightweight frameworks, market data retrieval, and order placement
+- Discussion of market dynamics and automated trading competition on betting exchanges
+- **Best for:** Understanding the balance between simplicity and advanced features in betting automation, community knowledge sharing
 
 ### [Betfair AI Trading Weekly Report - August 22, 2025](BetfairAiTrading_Weekly_Report_2025-08-22.md)
 **Community Insights & Development Trends**
