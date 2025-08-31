@@ -26,17 +26,24 @@ Performance analysis and strategy evaluation:
 
 ## 🧠 Expanded AI Analysis Prompts (New in Prompts Folder)
 
-Explore over 100 specialized AI prompts for Betfair trading in the `docs/Prompts` folder. These cover:
+Explore over 120+ specialized AI prompts for Betfair trading in the `docs/Prompts` folder. These cover:
 - Advanced strategy systems (R1–R6, multi-context, silent execution)
 - Combined EV analysis, Dutch betting, conservative and automated strategies
 - Market analysis, weight of money, and trading execution frameworks
 - Favourite-focused, expert-guided, and minimal/no-reporting prompts
 - Integration guides for BFExplorer and MCP workflows
+- **NEW: Templates folder** - Platform-specific expert configurations for ChatGPT, Claude, Gemini, and Grok
+- **NEW: Tutorials folder** - Advanced prompt optimization techniques and AI text humanization guides
 
 See the [Prompts README](docs/Prompts/README.md) for a full index, usage recommendations, and quick reference table for all available analysis types.
 
 **Recent additions include:**
-- Horse Racing Semantic Analysis, Triple-Context R5, Silent Execution, OLBG Tipster Integration, and more.
+- Traded Prices EV Analysis systems for automated trading data evaluation
+- Enhanced Candlestick Data Analysis for technical trading patterns
+- R6 Strategy evolution with next-generation analysis capabilities
+- Semantic Analysis frameworks for AI-powered form interpretation
+- Platform-specific expert templates in the Templates folder
+- Advanced tutorials for prompt optimization and AI integration
 
 These prompts enable instant, professional-grade analysis and fully autonomous strategy execution for horse racing, football, tennis, and more.
 
@@ -52,7 +59,7 @@ Whether you're new to the Betfair Exchange or a seasoned trader, this is your hu
 
 **Want instant strategy expertise?** Try our **[BFExplorer Strategy Expert Prompt](docs/Prompts/BfexplorerStrategyExpertPrompt.md)** - turn any AI assistant into a strategy configuration expert with knowledge of all 120+ BFExplorer strategies!
 
-## 🚀 Latest Strategy Evolution: R4 & R5 Development
+## 🚀 Latest Strategy Evolution: R4, R5 & R6 Development
 
 ### Advanced Multi-Context Strategy Development
 Our community has developed cutting-edge AI analysis systems that represent the next generation of automated betting strategies:
@@ -64,6 +71,7 @@ Our community has developed cutting-edge AI analysis systems that represent the 
   - Advanced NO BET logic with sophisticated market condition analysis
   - "HorseRacingR5_Analysis" data context for structured analysis storage
   - Silent execution version for automated deployment with minimal output
+- **Strategy R6**: Next generation evolution with enhanced analysis capabilities and improved automation frameworks
 
 These strategies represent the culmination of community-driven AI development, combining proven performance results with advanced automation capabilities.
 
@@ -108,29 +116,38 @@ Ready-to-use AI prompts for various sports and analysis types:
 - **[Expected Value Analysis Favourite R3](docs/Prompts/HorseRacingEVAnalysisFavouriteR3.md)** - Analyzes all horses and calculates EV, but only bets (or lays) on the favourite. After each strategy execution, a markdown table is included showing the EV analysis for all horses, ranked by adjusted EV, for full transparency and review.
 - **[Expected Value Analysis Favourite R4](docs/Prompts/HorseRacingEVAnalysisFavouriteR4.md)** - Enhanced favourite-focused analysis with multi-context integration framework
 - **[Expected Value Analysis Favourite R5](docs/Prompts/HorseRacingEVAnalysisFavouriteR5.md)** - Advanced favourite analysis with triple data integration system
+- **[Expected Value Analysis Favourite R6](docs/Prompts/HorseRacingEVAnalysisFavouriteR6.md)** - Latest evolution with enhanced analysis framework and improved automation
 - **[Strategy R1 - High Precision Selection](docs/Prompts/HorseRacingStrategyR1.md)** - Multi-component analysis with 83.3% strike rate and 115-150% ROI
 - **[Strategy R2 - Enhanced Multi-Context Analysis](docs/Prompts/HorseRacingStrategyR2.md)** - Comprehensive market coverage system with optimized thresholds and enhanced decision logic
 - **[Strategy R4 - Multi-Context Integration](docs/Prompts/HorseRacingStrategyR4.md)** - Multi-context integration framework with enhanced evaluation and confidence scoring
 - **[Strategy R4 Trading Ideas](docs/Prompts/HorseRacingStrategyR4_Ideas.md)** - Advanced R4 trading analysis with comprehensive reporting
 - **[Strategy R5 - Revolutionary Analysis System](docs/Prompts/HorseRacingStrategyR5.md)** - Revolutionary three-context analysis system with triple data integration
-  (See also R5 Trade Ideas & Silent Trading variants below.)
+- **[Strategy R6 - Next Generation Evolution](docs/Prompts/HorseRacingStrategyR6.md)** - Latest generation strategy with enhanced analysis capabilities
+- **[Traded Prices EV Analysis](docs/Prompts/TradedPricesEVAnalysis.md)** - Automated analysis using traded price data for EV calculations
+- **[Enhanced Traded Prices EV Plus Analysis](docs/Prompts/TradedPricesEVPlusAnalysis.md)** - Advanced traded prices analysis with racing form integration
+- **[Semantic Analysis Framework](docs/Prompts/HorseRacingSemanticAnalysis.md)** - AI-powered semantic interpretation of racing form data
 - **[Conservative Betting Strategy](docs/Prompts/HorseRacingEVAnalysisWithConservativeBetting.md)** - Risk-managed favorite evaluation
 - **[Conservative Trading Data Strategy](docs/Prompts/HorseRacingEVAnalysisWithConservativeTradingData.md)** - Enhanced conservative betting with trading data
 - **[Dutch Betting Strategy](docs/Prompts/HorseRacingEVAnalysisWithDutchBetting.md)** - Risk diversification across multiple selections
 - **[Automated Betting Analysis](docs/Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)** - High-confidence automated execution
 - **[Minimal Execution Analysis](docs/Prompts/HorseRacingEVAnalysisMinimal.md)** - Silent analysis with minimal output
 - **[Minimal Strategy Execution](docs/Prompts/HorseRacingEVAnalysisMinimalExecution.md)** - Automated conservative betting with minimal reporting
-  *(R5 Trade Ideas & Silent Trading listed above to avoid duplication)*
 
 #### General Trading
 - **[Trading Chart Creation](docs/Prompts/TradingChartCreation.md)** - Create interactive financial charts
+- **[Betfair Market Analysis](docs/Prompts/BetfairMarketAnalysisPrompt.md)** - Comprehensive market analysis framework
+- **[Betfair Candlestick Data Analysis](docs/Prompts/BetfairMarketAnalysisCandleStickData.md)** - Technical analysis using candlestick patterns and volume data
 - **[BFExplorer MCP Integration](docs/Prompts/BfexplorerMCPIntegrationSystemPrompt.md)** - System integration guide
 - **[BFExplorer Strategy Expert](docs/Prompts/BfexplorerStrategyExpertPrompt.md)** - AI assistant for strategy selection and configuration
 - **[Weight of Money Strategy](docs/Prompts/WeightOfMoneyStrategy.md)** - Advanced market sentiment analysis with automated strategy execution based on weight of money indicators
 - **[Weight of Money Strategy R1](docs/Prompts/WeightOfMoneyStrategyR1.md)** - Enhanced silent execution weight of money strategy with advanced market intelligence and optimized thresholds
+- **[Weight of Money Analysis Prompt](docs/Prompts/WeightOfMoneyAnalysisPrompt.md)** - Systematic weight of money analysis for market sentiment evaluation
 
 #### Betfair Trading Strategy Execution Prompt
 - **[Betfair Trading Strategy Execution Prompt](docs/Prompts/BetfairTradingStrategyExecutionPrompt.md)** - Step-by-step adaptive trading analysis and execution for Betfair Exchange markets. Includes market analysis, selection identification, parameter optimization, and automated strategy execution logic.
+
+#### Football Analysis & Development
+- **[Football Match F# Code Creation](docs/Prompts/FootballMatchFSharpCodeCreation.md)** - Generate F# code for football match analysis and automated betting strategies
 
 ### 🗣️ Community Stories & Posts
 
@@ -141,6 +158,8 @@ Ready-to-use AI prompts for various sports and analysis types:
 - **[Betfair AI Trading Weekly Report - July 26, 2025](docs/Posts/BetfairAiTrading_Weekly_Report_2025-07-26.md)** - Community discussions on ML libraries, horse racing data structuring, and the evolution from traditional to agentic AI approaches
 
 - **[Betfair AI Trading Weekly Report - August 9, 2025](docs/Posts/BetfairAiTrading_Weekly_Report_2025-08-09.md)** - Community advice for beginners in algorithmic betting, machine learning model results in soccer draw markets, and reflections on learning and collaboration
+
+- **[Reddit: Back/Lay Strategy Parameter Discussion](docs/Posts/reddit_trading_strategies.md)** - Community question asking traders for parameter choices and practical tuning for Steam (back) and Drift (lay) strategies (scalp/hedge/fade configurations).
 
 #### Featured Community Experiences
 - **[The Death of Traditional Betting Strategy Development? AI Agents Are Changing Everything](docs/Posts/Post_TraditionalMLToAgenticStrategyDevelopment.md)** - Revolutionary shift from weeks of coding to hours of conversation-driven strategy development
