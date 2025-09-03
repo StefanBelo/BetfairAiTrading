@@ -53,19 +53,20 @@ try
 
     // Chat client
     IChatClient chatClient =
-        //AiAgentHelpers.CreateGithubChatClient("openai/gpt-4.1");
+        AiAgentHelpers.CreateGithubChatClient("openai/gpt-4.1");
         //AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
-        AiAgentHelpers.CreateAiHubMixChatClient("gpt-4.1");
+        //AiAgentHelpers.CreateAiHubMixChatClient("gpt-4.1");
 
     #if !UseSamplingClient
     // Test the AI model
-    await foreach (var update in chatClient.GetStreamingResponseAsync("Who are you?"))
+    await foreach (var update in chatClient.GetStreamingResponseAsync("Who are you?", chatOptions))
     {
         Console.Write(update);
     }
     #endif
 
-    string prompt = MyPrompts.ActiveBetfairMarket;
+    //string prompt = MyPrompts.ActiveBetfairMarket;
+    string prompt = "Get active betfair market";
 
     Console.WriteLine($"\n\nQuestion: {prompt}\n\nResponse:\n\n");
 

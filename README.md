@@ -28,22 +28,25 @@ Performance analysis and strategy evaluation:
 
 Explore over 120+ specialized AI prompts for Betfair trading in the `docs/Prompts` folder. These cover:
 - Advanced strategy systems (R1–R6, multi-context, silent execution)
+- **NEW: BetfairSpData Analysis Systems** - Mathematical betting strategies using Betfair's starting price data and forecast models
 - Combined EV analysis, Dutch betting, conservative and automated strategies
 - Market analysis, weight of money, and trading execution frameworks
+- **Enhanced Candlestick Data Analysis** - Including new R4 Favourite analysis with probability-based metrics
 - Favourite-focused, expert-guided, and minimal/no-reporting prompts
 - Integration guides for BFExplorer and MCP workflows
 - **NEW: Templates folder** - Platform-specific expert configurations for ChatGPT, Claude, Gemini, and Grok
-- **NEW: Tutorials folder** - Advanced prompt optimization techniques and AI text humanization guides
+- **NEW: Tutorials folder** - Advanced prompt optimization techniques, AI text humanization, and PROMETHEIA framework
 
 See the [Prompts README](docs/Prompts/README.md) for a full index, usage recommendations, and quick reference table for all available analysis types.
 
 **Recent additions include:**
+- **BetfairSpData Analysis Systems** - Three new mathematical betting strategies using starting price data
+- **Candlestick Data R4 Favourite Analysis** - Probability-based technical analysis for automated trading
+- **Platform Expert Templates** - Specialized configurations for ChatGPT, Claude, Gemini, and Grok
+- **Advanced Tutorials** - PROMETHEIA framework, prompt optimization, and AI text humanization
 - Traded Prices EV Analysis systems for automated trading data evaluation
-- Enhanced Candlestick Data Analysis for technical trading patterns
 - R6 Strategy evolution with next-generation analysis capabilities
 - Semantic Analysis frameworks for AI-powered form interpretation
-- Platform-specific expert templates in the Templates folder
-- Advanced tutorials for prompt optimization and AI integration
 
 These prompts enable instant, professional-grade analysis and fully autonomous strategy execution for horse racing, football, tennis, and more.
 
@@ -109,6 +112,7 @@ Our community is dedicated to bridging the gap between traditional sports bettin
 
 Ready-to-use AI prompts for various sports and analysis types:
 
+#### Horse Racing Strategy Systems
 - **[Base Form Data Analysis](docs/Prompts/HorseRacingBaseFormDataAnalysis.md)** - Core betting metrics analysis
 - **[Combined EV Analysis](docs/Prompts/HorseRacingCombinedEVAnalysis.md)** - Dual methodology with prediction scores
 - **[Expected Value Analysis](docs/Prompts/HorseRacingExpectedValueAnalysis.md)** - Semantic analysis approach
@@ -123,6 +127,13 @@ Ready-to-use AI prompts for various sports and analysis types:
 - **[Strategy R4 Trading Ideas](docs/Prompts/HorseRacingStrategyR4_Ideas.md)** - Advanced R4 trading analysis with comprehensive reporting
 - **[Strategy R5 - Revolutionary Analysis System](docs/Prompts/HorseRacingStrategyR5.md)** - Revolutionary three-context analysis system with triple data integration
 - **[Strategy R6 - Next Generation Evolution](docs/Prompts/HorseRacingStrategyR6.md)** - Latest generation strategy with enhanced analysis capabilities
+
+#### BetfairSpData Analysis Systems
+- **[BetfairSpData Optimal Betting Strategy](docs/Prompts/HorseRacingBetfairSpData.md)** - Mathematical betting strategy using Betfair's starting price data and forecast models
+- **[BetfairSpData R1 - AI Agent Optimized Strategy](docs/Prompts/HorseRacingBetfairSpDataR1.md)** - Advanced optimization with transparent metrics and deterministic logic
+- **[BetfairSpData R1 - Favourite-Only Strategy](docs/Prompts/HorseRacingBetfairSpDataR1_Favourite.md)** - Focused analysis on favourite selections using SP data
+
+#### Specialized Analysis Tools
 - **[Traded Prices EV Analysis](docs/Prompts/TradedPricesEVAnalysis.md)** - Automated analysis using traded price data for EV calculations
 - **[Enhanced Traded Prices EV Plus Analysis](docs/Prompts/TradedPricesEVPlusAnalysis.md)** - Advanced traded prices analysis with racing form integration
 - **[Semantic Analysis Framework](docs/Prompts/HorseRacingSemanticAnalysis.md)** - AI-powered semantic interpretation of racing form data
@@ -133,10 +144,11 @@ Ready-to-use AI prompts for various sports and analysis types:
 - **[Minimal Execution Analysis](docs/Prompts/HorseRacingEVAnalysisMinimal.md)** - Silent analysis with minimal output
 - **[Minimal Strategy Execution](docs/Prompts/HorseRacingEVAnalysisMinimalExecution.md)** - Automated conservative betting with minimal reporting
 
-#### General Trading
+#### General Trading & Market Analysis
 - **[Trading Chart Creation](docs/Prompts/TradingChartCreation.md)** - Create interactive financial charts
 - **[Betfair Market Analysis](docs/Prompts/BetfairMarketAnalysisPrompt.md)** - Comprehensive market analysis framework
 - **[Betfair Candlestick Data Analysis](docs/Prompts/BetfairMarketAnalysisCandleStickData.md)** - Technical analysis using candlestick patterns and volume data
+- **[Candlestick Data R4 Favourite Analysis](docs/Prompts/BetfairMarketAnalysisCandleStickDataR4_Favourite.md)** - Advanced probability-based candlestick analysis with weighted market opposition logic
 - **[BFExplorer MCP Integration](docs/Prompts/BfexplorerMCPIntegrationSystemPrompt.md)** - System integration guide
 - **[BFExplorer Strategy Expert](docs/Prompts/BfexplorerStrategyExpertPrompt.md)** - AI assistant for strategy selection and configuration
 - **[Weight of Money Strategy](docs/Prompts/WeightOfMoneyStrategy.md)** - Advanced market sentiment analysis with automated strategy execution based on weight of money indicators
@@ -145,6 +157,19 @@ Ready-to-use AI prompts for various sports and analysis types:
 
 #### Betfair Trading Strategy Execution Prompt
 - **[Betfair Trading Strategy Execution Prompt](docs/Prompts/BetfairTradingStrategyExecutionPrompt.md)** - Step-by-step adaptive trading analysis and execution for Betfair Exchange markets. Includes market analysis, selection identification, parameter optimization, and automated strategy execution logic.
+
+#### Platform-Specific Templates
+The **[Templates](docs/Prompts/Templates/)** folder contains expert configurations for different AI platforms:
+- **[ChatGPT Horse Racing Expert](docs/Prompts/Templates/HorseRacingExpert_ChatGPT.md)** - Specialized configuration for OpenAI's ChatGPT
+- **[Claude Horse Racing Expert](docs/Prompts/Templates/HorseRacingExpert_Claude.md)** - Optimized setup for Anthropic's Claude
+- **[Gemini Horse Racing Expert](docs/Prompts/Templates/HorseRacingExpert_Gemini.md)** - Tailored configuration for Google's Gemini
+- **[Grok Horse Racing Expert](docs/Prompts/Templates/HorseRacingExpert_Grok.md)** - Custom setup for X's Grok AI
+
+#### Advanced Tutorials & Frameworks
+The **[Tutorials](docs/Prompts/Tutorials/)** folder provides advanced educational content:
+- **[PROMETHEIA Framework](docs/Prompts/Tutorials/PROMETHEIA.md)** - Advanced AI prompting methodology for enhanced performance
+- **[Prompt Optimization Techniques](docs/Prompts/Tutorials/PromptOptimization.md)** - Professional guide to improving AI prompt effectiveness
+- **[AI Text Humanization](docs/Prompts/Tutorials/HumanizeAiText.md)** - Techniques for making AI-generated content more natural and human-like
 
 #### Football Analysis & Development
 - **[Football Match F# Code Creation](docs/Prompts/FootballMatchFSharpCodeCreation.md)** - Generate F# code for football match analysis and automated betting strategies
@@ -309,3 +334,27 @@ Pre-built strategies for multiple sports:
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🆕 Featured New Additions
+
+### BetfairSpData Analysis Systems
+Three new mathematical betting strategies using Betfair's starting price data and forecast models:
+- **[BetfairSpData Optimal Betting Strategy](docs/Prompts/HorseRacingBetfairSpData.md)** - Comprehensive value identification framework
+- **[BetfairSpData R1 - AI Agent Optimized](docs/Prompts/HorseRacingBetfairSpDataR1.md)** - Advanced optimization with transparent metrics
+- **[BetfairSpData R1 - Favourite-Only](docs/Prompts/HorseRacingBetfairSpDataR1_Favourite.md)** - Focused favourite analysis using SP data
+
+### Candlestick Data R4 Favourite Analysis
+**[BetfairMarketAnalysisCandleStickDataR4_Favourite.md](docs/Prompts/BetfairMarketAnalysisCandleStickDataR4_Favourite.md)**
+- Advanced probability-based candlestick analysis for Betfair markets
+- Uses weighted price calculation (High + Low + Close)/3 for robust probability trends
+- Strategy execution on the favorite only if weighted market opposition is confirmed (opposition weighted by probability mass, not simple count)
+- Incorporates STEAM/DRIFT signals, volume intelligence, and technical probability levels
+- Output includes table reports, execution rationale, and risk management logic
+- Designed for professional-grade, automated trading and risk control
+
+### Platform Templates & Educational Content
+New specialized folders providing:
+- **Templates** - Platform-specific expert configurations for ChatGPT, Claude, Gemini, and Grok
+- **Tutorials** - PROMETHEIA framework, prompt optimization techniques, and AI text humanization guides
+
+See the [Prompts README](docs/Prompts/README.md) for full details and usage examples.

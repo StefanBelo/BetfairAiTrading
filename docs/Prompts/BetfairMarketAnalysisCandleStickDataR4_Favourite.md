@@ -1,13 +1,13 @@
-# Betfair Market Analysis - Candlestick Data R2
+# Betfair Market Analysis - Candlestick Data R4
 
 ## Objective
-Analyze Betfair market candlestick data using probability-based metrics to identify high-confidence trading opportunities and execute optimal automated strategies.
+Analyze Betfair market candlestick data using probability-based metrics to identify the strongest trading opportunities and execute optimal automated strategies on the favorite selection, but only when the majority of other selections oppose the selected strategy on the favorite.
 
 ## ⚠️ CRITICAL: Probability-Based Analysis Framework
 **ALL analysis must be probability-focused, NOT price-focused:**
 
-- **STEAM** = Probability INCREASING (price decreasing) = More money backing = Confidence rising
-- **DRIFT** = Probability DECREASING (price increasing) = Money leaving = Confidence falling
+- **STEAM** = Probability INCREASING (price decreasing) = More money backing = Momentum rising
+- **DRIFT** = Probability DECREASING (price increasing) = Money leaving = Momentum falling
 - **Primary Metric**: Probability change in percentage points (pp)
 - **Price movements are secondary** and only used to calculate probability changes
 
@@ -19,7 +19,12 @@ DRIFT: Probability_Change < 0 (price going UP)
 ```
 
 ## Data Source & Configuration
-- **Data Context**: "MarketSelectionsCandleStickData" from active Betfair market
+**PREREQUISITE STEPS FOR AI AGENT:**
+1. **First**: Retrieve the active Betfair market using `GetActiveBetfairMarket`
+2. **Then**: Retrieve candlestick data using `GetDataContextForBetfairMarket` with:
+   - **Data Context**: "MarketSelectionsCandleStickData" 
+   - **Market ID**: From the active Betfair market obtained in step 1
+
 - **Output Mode**: Choose ONE configuration based on analysis needs:
 
 ```javascript
@@ -48,12 +53,17 @@ ENABLE_TABLE_REPORT = false, ENABLE_DETAILED_REPORT = true
 #### Probability-Based Market Dynamics
 ```javascript
 // Core Calculations (ALL analysis based on probability changes)
-Implied_Probability = (1 / Decimal_Price) × 100
+// Enhanced Price Calculation for Better Trend Representation
+Weighted_Price = (High_Price + Low_Price + Close_Price) / 3  // Weighted average for trend
 Open_Probability = (1 / Open_Price) × 100
-Current_Probability = (1 / Current_Price) × 100
-Probability_Change = Current_Probability - Open_Probability  
+Current_Probability = (1 / Weighted_Price) × 100
+Probability_Change = Current_Probability - Open_Probability
 Probability_Velocity = Probability_Change / Time_Interval_Minutes
 Probability_Volatility = ((High_Prob - Low_Prob) / Current_Prob) × 100
+
+// Alternative: Simple Average Price
+// Average_Price = (High_Price + Low_Price) / 2
+// Current_Probability = (1 / Average_Price) × 100
 
 // Signal Definitions (probability-based)
 STEAM = Probability_Change > 0 (probability increasing, price decreasing)
@@ -61,7 +71,7 @@ DRIFT = Probability_Change < 0 (probability decreasing, price increasing)
 ```
 
 **Key Metrics Per Selection:**
-- **Current Probability**: Primary metric (derived from current price)
+- **Current Probability**: Primary metric (derived from weighted price: (High + Low + Close)/3)
 - **Probability Change**: Movement in percentage points from open (CORE SIGNAL INDICATOR)
 - **Probability Velocity**: Rate of probability change per minute (momentum strength)
 - **Probability Volatility**: Percentage volatility of probability range
@@ -79,99 +89,74 @@ DRIFT = Probability_Change < 0 (probability decreasing, price increasing)
 
 ## Signal Detection Framework
 
-### High-Confidence Signals (>75% reliability)
+### Strong Signals (Largest Probability Changes)
 ```javascript
 // Steam Signal - Strong backing with probability increase (price decrease)
-Criteria: Probability_Change > +2.5pp AND Volume_Trend > +10% AND Consistency > 3_intervals
+Criteria: Largest positive Probability_Change
 // Note: Probability increase means price decreasing (more money backing selection)
 
-// Late Drift - Market confidence decline near start (probability decrease)
-Criteria: Probability_Change < -3pp AND Volume_Trend < -10% AND Time < 5min
+// Drift Signal - Market confidence decline (probability decrease)
+Criteria: Largest negative Probability_Change
 // Note: Probability decrease means price increasing (money leaving selection)
 
 // Value Opportunity - Significant probability divergence from expected  
-Criteria: ABS(Probability_Change) > 6pp AND Volume_Support > baseline
+Criteria: Largest absolute Probability_Change
 
 // Steam Breakout - Probability surge through resistance with volume
 Criteria: Probability_Breaks_Above_Resistance AND Volume_Trend > +8% AND Technical_Confirmation
 // Note: Probability breakout = price breaking DOWN through support level
 
 // False Favorite - Market leader showing probability weakness
-Criteria: Market_Leader AND Probability_Change < -2.5pp AND Volume_Trend < -8%
-// Note: Probability decrease in favorite = price increasing (confidence loss)
-
-// Resistance Test - Probability approaching resistance with stalling
-Criteria: Approaching_Probability_Resistance AND Probability_Momentum_Stalling AND Volume_Divergence
+Criteria: Market_Leader AND Largest negative Probability_Change
 ```
 
-### Medium-Confidence Signals (60-75% reliability)
+### Moderate Signals (Secondary Strength)
 ```javascript
 // Moderate Steam - Developing backing momentum
-Criteria: Probability_Change > +1.5pp AND Volume_Trend > +5% AND Consistency > 2_intervals
+Criteria: Second largest positive Probability_Change
 
 // Moderate Drift - Developing negative momentum
-Criteria: Probability_Change < -2pp AND Volume_Trend < -5% AND Time < 8min
-
-// Technical Steam - Probability movement with technical confirmation
-Criteria: Probability_Change > +1pp AND Technical_Support AND Volume_Trend > 0%
-```
-
-### Signal Confidence Scoring
-```javascript
-function calculateConfidence(signal) {
-    let confidence = 50; // Base confidence
-    
-    // Probability momentum strength (max +25)
-    if (Math.abs(signal.probabilityChange) > 5) confidence += 25;
-    else if (Math.abs(signal.probabilityChange) > 3) confidence += 15;
-    else if (Math.abs(signal.probabilityChange) > 2) confidence += 10;
-    
-    // Volume confirmation (max +20)  
-    if (signal.volumeTrend > 20) confidence += 20;
-    else if (signal.volumeTrend > 10) confidence += 10;
-    
-    // Consistency factor - probability movement sustained (max +15)
-    if (signal.consistentProbabilityDirection > 3) confidence += 15;
-    else if (signal.consistentProbabilityDirection > 2) confidence += 10;
-    
-    // Time factor (max +10)
-    if (signal.timeToStart > 5) confidence += 10;
-    else if (signal.timeToStart > 3) confidence += 5;
-    
-    // Volume divergence penalty (max -20)
-    if (signal.volumeDivergence) confidence -= 20;
-    
-    return Math.min(confidence, 100);
-}
+Criteria: Second largest negative Probability_Change
 ```
 
 ## Strategy Execution Framework
 
+### Favorite Selection and Opposition Logic
+- **Favorite**: The selection with the lowest current odds (highest current probability).
+- **Opposition Check**: For the favorite's signal (STEAM or DRIFT), check if the majority of other selections have the opposing signal, **weighted by market influence**.
+  - **Market Influence Weighting**: Selections are weighted by their probability mass (1/odds). Higher probability selections have more influence on market direction.
+  - If favorite has STEAM, opposition means weighted majority of others have DRIFT.
+  - If favorite has DRIFT, opposition means weighted majority of others have STEAM.
+  - **Weight Calculation**: Weight = Current_Probability / Total_Other_Probabilities
+- **Execution Condition**: Execute the strategy on the favorite ONLY if opposition is confirmed. Otherwise, do not execute any strategy.
+
 ### Strategy Selection Matrix
-| Signal Type | Confidence | Odds Range | Strategy | Execution Type | Probability Direction |
-|------------|------------|------------|----------|----------------|---------------------|
-| Steam | >75% | 1.5-15.0 | Steam momentum trading | Manual Setup | INCREASING (+pp) |
-| Drift | >75% | 1.8-50.0 | Drift momentum trading | Manual Setup | DECREASING (-pp) |
-| Steam Breakout | >75% | 1.2-8.0 | Back scalping strategy | Automated | INCREASING (+pp) |
-| Value | >75% | 2.0-20.0 | Back hedge strategy | Automated | Variable |
-| False Favorite | >75% | 1.5-6.0 | Lay fade strategy | Automated | DECREASING (-pp) |
-| Moderate Steam | 60-75% | 2.0-12.0 | Conservative back strategy | Automated | INCREASING (+pp) |
-| Moderate Drift | 60-75% | 2.5-25.0 | Conservative lay strategy | Automated | DECREASING (-pp) |
-| Technical Steam | 60-75% | 1.8-10.0 | Technical back strategy | Automated | INCREASING (+pp) |
+| Signal Type | Odds Range | Strategy | Execution Type | Probability Direction |
+|------------|------------|----------|----------------|---------------------|
+| Steam | 1.5-15.0 | Steam momentum trading | Manual Setup | INCREASING (+pp) |
+| Drift | 1.8-50.0 | Drift momentum trading | Manual Setup | DECREASING (-pp) |
+| Steam Breakout | 1.2-8.0 | Back scalping strategy | Automated | INCREASING (+pp) |
+| Value | 2.0-20.0 | Back hedge strategy | Automated | Variable |
+| False Favorite | 1.5-6.0 | Lay fade strategy | Automated | DECREASING (-pp) |
+| Moderate Steam | 2.0-12.0 | Conservative back strategy | Automated | INCREASING (+pp) |
+| Moderate Drift | 2.5-25.0 | Conservative lay strategy | Automated | DECREASING (-pp) |
+| Technical Steam | 1.8-10.0 | Technical back strategy | Automated | INCREASING (+pp) |
 
 ### Execution Criteria Validation
 **All strategies require:**
-- ✅ **Signal Confidence** meets threshold
+- ✅ **Evaluate All Selections** for signals and opposition
+- ✅ **Identify Favorite** (lowest odds)
+- ✅ **Check Opposition** from majority of other selections
 - ✅ **Odds Range** within strategy parameters  
 - ✅ **Time Remaining** >3min (back) or >2min (lay)
 - ✅ **Liquidity Check** sufficient for position size
-- ✅ **Volume Confirmation** (no major divergences for high-confidence signals)
+- ✅ **Volume Confirmation** (no major divergences)
 
 ### Automated Strategy Parameters
 ```javascript
 // Dynamic parameter calculation
-function calculateParameters(signal, odds, confidence, timeToStart, volatility) {
-    const baseStake = confidence > 80 ? 2.0 : confidence > 70 ? 1.5 : 1.0;
+function calculateParameters(signal, odds, timeToStart, volatility) {
+    const baseStake = 1.0; // Base stake without confidence
     const riskMultiplier = volatility > 20 ? 0.7 : volatility < 10 ? 1.3 : 1.0;
     const timeMultiplier = timeToStart > 5 ? 1.0 : timeToStart > 3 ? 0.8 : 0.6;
     
@@ -199,8 +184,6 @@ ExecuteBfexplorerStrategySettingsWithParameters("Lay resistance trading", market
 ```
 
 ## Risk Management & Trailing Stops
-
-### Risk Management & Trailing Stops
 
 ### Steam Momentum Exit Rules (Probability Increasing Trades)
 ```javascript
@@ -240,57 +223,62 @@ TrailingStopLogic: {
 ```markdown
 ## Market Analysis: [Event] - [Race] | Start: [Time] | Selections: [N]
 
-| Selection | Price | Prob% | Open% | ProbΔ | ProbVel | Vol% | Vol Trend | Support | Resistance | Direction | Confidence | Signal |
-|-----------|-------|-------|-------|-------|---------|------|-----------|---------|------------|-----------|------------|--------|
-| Horse 1   | 2.50  | 40.0% | 35.0% | +5.0pp| +1.7pp/min| 8.5% | ↑ +25%   | 35.7%   | 45.5%     | STEAMING  | 85%        | Steam  |
-| Horse 2   | 3.50  | 28.6% | 33.3% | -4.7pp| -1.6pp/min| 12.1%| ↓ -20%   | 25.0%   | 35.0%     | DRIFTING  | 78%        | Drift  |
+| Selection | Price | Prob% | Open% | ProbΔ | ProbVel | Vol% | Vol Trend | Support | Resistance | Direction | Signal |
+|-----------|-------|-------|-------|-------|---------|------|-----------|---------|------------|-----------|--------|
+| Horse 1   | 2.50  | 40.0% | 35.0% | +5.0pp| +1.7pp/min| 8.5% | ↑ +25%   | 35.7%   | 45.5%     | STEAMING  | Steam  |
+| Horse 2   | 3.50  | 28.6% | 33.3% | -4.7pp| -1.6pp/min| 12.1%| ↓ -20%   | 25.0%   | 35.0%     | DRIFTING  | Drift  |
 ```
-*Note: ProbΔ = Probability Change from Open (+ = steaming, - = drifting)*
+*Note: Prob% = Probability from weighted price (High+Low+Close)/3, ProbΔ = Probability Change from Open (+ = steaming, - = drifting)*
 
 ### Execution Output Template
 ```markdown
 ## Strategy Execution Analysis
 
 ### Execution Decision
-**SELECTED**: [Selection] @ [Price] | **STRATEGY**: [Strategy Name] | **CONFIDENCE**: [XX%]
-**EXECUTION**: ✅ Activated / ❌ Criteria Not Met | **ODDS VALIDATION**: ✅ Valid ([X.X] within [Y.Y-Z.Z])
+**SELECTED**: [Selection] @ [Price] | **STRATEGY**: [Strategy Name] | **SIGNAL STRENGTH**: [XX pp] | **WEIGHTED OPPOSITION CONFIRMED**: [Yes/No]
+**EXECUTION**: ✅ Activated / ❌ No Strategy Executed | **ODDS VALIDATION**: ✅ Valid ([X.X] within [Y.Y-Z.Z]) / N/A
 
 ### Strategy Function Call
 ExecuteBfexplorerStrategySettings("[Strategy Name]", "[marketId]", "[selectionId]")
 // OR for automated strategies:
 ExecuteBfexplorerStrategySettingsWithParameters("[Strategy Name]", "[marketId]", "[selectionId]", "[parameters]")
+// OR when opposition not confirmed:
+No strategy executed - opposition not confirmed for favorite
 
 ### Risk Profile
 **Position Size**: [X]% bankroll | **Stop Loss**: [X]% trailing | **Time Risk**: [Assessment]
 **Expected Behavior**: [Strategy description and parameter details]
 
 ### Alternative Opportunities (Not Executed)
-| Selection | Signal | Confidence | Odds | Range | Why Not Executed |
-|-----------|--------|------------|------|-------|------------------|
-| Horse 2   | Drift  | 68%        | 8.2  | 1.8-50.0 | Below 70% confidence |
+| Selection | Signal | ProbΔ | Odds | Range | Why Not Executed |
+|-----------|--------|-------|------|-------|------------------|
+| Horse 2   | Drift  | -4.7pp| 8.2  | 1.8-50.0 | Weighted opposition not confirmed for favorite - no strategy executed |
 ```
 
 ### Summary Format (ENABLE_SUMMARY_ONLY = true)
-- **Top 3 Opportunities** with confidence scores and execution readiness
-- **Market Insights** (2-3 key points)
+- **Top 3 Opportunities** with signal strength and execution readiness
+- **Market Insights** (2-3 key points) including weighted opposition analysis
 - **Immediate Actions** with time sensitivity warnings
 
 ## Implementation Logic
 
 ### Execution Process
 1. **ANALYZE** → Scan all selections, calculate probability metrics and signals
-2. **RANK** → Sort by confidence score (highest first)  
-3. **VALIDATE** → Apply execution criteria to top candidates
-4. **FILTER** → Check odds ranges for each strategy type
-5. **EXECUTE** → Run optimal strategy on first qualifying opportunity
-6. **LOG** → Record decision rationale and alternative opportunities
+2. **IDENTIFY FAVORITE** → Selection with lowest odds
+3. **CHECK OPPOSITION** → Determine if weighted majority of others oppose favorite's signal (weighted by probability mass)
+4. **VALIDATE** → Apply execution criteria to favorite if opposition confirmed, otherwise do not execute
+5. **FILTER** → Check odds ranges for the signal type
+6. **EXECUTE** → Run optimal strategy on qualifying selection
+7. **LOG** → Record decision rationale and alternative opportunities
 
 ### Quality Assurance
 - **Minimum Data**: 10+ candlestick intervals required
-- **Confidence Thresholds**: >75% signals achieve 70%+ success rate target
+- **Signal Strength**: Prioritize largest probability changes
+- **Opposition Threshold**: Weighted majority (>50% of probability mass) of other selections must oppose
+- **Market Influence**: Higher probability selections have greater weight in opposition calculation
 - **Error Handling**: Flag incomplete data, low liquidity, unusual patterns
-- **Performance Tracking**: Monitor success rates vs confidence predictions
+- **Performance Tracking**: Monitor success rates vs signal strength and opposition
 
 ---
 
-**Usage**: Apply to any Betfair market with candlestick data. Prioritize highest confidence signals within valid time windows. Always execute the best qualifying automated strategy while respecting risk management parameters.
+**Usage**: Apply to any Betfair market with candlestick data. Execute on the favorite only if opposition from the market is confirmed, otherwise do not execute any strategy. Uses weighted price calculation ((High + Low + Close)/3) for more accurate probability trend analysis and weighted opposition evaluation based on market influence. Always execute the best qualifying automated strategy while respecting risk management parameters.
