@@ -1,31 +1,69 @@
-## Research & Market Insights Index
+# Research & Market Insights Index
 
-Curated, practitioner-focused research syntheses and academic-source summaries supporting quantitative and AI‑assisted Betfair trading.
+>This directory contains curated research, practical guides, and tool references for quantitative and AI-assisted Betfair trading.
 
-### Core Studies
-| Topic | File | Focus |
-|-------|------|-------|
-| Betfair Starting Price (BSP) | [BetfairSP.md](BetfairSP.md) | Efficiency, value benchmarking, strategic usage / avoidance patterns |
-| Horse Racing Exchange Market Structure | [HorseRacing.md](HorseRacing.md) | Structured academic synthesis: efficiency, microstructure, BSP convergence, modeling approaches |
+---
 
-### Practical Application Themes
-| Theme | Where to Start | Key Outputs |
-|-------|----------------|-------------|
-| BSP Value & Convergence | BetfairSP.md + Sections 5 & 7 of HorseRacing.md | BSP edge metrics, price ratio filters |
-| Drift & Volatility Modeling | HorseRacing.md (Sections 2–4, 8) | Drift velocity, regime flags, movement feature set |
-| Risk & Staking Frameworks | HorseRacing.md (Sections 6, 10, 11) | Capped Kelly, exposure throttles, robustness checks |
-| Feature Engineering Cheat Sheet | HorseRacing.md (Section 14) | Minimal sets for drift, scalp, value filters |
+## 1. Core Studies
 
-### How to Use These Resources
-1. Read BetfairSP.md to internalize BSP’s role as terminal consensus anchor.
-2. Use HorseRacing.md to design movement + BSP hybrid signals (price ratio + drift velocity + imbalance).
+- **Betfair Starting Price (BSP)**  
+  File: [BetfairSP.md](BetfairSP.md)  
+  Focus: Efficiency, value benchmarking, strategic usage/avoidance patterns
+
+- **Horse Racing Exchange Market Structure**  
+  File: [HorseRacing.md](HorseRacing.md)  
+  Focus: Academic synthesis—efficiency, microstructure, BSP convergence, modeling
+
+---
+
+## 2. Practical Application Themes
+
+- **BSP Value & Convergence**  
+  Start with: BetfairSP.md and HorseRacing.md (Sections 5 & 7)  
+  Key outputs: BSP edge metrics, price ratio filters
+
+- **Drift & Volatility Modeling**  
+  Start with: HorseRacing.md (Sections 2–4, 8)  
+  Key outputs: Drift velocity, regime flags, movement features
+
+- **Risk & Staking Frameworks**  
+  Start with: HorseRacing.md (Sections 6, 10, 11)  
+  Key outputs: Capped Kelly, exposure throttles, robustness checks
+
+- **Feature Engineering Cheat Sheet**  
+  Start with: HorseRacing.md (Section 14)  
+  Key outputs: Minimal sets for drift, scalp, value filters
+
+---
+
+## 3. How to Use These Resources
+
+1. Read `BetfairSP.md` to understand BSP’s role as terminal consensus anchor.
+2. Use `HorseRacing.md` to design movement + BSP hybrid signals (price ratio, drift velocity, imbalance).
 3. Prototype features in notebooks (see project `tests/notebooks/`).
-4. Feed curated metrics to AI prompts (see `docs/Prompts/`) for automated evaluation / execution.
+4. Feed curated metrics to AI prompts (see `docs/Prompts/`) for automated evaluation/execution.
 
-### Coming Soon (Planned)
+---
+
+## 4. CLI Tools for AI Coding
+
+Explore active and publicly accessible command-line tools for AI-assisted coding, automation, and agentic workflows. See [`CLIToolsForAICoding.md`](CLIToolsForAICoding.md) for full details, URLs, and usage notes.
+
+- **Codex CLI (OpenAI):** Coding agent for code generation, modification, and testing
+- **Gemini CLI (Google):** Gemini AI integration for code understanding and automation
+- **Claude Code CLI (Anthropic):** Terminal-based AI coding assistant
+- **Qodo Command:** AI agents for engineering workflow automation
+- **Aider:** AI pair programming CLI tool
+
+---
+
+## 5. Coming Soon (Planned)
+
 - Exchange Order Book Microstructure Deep Dive
 - Cross‑Market Correlation & Portfolio Exposure Notes
 - Adaptive BSP Projection Modeling Guide
 
-> Disclaimer: Research content is educational. No guarantee of future profitability; always validate under realistic commission, liquidity, and latency conditions.
+---
+
+> **Disclaimer:** Research content is educational. No guarantee of future profitability; always validate under realistic commission, liquidity, and latency conditions.
 

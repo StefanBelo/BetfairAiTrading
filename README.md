@@ -31,7 +31,7 @@ Explore over 120+ specialized AI prompts for Betfair trading in the `docs/Prompt
 - **NEW: BetfairSpData Analysis Systems** - Mathematical betting strategies using Betfair's starting price data and forecast models
 - Combined EV analysis, Dutch betting, conservative and automated strategies
 - Market analysis, weight of money, and trading execution frameworks
-- **Enhanced Candlestick Data Analysis** - Including new R4 Favourite analysis with probability-based metrics
+- **Enhanced Candlestick Data Analysis** - Including new R4 and R5 Favourite analysis with probability-based metrics and binary betting decisions
 - Favourite-focused, expert-guided, and minimal/no-reporting prompts
 - Integration guides for BFExplorer and MCP workflows
 - **NEW: Templates folder** - Platform-specific expert configurations for ChatGPT, Claude, Gemini, and Grok
@@ -41,7 +41,7 @@ See the [Prompts README](docs/Prompts/README.md) for a full index, usage recomme
 
 **Recent additions include:**
 - **BetfairSpData Analysis Systems** - Three new mathematical betting strategies using starting price data
-- **Candlestick Data R4 Favourite Analysis** - Probability-based technical analysis for automated trading
+- **Candlestick Data R4 and R5 Favourite Analysis** - Probability-based technical analysis for automated trading with binary betting decisions
 - **Platform Expert Templates** - Specialized configurations for ChatGPT, Claude, Gemini, and Grok
 - **Advanced Tutorials** - PROMETHEIA framework, prompt optimization, and AI text humanization
 - Traded Prices EV Analysis systems for automated trading data evaluation
