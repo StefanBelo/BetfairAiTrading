@@ -1,52 +1,78 @@
-# 🚀 Betfair AI Trading Community
+# 🚀 Betfair AI Trading### 🚀 Latest DevelopmentsCommunity
 
 Welcome to Betfair AI Trading – an open, research-driven hub for applying AI agents, quantitative methods, and automation to Betfair Exchange markets.
+
+**Transforming traditional betting into intelligent, data-driven trading through community-driven AI innovation.**
 
 ---
 ### 🔗 Quick Navigation
 | Section | Description |
 |---------|-------------|
-| [Analysis Index](docs/Analysis/README.md) | Performance & strategy result reports |
-| [AI Prompts](docs/Prompts/README.md) | 100+ domain-specific analysis & execution prompts |
-| [Strategies](docs/Strategies/README.md) | Ready-to-use configurable strategies |
-| [Research: Betfair SP](docs/Research/BetfairSP.md) | In-depth BSP research & applications |
-| [Research: Structured Horse Racing Market Study](docs/Research/HorseRacing_Structured.md) | Academic synthesis & strategic implications |
-| [Non-Developer Guide](docs/NonDevelopers.md) | Get started without coding |
-| [BFExplorer Guide](BFExplorer.md) | Platform integration & usage |
-| [Testing Strategies](docs/TestingStrategy.md) | Safe validation workflows |
-| [Strategy Expert Prompt](docs/Prompts/BfexplorerStrategyExpertPrompt.md) | Instant config guidance |
+| [📊 Analysis Reports](docs/Analysis/README.md) | Performance & strategy result reports |
+| [🧠 AI Prompts](docs/Prompts/README.md) | 120+ domain-specific analysis & execution prompts |
+| [📋 Strategies](docs/Strategies/README.md) | Ready-to-use configurable strategies |
+| [🔬 Research](docs/Research/) | In-depth market research & academic studies |
+| [👨‍💻 Non-Developer Guide](docs/NonDevelopers.md) | Get started without coding experience |
+| [🛠️ BFExplorer Guide](BFExplorer.md) | Platform integration & usage |
+| [🧪 Testing Guide](docs/TestingStrategy.md) | Safe validation workflows |
+| [🎯 Strategy Expert](docs/Prompts/BfexplorerStrategyExpertPrompt.md) | Instant AI strategy configuration |
 
 ---
 
-### 📊 Analysis Reports
+## 🆕 What's New (September 2025)
 
-**[📖 Complete Analysis Index](docs/Analysis/README.md)**
+### � Latest Developments
+- **R6 Strategy Evolution**: Next-generation analysis with enhanced automation frameworks
+- **Win-to-Place Data Analysis**: Advanced market divergence strategies for horse racing
+- **BetfairSpData Systems**: Mathematical betting strategies using starting price data
+- **Platform Expert Templates**: Specialized configurations for ChatGPT, Claude, Gemini, and Grok
+- **PROMETHEIA Framework**: Advanced AI prompting methodology for enhanced performance
 
-Performance analysis and strategy evaluation:
+### 📈 Recent Community Highlights
+- **Weekly Reports**: Latest insights on AI model selection and live betting strategies
+- **New Analysis Systems**: R5 Favourite Analysis with probability-based metrics
+- **Enhanced MCP Integration**: Improved AI agent connectivity with BFExplorer
+- **Community Growth**: Expanding ecosystem of AI-powered trading tools
 
-## 🧠 Expanded AI Analysis Prompts (New in Prompts Folder)
+### 💻 Code Updates
+- **C# AI Agent**: Enhanced with latest AI providers and improved MCP integration
+- **Python AI Agent**: FastAgent-based automation with advanced model support
+- **F# Applications**: Robust trading applications with latest DevExpress updates
 
-Explore over 120+ specialized AI prompts for Betfair trading in the `docs/Prompts` folder. These cover:
-- Advanced strategy systems (R1–R6, multi-context, silent execution)
-- **NEW: BetfairSpData Analysis Systems** - Mathematical betting strategies using Betfair's starting price data and forecast models
-- Combined EV analysis, Dutch betting, conservative and automated strategies
-- Market analysis, weight of money, and trading execution frameworks
-- **Enhanced Candlestick Data Analysis** - Including new R4 and R5 Favourite analysis with probability-based metrics and binary betting decisions
-- Favourite-focused, expert-guided, and minimal/no-reporting prompts
-- Integration guides for BFExplorer and MCP workflows
-- **NEW: Templates folder** - Platform-specific expert configurations for ChatGPT, Claude, Gemini, and Grok
-- **NEW: Tutorials folder** - Advanced prompt optimization techniques, AI text humanization, and PROMETHEIA framework
+## 🧠 AI Analysis Prompts (120+ Specialized Systems)
 
-See the [Prompts README](docs/Prompts/README.md) for a full index, usage recommendations, and quick reference table for all available analysis types.
+Explore our comprehensive collection of AI prompts for Betfair trading in the `docs/Prompts` folder. These enable instant, professional-grade analysis and fully autonomous strategy execution.
 
-**Recent additions include:**
-- **BetfairSpData Analysis Systems** - Three new mathematical betting strategies using starting price data
-- **Candlestick Data R4 and R5 Favourite Analysis** - Probability-based technical analysis for automated trading with binary betting decisions
-- **Platform Expert Templates** - Specialized configurations for ChatGPT, Claude, Gemini, and Grok
-- **Advanced Tutorials** - PROMETHEIA framework, prompt optimization, and AI text humanization
-- Traded Prices EV Analysis systems for automated trading data evaluation
-- R6 Strategy evolution with next-generation analysis capabilities
-- Semantic Analysis frameworks for AI-powered form interpretation
+### 🎯 Strategy Evolution: R1 → R6
+- **Strategy R1-R3**: Foundation systems with EV analysis and conservative betting
+- **Strategy R4**: Multi-context integration with enhanced evaluation
+- **Strategy R5**: Revolutionary three-context analysis with triple data integration
+- **Strategy R6**: Next-generation evolution with advanced automation frameworks
+
+### 🏇 Horse Racing Systems
+- **Base & Combined EV Analysis**: Core betting metrics with dual methodology
+- **Timeform Integration**: Professional analysis with star ratings and quality indicators
+- **Favourite-Focused R3-R6**: Enhanced favourite analysis with multi-context frameworks
+- **BetfairSpData Systems**: Mathematical strategies using starting price data
+- **Win-to-Place Analysis**: Market divergence strategies using place data as sentiment indicator
+- **Candlestick Data R4/R5**: Probability-based technical analysis with automated decisions
+
+### ⚽ Football & 🎾 Tennis
+- **Match Analysis**: Over/Under markets, in-play trading, momentum strategies
+- **Live Trading**: Real-time market analysis and automated execution
+- **Data Export**: Spreadsheet integration for advanced analysis
+
+### 🤖 AI Agent Integration
+- **MCP Workflows**: Seamless integration with BFExplorer via Model Context Protocol
+- **Multi-Provider Support**: OpenAI, DeepSeek, Claude, Gemini, and Grok configurations
+- **Platform Templates**: Expert configurations for different AI platforms
+
+### 📚 Educational Resources
+- **PROMETHEIA Framework**: Advanced AI prompting methodology
+- **Prompt Optimization**: Professional techniques for enhanced AI performance
+- **AI Text Humanization**: Making AI-generated content more natural
+
+**[📖 Complete Prompts Index](docs/Prompts/README.md)** - Full directory with usage recommendations and quick reference tables.
 
 These prompts enable instant, professional-grade analysis and fully autonomous strategy execution for horse racing, football, tennis, and more.
 
@@ -234,51 +260,67 @@ Pre-built strategies for multiple sports:
 ### 💻 Code & Development
 
 #### AI Agent Implementations (`src/`)
-- **[Python AI Agent](src/AiAgentPython/README.md)** - Advanced FastAgent-based automation with MCP integration
-- **[C# AI Agent](src/AiAgentCSharp/README.md)** - Multi-AI provider support with Model Context Protocol client
-- **[JavaScript AI Agent](src/AiAgentTypeScript/README.md)** - Interactive AI assistant for betting analysis
-- **F# Applications** - Robust trading applications
-- **Strategy Implementations** - Sport-specific algorithms
-- **BFExplorer Integration** - Seamless automation tools
+
+| Agent | Language | Key Features | Best For |
+|-------|----------|--------------|----------|
+| **[Python AI Agent](src/AiAgentPython/README.md)** | Python | FastAgent framework, MCP integration, multiple AI providers | Advanced automation & research |
+| **[C# AI Agent](src/AiAgentCSharp/README.md)** | C# | Multi-AI provider support, Model Context Protocol client, .NET ecosystem | Enterprise integration |
+
+**Additional Implementations:**
+- **F# Applications** - Robust trading applications with functional programming benefits
+- **Strategy Implementations** - Sport-specific algorithms and analysis tools
+- **BFExplorer Integration** - Seamless automation tools and MCP server connectivity
 
 #### Interactive Examples (`examples/`)
-- **Real-time Price Charts** - Live Betfair market visualization
-- **Dynamic Trading Charts** - Interactive market analysis
-- **HTML Trading Interfaces** - Web-based trading tools
+- **Real-time Price Charts** - Live Betfair market visualization with interactive dashboards
+- **Dynamic Trading Charts** - Interactive market analysis with customizable indicators
+- **HTML Trading Interfaces** - Web-based trading tools for browser-based analysis
 
 #### Analysis Notebooks (`tests/notebooks/`)
-- **Real-Time Market Monitoring** - Live data analysis
-- **Trading Performance Analysis** - Strategy backtesting
-- **Python Trading Analysis** - Cross-language implementations
+- **Real-Time Market Monitoring** - Live data analysis and market surveillance
+- **Trading Performance Analysis** - Strategy backtesting and performance evaluation
+- **Python Trading Analysis** - Cross-language implementations and comparative studies
 
-## 🚀 Getting Started
+## 🚀 Getting Started (3 Simple Steps)
 
 ### 1. **Choose Your Path**
-- **👶 Beginner**: Start with our [Non-Developer Guide](docs/NonDevelopers.md)
-- **💻 Developer**: Explore the `src/` folder and example code
-- **📊 Analyst**: Check out our Jupyter notebooks in `tests/notebooks/`
-- **🤖 AI Enthusiast**: Dive into our AI prompts in `docs/Prompts/`
+| Path | Description | Best For |
+|------|-------------|----------|
+| **👶 Beginner** | [Non-Developer Guide](docs/NonDevelopers.md) | No coding experience needed |
+| **💻 Developer** | Explore `src/` folder | Build custom AI agents |
+| **📊 Analyst** | Jupyter notebooks in `tests/notebooks/` | Data analysis & research |
+| **🤖 AI Enthusiast** | AI prompts in `docs/Prompts/` | Strategy development |
 
-### 2. **Set Up BFExplorer**
-- **[Download BFExplorer](https://drive.google.com/file/d/1_Ta7K3Spv9WoPV_m5GLzQvJm9x8GqN_J/view?usp=sharing)** - Get the official BFExplorer application
-- Read our [BFExplorer guide](BFExplorer.md) to understand the platform
-- Test with our sample strategies in `data/Strategies/`
-- Try the **[Strategy Expert Prompt](docs/Prompts/BfexplorerStrategyExpertPrompt.md)** for instant strategy advice
+### 2. **Set Up BFExplorer** ⚡
+```bash
+# Download BFExplorer (Free for community members)
+# https://drive.google.com/file/d/1_Ta7K3Spv9WoPV_m5GLzQvJm9x8GqN_J/view?usp=sharing
 
-**📋 Important Requirements:**
-- **Betfair Exchange Account Required**: To use BFExplorer, you'll need an active Betfair Exchange account
-- **Free for Active Community Members**: The BFExplorer application is available at no cost for our community members
-- **No Betfair Account?** Don't worry! Many of our strategy examples can be adapted for use on any sports bookmaker website, and our AI analysis prompts can be applied generally for data analysis, research, and developing betting or trading strategy ideas
+# Requirements:
+✅ Active Betfair Exchange account
+✅ BFExplorer application installed
+✅ MCP server running on localhost:10043
+```
 
-### 3. **Try a Strategy**
-- Browse pre-built strategies in `docs/Strategies/`
-- Test in demo mode first (see [Testing Guide](docs/TestingStrategy.md))
-- Gradually move to live trading
+**📋 Important Notes:**
+- **Free Access**: BFExplorer is available at no cost for active community members
+- **No Betfair Account?** Many strategies can be adapted for other bookmakers
+- **Demo Mode**: Test all strategies safely before live trading
 
-### 4. **Join the Learning**
-- Experiment with AI prompts for analysis
-- Build your own trading charts
-- Share your results and learn from others
+### 3. **Try Your First Strategy** 🎯
+```bash
+# Quick Start Options:
+1. Use Strategy Expert Prompt for instant AI guidance
+2. Browse pre-built strategies in docs/Strategies/
+3. Test in demo mode with sample data
+4. Experiment with AI analysis prompts
+```
+
+### 4. **Join the Community** 🤝
+- **Share Results**: Document your successes and learnings
+- **Ask Questions**: Use GitHub issues for technical support
+- **Contribute**: Submit pull requests with improvements
+- **Learn Together**: Participate in weekly community discussions
 
 ## 🎯 Key Sports We Cover
 
@@ -292,69 +334,133 @@ Pre-built strategies for multiple sports:
 
 ## 🔧 Technology Stack
 
-- **BFExplorer** - Primary trading platform with MCP server integration
-- **AI Agents** - Python (FastAgent), C# (ModelContextProtocol.Client), JavaScript implementations
-- **F#** - Core development language for robust trading applications
-- **Python** - Data analysis, ML, and FastAgent-based automation
-- **C#** - Multi-AI provider integration with MCP clients
-- **JavaScript/HTML** - Interactive charts and web interfaces
-- **Jupyter Notebooks** - Research and backtesting
-- **AI/LLM Integration** - Strategy enhancement with multiple model providers (OpenAI, DeepSeek, Claude)
-- **Model Context Protocol (MCP)** - Real-time data exchange and strategy execution
+### 🤖 AI & Machine Learning
+- **AI Providers**: OpenAI GPT-4.1, DeepSeek, Claude, Gemini, Grok
+- **Frameworks**: Microsoft.Extensions.AI, FastAgent, Model Context Protocol
+- **Languages**: Python, C#, TypeScript, F#
+- **Analysis**: EV calculations, probability modeling, market sentiment analysis
 
-## 🤝 Community Guidelines
+### 📊 Data & Analytics
+- **Real-time Data**: Betfair Exchange API, BFExplorer MCP server
+- **Analysis Tools**: Jupyter Notebooks, custom analytics pipelines
+- **Visualization**: Interactive trading charts, HTML interfaces
+- **Storage**: JSON-based data structures, spreadsheet integration
 
-- **Share Knowledge**: Help others learn and grow
-- **Test Responsibly**: Always validate strategies before live trading
-- **Stay Ethical**: Follow Betfair's terms and responsible gambling practices
-- **Collaborate**: Build upon each other's work
-- **Learn Continuously**: The market evolves, so should we
+### ⚡ Automation & Integration
+- **BFExplorer**: Primary trading platform with MCP server integration
+- **MCP Protocol**: Real-time data exchange and strategy execution
+- **API Integration**: RESTful APIs, WebSocket connections
+- **Cross-Platform**: Windows, Linux, macOS compatibility
 
-## ⚠️ Important Disclaimer
+### 🛠️ Development Tools
+- **Version Control**: Git with GitHub collaboration
+- **Documentation**: Markdown-based guides and tutorials
+- **Testing**: Comprehensive strategy validation frameworks
+- **CI/CD**: Automated testing and deployment pipelines
 
-**This repository is for educational purposes only.** All trading and betting involves risk, and past performance doesn't guarantee future results. Always:
+### 📈 Performance & Monitoring
+- **Metrics**: ROI tracking, strike rate analysis, risk management
+- **Logging**: Comprehensive execution logs and error tracking
+- **Backtesting**: Historical performance analysis
+- **Live Monitoring**: Real-time strategy performance dashboards
 
-- Trade/bet responsibly within your means
-- Test strategies thoroughly before going live
-- Understand the risks involved
-- Comply with all applicable laws and regulations
-- Follow responsible gambling practices
+## 🌟 Community Impact
 
-## 📞 Get Involved
+### 📊 Current Statistics (September 2025)
+- **120+ AI Analysis Prompts** - Comprehensive collection across all major sports
+- **Multi-Language Support** - Python, C#, TypeScript, and F# implementations
+- **Active Community** - Growing ecosystem of developers and traders
+- **Strategy Evolution** - From R1 to R6 systems with advanced automation
 
-- **Contribute**: Submit pull requests with new strategies or improvements
-- **Ask Questions**: Use issues for technical questions
-- **Share Results**: Document your successes and learnings
-- **Build Together**: Collaborate on new AI-driven approaches
+### 🎯 Community Achievements
+- **Open-Source Innovation** - Transparent development and knowledge sharing
+- **Cross-Disciplinary Collaboration** - Combining AI, finance, and sports analytics
+- **Educational Resources** - Comprehensive guides for all skill levels
+- **Performance Transparency** - Documented results and ROI tracking
+
+### 🤝 Join the Movement
+- **Contribute Code** - Help build the next generation of AI trading tools
+- **Share Strategies** - Publish your analysis methods and trading insights
+- **Educate Others** - Help newcomers learn AI-powered trading
+- **Collaborate** - Work together on cutting-edge research and development
+
+## 🎯 Project Status & Roadmap
+
+### ✅ Current Status (September 2025)
+- **120+ AI Analysis Prompts**: Comprehensive collection for all major sports
+- **Multi-Language Support**: Python, C#, TypeScript, and F# implementations
+- **MCP Integration**: Seamless BFExplorer connectivity
+- **Community Growth**: Active development and contribution ecosystem
+- **Strategy Evolution**: R6 systems with advanced automation
+
+### 🚀 Upcoming Developments
+- **Enhanced AI Integration**: More AI providers and improved model performance
+- **Advanced Analytics**: Deeper market analysis and prediction capabilities
+- **Mobile Applications**: iOS/Android apps for on-the-go trading
+- **Cloud Deployment**: Scalable infrastructure for high-frequency trading
+- **API Expansion**: Additional bookmaker integrations
+
+### 📊 Key Metrics
+- **Community Size**: Growing developer and trader community
+- **Strategy Performance**: Documented results with transparent ROI tracking
+- **Code Quality**: Comprehensive testing and validation frameworks
+- **Documentation**: Extensive guides and educational resources
+
+## 🤝 Community & Contribution
+
+### 🌟 How to Contribute
+1. **Fork & Clone**: Start with our GitHub repository
+2. **Choose Your Focus**: Code, documentation, strategy development, or testing
+3. **Follow Guidelines**: Use our contribution templates and coding standards
+4. **Submit PR**: Share your improvements with the community
+
+### 📝 Contribution Areas
+- **🔧 Code Development**: AI agents, trading strategies, data analysis tools
+- **📚 Documentation**: Guides, tutorials, API references
+- **🧪 Testing**: Strategy validation, performance benchmarking
+- **🎯 Strategy Research**: New analysis methods, market insights
+- **🌐 Community Support**: Help newcomers, share knowledge
+
+### 🏆 Recognition
+- **Contributors**: Featured in release notes and community highlights
+- **Strategy Developers**: Credited in analysis reports and documentation
+- **Community Leaders**: Special recognition for outstanding contributions
+- **Innovation Awards**: Monthly recognition for breakthrough developments
+
+### 💬 Community Channels
+- **GitHub Issues**: Technical discussions and bug reports
+- **Discussions**: Strategy sharing and community insights
+- **Weekly Reports**: Latest developments and community highlights
+- **Collaborative Development**: Joint projects and research initiatives
+
+## 🚀 Ready to Get Started?
+
+### ⚡ Quick Actions
+- ⭐ **Star this repository** to show your support
+- 🍴 **Fork the project** to start contributing
+- 📖 **Read the docs** to learn about our tools
+- 💬 **Join discussions** to connect with the community
+- 🛠️ **Try a strategy** to experience AI-powered trading
+
+### 🎯 Next Steps
+1. **Choose your path** from the options above
+2. **Set up BFExplorer** and get familiar with the platform
+3. **Try the Strategy Expert Prompt** for instant AI guidance
+4. **Experiment with AI analysis prompts** for your favorite sport
+5. **Join our community** to share results and learn from others
 
 ---
 
-*Ready to revolutionize your Betfair trading with AI? Let's build the future of intelligent betting together!* 🚀
+*🚀 Ready to revolutionize your Betfair trading with AI? Join our community and let's build the future of intelligent betting together!*
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆕 Featured New Additions
+---
 
-### BetfairSpData Analysis Systems
-Three new mathematical betting strategies using Betfair's starting price data and forecast models:
-- **[BetfairSpData Optimal Betting Strategy](docs/Prompts/HorseRacingBetfairSpData.md)** - Comprehensive value identification framework
-- **[BetfairSpData R1 - AI Agent Optimized](docs/Prompts/HorseRacingBetfairSpDataR1.md)** - Advanced optimization with transparent metrics
-- **[BetfairSpData R1 - Favourite-Only](docs/Prompts/HorseRacingBetfairSpDataR1_Favourite.md)** - Focused favourite analysis using SP data
-
-### Candlestick Data R4 Favourite Analysis
-**[BetfairMarketAnalysisCandleStickDataR4_Favourite.md](docs/Prompts/BetfairMarketAnalysisCandleStickDataR4_Favourite.md)**
-- Advanced probability-based candlestick analysis for Betfair markets
-- Uses weighted price calculation (High + Low + Close)/3 for robust probability trends
-- Strategy execution on the favorite only if weighted market opposition is confirmed (opposition weighted by probability mass, not simple count)
-- Incorporates STEAM/DRIFT signals, volume intelligence, and technical probability levels
-- Output includes table reports, execution rationale, and risk management logic
-- Designed for professional-grade, automated trading and risk control
-
-### Platform Templates & Educational Content
-New specialized folders providing:
-- **Templates** - Platform-specific expert configurations for ChatGPT, Claude, Gemini, and Grok
-- **Tutorials** - PROMETHEIA framework, prompt optimization techniques, and AI text humanization guides
-
-See the [Prompts README](docs/Prompts/README.md) for full details and usage examples.
+**Last Updated**: September 9, 2025  
+**Version**: 2.0.0  
+**Community**: Growing ecosystem of AI-powered traders  
+**Languages**: Python, C#, TypeScript, F#  
+**Focus**: AI-driven sports trading and analysis

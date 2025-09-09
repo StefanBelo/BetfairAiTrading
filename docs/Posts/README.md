@@ -32,6 +32,7 @@ This directory contains community posts, articles, and real-world examples showc
 ### [Gemini CLI + Bfexplorer MCP: AI-Powered Betfair Trading (No Coding Needed)](GeminiCLI_BfexplorerMCP_RedditPost.md)
 **Automate Betfair trading with AI prompts and Bfexplorer—no coding required!**
 ### Weekly Reports
+- [Betfair AI Trading Weekly Report - September 6, 2025](BetfairAiTrading_Weekly_Report_2025-09-06.md)
 - [Betfair AI Trading Weekly Report - August 30, 2025](BetfairAiTrading_Weekly_Report_2025-08-30.md)
 - [Betfair AI Trading Weekly Report - August 22, 2025](BetfairAiTrading_Weekly_Report_2025-08-22.md)
 - [Betfair AI Trading Weekly Report - August 16, 2025](BetfairAiTrading_Weekly_Report_2025-08-16.md)
@@ -41,6 +42,8 @@ This directory contains community posts, articles, and real-world examples showc
 
 ### Featured Posts & Articles
 - [Horse Racing Combined EV Analysis with Automated Betting](../Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
+- [The Death of Traditional Betting Strategy Development? AI Agents Are Changing Everything](Post_TraditionalMLToAgenticStrategyDevelopment.md)
+- [AI Agent C# Integration: Building Professional Trading Applications](Post_AiAgentCSharpIntegration.md)
 - [Horse Racing EV Analysis R2 - Timeform Edition: Professional AI Racing Strategy](Post_TimeformEVAnalysisR2Strategy.md)
 - [AI Agent Horse Racing Analysis: The Power of Backtesting & Continuous Learning](Post_AIAgentBacktestingAndLearning.md)
 - [How I Became a Betfair Strategy Expert in Minutes (Real Example)](Post_BfexplorerStrategyExpert.md)
@@ -64,6 +67,11 @@ This directory contains community posts, articles, and real-world examples showc
 - [Reddit Post: What AI Agents & Models Are You Actually Using?](RedditPost_AIAgentAndModelUsage.md)
 - [Reddit Post: My Experience with Gemini and F#](RedditPost_gemini_fsharp_experience.md)
 - [Reddit Post: Getting Started with Betfair Programming - A .NET/F# Developer's Guide](RedditPost_DotNETFSharpBetfairGuide.md)
+- [Reddit Post: Football Match Time Criteria Strategy Discussion](RedditPost_FootballMatchTimeCriteria.md)
+- [Reddit Post: Reflecting on Community Building and Developer Collaboration](RedditPost_CommunityReflections.md)
+- [Using CLI AI Agents in Batch Mode for Betfair Analysis](Using-CLI-AI-Agents-Batch-Mode-Reddit.md)
+- [Reddit Post: Timeform R2 Strategy Analysis Results](reddit_post_timeform_r2.md)
+- [Reddit Post: Back/Lay Strategy Parameter Discussion](reddit_trading_strategies.md)
 - [Market Data Context Overview Reddit Post](Market_Data_Context_Overview_Reddit_Post.md)
 - [Financial Signals Betting Reddit Post](FinancialSignalsBettingRedditPost.md)
 
@@ -71,6 +79,22 @@ This directory contains community posts, articles, and real-world examples showc
 - [LLM Services Community Question](LLM_Services_Community_Question.md)
 
 ---
+### [The Death of Traditional Betting Strategy Development? AI Agents Are Changing Everything](Post_TraditionalMLToAgenticStrategyDevelopment.md)
+**Revolutionary Shift in Strategy Development**
+- Compares traditional ML approach (weeks of coding) vs. AI agent approach (hours of conversation)
+- Analysis of speed vs. depth trade-offs in strategy development
+- Real-world experience with conversation-driven strategy creation
+- Technical insights into the future of automated betting strategy development
+- **Best for:** Understanding the paradigm shift from code-heavy to conversation-driven development
+
+### [AI Agent C# Integration: Building Professional Trading Applications](Post_AiAgentCSharpIntegration.md)
+**Technical Success Story & Integration Guide**
+- Breakthrough experience getting MCP (Model Context Protocol) working with C# applications
+- Multi-provider integration: GitHub AI, DeepSeek, and AiHubMix
+- Technical challenges and solutions for .NET developers
+- Step-by-step integration process with Betfair trading applications
+- **Best for:** .NET/C# developers building AI-powered trading applications
+
 ### [Horse Racing EV Analysis R2 - Timeform Edition: Professional AI Racing Strategy](Post_TimeformEVAnalysisR2Strategy.md)
 **Professional Timeform Integration**
 - Revolutionary AI strategy combining Timeform's 75+ years of racing expertise with Expected Value analysis

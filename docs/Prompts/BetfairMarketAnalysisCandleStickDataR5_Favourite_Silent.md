@@ -3,8 +3,8 @@
 Objective: Select exactly one action on the current favourite (lowest price): Bet 10 Euro, Lay 10 Euro, or No Bet.
 
 ## 1. Inputs
-1. Active market: GetActiveBetfairMarket
-2. Candles & BLR: GetDataContextForBetfairMarket("MarketSelectionsCandleStickData")
+1. Retrieve active market: GetActiveBetfairMarket
+2. Candles & BLR, on the active market: GetDataContextForBetfairMarket(marketId, "MarketSelectionsCandleStickData")
 
 ## 2. Metrics (Favourite)
 - Price = latest close
@@ -27,7 +27,7 @@ BACK (Bet 10 Euro) if:
 - ProbΔ_pp ≥ +0.4 AND BLR ≥ 0.55 AND OppWeight < 0.85
 
 LAY (Lay 10 Euro) if:
-- ProbΔ_pp ≤ -0.4 AND BLR < 0.50 AND OppWeight ≥ 0.50
+- ProbΔ_pp ≤ -0.4 AND BLR ≤ 0.45 AND OppWeight ≥ 0.50
 
 Else: NO BET.
 
@@ -37,31 +37,5 @@ Tie-break: If both sides appear (should not logically) → No Bet.
 If BACK or LAY → immediately call:
 ExecuteBfexplorerStrategySettings(marketId, selectionId, "Bet 10 Euro" | "Lay 10 Euro")
 No confirmation. Optional idempotency: skip if identical (marketId, selectionId, decision) already executed in session.
-
-## 6. Output (Markdown)
-```
-## Favourite Decision
-Favourite: <Name> @ <Price>
-Prob <Prob%>% (Δ <ProbΔ_pp> pp, Vel <Velocity_ppm> pp/min, Vol <Volatility%>%)
-BLR <BLR> | OppWeight <OppWeight*100>% | Direction <STEAM/DRIFT/STABLE>
-Decision: <Bet 10 Euro | Lay 10 Euro | No Bet>
-Reasons: - <short bullets>
-
-| Runner | Price | Prob% | ProbΔpp | BLR | Dir |
-|--------|------:|------:|--------:|-----|-----|
-| Favourite | ... | ... | ... | ... | ... |
-| Next | ... | ... | ... | ... | ... |
-| Next | ... | ... | ... | ... | ... |
-```
-
-## 7. Threshold Summary
-| Item | Back | Lay |
-|------|------|-----|
-| ProbΔ_pp | ≥ +0.4 | ≤ -0.4 |
-| BLR | ≥ 0.55 | < 0.50 |
-| OppWeight | < 0.85 | ≥ 0.50 |
-| Price | 1.5–12.0 | 1.5–12.0 |
-| Volatility | ≤ 50% | ≤ 50% |
-| Direction constraint | Strengthening | Weakening |
 
 End.

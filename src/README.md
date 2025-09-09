@@ -31,18 +31,6 @@ This directory contains the complete source code implementation for the Betfair 
 - **Features**: FastAgent integration, interactive mode, betting automation, comprehensive testing framework
 - **Best For**: Rapid prototyping, research, and Python-based AI development
 
-#### [AiAgentTypeScript/](AiAgentTypeScript/)
-**TypeScript/Node.js AI Agent**
-- **Purpose**: Modern TypeScript implementation for web-based AI agents
-- **Key Files**:
-  - `agent.ts` - Core AI agent implementation
-  - `agent_interactive.ts` - Interactive web interface
-  - `package.json` - Node.js dependencies and scripts
-  - `tsconfig.json` - TypeScript configuration
-  - `start_agent_interactive.ps1` - PowerShell startup script
-- **Features**: Modern TypeScript architecture, web interface, Node.js ecosystem integration
-- **Best For**: Web applications, modern JavaScript environments, and browser-based trading interfaces
-
 ### 📊 Analysis & Monitoring Tools
 
 #### [BetfairMarketAnalyzer/](BetfairMarketAnalyzer/)

@@ -13,10 +13,10 @@ module BfexplorerBot
 #r "BeloSoft.Bfexplorer.Service.Core.dll"
 #r "BeloSoft.Bfexplorer.TennisScoreProvider.dll"
 
-#r "DevExpress.Data.v24.2.dll"
-#r "DevExpress.Office.v24.2.Core.dll"
-#r "DevExpress.Spreadsheet.v24.2.Core.dll"
-#r "DevExpress.Printing.v24.2.Core.dll"
+#r "DevExpress.Data.v25.1.dll"
+#r "DevExpress.Office.v25.1.Core.dll"
+#r "DevExpress.Spreadsheet.v25.1.Core.dll"
+#r "DevExpress.Printing.v25.1.Core.dll"
 
 open System
 open System.Collections.Generic

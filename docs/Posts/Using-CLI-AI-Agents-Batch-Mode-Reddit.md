@@ -49,10 +49,7 @@ Current stack = Copilot Agent (interactive), Gemini (batch eval), Python FastAge
 - Logging & eval: Favorite minimal schema or open-source harness for ranking strategy suggestion quality over time?
 - Consolidation: Would unifying everything (eval + generation + execution) under one framework reduce failure modes, or just slow experimentation in early research stages?
 
-7. What would help you help me?
-I can share next: (a) a tiny PowerShell + bash dual script (MCP fetch → model eval → gate → execute), (b) a Unicode-safe prompt sanitation helper, or (c) a structured JSON schema + replay harness. Which should I post first?
-
-8. If you’re in a similar space
+7. If you’re in a similar space
 Script early, keep logs, gate execution, and bias toward reversible actions. Batch + MCP gives leverage; complexity can stay optional until you truly need branching cognition.
 
 ---

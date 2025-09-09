@@ -1,8 +1,7 @@
-﻿using Microsoft.Extensions.AI;
+﻿using Azure;
+using Azure.AI.Inference;
+using Microsoft.Extensions.AI;
 using Microsoft.Extensions.Configuration;
-using OpenAI;
-using System.ClientModel;
-using System.ClientModel.Primitives;
 
 namespace AiAgentCSharp
 {
@@ -41,25 +40,12 @@ namespace AiAgentCSharp
         /// <returns></returns>
         private static IChatClient CreateChatClient(string tokenName, string modelEndpoint, string model)
         {
-            var credential = new ApiKeyCredential(GetAccessToken(tokenName));
+            var completionsClient = new ChatCompletionsClient(new Uri(modelEndpoint), new AzureKeyCredential(GetAccessToken(tokenName)));
 
-            var resilientHttpClient = new HttpClient
-            {
-                Timeout = Timeout.InfiniteTimeSpan
-            };
-
-            var clientOptions = new OpenAIClientOptions
-            {
-                Transport = new HttpClientPipelineTransport(resilientHttpClient),
-                Endpoint = new Uri(modelEndpoint)
-            };
-
-            var openAiClient = new OpenAIClient(credential, clientOptions);
-
-            IChatClient chatClient = openAiClient.GetChatClient(model)
-                .AsIChatClient();
-
-            return chatClient;
+            return completionsClient.AsIChatClient(model)
+                .AsBuilder()
+                .UseFunctionInvocation()
+                .Build();
         }
 
         /// <summary>

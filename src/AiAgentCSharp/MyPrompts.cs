@@ -20,8 +20,8 @@ Task: Perform silent Expected Value (EV) analysis for horse racing with conserva
 Instructions:
 
 1. **Silent Data Collection**
-   - Retrieve active betfair market using tool: GetActiveBetfairMarket
-   - Retrieve racing data using tool: GetDataContextForBetfairMarket with 'RacingpostDataForHorsesInfo'
+   - Retrieve active betfair market using tool: get_active_betfair_market
+   - Retrieve racing data using tool: get_data_context_for_betfair_market with 'RacingpostDataForHorsesInfo'
    - No interim reports during data collection
 
 2. **Silent Analysis**
@@ -38,11 +38,9 @@ Instructions:
 
 4. **Strategy Execution**
    - **IF** favorite meets ALL criteria:
-     - Activate favorite using tool: ActivateBetfairMarketSelection
-     - Execute "Bet 10 Euro" strategy using tool: ExecuteBfexplorerStrategySettings
+     - Execute "Bet 10 Euro" strategy using tool: execute_bfexplorer_strategy_settings
    - **IF** favorite does NOT meet criteria:
-     - Activate favorite using tool: ActivateBetfairMarketSelection
-     - Execute "Lay 10 Euro" strategy using tool: ExecuteBfexplorerStrategySettings
+     - Execute "Lay 10 Euro" strategy using tool: execute_bfexplorer_strategy_settings
 
 5. **Final Report**
    - Report only: Horse name, strategy executed (Bet/Lay), and execution status

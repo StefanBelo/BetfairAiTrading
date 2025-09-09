@@ -108,8 +108,3 @@ Ready-to-use AI agents for automated trading:
 - Multi-AI provider support (OpenAI GPT-4, DeepSeek)
 - Model Context Protocol client integration
 - Strategy automation capabilities
-
-### [JavaScript AI Agent](../src/AiAgentTypeScript/README.md)
-- Interactive chat console for betting analysis
-- GitHub Models integration
-- Educational and exploratory AI assistant

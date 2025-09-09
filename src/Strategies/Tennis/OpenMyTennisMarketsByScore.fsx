@@ -6,7 +6,7 @@ module BfexplorerScript
 
 #I @"C:\Program Files\BeloSoft\Bfexplorer\"
 
-#r "DevExpress.Spreadsheet.v24.2.Core.dll"
+#r "DevExpress.Spreadsheet.v25.1.Core.dll"
 
 #r "BeloSoft.Data.dll"
 #r "BeloSoft.Bfexplorer.Domain.dll"
@@ -26,7 +26,7 @@ let Execute (bfexplorerConsole : IBfexplorerConsole) =
     let report message =
         bfexplorerConsole.Bfexplorer.OutputMessage message
 
-    let isMyTennislMatch (tennisMatch : TennisMatch) =
+    let isMyTennisMatch (tennisMatch : TennisMatch) =
         // Check if the match is in the second set and the score is 1:0 or 0:1
         (tennisMatch.FirstPlayer.SetsWon + tennisMatch.SecondPlayer.SetsWon) = 1uy
 
@@ -35,26 +35,26 @@ let Execute (bfexplorerConsole : IBfexplorerConsole) =
     async {        
         match! tennisScoreProvider.GetActiveMatches () with
         | DataResult.Success tennisMatches ->
-
-            if tennisMatches.IsEmpty
+            if tennisMatches.IsEmpty 
             then
                 do! report "No tennis matches playing!"
             else
                 match! tennisScoreProvider.UpdateMatches tennisMatches with
                 | Result.Success ->
 
-                    do! report (
-                            tennisMatches
-                            |> List.map (fun tennisMatch -> tennisMatch.ToString ())
-                            |> String.concat "\n"
-                        )
+                    let formattedMatches = 
+                        tennisMatches
+                        |> List.map (fun tennisMatch -> tennisMatch.ToString ())
+                        |> String.concat "\n"
+                
+                    do! report formattedMatches
 
                     let marketsToOpen =
                         tennisMatches
-                        |> List.filter isMyTennislMatch
+                        |> List.filter isMyTennisMatch
                         |> List.map (fun tennisMatch -> tennisMatch.Market)
 
-                    if not marketsToOpen.IsEmpty
+                    if not marketsToOpen.IsEmpty 
                     then
                         bfexplorerConsole.OpenMyMarkets marketsToOpen    
 
