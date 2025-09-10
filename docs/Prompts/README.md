@@ -262,6 +262,19 @@ The prompts are organized into several categories with demonstrated performance 
 - Fixed 10 Euro betting with automated execution based on favourite's candidate status
 - **Best for:** Conservative favourite-focused strategy with systematic value-based execution
 
+#### [HorseRacingBetfairSpDataR1_Favourite_Silent.md](HorseRacingBetfairSpDataR1_Favourite_Silent.md)
+**BetfairSpData R1 - Silent Favourite Strategy**
+- Silent execution version of favourite-only BetfairSpData strategy
+- Automated favourite evaluation with minimal output
+- Background processing for systematic favourite betting
+- **Best for:** Automated favourite betting without user interaction
+
+#### [HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md](HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md)
+**BetfairSpData R1 - Slovak Silent Favourite Strategy**
+- Slovak language version of silent favourite BetfairSpData strategy
+- Localized automated favourite evaluation and execution
+- **Best for:** Slovak-speaking users requiring automated favourite betting
+
 ### Specialized Analysis Tools
 
 #### [WeightOfMoneyAnalysisPrompt.md](WeightOfMoneyAnalysisPrompt.md)
@@ -803,12 +816,152 @@ Use **HorseRacingStrategyR5_Trade.md** when:
 - Want automated trading with comprehensive three-context analysis
 - Prefer trading-focused data storage and analysis tracking
 
+### For Advanced Weight of Money Trading
+Use **WeightOfMoneyStrategyR1.md** when:
+- You need professional-grade weight of money analysis with R1-level precision
+- Want enhanced market flow analysis and advanced trading pattern recognition
+- Seeking optimized execution logic for sophisticated weight of money strategies
+- Need proven analytical framework applied to liquidity-based trading
+
+### For R5 Trading Implementation
+Use **HorseRacingStrategyR5_Trade.md** when:
+- You want R5 analytical power optimized specifically for trading execution
+- Need trading-specific logic and execution patterns rather than straight betting
+- Want automated trading with comprehensive three-context analysis
+- Prefer trading-focused data storage and analysis tracking
+
 ### For R5 Trading Development
 Use **HorseRacingStrategyR5_Trade_Ideas.md** when:
 - You're developing or optimizing R5-based trading strategies
 - Need comprehensive analysis output for trading strategy refinement
 - Want detailed reasoning and methodology for trading decisions
 - Seeking trading pattern analysis with full analytical transparency
+
+## Technical Analysis and Charting
+
+### Candlestick Data Analysis Systems
+
+#### [BetfairMarketAnalysisCandleStickData.md](BetfairMarketAnalysisCandleStickData.md)
+**Candlestick Pattern Analysis for Betfair Markets**
+- Technical analysis using candlestick patterns and volume data
+- Price movement analysis with momentum indicators
+- Trading strategy recommendations based on chart patterns
+- **Best for:** Technical traders seeking pattern-based market analysis
+
+#### [BetfairMarketAnalysisCandleStickDataR2.md](BetfairMarketAnalysisCandleStickDataR2.md)
+**Enhanced Candlestick Analysis R2**
+- Advanced candlestick pattern recognition with improved algorithms
+- Multi-timeframe analysis and pattern confirmation
+- Enhanced volume analysis and market momentum assessment
+- **Best for:** Advanced technical analysis with pattern validation
+
+#### [BetfairMarketAnalysisCandleStickDataR3.md](BetfairMarketAnalysisCandleStickDataR3.md)
+**Comprehensive Candlestick Analysis R3**
+- Comprehensive technical analysis framework with multiple indicators
+- Advanced pattern recognition and market structure analysis
+- Integrated volume and price action analysis
+- **Best for:** Professional-grade technical analysis and trading signals
+
+#### [BetfairMarketAnalysisCandleStickDataR4_Favourite.md](BetfairMarketAnalysisCandleStickDataR4_Favourite.md)
+**Favourite-Focused Candlestick Analysis R4**
+- Candlestick analysis specifically focused on market favourites
+- Technical analysis for favourite performance evaluation
+- Pattern recognition for favourite selection validation
+- **Best for:** Technical analysis of market favourite performance
+
+#### [BetfairMarketAnalysisCandleStickDataR5_Favourite.md](BetfairMarketAnalysisCandleStickDataR5_Favourite.md)
+**Advanced Favourite Candlestick Analysis R5**
+- Advanced technical analysis for market favourites with enhanced algorithms
+- Multi-factor pattern analysis and market structure evaluation
+- Comprehensive favourite performance assessment
+- **Best for:** Professional technical analysis of favourite selections
+
+#### [BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md](BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md)
+**Silent Favourite Candlestick Analysis R5**
+- Silent execution version of R5 favourite candlestick analysis
+- Automated technical analysis with minimal output
+- Background processing for favourite evaluation
+- **Best for:** Automated technical analysis without user interaction
+
+### Chart Creation and Visualization
+
+#### [TradingChartCreation.md](TradingChartCreation.md)
+**Interactive Financial Chart Creation**
+- Create interactive financial charts from MCP time series data
+- Candlestick charts with volume analysis and technical indicators
+- Responsive design with zoom, pan, and hover tooltips
+- Support for moving averages, VWAP, and trend lines
+- **Best for:** Visual market analysis and technical chart creation
+
+## Semantic Analysis Frameworks
+
+### Core Semantic Analysis
+
+#### [HorseRacingSemanticAnalysis.md](HorseRacingSemanticAnalysis.md)
+**AI-Powered Semantic Interpretation of Racing Form Data**
+- Deep semantic analysis of horse racing form descriptions
+- Natural language processing of performance narratives
+- Automated extraction of positive and negative performance indicators
+- Normalized semantic scoring and expected value calculations
+- **Best for:** Qualitative analysis of racing form data beyond numerical metrics
+
+#### [HorseRacingSemanticAnalysisR2.md](HorseRacingSemanticAnalysisR2.md)
+**Enhanced Semantic Analysis R2**
+- Advanced semantic analysis with improved natural language processing
+- Enhanced pattern recognition in racing form descriptions
+- Multi-factor semantic scoring with confidence assessment
+- **Best for:** Advanced qualitative analysis with improved accuracy
+
+## Traded Prices Analysis
+
+### Automated Traded Prices EV Analysis
+
+#### [TradedPricesEVAnalysis.md](TradedPricesEVAnalysis.md)
+**Automated Expected Value Analysis from Trading Data**
+- Real-time analysis of traded prices and market movements
+- Expected value calculations based on trading patterns
+- Automated market data processing and analysis
+- Strategic recommendations based on price movement analysis
+- **Best for:** Real-time market analysis using actual traded data
+
+#### [TradedPricesEVPlusAnalysis.md](TradedPricesEVPlusAnalysis.md)
+**Enhanced Traded Prices EV Analysis**
+- Advanced analysis combining traded prices with additional market data
+- Multi-factor expected value assessment
+- Enhanced strategic recommendations with risk assessment
+- **Best for:** Comprehensive market analysis with multiple data sources
+
+#### [TradedPricesEVPlusGpt5OptAnalysis.md](TradedPricesEVPlusGpt5OptAnalysis.md)
+**GPT-5 Optimized Traded Prices Analysis**
+- GPT-5 optimized analysis of traded prices and market data
+- Advanced AI processing for market pattern recognition
+- Optimized expected value calculations and recommendations
+- **Best for:** Cutting-edge AI analysis of trading data
+
+## Win to Be Placed Analysis
+
+### Place Betting Analysis Systems
+
+#### [HorseRacingWinToBePlacedData.md](HorseRacingWinToBePlacedData.md)
+**Win to Be Placed Data Analysis**
+- Analysis of place betting markets and win-to-place conversion
+- Expected value calculations for place betting opportunities
+- Market efficiency assessment for place betting
+- **Best for:** Place betting analysis and value identification
+
+#### [HorseRacingWinToBePlacedData_Favourite.md](HorseRacingWinToBePlacedData_Favourite.md)
+**Favourite-Focused Place Betting Analysis**
+- Place betting analysis specifically for market favourites
+- Favourite performance evaluation in place markets
+- Value assessment for favourite place betting opportunities
+- **Best for:** Favourite-focused place betting strategies
+
+#### [HorseRacingWinToBePlacedData_Favourite_Silent.md](HorseRacingWinToBePlacedData_Favourite_Silent.md)
+**Silent Favourite Place Betting Analysis**
+- Silent execution version of favourite place betting analysis
+- Automated place betting evaluation for favourites
+- Background processing with minimal output
+- **Best for:** Automated favourite place betting analysis
 
 ## Integration with BFExplorer
 
@@ -959,9 +1112,16 @@ When creating new prompts:
 | **BetfairSpData Mathematical Analysis** | **Medium** | **Manual** | **Mathematical value betting** | **HorseRacingBetfairSpData.md** |
 | **BetfairSpData R1 Optimized** | **Medium-High** | **Manual** | **AI-optimized mathematical approach** | **HorseRacingBetfairSpDataR1.md** |
 | **BetfairSpData Favourite-Only** | **Low-Medium** | **Full** | **Conservative favourite strategy** | **HorseRacingBetfairSpDataR1_Favourite.md** |
+| **BetfairSpData Silent Favourite** | **Low-Medium** | **Full** | **Automated favourite betting** | **HorseRacingBetfairSpDataR1_Favourite_Silent.md** |
 | **Professional trading execution** | **Medium-High** | **Full** | **Advanced position management** | **BetfairTradingStrategyExecutionPrompt.md** |
 | **Weight of money trading** | **Medium** | **Full** | **Liquidity-based trading** | **WeightOfMoneyStrategy.md** |
 | **Advanced weight of money trading** | **Medium-High** | **Full** | **Professional WoM trading** | **WeightOfMoneyStrategyR1.md** |
+| **Candlestick Technical Analysis** | **Medium** | **Manual** | **Pattern-based trading** | **BetfairMarketAnalysisCandleStickData.md** |
+| **Enhanced Candlestick Analysis** | **Medium-High** | **Manual** | **Advanced pattern recognition** | **BetfairMarketAnalysisCandleStickDataR2.md** |
+| **Interactive Chart Creation** | **Low** | **Manual** | **Visual market analysis** | **TradingChartCreation.md** |
+| **Semantic Form Analysis** | **Medium** | **Manual** | **Qualitative performance analysis** | **HorseRacingSemanticAnalysis.md** |
+| **Automated Traded Prices EV** | **Medium** | **Full** | **Real-time market analysis** | **TradedPricesEVAnalysis.md** |
+| **Win to Place Analysis** | **Medium** | **Manual** | **Place betting evaluation** | **HorseRacingWinToBePlacedData.md** |
 | Quick analysis only | Low | None | Analysis only | HorseRacingEVRankingsTableOnly.md |
 | Fundamental handicapping | Medium | Manual | Traditional approach | HorseRacingBaseFormDataAnalysis.md |
 | Data export and integration | Medium | Manual | Structured output | HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md |
@@ -971,5 +1131,5 @@ When creating new prompts:
 
 ---
 
-*Last updated: August 25, 2025*  
+*Last updated: September 10, 2025*  
 *Performance data based on real market testing with Strategy R1 achieving 83.3% strike rate and 115-150% ROI*

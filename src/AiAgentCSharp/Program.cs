@@ -11,8 +11,9 @@ try
             new SseClientTransport(
                 new SseClientTransportOptions
                 {
-                    Endpoint = new Uri("http://localhost:10043"),
-                    TransportMode = HttpTransportMode.StreamableHttp
+                    Name = "BfexplorerApp",
+                    Endpoint = new Uri("http://localhost:10043/sse"),
+                    TransportMode = HttpTransportMode.Sse
                 }
             )
         );
@@ -26,9 +27,12 @@ try
 
     // Chat client
     IChatClient chatClient =
-        AiAgentHelpers.CreateGithubChatClient("openai/gpt-4.1");
+        //AiAgentHelpers.CreateGithubChatClient("openai/gpt-4.1");
+        //AiAgentHelpers.CreateGithubChatClient("xai/grok-3");    
+        //AiAgentHelpers.CreateGithubCopilotChatClient("openai/gpt-4.1");
         //AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
-        //AiAgentHelpers.CreateAiHubMixChatClient("gpt-4.1");
+        AiAgentHelpers.CreateAiHubMixChatClient("gpt-4.1");
+        //AiAgentHelpers.CreateAiHubMixChatClient("gpt-5-nano");
 
     string prompt = MyPrompts.ActiveBetfairMarket;
 

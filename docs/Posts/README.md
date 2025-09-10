@@ -51,6 +51,7 @@ This directory contains community posts, articles, and real-world examples showc
 - [Horse Racing EV Analysis: A Deep Dive into Expected Value Betting](Post_HorseRacingEVAnalysis.md)
 - [Crowd Wisdom vs. Betting Value: Finding Edges in Efficient Markets](Post_CrowdWisdomVsBettingValue.md)
 - [Post: AI Performance - Capitalism vs Communism](Post_AIPerformanceCapitalismVsCommunism.md)
+- [Native Language Prompt Engineering: Slovak vs English Results](Post_NativeLanguagePromptEngineering.md)
 
 ### Reddit Community Posts
 - [Reddit Post: F# Programmers & LLMs: What's Your Experience?](RedditPost_FSharpLLMExperience.md)
@@ -188,6 +189,24 @@ This directory contains community posts, articles, and real-world examples showc
 - Expected Value calculations and realistic performance expectations
 - **Best for:** Understanding market efficiency and identifying profitable betting opportunities
 
+### [Post: AI Performance - Capitalism vs Communism](Post_AIPerformanceCapitalismVsCommunism.md)
+**AI Monetization & Platform Analysis**
+- Critical analysis of AI performance differences across platforms
+- Comparison of GitHub Copilot PRO vs DeepSeek implementations
+- Examination of how monetization strategies affect user experience
+- Discussion of token efficiency and platform friction
+- Insights into capitalist vs alternative AI business models
+- **Best for:** Understanding how business models impact AI tool effectiveness
+
+### [Native Language Prompt Engineering: Slovak vs English Results](Post_NativeLanguagePromptEngineering.md)
+**Multilingual AI Interaction Study**
+- Experimental comparison of native language vs English prompts
+- Demonstration that AI understands multiple languages equally well
+- Analysis of clarity benefits when using native language
+- Discussion of cognitive load in prompt engineering
+- Practical insights for non-English speaking developers
+- **Best for:** Understanding language barriers in AI-assisted development
+
 ### [Reddit Post: Crowd Wisdom vs. Betting Value (Condensed)](RedditPost_CrowdWisdomVsBettingValue.md)
 **Community Discussion Version**
 - Reddit-ready condensed version of crowd wisdom analysis
@@ -234,6 +253,15 @@ This directory contains community posts, articles, and real-world examples showc
 - Analysis of AI agents revolutionizing betting strategy development approaches
 - **Best for:** Staying current with community trends, development approaches, and practical implementation insights
 
+### [Betfair AI Trading Weekly Report - August 2, 2025](BetfairAiTrading_Weekly_Report_2025-08-02.md)
+**Community Insights & Technical Discussions**
+- Model selection strategies for sports betting applications
+- Effectiveness of LLMs as study tools and coding assistants for Betfair trading
+- Technical challenge of deriving place odds from win odds using academic models
+- Discussion of machine learning approaches: regression, logistic regression, random forests
+- Analysis of LLM improvements in educational guidance and context-awareness
+- **Best for:** Understanding ML model selection, LLM capabilities, and academic betting models
+
 ### [Betfair AI Trading Weekly Report - August 9, 2025](BetfairAiTrading_Weekly_Report_2025-08-09.md)
 **Community Insights & Development Trends**
 - AI agent performance analysis: identifying strengths and weaknesses
@@ -260,6 +288,20 @@ This directory contains community posts, articles, and real-world examples showc
 - **Best for:** Understanding the balance between simplicity and advanced features in betting automation, community knowledge sharing
 
 ### [Betfair AI Trading Weekly Report - August 22, 2025](BetfairAiTrading_Weekly_Report_2025-08-22.md)
+**Community Insights & Development Trends**
+- Comparison of idea-first (fast signal testing) vs. model-first (deep temporal/fundamental modeling) approaches
+- Practical workflows: quick falsification tests, rapid implementation/backtest for simple signals
+- Notes on multi-horizon forecasting: useful but often shifts work to feature engineering and tuning
+- **Best for:** Teams wanting a pragmatic hybrid approach — high-throughput idea testing plus selective deep modeling
+
+### [Betfair AI Trading Weekly Report - September 6, 2025](BetfairAiTrading_Weekly_Report_2025-09-06.md)
+**Live Betting Models & Real-Time Analysis**
+- Exploration of live betting models for next-goal markets in soccer
+- Technical approaches for detecting real-time momentum shifts and odds mispricing
+- Discussion of data challenges: feed delays, API limits, and latency issues
+- Analysis of competing against professional syndicates with faster infrastructure
+- Practical recommendations for building reliable low-latency pipelines
+- **Best for:** Understanding live betting opportunities and real-time signal processing
 **Community Insights & Development Trends**
 - Comparison of idea-first (fast signal testing) vs. model-first (deep temporal/fundamental modeling) approaches
 - Practical workflows: quick falsification tests, rapid implementation/backtest for simple signals

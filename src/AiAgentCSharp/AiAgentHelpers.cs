@@ -58,6 +58,17 @@ namespace AiAgentCSharp
         }
 
         /// <summary>
+        /// CreateGithubCopilotChatClient
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public static IChatClient CreateGithubCopilotChatClient(string model)
+        {
+            return CreateChatClient("GITHUB_TOKEN", "https://api.githubcopilot.com/", model);
+        }
+
+
+        /// <summary>
         /// CreateDeepSeekChatClient
         /// </summary>
         /// <returns></returns>
