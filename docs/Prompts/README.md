@@ -2,6 +2,20 @@
 
 This directory contains 120+ specialized prompts for AI-powered analysis of Betfair markets, particularly focused on horse racing betting opportunities and market analysis. These prompts range from comprehensive analytical frameworks to silent automated execution systems with proven performance results including 83.3% strike rates and 77.6% ROI across diverse market conditions.
 
+## New & Updated Prompts
+
+- Recent additions include advanced candlestick data analysis prompts, new silent execution strategies, and enhanced trading chart creation tools.
+- Explore the latest prompts for Betfair market analysis, trading strategy execution, and system integration in this folder.
+- For a full list, see files such as:
+  - BetfairMarketAnalysisCandleStickData.md
+  - HorseRacingSilentEVAnalysisWithAutomatedExecution.md
+  - TradingChartCreation.md
+  - BfexplorerStrategyExpertPrompt.md
+  - FootballMatchFSharpCodeCreation.md
+  - And many more...
+
+Stay up to date with new strategies and analysis tools added regularly.
+
 ## Overview
 
 The prompts are organized into several categories with demonstrated performance results:
@@ -157,6 +171,33 @@ The prompts are organized into several categories with demonstrated performance 
 - Automated favourite evaluation with threshold-based execution control
 - **Best for:** Silent automated favourite analysis with EV range risk management
 
+#### [HorseRacingEVAnalysisFavouriteR7_Silent.md](HorseRacingEVAnalysisFavouriteR7_Silent.md)
+**Favourite R7 - Optimized Silent EV Analysis with Performance Tracking**
+- Latest evolution with simplified 100-point scoring system and dynamic EV thresholds
+- Enhanced data validation requiring ≥80% completeness before analysis
+- Advanced semantic analysis with contextual race performance evaluation
+- Internal performance monitoring and adaptive threshold adjustment based on rolling results
+- Silent execution with market volatility considerations and error handling
+- **Best for:** Optimized automated favourite analysis with continuous performance improvement and robust error handling
+
+#### [HorseRacingEVAnalysisFavouriteR8.md](HorseRacingEVAnalysisFavouriteR8.md)
+**Favourite R8 - Advanced EV Analysis System**
+- Enhanced favourite evaluation with improved analytical framework
+- Advanced market assessment and value identification capabilities
+- **Best for:** Next-generation favourite analysis with enhanced precision
+
+#### [HorseRacingEVAnalysisFavouriteR8_Silent.md](HorseRacingEVAnalysisFavouriteR8_Silent.md)
+**Favourite R8 - Silent Implementation**
+- Silent execution version of R8 favourite analysis system
+- Automated favourite evaluation with enhanced analytical precision
+- **Best for:** Silent automated favourite analysis with R8 improvements
+
+#### [HorseRacingEVAnalysisFavouriteR9_Silent.md](HorseRacingEVAnalysisFavouriteR9_Silent.md)
+**Favourite R9 - Advanced Silent Analysis System**
+- Latest evolution of silent favourite analysis with enhanced capabilities
+- Advanced market evaluation and automated execution framework
+- **Best for:** Cutting-edge silent favourite analysis and execution
+
 ### Combined Analysis Approaches
 
 #### [HorseRacingCombinedEVAnalysis.md](HorseRacingCombinedEVAnalysis.md)
@@ -223,6 +264,30 @@ The prompts are organized into several categories with demonstrated performance 
 - Calculates Expected Value (EV) for each horse.
 - Executes a "Bet 10 Euro" strategy only on horses with positive EV and an estimated probability > 20%.
 - **Best for:** Value betting with a focus on higher probability selections.
+
+#### [HorseRacingEVAnalysisR1_Silent.md](HorseRacingEVAnalysisR1_Silent.md)
+**Expected Value Analysis R1 - Silent Implementation**
+- Silent execution version of R1 EV analysis with conditional betting
+- Automated execution with minimal output for systematic betting
+- **Best for:** Silent automated EV-based betting with R1 methodology
+
+#### [HorseRacingEVAnalysisR2.md](HorseRacingEVAnalysisR2.md)
+**Expected Value Analysis R2 - Enhanced Evaluation System**
+- Advanced EV analysis with improved evaluation methodology
+- Enhanced probability assessment and value identification
+- **Best for:** Improved EV analysis with enhanced precision and reliability
+
+#### [HorseRacingEVAnalysisR3.md](HorseRacingEVAnalysisR3.md)
+**Expected Value Analysis R3 - Multi-Factor Analysis System**
+- Comprehensive EV analysis incorporating multiple evaluation factors
+- Advanced analytical framework with enhanced decision-making logic
+- **Best for:** Sophisticated EV analysis with comprehensive market evaluation
+
+#### [HorseRacingEVAnalysisR10_Silent.md](HorseRacingEVAnalysisR10_Silent.md)
+**Expected Value Analysis R10 - Advanced Silent System**
+- Latest evolution of EV analysis with advanced silent execution capabilities
+- Enhanced analytical framework with improved accuracy and execution
+- **Best for:** Cutting-edge silent EV analysis with maximum analytical sophistication
 
 #### [HorseRacingEVAnalysisWithBetting.md](HorseRacingEVAnalysisWithBetting.md)
 **Expected Value Analysis with Single Selection Betting**

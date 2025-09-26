@@ -22,7 +22,8 @@ This directory contains community posts, articles, and real-world examples showc
   - Silent execution version for automated deployment with minimal output
 
 ## Available Posts
-
+### [AI Agent Execution: Automation Approaches for Betfair Trading](AI_Agent_Execution_Reddit_Post.md)
+**Overview of Python, C#, CLI, and text injection methods for AI agent automation and debugging.**
 ### [Horse Racing Combined EV Analysis with Automated Betting](../Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
 **Revolutionary Dual-Source Analysis Framework**
 
@@ -32,6 +33,9 @@ This directory contains community posts, articles, and real-world examples showc
 ### [Gemini CLI + Bfexplorer MCP: AI-Powered Betfair Trading (No Coding Needed)](GeminiCLI_BfexplorerMCP_RedditPost.md)
 **Automate Betfair trading with AI prompts and Bfexplorer—no coding required!**
 ### Weekly Reports
+- [Betfair AI Trading Weekly Report - September 27, 2025](BetfairAiTrading_Weekly_Report_2025-09-27.md)
+- [Betfair AI Trading Weekly Report - September 20, 2025](BetfairAiTrading_Weekly_Report_2025-09-20.md)
+- [Betfair AI Trading Weekly Report - September 13, 2025](BetfairAiTrading_Weekly_Report_2025-09-13.md)
 - [Betfair AI Trading Weekly Report - September 6, 2025](BetfairAiTrading_Weekly_Report_2025-09-06.md)
 - [Betfair AI Trading Weekly Report - August 30, 2025](BetfairAiTrading_Weekly_Report_2025-08-30.md)
 - [Betfair AI Trading Weekly Report - August 22, 2025](BetfairAiTrading_Weekly_Report_2025-08-22.md)
@@ -294,6 +298,33 @@ This directory contains community posts, articles, and real-world examples showc
 - Notes on multi-horizon forecasting: useful but often shifts work to feature engineering and tuning
 - **Best for:** Teams wanting a pragmatic hybrid approach — high-throughput idea testing plus selective deep modeling
 
+### [Betfair AI Trading Weekly Report - September 27, 2025](BetfairAiTrading_Weekly_Report_2025-09-27.md)
+**Data Quantity vs Quality in Betting Models**
+- Community discussion on optimal data selection for betting model development
+- Analysis of the "curse of dimensionality" and feature selection challenges
+- Systematic approaches to distinguishing signal from noise in model inputs
+- Emphasis on domain expertise, statistical validation, and Occam's Razor principles
+- Practical recommendations for feature engineering and model auditing
+- **Best for:** Understanding when to add complexity vs. maintaining simplicity in betting models
+
+### [Betfair AI Trading Weekly Report - September 20, 2025](BetfairAiTrading_Weekly_Report_2025-09-20.md)
+**When Your Model Loses Its Edge**
+- Community analysis of distinguishing normal variance from genuine model performance decline
+- Discussion of statistical tools for model performance assessment (closing line analysis, Monte Carlo simulations)
+- Strategies for avoiding overfitting when responding to losses
+- Importance of disciplined risk management and incremental model adjustments
+- Community support for patience vs. adaptation in model development
+- **Best for:** Understanding model performance monitoring and systematic approach to strategy refinement
+
+### [Betfair AI Trading Weekly Report - September 13, 2025](BetfairAiTrading_Weekly_Report_2025-09-13.md)
+**AI Prediction Accuracy Claims & Market Reality**
+- Community discussion on claims of 95% AI prediction accuracy in sports betting
+- Analysis of data-driven models vs. human intuition in betting decisions
+- Skepticism about beating competitive betting markets with AI alone
+- Emphasis on realistic expectations, model validation, and transparency
+- Recommendations for combining AI predictions with disciplined bankroll management
+- **Best for:** Understanding realistic AI capabilities and community perspective on accuracy claims
+
 ### [Betfair AI Trading Weekly Report - September 6, 2025](BetfairAiTrading_Weekly_Report_2025-09-06.md)
 **Live Betting Models & Real-Time Analysis**
 - Exploration of live betting models for next-goal markets in soccer
@@ -302,11 +333,6 @@ This directory contains community posts, articles, and real-world examples showc
 - Analysis of competing against professional syndicates with faster infrastructure
 - Practical recommendations for building reliable low-latency pipelines
 - **Best for:** Understanding live betting opportunities and real-time signal processing
-**Community Insights & Development Trends**
-- Comparison of idea-first (fast signal testing) vs. model-first (deep temporal/fundamental modeling) approaches
-- Practical workflows: quick falsification tests, rapid implementation/backtest for simple signals
-- Notes on multi-horizon forecasting: useful but often shifts work to feature engineering and tuning
-- **Best for:** Teams wanting a pragmatic hybrid approach — high-throughput idea testing plus selective deep modeling
 
 ### [Reddit Post: Getting Started with Betfair Programming - A .NET/F# Developer's Guide](RedditPost_DotNETFSharpBetfairGuide.md)
 **Developer Onboarding & Technology Evolution**

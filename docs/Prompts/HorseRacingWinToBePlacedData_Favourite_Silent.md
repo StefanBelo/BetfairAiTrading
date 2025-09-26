@@ -29,6 +29,6 @@
 - **Favourite**: [Horse Name] (Win: [odds], Place: [odds])
 - **Strategy Executed**: [Bet 10 Euro/Lay 10 Euro/No Action]
 - **Selection ID**: [selectionId]
-- **Reason**: [BACK criteria met/LAY criteria met/Time <3min/No signal]
+- **Reason**: [BACK criteria met/LAY criteria met/Time <30seconds/No signal]
 - **Momentum**: Win [%], Place [%], Divergence [%]
 - **Status**: [SUCCESS/FAILED/SKIPPED]

@@ -2,6 +2,15 @@
 
 This directory contains comprehensive guides on implementing AI-powered automation for Betfair trading using BFExplorer.
 
+## New: AI Agent Execution Approaches
+
+### [AI Agent Execution Approaches](AI_Agent_Execution_Approaches.md)
+**Comparison of Automation Methods**
+- Overview of Python scripting, C# integration, CLI tools, and text injection approaches for AI agent execution
+- Pros and cons of each method for strategy automation and debugging
+- Practical guidance for choosing the best approach for your workflow
+- **Best for:** Developers evaluating automation and debugging strategies
+
 ## Comprehensive Setup Guide
 
 ### [Getting Started with Agentic Bfexplorer App](HowToStartWithAgenticBfexplorerApp.md)
