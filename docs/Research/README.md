@@ -14,6 +14,10 @@
   File: [HorseRacing.md](HorseRacing.md)  
   Focus: Academic synthesis—efficiency, microstructure, BSP convergence, modeling
 
+- **Staking for Positive‑EV Selections (Top 3 picks)**  
+  File: [EVStakingForTop3Selections.md](EVStakingForTop3Selections.md)  
+  Focus: Dutching vs fractional Kelly, decision rules, risk caps, and automation mapping
+
 ---
 
 ## 2. Practical Application Themes

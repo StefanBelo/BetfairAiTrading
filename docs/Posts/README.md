@@ -58,6 +58,8 @@ This directory contains community posts, articles, and real-world examples showc
 - [Native Language Prompt Engineering: Slovak vs English Results](Post_NativeLanguagePromptEngineering.md)
 
 ### Reddit Community Posts
+- [Reddit Post: Dutching 3 +EV Horses vs Backing Only the Top EV (No formulas)](RedditPost_StakingForTop3PositiveEV_NoFormulas.md)
+- [Reddit Post: Dutching 3 +EV Horses vs Backing Only the Top EV](RedditPost_StakingForTop3PositiveEV.md)
 - [Reddit Post: F# Programmers & LLMs: What's Your Experience?](RedditPost_FSharpLLMExperience.md)
 - [Reddit Post: From One Prompt to 8 F# Bot Variants - AI Code Generation Experiment](RedditPost_CloseByPositionDifferenceBotTrigger_AIProgress.md)
 - [Reddit Post: The Hidden Truth About Betting Strategies - Why 90% Fail After 30 Days](RedditPost_AIBettingStrategiesRealTimeMonitoring.md)
