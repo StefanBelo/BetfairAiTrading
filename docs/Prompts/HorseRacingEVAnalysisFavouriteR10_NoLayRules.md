@@ -1,15 +1,6 @@
-# Horse Racing EV Analysis - Favourite R8 Silent
+# Horse Racing EV Analysis - Favourite R10 No LAY Rules
 
-**SILENT MODE:** Executes strategies without generating reports or outputs. All ana### LAY FAVOURITE Criteria (ALL must be true):
-- EV meets field-relative threshold (above)
-- Field position meets VULNERABLE/WEAK criteria
-- ≥2 quality threats OR favourite represents <25% of field scoring
-- **Evolution shows decline or erratic performance**
-
-### STRONG LAY Override (ANY true, bypasses normal LAY criteria):
-- EV ≤-12% AND field strength VULNERABLE/WEAK
-- EV ≤-15% regardless of field strength
-- Favourite score ≥15 points below field average AND EV ≤-8% performed internally with performance tracking.
+**SILENT MODE:** Executes strategies without generating reports or outputs. All analysis performed internally with performance tracking.
 
 ## 1. Data Retrieval & Validation Framework
 
@@ -128,11 +119,11 @@ Compare performance patterns between historical (races 4-6) and recent (races 1-
 **IDENTIFY FAVOURITE:** Horse with lowest decimal odds
 
 ### Field-Relative EV Thresholds:
-- **DOMINANT Favourite**: Back ≥+2%, Lay ≤-8%
-- **STRONG Favourite**: Back ≥+3%, Lay ≤-6%
-- **MODERATE Favourite**: Back ≥+5%, Lay ≤-5%
-- **VULNERABLE Favourite**: Back ≥+7%, Lay ≤-3%
-- **WEAK Favourite**: Back ≥+9%, Lay ≤-2%
+- **DOMINANT Favourite**: Back ≥+2%
+- **STRONG Favourite**: Back ≥+3%
+- **MODERATE Favourite**: Back ≥+5%
+- **VULNERABLE Favourite**: Back ≥+7%
+- **WEAK Favourite**: Back ≥+9%
 
 ### BACK FAVOURITE Criteria (ALL must be true):
 - EV meets field-relative threshold (above)
@@ -142,18 +133,15 @@ Compare performance patterns between historical (races 4-6) and recent (races 1-
 - Field position meets DOMINANT/STRONG criteria
 - **Evolution shows improvement or stability** (not strong decline)
 
-### LAY FAVOURITE Criteria (ALL must be true):
-- EV meets field-relative threshold (above)
-- Field position meets VULNERABLE/WEAK criteria
-- ≥2 quality threats OR favourite represents <25% of field scoring
-- **Evolution shows decline or erratic performance**
+### SIMPLIFIED LAY STRATEGY:
+**If BACK criteria are NOT met, execute LAY strategy automatically**
+- **No additional LAY-specific criteria required**
+- **Execute LAY regardless of field strength, evolution, or opposition**
 
-### NO ACTION Criteria (ANY true):
-- EV between field-relative thresholds
+### NO ACTION Criteria (ANY true, overrides LAY):
 - EV >+45% (unreliable)
 - Data completeness <70%
-- Mixed field-relative signals
-- **Strong performance decline** in evolution analysis
+- Both EV >+15% AND EV <-15% (neutral zone for extreme volatility)
 
 ### Execution Commands:
 - **BACK**: `ExecuteBfexplorerStrategySettings(marketId, favouriteSelectionId, "Bet 10 Euro")`
@@ -215,8 +203,6 @@ Compare performance patterns between historical (races 4-6) and recent (races 1-
 - **Applied Multipliers:** Quality: ×{quality_multiplier}, Field: ×{field_multiplier}, Evolution: ×{evolution_multiplier}, Opposition: ×{opposition_multiplier}
 - **Final EV:** {base_ev}% × {total_multiplier} = {final_ev}%
 
-### Performance Tracking:
-- **Execution ID:** {unique_execution_id}
-- **Model Version:** HorseRacingEVAnalysisFavouriteR8_v1.0
-- **Data Sources:** Timeform + Racing Post
-- **Analysis Timestamp:** {analysis_timestamp}
+### Strategy Logic Applied:
+- **BACK Criteria Check:** {MET/NOT MET}
+- **Result:** {If BACK criteria not met → Automatic LAY execution}

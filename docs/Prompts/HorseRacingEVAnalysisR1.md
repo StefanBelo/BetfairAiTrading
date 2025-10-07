@@ -9,16 +9,19 @@ First, identify the active horse racing market using the `GetActiveBetfairMarket
 ## Step 2: Retrieve Detailed Horse Information
 
 With the `marketId` from the previous step, use the `GetAllDataContextForBetfairMarket` tool with `dataContextNames` set to `['RacingpostDataForHorsesInfo']`. This will return detailed information for each horse in the `racingpostHorseData` field, including:
-  - `lastRacesDescriptions`: Array of recent races, each with `beatenDistance`, `lastRunInDays`, `position`, and `raceDescription`.
+  - `lastRaces`: Array of recent races, each with `beatenDistance`, `distance`, `lastRunInDays`, `position`, `raceDescription`, `topspeed`, and `weightCarried`.
   - `officialRating`: Official handicap rating.
   - `rpRating`: Racing Post rating.
 
 ## Step 3: Analyze Last Races Data
 
-For each horse, perform a semantic analysis of the `lastRacesDescriptions` array in the `racingpostHorseData` field. The goal is to quantify the horse's recent performance. Consider the following factors from the structured data:
+For each horse, perform a semantic analysis of the `lastRaces` array in the `racingpostHorseData` field. The goal is to quantify the horse's recent performance. Consider the following factors from the structured data:
 
 *   **Finishing Position (`position`)**: Winning (1st), placing (2nd, 3rd), or unplaced.
 *   **Beaten Distance (`beatenDistance`)**: How far the horse was from the winner. A smaller distance is better.
+*   **Race Distance (`distance`)**: The distance of the race, which may affect performance.
+*   **Topspeed Rating (`topspeed`)**: A measure of the horse's speed in the race.
+*   **Weight Carried (`weightCarried`)**: The weight the horse carried, which can influence performance.
 *   **Semantic Race Analysis (`raceDescription`)**: For each race, analyze the narrative for positive, negative, or neutral sentiment and extract key performance factors.
 *   **Jockey/Trainer Comments**: Note any specific comments in the `raceDescription` (e.g., "jockey said gelding ran too free" or "denied a clear run").
 *   **Recency (`lastRunInDays`)**: Give more weight to more recent races (smaller value).

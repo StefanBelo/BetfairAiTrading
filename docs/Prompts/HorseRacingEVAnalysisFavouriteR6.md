@@ -32,6 +32,9 @@ With the `marketId` from the previous step, use the `GetAllDataContextForBetfair
     - `lastRunInDays`: Days since last run (numerical value)
     - `position`: Finishing position (numerical value, 1 for wins, 0 for non-finishers)
     - `raceDescription`: Detailed text summary of race performance requiring semantic analysis
+    - `topspeed`: Racing Post topspeed rating for the race (numerical value)
+    - `weightCarried`: Weight carried by the horse in the race (numerical value in pounds)
+    - `distance`: Race distance in meters (numerical value)
 - `officialRating`: The horse's official handicap rating (if available)
 - `rpRating`: Racing Post rating (if available)
 
@@ -42,7 +45,7 @@ With the `marketId` from the previous step, use the `GetAllDataContextForBetfair
 - **Trouble in running**: "hampered", "short of room", "denied clear run", "hung left/right", "stumbled", "slowly away"
 - **Jockey comments**: Often in parentheses providing additional context
 
-**Note:** Fields such as topspeedRating, recentForm, courseWins, distanceWins, goingWins, jockeyStats, trainerStats, draw, weight, age, and breeding are NOT present in RacingpostDataForHorsesInfo. Only the above fields are reliably available. Adjust all analysis and scoring logic to use only these fields.
+**Note:** Additional fields such as `topspeed`, `weightCarried`, and `distance` are now available in each race entry. Use these for more detailed analysis of performance trends, weight impacts, and distance suitability. Fields such as recentForm, courseWins, distanceWins, goingWins, jockeyStats, trainerStats, draw, age, and breeding are NOT present in RacingpostDataForHorsesInfo. Only the above fields are reliably available. Adjust all analysis and scoring logic to use only these fields.
 
 ## Step 3: Combined Data Analysis
 
@@ -76,6 +79,9 @@ Recent win (position == 1 in any of last 3 `lastRacesDescriptions`): +10 points
 Recent place (position == 2 or 3 in any of last 3): +5 points
 Recent run (`lastRunInDays` < 30 in any of last 3): +5 points
 Long layoff (`lastRunInDays` > 100 in all last 3): -5 points
+Topspeed improvement (average `topspeed` in last 3 races > average in previous 3): +3 points
+Weight advantage (average `weightCarried` in last 3 races < average in previous 3): +2 points
+Distance consistency (races within 200m of current race distance in last 3): +2 points
 
 **Racing Post Semantic Analysis (additional 5% weight):**
 Analyze `raceDescription` text for each of the last 3 runs:
@@ -92,7 +98,9 @@ Analyze `raceDescription` text for each of the last 3 runs:
 - `suitedByDistance`: +5 points
 
 **Racing Post Statistics (10% weight):**
-Not available in RacingpostDataForHorsesInfo. Do not use these factors.
+Distance suitability (wins or places in races within 200m of current distance in last 5 races): +5 points
+Topspeed at distance (average topspeed in similar distance races > 80): +3 points
+Recent distance success (win or place in last 2 races at similar distance): +2 points
 
 ### Connections Score (15% weight):
 **Timeform Connections (8% weight):**
@@ -102,7 +110,8 @@ Not available in RacingpostDataForHorsesInfo. Do not use these factors.
 - `jockeyWonOnHorse`: +2 points
 
 **Racing Post Statistics (7% weight):**
-Not available in RacingpostDataForHorsesInfo. Do not use these factors.
+Weight trend positive (horse performing well with similar or higher weight in recent races): +4 points
+Consistent topspeed (topspeed variation < 20 points in last 3 races): +3 points
 
 ### Special Designations & Quality Factors (5% weight):
 - `timeformTopRated`: +5 points
@@ -111,8 +120,8 @@ Not available in RacingpostDataForHorsesInfo. Do not use these factors.
 
 **Note:** Only Timeform special designations are available. Do not use `topspeedRating` or `age` from RacingpostDataForHorsesInfo.
 
-**Total Combined Score**: Sum all applicable points (maximum possible: 255 points with semantic analysis)
-**Important:** The maximum possible score may be lower in practice due to missing Racing Post fields. Adjust scoring and interpretation accordingly.
+**Total Combined Score**: Sum all applicable points (maximum possible: 285 points with semantic analysis and new Racing Post factors)
+**Important:** The maximum possible score may be higher in practice due to additional Racing Post fields. Adjust scoring and interpretation accordingly.
 
 ## Step 4: Field Competitive Strength Analysis
 
@@ -164,7 +173,7 @@ For each non-favourite horse, calculate a "Threat Level" to the favourite:
 ## Step 5: Calculate Implied Probability and Expected Value (EV)
 
 1. **Estimate 'True' Probability:** Convert the Combined Score to a probability:
-   - Normalize the Combined Score: `Normalized Score = (Combined Score / 255) * 100`
+   - Normalize the Combined Score: `Normalized Score = (Combined Score / 285) * 100`
    - Calculate market share: For each horse, divide its Normalized Score by the sum of all horses' Normalized Scores
    - This gives you the estimated true probability for each horse
 

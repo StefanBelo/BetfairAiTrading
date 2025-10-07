@@ -18,6 +18,18 @@
   File: [EVStakingForTop3Selections.md](EVStakingForTop3Selections.md)  
   Focus: Dutching vs fractional Kelly, decision rules, risk caps, and automation mapping
 
+- **Horse Racing EV Analysis Approaches**  
+  File: [HorseRacingEVAnalysisAnalyzes.md](HorseRacingEVAnalysisAnalyzes.md)  
+  Focus: Methodologies for EV calculation, scoring systems, probability normalization, and advanced modeling
+
+- **AI Coding CLI Tools**  
+  File: [CLIToolsForAICoding.md](CLIToolsForAICoding.md)  
+  Focus: Verified command-line tools for AI-assisted coding and automation
+
+- **Prompt Library**  
+  File: [Prompts.md](Prompts.md)  
+  Focus: Custom prompt templates for AI agent workflows (currently under development)
+
 ---
 
 ## 2. Practical Application Themes
@@ -38,14 +50,19 @@
   Start with: HorseRacing.md (Section 14)  
   Key outputs: Minimal sets for drift, scalp, value filters
 
+- **EV Analysis Methodologies**  
+  See: HorseRacingEVAnalysisAnalyzes.md  
+  Key outputs: Weighted scoring, regression modeling, probability normalization, and example applications
+
 ---
 
 ## 3. How to Use These Resources
 
 1. Read `BetfairSP.md` to understand BSP’s role as terminal consensus anchor.
 2. Use `HorseRacing.md` to design movement + BSP hybrid signals (price ratio, drift velocity, imbalance).
-3. Prototype features in notebooks (see project `tests/notebooks/`).
-4. Feed curated metrics to AI prompts (see `docs/Prompts/`) for automated evaluation/execution.
+3. Explore `HorseRacingEVAnalysisAnalyzes.md` for EV calculation strategies and scoring frameworks.
+4. Prototype features in notebooks (see project `tests/notebooks/`).
+5. Feed curated metrics to AI prompts (see `docs/Prompts/`) for automated evaluation/execution.
 
 ---
 

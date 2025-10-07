@@ -33,6 +33,7 @@ This directory contains community posts, articles, and real-world examples showc
 ### [Gemini CLI + Bfexplorer MCP: AI-Powered Betfair Trading (No Coding Needed)](GeminiCLI_BfexplorerMCP_RedditPost.md)
 **Automate Betfair trading with AI prompts and Bfexplorer—no coding required!**
 ### Weekly Reports
+- [Betfair AI Trading Weekly Report - October 4, 2025: AI and Its Place in Horse Racing/Handicapping](BetfairAiTrading_Weekly_Report_2025-10-04.md)
 - [Betfair AI Trading Weekly Report - September 27, 2025](BetfairAiTrading_Weekly_Report_2025-09-27.md)
 - [Betfair AI Trading Weekly Report - September 20, 2025](BetfairAiTrading_Weekly_Report_2025-09-20.md)
 - [Betfair AI Trading Weekly Report - September 13, 2025](BetfairAiTrading_Weekly_Report_2025-09-13.md)
@@ -77,10 +78,7 @@ This directory contains community posts, articles, and real-world examples showc
 - [Reddit Post: Football Match Time Criteria Strategy Discussion](RedditPost_FootballMatchTimeCriteria.md)
 - [Reddit Post: Reflecting on Community Building and Developer Collaboration](RedditPost_CommunityReflections.md)
 - [Using CLI AI Agents in Batch Mode for Betfair Analysis](Using-CLI-AI-Agents-Batch-Mode-Reddit.md)
-- [Reddit Post: Timeform R2 Strategy Analysis Results](reddit_post_timeform_r2.md)
-- [Reddit Post: Back/Lay Strategy Parameter Discussion](reddit_trading_strategies.md)
-- [Market Data Context Overview Reddit Post](Market_Data_Context_Overview_Reddit_Post.md)
-- [Financial Signals Betting Reddit Post](FinancialSignalsBettingRedditPost.md)
+- [Reddit Post: Different Approaches to Data-Driven Horse Racing Strategy Building](Reddit_HorseRacingEVApproaches.md)
 
 ### Other Notable Content
 - [LLM Services Community Question](LLM_Services_Community_Question.md)
