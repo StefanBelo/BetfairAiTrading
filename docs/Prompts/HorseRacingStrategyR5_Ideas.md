@@ -40,12 +40,12 @@ Purpose: Retrieve current market information including:
 ```
 Use: GetAllDataContextForBetfairMarket
 Parameters: 
-- dataContextNames: ["RacingpostDataForHorsesInfo", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData", "WeightOfMoneyData"]
+- dataContextNames: ["RacingpostDataForHorses", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData", "WeightOfMoneyData"]
 - marketId: [from Step 1]
 
 Purpose: Get comprehensive multi-source data including:
 
-From RacingpostDataForHorsesInfo:
+From RacingpostDataForHorses:
 - Detailed race descriptions and performances from lastRacesDescriptions
 - Official ratings and Racing Post ratings (officialRating, rpRating)
 - Last run dates and beaten distances from race data
@@ -596,7 +596,7 @@ NEXT ACTIONS:
     "startTime": "2025-06-28T18:10:00+02:00",
     "analysisDate": "2025-06-28",
     "fieldSize": 8,
-    "dataSourcesUsed": ["RacingpostDataForHorsesInfo", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData", "WeightOfMoneyData"],
+    "dataSourcesUsed": ["RacingpostDataForHorses", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData", "WeightOfMoneyData"],
     "crossValidationScore": 92.5
   },
   "enhancedHorseAnalysis": [

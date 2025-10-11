@@ -1,3 +1,3 @@
-GET http://localhost:10043/api/getDataContextForBetfairMarket?dataContextName=RacingpostDataForHorsesInfo&marketId=1.245129918 HTTP/1.1
+GET http://localhost:10043/api/getDataContextForBetfairMarket?dataContextName=RacingpostDataForHorses&marketId=1.245129918 HTTP/1.1
 
 GET https://graphs.betfair.com/runnerChartData?marketId=1.246145288&selectionIds=8173039&handicaps=0&annotation=true&alt=json

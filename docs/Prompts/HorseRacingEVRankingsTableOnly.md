@@ -69,7 +69,7 @@ Instructions:
 
 2. **Multi-Context Data Collection**
    - Retrieve all required data contexts for the betfair market in a single call using tool: GetAllDataContextForBetfairMarket
-   - Use the following data context names: 'MarketSelectionsTradedPricesData', 'RacingpostDataForHorsesInfo'
+   - Use the following data context names: 'MarketSelectionsTradedPricesData', 'RacingpostDataForHorses'
    - Focus on 'tradedPricesData' field from trading context and 'racingpostHorseData' field from racing post context
    - Make NO reports during data collection phase
    - **If any horse is missing data (e.g., no recent form or price), include the horse in the table and indicate missing values as 'N/A'.**

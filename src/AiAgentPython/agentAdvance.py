@@ -47,7 +47,7 @@ Purpose: Retrieve current market information
 ```
 Use: GetAllDataContextForBetfairMarket
 Parameters: 
-- dataContextNames: ["RacingpostDataForHorsesInfo", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData"]
+- dataContextNames: ["RacingpostDataForHorses", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData"]
 - marketId: [from Step 1]
 ```
 

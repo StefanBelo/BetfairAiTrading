@@ -9,7 +9,7 @@
     "startTime": "2025-07-02T20:10:00+02:00",
     "analysisDate": "2025-07-02",
     "fieldSize": 13,
-    "dataSourcesUsed": ["RacingpostDataForHorsesInfo", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData"],
+    "dataSourcesUsed": ["RacingpostDataForHorses", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData"],
     "crossValidationScore": 90,
     "tradingFocus": true
   },

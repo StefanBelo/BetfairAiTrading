@@ -26,7 +26,7 @@ This strategy represents an enhanced evolution of the R1 system, incorporating c
 
 ## Data Sources Required
 
-### 1. RacingpostDataForHorsesInfo
+### 1. RacingpostDataForHorses
 - **Purpose**: Professional racing analysis and prediction scores
 - **Key Metrics**: 
   - Prediction scores (0-100 scale)

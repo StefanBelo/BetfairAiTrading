@@ -11,7 +11,7 @@ Produce an Expected Value (EV) view for every runner in a Betfair horse race mar
 2) Tool: get_all_data_context_for_betfair_market
    Parameters:
      • marketId (from step 1)
-     • dataContextNames: ["TimeformDataForHorsesInfo", "RacingpostDataForHorsesInfo"]
+     • dataContextNames: ["TimeformDataForHorses", "RacingpostDataForHorses"]
    → Returns Timeform booleans/ratings + Racing Post race descriptions per runner
 ```
 

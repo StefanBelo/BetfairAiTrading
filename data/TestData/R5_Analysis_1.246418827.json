@@ -9,7 +9,7 @@
     "analysisDate": "2025-08-09",
     "fieldSize": 8,
     "dataSourcesUsed": [
-      "RacingpostDataForHorsesInfo",
+      "RacingpostDataForHorses",
       "HorsesBaseBetfairFormData",
       "MarketSelectionsTradedPricesData",
       "WeightOfMoneyData"

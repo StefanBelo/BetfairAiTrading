@@ -18,7 +18,7 @@ This strategy analyzes horse racing markets using multiple data contexts from Bf
 
 ## Data Sources Required
 
-### 1. RacingpostDataForHorsesInfo
+### 1. RacingpostDataForHorses
 - **Purpose**: Professional racing analysis and prediction scores
 - **Key Metrics**: 
   - Prediction scores (0-100 scale)

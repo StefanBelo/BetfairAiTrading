@@ -8,7 +8,7 @@ First, identify the active horse racing market using the `GetActiveBetfairMarket
 
 ## Step 2: Retrieve Detailed Horse Information
 
-With the `marketId` from the previous step, use the `GetAllDataContextForBetfairMarket` tool with `dataContextNames` set to `['TimeformDataForHorsesInfo', 'RacingpostDataForHorsesInfo']`. This will return comprehensive analysis for each horse combining:
+With the `marketId` from the previous step, use the `GetAllDataContextForBetfairMarket` tool with `dataContextNames` set to `['TimeformDataForHorses', 'RacingpostDataForHorses']`. This will return comprehensive analysis for each horse combining:
 
 ### Timeform Analysis (timeformHorseData field):
 - `ratingStars`: Timeform's star rating system (1-5 stars, where 5 is highest quality)
@@ -42,7 +42,7 @@ With the `marketId` from the previous step, use the `GetAllDataContextForBetfair
 - **Trouble in running**: "hampered", "short of room", "denied clear run", "hung left/right", "stumbled", "slowly away"
 - **Jockey comments**: Often in parentheses providing additional context
 
-**Note:** Fields such as topspeedRating, recentForm, courseWins, distanceWins, goingWins, jockeyStats, trainerStats, draw, weight, age, and breeding are NOT present in RacingpostDataForHorsesInfo. Only the above fields are reliably available. Adjust all analysis and scoring logic to use only these fields.
+**Note:** Fields such as topspeedRating, recentForm, courseWins, distanceWins, goingWins, jockeyStats, trainerStats, draw, weight, age, and breeding are NOT present in RacingpostDataForHorses. Only the above fields are reliably available. Adjust all analysis and scoring logic to use only these fields.
 
 ## Step 3: Combined Data Analysis
 
@@ -92,7 +92,7 @@ Analyze `raceDescription` text for each of the last 3 runs:
 - `suitedByDistance`: +5 points
 
 **Racing Post Statistics (10% weight):**
-Not available in RacingpostDataForHorsesInfo. Do not use these factors.
+Not available in RacingpostDataForHorses. Do not use these factors.
 
 ### Connections Score (15% weight):
 **Timeform Connections (8% weight):**
@@ -102,14 +102,14 @@ Not available in RacingpostDataForHorsesInfo. Do not use these factors.
 - `jockeyWonOnHorse`: +2 points
 
 **Racing Post Statistics (7% weight):**
-Not available in RacingpostDataForHorsesInfo. Do not use these factors.
+Not available in RacingpostDataForHorses. Do not use these factors.
 
 ### Special Designations & Quality Factors (5% weight):
 - `timeformTopRated`: +5 points
 - `timeformImprover`: +3 points
 - `timeformHorseInFocus`: +2 points
 
-**Note:** Only Timeform special designations are available. Do not use `topspeedRating` or `age` from RacingpostDataForHorsesInfo.
+**Note:** Only Timeform special designations are available. Do not use `topspeedRating` or `age` from RacingpostDataForHorses.
 
 **Total Combined Score**: Sum all applicable points (maximum possible: 255 points with semantic analysis)
 **Important:** The maximum possible score may be lower in practice due to missing Racing Post fields. Adjust scoring and interpretation accordingly.

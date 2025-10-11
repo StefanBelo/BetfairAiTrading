@@ -11,7 +11,7 @@ Silent mode operation analyzing all horses to determine optimal action:
 - LAY: "Lay 10 Euro"
 
 ## Required Data Contexts
-### 1. RacingpostDataForHorsesInfo
+### 1. RacingpostDataForHorses
 - **Purpose**: Professional racing analysis and prediction scores
 - **Key Fields**:
   - Prediction scores (0-100 scale)

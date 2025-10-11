@@ -50,9 +50,9 @@ These providers are specialized for horse racing markets:
 - **HorsesBaseBetfairFormData** - Basic horse form and performance data from Betfair
 - **OlbgRaceTipsData** - Community tips and predictions from OLBG platform
 - **TestRaceData** - Test datasets for strategy development and backtesting
-- **RacingpostDataForHorsesInfo** - Comprehensive horse information from Racing Post
+- **RacingpostDataForHorses** - Comprehensive horse information from Racing Post
 - **WeightOfMoneyData** - Market sentiment and money flow analysis
-- **TimeformDataForHorsesInfo** - Professional ratings and analysis from Timeform
+- **TimeformDataForHorses** - Professional ratings and analysis from Timeform
 - **BetfairSpData** - Betfair Starting Price data and calculations
 
 ## Best Practices
@@ -65,7 +65,7 @@ These providers are specialized for horse racing markets:
 
 ## Example Use Cases
 
-- **Pre-Race Analysis**: Use `GetAllDataContextForBetfairMarket` with `["RacingpostDataForHorsesInfo", "TimeformDataForHorsesInfo", "OlbgRaceTipsData"]` for comprehensive horse assessment
+- **Pre-Race Analysis**: Use `GetAllDataContextForBetfairMarket` with `["RacingpostDataForHorses", "TimeformDataForHorses", "OlbgRaceTipsData"]` for comprehensive horse assessment
 - **Market Monitoring**: Use `GetAllDataContextForBetfairMarket` with `["MarketSelectionsTradedPricesData", "WeightOfMoneyData"]` for real-time market sentiment analysis
 - **Strategy Testing**: Utilize `GetDataContextForBetfairMarket` with `"TestRaceData"` for backtesting before live implementation
 - **Full Market Analysis**: Combine all relevant data sources using `GetAllDataContextForBetfairMarket` with multiple dataContextNames for the most comprehensive analysis

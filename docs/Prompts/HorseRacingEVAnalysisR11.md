@@ -5,7 +5,7 @@
 ## 1. Data Retrieval & Validation Framework
 
 1. **Get Market Data**: Use `GetActiveBetfairMarket` for `marketId` and selections with odds
-2. **Get Horse Data**: Use `GetAllDataContextForBetfairMarket` with `['TimeformDataForHorsesInfo', 'RacingpostDataForHorsesInfo']`
+2. **Get Horse Data**: Use `GetAllDataContextForBetfairMarket` with `['TimeformDataForHorses', 'RacingpostDataForHorses']`
 3. **Data Validation**: Ensure ≥80% data completeness across all horses before proceeding
 
 ### Data Sources Summary:
@@ -142,11 +142,12 @@
 1. Highest EV in field + meets field threshold
 2. Data completeness ≥80% + ≥3★ OR RP>70
 3. Evolution ≠ strong decline + odds 1.5-50.0
-4. EV ≤60% (reliability check)
 
 **NO ACTION Triggers (ANY true):**
-- EV below threshold OR >60% OR data <80%
-- Strong decline evolution OR odds outside 1.5-50.0
+- EV below threshold
+- Data completeness <80%
+- Strong decline evolution
+- Odds outside 1.5-50.0
 
 ### Execution Flow:
 1. **Execute Strategy**: `ExecuteBfexplorerStrategySettings(marketId, bestHorseSelectionId, "Bet 10 Euro")` if BACK criteria met
@@ -174,7 +175,7 @@
 }
 ```
 
-## 8. Post-Execution Reporting (After Strategy Execution Only)
+## 8. Post-Execution Reporting
 
 **CONDITIONAL OUTPUT:** Generate this report ONLY when a BACK strategy is executed. Skip for NO ACTION decisions.
 

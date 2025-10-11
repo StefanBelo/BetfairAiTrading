@@ -7,7 +7,7 @@
 ## 1. Data Retrieval & Validation Framework
 
 1. **Get Market Data**: Use `GetActiveBetfairMarket` for `marketId` and selections with odds
-2. **Get Horse Data**: Use `GetAllDataContextForBetfairMarket` with `['TimeformDataForHorsesInfo', 'RacingpostDataForHorsesInfo']`
+2. **Get Horse Data**: Use `GetAllDataContextForBetfairMarket` with `['TimeformDataForHorses', 'RacingpostDataForHorses']`
 3. **Get Feedback Data**: Use `GetAIAgentDataContextFeedback("HorseRacingEVAnalysisR11_DecisionData", 100)`
 4. **Data Validation**: Ensure ≥65% data completeness across all horses before proceeding
 
@@ -29,7 +29,7 @@
 
 ## 2. Feedback Analysis & Learning Framework
 
-### Historical Performance Analysis:For active betfair market retrieve data context TimeformDataForHorsesInfo and calculate EV for each horse.**Process feedback data from last races:**
+### Historical Performance Analysis:For active betfair market retrieve data context TimeformDataForHorses and calculate EV for each horse.**Process feedback data from last races:**
 - Analyze prediction accuracy vs actual race outcomes
 - Identify patterns in winning horses vs our selections
 - Calculate success rates by field strength categories

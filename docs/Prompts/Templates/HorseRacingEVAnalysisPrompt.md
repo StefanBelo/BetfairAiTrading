@@ -6,13 +6,13 @@
 
 ### 1. Data Retrieval
 - **Market Data:** Use `GetActiveBetfairMarket` to retrieve the current `marketId`, event details, and all selections with their decimal odds.
-- **Horse Data:** For the active market, use `GetAllDataContextForBetfairMarket` with `['TimeformDataForHorsesInfo']` to obtain detailed horse information.
+- **Horse Data:** For the active market, use `GetAllDataContextForBetfairMarket` with `['TimeformDataForHorses']` to obtain detailed horse information.
 
 ---
 
 
 ### 2. Data Structure Evaluation
-- **TimeformDataForHorsesInfo Fields:** Each horse's data typically includes:
+- **TimeformDataForHorses Fields:** Each horse's data typically includes:
   - `ratingStars` (1–5): Core rating indicator.
   - Form indicators: `horseWinnerLastTimeOut`, `horseInForm`, `horseBeatenFavouriteLTO`.
   - Suitability: `suitedByGoing`, `suitedByCourse`, `suitedByDistance`.

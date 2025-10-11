@@ -7,7 +7,7 @@
 ### STEP-BY-STEP AUTOMATED EXECUTION:
 
 1. **AUTOMATICALLY** get the active Betfair market using: `GetActiveBetfairMarket`
-2. **AUTOMATICALLY** retrieve trading data using: `GetAllDataContextForBetfairMarket` with dataContextNames ["MarketSelectionsTradedPricesData", "RacingpostDataForHorsesInfo"]
+2. **AUTOMATICALLY** retrieve trading data using: `GetAllDataContextForBetfairMarket` with dataContextNames ["MarketSelectionsTradedPricesData", "RacingpostDataForHorses"]
 3. **AUTOMATICALLY** perform EV analysis on the retrieved data
 4. **AUTOMATICALLY** format and display results in the specified table format
 5. **AUTOMATICALLY** provide strategic recommendations
@@ -27,7 +27,7 @@ EXECUTE THIS AUTOMATED ANALYSIS NOW:
 
 2. **STEP 2 - GET TRADING DATA (EXECUTE IMMEDIATELY):**
     - Use GetAllDataContextForBetfairMarket tool
-    - Parameters: marketId from Step 1, dataContextNames ["MarketSelectionsTradedPricesData", "RacingpostDataForHorsesInfo"]
+    - Parameters: marketId from Step 1, dataContextNames ["MarketSelectionsTradedPricesData", "RacingpostDataForHorses"]
     - Parse the trading data for all selections
 
       **VERIFIED Data structure (updated from live data):**
@@ -171,7 +171,7 @@ STORE RESULT: Extract marketId for next step
 ### Command 2: Get Trading Context
 ```
 EXECUTE NOW: Use BfexplorerApp MCP tool: GetAllDataContextForBetfairMarket 
-PARAMETERS: marketId=[from Command 1], dataContextNames=["MarketSelectionsTradedPricesData", "RacingpostDataForHorsesInfo"]
+PARAMETERS: marketId=[from Command 1], dataContextNames=["MarketSelectionsTradedPricesData", "RacingpostDataForHorses"]
 STORE RESULT: Parse trading data and form data for comprehensive analysis
 ```
 

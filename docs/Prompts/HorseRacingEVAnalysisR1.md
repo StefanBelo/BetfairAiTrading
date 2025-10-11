@@ -8,7 +8,7 @@ First, identify the active horse racing market using the `GetActiveBetfairMarket
 
 ## Step 2: Retrieve Detailed Horse Information
 
-With the `marketId` from the previous step, use the `GetAllDataContextForBetfairMarket` tool with `dataContextNames` set to `['RacingpostDataForHorsesInfo']`. This will return detailed information for each horse in the `racingpostHorseData` field, including:
+With the `marketId` from the previous step, use the `GetAllDataContextForBetfairMarket` tool with `dataContextNames` set to `['RacingpostDataForHorses']`. This will return detailed information for each horse in the `racingpostHorseData` field, including:
   - `lastRaces`: Array of recent races, each with `beatenDistance`, `distance`, `lastRunInDays`, `position`, `raceDescription`, `topspeed`, and `weightCarried`.
   - `officialRating`: Official handicap rating.
   - `rpRating`: Racing Post rating.

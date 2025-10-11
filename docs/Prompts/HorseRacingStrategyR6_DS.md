@@ -13,7 +13,7 @@
 - **CRITICAL**: Use exact strategy names: `strategyName="Bet 10 Euro"` for backing, `strategyName="Lay 10 Euro"` for laying. No other names are permitted.
 
 ## 2. Required Data Sources
-1.  **RacingpostDataForHorsesInfo**: For prediction scores and professional analysis.
+1.  **RacingpostDataForHorses**: For prediction scores and professional analysis.
 2.  **HorsesBaseBetfairFormData**: For official ratings, form, and forecast prices.
 3.  **MarketSelectionsTradedPricesData**: For market behavior, price, and volume.
 

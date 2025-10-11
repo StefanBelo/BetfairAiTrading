@@ -119,7 +119,7 @@ let calculateEnhancedEV (horse:HorseData) =
 // Main execution logic
 let executeStrategy (marketId:string) =
     // Get required data contexts
-    let dataContexts = BfexplorerApp.GetAllDataContextForBetfairMarket([|"RacingpostDataForHorsesInfo"; "HorsesBaseBetfairFormData"; "MarketSelectionsTradedPricesData"|], marketId)
+    let dataContexts = BfexplorerApp.GetAllDataContextForBetfairMarket([|"RacingpostDataForHorses"; "HorsesBaseBetfairFormData"; "MarketSelectionsTradedPricesData"|], marketId)
     
     // Transform data into HorseData records
     let horses = dataContexts |> Array.map (fun ctx ->

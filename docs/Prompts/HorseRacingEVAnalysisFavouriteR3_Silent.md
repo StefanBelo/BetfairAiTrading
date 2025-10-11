@@ -8,7 +8,7 @@ First, identify the active horse racing market using the `GetActiveBetfairMarket
 
 ## Step 2: Retrieve Detailed Horse Information
 
-With the `marketId` from the previous step, use the `GetAllDataContextForBetfairMarket` tool with `dataContextNames` set to `['TimeformDataForHorsesInfo']`. This will return detailed Timeform analysis for each horse in the `timeformHorseData` field, including:
+With the `marketId` from the previous step, use the `GetAllDataContextForBetfairMarket` tool with `dataContextNames` set to `['TimeformDataForHorses']`. This will return detailed Timeform analysis for each horse in the `timeformHorseData` field, including:
 
 - `ratingStars`: Timeform's star rating system (1-5 stars)
 - `horseWinnerLastTimeOut`, `horseInForm`, `horseBeatenFavouriteLTO`

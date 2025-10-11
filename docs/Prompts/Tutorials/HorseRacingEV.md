@@ -8,7 +8,7 @@ MCP tool usage (required; do these exact two steps before any analysis)
 
 2) Fetch Horse Data
 - Call: GetAllDataContextForBetfairMarket
-- Arguments: { "dataContextNames": ["RacingpostDataForHorsesInfo"], "marketId": "<activeMarket.marketId>" }
+- Arguments: { "dataContextNames": ["RacingpostDataForHorses"], "marketId": "<activeMarket.marketId>" }
 - Goal: return per-runner RacingPost data including lastRaces (array of runs — runDate, course, distance, surface, going, position, beatenLengths, raceDescription, rpRating, timeformStars, etc.).
 - Save the returned data as rpHorseData and join/match by selectionId to activeMarket.runners.
 

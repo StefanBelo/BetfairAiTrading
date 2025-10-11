@@ -1,0 +1,81 @@
+{
+    "decision": "BACK",
+    "selectedHorse": "Silkies Sib",
+    "ev": 100,
+    "odds": 25,
+    "reason": "Highest EV >=10% with 100% data completeness (tied with others)",
+    "horseData": [
+        {
+            "name": "Tickling",
+            "score": 85.7,
+            "marketShare": 14.8,
+            "baseEV": -53.9,
+            "finalEV": -56.4,
+            "sentiment": "Positive"
+        },
+        {
+            "name": "Spy",
+            "score": 93.4,
+            "marketShare": 16.1,
+            "baseEV": -55.4,
+            "finalEV": -63.1,
+            "sentiment": "Positive"
+        },
+        {
+            "name": "Charlie Brown",
+            "score": 61.8,
+            "marketShare": 10.7,
+            "baseEV": -70.7,
+            "finalEV": -67.2,
+            "sentiment": "Neutral"
+        },
+        {
+            "name": "Nancee Spain",
+            "score": 84.8,
+            "marketShare": 14.6,
+            "baseEV": 11.0,
+            "finalEV": 11.5,
+            "sentiment": "Positive"
+        },
+        {
+            "name": "Wayside Lady",
+            "score": 36.4,
+            "marketShare": 6.3,
+            "baseEV": -2.9,
+            "finalEV": -2.6,
+            "sentiment": "Negative"
+        },
+        {
+            "name": "Share The Treasure",
+            "score": 61.8,
+            "marketShare": 10.7,
+            "baseEV": 38.5,
+            "finalEV": 36.6,
+            "sentiment": "Neutral"
+        },
+        {
+            "name": "Silkies Sib",
+            "score": 48.0,
+            "marketShare": 8.3,
+            "baseEV": 106.8,
+            "finalEV": 100.0,
+            "sentiment": "Negative"
+        },
+        {
+            "name": "Highway Sixty One",
+            "score": 48.0,
+            "marketShare": 8.3,
+            "baseEV": 100.0,
+            "finalEV": 100.0,
+            "sentiment": "Negative"
+        },
+        {
+            "name": "Shakita",
+            "score": 60.6,
+            "marketShare": 10.4,
+            "baseEV": 100.0,
+            "finalEV": 95.0,
+            "sentiment": "Neutral"
+        }
+    ]
+}

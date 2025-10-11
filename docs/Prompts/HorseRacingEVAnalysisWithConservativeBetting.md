@@ -13,7 +13,7 @@ Instructions:
    - Make no preliminary reports during data collection
 
 2. **Performance Data Collection**
-   - Retrieve the data context with the name 'RacingpostDataForHorsesInfo' for the betfair market using tool: GetDataContextForBetfairMarket
+   - Retrieve the data context with the name 'RacingpostDataForHorses' for the betfair market using tool: GetDataContextForBetfairMarket
    - Focus exclusively on the 'horsesData' field
    - Do not make any reports during data collection phase
 
@@ -156,7 +156,7 @@ Note: This conservative approach prioritizes capital preservation and consistent
 
 1. **Input Requirements:**
    - Active Betfair market with horse racing data
-   - Access to RacingpostDataForHorsesInfo context
+   - Access to RacingpostDataForHorses context
    - Current market prices for all runners
    - Access to Bfexplorer betting functionality
 

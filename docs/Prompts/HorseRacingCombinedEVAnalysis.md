@@ -14,7 +14,7 @@ Instructions:
 
 2. **Multi-Context Data Collection**
    - Retrieve all required data contexts for the betfair market in a single call using tool: GetAllDataContextForBetfairMarket
-   - Use the following data context names: 'MarketSelectionsTradedPricesData', 'RacingpostDataForHorsesInfo'
+   - Use the following data context names: 'MarketSelectionsTradedPricesData', 'RacingpostDataForHorses'
    - Focus on 'tradedPricesData' field from trading context and 'horsesData' field from racing post context
    - Do not make any reports during data collection phase
 
@@ -150,7 +150,7 @@ Note: This dual approach provides both quantitative validation and qualitative i
 
 1. **Input Requirements:**
    - Active Betfair market with horse racing data
-   - Access to RacingpostDataForHorsesInfo context with both predictionScore and lastRacesDescription
+   - Access to RacingpostDataForHorses context with both predictionScore and lastRacesDescription
    - Current market prices for all runners
 
 2. **Expected Output:**

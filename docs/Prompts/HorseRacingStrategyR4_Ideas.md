@@ -31,7 +31,7 @@ Purpose: Retrieve current market information including:
 ```
 Use: GetDataContextForBetfairMarket
 Parameters: 
-- dataContextName: "RacingpostDataForHorsesInfo" 
+- dataContextName: "RacingpostDataForHorses" 
 - marketId: [from Step 1]
 Purpose: Get comprehensive form data for all horses including:
 - Recent race descriptions and performances

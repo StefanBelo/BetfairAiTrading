@@ -22,7 +22,7 @@ Based on analysis of HorseRacingR5_Analysis performance data:
 Use: GetActiveBetfairMarket
 Use: GetAllDataContextForBetfairMarket
 Parameters: 
-- dataContextNames: ["RacingpostDataForHorsesInfo", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData"]
+- dataContextNames: ["RacingpostDataForHorses", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData"]
 - marketId: [from active market]
 
 Internal processing only - no output required
@@ -171,7 +171,7 @@ Cross-validation confidence intervals applied using available data fields
     "startTime": "2025-06-28T18:10:00+02:00",
     "analysisDate": "2025-06-28",
     "fieldSize": 8,
-    "dataSourcesUsed": ["RacingpostDataForHorsesInfo", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData"],
+    "dataSourcesUsed": ["RacingpostDataForHorses", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData"],
     "crossValidationScore": 92.5
   },
   "enhancedHorseAnalysis": [

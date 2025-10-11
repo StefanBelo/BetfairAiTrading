@@ -2,7 +2,7 @@
 
 ## Prompt Files Index
 
-Below is a list of all prompt files available in this folder. Each file contains a specialized prompt for AI-powered analysis, strategy development, or automation in Betfair trading and horse racing:
+Below is a list of all prompt files available in this folder. Each file contains a specialized prompt for AI-powered analysis, strategy development, or automation in Betfair trading and horse racing. The folder is regularly updated with new prompts and strategy templates. For the latest additions, see the full file list below:
 
 ### Strategy & Analysis Prompts
 * BetfairMarketAnalysisCandleStickData.md – Candlestick pattern analysis for Betfair markets
@@ -38,6 +38,55 @@ Below is a list of all prompt files available in this folder. Each file contains
 * HorseRacingEVAnalysisFavouriteR9_Silent.md – Advanced silent favourite analysis
 * HorseRacingEVAnalysisMinimal.md – Minimal EV analysis
 * HorseRacingEVAnalysisMinimalExecution.md – Minimal EV analysis with execution
+* HorseRacingEVAnalysisNumericalData.md – Numerical EV analysis
+* HorseRacingEVAnalysisPrompt.md – General EV analysis prompt
+* HorseRacingEVAnalysisR1.md – R1 EV analysis
+* HorseRacingEVAnalysisR10_Silent.md – Silent R10 EV analysis
+* HorseRacingEVAnalysisR11.md – R11 EV analysis
+* HorseRacingEVAnalysisR11_Feedback.md – R11 feedback analysis
+* HorseRacingEVAnalysisR1_Silent.md – Silent R1 EV analysis
+* HorseRacingEVAnalysisR2.md – R2 EV analysis
+* HorseRacingEVAnalysisR3.md – R3 EV analysis
+* HorseRacingEVAnalysisWithBetting.md – EV analysis with betting logic
+* HorseRacingEVAnalysisWithBetting_TradingData.md – EV analysis with trading data
+* HorseRacingEVAnalysisWithConservativeBetting.md – Conservative EV analysis with betting
+* HorseRacingEVAnalysisWithConservativeTradingData.md – Conservative EV analysis with trading data
+* HorseRacingEVAnalysisWithDutchBetting.md – Dutch betting EV analysis
+* HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md – Dutch betting with OLBG tips
+* HorseRacingEVAtTheRacesData.md – At The Races data analysis
+* HorseRacingEVAtTheRacesData_ExpertView.md – Expert view At The Races analysis
+* HorseRacingEVRankingsTableOnly.md – Rankings table only analysis
+* HorseRacingExecutionOnlyNoReports.md – Execution-only, no reports
+* HorseRacingExpectedValueAnalysis.md – Expected value analysis
+* HorseRacingSemanticAnalysis.md – Semantic analysis
+* HorseRacingSemanticAnalysisR2.md – Semantic analysis R2
+* HorseRacingSilentEVAnalysisWithAutomatedExecution.md – Silent EV analysis with automated execution
+* HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md – Silent EV analysis for top 3 favorites
+* HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md – Silent OLBG EV analysis for top 3 favorites
+* HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md – Silent OLBG EV analysis with 10 Euro betting
+* HorseRacingStrategyR1.md – Strategy R1
+* HorseRacingStrategyR1_Analyze.md – Strategy R1 analysis
+* HorseRacingStrategyR2.md – Strategy R2
+* HorseRacingStrategyR3.md – Strategy R3
+* HorseRacingStrategyR3_DS.md – Strategy R3 DS
+* HorseRacingStrategyR4.md – Strategy R4
+* HorseRacingStrategyR4_Ideas.md – Strategy R4 ideas
+* HorseRacingStrategyR5.md – Strategy R5
+* HorseRacingStrategyR5_Ideas.md – Strategy R5 ideas
+* HorseRacingStrategyR5_Trade.md – Strategy R5 trade
+* HorseRacingStrategyR5_Trade_Ideas.md – Strategy R5 trade ideas
+* HorseRacingStrategyR6.md – Strategy R6
+* HorseRacingStrategyR6_DS.md – Strategy R6 DS
+* HorseRacingWinToBePlacedData.md – Win to be placed data analysis
+* HorseRacingWinToBePlacedData_Favourite.md – Favourite win to be placed analysis
+* HorseRacingWinToBePlacedData_Favourite_Silent.md – Silent favourite win to be placed analysis
+* TradedPricesEVAnalysis.md – Traded prices EV analysis
+* TradedPricesEVPlusAnalysis.md – Traded prices EV+ analysis
+* TradedPricesEVPlusGpt5OptAnalysis.md – Traded prices EV+ GPT-5 optimized analysis
+* TradingChartCreation.md – Trading chart creation
+* WeightOfMoneyAnalysisPrompt.md – Weight of money analysis prompt
+* WeightOfMoneyStrategy.md – Weight of money strategy
+* WeightOfMoneyStrategyR1.md – Weight of money strategy R1
 * HorseRacingEVAnalysisNumericalData.md – Numerical data focused analysis
 * HorseRacingEVAnalysisPrompt.md – EV analysis prompt
 * HorseRacingEVAnalysisR1.md – EV analysis R1
@@ -698,7 +747,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Completely silent comprehensive Expected Value analysis using trading patterns and performance data
 - Combines trading pattern interpretation with semantic performance analysis for optimal betting opportunity identification
 - Analyzes ALL horses in the race with no favorites restriction
-- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorsesInfo (40%)
+- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorses (40%)
 - Automatically executes "Back trailing stop loss trading" or "Trade 20% profit" strategies
 - ABSOLUTELY NO intermediate outputs - only final execution confirmation
 - Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingEVAnalysisResults"
@@ -710,7 +759,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Combines trading pattern interpretation with semantic performance analysis for optimal betting opportunity identification
 - **CRITICAL RESTRICTION:** Strategy execution ONLY on horses among the top 3 favorites by current price
 - Analyzes ALL horses but applies favorites filter at execution decision point
-- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorsesInfo (40%)
+- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorses (40%)
 - Automatically executes "Back trailing stop loss trading" or "Trade 20% profit" strategies
 - ABSOLUTELY NO intermediate outputs - only final execution confirmation or no-execution message
 - Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingEVAnalysisResults"
@@ -722,7 +771,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Combines professional tipster analysis with semantic performance analysis for expert-guided betting opportunities
 - **CRITICAL RESTRICTION:** Strategy execution ONLY on horses among the top 3 favorites by current price
 - Analyzes ALL horses but applies favorites filter at execution decision point
-- Uses dual-source analysis: OlbgTipsDataForHorsesInfo (60%) + RacingpostDataForHorsesInfo (40%)
+- Uses dual-source analysis: OlbgTipsDataForHorsesInfo (60%) + RacingpostDataForHorses (40%)
 - Evaluates tipster consensus patterns, expert confidence indicators, and value identification signals
 - Automatically executes "Back trailing stop loss trading" or "Trade 20% profit" strategies based on expert consensus
 - ABSOLUTELY NO intermediate outputs - only final execution confirmation or no-execution message
@@ -831,7 +880,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Completely silent comprehensive Expected Value analysis using trading patterns and performance data
 - Combines trading pattern interpretation with semantic performance analysis for optimal betting opportunity identification
 - Analyzes ALL horses in the race with no favorites restriction
-- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorsesInfo (40%)
+- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorses (40%)
 - Automatically executes "Back trailing stop loss trading" or "Trade 20% profit" strategies
 - ABSOLUTELY NO intermediate outputs - only final execution confirmation
 - Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingEVAnalysisResults"
@@ -843,7 +892,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Combines trading pattern interpretation with semantic performance analysis for optimal betting opportunity identification
 - **CRITICAL RESTRICTION:** Strategy execution ONLY on horses among the top 3 favorites by current price
 - Analyzes ALL horses but applies favorites filter at execution decision point
-- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorsesInfo (40%)
+- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorses (40%)
 - Automatically executes "Back trailing stop loss trading" or "Trade 20% profit" strategies
 - ABSOLUTELY NO intermediate outputs - only final execution confirmation or no-execution message
 - Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingEVAnalysisResults"
@@ -855,7 +904,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Combines professional tipster analysis with semantic performance analysis for expert-guided betting opportunities
 - **CRITICAL RESTRICTION:** Strategy execution ONLY on horses among the top 3 favorites by current price
 - Analyzes ALL horses but applies favorites filter at execution decision point
-- Uses dual-source analysis: OlbgTipsDataForHorsesInfo (60%) + RacingpostDataForHorsesInfo (40%)
+- Uses dual-source analysis: OlbgTipsDataForHorsesInfo (60%) + RacingpostDataForHorses (40%)
 - Evaluates tipster consensus patterns, expert confidence indicators, and value identification signals
 - Automatically executes "Back trailing stop loss trading" or "Trade 20% profit" strategies based on expert consensus
 - ABSOLUTELY NO intermediate outputs - only final execution confirmation or no-execution message
@@ -964,7 +1013,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Completely silent comprehensive Expected Value analysis using trading patterns and performance data
 - Combines trading pattern interpretation with semantic performance analysis for optimal betting opportunity identification
 - Analyzes ALL horses in the race with no favorites restriction
-- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorsesInfo (40%)
+- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorses (40%)
 - Automatically executes "Back trailing stop loss trading" or "Trade 20% profit" strategies
 - ABSOLUTELY NO intermediate outputs - only final execution confirmation
 - Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingEVAnalysisResults"
@@ -976,7 +1025,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Combines trading pattern interpretation with semantic performance analysis for optimal betting opportunity identification
 - **CRITICAL RESTRICTION:** Strategy execution ONLY on horses among the top 3 favorites by current price
 - Analyzes ALL horses but applies favorites filter at execution decision point
-- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorsesInfo (40%)
+- Uses dual-source analysis: MarketSelectionsTradedPricesData (60%) + RacingpostDataForHorses (40%)
 - Automatically executes "Back trailing stop loss trading" or "Trade 20% profit" strategies
 - ABSOLUTELY NO intermediate outputs - only final execution confirmation or no-execution message
 - Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingEVAnalysisResults"
@@ -988,7 +1037,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Combines professional tipster analysis with semantic performance analysis for expert-guided betting opportunities
 - **CRITICAL RESTRICTION:** Strategy execution ONLY on horses among the top 3 favorites by current price
 - Analyzes ALL horses but applies favorites filter at execution decision point
-- Uses dual-source analysis: OlbgTipsDataForHorsesInfo (60%) + RacingpostDataForHorsesInfo (40%)
+- Uses dual-source analysis: OlbgTipsDataForHorsesInfo (60%) + RacingpostDataForHorses (40%)
 - Evaluates tipster consensus patterns, expert confidence indicators, and value identification signals
 - Automatically executes "Back trailing stop loss trading" or "Trade 20% profit" strategies based on expert consensus
 - ABSOLUTELY NO intermediate outputs - only final execution confirmation or no-execution message
@@ -1344,7 +1393,7 @@ Use **HorseRacingStrategyR5_Trade_Ideas.md** when:
 All prompts are designed to work with the BFExplorer API and MCP integration, accessing:
 - Real-time market data via `GetActiveBetfairMarket`
 - Horse racing data via `GetDataContextForBetfairMarket`:
-  - `RacingpostDataForHorsesInfo` - Performance and form data
+  - `RacingpostDataForHorses` - Performance and form data
   - `MarketSelectionsTradedPricesData` - Trading patterns and market confidence
   - `OlbgRaceTipsData` - Expert tipster consensus and recommendations
 - Current prices and selection information

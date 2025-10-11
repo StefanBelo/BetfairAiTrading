@@ -79,7 +79,7 @@ Shows market confidence and liquidity for each selection, with Em Four showing s
 
 ---
 
-## 4. RacingpostDataForHorsesInfo
+## 4. RacingpostDataForHorses
 
 **Purpose:** Detailed form analysis and historical race descriptions from Racing Post.
 
@@ -122,7 +122,7 @@ Shows which horses are attracting smart money versus public sentiment.
 
 ---
 
-## 6. TimeformDataForHorsesInfo
+## 6. TimeformDataForHorses
 
 **Purpose:** Timeform's professional ratings and suitability analysis for current race conditions.
 

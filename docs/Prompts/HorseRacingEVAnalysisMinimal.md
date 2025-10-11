@@ -13,7 +13,7 @@ Instructions:
    - No output during collection
 
 2. **Silent Performance Data Collection**
-   - Retrieve data context 'RacingpostDataForHorsesInfo' using tool: GetDataContextForBetfairMarket
+   - Retrieve data context 'RacingpostDataForHorses' using tool: GetDataContextForBetfairMarket
    - Focus on 'racingpostHorseData' field within selectionsData
    - No output during collection
 

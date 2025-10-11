@@ -6,7 +6,7 @@
 
 **Data Retrieval & Validation**:
 1.  **Get Market**: Use `GetActiveBetfairMarket` to get the active market and selections.
-2.  **Get Horse Data**: Use `GetAllDataContextForBetfairMarket` with `['TimeformDataForHorsesInfo', 'RacingpostDataForHorsesInfo']`.
+2.  **Get Horse Data**: Use `GetAllDataContextForBetfairMarket` with `['TimeformDataForHorses', 'RacingpostDataForHorses']`.
 3.  **Validation**: Proceed only if data completeness is ≥80% for all horses.
 
 **Configuration**:

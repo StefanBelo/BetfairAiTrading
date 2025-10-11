@@ -9,7 +9,7 @@ This prompt outlines a silent process for analyzing horse racing data, calculati
 - Use `GetActiveBetfairMarket` to obtain the currently active horse racing market.
 
 ### 2. Fetch Horse Data
-- Call `GetAllDataContextForBetfairMarket` with `dataContextNames: ['RacingpostDataForHorsesInfo']` to retrieve detailed horse performance data.
+- Call `GetAllDataContextForBetfairMarket` with `dataContextNames: ['RacingpostDataForHorses']` to retrieve detailed horse performance data.
 
 ### 3. Analyze Horse Performance
 For each horse, evaluate the `lastRaces` array based on the following factors (prioritize recent races):

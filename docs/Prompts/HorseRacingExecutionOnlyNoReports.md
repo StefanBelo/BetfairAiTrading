@@ -9,7 +9,7 @@ Instructions:
 
 1. **Silent Market Data Collection**
    - Retrieve active betfair market using tool: GetActiveBetfairMarket
-   - Retrieve data contexts: 'MarketSelectionsTradedPricesData' and 'RacingpostDataForHorsesInfo'
+   - Retrieve data contexts: 'MarketSelectionsTradedPricesData' and 'RacingpostDataForHorses'
    - Complete all analysis internally without any reports
 
 2. **Silent Analysis Phase**

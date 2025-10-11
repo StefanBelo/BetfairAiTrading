@@ -10,7 +10,7 @@
 - **CRITICAL**: Use exact strategy names: `strategyName="Bet 10 Euro"` for backing, `strategyName="Lay 10 Euro"` for laying. No other names are permitted.
 
 ## 2. Required Data Sources
-1.  **RacingpostDataForHorsesInfo**: Contains `lastRacesDescriptions[]`, `officialRating`, `rpRating`.
+1.  **RacingpostDataForHorses**: Contains `lastRacesDescriptions[]`, `officialRating`, `rpRating`.
 2.  **HorsesBaseBetfairFormData**: Contains `forecastPrice`, `form`, `officialRating`, `weight`.
 3.  **MarketSelectionsTradedPricesData**: Contains `endPrice`, `maxPrice`, `minPrice`, `startPrice`, `tradedVolume`.
 
@@ -25,7 +25,7 @@
     - If poor recent form (position >4 or pulled up): 20-40
     - Factor in `lastRunInDays` (recent runs <60 days get bonus)
   - **Value Score**: `((endPrice - forecastPrice) / forecastPrice) * 100`.
-  - **Prediction Score**: Use `rpRating` from RacingpostDataForHorsesInfo (0-130 scale, normalize to 0-100).
+  - **Prediction Score**: Use `rpRating` from RacingpostDataForHorses (0-130 scale, normalize to 0-100).
   - **Stability Score**: `100 - ((maxPrice - minPrice) / minPrice * 100)`.
 
 ### Step 2: Calculate Enhanced Expected Value (EV)

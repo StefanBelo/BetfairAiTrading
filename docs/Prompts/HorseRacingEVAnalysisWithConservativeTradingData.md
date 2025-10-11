@@ -14,7 +14,7 @@ Instructions:
 
 2. **Dual Data Source Collection**
    - Retrieve the data context with the name 'MarketSelectionsTradedPricesData' for the betfair market using tool: GetDataContextForBetfairMarket
-   - Retrieve the data context with the name 'RacingpostDataForHorsesInfo' for the betfair market using tool: GetDataContextForBetfairMarket
+   - Retrieve the data context with the name 'RacingpostDataForHorses' for the betfair market using tool: GetDataContextForBetfairMarket
    - Focus on 'tradedPricesData' field for trading analysis AND 'horsesData' field for performance analysis
    - Do not make any reports during data collection phase
 
@@ -276,7 +276,7 @@ Note: This conservative approach prioritizes capital preservation and reliable v
 1. **Input Requirements:**
    - Active Betfair market with horse racing data
    - Access to MarketSelectionsTradedPricesData context (for trading pattern analysis)
-   - Access to RacingpostDataForHorsesInfo context (for performance analysis)
+   - Access to RacingpostDataForHorses context (for performance analysis)
    - Current market prices for all runners
    - Access to Bfexplorer betting functionality
 

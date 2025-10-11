@@ -72,7 +72,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 #### GetDataContextForBetfairMarket
 - **Purpose**: Retrieves comprehensive data context for a specific market
 - **Parameters**:
-  - `dataContextName` (string, required): The name of the data context to retrieve (e.g., "RacingpostDataForHorsesInfo", "MarketSelectionsPriceHistoryData")
+  - `dataContextName` (string, required): The name of the data context to retrieve (e.g., "RacingpostDataForHorses", "MarketSelectionsPriceHistoryData")
   - `marketId` (string, required): The Betfair market ID for data retrieval
 - **Returns**: JSON object containing market-specific data context
 - **Use Case**: Analyze market-wide data before making trading decisions
@@ -80,7 +80,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 #### GetDataContextForBetfairMarketSelection
 - **Purpose**: Gets detailed data context for a specific selection within a market
 - **Parameters**:
-  - `dataContextName` (string, required): The name of the data context to retrieve (e.g., "RacingpostDataForHorsesInfo", "MarketSelectionsPriceHistoryData")
+  - `dataContextName` (string, required): The name of the data context to retrieve (e.g., "RacingpostDataForHorses", "MarketSelectionsPriceHistoryData")
   - `marketId` (string, required): The Betfair market ID
   - `selectionId` (string, required): The Betfair selection ID for specific runner data
 - **Returns**: JSON object containing selection-specific data context
