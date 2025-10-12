@@ -40,12 +40,36 @@
 - Return from absence: "returns from a break", "freshened", "after absence", "back from time off"
 - Neutral context: "effective at distance", "suited by trip", "acts on any ground" without positive reinforcement
 
-**SENTIMENT SCORING ALGORITHM:**
-- Scan for positive keywords (weighted by impact: 1-3 points each)
-- Scan for negative keywords (weighted by impact: 1-3 points each)
-- Apply SEMANTIC ANALYSIS WEIGHTS: Break the text into sections (Opening sentence: 20% weight, Middle content: 50% weight, Closing assessment: 30% weight). Assign scanned points to sections and weight them by multiplying by the section's percentage. Sum the weighted positive points and weighted negative points across all sections.
-- Calculate net sentiment score: (Summed weighted positive points - Summed weighted negative points) / (Summed weighted positive points + Summed weighted negative points) if (Summed weighted positive points + Summed weighted negative points) > 0, else 0
-- Sentiment Score = Net sentiment score (ranges from -1 to 1)
+**SENTIMENT SCORING ALGORITHM (Detailed Steps):**
+1. Break the expertView text into three sections:
+   - Opening sentence: First sentence or first 20% of text (20% weight)
+   - Middle content: Middle portion or 50% of text (50% weight)
+   - Closing assessment: Final sentence or last 30% of text (30% weight)
+2. Scan each section for keywords:
+   - Assign points to keywords based on impact (1-3 points each, as listed above)
+   - Sum positive points and negative points per section
+3. Weight the section sums:
+   - Weighted Positive = Section Positive Sum × Section Weight %
+   - Weighted Negative = Section Negative Sum × Section Weight %
+4. Sum across all sections:
+   - Total Weighted Positive = Sum of all Weighted Positive
+   - Total Weighted Negative = Sum of all Weighted Negative
+5. Calculate Net Sentiment Score:
+   - If (Total Weighted Positive + Total Weighted Negative) > 0:
+     Score = (Total Weighted Positive - Total Weighted Negative) / (Total Weighted Positive + Total Weighted Negative)
+   - Else: Score = 0
+6. Validate: Ensure score is between -1 and 1; if not, recheck calculations.
+
+**EXAMPLE CALCULATION (for illustration):**
+- Text: "Horse is progressing well (opening); ran sound last time (middle); should win easily (closing)."
+- Opening: "progressing well" → +3 positive
+- Middle: "ran sound" → +2 positive
+- Closing: "should win easily" → +3 positive
+- Weighted: Opening: 3×0.2=0.6; Middle: 2×0.5=1.0; Closing: 3×0.3=0.9
+- Total Pos: 0.6+1.0+0.9=2.5; Neg: 0
+- Score: (2.5-0)/(2.5+0) = 1.0
+
+**VALIDATION STEP:** Before generating the table, calculate and list all sentiment scores with breakdowns. Ensure consistency across horses.
 
 **CONTEXTUAL WEIGHTING (Additional modifiers):**
 - Recency: Most recent race performance mentioned has highest weight
@@ -107,54 +131,64 @@
 **Expert View Sentiment (Net Score):**
 - Sentiment Score = Net sentiment score (ranges from -1 to 1)
 
+**Odds-Based Adjustment Multiplier:**
+- Apply a multiplier to the sentiment score based on decimal odds range to account for historical win frequencies:
+  - Odds 1.01-1.99: Multiplier 0.9 (favorites win ~40-50%, reduce reliance on sentiment)
+  - Odds 2.00-4.99: Multiplier 1.0 (balanced win ~15-30%)
+  - Odds 5.00-9.99: Multiplier 1.1 (longshots win ~8-12%, boost sentiment impact)
+  - Odds 10.00+: Multiplier 1.2 (outsiders win ~2-7%, significantly boost for strong sentiment)
+- Adjusted Sentiment Score = Sentiment Score × Multiplier (capped at 1.0 max, floored at -1.0 min)
+
 ## 4. Decision Logic & Strategy Execution
 
-**IDENTIFY BEST HORSE:** Sort horses by Odds ascending, then select the horse with the highest Sentiment Score (tie broken by lowest Odds)
+**IDENTIFY BEST HORSE:** Sort horses by Odds ascending, then select the first horse with the Adjusted Sentiment Score >= 0.9 (tie broken by lowest Odds)
 
 ### Sentiment Score Thresholds for BACK:
-- Back if highest Sentiment Score >=0.6
+- Back if Adjusted Sentiment Score >=0.9
 
 ### Decision Criteria:
 **BACK Requirements (ALL must be true):**
-1. Highest Sentiment Score in field >= 0.6
+1. The first horse with the Adjusted Sentiment Score >= 0.9
 2. Data completeness ≥80%
 
 **NO ACTION if ANY of the following conditions are met:**
-- Highest Sentiment Score < 0.6
+- Highest Adjusted Sentiment Score < 0.9
 - Data completeness < 80%
-- If 2 or more horses have Sentiment Score >= 0.9 and the odds difference between the top two is less than 10% ((higher_odds - lower_odds) / lower_odds < 0.1)
+- More than 3 horses have Adjusted Sentiment Score >= 1.0
 
 ### Execution Flow:
 1. **Execute Strategy**: `ExecuteBfexplorerStrategySettings(marketId, bestHorseSelectionId, "Bet 10 Euro")` if BACK criteria met
 3. **Silent Performance Tracking**: Log internally for optimization
 
-## 5. Market Down Table
+### Market Down Table
 
 Based on the active market data, the following table shows EV calculations for each horse:
 
-| Horse | Odds | Expert Analysis | Sentiment Score | Key Semantic Features | Decision |
-|-------|------|-----------------|-----------------|-----------------------|----------|
+| Horse | Odds | Expert Analysis | Adjusted Sentiment Score | Key Semantic Features | Decision |
+|-------|------|-----------------|--------------------------|-----------------------|----------|
 {horse_rows}
 
 ### Table Generation Rules:
 - **Horse**: Selection name from Betfair
 - **Odds**: Decimal odds from market data
-- **Expert Analysis**: Short semantic summary (Positive/Neutral/Negative)
-- **Sentiment Score**: Calculated net sentiment score (-1 to 1)
-- **Key Semantic Features**: Key phrases from expertView that contributed to the Positive/Neutral/Negative sentiment classification (do not repeat the full expertView text)
+- **Expert Analysis**: Short semantic summary (Positive/Neutral/Negative) based on calculated score
+- **Adjusted Sentiment Score**: Calculated adjusted net sentiment score (-1 to 1) - MUST use the precise algorithm output with odds multiplier; no approximations
+- **Key Semantic Features**: Key phrases from expertView that contributed to the score (do not repeat the full expertView text)
 - **Decision**: BACK / NO ACTION (highlight best horse decision in **bold**)
+
+**REQUIREMENT:** Calculate all sentiment scores using the detailed algorithm before populating the table. Include a brief validation note confirming scores are within -1 to 1 and consistent.
 
 ### Field Statistics:
 - **Total Horses:** {total_horses}
 - **Data Completeness:** {completeness_percentage}%
-- **Highest Sentiment Score:** {best_horse_score}
+- **Highest Adjusted Sentiment Score:** {best_horse_score}
 - **Field Average Sentiment Score:** {field_average}
 - **Sentiment Score Gap:** {best_horse_score} - {field_average} = {score_gap}
 
 ### Sentiment Score Analysis Summary:
-- **Best Horse Sentiment Score:** {best_horse_score}
+- **Best Horse Adjusted Sentiment Score:** {best_horse_score}
 
 ### Strategy Logic Applied:
-- **Best Horse Selection:** Highest Sentiment Score, tie broken by lowest Odds
-- **Sentiment Score Threshold:** >=0.6 for BACK
+- **Best Horse Selection:** Highest Adjusted Sentiment Score, tie broken by lowest Odds
+- **Sentiment Score Threshold:** >=0.9 for BACK
 - **Result:** Score {best_horse_score} meets threshold → BACK execution

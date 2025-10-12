@@ -147,10 +147,12 @@ This directory contains 150+ specialized prompts for AI-powered analysis of Betf
 ## New & Updated Prompts
 
 - **Latest Update**: `HorseRacingEVAnalysisR11.md` - Optimized silent execution framework with enhanced semantic analysis and automated decision data logging
+- **Recent Favourite Strategy**: `HorseRacingBookmakersOdds.md` - Updated favourite-only value betting strategy using bookmaker odds analysis with field threat assessment
 - Recent additions include advanced EV analysis systems (R1-R11), Betfair SP data analysis, candlestick technical analysis, and comprehensive silent execution strategies
 - New features: Automated decision data persistence, enhanced field strength categorization, and streamlined execution workflows
 - Featured prompts include:
   - **HorseRacingEVAnalysisR11.md** - Latest optimized framework with data logging
+  - **HorseRacingBookmakersOdds.md** - Favourite value strategy with bookmaker odds analysis
   - **BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md** - Advanced technical analysis
   - **HorseRacingSilentEVAnalysisWithAutomatedExecution.md** - Full automation framework  
   - **BfexplorerMCPIntegrationSystemPrompt.md** - Platform integration
@@ -1556,5 +1558,5 @@ When creating new prompts:
 
 ---
 
-*Last updated: September 10, 2025*  
+*Last updated: October 12, 2025*  
 *Performance data based on real market testing with Strategy R1 achieving 83.3% strike rate and 115-150% ROI*

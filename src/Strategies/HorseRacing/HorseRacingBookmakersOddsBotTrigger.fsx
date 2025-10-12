@@ -154,13 +154,49 @@ type HorseRacingBookmakersOddsBotTrigger (market : Market, selection : Selection
                     |> String.concat "\n"
                 )
 
-                let allMySelectionData = this.GetMySelectionsBySelectionCriteria mySelectionsData
+                // Identify favourite (lowest odds)
+                let favourite = 
+                    mySelectionsData
+                    |> List.sortBy (fun data -> data.Selection.LastPriceTraded)
+                    |> List.head
 
-                if allMySelectionData.IsEmpty
+                // Check favourite value score
+                let favouriteValueScore = favourite.PriceDifference
+
+                // Assess field threats
+                let backThreats = mySelectionsData |> List.filter (fun data -> data <> favourite && data.PriceDifference >= 0.08)
+                let layThreats = mySelectionsData |> List.filter (fun data -> data <> favourite && data.PriceDifference <= favouriteValueScore)
+
+                // Decision logic for favourite
+                let shouldExecute, botName =
+                    if favouriteValueScore >= 0.05 && backThreats.IsEmpty 
+                    then
+                        true, "Bet 10 Euro"
+                    elif favouriteValueScore <= -0.05 && layThreats.IsEmpty 
+                    then
+                        true, "Lay 10 Euro"
+                    else
+                        false, "NO ACTION"
+
+                if shouldExecute 
                 then
-                    TriggerResult.EndExecution
+                    this.Report (sprintf "Executing %s on favourite: %s (Value Score: %.3f)" botName favourite.Selection.Name favouriteValueScore)
+
+                    TriggerResult.ExecuteMyActionBotOnMarketSelectionAndContinueToExecute (botName, market, favourite.Selection, List.empty, false)
                 else
-                    TriggerResult.ExecuteActionBotOnSelection allMySelectionData.Head.Selection
+                    let reason = 
+                        if backThreats.Length > 0 
+                        then 
+                            "BACK threats present" 
+                        elif layThreats.Length > 0 
+                        then 
+                            "Better LAY opportunities" 
+                        else 
+                            "Value score out of range"
+
+                    this.Report (sprintf "No action on favourite: %s (Value Score: %.3f, Reason: %s)" favourite.Selection.Name favouriteValueScore reason)
+
+                    TriggerResult.EndExecution
 
             | TriggerStatus.ReportError errorMessage -> TriggerResult.EndExecutionWithMessage errorMessage
 

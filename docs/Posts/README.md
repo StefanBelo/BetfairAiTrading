@@ -356,6 +356,9 @@ This directory contains community posts, articles, and real-world examples showc
 - Focuses on position difference and odds monitoring for automated trading
 - **Best for:** Users interested in advanced horse racing trading strategies
 
+### [Grok LLM Bookmakers Odds Experience](GrokLLM_BookmakersOddsExperience.md)
+**How Grok LLM proactively updated my codebase when testing a new data context for bookmaker odds.**
+
 ## What You'll Find Here
 
 ### Real User Experiences
