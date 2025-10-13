@@ -86,6 +86,8 @@ This directory contains community posts, articles, and real-world examples showc
 - [Reddit Post: Reflecting on Community Building and Developer Collaboration](RedditPost_CommunityReflections.md)
 - [Using CLI AI Agents in Batch Mode for Betfair Analysis](Using-CLI-AI-Agents-Batch-Mode-Reddit.md)
 - [Reddit Post: Different Approaches to Data-Driven Horse Racing Strategy Building](Reddit_HorseRacingEVApproaches.md)
+- [Reddit Post: Betfair SP Data Tracking Without Programming](Reddit_BetfairSpData_NoProgramming.md)
+  **How anyone can update Betfair Starting Prices for horse racing in a CSV file—no coding required!**
 
 ### Other Notable Content
 - [LLM Services Community Question](LLM_Services_Community_Question.md)

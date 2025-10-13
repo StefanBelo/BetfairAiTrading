@@ -1,36 +1,36 @@
-# Horse Racing EV Analysis - AtTheRaces Data
+# Horse Racing EV Analysis - Timeform Data
 
 **SILENT MODE:** Executes strategies without generating reports or outputs. All analysis performed internally with performance tracking.
 
 ## 1. Data Retrieval & Validation Framework
 
 1. **Get Market Data**: Use `GetActiveBetfairMarket` for `marketId` and selections with odds
-2. **Get Horse Data**: Use `GetDataContextForBetfairMarket` with `dataContextName: "AtTheRacesDataForHorses"`
+2. **Get Horse Data**: Use `GetDataContextForBetfairMarket` with `dataContextName: "TimeformFullDataForHorses"`
 3. **Data Validation**: Ensure data completeness across all horses before proceeding
 
 ### Data Sources Summary:
-**AtTheRaces:** `expertView` (textual analysis)
+**Timeform:** `expertView` (textual analysis) and additional data fields (e.g., ratings, form analysis, speed figures, etc.)
 
 ## 2. Semantic Analysis & Evolution Framework
 
 ### Expert View Analysis:
-**Perform comprehensive semantic analysis on the `expertView` text to assess overall sentiment and indicators of horse performance:**
+**Perform comprehensive semantic analysis on the `expertView` text to assess overall sentiment and indicators of horse performance. Incorporate additional Timeform data (e.g., ratings, speed figures) for validation and enhanced scoring where available.**
 
 **POSITIVE SENTIMENT INDICATORS (Score: 100 pts):**
-- Strong form indicators: "in good form", "in fine fettle", "well in", "progressed", "on the up"
+- Strong form indicators: "in good form", "in fine fettle", "well in", "progressed", "on the up", "top-rated", "speed figure improved"
 - Success language: "won", "scored", "triumphed", "prevailed", "victorious", "beaten all", "ran out a comfortable winner", "impressive", "convincing"
-- Confidence markers: "should go very well", "chances", "not without claims", "well in", "goes for the hat-trick"
-- Suitability: "ideally suited", "suited by conditions", "perfect for this", "loves these conditions", "effective at distance"
-- Positive progression: "progressive", "improving", "on the up", "steadily progressing", "continues to progress"
-- Value indicators: "looks fairly treated", "on a fair mark", "well handicapped", "each-way chance", "value in the market"
-- Trainer/jockey confidence: "significant jockey booking", "top yard", "trainer in form", "represents a top combination"
+- Confidence markers: "should go very well", "chances", "not without claims", "well in", "goes for the hat-trick", "highly rated"
+- Suitability: "ideally suited", "suited by conditions", "perfect for this", "loves these conditions", "effective at distance", "course winner"
+- Positive progression: "progressive", "improving", "on the up", "steadily progressing", "continues to progress", "form figures rising"
+- Value indicators: "looks fairly treated", "on a fair mark", "well handicapped", "each-way chance", "value in the market", "underestimated"
+- Trainer/jockey confidence: "significant jockey booking", "top yard", "trainer in form", "represents a top combination", "stable confidence"
 
 **NEGATIVE SENTIMENT INDICATORS (Score: 0 pts):**
-- Poor form: "ran poor", "disappointing", "below par", "ran below par", "well held", "struggled", "failed"
+- Poor form: "ran poor", "disappointing", "below par", "ran below par", "well held", "struggled", "failed", "speed figure dropped"
 - Negative results: "beaten", "outpaced", "poorly placed", "finished down the field", "never involved", "ran tamely"
-- Concerns: "needs to bounce back", "not since", "form has tailed off", "poor record at track", "needs improvement"
-- Unsuitability: "doesn't stay", "not ideally suited", "difficulty with conditions", "ground too fast/soft"
-- Lack of confidence: "needs to prove", "difficult to assess", "limited evidence", "not convinced", "poor performance"
+- Concerns: "needs to bounce back", "not since", "form has tailed off", "poor record at track", "needs improvement", "rating declined"
+- Unsuitability: "doesn't stay", "not ideally suited", "difficulty with conditions", "ground too fast/soft", "unsuitable trip"
+- Lack of confidence: "needs to prove", "difficult to assess", "limited evidence", "not convinced", "poor performance", "question marks"
 - Negative recent activity: "raced freely", "hit the front too soon", "made too much use of", "wasted", "never got into"
 
 **NEUTRAL/MIXED SENTIMENT INDICATORS (Score: 50 pts):**
@@ -38,7 +38,7 @@
 - Conditional statements: "if conditions suit", "depending on trip", "on his best form", "if ground conditions allow"
 - Mixed results: "ran to form", "showed promise", "modest level", "some way off", "hasn't fired", "failed to reach full potential"
 - Return from absence: "returns from a break", "freshened", "after absence", "back from time off"
-- Neutral context: "effective at distance", "suited by trip", "acts on any ground" without positive reinforcement
+- Neutral context: "effective at distance", "suited by trip", "acts on any ground" without positive reinforcement, "consistent rating"
 
 **SENTIMENT SCORING ALGORITHM (Detailed Steps):**
 1. Break the expertView text into three sections:
@@ -59,6 +59,24 @@
      Score = (Total Weighted Positive - Total Weighted Negative) / (Total Weighted Positive + Total Weighted Negative)
    - Else: Score = 0
 6. Validate: Ensure score is between -1 and 1; if not, recheck calculations.
+7. **Calculate Timeform Quantitative Score:**
+   - Positive indicators (each +0.05): horseWinnerLastTimeOut, horseInForm, suitedByGoing, suitedByCourse, suitedByDistance, trainerInForm, trainerCourseRecord, jockeyInForm, jockeyWonOnHorse, timeformTopRated, timeformImprover, timeformHorseInFocus
+   - Negative indicators (each -0.1): horseBeatenFavouriteLTO
+   - Rating contribution: ratingStars × 0.1 (0-0.5 range)
+   - Timeform Score = Rating contribution + Sum of positive indicators - Sum of negative indicators (capped at 1.0 max, floored at -1.0 min)
+8. **Combined Score:** Average of Net Sentiment Score and Timeform Quantitative Score (ranges from -1 to 1)
+
+**EXAMPLE CALCULATION (for illustration):**
+- Text: "Horse is progressing well (opening); ran sound last time (middle); should win easily (closing)."
+- Opening: "progressing well" → +3 positive
+- Middle: "ran sound" → +2 positive
+- Closing: "should win easily" → +3 positive
+- Weighted: Opening: 3×0.2=0.6; Middle: 2×0.5=1.0; Closing: 3×0.3=0.9
+- Total Pos: 0.6+1.0+0.9=2.5; Neg: 0
+- Sentiment Score: (2.5-0)/(2.5+0) = 1.0
+- Timeform: ratingStars=4 → 0.4; positives: horseInForm, suitedByDistance → 0.1; negatives: none → 0
+- Timeform Score: 0.4 + 0.1 = 0.5
+- Combined Score: (1.0 + 0.5) / 2 = 0.75
 
 **EXAMPLE CALCULATION (for illustration):**
 - Text: "Horse is progressing well (opening); ran sound last time (middle); should win easily (closing)."
@@ -68,8 +86,9 @@
 - Weighted: Opening: 3×0.2=0.6; Middle: 2×0.5=1.0; Closing: 3×0.3=0.9
 - Total Pos: 0.6+1.0+0.9=2.5; Neg: 0
 - Score: (2.5-0)/(2.5+0) = 1.0
+- Additional: If rating is top-class, boost score by 0.1 (capped at 1.0)
 
-**VALIDATION STEP:** Before generating the table, calculate and list all sentiment scores with breakdowns. Ensure consistency across horses.
+**VALIDATION STEP:** Before generating the table, calculate and list all sentiment scores with breakdowns. Ensure consistency across horses. Cross-validate with Timeform ratings/speed figures.
 
 **CONTEXTUAL WEIGHTING (Additional modifiers):**
 - Recency: Most recent race performance mentioned has highest weight
@@ -77,6 +96,7 @@
 - Performance context: Consider distance, ground conditions, distance suitability
 - Conditional vs definitive: Phrases like "if" and "but" may indicate mixed sentiment
 - Expert's final assessment: The concluding statement often represents the overall assessment
+- **Timeform-Specific:** Ratings progression, speed figure trends, class level adjustments
 
 **SEMANTIC PATTERN RECOGNITION:**
 - Success with improvement: "scored...and is progressive" = Strong Positive
@@ -84,27 +104,28 @@
 - Recent success: "won recently", "scored last time" = Positive
 - Poor recent form: "ran poor last time", "beaten in last run" = Negative
 - Positive future outlook: "should go well", "chances on improvement" = Positive
+- **Timeform Patterns:** High speed figure with positive narrative = Very Positive; Declining ratings = Negative
 
 **ADDITIONAL SENTIMENT EVALUATION CRITERIA:**
 
 **POSITIVE SENTIMENT INTENSITY:**
-- Strong positive: "should go very well", "excellent chance", "strongly fancied", "likely to go well", "faced easier opposition"
-- Moderate positive: "not without chance", "some chance", "goes well here", "decent claim", "in form"
+- Strong positive: "should go very well", "excellent chance", "strongly fancied", "likely to go well", "faced easier opposition", "top speed figure"
+- Moderate positive: "not without chance", "some chance", "goes well here", "decent claim", "in form", "improving rating"
 - Weak positive: "not without hope", "slight chance", "chance on improvement"
 
 **NEGATIVE SENTIMENT INTENSITY:**
-- Strong negative: "poor recent form", "needs to prove", "not since", "struggling", "failed to fire"
-- Moderate negative: "ran poor last time", "not convinced", "some way behind", "not ideally suited"
+- Strong negative: "poor recent form", "needs to prove", "not since", "struggling", "failed to fire", "speed figure decline"
+- Moderate negative: "ran poor last time", "not convinced", "some way behind", "not ideally suited", "rating drop"
 - Weak negative: "needs to improve", "on return", "not without doubt"
 
 **SENTIMENT CONTINUUM SCALING:**
-- Very Positive: 0.9-1.0 (Clear positive with strong indicators)
+- Very Positive: 0.9-1.0 (Clear positive with strong indicators, high ratings)
 - Positive: 0.75-0.89 (Positive with some concerns)
 - Moderate Positive: 0.6-0.74 (Slightly more positive than neutral)
 - Neutral: 0.4-0.59 (Balanced with equal positive and negative)
 - Moderate Negative: 0.25-0.39 (Slightly more negative than neutral)
 - Negative: 0.1-0.24 (Negative with few positives)
-- Very Negative: -1.0-0.09 (Overwhelmingly negative)
+- Very Negative: -1.0-0.09 (Overwhelmingly negative, low ratings)
 
 **SEMANTIC ANALYSIS WEIGHTS:**
 - Opening sentence: 20% weight
@@ -117,46 +138,39 @@
 - Competition class: Performance against similar standard
 - Track familiarity: Previous success at venue
 - Jockey/trainer combination: Reputation impact
+- **Timeform Adjustments:** Speed figure relevance, rating vs class, form cycle stage
 
 **SENTIMENT VALIDATION CHECKS:**
 - Verify sentiment aligns with performance narrative
 - Check for contradictory statements
 - Ensure final assessment is consistent with body content
 - Confirm expert's confidence level is correctly interpreted
+- **Timeform Validation:** Cross-check with quantitative data (ratings, speed figures) for consistency
 
 ## 3. Scoring Framework (Internal Calculation Only)
 
-### Combined Horse Score (Net Sentiment Score):
+### Combined Horse Score (Net Sentiment Score + Timeform Quantitative Score):
 
 **Expert View Sentiment (Net Score):**
 - Sentiment Score = Net sentiment score (ranges from -1 to 1)
 
-**Odds-Based Adjustment Multiplier:**
-- Apply a multiplier to the sentiment score based on decimal odds range to account for historical win frequencies:
-  - Odds 1.01-1.99: Multiplier 0.85 (heavy favorites win 55-75%, significantly reduce reliance on sentiment as they win frequently regardless)
-  - Odds 2.00-2.99: Multiplier 0.95 (short-priced favorites win 35-48%, moderate reduction in sentiment reliance)
-  - Odds 3.00-4.99: Multiplier 1.0 (regular favorites win 18-30%, balanced sentiment weighting)
-  - Odds 5.00-9.99: Multiplier 1.1 (middle-range horses win 8-15%, slight boost to sentiment impact)
-  - Odds 10.00-19.99: Multiplier 1.2 (long-priced horses win 3-7%, boost sentiment impact)
-  - Odds 20.00+: Multiplier 1.3 (true outsiders win 1-3%, significantly boost for strong sentiment)
-- Adjusted Sentiment Score = Sentiment Score × Multiplier (capped at 1.0 max, floored at -1.0 min)
+**Timeform Quantitative Score:**
+- Timeform Score = (ratingStars × 0.1) + (positive indicators × 0.05 each) - (negative indicators × 0.1 each) (capped at 1.0 max, floored at -1.0 min)
+
+**Combined Score:**
+- Combined Score = (Sentiment Score + Timeform Score) / 2 (ranges from -1 to 1)
 
 ## 4. Decision Logic & Strategy Execution
 
-**IDENTIFY BEST HORSE:** Sort horses by Odds ascending, then select the first horse with the Adjusted Sentiment Score >= 0.9 (tie broken by lowest Odds)
+**IDENTIFY BEST HORSE:** Sort horses by Odds ascending, then select the first horse with the Combined Score >= 0.7
 
 ### Sentiment Score Thresholds for BACK:
-- Back if Adjusted Sentiment Score >=0.9
+- Back if Combined Score >=0.7
 
 ### Decision Criteria:
 **BACK Requirements (ALL must be true):**
-1. The first horse with the Adjusted Sentiment Score >= 0.9
+1. Highest Combined Score in field >= 0.7
 2. Data completeness ≥80%
-
-**NO ACTION if ANY of the following conditions are met:**
-- Highest Adjusted Sentiment Score < 0.9
-- Data completeness < 80%
-- More than 3 horses have Adjusted Sentiment Score >= 1.0
 
 ### Execution Flow:
 1. **Execute Strategy**: `ExecuteBfexplorerStrategySettings(marketId, bestHorseSelectionId, "Bet 10 Euro")` if BACK criteria met
@@ -166,31 +180,31 @@
 
 Based on the active market data, the following table shows EV calculations for each horse:
 
-| Horse | Odds | Expert Analysis | Adjusted Sentiment Score | Key Semantic Features | Decision |
-|-------|------|-----------------|--------------------------|-----------------------|----------|
+| Horse | Odds | Expert Analysis | Sentiment Score | Timeform Score | Combined Score | Key Semantic Features | Decision |
+|-------|------|-----------------|-----------------|----------------|----------------|-----------------------|----------|
 {horse_rows}
 
 ### Table Generation Rules:
 - **Horse**: Selection name from Betfair
 - **Odds**: Decimal odds from market data
-- **Expert Analysis**: Short semantic summary (Positive/Neutral/Negative) based on calculated score
-- **Adjusted Sentiment Score**: Calculated adjusted net sentiment score (-1 to 1) - MUST use the precise algorithm output with odds multiplier; no approximations
-- **Key Semantic Features**: Key phrases from expertView that contributed to the score (do not repeat the full expertView text)
+- **Expert Analysis**: Short semantic summary (Positive/Neutral/Negative) based on sentiment score
+- **Sentiment Score**: Calculated net sentiment score (-1 to 1) - MUST use the precise algorithm output; no approximations
+- **Timeform Score**: Calculated quantitative score (-1 to 1) based on Timeform data fields
+- **Combined Score**: Average of Sentiment and Timeform scores (-1 to 1)
+- **Key Semantic Features**: Key phrases from expertView that contributed to the sentiment score (do not repeat the full expertView text)
 - **Decision**: BACK / NO ACTION (highlight best horse decision in **bold**)
-
-**REQUIREMENT:** Calculate all sentiment scores using the detailed algorithm before populating the table. Include a brief validation note confirming scores are within -1 to 1 and consistent.
 
 ### Field Statistics:
 - **Total Horses:** {total_horses}
 - **Data Completeness:** {completeness_percentage}%
-- **Highest Adjusted Sentiment Score:** {best_horse_score}
-- **Field Average Sentiment Score:** {field_average}
-- **Sentiment Score Gap:** {best_horse_score} - {field_average} = {score_gap}
+- **Highest Combined Score:** {best_horse_score}
+- **Field Average Combined Score:** {field_average}
+- **Combined Score Gap:** {best_horse_score} - {field_average} = {score_gap}
 
 ### Sentiment Score Analysis Summary:
-- **Best Horse Adjusted Sentiment Score:** {best_horse_score}
+- **Best Horse Combined Score:** {best_horse_score}
 
 ### Strategy Logic Applied:
-- **Best Horse Selection:** Highest Adjusted Sentiment Score, tie broken by lowest Odds
-- **Sentiment Score Threshold:** >=0.9 for BACK
+- **Best Horse Selection:** Highest Combined Score, tie broken by lowest Odds
+- **Combined Score Threshold:** >=0.7 for BACK
 - **Result:** Score {best_horse_score} meets threshold → BACK execution
