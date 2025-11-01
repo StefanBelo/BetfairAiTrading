@@ -10,7 +10,7 @@ Purpose: AI agent prompt for horse-racing EV analysis using Betfair market + Tim
 ## 1. Data Retrieval & Validation Framework
 
 ### Step 1: Get Market Data
-Use `GetActiveBetfairMarket` to retrieve the active market object. This endpoint returns:
+Use `GetActiveMarket` to retrieve the active market object. This endpoint returns:
 - Market metadata: `marketId`, `eventName`, `marketName`, `startTime`, `status`
 - `selections` array where each selection contains:
   - `selectionId` (string)
@@ -21,7 +21,7 @@ Use `GetActiveBetfairMarket` to retrieve the active market object. This endpoint
 **Note:** The market endpoint does NOT reliably include matched volumes, multi-layer best-back/best-lay prices, or detailed odds history. If those fields are present, use them; otherwise set to `null` and note in provenance.
 
 ### Step 2: Get Timeform Horse Data
-Use `GetDataContextForBetfairMarket` with `dataContextName = "TimeformFullDataForHorses"` for the same `marketId`. This endpoint returns a `selectionsData` array where each element contains:
+Use `GetDataContextForMarket` with `dataContextName = "TimeformFullDataForHorses"` for the same `marketId`. This endpoint returns a `selectionsData` array where each element contains:
 - `selectionId` (string)
 - `name` (string)
 - `data` (object) with:

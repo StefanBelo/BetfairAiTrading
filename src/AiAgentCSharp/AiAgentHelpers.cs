@@ -67,7 +67,6 @@ namespace AiAgentCSharp
             return CreateChatClient("GITHUB_TOKEN", "https://api.githubcopilot.com/", model);
         }
 
-
         /// <summary>
         /// CreateDeepSeekChatClient
         /// </summary>
@@ -84,6 +83,16 @@ namespace AiAgentCSharp
         public static IChatClient CreateAiHubMixChatClient(string model)
         {
             return CreateChatClient("AIHUBMIX_API_KEY", "https://aihubmix.com/v1", model);
+        }
+
+        /// <summary>
+        /// CreateCherryStudioChatClient
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public static IChatClient CreateCherryStudioChatClient(string model)
+        {
+            return CreateChatClient("CHERRYSTUDIO_API_KEY", "http://localhost:23333/v1", model);
         }
     }
 }

@@ -107,7 +107,7 @@ CWAF = Market Confidence × Price Movement × Volume × Historical Success
 ## Strategy Execution Protocol
 
 ### Pre-Execution Checklist
-1. Retrieve active market using GetActiveBetfairMarket (SILENT)
+1. Retrieve active market using GetActiveMarket (SILENT)
 2. Retrieve all three data contexts (SILENT)
 3. Calculate semantic form scores (SILENT)
 4. Apply prediction score threshold (98+) (SILENT)

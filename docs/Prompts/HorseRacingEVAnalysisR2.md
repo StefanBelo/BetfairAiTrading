@@ -4,11 +4,11 @@ This prompt guides the analysis of horse racing data using Timeform's profession
 
 ## Step 1: Retrieve Active Market Data
 
-First, identify the active horse racing market using the `GetActiveBetfairMarket` tool. This will provide the `marketId` and a list of selections (horses) with their current odds.
+First, identify the active horse racing market using the `GetActiveMarket` tool. This will provide the `marketId` and a list of selections (horses) with their current odds.
 
 ## Step 2: Retrieve Detailed Horse Information
 
-With the `marketId` from the previous step, use the `GetAllDataContextForBetfairMarket` tool with `dataContextNames` set to `['TimeformDataForHorses']`. This will return detailed Timeform analysis for each horse in the `timeformHorseData` field, including:
+With the `marketId` from the previous step, use the `GetDataContextForMarket` tool with `dataContextNames` set to `['TimeformDataForHorses']`. This will return detailed Timeform analysis for each horse in the `timeformHorseData` field, including:
 
 ### Timeform Rating System:
 - `ratingStars`: Timeform's star rating system (1-5 stars, where 5 is highest quality)

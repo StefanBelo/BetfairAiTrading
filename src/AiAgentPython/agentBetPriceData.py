@@ -23,8 +23,8 @@ async def main():
 Objective: Select exactly one action on the current favourite (lowest price): Bet 10 Euro, Lay 10 Euro, or No Bet.
 
 ## 1. Inputs
-1. Retrieve active market: GetActiveBetfairMarket
-2. Candles & BLR, on the active market: GetDataContextForBetfairMarket(marketId, "MarketSelectionsCandleStickData")
+1. Retrieve active market: GetActiveMarket
+2. Candles & BLR, on the active market: GetDataContextForMarket(marketId, "MarketSelectionsCandleStickData")
 
 ## 2. Metrics (Favourite)
 - Price = latest close

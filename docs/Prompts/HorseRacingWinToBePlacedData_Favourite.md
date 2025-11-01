@@ -17,8 +17,8 @@
    - LAY: place_momentum > 0.1 AND win_momentum < -0.1 AND current_win < 3.0 AND divergence > 5%
 
 **Tool Usage** (use appropriate prefix):
-1. `get_active_betfair_market` → get market ID
-2. `get_data_context_for_betfair_market` (dataContextName: "HorseRacingWinToBePlacedData", marketId: from 1) → get data
+1. `get_active_market` → get market ID
+2. `get_all_data_context_for_market` (dataContextName: "HorseRacingWinToBePlacedData", marketId: from 1) → get data
 3. `execute_bfexplorer_strategy_settings` (strategyName: "Bet 10 Euro" for back or "Lay 10 Euro" for lay, marketId, selectionId)
 
 **Risk Management**:

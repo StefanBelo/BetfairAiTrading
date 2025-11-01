@@ -17,7 +17,7 @@ Analyze the currently active Betfair market by retrieving price history data, id
 First, get the currently active Betfair market being monitored in Bfexplorer:
 
 ```
-Use GetActiveBetfairMarket to retrieve the active market details including:
+Use GetActiveMarket to retrieve the active market details including:
 - Market ID
 - Market name
 - Event name
@@ -33,7 +33,7 @@ From the active market data retrieved in Step 1, identify the favorite selection
 For the favorite selection identified in Step 2, get the MarketSelectionsPriceHistoryData:
 
 ```
-Use GetDataContextForBetfairMarketSelection with:
+Use GetDataContextForMarketSelection with:
 - dataContextName: "MarketSelectionsPriceHistoryData"
 - marketId: {from Step 1}
 - selectionId: {favorite selection ID from Step 2}

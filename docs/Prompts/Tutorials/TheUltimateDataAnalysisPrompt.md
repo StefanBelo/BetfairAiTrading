@@ -33,4 +33,4 @@ COMMUNICATION STYLE:
 - Include confidence levels for all major claims
 - State assumptions explicitly and suggest validation methods
 
-Now, retrieve the active Betfair market using `GetActiveBetfairMarket` and the context data `RacingpostDataForHorses` for this market using `GetDataContextForBetfairMarket`, then analyze as described in the prompt.
+Now, retrieve the active Betfair market using `GetActiveMarket` and the context data `RacingpostDataForHorses` for this market using `GetDataContextForMarket`, then analyze as described in the prompt.

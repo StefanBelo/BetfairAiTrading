@@ -5,8 +5,8 @@
 
 
 ### 1. Data Retrieval
-- **Market Data:** Use `GetActiveBetfairMarket` to retrieve the current `marketId`, event details, and all selections with their decimal odds.
-- **Horse Data:** For the active market, use `GetAllDataContextForBetfairMarket` with `['TimeformDataForHorses']` to obtain detailed horse information.
+- **Market Data:** Use `GetActiveMarket` to retrieve the current `marketId`, event details, and all selections with their decimal odds.
+- **Horse Data:** For the active market, use `GetDataContextForMarket` with `['TimeformDataForHorses']` to obtain detailed horse information.
 
 ---
 

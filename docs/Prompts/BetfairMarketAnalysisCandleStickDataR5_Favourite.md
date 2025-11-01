@@ -3,8 +3,8 @@
 Objective: Select exactly one action on the current favourite (lowest price): Bet 10 Euro, Lay 10 Euro, or No Bet.
 
 ## 1. Inputs
-1. Active market: GetActiveBetfairMarket
-2. Candles & BLR: GetDataContextForBetfairMarket("MarketSelectionsCandleStickData")
+1. Active market: GetActiveMarket
+2. Candles & BLR: GetDataContextForMarket("MarketSelectionsCandleStickData")
 
 ## 2. Metrics (Favourite)
 - Price = latest close

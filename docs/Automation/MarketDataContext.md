@@ -209,11 +209,11 @@ Shows which horses are attracting smart money versus public sentiment.
 ## Technical Notes
 
 **Data Retrieval Workflow:**
-1. First use `GetActiveBetfairMarket` to get the current active market data
+1. First use `GetActiveMarket` to get the current active market data
 2. Then retrieve specific data contexts using:
-   - `GetDataContextForBetfairMarket` - for individual market-level data contexts
-   - `GetDataContextForBetfairMarketSelection` - for individual selection-level data contexts
-   - `GetAllDataContextForBetfairMarket` - to combine multiple data contexts for comprehensive analysis
+   - `GetDataContextForMarket` - for individual market-level data contexts
+   - `GetDataContextForMarketSelection` - for individual selection-level data contexts
+   - `GetDataContextForMarket` - to combine multiple data contexts for comprehensive analysis
 
 **Data Formats:**
 - Market ID format: "1.245954717"

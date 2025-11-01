@@ -10,15 +10,15 @@ Task: Perform completely silent comprehensive Expected Value (EV) analysis for h
 Instructions:
 
 1. **Market Data Retrieval**
-   - Retrieve the active betfair market in BfexplorerApp using tool: GetActiveBetfairMarket
+   - Retrieve the active betfair market in BfexplorerApp using tool: GetActiveMarket
    - Save marketId for subsequent data retrieval
    - **Identify top 3 favorites by current price** (lowest prices = favorites)
    - No reports during data collection
 
 2. **Multi-Context Data Collection**
-   - Retrieve the data context with the name 'OlbgRaceTipsData' for the betfair market using tool: GetDataContextForBetfairMarket
-   - Retrieve the data context with the name 'RacingpostDataForHorses' for the betfair market using tool: GetDataContextForBetfairMarket
-   - Retrieve the data context with the name 'MarketSelectionsTradedPricesData' for the betfair market using tool: GetDataContextForBetfairMarket
+   - Retrieve the data context with the name 'OlbgRaceTipsData' for the betfair market using tool: GetDataContextForMarket
+   - Retrieve the data context with the name 'RacingpostDataForHorses' for the betfair market using tool: GetDataContextForMarket
+   - Retrieve the data context with the name 'MarketSelectionsTradedPricesData' for the betfair market using tool: GetDataContextForMarket
    - Focus on 'tipsterData' field from OLBG context, 'horsesData' field from racing post context, and price movement/volume data from traded prices context
    - SILENT data collection - no outputs during this phase
 

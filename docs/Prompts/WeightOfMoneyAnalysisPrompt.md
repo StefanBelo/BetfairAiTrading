@@ -192,11 +192,11 @@ Calculate confidence score by summing points from each factor:
 ## Analysis Steps
 
 ### Step 1: Get Active Market
-1. **Retrieve active market**: Use GetActiveBetfairMarket to get the currently monitored market
+1. **Retrieve active market**: Use GetActiveMarket to get the currently monitored market
 2. **Extract market details**: Get marketId, market name, and event information
 
 ### Step 2: Get Weight of Money Data
-1. **Retrieve WeightOfMoneyData**: Use GetDataContextForBetfairMarket with:
+1. **Retrieve WeightOfMoneyData**: Use GetDataContextForMarket with:
    - dataContextName: "WeightOfMoneyData"
    - marketId: [from Step 1]
 2. **Parse data structure**: Extract for all selections:
@@ -238,8 +238,8 @@ Calculate confidence score by summing points from each factor:
 ## Usage Instructions
 
 ### Analysis Execution Sequence:
-1. **Get Active Market**: Use GetActiveBetfairMarket to retrieve current market information
-2. **Get Weight of Money Data**: Use GetDataContextForBetfairMarket with dataContextName "WeightOfMoneyData"
+1. **Get Active Market**: Use GetActiveMarket to retrieve current market information
+2. **Get Weight of Money Data**: Use GetDataContextForMarket with dataContextName "WeightOfMoneyData"
 3. **Apply Analysis Framework**: Process each selection using the confidence scoring system
 4. **Generate Comprehensive Report**: Create predictions table and trading opportunities analysis
 5. **Provide Strategic Insights**: Highlight key patterns and market inefficiencies

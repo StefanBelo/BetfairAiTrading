@@ -32,7 +32,11 @@ This directory contains community posts, articles, and real-world examples showc
 
 ### [Gemini CLI + Bfexplorer MCP: AI-Powered Betfair Trading (No Coding Needed)](GeminiCLI_BfexplorerMCP_RedditPost.md)
 **Automate Betfair trading with AI prompts and Bfexplorer—no coding required!**
+
 ### Weekly Reports
+- [Betfair AI Trading Weekly Report - November 1, 2025](BetfairAiTrading_Weekly_Report_2025-11-01.md)
+- [Betfair AI Trading Weekly Report - October 25, 2025](BetfairAiTrading_Weekly_Report_2025-10-25.md)
+- [Betfair AI Trading Weekly Report - October 18, 2025](BetfairAiTrading_Weekly_Report_2025-10-18.md)
 - [Betfair AI Trading Weekly Report - October 10, 2025](BetfairAiTrading_Weekly_Report_2025-10-10.md)
 - [Betfair AI Trading Weekly Report - October 4, 2025: AI and Its Place in Horse Racing/Handicapping](BetfairAiTrading_Weekly_Report_2025-10-04.md)
 - [Betfair AI Trading Weekly Report - September 27, 2025](BetfairAiTrading_Weekly_Report_2025-09-27.md)
@@ -45,12 +49,6 @@ This directory contains community posts, articles, and real-world examples showc
 - [BetfairAiTrading Weekly Report - August 9, 2025](BetfairAiTrading_Weekly_Report_2025-08-09.md)
 - [BetfairAiTrading Weekly Report - August 2, 2025](BetfairAiTrading_Weekly_Report_2025-08-02.md)
 - [BetfairAiTrading Weekly Report - July 26, 2025](BetfairAiTrading_Weekly_Report_2025-07-26.md)
-- [Betfair AI Trading Weekly Report - August 30, 2025](BetfairAiTrading_Weekly_Report_2025-08-30.md)
-- [Betfair AI Trading Weekly Report - August 22, 2025](BetfairAiTrading_Weekly_Report_2025-08-22.md)
-- [Betfair AI Trading Weekly Report - August 16, 2025](BetfairAiTrading_Weekly_Report_2025-08-16.md)
-- [Betfair AI Trading Weekly Report - August 9, 2025](BetfairAiTrading_Weekly_Report_2025-08-09.md)
-- [Betfair AI Trading Weekly Report - August 2, 2025](BetfairAiTrading_Weekly_Report_2025-08-02.md)
-- [Betfair AI Trading Weekly Report - July 26, 2025](BetfairAiTrading_Weekly_Report_2025-07-26.md)
 
 ### Featured Posts & Articles
 - [Horse Racing Combined EV Analysis with Automated Betting](../Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)

@@ -1,33 +1,33 @@
-# Stratégia stávkovania na dostihy: Stávky iba na favorita (BSP) - Tichý režim
+# Dostihy: Favorit (BSP) – tichý režim
 
-**Cieľ**: Realizovať stávkovú stratégiu na favorita pomocou hodnotových kritérií založených na BSP. Výstup iba výsledky vykonania.
+Cieľ: Nasadiť stratégiu iba na favorita podľa BSP; výstup zobrazí len výsledok vykonania.
 
-**Logika**:
-- Vypočítajte BSP metriky: bspEdge = (1/betfairSP) - (1/price), bspEvNet = (1/betfairSP) × price - 1
-- Vypočítajte priceRatio = price / betfairSP
-- Nájdite favorita (najnižšia cena)
-- BACK ak: eVforPriceOrBetfairSP > 0 A bspEvNet > -0.02
-- LAY ak: kritériá kandidáta NIE sú splnené
+Logika:
+- Nájdite favorita (najnižší kurz `price`).
+- Spočítajte metriky:
+	- `bspEdge = (1/betfairSP) - (1/price)`
+	- `bspEvNet = price/betfairSP - 1`
+	- `priceRatio = price/betfairSP`
+- Rozhodnutie:
+	- BACK, ak `eVforPriceOrBetfairSP > 0` a `bspEvNet > -0.02`
+	- Inak LAY (alebo preskočte, ak chýbajú dáta)
 
-**Nástroje**: `get_active_betfair_market` → `get_data_context_for_betfair_market` (dataContextName: "BetfairSpData") → `execute_bfexplorer_strategy_settings`
+Nástroje: `get_active_market` → `get_all_data_context_for_market("BetfairSpData")` → `execute_bfexplorer_strategy_settings`
 
-## Príkaz na vykonanie
+## Kroky vykonania
 
-```
-1. Získaj aktívny trh betfair pre ID trhu
-2. Použite ID trhu na získanie kontextu "BetfairSpData" pre tento konkrétny trh
-3. Vypočítajte BSP metriky pre favorita
-4. Realizujte vhodnú stratégiu (Bet 10 Euro/Lay 10 Euro) na favorita
-5. Nahláste iba výsledok vykonania
-```
+1. Získaj aktívny trh (marketId).
+2. Načítaj kontext „BetfairSpData“ pre daný trh.
+3. Urči favorita a vypočítaj metriky.
+4. Vykonaj vhodnú stratégiu (Back 10 EUR/Lay 10 EUR) na favorita.
+5. Vypíš iba výsledok vykonania.
 
 ## Formát výstupu
 
-**Výsledok vykonania stratégie:**
-- **Trh**: [Názov dostihov/Čas]
-- **Favorit**: [Názov koňa] (Cena: [kurz], BSP: [bsp])
-- **Vykonaná stratégia**: [Bet 10 Euro/Lay 10 Euro]
-- **ID výberu**: [selectionId]
-- **Dôvod**: [Splnené kritériá BACK/Splnené kritériá LAY/Chýbajúce údaje]
-- **BSP metriky**: Pomerná cena [X.XX], BSP hrana [X.XXXX], BSP EV netto [X.XXXX]
-- **Stav**: [ÚSPECH/ZLYHANIE/OBÍDENÉ]
+- Trh: [názov/čas]
+- Favorit: [kôň] (Cena: [kurz], BSP: [bsp])
+- Akcia: [Back 10 EUR/Lay 10 EUR]
+- selectionId: [id]
+- Dôvod: [BACK kritériá/ LAY kritériá/ Chýbajúce údaje]
+- BSP metriky: `priceRatio`=[x.xx], `bspEdge`=[x.xxxx], `bspEvNet`=[x.xxxx]
+- Stav: [ÚSPECH/ZLYHANIE/OBÍDENÉ]

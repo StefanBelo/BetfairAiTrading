@@ -18,13 +18,13 @@ Silently analyze horse racing markets to identify and execute the single best tr
 
 #### Step 1: Get Active Market Data
 ```
-Use: GetActiveBetfairMarket
+Use: GetActiveMarket
 Purpose: Retrieve current market information
 ```
 
 #### Step 2: Retrieve Multi-Context Data
 ```
-Use: GetAllDataContextForBetfairMarket
+Use: GetDataContextForMarket
 Parameters: 
 - dataContextNames: ["RacingpostDataForHorses", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData"]
 - marketId: [from Step 1]

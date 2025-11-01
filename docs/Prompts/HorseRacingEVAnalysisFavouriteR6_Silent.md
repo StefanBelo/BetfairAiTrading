@@ -5,8 +5,8 @@
 **Objective**: Analyze the entire field to execute trades ONLY on the favourite horse. BACK strong favourites, LAY weak ones, and take NO ACTION otherwise. All analysis is performed silently, with a report generated only upon execution.
 
 **Data Retrieval & Validation**:
-1.  **Get Market**: Use `GetActiveBetfairMarket` to get the active market and selections.
-2.  **Get Horse Data**: Use `GetAllDataContextForBetfairMarket` with `['TimeformDataForHorses', 'RacingpostDataForHorses']`.
+1.  **Get Market**: Use `GetActiveMarket` to get the active market and selections.
+2.  **Get Horse Data**: Use `GetDataContextForMarket` with `['TimeformDataForHorses', 'RacingpostDataForHorses']`.
 3.  **Validation**: Proceed only if data completeness is ≥80% for all horses.
 
 **Configuration**:

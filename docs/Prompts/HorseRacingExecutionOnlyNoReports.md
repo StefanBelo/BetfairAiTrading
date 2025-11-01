@@ -8,7 +8,7 @@ Task: Execute horse racing betting strategy with no AI analysis reports - only p
 Instructions:
 
 1. **Silent Market Data Collection**
-   - Retrieve active betfair market using tool: GetActiveBetfairMarket
+   - Retrieve active betfair market using tool: GetActiveMarket
    - Retrieve data contexts: 'MarketSelectionsTradedPricesData' and 'RacingpostDataForHorses'
    - Complete all analysis internally without any reports
 

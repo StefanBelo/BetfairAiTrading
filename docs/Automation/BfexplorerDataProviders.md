@@ -4,7 +4,7 @@
 
 ## Overview
 
-Data providers in Bfexplorer serve as accessible data sources that can be integrated into AI agent workflows and prompts. These providers can be utilized in AI agent processes through the MCP (Model Context Protocol) tool `GetDataContextForBetfairMarket`.
+Data providers in Bfexplorer serve as accessible data sources that can be integrated into AI agent workflows and prompts. These providers can be utilized in AI agent processes through the MCP (Model Context Protocol) tool `GetDataContextForMarket`.
 
 ## Why Use Data Providers?
 
@@ -28,8 +28,8 @@ When working with AI agent prompts, follow this typical workflow:
 
 1. **Retrieve Active Market**: Get the currently active Betfair market using the appropriate MCP tool
 2. **Load Data Context**: 
-   - For single data source: Use `GetDataContextForBetfairMarket` with specific data context name (e.g., `OlbgRaceTipsData`)
-   - For multiple data sources: Use `GetAllDataContextForBetfairMarket` with an array of dataContextNames to combine multiple data providers in one call
+   - For single data source: Use `GetDataContextForMarket` with specific data context name (e.g., `OlbgRaceTipsData`)
+   - For multiple data sources: Use `GetDataContextForMarket` with an array of dataContextNames to combine multiple data providers in one call
 3. **AI Agent Analysis**: Once the AI agent has loaded the data, it can analyze and process the information
 4. **Prompt Enhancement**: Use the loaded data to build more informed and contextual prompts for strategy development
 
@@ -65,10 +65,10 @@ These providers are specialized for horse racing markets:
 
 ## Example Use Cases
 
-- **Pre-Race Analysis**: Use `GetAllDataContextForBetfairMarket` with `["RacingpostDataForHorses", "TimeformDataForHorses", "OlbgRaceTipsData"]` for comprehensive horse assessment
-- **Market Monitoring**: Use `GetAllDataContextForBetfairMarket` with `["MarketSelectionsTradedPricesData", "WeightOfMoneyData"]` for real-time market sentiment analysis
-- **Strategy Testing**: Utilize `GetDataContextForBetfairMarket` with `"TestRaceData"` for backtesting before live implementation
-- **Full Market Analysis**: Combine all relevant data sources using `GetAllDataContextForBetfairMarket` with multiple dataContextNames for the most comprehensive analysis
+- **Pre-Race Analysis**: Use `GetDataContextForMarket` with `["RacingpostDataForHorses", "TimeformDataForHorses", "OlbgRaceTipsData"]` for comprehensive horse assessment
+- **Market Monitoring**: Use `GetDataContextForMarket` with `["MarketSelectionsTradedPricesData", "WeightOfMoneyData"]` for real-time market sentiment analysis
+- **Strategy Testing**: Utilize `GetDataContextForMarket` with `"TestRaceData"` for backtesting before live implementation
+- **Full Market Analysis**: Combine all relevant data sources using `GetDataContextForMarket` with multiple dataContextNames for the most comprehensive analysis
 
 ## Creating Custom Data Providers
 

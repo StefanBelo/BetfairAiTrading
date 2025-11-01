@@ -12,7 +12,7 @@ Been working on streamlining the process of feeding data into AI agents for Betf
 
 ## The Game Changer: Accessible Data Sources
 
-Instead of writing custom API calls every time, I now use **data providers** that act as standardized data sources. The AI agent can access these through simple commands like `GetDataContextForBetfairMarket`.
+Instead of writing custom API calls every time, I now use **data providers** that act as standardized data sources. The AI agent can access these through simple commands like `GetDataContextForMarket`.
 
 ## Available Data Providers:
 

@@ -8,12 +8,12 @@ Task: Perform comprehensive analysis of horse racing betting opportunities using
 Instructions:
 
 1. **Market Data Retrieval**
-   - Retrieve the active betfair market using tool: GetActiveBetfairMarket
+   - Retrieve the active betfair market using tool: GetActiveMarket
    - Save marketId for subsequent data retrieval
    - Make no preliminary reports during data collection
 
 2. **Form Data Collection**
-   - Retrieve the data context with the name 'HorsesBaseBetfairFormData' for the betfair market using tool: GetDataContextForBetfairMarket
+   - Retrieve the data context with the name 'HorsesBaseBetfairFormData' for the betfair market using tool: GetDataContextForMarket
    - Focus on the core metrics: forecastPrice, form, officialRating, and weight for each horse
    - Do not make any reports during data collection phase
 

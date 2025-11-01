@@ -28,7 +28,7 @@ Analyze horse racing markets to identify the single best trading opportunity by 
 
 #### Step 1: Get Active Betfair Market
 ```
-Use: GetActiveBetfairMarket
+Use: GetActiveMarket
 Purpose: Retrieve current market information including:
 - Market ID and basic details
 - All runners with current prices
@@ -39,7 +39,7 @@ Purpose: Retrieve current market information including:
 
 #### Step 2: Comprehensive Multi-Context Data Retrieval
 ```
-Use: GetAllDataContextForBetfairMarket
+Use: GetDataContextForMarket
 Parameters: 
 - dataContextNames: ["RacingpostDataForHorses", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData"]
 - marketId: [from Step 1]
@@ -526,7 +526,7 @@ NEXT TRADING ACTIONS:
 
 **Note**: This enhanced trading framework leverages three comprehensive data sources to identify exceptional price movement opportunities with increased accuracy and profit potential. The enhanced criteria and cross-validation requirements will result in higher NO TRADE percentages but significantly improved success rates when trading selections are made.
 
-**CRITICAL REQUIREMENT**: ALL trading analyses must utilize GetAllDataContextForBetfairMarket with all three data contexts and store results using SetAIAgentDataContextForBetfairMarket with dataContextName "HorseRacingR5_1_Trading_Analysis" for comprehensive multi-source trading model tracking and validation.
+**CRITICAL REQUIREMENT**: ALL trading analyses must utilize GetDataContextForMarket with all three data contexts and store results using SetAIAgentDataContextForBetfairMarket with dataContextName "HorseRacingR5_1_Trading_Analysis" for comprehensive multi-source trading model tracking and validation.
 
 **Version**: R5.1 - Results-Calibrated Multi-Context Trading Analysis
 **Last Updated**: July 1, 2025

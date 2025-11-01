@@ -61,8 +61,8 @@
 - **ELSE**: Perform analysis only. Do not execute any strategy.
 
 ## 4. Execution Protocol (Silent)
-1.  Call `GetActiveBetfairMarket`.
-2.  Retrieve the three required data contexts using `GetAllDataContextForBetfairMarket`.
+1.  Call `GetActiveMarket`.
+2.  Retrieve the three required data contexts using `GetDataContextForMarket`.
 3.  Perform all calculations from Step 1 & 2 for all horses using actual field names.
 4.  Follow the logic in Step 3 to determine the action.
 5.  Ensure market has > 1000 Euro `tradedVolume` total before betting.

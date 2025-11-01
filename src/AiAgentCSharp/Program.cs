@@ -7,13 +7,13 @@ try
     Console.WriteLine("\n\nTools available:");
 
     // MCP Client
-    IMcpClient mcpClient = await McpClientFactory.CreateAsync(
-            new SseClientTransport(
-                new SseClientTransportOptions
+    McpClient mcpClient = await McpClient.CreateAsync(
+            new HttpClientTransport(
+                new HttpClientTransportOptions
                 {
                     Name = "BfexplorerApp",
-                    Endpoint = new Uri("http://localhost:10043/sse"),
-                    TransportMode = HttpTransportMode.Sse
+                    Endpoint = new Uri("http://localhost:10043"),
+                    TransportMode = HttpTransportMode.StreamableHttp
                 }
             )
         );
@@ -31,8 +31,11 @@ try
         //AiAgentHelpers.CreateGithubChatClient("xai/grok-3");    
         //AiAgentHelpers.CreateGithubCopilotChatClient("openai/gpt-4.1");
         //AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
-        AiAgentHelpers.CreateAiHubMixChatClient("gpt-4.1");
+        //AiAgentHelpers.CreateAiHubMixChatClient("gpt-4.1");
         //AiAgentHelpers.CreateAiHubMixChatClient("gpt-5-nano");
+        //AiAgentHelpers.CreateCherryStudioChatClient("copilot:gpt-4.1");
+        //AiAgentHelpers.CreateCherryStudioChatClient("github:gpt-4o");
+        AiAgentHelpers.CreateCherryStudioChatClient("aihubmix:gpt-4o");
 
     string prompt = MyPrompts.ActiveBetfairMarket;
 

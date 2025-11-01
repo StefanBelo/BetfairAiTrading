@@ -5,8 +5,8 @@ Goal: Probability-first market evaluation + pressure (BLR) to decide IF and WHIC
 NEW (Auto Execution with Confirmation): When a single selection (the favorite) fully meets all execution criteria (sections 5–8 & common preconditions) produce a confirmation block. Only after explicit confirmation token is supplied (see Section 14) should the strategy execution API be called. No execution attempts if: opposition <50%, odds range invalid, signal ambiguity (two signals within 10% ProbΔ), low data (<10 candles), or pressure divergent unless Value signal.
 
 ## 1. Data Fetch
-1. GetActiveBetfairMarket
-2. GetDataContextForBetfairMarket("MarketSelectionsCandleStickData") → includes: candleStickData[], backLayRatio = backVolume/(backVolume+layVolume)
+1. GetActiveMarket
+2. GetDataContextForMarket("MarketSelectionsCandleStickData") → includes: candleStickData[], backLayRatio = backVolume/(backVolume+layVolume)
 
 ## 2. Core Formulas
 Probability = (1/Price)*100

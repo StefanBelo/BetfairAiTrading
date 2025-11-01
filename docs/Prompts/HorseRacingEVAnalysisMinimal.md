@@ -8,12 +8,12 @@ Task: Perform silent Expected Value (EV) analysis for horse racing betting oppor
 Instructions:
 
 1. **Silent Market Data Retrieval**
-   - Retrieve active betfair market using tool: GetActiveBetfairMarket
+   - Retrieve active betfair market using tool: GetActiveMarket
    - Save marketId for data retrieval
    - No output during collection
 
 2. **Silent Performance Data Collection**
-   - Retrieve data context 'RacingpostDataForHorses' using tool: GetDataContextForBetfairMarket
+   - Retrieve data context 'RacingpostDataForHorses' using tool: GetDataContextForMarket
    - Focus on 'racingpostHorseData' field within selectionsData
    - No output during collection
 

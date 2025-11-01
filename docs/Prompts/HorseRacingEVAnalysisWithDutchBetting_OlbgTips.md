@@ -9,13 +9,13 @@ Analyze expert tips, calculate expected values, select three optimal horses, and
 ## Automated Execution Workflow
 
 **CRITICAL: Execute all phases automatically without user intervention or intermediate prompts. Use ONLY the following MCP tools:**
-- `GetActiveBetfairMarket`: To retrieve the active market.
-- `GetDataContextForBetfairMarket`: To retrieve OLBG tips data (use dataContextName: "OlbgRaceTipsData").
+- `GetActiveMarket`: To retrieve the active market.
+- `GetDataContextForMarket`: To retrieve OLBG tips data (use dataContextName: "OlbgRaceTipsData").
 - `ExecuteBfexplorerStrategySettingsOnSelections`: To execute the Dutch betting strategy (use strategyName: "Dutch to profit 10 Euro").
 
 ### Phase 1: Data Collection (Silent)
-- Retrieve active betfair market using `GetActiveBetfairMarket`
-- Retrieve `OlbgRaceTipsData` data context for the market using `GetDataContextForBetfairMarket`
+- Retrieve active betfair market using `GetActiveMarket`
+- Retrieve `OlbgRaceTipsData` data context for the market using `GetDataContextForMarket`
 - Process all data silently
 
 ### Phase 2: Expert Tips Analysis (Silent)

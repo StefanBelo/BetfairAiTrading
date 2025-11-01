@@ -28,7 +28,7 @@ Analyze horse racing markets to identify the single best value betting opportuni
 
 #### Step 1: Get Active Betfair Market
 ```
-Use: GetActiveBetfairMarket
+Use: GetActiveMarket
 Purpose: Retrieve current market information including:
 - Market ID and basic details
 - All runners with current prices
@@ -38,7 +38,7 @@ Purpose: Retrieve current market information including:
 
 #### Step 2: Comprehensive Multi-Context Data Retrieval
 ```
-Use: GetAllDataContextForBetfairMarket
+Use: GetDataContextForMarket
 Parameters: 
 - dataContextNames: ["RacingpostDataForHorses", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData", "WeightOfMoneyData"]
 - marketId: [from Step 1]
@@ -573,7 +573,7 @@ NEXT ACTIONS:
 
 **Note**: This enhanced framework leverages four comprehensive data sources including Weight of Money analysis to identify exceptional value opportunities with increased accuracy and confidence. The enhanced criteria and cross-validation requirements will result in higher NO BET percentages but significantly improved success rates when selections are made.
 
-**CRITICAL REQUIREMENT**: ALL analyses must utilize GetAllDataContextForBetfairMarket with all four data contexts including "WeightOfMoneyData" and store results using SetAIAgentDataContextForBetfairMarket with dataContextName "HorseRacingR5_1_Analysis" for comprehensive multi-source model tracking and validation.
+**CRITICAL REQUIREMENT**: ALL analyses must utilize GetDataContextForMarket with all four data contexts including "WeightOfMoneyData" and store results using SetAIAgentDataContextForBetfairMarket with dataContextName "HorseRacingR5_1_Analysis" for comprehensive multi-source model tracking and validation.
 
 **Version**: R5.3 - Weight of Money Integration
 **Last Updated**: July 4, 2025

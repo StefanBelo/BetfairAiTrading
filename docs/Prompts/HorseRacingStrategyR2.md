@@ -219,7 +219,7 @@ CWAF = Market Confidence Factor × Price Movement Factor × Volume Factor × His
 ## Enhanced Execution Protocol - R2
 
 ### Pre-Execution Checklist
-1. ✓ Retrieve active market and selections using GetActiveBetfairMarket (SILENT)
+1. ✓ Retrieve active market and selections using GetActiveMarket (SILENT)
 2. ✓ Retrieve all three data contexts for the active market (SILENT)
 3. ✓ Calculate semantic form scores for all runners (SILENT)
 4. ✓ Apply ENHANCED prediction score threshold (98+) (SILENT)
@@ -230,7 +230,7 @@ CWAF = Market Confidence Factor × Price Movement Factor × Volume Factor × His
 9. ✓ Validate selection meets ALL enhanced criteria (SILENT)
 
 ### Enhanced Execution Steps
-1. **Active Market Identification**: Call GetActiveBetfairMarket (SILENT)
+1. **Active Market Identification**: Call GetActiveMarket (SILENT)
 2. **Data Collection**: Retrieve all three required data contexts (SILENT)
 3. **Race Type Classification**: Identify race type for dynamic threshold application (SILENT)
 4. **Market Timing Assessment**: Verify optimal betting window (25-35 min pre-race) (SILENT)

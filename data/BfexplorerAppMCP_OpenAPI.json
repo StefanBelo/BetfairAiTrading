@@ -174,7 +174,7 @@
                 }
             }
         },
-        "/GetDataContextForBetfairMarket": {
+        "/GetDataContextForMarket": {
             "post": {
                 "summary": "Getdatacontextforbetfairmarket",
                 "description": "Retrieves the data context for the betfair market in Bfexplorer.",
@@ -291,7 +291,7 @@
                 }
             }
         },
-        "/GetDataContextForBetfairMarketSelection": {
+        "/GetDataContextForMarketSelection": {
             "post": {
                 "summary": "Getdatacontextforbetfairmarketselection",
                 "description": "Retrieves the data context for the betfair market selection in Bfexplorer.",
@@ -425,7 +425,7 @@
                 }
             }
         },
-        "/GetAllDataContextForBetfairMarket": {
+        "/GetDataContextForMarket": {
             "post": {
                 "summary": "Getalldatacontextforbetfairmarket",
                 "description": "Retrieves all data context for the betfair market in Bfexplorer.",
@@ -464,7 +464,7 @@
                 }
             }
         },
-        "/GetActiveBetfairMarket": {
+        "/GetActiveMarket": {
             "post": {
                 "summary": "Getactivebetfairmarket",
                 "description": "Retrieves the currently active betfair market being monitored in Bfexplorer.",

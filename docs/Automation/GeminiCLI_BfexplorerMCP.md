@@ -48,7 +48,7 @@ Prompt: [`docs/Prompts/HorseRacingEVAnalysisMinimal.md`](/docs/Prompts/HorseRaci
 ### 3. Select or Create a Prompt
 - Use ready-made prompts from `docs/Prompts/` or write your own.
 - Prompts define:
-  - Data collection tools (e.g., `GetActiveBetfairMarket`, `GetDataContextForBetfairMarket`)
+  - Data collection tools (e.g., `GetActiveMarket`, `GetDataContextForMarket`)
   - Analysis logic (EV, form, probability)
   - Execution criteria and actions
 

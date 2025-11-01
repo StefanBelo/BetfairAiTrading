@@ -364,3 +364,6 @@ src/AiAgentPython/fastagent.secrets.yaml
 src/AiAgentPython/fastagent.jsonl
 reddit_post.md
 .vscode/settings.json
+src/AiAgentPython/Test.http
+.claude/settings.local.json
+.mcp.json

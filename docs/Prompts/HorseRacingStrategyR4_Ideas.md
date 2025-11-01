@@ -19,7 +19,7 @@ Analyze horse racing markets to identify the single best value betting opportuni
 
 #### Step 1: Get Active Betfair Market
 ```
-Use: GetActiveBetfairMarket
+Use: GetActiveMarket
 Purpose: Retrieve current market information including:
 - Market ID and basic details
 - All runners with current prices
@@ -29,7 +29,7 @@ Purpose: Retrieve current market information including:
 
 #### Step 2: Retrieve Racing Post Data
 ```
-Use: GetDataContextForBetfairMarket
+Use: GetDataContextForMarket
 Parameters: 
 - dataContextName: "RacingpostDataForHorses" 
 - marketId: [from Step 1]

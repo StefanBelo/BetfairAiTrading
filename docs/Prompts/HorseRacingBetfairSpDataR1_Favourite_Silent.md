@@ -9,7 +9,7 @@
 - BACK if: eVforPriceOrBetfairSP > 0 AND bspEvNet > -0.02
 - LAY if: candidate criteria NOT met
 
-**Tools**: `get_active_betfair_market` → `get_data_context_for_betfair_market` (dataContextName: "BetfairSpData") → `execute_bfexplorer_strategy_settings`
+**Tools**: `get_active_market` → `get_all_data_context_for_market` (dataContextName: "BetfairSpData") → `execute_bfexplorer_strategy_settings`
 
 ## Execution Command
 
@@ -17,7 +17,7 @@
 1. Get active betfair market to obtain market ID
 2. Use market ID to retrieve "BetfairSpData" context for that specific market
 3. Calculate BSP metrics for favourite
-4. Execute appropriate strategy (Bet 10 Euro/Lay 10 Euro) on the favourite
+4. Execute appropriate strategy ("Bet 10 Euro" or "Lay 10 Euro") on the favourite
 5. Report only execution result
 ```
 

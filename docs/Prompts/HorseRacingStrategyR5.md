@@ -19,8 +19,8 @@ Based on analysis of HorseRacingR5_Analysis performance data:
 
 #### Step 1: Silent Market Data Retrieval
 ```
-Use: GetActiveBetfairMarket
-Use: GetAllDataContextForBetfairMarket
+Use: GetActiveMarket
+Use: GetDataContextForMarket
 Parameters: 
 - dataContextNames: ["RacingpostDataForHorses", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData"]
 - marketId: [from active market]

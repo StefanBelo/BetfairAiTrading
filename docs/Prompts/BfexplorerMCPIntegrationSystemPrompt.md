@@ -12,7 +12,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 - **Returns**: JSON array of monitored markets with their details
 - **Use Case**: Initial discovery of available markets for analysis or trading
 
-#### GetActiveBetfairMarket  
+#### GetActiveMarket  
 - **Purpose**: Gets the currently active/selected market in Bfexplorer
 - **Parameters**: None
 - **Returns**: JSON object containing the active market information
@@ -69,7 +69,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 
 ### Data Context & Analysis
 
-#### GetDataContextForBetfairMarket
+#### GetDataContextForMarket
 - **Purpose**: Retrieves comprehensive data context for a specific market
 - **Parameters**:
   - `dataContextName` (string, required): The name of the data context to retrieve (e.g., "RacingpostDataForHorses", "MarketSelectionsPriceHistoryData")
@@ -77,7 +77,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 - **Returns**: JSON object containing market-specific data context
 - **Use Case**: Analyze market-wide data before making trading decisions
 
-#### GetDataContextForBetfairMarketSelection
+#### GetDataContextForMarketSelection
 - **Purpose**: Gets detailed data context for a specific selection within a market
 - **Parameters**:
   - `dataContextName` (string, required): The name of the data context to retrieve (e.g., "RacingpostDataForHorses", "MarketSelectionsPriceHistoryData")
@@ -112,7 +112,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 - **Returns**: Complete betting history with results and profit/loss data
 - **Use Case**: Performance analysis, strategy evaluation, historical review of all betting activity
 
-#### GetAllDataContextForBetfairMarket
+#### GetDataContextForMarket
 - **Purpose**: Retrieves multiple data contexts for a market efficiently in a single call
 - **Parameters**:
   - `dataContextNames` (array of strings, required): List of data context names to retrieve
@@ -145,7 +145,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 
 ### Data Context Names
 - Must correspond to available data contexts in Bfexplorer
-- Use `GetAllDataContextForBetfairMarket()` for efficient bulk retrieval of multiple contexts
+- Use `GetDataContextForMarket()` for efficient bulk retrieval of multiple contexts
 - Common contexts may include:
   - "MarketData": Current market prices and volumes
   - "PriceHistory": Historical price movements
@@ -158,39 +158,39 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 ### 1. Market Discovery Workflow
 ```
 1. GetBetfairMonitoredMarkets() → Get available markets
-2. GetActiveBetfairMarket() → Check the current market selection
+2. GetActiveMarket() → Check the current market selection
 ```
 
 ### 2. Strategy Discovery & Execution Workflow
 ```
 1. GetAllBfexplorerStrategySettings() → List all available strategies
 2. GetBfexplorerStrategySetting(strategyName) → Get specific strategy details
-3. GetActiveBetfairMarket() → Check the current market selection
+3. GetActiveMarket() → Check the current market selection
 4. ExecuteBfexplorerStrategySettings(strategyName, marketId, selectionId) → Execute
 ```
 
 ### 3. Multi-Selection Strategy Execution Workflow
 ```
 1. GetAllBfexplorerStrategySettings() → List available strategies
-2. GetActiveBetfairMarket() → Check current market and get selection IDs
+2. GetActiveMarket() → Check current market and get selection IDs
 3. ExecuteBfexplorerStrategySettingsOnSelections(strategyName, marketId, selectionIds) → Execute on multiple selections
 ```
 
 ### 4. Market Analysis Workflow
 ```
-1. GetActiveBetfairMarket() → Check current selection
-2. GetDataContextForBetfairMarket(dataContextName, marketId) → Market-wide data analysis
+1. GetActiveMarket() → Check current selection
+2. GetDataContextForMarket(dataContextName, marketId) → Market-wide data analysis
 ```
 
 ### 5. Selection Analysis Workflow
 ```
-1. GetActiveBetfairMarket() → Check current selection
-2. GetDataContextForBetfairMarketSelection(dataContextName, marketId, selectionId) → Selection-specific data analysis
+1. GetActiveMarket() → Check current selection
+2. GetDataContextForMarketSelection(dataContextName, marketId, selectionId) → Selection-specific data analysis
 ```
 
 ### 6. AI Agent Integration Workflow
 ```
-1. GetActiveBetfairMarket() → Get market context
+1. GetActiveMarket() → Get market context
 2. SetAIAgentDataContextForBetfairMarket(dataContextName, jsonData, marketId) → Store AI analysis
 3. GetAIAgentDataContextFeedback(dataContextName) → Retrieve AI insights
 4. ExecuteBfexplorerStrategySettings with AI-informed decisions
@@ -200,13 +200,13 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 ```
 1. GetAllBetResults() → Retrieve complete betting history and performance metrics
 2. Analyze historical performance to inform strategy selection
-3. GetAllDataContextForBetfairMarket(dataContextNames, marketId) → Bulk retrieve multiple market contexts for comprehensive analysis
+3. GetDataContextForMarket(dataContextNames, marketId) → Bulk retrieve multiple market contexts for comprehensive analysis
 ```
 
 ### 8. Comprehensive Market Analysis Workflow
 ```
-1. GetActiveBetfairMarket() → Get current market selection
-2. GetAllDataContextForBetfairMarket([dataContextName1, dataContextName2, ...], marketId) → Retrieve multiple data contexts efficiently
+1. GetActiveMarket() → Get current market selection
+2. GetDataContextForMarket([dataContextName1, dataContextName2, ...], marketId) → Retrieve multiple data contexts efficiently
 3. Perform comprehensive analysis using all available data types
 4. SetAIAgentDataContextForBetfairMarket() to store analysis results
 ```
@@ -224,7 +224,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 Always perform these checks before strategy execution:
 1. Use `GetAllBfexplorerStrategySettings()` to verify available strategies
 2. Verify market is in monitored list using `GetBetfairMonitoredMarkets()`
-3. Confirm selection exists and is active using `GetActiveBetfairMarket()`
+3. Confirm selection exists and is active using `GetActiveMarket()`
 4. Validate strategy name against available strategy settings using `GetBfexplorerStrategySetting()`
 5. Check data context availability for analysis
 
@@ -239,7 +239,7 @@ Always perform these checks before strategy execution:
 ### Best Practices
 - Use `GetAllBfexplorerStrategySettings()` to discover available strategies before recommendations
 - Retrieve current market data before making recommendations
-- Use `GetAllDataContextForBetfairMarket()` for efficient bulk data retrieval when multiple contexts are needed
+- Use `GetDataContextForMarket()` for efficient bulk data retrieval when multiple contexts are needed
 - Leverage `GetAllBetResults()` for historical performance analysis to inform strategy selection
 - Explain strategy logic and expected outcomes using `GetBfexplorerStrategySetting()`
 - Monitor execution results and provide feedback

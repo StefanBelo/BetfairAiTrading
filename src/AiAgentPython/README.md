@@ -139,13 +139,13 @@ The agents support multiple AI model providers:
 The agents have access to these MCP tools through BfexplorerApp:
 
 ### Market Management
-- `GetActiveBetfairMarket`: Retrieve currently active market
+- `GetActiveMarket`: Retrieve currently active market
 - `GetBetfairMonitoredMarkets`: List all monitored markets
 - `ActivateBetfairMarketSelection`: Activate specific market/selection
 
 ### Data Retrieval
-- `GetDataContextForBetfairMarket`: Retrieve market-specific data
-- `GetDataContextForBetfairMarketSelection`: Get selection-specific information
+- `GetDataContextForMarket`: Retrieve market-specific data
+- `GetDataContextForMarketSelection`: Get selection-specific information
 
 ### Strategy Execution
 - `ExecuteBfexplorerStrategySettings`: Execute strategy on selection

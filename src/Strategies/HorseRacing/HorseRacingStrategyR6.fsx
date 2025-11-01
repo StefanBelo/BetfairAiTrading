@@ -52,7 +52,7 @@ module BfexplorerApp =
         Volume: float
     }
 
-    let GetAllDataContextForBetfairMarket (contextNames: string[], marketId: string) = 
+    let GetDataContextForMarket (contextNames: string[], marketId: string) = 
         // Implementation would call MCP server
         [||]
 
@@ -60,7 +60,7 @@ module BfexplorerApp =
         // Implementation would call MCP server
         ()
 
-    let GetActiveBetfairMarket () =
+    let GetActiveMarket () =
         // Implementation would call MCP server
         { MarketId = ""; Volume = 0.0 }
 
@@ -119,7 +119,7 @@ let calculateEnhancedEV (horse:HorseData) =
 // Main execution logic
 let executeStrategy (marketId:string) =
     // Get required data contexts
-    let dataContexts = BfexplorerApp.GetAllDataContextForBetfairMarket([|"RacingpostDataForHorses"; "HorsesBaseBetfairFormData"; "MarketSelectionsTradedPricesData"|], marketId)
+    let dataContexts = BfexplorerApp.GetDataContextForMarket([|"RacingpostDataForHorses"; "HorsesBaseBetfairFormData"; "MarketSelectionsTradedPricesData"|], marketId)
     
     // Transform data into HorseData records
     let horses = dataContexts |> Array.map (fun ctx ->
@@ -183,6 +183,6 @@ let executeStrategy (marketId:string) =
             BfexplorerApp.ExecuteBfexplorerStrategySettings("Bet 10 Euro", marketId, bestHorse.SelectionId)
 
 // Main entry point
-let market = BfexplorerApp.GetActiveBetfairMarket()
+let market = BfexplorerApp.GetActiveMarket()
 if market.Volume > 1000.0 then
     executeStrategy market.MarketId

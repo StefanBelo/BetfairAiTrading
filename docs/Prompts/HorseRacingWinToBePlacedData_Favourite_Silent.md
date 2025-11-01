@@ -10,7 +10,7 @@
 - BACK if: place_momentum < -0.1 AND win_momentum >= -0.05 AND divergence < -5%
 - LAY if: place_momentum > 0.1 AND win_momentum < -0.1 AND current_win < 3.0 AND divergence > 5%
 
-**Tools**: `get_active_betfair_market` → `get_data_context_for_betfair_market` (dataContextName: "HorseRacingWinToBePlacedData") → `execute_bfexplorer_strategy_settings`
+**Tools**: `get_active_market` → `get_all_data_context_for_market` (dataContextName: "HorseRacingWinToBePlacedData") → `execute_bfexplorer_strategy_settings`
 
 ## Execution Command
 

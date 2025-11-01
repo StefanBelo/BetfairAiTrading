@@ -324,7 +324,7 @@ Where Probability Movement Adjustment:
 ## Execution Protocol
 
 ### Pre-Execution Checklist
-1. ✓ Retrieve active market and selections using GetActiveBetfairMarket (SILENT)
+1. ✓ Retrieve active market and selections using GetActiveMarket (SILENT)
 2. ✓ Retrieve all three data contexts for the active market (SILENT)
 3. ✓ Calculate semantic form scores for all runners from race descriptions (SILENT)
 4. ✓ Calculate composite scores for all runners (SILENT)
@@ -334,7 +334,7 @@ Where Probability Movement Adjustment:
 8. ✓ Confirm adequate market liquidity (SILENT)
 
 ### Execution Steps
-1. **Active Market Identification**: Call GetActiveBetfairMarket to get current race and selections (SILENT)
+1. **Active Market Identification**: Call GetActiveMarket to get current race and selections (SILENT)
 2. **Data Collection**: Retrieve all three required data contexts for the active market (SILENT)
 3. **Semantic Analysis**: Analyze LastRacesDescription for each horse (SILENT)
 4. **Scoring**: Calculate semantic form scores and composite scores (SILENT)

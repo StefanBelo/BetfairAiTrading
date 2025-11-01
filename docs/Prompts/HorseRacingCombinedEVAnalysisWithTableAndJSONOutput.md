@@ -8,12 +8,12 @@ Task: Perform comprehensive Expected Value (EV) analysis for horse racing bettin
 Instructions:
 
 1. **Market Data Retrieval**
-   - Retrieve the active betfair market in BfexplorerApp using tool: GetActiveBetfairMarket
+   - Retrieve the active betfair market in BfexplorerApp using tool: GetActiveMarket
    - Save marketId for subsequent data retrieval
    - Make no preliminary reports during data collection
 
 2. **Multi-Context Data Collection**
-   - Retrieve all required data contexts for the betfair market in a single call using tool: GetAllDataContextForBetfairMarket
+   - Retrieve all required data contexts for the betfair market in a single call using tool: GetDataContextForMarket
    - Use the following data context names: 'MarketSelectionsTradedPricesData', 'RacingpostDataForHorses'
    - Focus on 'tradedPricesData' field from trading context and 'horsesData' field from racing post context
    - Do not make any reports during data collection phase

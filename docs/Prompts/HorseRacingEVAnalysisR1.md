@@ -4,11 +4,11 @@ This prompt guides the analysis of horse racing data to calculate the Expected V
 
 ## Step 1: Retrieve Active Market Data
 
-First, identify the active horse racing market using the `GetActiveBetfairMarket` tool. This will provide the `marketId` and a list of selections (horses) with their current odds.
+First, identify the active horse racing market using the `GetActiveMarket` tool. This will provide the `marketId` and a list of selections (horses) with their current odds.
 
 ## Step 2: Retrieve Detailed Horse Information
 
-With the `marketId` from the previous step, use the `GetAllDataContextForBetfairMarket` tool with `dataContextNames` set to `['RacingpostDataForHorses']`. This will return detailed information for each horse in the `racingpostHorseData` field, including:
+With the `marketId` from the previous step, use the `GetDataContextForMarket` tool with `dataContextNames` set to `['RacingpostDataForHorses']`. This will return detailed information for each horse in the `racingpostHorseData` field, including:
   - `lastRaces`: Array of recent races, each with `beatenDistance`, `distance`, `lastRunInDays`, `position`, `raceDescription`, `topspeed`, and `weightCarried`.
   - `officialRating`: Official handicap rating.
   - `rpRating`: Racing Post rating.

@@ -1,81 +1,1092 @@
 {
-    "decision": "BACK",
-    "selectedHorse": "Silkies Sib",
-    "ev": 100,
-    "odds": 25,
-    "reason": "Highest EV >=10% with 100% data completeness (tied with others)",
-    "horseData": [
+    "Results": [
         {
-            "name": "Tickling",
-            "score": 85.7,
-            "marketShare": 14.8,
-            "baseEV": -53.9,
-            "finalEV": -56.4,
-            "sentiment": "Positive"
+            "marketId": "1.248980447",
+            "eventName": "Market Rasen",
+            "marketName": "2m3f Nov Hcap Chs",
+            "dataCompleteness": 87.5,
+            "horses": [
+                {
+                    "name": "Grain Trade",
+                    "selectionId": "53953668_0.00",
+                    "isWinner": true,
+                    "odds": 2.8000,
+                    "sentimentScore": 0.0000,
+                    "timeformScore": 0.3000,
+                    "combinedScore": 0.1500,
+                    "estimatedProbability": 0.5750,
+                    "expectedValue": 0.2000,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": null,
+                        "middleWeightedPos": null,
+                        "closingWeightedPos": 50.0000,
+                        "totalPosPoints": 50,
+                        "totalNegPoints": 50
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 3,
+                        "baseScore": 0.3000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 0,
+                        "suitabilitySubscore": 0.0000,
+                        "trainerJockeyGroupCount": 0,
+                        "trainerJockeySubscore": 0.0000,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Independent Jimmy",
+                    "selectionId": "63615627_0.00",
+                    "isWinner": false,
+                    "odds": 13.5000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.5625,
+                    "combinedScore": 0.7813,
+                    "estimatedProbability": 0.8906,
+                    "expectedValue": 10.9332,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 50.0000,
+                        "closingWeightedPos": 30.0000,
+                        "totalPosPoints": 100,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 5,
+                        "baseScore": 0.5000,
+                        "formGroupCount": 1,
+                        "formSubscore": 0.0200,
+                        "suitabilityGroupCount": 1,
+                        "suitabilitySubscore": 0.0175,
+                        "trainerJockeyGroupCount": 2,
+                        "trainerJockeySubscore": 0.0250,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "I Am Rocco",
+                    "selectionId": "42564681_0.00",
+                    "isWinner": false,
+                    "odds": 2.5000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.4375,
+                    "combinedScore": 0.7188,
+                    "estimatedProbability": 0.8594,
+                    "expectedValue": 0.6088,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 10.0000,
+                        "middleWeightedPos": 50.0000,
+                        "closingWeightedPos": 30.0000,
+                        "totalPosPoints": 90,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 4,
+                        "baseScore": 0.4000,
+                        "formGroupCount": 1,
+                        "formSubscore": 0.0200,
+                        "suitabilityGroupCount": 1,
+                        "suitabilitySubscore": 0.0175,
+                        "trainerJockeyGroupCount": 0,
+                        "trainerJockeySubscore": 0.0000,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Great Ballinboris",
+                    "selectionId": "42274255_0.00",
+                    "isWinner": false,
+                    "odds": 9.2000,
+                    "sentimentScore": 0.3333,
+                    "timeformScore": 0.3425,
+                    "combinedScore": 0.3379,
+                    "estimatedProbability": 0.6689,
+                    "expectedValue": 5.0976,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 10.0000,
+                        "middleWeightedPos": 50.0000,
+                        "closingWeightedPos": 0.0000,
+                        "totalPosPoints": 60,
+                        "totalNegPoints": 30
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 3,
+                        "baseScore": 0.3000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 1,
+                        "suitabilitySubscore": 0.0175,
+                        "trainerJockeyGroupCount": 2,
+                        "trainerJockeySubscore": 0.0250,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Wild Nephin",
+                    "selectionId": "76934889_0.00",
+                    "isWinner": false,
+                    "odds": 65.0000,
+                    "sentimentScore": -0.6000,
+                    "timeformScore": 0.2125,
+                    "combinedScore": -0.1938,
+                    "estimatedProbability": 0.4031,
+                    "expectedValue": 25.3234,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 10.0000,
+                        "middleWeightedPos": 0.0000,
+                        "closingWeightedPos": 0.0000,
+                        "totalPosPoints": 10,
+                        "totalNegPoints": 40
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 2,
+                        "baseScore": 0.2000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 0,
+                        "suitabilitySubscore": 0.0000,
+                        "trainerJockeyGroupCount": 1,
+                        "trainerJockeySubscore": 0.0125,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Liloo Dores",
+                    "selectionId": "38914915_0.00",
+                    "isWinner": false,
+                    "odds": 42.0000,
+                    "sentimentScore": null,
+                    "timeformScore": null,
+                    "combinedScore": null,
+                    "estimatedProbability": null,
+                    "expectedValue": null,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": null,
+                        "middleWeightedPos": null,
+                        "closingWeightedPos": null,
+                        "totalPosPoints": null,
+                        "totalNegPoints": null
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": null,
+                        "baseScore": null,
+                        "formGroupCount": null,
+                        "formSubscore": null,
+                        "suitabilityGroupCount": null,
+                        "suitabilitySubscore": null,
+                        "trainerJockeyGroupCount": null,
+                        "trainerJockeySubscore": null,
+                        "negativeFlagsCount": null,
+                        "negativeAdjustment": null
+                    }
+                },
+                {
+                    "name": "Jackhammer",
+                    "selectionId": "11321569_0.00",
+                    "isWinner": false,
+                    "odds": 34.0000,
+                    "sentimentScore": 0.0000,
+                    "timeformScore": 0.1175,
+                    "combinedScore": 0.0588,
+                    "estimatedProbability": 0.5294,
+                    "expectedValue": 17.5040,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": null,
+                        "middleWeightedPos": null,
+                        "closingWeightedPos": 0.0000,
+                        "totalPosPoints": 0,
+                        "totalNegPoints": 60
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 1,
+                        "baseScore": 0.1000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 1,
+                        "suitabilitySubscore": 0.0175,
+                        "trainerJockeyGroupCount": 0,
+                        "trainerJockeySubscore": 0.0000,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Across The Ocean",
+                    "selectionId": "13301529_0.00",
+                    "isWinner": false,
+                    "odds": 1000.0000,
+                    "sentimentScore": 0.0000,
+                    "timeformScore": 0.1000,
+                    "combinedScore": 0.0500,
+                    "estimatedProbability": 0.5250,
+                    "expectedValue": 524.2500,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": null,
+                        "middleWeightedPos": null,
+                        "closingWeightedPos": 0.0000,
+                        "totalPosPoints": 0,
+                        "totalNegPoints": 60
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 1,
+                        "baseScore": 0.1000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 0,
+                        "suitabilitySubscore": 0.0000,
+                        "trainerJockeyGroupCount": 0,
+                        "trainerJockeySubscore": 0.0000,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                }
+            ],
+            "fieldStatistics": {
+                "totalHorses": 8,
+                "dataCompleteness": "87.5% (7/8)",
+                "highestCombinedScore": 0.7813,
+                "highestHorseName": "Independent Jimmy",
+                "fieldAverageCombinedScore": 0.3379,
+                "combinedScoreGap": 0.7813,
+                "sentimentTimeformCorrelation": 0.92
+            }
         },
         {
-            "name": "Spy",
-            "score": 93.4,
-            "marketShare": 16.1,
-            "baseEV": -55.4,
-            "finalEV": -63.1,
-            "sentiment": "Positive"
+            "marketId": "1.248980730",
+            "eventName": "Leicester",
+            "marketName": "1m Hcap",
+            "dataCompleteness": 100.0,
+            "horses": [
+                {
+                    "name": "Susie Sioux",
+                    "selectionId": "84879198_0.00",
+                    "isWinner": true,
+                    "odds": 3.2000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.5300,
+                    "combinedScore": 0.7650,
+                    "estimatedProbability": 0.8825,
+                    "expectedValue": 1.7355,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 50.0000,
+                        "middleWeightedPos": null,
+                        "closingWeightedPos": 50.0000,
+                        "totalPosPoints": 200,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 5,
+                        "baseScore": 0.5000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 1,
+                        "suitabilitySubscore": 0.0175,
+                        "trainerJockeyGroupCount": 1,
+                        "trainerJockeySubscore": 0.0125,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Beaming Light",
+                    "selectionId": "61496699_0.00",
+                    "isWinner": false,
+                    "odds": 4.3000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.3350,
+                    "combinedScore": 0.6675,
+                    "estimatedProbability": 0.8338,
+                    "expectedValue": 2.0002,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 25.0000,
+                        "closingWeightedPos": 30.0000,
+                        "totalPosPoints": 75,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 3,
+                        "baseScore": 0.3000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 2,
+                        "suitabilitySubscore": 0.0350,
+                        "trainerJockeyGroupCount": 0,
+                        "trainerJockeySubscore": 0.0000,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Just Typical",
+                    "selectionId": "67203810_0.00",
+                    "isWinner": false,
+                    "odds": 5.4000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.3550,
+                    "combinedScore": 0.6775,
+                    "estimatedProbability": 0.8388,
+                    "expectedValue": 3.0382,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 50.0000,
+                        "closingWeightedPos": 30.0000,
+                        "totalPosPoints": 100,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 4,
+                        "baseScore": 0.4000,
+                        "formGroupCount": 1,
+                        "formSubscore": 0.0200,
+                        "suitabilityGroupCount": 2,
+                        "suitabilitySubscore": 0.0350,
+                        "trainerJockeyGroupCount": 0,
+                        "trainerJockeySubscore": 0.0000,
+                        "negativeFlagsCount": 1,
+                        "negativeAdjustment": -0.1000
+                    }
+                },
+                {
+                    "name": "Arkenstaar",
+                    "selectionId": "47826341_0.00",
+                    "isWinner": false,
+                    "odds": 16.0000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.4750,
+                    "combinedScore": 0.7375,
+                    "estimatedProbability": 0.8688,
+                    "expectedValue": 12.3775,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 25.0000,
+                        "closingWeightedPos": 30.0000,
+                        "totalPosPoints": 75,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 4,
+                        "baseScore": 0.4000,
+                        "formGroupCount": 2,
+                        "formSubscore": 0.0400,
+                        "suitabilityGroupCount": 2,
+                        "suitabilitySubscore": 0.0350,
+                        "trainerJockeyGroupCount": 0,
+                        "trainerJockeySubscore": 0.0000,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Tropez Power",
+                    "selectionId": "39726202_0.00",
+                    "isWinner": false,
+                    "odds": 12.0000,
+                    "sentimentScore": 0.0769,
+                    "timeformScore": 0.3350,
+                    "combinedScore": 0.2059,
+                    "estimatedProbability": 0.6029,
+                    "expectedValue": 6.1281,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 10.0000,
+                        "middleWeightedPos": 25.0000,
+                        "closingWeightedPos": 0.0000,
+                        "totalPosPoints": 35,
+                        "totalNegPoints": 30
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 3,
+                        "baseScore": 0.3000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 2,
+                        "suitabilitySubscore": 0.0350,
+                        "trainerJockeyGroupCount": 0,
+                        "trainerJockeySubscore": 0.0000,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Didaar",
+                    "selectionId": "71352623_0.00",
+                    "isWinner": false,
+                    "odds": 12.0000,
+                    "sentimentScore": -0.9091,
+                    "timeformScore": 0.3175,
+                    "combinedScore": -0.2958,
+                    "estimatedProbability": 0.3521,
+                    "expectedValue": -3.9457,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 5.0000,
+                        "middleWeightedPos": 0.0000,
+                        "closingWeightedPos": 0.0000,
+                        "totalPosPoints": 5,
+                        "totalNegPoints": 55
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 3,
+                        "baseScore": 0.3000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 1,
+                        "suitabilitySubscore": 0.0175,
+                        "trainerJockeyGroupCount": 0,
+                        "trainerJockeySubscore": 0.0000,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Cypriot Diaspora",
+                    "selectionId": "57026644_0.00",
+                    "isWinner": false,
+                    "odds": 50.0000,
+                    "sentimentScore": -0.2000,
+                    "timeformScore": 0.2300,
+                    "combinedScore": 0.0150,
+                    "estimatedProbability": 0.5075,
+                    "expectedValue": 22.0250,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 0.0000,
+                        "closingWeightedPos": 0.0000,
+                        "totalPosPoints": 20,
+                        "totalNegPoints": 30
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 2,
+                        "baseScore": 0.2000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 1,
+                        "suitabilitySubscore": 0.0175,
+                        "trainerJockeyGroupCount": 1,
+                        "trainerJockeySubscore": 0.0125,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Sant Alessio",
+                    "selectionId": "61804086_0.00",
+                    "isWinner": false,
+                    "odds": 38.0000,
+                    "sentimentScore": 0.1667,
+                    "timeformScore": 0.3600,
+                    "combinedScore": 0.2634,
+                    "estimatedProbability": 0.6317,
+                    "expectedValue": 23.5128,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 0.0000,
+                        "closingWeightedPos": 15.0000,
+                        "totalPosPoints": 35,
+                        "totalNegPoints": 25
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 3,
+                        "baseScore": 0.3000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 2,
+                        "suitabilitySubscore": 0.0350,
+                        "trainerJockeyGroupCount": 2,
+                        "trainerJockeySubscore": 0.0250,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                }
+            ],
+            "fieldStatistics": {
+                "totalHorses": 8,
+                "dataCompleteness": "100% (8/8)",
+                "highestCombinedScore": 0.7650,
+                "highestHorseName": "Susie Sioux",
+                "fieldAverageCombinedScore": 0.3902,
+                "combinedScoreGap": 1.0608,
+                "sentimentTimeformCorrelation": 0.89
+            }
         },
         {
-            "name": "Charlie Brown",
-            "score": 61.8,
-            "marketShare": 10.7,
-            "baseEV": -70.7,
-            "finalEV": -67.2,
-            "sentiment": "Neutral"
+            "marketId": "1.248980440",
+            "eventName": "Market Rasen",
+            "marketName": "2m5f Hcap Chs",
+            "dataCompleteness": 100.0,
+            "horses": [
+                {
+                    "name": "Nickelforce",
+                    "selectionId": "50540107_0.00",
+                    "isWinner": false,
+                    "odds": 4.3000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.4375,
+                    "combinedScore": 0.7188,
+                    "estimatedProbability": 0.8594,
+                    "expectedValue": 2.1041,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 100.0000,
+                        "middleWeightedPos": null,
+                        "closingWeightedPos": 100.0000,
+                        "totalPosPoints": 200,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 4,
+                        "baseScore": 0.4000,
+                        "formGroupCount": 1,
+                        "formSubscore": 0.0200,
+                        "suitabilityGroupCount": 1,
+                        "suitabilitySubscore": 0.0175,
+                        "trainerJockeyGroupCount": 0,
+                        "trainerJockeySubscore": 0.0000,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Sure Touch",
+                    "selectionId": "110631_0.00",
+                    "isWinner": true,
+                    "odds": 4.6000,
+                    "sentimentScore": 0.4118,
+                    "timeformScore": 0.4775,
+                    "combinedScore": 0.4447,
+                    "estimatedProbability": 0.7223,
+                    "expectedValue": 1.5043,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 25.0000,
+                        "closingWeightedPos": 15.0000,
+                        "totalPosPoints": 60,
+                        "totalNegPoints": 25
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 4,
+                        "baseScore": 0.4000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 3,
+                        "suitabilitySubscore": 0.0525,
+                        "trainerJockeyGroupCount": 2,
+                        "trainerJockeySubscore": 0.0250,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Chief Black Robe",
+                    "selectionId": "39693054_0.00",
+                    "isWinner": false,
+                    "odds": 5.1000,
+                    "sentimentScore": 0.4118,
+                    "timeformScore": 0.3650,
+                    "combinedScore": 0.3884,
+                    "estimatedProbability": 0.6942,
+                    "expectedValue": 1.6301,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 25.0000,
+                        "closingWeightedPos": 15.0000,
+                        "totalPosPoints": 60,
+                        "totalNegPoints": 25
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 3,
+                        "baseScore": 0.3000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 3,
+                        "suitabilitySubscore": 0.0525,
+                        "trainerJockeyGroupCount": 1,
+                        "trainerJockeySubscore": 0.0125,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Lunar Discovery",
+                    "selectionId": "44795839_0.00",
+                    "isWinner": false,
+                    "odds": 6.4000,
+                    "sentimentScore": 0.5000,
+                    "timeformScore": 0.5375,
+                    "combinedScore": 0.5188,
+                    "estimatedProbability": 0.7594,
+                    "expectedValue": 2.5156,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 25.0000,
+                        "closingWeightedPos": 30.0000,
+                        "totalPosPoints": 75,
+                        "totalNegPoints": 25
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 5,
+                        "baseScore": 0.5000,
+                        "formGroupCount": 1,
+                        "formSubscore": 0.0200,
+                        "suitabilityGroupCount": 1,
+                        "suitabilitySubscore": 0.0175,
+                        "trainerJockeyGroupCount": 0,
+                        "trainerJockeySubscore": 0.0000,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Lermoos Legend",
+                    "selectionId": "24462869_0.00",
+                    "isWinner": false,
+                    "odds": 8.0000,
+                    "sentimentScore": 0.2000,
+                    "timeformScore": 0.2725,
+                    "combinedScore": 0.2363,
+                    "estimatedProbability": 0.6181,
+                    "expectedValue": 2.4375,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 25.0000,
+                        "closingWeightedPos": 0.0000,
+                        "totalPosPoints": 45,
+                        "totalNegPoints": 30
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 3,
+                        "baseScore": 0.3000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 2,
+                        "suitabilitySubscore": 0.0350,
+                        "trainerJockeyGroupCount": 3,
+                        "trainerJockeySubscore": 0.0375,
+                        "negativeFlagsCount": 1,
+                        "negativeAdjustment": -0.1000
+                    }
+                },
+                {
+                    "name": "Malaita",
+                    "selectionId": "39235824_0.00",
+                    "isWinner": false,
+                    "odds": 15.0000,
+                    "sentimentScore": 0.0000,
+                    "timeformScore": 0.2300,
+                    "combinedScore": 0.1150,
+                    "estimatedProbability": 0.5575,
+                    "expectedValue": 7.2594,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 10.0000,
+                        "middleWeightedPos": 0.0000,
+                        "closingWeightedPos": 15.0000,
+                        "totalPosPoints": 25,
+                        "totalNegPoints": 25
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 2,
+                        "baseScore": 0.2000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 1,
+                        "suitabilitySubscore": 0.0175,
+                        "trainerJockeyGroupCount": 1,
+                        "trainerJockeySubscore": 0.0125,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                }
+            ],
+            "fieldStatistics": {
+                "totalHorses": 6,
+                "dataCompleteness": "100% (6/6)",
+                "highestCombinedScore": 0.7188,
+                "highestHorseName": "Nickelforce",
+                "fieldAverageCombinedScore": 0.4038,
+                "combinedScoreGap": 0.6038,
+                "sentimentTimeformCorrelation": 0.85
+            }
         },
         {
-            "name": "Nancee Spain",
-            "score": 84.8,
-            "marketShare": 14.6,
-            "baseEV": 11.0,
-            "finalEV": 11.5,
-            "sentiment": "Positive"
-        },
-        {
-            "name": "Wayside Lady",
-            "score": 36.4,
-            "marketShare": 6.3,
-            "baseEV": -2.9,
-            "finalEV": -2.6,
-            "sentiment": "Negative"
-        },
-        {
-            "name": "Share The Treasure",
-            "score": 61.8,
-            "marketShare": 10.7,
-            "baseEV": 38.5,
-            "finalEV": 36.6,
-            "sentiment": "Neutral"
-        },
-        {
-            "name": "Silkies Sib",
-            "score": 48.0,
-            "marketShare": 8.3,
-            "baseEV": 106.8,
-            "finalEV": 100.0,
-            "sentiment": "Negative"
-        },
-        {
-            "name": "Highway Sixty One",
-            "score": 48.0,
-            "marketShare": 8.3,
-            "baseEV": 100.0,
-            "finalEV": 100.0,
-            "sentiment": "Negative"
-        },
-        {
-            "name": "Shakita",
-            "score": 60.6,
-            "marketShare": 10.4,
-            "baseEV": 100.0,
-            "finalEV": 95.0,
-            "sentiment": "Neutral"
+            "marketId": "1.248980787",
+            "eventName": "Lingfield",
+            "marketName": "1m Hcap",
+            "dataCompleteness": 100.0,
+            "horses": [
+                {
+                    "name": "Indian Spirit",
+                    "selectionId": "1157768_0.00",
+                    "isWinner": false,
+                    "odds": 3.9000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.5300,
+                    "combinedScore": 0.7650,
+                    "estimatedProbability": 0.8825,
+                    "expectedValue": 2.4359,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 50.0000,
+                        "middleWeightedPos": 0.0000,
+                        "closingWeightedPos": 25.0000,
+                        "totalPosPoints": 75,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 4,
+                        "baseScore": 0.4000,
+                        "formGroupCount": 2,
+                        "formSubscore": 0.0400,
+                        "suitabilityGroupCount": 3,
+                        "suitabilitySubscore": 0.0525,
+                        "trainerJockeyGroupCount": 3,
+                        "trainerJockeySubscore": 0.0375,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Baikal",
+                    "selectionId": "408297_0.00",
+                    "isWinner": false,
+                    "odds": 6.4000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.3125,
+                    "combinedScore": 0.6563,
+                    "estimatedProbability": 0.8281,
+                    "expectedValue": 4.2933,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 25.0000,
+                        "closingWeightedPos": 15.0000,
+                        "totalPosPoints": 60,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 3,
+                        "baseScore": 0.3000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 0,
+                        "suitabilitySubscore": 0.0000,
+                        "trainerJockeyGroupCount": 1,
+                        "trainerJockeySubscore": 0.0125,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Tribal Rhythm",
+                    "selectionId": "57856256_0.00",
+                    "isWinner": false,
+                    "odds": 10.0000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.3300,
+                    "combinedScore": 0.6650,
+                    "estimatedProbability": 0.8325,
+                    "expectedValue": 7.3166,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 50.0000,
+                        "middleWeightedPos": 0.0000,
+                        "closingWeightedPos": 25.0000,
+                        "totalPosPoints": 75,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 3,
+                        "baseScore": 0.3000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 1,
+                        "suitabilitySubscore": 0.0175,
+                        "trainerJockeyGroupCount": 1,
+                        "trainerJockeySubscore": 0.0125,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Sea Suite",
+                    "selectionId": "82208806_0.00",
+                    "isWinner": false,
+                    "odds": 9.8000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.5300,
+                    "combinedScore": 0.7650,
+                    "estimatedProbability": 0.8825,
+                    "expectedValue": 7.6406,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 10.0000,
+                        "middleWeightedPos": 25.0000,
+                        "closingWeightedPos": 30.0000,
+                        "totalPosPoints": 65,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 5,
+                        "baseScore": 0.5000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 1,
+                        "suitabilitySubscore": 0.0175,
+                        "trainerJockeyGroupCount": 1,
+                        "trainerJockeySubscore": 0.0125,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Rey De La Batalla",
+                    "selectionId": "56777085_0.00",
+                    "isWinner": false,
+                    "odds": 10.0000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.3650,
+                    "combinedScore": 0.6825,
+                    "estimatedProbability": 0.8413,
+                    "expectedValue": 7.4051,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 50.0000,
+                        "closingWeightedPos": 15.0000,
+                        "totalPosPoints": 85,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 3,
+                        "baseScore": 0.3000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 3,
+                        "suitabilitySubscore": 0.0525,
+                        "trainerJockeyGroupCount": 1,
+                        "trainerJockeySubscore": 0.0125,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Previse",
+                    "selectionId": "82093798_0.00",
+                    "isWinner": false,
+                    "odds": 13.5000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.4425,
+                    "combinedScore": 0.7213,
+                    "estimatedProbability": 0.8607,
+                    "expectedValue": 10.6124,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 25.0000,
+                        "closingWeightedPos": 30.0000,
+                        "totalPosPoints": 75,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 4,
+                        "baseScore": 0.4000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 1,
+                        "suitabilitySubscore": 0.0175,
+                        "trainerJockeyGroupCount": 2,
+                        "trainerJockeySubscore": 0.0250,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Newfangled",
+                    "selectionId": "6430028_0.00",
+                    "isWinner": false,
+                    "odds": 16.0000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.4050,
+                    "combinedScore": 0.7025,
+                    "estimatedProbability": 0.8513,
+                    "expectedValue": 12.6134,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 50.0000,
+                        "closingWeightedPos": 30.0000,
+                        "totalPosPoints": 100,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 3,
+                        "baseScore": 0.3000,
+                        "formGroupCount": 2,
+                        "formSubscore": 0.0400,
+                        "suitabilityGroupCount": 3,
+                        "suitabilitySubscore": 0.0525,
+                        "trainerJockeyGroupCount": 1,
+                        "trainerJockeySubscore": 0.0125,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Savvy Kingdom",
+                    "selectionId": "57502577_0.00",
+                    "isWinner": false,
+                    "odds": 24.0000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.2350,
+                    "combinedScore": 0.6175,
+                    "estimatedProbability": 0.8088,
+                    "expectedValue": 18.4030,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 0.0000,
+                        "closingWeightedPos": 15.0000,
+                        "totalPosPoints": 35,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 2,
+                        "baseScore": 0.2000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 2,
+                        "suitabilitySubscore": 0.0350,
+                        "trainerJockeyGroupCount": 0,
+                        "trainerJockeySubscore": 0.0000,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Lunario",
+                    "selectionId": "50639102_0.00",
+                    "isWinner": false,
+                    "odds": 22.0000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.4475,
+                    "combinedScore": 0.7238,
+                    "estimatedProbability": 0.8619,
+                    "expectedValue": 17.9559,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 25.0000,
+                        "closingWeightedPos": 30.0000,
+                        "totalPosPoints": 75,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 4,
+                        "baseScore": 0.4000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 2,
+                        "suitabilitySubscore": 0.0350,
+                        "trainerJockeyGroupCount": 1,
+                        "trainerJockeySubscore": 0.0125,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "City Of York",
+                    "selectionId": "49130598_0.00",
+                    "isWinner": false,
+                    "odds": 27.0000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.2650,
+                    "combinedScore": 0.6325,
+                    "estimatedProbability": 0.8163,
+                    "expectedValue": 21.0311,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 0.0000,
+                        "middleWeightedPos": 0.0000,
+                        "closingWeightedPos": 25.0000,
+                        "totalPosPoints": 25,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 3,
+                        "baseScore": 0.3000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 3,
+                        "suitabilitySubscore": 0.0525,
+                        "trainerJockeyGroupCount": 1,
+                        "trainerJockeySubscore": 0.0125,
+                        "negativeFlagsCount": 1,
+                        "negativeAdjustment": -0.1000
+                    }
+                },
+                {
+                    "name": "Tadreeb",
+                    "selectionId": "25351858_0.00",
+                    "isWinner": false,
+                    "odds": 38.0000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.3600,
+                    "combinedScore": 0.6800,
+                    "estimatedProbability": 0.8400,
+                    "expectedValue": 30.9120,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 50.0000,
+                        "middleWeightedPos": 0.0000,
+                        "closingWeightedPos": 0.0000,
+                        "totalPosPoints": 50,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 3,
+                        "baseScore": 0.3000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 2,
+                        "suitabilitySubscore": 0.0350,
+                        "trainerJockeyGroupCount": 2,
+                        "trainerJockeySubscore": 0.0250,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                },
+                {
+                    "name": "Marquis Pompeo",
+                    "selectionId": "85263563_0.00",
+                    "isWinner": true,
+                    "odds": 95.0000,
+                    "sentimentScore": 1.0000,
+                    "timeformScore": 0.2125,
+                    "combinedScore": 0.6063,
+                    "estimatedProbability": 0.8031,
+                    "expectedValue": 75.2846,
+                    "sentimentBreakdown": {
+                        "openingWeightedPos": 20.0000,
+                        "middleWeightedPos": 25.0000,
+                        "closingWeightedPos": 0.0000,
+                        "totalPosPoints": 45,
+                        "totalNegPoints": 0
+                    },
+                    "timeformBreakdown": {
+                        "ratingStars": 2,
+                        "baseScore": 0.2000,
+                        "formGroupCount": 0,
+                        "formSubscore": 0.0000,
+                        "suitabilityGroupCount": 0,
+                        "suitabilitySubscore": 0.0000,
+                        "trainerJockeyGroupCount": 1,
+                        "trainerJockeySubscore": 0.0125,
+                        "negativeFlagsCount": 0,
+                        "negativeAdjustment": 0.0000
+                    }
+                }
+            ],
+            "fieldStatistics": {
+                "totalHorses": 12,
+                "dataCompleteness": "100% (12/12)",
+                "highestCombinedScore": 0.7650,
+                "highestHorseName": "Indian Spirit",
+                "fieldAverageCombinedScore": 0.6766,
+                "combinedScoreGap": 0.1587,
+                "sentimentTimeformCorrelation": 0.00
+            }
         }
     ]
 }

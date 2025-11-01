@@ -2,8 +2,8 @@
 
 ## Objective
 Analyze the currently active Betfair market, identify trading opportunities, and execute the "Trading Strategy" with fully optimized parameters using only the following tools:
-- **GetActiveBetfairMarket** (to retrieve market and selection data)
-- **GetDataContextForBetfairMarketSelection** (to retrieve odds history for a selection, specifically with dataContextName: "MarketSelectionsPriceHistoryData")
+- **GetActiveMarket** (to retrieve market and selection data)
+- **GetDataContextForMarketSelection** (to retrieve odds history for a selection, specifically with dataContextName: "MarketSelectionsPriceHistoryData")
 - **ExecuteBfexplorerStrategySettingsWithParameters** (to execute the strategy with optimized parameters)
 
 **CRITICAL**: All strategy parameters (BetType, Profit targets, Loss limits) are ADAPTIVE and must be determined through analysis. There are no fixed values - every parameter should be optimized based on market conditions, volatility, selection characteristics, and risk assessment.
@@ -19,7 +19,7 @@ Analyze the currently active Betfair market, identify trading opportunities, and
 ## Analysis and Execution Steps
 
 ### Step 1: Retrieve Active Market
-Use **GetActiveBetfairMarket** to retrieve:
+Use **GetActiveMarket** to retrieve:
 - Market ID
 - Market name and event details
 - All available selections with current odds
@@ -36,7 +36,7 @@ From the active market data, analyze and identify:
 **Note:** In this step, retrieve detailed data only for the market favorite (the selection with the shortest odds). Do not retrieve odds history for all selections.
 
 ### Step 3: Get Favorite Selection Odds History Data
-For the favorite selection identified in Step 2, use **GetDataContextForBetfairMarketSelection** with:
+For the favorite selection identified in Step 2, use **GetDataContextForMarketSelection** with:
 - dataContextName: "MarketSelectionsPriceHistoryData"
 - marketId: {from Step 1}
 - selectionId: {favorite selection ID from Step 2}
@@ -148,7 +148,7 @@ For each analyzed selection:
 - **Next Steps**: {What happens automatically}
 
 ## Key Reminders
-- **Only use the following tools**: GetActiveBetfairMarket, GetDataContextForBetfairMarketSelection (with dataContextName: "MarketSelectionsPriceHistoryData"), and ExecuteBfexplorerStrategySettingsWithParameters.
+- **Only use the following tools**: GetActiveMarket, GetDataContextForMarketSelection (with dataContextName: "MarketSelectionsPriceHistoryData"), and ExecuteBfexplorerStrategySettingsWithParameters.
 - **Adaptive Parameters**: Both BetType ("Back" or "Lay") and profit/loss targets are determined by market analysis
 - **Analysis-Driven Targets**: Profit targets (5-25%) and loss limits (10-30%) must be set based on market conditions, not fixed values
 - **Selection Focus**: Choose the best selection and optimal BetType based on comprehensive analysis

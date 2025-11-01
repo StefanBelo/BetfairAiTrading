@@ -11,7 +11,7 @@ BFExplorer's AI agent serves as your intelligent interface to Betfair markets, o
 
 ## Available Methods
 
-- `GetActiveBetfairMarket`: Retrieve comprehensive data about the currently active market (e.g., "Horse Racing - Ayr 21st May")
+- `GetActiveMarket`: Retrieve comprehensive data about the currently active market (e.g., "Horse Racing - Ayr 21st May")
 - `GetBetfairMonitoredMarkets`: Access the complete list of markets being monitored
 - `GetBfexplorerStrategyTemplates`: View available strategy templates for different market scenarios
 - `ActivateBetfairMarketSelection`: Select specific market options for trading focus

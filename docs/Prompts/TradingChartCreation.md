@@ -84,8 +84,8 @@ Create a complete HTML artifact with embedded JavaScript that:
 ## Sample Usage Context
 
 This chart will be used to visualize data from calls like:
-- `GetDataContextForBetfairMarketSelection("MarketSelectionsPriceHistoryData", marketId, selectionId)`
-- `GetDataContextForBetfairMarket("MarketSelectionsPriceHistoryData", marketId)`
+- `GetDataContextForMarketSelection("MarketSelectionsPriceHistoryData", marketId, selectionId)`
+- `GetDataContextForMarket("MarketSelectionsPriceHistoryData", marketId)`
 
 The resulting chart should help users:
 - Identify price trends and patterns

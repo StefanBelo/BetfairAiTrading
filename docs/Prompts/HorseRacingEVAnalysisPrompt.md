@@ -5,10 +5,10 @@ Produce an Expected Value (EV) view for every runner in a Betfair horse race mar
 
 ## 🔌 Data Retrieval
 ```
-1) Tool: get_active_betfair_market
+1) Tool: get_active_market
    → Returns marketId, market metadata, runner odds
 
-2) Tool: get_all_data_context_for_betfair_market
+2) Tool: get_all_data_context_for_market
    Parameters:
      • marketId (from step 1)
      • dataContextNames: ["TimeformDataForHorses", "RacingpostDataForHorses"]

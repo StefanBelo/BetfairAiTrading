@@ -1,10 +1,10 @@
 # Horse Racing Save BetfairSpData to CSV File
 
 ## Step 1: Retrieve Active Market Data
-Call `GetActiveBetfairMarket` (no parameters) to get the `marketId` and selections (horses) with their current prices.
+Call `GetActiveMarket` (no parameters) to get the `marketId` and selections (horses) with their current prices.
 
 ## Step 2: Retrieve BetfairSpData for All Selections
-Call `GetDataContextForBetfairMarket` with:
+Call `GetDataContextForMarket` with:
 - `dataContextName`: "BetfairSpData"
 - `marketId`: (from Step 1)
 

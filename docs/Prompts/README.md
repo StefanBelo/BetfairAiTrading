@@ -21,6 +21,8 @@ Below is a list of all prompt files available in this folder. Each file contains
 * HorseRacingBetfairSpDataR1.md – Optimized SP data analysis
 * HorseRacingBetfairSpDataR1_Favourite.md – Favourite-only SP data analysis
 * HorseRacingBetfairSpDataR1_Favourite_Silent.md – Silent favourite SP data analysis
+* HorseRacingBetfairSpDataR1_Favourite_Silent_CN.md – Chinese silent favourite SP data analysis
+* HorseRacingBetfairSpDataR1_Favourite_Silent_CN2.md – Chinese silent favourite SP data analysis R2
 * HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md – Slovak silent favourite SP data analysis
 * HorseRacingCombinedEVAnalysis.md – Dual-method expected value analysis
 * HorseRacingCombinedEVAnalysisWithAutomatedBetting.md – Automated combined analysis and betting
@@ -73,154 +75,24 @@ Below is a list of all prompt files available in this folder. Each file contains
 * HorseRacingStrategyR4_Ideas.md – Strategy R4 ideas
 * HorseRacingStrategyR5.md – Strategy R5
 * HorseRacingStrategyR5_Ideas.md – Strategy R5 ideas
-* HorseRacingStrategyR5_Trade.md – Strategy R5 trade
 * HorseRacingStrategyR5_Trade_Ideas.md – Strategy R5 trade ideas
 * HorseRacingStrategyR6.md – Strategy R6
 * HorseRacingStrategyR6_DS.md – Strategy R6 DS
+* HorseRacingValueIntelligence.md – Value intelligence analysis
 * HorseRacingWinToBePlacedData.md – Win to be placed data analysis
-* HorseRacingWinToBePlacedData_Favourite.md – Favourite win to be placed analysis
-* HorseRacingWinToBePlacedData_Favourite_Silent.md – Silent favourite win to be placed analysis
+* HorseRacingWinToBePlacedData_Favourite.md – Favourite win to be placed data
+* HorseRacingWinToBePlacedData_Favourite_Silent.md – Silent favourite win to be placed data
 * TradedPricesEVAnalysis.md – Traded prices EV analysis
-* TradedPricesEVPlusAnalysis.md – Traded prices EV+ analysis
-* TradedPricesEVPlusGpt5OptAnalysis.md – Traded prices EV+ GPT-5 optimized analysis
+* TradedPricesEVPlusAnalysis.md – Enhanced traded prices EV analysis
+* TradedPricesEVPlusGpt5OptAnalysis.md – GPT-5 optimized traded prices analysis
 * TradingChartCreation.md – Trading chart creation
 * WeightOfMoneyAnalysisPrompt.md – Weight of money analysis prompt
 * WeightOfMoneyStrategy.md – Weight of money strategy
 * WeightOfMoneyStrategyR1.md – Weight of money strategy R1
-* HorseRacingEVAnalysisNumericalData.md – Numerical data focused analysis
-* HorseRacingEVAnalysisPrompt.md – EV analysis prompt
-* HorseRacingEVAnalysisR1.md – EV analysis R1
-* HorseRacingEVAnalysisR10_Silent.md – Silent EV analysis R10
-* HorseRacingEVAnalysisR11.md – Latest optimized EV analysis
-* HorseRacingEVAnalysisR11_Feedback.md – EV analysis R11 with feedback
-* HorseRacingEVAnalysisR1_Silent.md – Silent EV analysis R1
-* HorseRacingEVAnalysisR2.md – EV analysis R2
-* HorseRacingEVAnalysisR3.md – EV analysis R3
-* HorseRacingEVAnalysisWithBetting.md – EV analysis with betting
-* HorseRacingEVAnalysisWithBetting_TradingData.md – EV analysis with trading data
-* HorseRacingEVAnalysisWithConservativeBetting.md – Conservative EV analysis
-* HorseRacingEVAnalysisWithConservativeTradingData.md – Conservative EV analysis with trading data
-* HorseRacingEVAnalysisWithDutchBetting.md – EV analysis with Dutch betting
-* HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md – Dutch betting with OLBG tips
-* HorseRacingEVRankingsTableOnly.md – Quick EV rankings table
-* HorseRacingExecutionOnlyNoReports.md – Pure execution framework
-* HorseRacingExpectedValueAnalysis.md – Semantic-only expected value analysis
-* HorseRacingSemanticAnalysis.md – Semantic form analysis
-* HorseRacingSemanticAnalysisR2.md – Enhanced semantic analysis
-* HorseRacingSilentEVAnalysisWithAutomatedExecution.md – Silent automated execution (all horses)
-* HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md – Silent automated execution (top 3 favorites)
-* HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md – Silent OLBG expert tips execution (top 3 favorites)
-* HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md – Silent OLBG EV analysis with fixed betting
-* HorseRacingStrategyR1.md – Strategy R1 high precision
-* HorseRacingStrategyR1_Analyze.md – Strategy R1 analysis framework
-* HorseRacingStrategyR2.md – Strategy R2 comprehensive coverage
-* HorseRacingStrategyR3.md – Strategy R3 next generation
-* HorseRacingStrategyR3_DS.md – Strategy R3 optimized data structure
-* HorseRacingStrategyR4.md – Strategy R4 silent execution
-* HorseRacingStrategyR4_Ideas.md – Strategy R4 multi-context integration
-* HorseRacingStrategyR5.md – Strategy R5 silent execution
-* HorseRacingStrategyR5_Ideas.md – Strategy R5 advanced multi-context
-* HorseRacingStrategyR5_Trade.md – Strategy R5 trading implementation
-* HorseRacingStrategyR5_Trade_Ideas.md – Strategy R5 trading development
-* HorseRacingStrategyR6.md – Strategy R6 optimized silent execution
-* HorseRacingStrategyR6_DS.md – Strategy R6 direct signal implementation
-* HorseRacingWinToBePlacedData.md – Win to place data analysis
-* HorseRacingWinToBePlacedData_Favourite.md – Favourite-focused place betting
-* HorseRacingWinToBePlacedData_Favourite_Silent.md – Silent favourite place betting
-* horse_racing_ev_analysis_favourite_r9_silent.py – Python implementation for silent favourite analysis
-* test_horse_racing_ev_analysis_favourite_r9_silent.py – Test for Python silent favourite analysis
-* TradedPricesEVAnalysis.md – Traded prices EV analysis
-* TradedPricesEVPlusAnalysis.md – Enhanced traded prices EV analysis
-* TradedPricesEVPlusGpt5OptAnalysis.md – GPT-5 optimized traded prices analysis
-* TradingChartCreation.md – Interactive chart creation
-* WeightOfMoneyAnalysisPrompt.md – Weight of money market analysis
-* WeightOfMoneyStrategy.md – Weight of money trading strategy
-* WeightOfMoneyStrategyR1.md – Advanced weight of money strategy
 
-For templates and tutorials, see the respective subfolders:
-* Templates/ – Platform-specific expert system templates
-* Tutorials/ – Educational content and optimization guides
+## Market Analysis & Trading Systems
 
-Refer to each file for detailed instructions, methodology, and expected outputs.
-This directory contains 150+ specialized prompts for AI-powered analysis of Betfair markets, particularly focused on horse racing betting opportunities and market analysis. These prompts range from comprehensive analytical frameworks to silent automated execution systems with proven performance results including 83.3% strike rates and 77.6% ROI across diverse market conditions.
-
-## New & Updated Prompts
-
-- **Latest Update**: `HorseRacingEVAnalysisR11.md` - Optimized silent execution framework with enhanced semantic analysis and automated decision data logging
-- **Recent Favourite Strategy**: `HorseRacingBookmakersOdds.md` - Updated favourite-only value betting strategy using bookmaker odds analysis with field threat assessment
-- Recent additions include advanced EV analysis systems (R1-R11), Betfair SP data analysis, candlestick technical analysis, and comprehensive silent execution strategies
-- New features: Automated decision data persistence, enhanced field strength categorization, and streamlined execution workflows
-- Featured prompts include:
-  - **HorseRacingEVAnalysisR11.md** - Latest optimized framework with data logging
-  - **HorseRacingBookmakersOdds.md** - Favourite value strategy with bookmaker odds analysis
-  - **BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md** - Advanced technical analysis
-  - **HorseRacingSilentEVAnalysisWithAutomatedExecution.md** - Full automation framework  
-  - **BfexplorerMCPIntegrationSystemPrompt.md** - Platform integration
-  - **WeightOfMoneyStrategyR1.md** - Market sentiment analysis
-  - And 150+ specialized analysis prompts...
-
-Stay up to date with new strategies and analysis tools added regularly.
-
-## Overview
-
-The prompts are organized into several categories with demonstrated performance results:
-- **Advanced Strategy Systems**: Multi-component analysis frameworks (Strategy R1: 83.3% strike rate, Strategy R2: 77.6% ROI)
-- **BetfairSpData Analysis Systems**: Mathematical betting strategies using Betfair's starting price data and forecast models
-- **Combined Analysis Approaches**: Multi-methodology analysis for maximum accuracy (up to 83.3% success rates)
-- **Betting Strategy Variants**: Different execution approaches and risk management styles with proven ROI  
-- **Specialized Analysis Tools**: Focused analysis for specific data types or requirements
-- **Market Analysis Tools**: Weight of money analysis and trading opportunity identification
-- **System Integration**: Technical prompts for automation and workflow integration
-- **Data Visualization**: Chart creation and data presentation tools
-- **Templates & Tutorials**: Platform-specific configurations and educational content
-- **Performance Validated**: Strategies tested with real market data showing consistent profitability
-
-## Horse Racing Analysis Prompts
-
-### Advanced Strategy Systems
-
-#### [HorseRacingStrategyR1.md](HorseRacingStrategyR1.md)
-**Strategy R1 - High Precision Selection System**
-- Advanced multi-component analysis achieving 83.3% strike rate
-- Combines semantic form analysis, prediction scoring, and market intelligence
-- Selective betting approach with high-confidence thresholds
-- **Best for:** Maximum accuracy with selective high-value opportunities
-
-#### [HorseRacingStrategyR1_Analyze.md](HorseRacingStrategyR1_Analyze.md)
-**Strategy R1 Analysis Framework**
-- Comprehensive analysis prompt for Strategy R1 performance evaluation
-- Detailed component effectiveness assessment and optimization recommendations
-- **Best for:** Strategy performance analysis and continuous improvement
-
-#### [HorseRacingStrategyR2.md](HorseRacingStrategyR2.md)
-**Strategy R2 - Comprehensive Market Coverage System**
-- Enhanced multi-component analysis with broader market participation
-- Semantic form analysis (85.4% accuracy on winners), prediction scoring (92.3% reliability)
-- Crowd wisdom adjustment factors and market stability assessment
-- Demonstrated 77.6% ROI across 21 races with 28.6% strike rate
-- **Best for:** Balanced approach between coverage and profitability
-
-#### [HorseRacingStrategyR3.md](HorseRacingStrategyR3.md)
-**Strategy R3 - Next Generation Evolution**
-- Latest iteration incorporating learnings from R1 and R2 performance
-- Enhanced risk management and threshold optimization
-- **Best for:** Cutting-edge strategy development and testing
-
-#### [HorseRacingStrategyR3_DS.md](HorseRacingStrategyR3_DS.md)
-**Strategy R3 - Optimized Data Structure Version**
-- Silent mode operation with optimized data structure and decision logic
-- Analyzes all horses to determine optimal action: BACK, LAY, or NO ACTION
-- Enhanced selection criteria with semantic form analysis and composite scoring
-- **Best for:** Automated decision-making with structured data analysis
-
-#### [HorseRacingStrategyR4.md](HorseRacingStrategyR4.md)
-**Strategy R4 - Silent Execution Implementation**
-- Silent execution of comprehensive market analysis with minimal output
-- Combines Racing Post data, form analysis, and Expected Value calculations
-- Single best value opportunity identification with strict value thresholds
-- **Best for:** Automated silent execution with comprehensive analysis
-
-#### [HorseRacingStrategyR4_Ideas.md](HorseRacingStrategyR4_Ideas.md)
+### Betfair Market Analysis Tools
 **Strategy R4 - Multi-Context Integration Framework**
 - Advanced multi-context analysis integrating form data and trading patterns
 - Enhanced evaluation with confidence scoring and market stability assessment
@@ -1118,8 +990,8 @@ Use **HorseRacingStrategyR5_Trade_Ideas.md** when:
 ## Integration with BFExplorer
 
 All prompts are designed to work with the BFExplorer API and MCP integration, accessing:
-- Real-time market data via `GetActiveBetfairMarket`
-- Horse racing data via `GetDataContextForBetfairMarket`:
+- Real-time market data via `GetActiveMarket`
+- Horse racing data via `GetDataContextForMarket`:
   - `RacingpostDataForHorses` - Performance and form data
   - `MarketSelectionsTradedPricesData` - Trading patterns and market confidence
   - `OlbgRaceTipsData` - Expert tipster consensus and recommendations
@@ -1283,5 +1155,5 @@ When creating new prompts:
 
 ---
 
-*Last updated: October 12, 2025*  
+*Last updated: October 25, 2025*  
 *Performance data based on real market testing with Strategy R1 achieving 83.3% strike rate and 115-150% ROI*

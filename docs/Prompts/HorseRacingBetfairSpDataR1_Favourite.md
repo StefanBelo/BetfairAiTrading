@@ -23,12 +23,12 @@
 ## EXECUTION STEPS
 
 ### Step 1: Get Market Data
-- Call `GetActiveBetfairMarket()`
+- Call `GetActiveMarket()`
 - Extract: marketId, selections[{selectionId, name, price}]
 - Skip selections missing price or marked inactive
 
 ### Step 2: Get Model Data  
-- Call `GetDataContextForBetfairMarket(dataContextName="BetfairSpData", marketId)`
+- Call `GetDataContextForMarket(dataContextName="BetfairSpData", marketId)`
 - Extract for each selection: eVforPriceOrBetfairSP, industryStartingPrice, price, betfairSP
 - Skip if industryStartingPrice ≤ 0 OR price ≤ 1
 - **Note**: BetfairSP is the primary accuracy benchmark per research findings
