@@ -19,9 +19,10 @@ Welcome to Betfair AI Trading – an open, research-driven hub for applying AI a
 
 ---
 
-## 🆕 What's New (September 2025)
+## 🆕 What's New (November 2025)
 
-### � Latest Developments
+### 🚀 Latest Developments
+- **New RacingStattoData Analysis Prompt**: Added specialized prompt for RacingStatto data evaluation with EV and Kelly fraction calculations for horse racing markets
 - **R6 Strategy Evolution**: Next-generation analysis with enhanced automation frameworks
 - **Win-to-Place Data Analysis**: Advanced market divergence strategies for horse racing
 - **BetfairSpData Systems**: Mathematical betting strategies using starting price data

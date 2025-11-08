@@ -21,6 +21,7 @@ This directory contains community posts, articles, and real-world examples showc
   - "HorseRacingR5_Analysis" data context for structured analysis storage
   - Silent execution version for automated deployment with minimal output
 
+
 ## Available Posts
 ### [AI Agent Execution: Automation Approaches for Betfair Trading](AI_Agent_Execution_Reddit_Post.md)
 **Overview of Python, C#, CLI, and text injection methods for AI agent automation and debugging.**
@@ -34,6 +35,7 @@ This directory contains community posts, articles, and real-world examples showc
 **Automate Betfair trading with AI prompts and Bfexplorer—no coding required!**
 
 ### Weekly Reports
+- [Betfair AI Trading Weekly Report - November 8, 2025](BetfairAiTrading_Weekly_Report_2025-11-08.md)
 - [Betfair AI Trading Weekly Report - November 1, 2025](BetfairAiTrading_Weekly_Report_2025-11-01.md)
 - [Betfair AI Trading Weekly Report - October 25, 2025](BetfairAiTrading_Weekly_Report_2025-10-25.md)
 - [Betfair AI Trading Weekly Report - October 18, 2025](BetfairAiTrading_Weekly_Report_2025-10-18.md)

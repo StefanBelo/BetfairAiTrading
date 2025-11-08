@@ -60,6 +60,7 @@ Below is a list of all prompt files available in this folder. Each file contains
 * HorseRacingEVRankingsTableOnly.md – Rankings table only analysis
 * HorseRacingExecutionOnlyNoReports.md – Execution-only, no reports
 * HorseRacingExpectedValueAnalysis.md – Expected value analysis
+* HorseRacingRacingStattoData.md – RacingStatto data evaluation with EV and Kelly calculations
 * HorseRacingSemanticAnalysis.md – Semantic analysis
 * HorseRacingSemanticAnalysisR2.md – Semantic analysis R2
 * HorseRacingSilentEVAnalysisWithAutomatedExecution.md – Silent EV analysis with automated execution
@@ -467,6 +468,13 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Provides insights into trends that may not be captured in statistical models
 - **Best for:** Identifying value based on recent form narratives and behavioral patterns
 
+#### [HorseRacingRacingStattoData.md](HorseRacingRacingStattoData.md)
+**RacingStatto Data Evaluation with EV and Kelly Calculations**
+- Integrates RacingStatto ranking data (timeRank, fastestTimeRank, rank, averageRank)
+- Computes composite true probabilities from reciprocal ranks
+- Calculates expected value (EV) and Kelly fraction for optimal staking
+- **Best for:** Data-driven betting decisions using professional racing statistics
+
 ### Betting Strategy Variants
 
 #### [HorseRacingEVAnalysisWithConservativeBetting.md](HorseRacingEVAnalysisWithConservativeBetting.md)
@@ -768,6 +776,13 @@ Use **HorseRacingExpectedValueAnalysis.md** when:
 - You want to focus on recent form narratives
 - Looking for value that statistical models might miss
 - Analyzing behavioral and tactical factors
+
+### For RacingStatto Data Analysis
+Use **HorseRacingRacingStattoData.md** when:
+- You have RacingStatto ranking data available
+- Want to compute EV and Kelly fractions for optimal staking
+- Seeking quantitative analysis based on professional racing statistics
+- Need normalized true probabilities from multiple rank metrics
 
 ### For Automated Dutch Betting
 Use **HorseRacingEVAnalysisWithDutchBetting.md** when:
@@ -1150,6 +1165,7 @@ When creating new prompts:
 | Fundamental handicapping | Medium | Manual | Traditional approach | HorseRacingBaseFormDataAnalysis.md |
 | Data export and integration | Medium | Manual | Structured output | HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md |
 | Pure semantic analysis | Medium | Manual | Qualitative focus | HorseRacingExpectedValueAnalysis.md |
+| RacingStatto data evaluation | Medium | Manual | Quantitative EV analysis | HorseRacingRacingStattoData.md |
 
 *Performance data from June 2025 testing with Strategy R1 implementation
 

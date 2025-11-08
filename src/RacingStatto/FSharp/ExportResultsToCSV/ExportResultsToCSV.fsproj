@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net9.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		    <Compile Include="Models.fs" />
+<Compile Include="Program.fs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CsvHelper" Version="33.1.0" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BeloSoft.Data">
+      <HintPath>C:\Program Files\BeloSoft\Bfexplorer\BeloSoft.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="BeloSoft.Net">
+      <HintPath>C:\Program Files\BeloSoft\Bfexplorer\BeloSoft.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

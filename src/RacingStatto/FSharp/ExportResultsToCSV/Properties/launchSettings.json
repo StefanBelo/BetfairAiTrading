@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ExportResultsToCSV": {
+      "commandName": "Project",
+      "commandLineArgs": "E:\\Projects\\BetfairAiTrading\\src\\RacingStatto\\Data"
+    }
+  }
+}
