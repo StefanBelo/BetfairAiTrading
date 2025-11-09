@@ -89,6 +89,14 @@ This directory contains community posts, articles, and real-world examples showc
 - [Reddit Post: Betfair SP Data Tracking Without Programming](Reddit_BetfairSpData_NoProgramming.md)
   **How anyone can update Betfair Starting Prices for horse racing in a CSV file—no coding required!**
 
+
+
+### [Grok LLM Bookmakers Odds Experience](GrokLLM_BookmakersOddsExperience.md)
+**How Grok LLM proactively updated my codebase when testing a new data context for bookmaker odds.**
+
+### [What is LBBW v2 Model?](What_is_LBBW_v2_Model.md)
+**A new era for horse racing analysis: objective, evidence-backed scoring for every runner. Includes Telegram group link for Racing Winners Discussion.**
+
 ### Other Notable Content
 - [LLM Services Community Question](LLM_Services_Community_Question.md)
 
