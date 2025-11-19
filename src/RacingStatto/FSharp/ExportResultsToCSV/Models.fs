@@ -8,6 +8,22 @@ open System
 [<NoEquality; NoComparison>]
 type RacingStattoData =
     {
+        GoingRank : byte
+        DistanceRank : byte
+        GoingDistRank : byte
+
+        CourseRank : byte
+
+        TotalWinsRank : byte
+        PercentageTotalRank : byte
+
+        ORRank : byte
+        TSRank : byte
+        RPRRank : byte
+
+        JockeyPercentageRank : byte
+        TrainerPercentageRank : byte
+    
         TimeRank : byte
         FastestTimeRank : byte
         Rank : byte

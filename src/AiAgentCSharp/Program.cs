@@ -29,13 +29,13 @@ try
     IChatClient chatClient =
         //AiAgentHelpers.CreateGithubChatClient("openai/gpt-4.1");
         //AiAgentHelpers.CreateGithubChatClient("xai/grok-3");    
-        //AiAgentHelpers.CreateGithubCopilotChatClient("openai/gpt-4.1");
+        AiAgentHelpers.CreateGithubCopilotChatClient("openai/gpt-4.1");
         //AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
         //AiAgentHelpers.CreateAiHubMixChatClient("gpt-4.1");
         //AiAgentHelpers.CreateAiHubMixChatClient("gpt-5-nano");
         //AiAgentHelpers.CreateCherryStudioChatClient("copilot:gpt-4.1");
         //AiAgentHelpers.CreateCherryStudioChatClient("github:gpt-4o");
-        AiAgentHelpers.CreateCherryStudioChatClient("aihubmix:gpt-4o");
+        //AiAgentHelpers.CreateCherryStudioChatClient("aihubmix:gpt-4.1-nano");
 
     string prompt = MyPrompts.ActiveBetfairMarket;
 

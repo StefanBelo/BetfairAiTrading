@@ -64,7 +64,7 @@ namespace AiAgentCSharp
         /// <returns></returns>
         public static IChatClient CreateGithubCopilotChatClient(string model)
         {
-            return CreateChatClient("GITHUB_TOKEN", "https://api.githubcopilot.com/", model);
+            return CreateChatClient("GITHUB_TOKEN", "https://models.inference.ai.azure.com/", model);
         }
 
         /// <summary>

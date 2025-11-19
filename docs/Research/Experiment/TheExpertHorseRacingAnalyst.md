@@ -14,9 +14,8 @@ Follow this workflow meticulously for every market analysis.
 Execute the following calls to gather all necessary data:
 1.  Call `GetActiveMarket` to retrieve the `marketId`, market metadata, and all `selections` (including `selectionId`, `name`, `price`).
 2.  Call `GetAllDataContextForMarket` using the `marketId` from the previous step. Use the following `dataContextNames` to ensure a complete dataset:
-    - `DbTrainerResults`
-    - `DbJockeyResults`
-    - `DbHorseResults`    
+    - `DbJockeysResults`
+    - `DbHorsesResults`    
     - `RacingpostDataForHorses`
     - `TimeformDataForHorses`
 
@@ -33,13 +32,9 @@ Once all data is ingested, process and analyze it according to these principles.
 - **Jockey Form:** Apply exponential smoothing to the jockey's recent results (`jockeyResults`). A jockey with a high win/place rate in their last 10-20 rides brings a positive performance factor.
 - **Jockey/Course Fit:** While not always present, analyze any data that indicates a jockey's historical performance at the specific course or with similar horses.
 
-**C. Trainer-Specific Analysis (`trainerResults`):**
-- **Trainer Form:** Apply exponential smoothing to the trainer's recent results (`trainerResults`). A trainer with a high win/place rate in their last 10-20 runners indicates a stable in good form.
-- **Trainer/Course Fit:** Analyze any data that indicates a trainer's historical performance at the specific course.
-
-**D. Synthesis, Market Context & Scoring:**
+**C. Synthesis, Market Context & Scoring:**
 - **Market Context:** Acknowledge the "wisdom of the crowd." If a horse is a strong market favorite (odds of 4.0 or lower), give its positive attributes (like high ratings or positive race comments) extra weight. Do not dismiss a favorite solely on one or two poor recent finishes; look for underlying positive signals in the data that might justify its market position.
-- **Composite Score:** Calculate a weighted "Composite Score": `(Horse Score * 0.6) + (Jockey Score * 0.2) + (Trainer Score * 0.2)`.
+- **Composite Score:** Calculate a weighted "Composite Score": `(Horse Score * 0.8) + (Jockey Score * 0.2)`.
 - **Implied Odds Calculation:** Convert the "Composite Score" into data-driven `Implied Odds`. A score of 100 equals odds of 1.0, 50 equals 2.0, 25 equals 4.0, and so on.
 - **Value Score:** Calculate a "Value Score" to identify discrepancies: `((Market Odds - Implied Odds) / Market Odds) * 100%`. A positive score indicates potential value.
 

@@ -1,0 +1,203 @@
+{
+  "main": {
+    "id": "ffd47bf0482d31d4",
+    "type": "split",
+    "children": [
+      {
+        "id": "54ba1b0609e1806a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b77644bb1c4c69aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Strategies/HorseRacing/Race-Data-to-Spreadsheet.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Race-Data-to-Spreadsheet"
+            }
+          }
+        ],
+        "stacked": true
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "901dd5e6d468b145",
+    "type": "split",
+    "children": [
+      {
+        "id": "278e40f27af4d422",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d331bd60be0ea9ab",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "045026332bdb8fd6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#DataProviders",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "14642af0d2ef5ddf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 408.5
+  },
+  "right": {
+    "id": "7ef88d81c95f70d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "41ad610b95d814ae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2c0c05992d6931d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Strategies/HorseRacing/Race-Data-to-Spreadsheet.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Race-Data-to-Spreadsheet"
+            }
+          },
+          {
+            "id": "a3a14bb018b9639c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Strategies/HorseRacing/Race-Data-to-Spreadsheet.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Race-Data-to-Spreadsheet"
+            }
+          },
+          {
+            "id": "a6588572149de353",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "aaaf2e424bb4a26e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Strategies/HorseRacing/Race-Data-to-Spreadsheet.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Race-Data-to-Spreadsheet"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b77644bb1c4c69aa",
+  "lastOpenFiles": [
+    "2025-11-17.md",
+    "Posts/RedditPost_BfexplorerDataProviders.md",
+    "Posts/RedditPost_AIAgentAndModelUsage.md",
+    "Posts/GrokLLM_BookmakersOddsExperience.md",
+    "Posts/RedditPost_BetfairAITradingAppEvolution.md",
+    "Posts/RedditPost_AIBettingStrategiesRealTimeMonitoring.md",
+    "Posts/Post_HorseRacingEVAnalysis.md",
+    "Analysis/HorseRacingEVAnalysisResults_22June2025.md",
+    "TestingStrategy.md",
+    "README.md",
+    "NonDevelopers.md",
+    "Untitled.canvas",
+    "Posts/RedditPost_FootballMatchTimeCriteria.md",
+    "Prompts/HorseRacingEVAnalysisFavouriteR4.md",
+    "Prompts/Tutorials/HorseRacingEV.md",
+    "Prompts/HorseRacingBetfairSpDataR1_Favourite.md",
+    "Strategies/Football/Football-Statarea-Strategy.md",
+    "Prompts/FootballMatchFSharpCodeCreation.md",
+    "Prompts/HorseRacingBetfairSpData.md",
+    "Prompts/HorseRacingEVRankingsTableOnly.md",
+    "Posts/README.md",
+    "Posts/BetfairAiTrading_Weekly_Report_2025-07-26.md",
+    "images/OpenBfexplorerURI.png",
+    "Welcome.md",
+    "Untitled",
+    "Untitled.base",
+    "Untitled 1.base"
+  ]
+}

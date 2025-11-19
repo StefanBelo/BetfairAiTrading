@@ -23,6 +23,39 @@ type CsvDataWrapper () =
     member _this.RacingStattoData
         with get () = raceRunnerData.RacingStattoData
 
+    member this.GoingRank
+        with get () = this.RacingStattoData.GoingRank
+
+    member this.DistanceRank
+        with get () = this.RacingStattoData.DistanceRank
+
+    member this.GoingDistRank
+        with get () = this.RacingStattoData.GoingDistRank
+
+    member this.CourseRank
+        with get () = this.RacingStattoData.CourseRank
+
+    member this.TotalWinsRank
+        with get () = this.RacingStattoData.TotalWinsRank
+
+    member this.PercentageTotalRank
+        with get () = this.RacingStattoData.PercentageTotalRank
+
+    member this.ORRank
+        with get () = this.RacingStattoData.ORRank
+
+    member this.TSRank
+        with get () = this.RacingStattoData.TSRank
+
+    member this.RPRRank
+        with get () = this.RacingStattoData.RPRRank
+
+    member this.JockeyPercentageRank
+        with get () = this.RacingStattoData.JockeyPercentageRank
+
+    member this.TrainerPercentageRank
+        with get () = this.RacingStattoData.TrainerPercentageRank
+
     member this.TimeRank
         with get () = this.RacingStattoData.TimeRank
 
