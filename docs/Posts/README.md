@@ -23,6 +23,7 @@ This directory contains community posts, articles, and real-world examples showc
 
 
 ## Available Posts
+
 ### [AI Agent Execution: Automation Approaches for Betfair Trading](AI_Agent_Execution_Reddit_Post.md)
 **Overview of Python, C#, CLI, and text injection methods for AI agent automation and debugging.**
 ### [Horse Racing Combined EV Analysis with Automated Betting](../Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)

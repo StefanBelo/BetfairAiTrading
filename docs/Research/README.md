@@ -1,8 +1,6 @@
-
 # Research
 
 This directory contains research documents and analysis for Betfair AI trading.
-
 
 ## Files
 
@@ -15,7 +13,7 @@ This directory contains research documents and analysis for Betfair AI trading.
 - [HorseRacingWinnerRate.md](HorseRacingWinnerRate.md)
 - [Prompts.md](Prompts.md)
 
+
 ### RacingStatto Research Prompts
 - [RacingStattoData_Pattern_Prompt.md](RacingStatto/RacingStattoData_Pattern_Prompt.md)
 - [RacingStattoDataWinnersOnly_Pattern_Prompt.md](RacingStatto/RacingStattoDataWinnersOnly_Pattern_Prompt.md)
-
