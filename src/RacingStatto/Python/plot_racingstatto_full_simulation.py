@@ -17,9 +17,8 @@ except Exception as e:
 
 # To simulate, we need the full data. Since it's large, I'll use a placeholder and note to replace with actual data.
 
-#fields = ['goingRank', 'distanceRank', 'goingDistRank', 'courseRank', 'totalWinsRank', 'percentageTotalRank', 'orRank', 'tsRank', 'rprRank', 'jockeyPercentageRank', 'trainerPercentageRank', 'timeRank', 'fastestTimeRank', 'rank', 'averageRank']
-#fields = ['jockeyPercentageRank', 'trainerPercentageRank', 'timeRank', 'fastestTimeRank', 'rank']
-fields = ['timeRank', 'fastestTimeRank', 'rank']
+#fields = ['goingRank', 'distanceRank', 'goingDistRank', 'courseRank', 'totalWinsRank', 'percentageTotalRank', 'orRank', 'tsRank', 'rprRank', 'jockeyPercentageRank', 'trainerPercentageRank', 'rank', 'averageRank']
+fields = ['totalWinsRank', 'jockeyPercentageRank', 'trainerPercentageRank', 'rank']
 
 # Candidate rules: global threshold for all fields
 from itertools import chain, combinations, product

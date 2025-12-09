@@ -1,5 +1,5 @@
 import asyncio
-from mcp_agent.core.fastagent import FastAgent
+from fast_agent import FastAgent
 
 # Create the application
 fast = FastAgent("Bfexplorer Assistant")
@@ -9,8 +9,8 @@ fast = FastAgent("Bfexplorer Assistant")
     instruction="You are a helpful AI Agent executing betting/trading strategies on bfexplorer.", 
     #model="deepseek-chat",
     #model="generic.xai/grok-3",
-    #model="generic.openai/gpt-5.0-mini", 
-    model="generic.deepseek/DeepSeek-V3-0324",
+    model="generic.openai/gpt-5.0-mini", 
+    #model="generic.deepseek/DeepSeek-V3-0324",
     servers=["BfexplorerApp"]
 )
 async def main():

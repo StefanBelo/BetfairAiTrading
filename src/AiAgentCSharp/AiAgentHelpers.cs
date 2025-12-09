@@ -1,5 +1,6 @@
 ﻿using Azure;
 using Azure.AI.Inference;
+using Azure.Core;
 using Microsoft.Extensions.AI;
 using Microsoft.Extensions.Configuration;
 
@@ -40,9 +41,13 @@ namespace AiAgentCSharp
         /// <returns></returns>
         private static IChatClient CreateChatClient(string tokenName, string modelEndpoint, string model)
         {
-            var completionsClient = new ChatCompletionsClient(new Uri(modelEndpoint), new AzureKeyCredential(GetAccessToken(tokenName)));
+            string token = GetAccessToken(tokenName);
 
-            return completionsClient.AsIChatClient(model)
+            var completionsClient = new ChatCompletionsClient(new Uri(modelEndpoint), new AzureKeyCredential(token));
+
+            IChatClient client = completionsClient.AsIChatClient(model);
+
+            return client
                 .AsBuilder()
                 .UseFunctionInvocation()
                 .Build();

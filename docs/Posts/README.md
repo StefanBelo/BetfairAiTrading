@@ -36,6 +36,7 @@ This directory contains community posts, articles, and real-world examples showc
 **Automate Betfair trading with AI prompts and Bfexplorer—no coding required!**
 
 ### Weekly Reports
+- [Betfair AI Trading Weekly Report - December 6, 2025](BetfairAiTrading_Weekly_Report_2025-12-06.md)
 - [Betfair AI Trading Weekly Report - November 8, 2025](BetfairAiTrading_Weekly_Report_2025-11-08.md)
 - [Betfair AI Trading Weekly Report - November 1, 2025](BetfairAiTrading_Weekly_Report_2025-11-01.md)
 - [Betfair AI Trading Weekly Report - October 25, 2025](BetfairAiTrading_Weekly_Report_2025-10-25.md)
@@ -89,6 +90,7 @@ This directory contains community posts, articles, and real-world examples showc
 - [Reddit Post: Different Approaches to Data-Driven Horse Racing Strategy Building](Reddit_HorseRacingEVApproaches.md)
 - [Reddit Post: Betfair SP Data Tracking Without Programming](Reddit_BetfairSpData_NoProgramming.md)
   **How anyone can update Betfair Starting Prices for horse racing in a CSV file—no coding required!**
+
 
 
 

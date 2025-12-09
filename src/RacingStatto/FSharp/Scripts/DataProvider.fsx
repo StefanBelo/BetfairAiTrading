@@ -3,9 +3,9 @@
 open System
 open FSharp.Interop.Excel
 
-type RacingStattoDataTypes = ExcelFile<"E:/Data/RacingStatto/Data.xlsx", "Runners">
+type RacingStattoDataTypes = ExcelFile<"E:/Data/RacingStatto/021225.xlsx", "Runners">
 
 let file = new RacingStattoDataTypes ()
 
-for row in file.Data |> Seq.filter (fun r -> r.Date <> DateTime.MinValue) do
-    printfn "%s: %s | %d | %d | %d | %0.2f" (string row.TIME) row.HORSE (int row.``Ov Rank``) (int row.AVGMPH) (int row.``Fast GD``) row.``Avg Rank``
+for row in file.Data |> Seq.filter (fun r -> not (String.IsNullOrEmpty r.HORSE) && r.HORSE <> "0" && r.HORSE <> "HORSE") do
+    printfn "%d: %s | %d | %0.2f" (int row.TIME) row.HORSE (int row.``Ov Rank``) row.``Avg Rank``

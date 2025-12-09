@@ -24,8 +24,6 @@ type RacingStattoData =
         JockeyPercentageRank : byte
         TrainerPercentageRank : byte
     
-        TimeRank : byte
-        FastestTimeRank : byte
         Rank : byte
         AverageRank : float
     }

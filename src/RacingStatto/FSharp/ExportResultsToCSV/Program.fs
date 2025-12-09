@@ -56,12 +56,6 @@ type CsvDataWrapper () =
     member this.TrainerPercentageRank
         with get () = this.RacingStattoData.TrainerPercentageRank
 
-    member this.TimeRank
-        with get () = this.RacingStattoData.TimeRank
-
-    member this.FastestTimeRank
-        with get () = this.RacingStattoData.FastestTimeRank
-
     member this.Rank
         with get () = this.RacingStattoData.Rank
 
