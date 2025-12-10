@@ -108,3 +108,7 @@ Ready-to-use AI agents for automated trading:
 - Multi-AI provider support (OpenAI GPT-4, DeepSeek)
 - Model Context Protocol client integration
 - Strategy automation capabilities
+
+## F# Code Exploration Tools
+
+- [Using FSI MCP Tools to Create Better F# Code for Non-Developers](Using_FSI_MCP_Tools_for_FSharp_Code.md)

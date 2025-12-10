@@ -11,13 +11,14 @@ module HorseRacingBotTrigger
 #r "BeloSoft.Bfexplorer.Service.Core.dll"
 #r "BeloSoft.Bfexplorer.Trading.dll"
 
+open System
+
 open BeloSoft.Bfexplorer.Domain
 open BeloSoft.Bfexplorer.Trading
 
 let getRaceDistance (market : Market) =
-    let marketInfo = market.MarketInfo
-
     let raceDistanceString, inMiles = 
+        let marketInfo = market.MarketInfo
         let data = marketInfo.MarketName.Split ' '
 
         match marketInfo.BetEvent.CountryCode with
@@ -46,6 +47,41 @@ let getRaceDistance (market : Market) =
         distance
     else
         float (raceDistanceString.TrimEnd 'm')
+
+let getRaceDistanceOpt (market: Market) =
+    let raceDistanceString, inMiles =
+        let marketInfo = market.MarketInfo
+        let data = marketInfo.MarketName.Split ' '
+
+        match marketInfo.BetEvent.CountryCode with
+        | "GB" | "IE" -> data.[0], true
+        | "US" -> data.[1], true
+        | "FR" -> data.[0], false
+        | _ -> data.[1], false
+
+    if inMiles then
+        let rec parseDistance acc i =
+            if i >= raceDistanceString.Length then acc
+            else
+                let digitChar = raceDistanceString.[i]
+                let unitChar = raceDistanceString.[i + 1]
+
+                if Char.IsDigit digitChar && (unitChar = 'm' || unitChar = 'f') 
+                then
+                    let digit = float (int digitChar - int '0')
+                    let factor = if unitChar = 'm' then 1609.344 else 201.168
+                    
+                    parseDistance (acc + digit * factor) (i + 2)
+                else
+                    failwithf "Invalid distance format: %s" raceDistanceString
+
+        parseDistance 0.0 0
+    else
+        let trimmed = raceDistanceString.TrimEnd 'm'
+
+        match Double.TryParse trimmed with
+        | true, value -> value
+        | _ -> failwithf "Invalid distance format: %s" raceDistanceString
 
 let getFavourite (market : Market) =
     getFavouriteSelections market |> List.head
