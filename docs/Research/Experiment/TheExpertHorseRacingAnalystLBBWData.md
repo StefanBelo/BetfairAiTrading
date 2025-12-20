@@ -202,7 +202,7 @@ Generate ONE complete JSON report containing all analysis. Structure exactly as 
     {
       "selectionId": string,
       "horseName": string,
-      "lastScore": number,        // 0-5, with analytical adjustments
+      "lastScore": number,         // 0-5, with analytical adjustments
       "bestScore": number,         // 0-5
       "baseScore": number,         // 0-5
       "weightScore": number,       // 0-5
@@ -309,86 +309,5 @@ Generate ONE complete JSON report containing all analysis. Structure exactly as 
 - Acknowledge market wisdom (crowd intelligence)
 - Scale confidence with conviction level
 - Prefer precision over volume in recommendations
-
-## 11. Illustrative Example
-
-```json
-{
-  "contenders": [
-    {
-      "selectionId": "12345_0.00",
-      "horseName": "Strong Contender",
-      "lastScore": 3.8,
-      "bestScore": 4.2,
-      "baseScore": 3.5,
-      "weightScore": 3.33,
-      "bonusScore": 3.75,
-      "finalLBBWScore": 3.89,
-      "winProbability": 0.424,
-      "impliedOdds": 2.36,
-      "ranking": "Strong Favorite",
-      "sentimentScore": 4,
-      "jockeyScore": 0.72,
-      "notes": "Strong recent form with positive momentum; won last time; suited by conditions; highest rated; dominant favorite"
-    },
-    {
-      "selectionId": "67890_0.00",
-      "horseName": "Solid Chance",
-      "lastScore": 3.2,
-      "bestScore": 3.5,
-      "baseScore": 3.0,
-      "weightScore": 2.67,
-      "bonusScore": 3.0,
-      "finalLBBWScore": 3.0,
-      "winProbability": 0.327,
-      "impliedOdds": 3.06,
-      "ranking": "Favorite",
-      "sentimentScore": 0,
-      "jockeyScore": 0.58,
-      "notes": "Consistent performer; recent places; suited by trip; legitimate contender for frame"
-    },
-    {
-      "selectionId": "11223_0.00",
-      "horseName": "Outsider",
-      "lastScore": 2.1,
-      "bestScore": 2.5,
-      "baseScore": 2.8,
-      "weightScore": 2.0,
-      "bonusScore": 2.0,
-      "finalLBBWScore": 2.28,
-      "winProbability": 0.249,
-      "impliedOdds": 4.02,
-      "ranking": "Favorite",
-      "sentimentScore": -2,
-      "jockeyScore": 0.42,
-      "notes": "Limited recent form; inconsistent; negative race comments; third-best chance on form"
-    }
-  ],
-  "recommendations": {
-    "topSelections": [
-      {
-        "horseName": "Strong Contender",
-        "selectionType": "TOP_PICK",
-        "confidence": 7.8,
-        "winProbability": 42.4,
-        "impliedOdds": 2.36,
-        "rationale": "Clear form leader with 42.4% win probability; strong LBBW score (3.89) backed by recent win, positive sentiment, in-form jockey"
-      },
-      {
-        "horseName": "Solid Chance",
-        "selectionType": "STRONG_CONTENDER",
-        "confidence": 6.0,
-        "winProbability": 32.7,
-        "impliedOdds": 3.06,
-        "rationale": "Solid second-best on form (3.0 LBBW); consistent base scores suggest reliability; suited by distance"
-      }
-    ],
-    "confidenceLevel": 7.8,
-    "strategyNotes": "Clear favorite identified through normalized form analysis. Strong Contender shows 9.7% probability edge over Solid Chance. Total LBBW sum: 9.17 across 3 horses. Top pick has won recently, positive race comments, in-form jockey. Race lacks strong depth beyond top two."
-  }
-}
-```
-
-**Note:** This example is illustrative only. Actual analysis will vary based on real form data and specific race context. Probabilities sum to 100%: 42.4% + 32.7% + 24.9% = 100%.
 
 END OF SPECIFICATION

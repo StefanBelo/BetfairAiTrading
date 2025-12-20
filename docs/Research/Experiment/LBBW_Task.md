@@ -14,6 +14,7 @@ LBBW Component Breakdown
 Purpose of the LBBW Model
 
 The LBBW model integrates these parameters to generate a composite score out of 5. This score represents each horse’s likelihood of outperforming its handicap mark in current race conditions. By merging raw performance metrics with situational context (ground, distance, class), it identifies value opportunities and likely improves while maintaining objective consistency across races.
+
 Summary
 
 In essence, LBBW translates a horse’s recent form, proven class, and physical efficiency under weight into a predictive index. Higher scores (≥ 3.5) mark strong current momentum or clear upward trajectories, making those horses key win or each‑way candidates.

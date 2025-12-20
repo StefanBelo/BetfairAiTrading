@@ -1,0 +1,70 @@
+{
+    "data": {
+        "race": {
+            "id": 908830,
+            "time": "D",
+            "surface": "aw",
+            "time_before_update": 74354,
+            "diffusion_competition_name": "SOUTHWELL",
+            "diffusion_race_date": "2025-12-18",
+            "diffusion_event_name": "14:52"
+        },
+        "runners": {
+            "7020487": {
+                "id": 7020487,
+                "name": "Sahara Magic",
+                "diffusion_name": "Sahara Magic",
+                "saddle_cloth_number": 1,
+                "score": 42.857142857142854,
+                "dist_to_horse_in_front": "4\u00bc",
+                "dist_to_winner": "5\u00bd"
+            },
+            "7952278": {
+                "id": 7952278,
+                "name": "Cherry Baker",
+                "diffusion_name": "Cherry Baker",
+                "saddle_cloth_number": 3,
+                "score": 85.71428571428571,
+                "dist_to_horse_in_front": "\u00be",
+                "dist_to_winner": "1\u00bc"
+            },
+            "8534584": {
+                "id": 8534584,
+                "name": "Egotistical",
+                "diffusion_name": "Egotistical",
+                "saddle_cloth_number": 4,
+                "score": 95.23809523809524,
+                "dist_to_horse_in_front": "\u00bd",
+                "dist_to_winner": null
+            },
+            "8445261": {
+                "id": 8445261,
+                "name": "Life After Love",
+                "diffusion_name": "Life After Love",
+                "saddle_cloth_number": 5,
+                "score": 9.523809523809524,
+                "dist_to_horse_in_front": "\u00be",
+                "dist_to_winner": "9"
+            },
+            "8437048": {
+                "id": 8437048,
+                "name": "Paradise Walk",
+                "diffusion_name": "Paradise Walk",
+                "saddle_cloth_number": 6,
+                "score": 100,
+                "dist_to_horse_in_front": null,
+                "dist_to_winner": null
+            },
+            "8450084": {
+                "id": 8450084,
+                "name": "Tabby Kat",
+                "diffusion_name": "Tabby Kat",
+                "saddle_cloth_number": 8,
+                "score": 19.047619047619047,
+                "dist_to_horse_in_front": "2\u00bc",
+                "dist_to_winner": "8"
+            }
+        }
+    },
+    "status": 200
+}

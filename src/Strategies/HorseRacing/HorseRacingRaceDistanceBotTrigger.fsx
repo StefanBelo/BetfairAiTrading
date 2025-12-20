@@ -5,6 +5,7 @@
 module HorseRacingBotTrigger
 
 #I @"C:\Program Files\BeloSoft\Bfexplorer\"
+//#I @"E:\Projects\Bfexplorer\Development\Applications\BeloSoft.Bfexplorer.App\bin\Debug\net9.0-windows\"
 
 #r "BeloSoft.Data.dll"
 #r "BeloSoft.Bfexplorer.Domain.dll"
