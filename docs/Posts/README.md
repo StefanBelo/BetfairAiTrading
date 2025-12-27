@@ -36,6 +36,7 @@ This directory contains community posts, articles, and real-world examples showc
 **Automate Betfair trading with AI prompts and Bfexplorer—no coding required!**
 
 ### Weekly Reports
+- [BetfairAiTrading Weekly Report - December 27, 2025 (Year in Review)](BetfairAiTrading_Weekly_Report_2025-12-27.md)
 - [Betfair AI Trading Weekly Report - December 6, 2025](BetfairAiTrading_Weekly_Report_2025-12-06.md)
 - [Betfair AI Trading Weekly Report - November 8, 2025](BetfairAiTrading_Weekly_Report_2025-11-08.md)
 - [Betfair AI Trading Weekly Report - November 1, 2025](BetfairAiTrading_Weekly_Report_2025-11-01.md)
