@@ -32,5 +32,5 @@ type BotTriggerExample (market : Market, selection : Selection, botName : string
         /// <summary>
         /// EndExecution
         /// </summary>
-        member _this.EndExecution () =
+        member this.EndExecution () =
             ()

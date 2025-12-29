@@ -1,0 +1,41 @@
+.chart-display {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  min-height: 500px;
+}
+
+.chart-header {
+  margin-bottom: 1rem;
+}
+
+.chart-header h3 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.chart-header p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.chart-container {
+  width: 100%;
+  height: 500px;
+  min-height: 500px;
+  position: relative;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #e1e1e1;
+  overflow: hidden;
+}
+
+.chart-loading,
+.chart-empty {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}

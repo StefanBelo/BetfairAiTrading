@@ -7,7 +7,7 @@ module BfexplorerScript
 #I @"C:\Program Files\BeloSoft\Bfexplorer\"
 //#I @"E:\Projects\Bfexplorer\Development\Applications\BeloSoft.Bfexplorer.App\bin\Debug\net9.0-windows\"
 
-#r "DevExpress.Spreadsheet.v25.1.Core.dll"
+#r "DevExpress.Spreadsheet.v25.2.Core.dll"
 
 #r "BeloSoft.Data.dll"
 #r "BeloSoft.Bfexplorer.Domain.dll"

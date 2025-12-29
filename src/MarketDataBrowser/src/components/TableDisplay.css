@@ -1,0 +1,32 @@
+.table-display {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table-loading,
+.table-empty {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.ag-theme-alpine {
+  --ag-background-color: white;
+  --ag-foreground-color: var(--text-primary);
+  --ag-border-color: var(--border-color);
+  --ag-header-background-color: #f5f7fa;
+  --ag-odd-row-background-color: #fafbfc;
+  --ag-row-hover-color: var(--hover-bg);
+  --ag-selected-row-background-color: var(--active-bg);
+}
+
+/* Full-width description cells */
+.full-width-cell {
+  background-color: #f8f9fa !important;
+  border-top: 1px solid #e0e0e0 !important;
+  font-style: italic;
+  color: #495057;
+}

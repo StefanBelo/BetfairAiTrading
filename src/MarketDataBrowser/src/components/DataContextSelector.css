@@ -1,0 +1,53 @@
+.data-context-selector {
+  margin-bottom: 1rem;
+}
+
+.data-context-selector h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+.no-market-message {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.context-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.context-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+.context-tab:hover {
+  background: var(--hover-bg);
+  border-color: var(--primary-color);
+}
+
+.context-tab.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  font-weight: 600;
+}
+
+.context-icon {
+  font-size: 1.2rem;
+}
+
+.context-label {
+  white-space: nowrap;
+}

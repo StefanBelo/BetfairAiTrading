@@ -56,6 +56,19 @@ This directory contains community posts, articles, and real-world examples showc
 - [BetfairAiTrading Weekly Report - July 26, 2025](BetfairAiTrading_Weekly_Report_2025-07-26.md)
 
 ### Featured Posts & Articles
+
+#### FSI & AI-Assisted Development
+- [FSI First: Why AI Should Query Types Directly When Vibe Coding](FSI_First_AI_Vibe_Coding.md)
+  **Critical Lessons in AI-Assisted F# Development**
+  - Real-world case study of AI making type inspection mistakes
+  - Why FSI MCP tools should always be used first for type exploration
+  - The FSI-First Rule: query assemblies directly, not documentation
+  - Practical guide for demanding accuracy from AI assistants
+  - **Best for:** Understanding how to get accurate type information when vibe coding with AI
+- [FSI MCP Tools For NonCoders](FSI_MCP_Tools_For_NonCoders.md)
+  **Quick Guide to F# Type Exploration Without Coding Experience**
+
+#### Advanced Strategy Development
 - [Horse Racing Combined EV Analysis with Automated Betting](../Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
 - [The Death of Traditional Betting Strategy Development? AI Agents Are Changing Everything](Post_TraditionalMLToAgenticStrategyDevelopment.md)
 - [AI Agent C# Integration: Building Professional Trading Applications](Post_AiAgentCSharpIntegration.md)
