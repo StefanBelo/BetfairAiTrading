@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{var t=document.querySelectorAll('[data-toggle="input-mask"]');t&&0<t.length&&t.forEach(t=>{var e=t.getAttribute("data-mask-format").replace(/0/g,"9");new Inputmask(e).mask(t)})});

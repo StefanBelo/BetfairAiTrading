@@ -1,0 +1,6 @@
+document.addEventListener("DOMContentLoaded",function(){var t=document.getElementById("range-search-data");if(t){let e=new DataTable(t,{dom:"<'d-md-flex justify-content-between align-items-center my-2'<'filter-range me-2'>f>rt<'d-md-flex justify-content-between align-items-center mt-2'ip>",language:{paginate:{first:'<i class="ti ti-chevrons-left"></i>',previous:'<i class="ti ti-chevron-left"></i>',next:'<i class="ti ti-chevron-right"></i>',last:'<i class="ti ti-chevrons-right"></i>'}}});t=document.querySelector(".filter-range");if(t){t.innerHTML=`
+            <div class="d-flex align-items-center gap-2 my-2">
+                <label class="fw-semibold">Price: </label>
+                <input type="text" class="form-control form-control-sm" placeholder="Min" id="min">
+                <input type="text" class="form-control form-control-sm" placeholder="Max" id="max">
+            </div>`;let n=document.getElementById("min"),r=document.getElementById("max");e.search.fixed("range",function(e,t){var a=parseFloat(n.value)||NaN,i=parseFloat(r.value)||NaN,t=(t[2]||"").replace(/[^0-9.]/g,""),t=parseFloat(t)||0;return isNaN(a)&&isNaN(i)||isNaN(a)&&t<=i||a<=t&&isNaN(i)||a<=t&&t<=i}),n.addEventListener("input",()=>e.draw()),r.addEventListener("input",()=>e.draw())}}});

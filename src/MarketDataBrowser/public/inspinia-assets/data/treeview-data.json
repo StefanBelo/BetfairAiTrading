@@ -1,0 +1,116 @@
+[
+    {
+        "id": "node_1",
+        "icon": "ti ti-folder-filled text-warning fs-lg",
+        "text": "Projects",
+        "children": [
+            {
+                "id": "node_4",
+                "icon": "ti ti-file-text text-primary fs-lg",
+                "text": "Project Proposal",
+                "children": false
+            },
+            {
+                "id": "node_5",
+                "icon": "ti ti-file-text text-primary fs-lg",
+                "text": "Requirements Doc",
+                "children": false
+            },
+            {
+                "id": "node_6",
+                "icon": "ti ti-folder-filled text-warning fs-lg",
+                "text": "Designs",
+                "children": [
+                    {
+                        "id": "node_13",
+                        "icon": "ti ti-layout text-warning fs-lg",
+                        "text": "Wireframes",
+                        "children": false
+                    },
+                    {
+                        "id": "node_15",
+                        "icon": "ti ti-layout text-warning fs-lg",
+                        "text": "Mockups",
+                        "children": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "node_2",
+        "icon": "ti ti-folder-filled text-warning fs-lg",
+        "text": "Reports",
+        "children": [
+            {
+                "id": "node_7",
+                "icon": "ti ti-report text-danger fs-lg",
+                "text": "Q1 Report",
+                "children": false
+            },
+            {
+                "id": "node_8",
+                "icon": "ti ti-report text-danger fs-lg",
+                "text": "Q2 Report",
+                "children": false
+            },
+            {
+                "id": "node_9",
+                "icon": "ti ti-folder-filled text-warning fs-lg",
+                "text": "Annual Reports",
+                "children": [
+                    {
+                        "id": "node_16",
+                        "icon": "ti ti-file-description text-info fs-lg",
+                        "text": "2023 Summary",
+                        "children": false
+                    },
+                    {
+                        "id": "node_17",
+                        "icon": "ti ti-file-description text-info fs-lg",
+                        "text": "2024 Summary",
+                        "children": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "node_3",
+        "icon": "ti ti-folder-filled text-warning fs-lg",
+        "text": "Documents",
+        "children": [
+            {
+                "id": "node_10",
+                "icon": "ti ti-file-text text-secondary fs-lg",
+                "text": "Resume",
+                "children": false
+            },
+            {
+                "id": "node_11",
+                "icon": "ti ti-file-text text-secondary fs-lg",
+                "text": "Cover Letter",
+                "children": false
+            },
+            {
+                "id": "node_12",
+                "icon": "ti ti-folder-filled text-warning fs-lg",
+                "text": "Certificates",
+                "children": [
+                    {
+                        "id": "node_18",
+                        "icon": "ti ti-certificate text-warning fs-lg",
+                        "text": "Completion Cert",
+                        "children": false
+                    },
+                    {
+                        "id": "node_19",
+                        "icon": "ti ti-certificate text-warning fs-lg",
+                        "text": "Achievement Cert",
+                        "children": false
+                    }
+                ]
+            }
+        ]
+    }
+]

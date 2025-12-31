@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){var t=document.querySelectorAll(".animation_select");let n=document.getElementById("animation_box");t.length&&n&&t.forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();t=e.getAttribute("data-animation");t&&(n.className="",n.classList.add("animate__animated","animate__"+t))})})});

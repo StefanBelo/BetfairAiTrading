@@ -73,23 +73,47 @@ export const TableDisplay: React.FC = () => {
   }), []);
 
   if (isLoading) {
-    return <div className="table-loading">Loading data...</div>;
+    return (
+      <div className="card">
+        <div className="card-body text-center py-5">
+          <div className="spinner-border text-primary mb-3" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+          <p className="mb-0 text-muted fw-medium">Loading data...</p>
+        </div>
+      </div>
+    );
   }
 
   if (!tableData || tableData.length === 0) {
-    return <div className="table-empty">No data available</div>;
+    return (
+      <div className="card">
+        <div className="card-body text-center py-5">
+          <div className="avatar-lg mx-auto mb-4">
+            <span className="avatar-title bg-light rounded-circle fs-1">
+              <i className="ti ti-database-off text-muted"></i>
+            </span>
+          </div>
+          <p className="text-muted fw-medium mb-0">No data available</p>
+        </div>
+      </div>
+    );
   }
 
   return (
-    <div className="table-display ag-theme-alpine">
-      <AgGridReact
-        rowData={tableData}
-        columnDefs={columnDefs}
-        defaultColDef={defaultColDef}
-        pagination={true}
-        paginationPageSize={50}
-        domLayout="autoHeight"
-      />
+    <div className="card">
+      <div className="card-body">
+        <div className="ag-theme-alpine" style={{ width: '100%' }}>
+          <AgGridReact
+            rowData={tableData}
+            columnDefs={columnDefs}
+            defaultColDef={defaultColDef}
+            pagination={true}
+            paginationPageSize={50}
+            domLayout="autoHeight"
+          />
+        </div>
+      </div>
     </div>
   );
 };

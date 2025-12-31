@@ -1,0 +1,1 @@
+let setTinycon=(n,e,t)=>{n=document.getElementById(n);n&&n.addEventListener("click",n=>{n.preventDefault(),Tinycon.setOptions({background:t}),Tinycon.setBubble(e)})};setTinycon("iconExample1",1,"#f03d25"),setTinycon("iconExample2",1e3,"#f03d25"),setTinycon("iconExample3","In","#f03d25"),setTinycon("iconExample4",8,"#e0913b");

@@ -8,31 +8,37 @@ export const DataContextSelector: React.FC = () => {
 
   if (!selectedMarket) {
     return (
-      <div className="data-context-selector">
-        <p className="no-market-message">Select a market to view data contexts</p>
+      <div className="alert alert-info d-flex align-items-center" role="alert">
+        <i className="ti ti-info-circle me-2 fs-lg"></i>
+        <span className="fw-medium">Select a market to view data contexts</span>
       </div>
     );
   }
 
   return (
-    <div className="data-context-selector">
-      <h3>Data Context</h3>
-      <div className="context-tabs">
-        {DATA_CONTEXTS.map((context) => (
-          <button
-            key={context.name}
-            className={`context-tab ${
-              selectedDataContext?.name === context.name ? 'active' : ''
-            }`}
-            onClick={() => selectDataContext(context)}
-            title={context.description}
-          >
-            <span className="context-icon">
-              {context.type === 'chart' ? '📈' : '📊'}
-            </span>
-            <span className="context-label">{context.displayName}</span>
-          </button>
-        ))}
+    <div className="card">
+      <div className="card-body p-0">
+        <ul className="nav nav-tabs nav-bordered" role="tablist">
+          {DATA_CONTEXTS.map((context, index) => (
+            <li key={context.name} className="nav-item" role="presentation">
+              <button
+                className={`nav-link ${
+                  selectedDataContext?.name === context.name ? 'active' : ''
+                }`}
+                type="button"
+                role="tab"
+                aria-selected={selectedDataContext?.name === context.name}
+                onClick={() => selectDataContext(context)}
+                title={context.description}
+              >
+                <span className="me-1">
+                  {context.type === 'chart' ? '📈' : '📊'}
+                </span>
+                <span>{context.displayName}</span>
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

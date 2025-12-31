@@ -164,30 +164,81 @@ export const ChartDisplay: React.FC = () => {
   }, [chartData]);
 
   if (isLoading) {
-    return <div className="chart-loading">Loading chart data...</div>;
+    return (
+      <div className="card">
+        <div className="card-body text-center py-5">
+          <div className="spinner-border text-primary mb-3" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+          <p className="mb-0 text-muted fw-medium">Loading chart data...</p>
+        </div>
+      </div>
+    );
   }
 
   if (!selectedSelection) {
-    return <div className="chart-empty">Select a runner to view price history</div>;
+    return (
+      <div className="card">
+        <div className="card-body text-center py-5">
+          <div className="avatar-lg mx-auto mb-4">
+            <span className="avatar-title bg-light rounded-circle fs-1">
+              <i className="ti ti-chart-line text-muted"></i>
+            </span>
+          </div>
+          <p className="text-muted fw-medium mb-0">Select a runner to view price history</p>
+        </div>
+      </div>
+    );
   }
 
   if (!chartData) {
-    return <div className="chart-empty">No chart data available</div>;
+    return (
+      <div className="card">
+        <div className="card-body text-center py-5">
+          <div className="avatar-lg mx-auto mb-4">
+            <span className="avatar-title bg-light rounded-circle fs-1">
+              <i className="ti ti-chart-line-off text-muted"></i>
+            </span>
+          </div>
+          <p className="text-muted fw-medium mb-0">No chart data available</p>
+        </div>
+      </div>
+    );
   }
 
   const dataCount = chartData?.selectionsData?.[0]?.data?.timePriceVolumes?.length || 0;
   
   if (dataCount === 0) {
-    return <div className="chart-empty">No price history available for this selection</div>;
+    return (
+      <div className="card">
+        <div className="card-body text-center py-5">
+          <div className="avatar-lg mx-auto mb-4">
+            <span className="avatar-title bg-light rounded-circle fs-1">
+              <i className="ti ti-chart-dots-off text-muted"></i>
+            </span>
+          </div>
+          <p className="text-muted fw-medium mb-0">No price history available for this selection</p>
+        </div>
+      </div>
+    );
   }
 
   return (
-    <div className="chart-display">
-      <div className="chart-header">
-        <h3>{selectedSelection.name || selectedSelection.selectionName}</h3>
-        <p>Price & Volume History - {dataCount} data points</p>
+    <div className="card">
+      <div className="card-header">
+        <div className="d-flex justify-content-between align-items-center">
+          <div>
+            <h4 className="card-title mb-0">
+              <i className="ti ti-chart-candlestick me-2 fs-lg"></i>
+              {selectedSelection.name || selectedSelection.selectionName}
+            </h4>
+            <p className="text-muted mb-0 mt-1 fs-sm">Price & Volume History · {dataCount} data points</p>
+          </div>
+        </div>
       </div>
-      <div ref={chartContainerRef} className="chart-container" />
+      <div className="card-body">
+        <div ref={chartContainerRef} style={{ height: '500px', width: '100%' }} />
+      </div>
     </div>
   );
 };
