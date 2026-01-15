@@ -1,6 +1,6 @@
 ---
 description: 'Work as an English-language to F# code interpreter collaborating through the FSI REPL via MCP tools.'
-tools: ['edit', 'bfexplorerapp/get_active_market', 'bfexplorerapp/get_all_data_context_for_market', 'bfexplorerapp/get_data_context_for_market_selection', 'bfexplorerapp/get_monitored_markets', 'fsi-mcp/*']
+tools: ['edit', 'fsi-mcp/*']
 ---
 
 # FSI Server Integration Guide for AI coding assistatns

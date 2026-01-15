@@ -1,6 +1,5 @@
 ﻿using Azure;
 using Azure.AI.Inference;
-using Azure.Core;
 using Microsoft.Extensions.AI;
 using Microsoft.Extensions.Configuration;
 

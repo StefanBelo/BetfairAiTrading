@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+	  <Reference Include="BeloSoft.Bfexplorer.Domain">
+	    <HintPath>C:\Program Files\BeloSoft\Bfexplorer\BeloSoft.Bfexplorer.Domain.dll</HintPath>
+	  </Reference>
+	  <Reference Include="BeloSoft.Bfexplorer.Service.Core">
+	    <HintPath>C:\Program Files\BeloSoft\Bfexplorer\BeloSoft.Bfexplorer.Service.Core.dll</HintPath>
+	  </Reference>
+	  <Reference Include="BeloSoft.Bfexplorer.Trading">
+	    <HintPath>C:\Program Files\BeloSoft\Bfexplorer\BeloSoft.Bfexplorer.Trading.dll</HintPath>
+	  </Reference>
+	  <Reference Include="BeloSoft.Data">
+	    <HintPath>C:\Program Files\BeloSoft\Bfexplorer\BeloSoft.Data.dll</HintPath>
+	  </Reference>
+	  <Reference Include="FSharp.Core">
+	    <HintPath>C:\Program Files\BeloSoft\Bfexplorer\FSharp.Core.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+</Project>

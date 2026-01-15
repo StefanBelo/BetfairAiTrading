@@ -24,10 +24,15 @@ This directory contains community posts, articles, and real-world examples showc
 
 ## Available Posts
 
+### [Hello Betfair: The Same Strategy in F#, C#, VB.NET, and an AI Prompt (bfexplorer)](betfair-trading-strategies-three-languages.md)
+**Side-by-side comparison of the same bfexplorer strategy implemented in F#, C#, VB.NET, and as an AI prompt. Focuses on code differences, syntax, and interop details.**
 ### [AI Agent Execution: Automation Approaches for Betfair Trading](AI_Agent_Execution_Reddit_Post.md)
 **Overview of Python, C#, CLI, and text injection methods for AI agent automation and debugging.**
 ### [Horse Racing Combined EV Analysis with Automated Betting](../Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
 **Revolutionary Dual-Source Analysis Framework**
+
+### [Edge vs. Expected Value (EV) in Betting: Which Should You Use?](edge-vs-ev.md)
+**A concise summary of edge and expected value, and why EV is the best metric for betting decisions.**
 
 ### [Reddit Post: The Hidden Truth About Betting Strategies - Why 90% Fail After 30 Days](RedditPost_AIBettingStrategiesRealTimeMonitoring.md)
 **Real-Time AI Strategy Monitoring & Failure Prevention**
@@ -36,6 +41,7 @@ This directory contains community posts, articles, and real-world examples showc
 **Automate Betfair trading with AI prompts and Bfexplorer—no coding required!**
 
 ### Weekly Reports
+- [BetfairAiTrading Weekly Report – January 2, 2026](BetfairAiTrading_Weekly_Report_2026-01-02.md)
 - [BetfairAiTrading Weekly Report - December 27, 2025 (Year in Review)](BetfairAiTrading_Weekly_Report_2025-12-27.md)
 - [Betfair AI Trading Weekly Report - December 6, 2025](BetfairAiTrading_Weekly_Report_2025-12-06.md)
 - [Betfair AI Trading Weekly Report - November 8, 2025](BetfairAiTrading_Weekly_Report_2025-11-08.md)

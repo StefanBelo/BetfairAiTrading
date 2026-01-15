@@ -1,9 +1,12 @@
 ﻿using AiAgentCSharp;
 using Microsoft.Extensions.AI;
 using ModelContextProtocol.Client;
+//using System.Net;
 
 try
 {
+    //HttpClient.DefaultProxy = new WebProxy("http://127.0.0.1:8888", true);
+
     Console.WriteLine("\n\nTools available:");
 
     // MCP Client

@@ -10,7 +10,6 @@ First, identify the active horse racing market using the `GetActiveMarket` tool.
 
 With the `marketId` from the previous step, use the `GetDataContextForMarket` tool with `dataContextNames` set to `['TimeformDataForHorses']`. This will return detailed Timeform analysis for each horse in the `timeformHorseData` field, including:
 
-- `ratingStars`: Timeform's star rating system (1-5 stars)
 - `horseWinnerLastTimeOut`, `horseInForm`, `horseBeatenFavouriteLTO`
 - `suitedByGoing`, `suitedByCourse`, `suitedByDistance`
 - `trainerInForm`, `trainerCourseRecord`, `jockeyInForm`, `jockeyWonOnHorse`
@@ -18,38 +17,32 @@ With the `marketId` from the previous step, use the `GetDataContextForMarket` to
 
 ## Step 3: Analyze Timeform Data
 
-For each horse, perform a comprehensive analysis of the Timeform boolean indicators and star rating. Create a scoring system based on the following factors:
+For each horse, perform a comprehensive analysis of the Timeform boolean indicators. Create a scoring system based on the following factors:
 
-- **Base Rating Score (40% weight):**
-  - 5 Stars: 100 points
-  - 4 Stars: 80 points
-  - 3 Stars: 60 points
-  - 2 Stars: 40 points
-  - 1 Star: 20 points
-- **Form Analysis Score (25% weight):**
+- **Form Analysis Score:**
   - `horseWinnerLastTimeOut`: +15 points
   - `horseInForm`: +10 points
   - `horseBeatenFavouriteLTO`: +8 points
-- **Suitability Score (20% weight):**
+- **Suitability Score:**
   - `suitedByGoing`: +7 points
   - `suitedByCourse`: +7 points
   - `suitedByDistance`: +6 points
-- **Connections Score (10% weight):**
+- **Connections Score:**
   - `trainerInForm`: +4 points
   - `trainerCourseRecord`: +3 points
   - `jockeyInForm`: +2 points
   - `jockeyWonOnHorse`: +1 point
-- **Timeform Special Designations (5% weight):**
+- **Timeform Special Designations:**
   - `timeformTopRated`: +3 points
   - `timeformImprover`: +1 point
   - `timeformHorseInFocus`: +1 point
 
-**Total Timeform Score**: Sum all applicable points (maximum possible: 200 points)
+**Total Timeform Score**: Sum all applicable points (maximum possible: 68 points)
 
 ## Step 4: Calculate Implied Probability and Expected Value (EV)
 
 1. **Estimate 'True' Probability:**
-   - Normalize the Timeform Score: `Normalized Score = (Timeform Score / 200) * 100`
+   - Normalize the Timeform Score: `Normalized Score = (Timeform Score / 68) * 100`
    - Calculate market share: For each horse, divide its Normalized Score by the sum of all horses' Normalized Scores
    - This gives you the estimated true probability for each horse
 2. **Calculate Implied Probability:** For each horse, calculate the implied probability from their Betfair odds using the formula:
@@ -69,15 +62,13 @@ For each horse, perform a comprehensive analysis of the Timeform boolean indicat
 - If `timeformImprover` is true: Multiply EV by 1.10
 - If both `horseWinnerLastTimeOut` and `horseInForm` are true: Multiply EV by 1.08
 - If none of the suitability factors are true: Multiply EV by 0.90
-- If `ratingStars` is 1 or 2: Multiply EV by 0.85
 
 ## Step 6: Present the Results
 
 Present the analysis in a clear table format with the following columns for each horse:
 - Horse Name
-- Timeform Stars
 - Current Odds
-- Timeform Score (out of 200)
+- Timeform Score (out of 68)
 - Implied Probability
 - Estimated "True" Probability
 - Calculated EV (after adjustments)
@@ -91,7 +82,7 @@ Identify the favourite (the horse with the lowest current odds). Only this horse
 
 ### Betting Criteria for Favourite:
 - **Positive EV**: Greater than +10% (using normalized EV calculation)
-- **Minimum Quality**: At least 3 Timeform stars OR `timeformTopRated` is true
+- **Minimum Quality**: `timeformTopRated` is true
 - **Form Requirement**: At least one of: `horseInForm`, `horseWinnerLastTimeOut`, or `timeformImprover` is true
 - **Odds Range**: Between 2.0 and 15.0
 
