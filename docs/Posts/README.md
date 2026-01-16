@@ -26,6 +26,11 @@ This directory contains community posts, articles, and real-world examples showc
 
 ### [Hello Betfair: The Same Strategy in F#, C#, VB.NET, and an AI Prompt (bfexplorer)](betfair-trading-strategies-three-languages.md)
 **Side-by-side comparison of the same bfexplorer strategy implemented in F#, C#, VB.NET, and as an AI prompt. Focuses on code differences, syntax, and interop details.**
+### [F# DSLs: what they are, why we use them, and how they improve BotTrigger strategies](fsharp-dsl-bottrigger.md)
+**A practical guide to building and using a computation expression DSL for Betfair strategies in F#. Includes full code and performance discussion.**
+
+### [Reddit Post: F# DSL for Betfair BotTrigger Strategies (Short)](fsharp-dsl-bottrigger-reddit.md)
+**A concise Reddit-ready post showing the core DSL strategy snippet and its benefits.**
 ### [AI Agent Execution: Automation Approaches for Betfair Trading](AI_Agent_Execution_Reddit_Post.md)
 **Overview of Python, C#, CLI, and text injection methods for AI agent automation and debugging.**
 ### [Horse Racing Combined EV Analysis with Automated Betting](../Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
