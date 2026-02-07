@@ -24,6 +24,9 @@ This directory contains community posts, articles, and real-world examples showc
 
 ## Available Posts
 
+### [Beginner’s Guide to Machine Learning in Horse Racing on Betfair: A Humble Reality Check](Post_Beginners_Guide_to_ML_in_Horse_Racing.md)
+**A realistic guide for newcomers to ML in betting, emphasizing the challenges of execution and why most fail. Includes sections on data barriers, skill requirements, and a practical first step.**
+
 ### [Hello Betfair: The Same Strategy in F#, C#, VB.NET, and an AI Prompt (bfexplorer)](betfair-trading-strategies-three-languages.md)
 **Side-by-side comparison of the same bfexplorer strategy implemented in F#, C#, VB.NET, and as an AI prompt. Focuses on code differences, syntax, and interop details.**
 ### [F# DSLs: what they are, why we use them, and how they improve BotTrigger strategies](fsharp-dsl-bottrigger.md)
@@ -41,6 +44,9 @@ This directory contains community posts, articles, and real-world examples showc
 
 ### [Reddit Post: The Hidden Truth About Betting Strategies - Why 90% Fail After 30 Days](RedditPost_AIBettingStrategiesRealTimeMonitoring.md)
 **Real-Time AI Strategy Monitoring & Failure Prevention**
+
+### [The Hottest New Programming Language Is English](The_Hottest_New_Programming_Language_Is_English.md)
+**Andrej Karpathy's claim in practice: controlling a Betfair trading system using simple English commands.**
 
 ### [Gemini CLI + Bfexplorer MCP: AI-Powered Betfair Trading (No Coding Needed)](GeminiCLI_BfexplorerMCP_RedditPost.md)
 **Automate Betfair trading with AI prompts and Bfexplorer—no coding required!**
@@ -79,7 +85,12 @@ This directory contains community posts, articles, and real-world examples showc
 - [FSI MCP Tools For NonCoders](FSI_MCP_Tools_For_NonCoders.md)
   **Quick Guide to F# Type Exploration Without Coding Experience**
 
+#### Beginner Guides
+- [Beginner’s Guide to Machine Learning in Horse Racing on Betfair: A Humble Reality Check](Post_Beginners_Guide_to_ML_in_Horse_Racing.md)
+  **A realistic guide for newcomers to ML in betting, emphasizing the challenges of execution and why most fail. Includes sections on data barriers, skill requirements, and a practical first step.**
+
 #### Advanced Strategy Development
+- [Machine Learning vs. AI Agents in Sports Betting: A Paradigm Shift](Post_ML_vs_AI_Agent_Betting.md)
 - [Horse Racing Combined EV Analysis with Automated Betting](../Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
 - [The Death of Traditional Betting Strategy Development? AI Agents Are Changing Everything](Post_TraditionalMLToAgenticStrategyDevelopment.md)
 - [AI Agent C# Integration: Building Professional Trading Applications](Post_AiAgentCSharpIntegration.md)

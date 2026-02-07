@@ -1,0 +1,97 @@
+{
+  "marketId": "1.253024156",
+  "eventName": "Southwell",
+  "marketName": "7f Hcap",
+  "startTime": "2026-01-23T19:15:00+01:00",
+  "distance_f": 7,
+  "selections": [
+    {
+      "selectionId": "45677362_0.00",
+      "name": "Golden Pharaoh",
+      "price": 4.7,
+      "horsePedigreeData": {
+        "Family": "3-l",
+        "DosageProfile": "3-3-14-2-0 (22)",
+        "DosageIndex": 1.44,
+        "CenterOfDistribution": 0.32
+      }
+    },
+    {
+      "selectionId": "15935044_0.00",
+      "name": "Tennessee Gold",
+      "price": 5.2,
+      "horsePedigreeData": {
+        "Family": "19-b",
+        "DosageProfile": "3-5-2-0-0 (10)",
+        "DosageIndex": 9,
+        "CenterOfDistribution": 1.1
+      }
+    },
+    {
+      "selectionId": "40290352_0.00",
+      "name": "Down To The Kid",
+      "price": 4.3,
+      "horsePedigreeData": {
+        "Family": "1-u",
+        "DosageProfile": "2-1-7-2-0 (12)",
+        "DosageIndex": 1.18,
+        "CenterOfDistribution": 0.25
+      }
+    },
+    {
+      "selectionId": "56496594_0.00",
+      "name": "Commander Of Life",
+      "price": 7.0,
+      "horsePedigreeData": {
+        "Family": "6-e",
+        "DosageProfile": "2-3-5-0-0 (10)",
+        "DosageIndex": 3,
+        "CenterOfDistribution": 0.7
+      }
+    },
+    {
+      "selectionId": "41236816_0.00",
+      "name": "Chola Empire",
+      "price": 16.5,
+      "horsePedigreeData": {
+        "Family": "12-c",
+        "DosageProfile": "1-2-5-0-0 (8)",
+        "DosageIndex": 2.2,
+        "CenterOfDistribution": 0.5
+      }
+    },
+    {
+      "selectionId": "39450287_0.00",
+      "name": "Mumayaz",
+      "price": 17.5,
+      "horsePedigreeData": {
+        "Family": "23-b",
+        "DosageProfile": "4-10-8-0-0 (22)",
+        "DosageIndex": 4.5,
+        "CenterOfDistribution": 0.82
+      }
+    },
+    {
+      "selectionId": "25784921_0.00",
+      "name": "Silver Samurai",
+      "price": 17.5,
+      "horsePedigreeData": {
+        "Family": "9-e",
+        "DosageProfile": "1-2-11-0-0 (14)",
+        "DosageIndex": 1.55,
+        "CenterOfDistribution": 0.29
+      }
+    },
+    {
+      "selectionId": "60918634_0.00",
+      "name": "Giorgio M",
+      "price": 20.0,
+      "horsePedigreeData": {
+        "Family": "23",
+        "DosageProfile": "5-5-4-0-0 (14)",
+        "DosageIndex": 6,
+        "CenterOfDistribution": 1.07
+      }
+    }
+  ]
+}

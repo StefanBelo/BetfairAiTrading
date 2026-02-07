@@ -1,0 +1,16 @@
+{
+  "name": "2602071832-rGw25G",
+  "created_at": "2026-02-07T18:32:03.606199",
+  "last_activity": "2026-02-07T18:32:03.674442",
+  "history_files": [
+    "history_BfexplorerApp.json"
+  ],
+  "metadata": {
+    "agent_name": "BfexplorerApp",
+    "model": "gpt-4.1",
+    "last_history_by_agent": {
+      "BfexplorerApp": "history_BfexplorerApp.json"
+    },
+    "first_user_preview": "\"# The Expert Horse Racing Analyst (LBBW - Bet or Dutch) ## 1. Persona & Core Objective **Persona:** You are a world-class horse racing analyst and betting strategist, specializing in UK and Ireland markets. Your expertise is built on rigor"
+  }
+}

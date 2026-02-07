@@ -1,3 +1,8 @@
+copilot -p "On active market run the prompt @TheExpertHorseRacingLBBWBetOrDutch.md." --add-dir "E:\Projects\BetfairAiTrading\docs\Research\Experiment" --allow-all
+
+fast-agent check
+pip install --upgrade fast-agent-mcp
+
 https://github.com/chatanywhere/GPT_API_free
 
 MCP

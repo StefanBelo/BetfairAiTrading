@@ -1,0 +1,93 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_qmLtkIs1cTxDpY3Ty86iRIWE": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 118920.4011615, \"end_time\": 118923.9559871, \"duration_ms\": 3554.83}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/gpt-4.1\", \"input_tokens\": 888, \"output_tokens\": 18, \"total_tokens\": 906, \"timestamp\": 1770317059.7696574, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 1, \"current_context_tokens\": 906, \"effective_input_tokens\": 888, \"display_input_tokens\": 888}, \"raw_usage\": {\"completion_tokens\": 18, \"prompt_tokens\": 888, \"total_tokens\": 906, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 0}}, \"summary\": {\"model\": \"openai/gpt-4.1\", \"turn_count\": 1, \"cumulative_input_tokens\": 888, \"cumulative_output_tokens\": 18, \"cumulative_billing_tokens\": 906, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 906, \"context_window_size\": 1047576, \"context_usage_percentage\": 0.08648537194437445, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 888}}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_qmLtkIs1cTxDpY3Ty86iRIWE": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.253585340\"\n  StartTime: \"2026-02-05T19:00:00Z\"\n  EventType: \"Horse Racing\"\n  EventName: Southwell\n  MarketName: \"1m Hcap\"\n  Status: Open\n  Selections[11]{SelectionId,Name,Price,Status}:\n    58079300_0.00,\"Aisling Oscar\",4.3,Active\n    8581909_0.00,\"Marry The Night\",5.8,Active\n    13000390_0.00,Studious,7.6,Active\n    69878541_0.00,\"Eves Boy\",8.6,Active\n    84198410_0.00,\"Forest Caper\",9.8,Active\n    46064954_0.00,\"Bajan Bandit\",10,Active\n    44214278_0.00,\"Soames Forsyte\",18.5,Active\n    51819019_0.00,\"Shaw Park\",26,Active\n    81200357_0.00,\"Camino Del Ray\",42,Active\n    59363303_0.00,\"Finn Ironside\",50,Active\n    40503497_0.00,\"Evocative Spark\",65,Active"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_qmLtkIs1cTxDpY3Ty86iRIWE\": {\"timing_ms\": 15.13, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The currently active Betfair market is:\n\n- Event: Horse Racing (Southwell)\n- Market: 1m Hcap\n- Start Time: 2026-02-05 19:00:00 (UTC)\n- Status: Open\n\nSelections and their prices:\n1. Aisling Oscar \u2013 4.3\n2. Marry The Night \u2013 5.8\n3. Studious \u2013 7.6\n4. Eves Boy \u2013 8.6\n5. Forest Caper \u2013 9.8\n6. Bajan Bandit \u2013 10\n7. Soames Forsyte \u2013 18.5\n8. Shaw Park \u2013 26\n9. Camino Del Ray \u2013 42\n10. Finn Ironside \u2013 50\n11. Evocative Spark \u2013 65\n\nIf you need data or specific actions for this market, let me know!"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 118924.0017559, \"end_time\": 118926.8250817, \"duration_ms\": 2823.33}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/gpt-4.1\", \"input_tokens\": 1217, \"output_tokens\": 189, \"total_tokens\": 1406, \"timestamp\": 1770317062.6390295, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 1406, \"effective_input_tokens\": 1217, \"display_input_tokens\": 1217}, \"raw_usage\": {\"completion_tokens\": 189, \"prompt_tokens\": 1217, \"total_tokens\": 1406, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 0}}, \"summary\": {\"model\": \"openai/gpt-4.1\", \"turn_count\": 2, \"cumulative_input_tokens\": 2105, \"cumulative_output_tokens\": 207, \"cumulative_billing_tokens\": 2312, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 1406, \"context_window_size\": 1047576, \"context_usage_percentage\": 0.134214605909261, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 2105}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

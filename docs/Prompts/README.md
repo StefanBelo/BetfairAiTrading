@@ -16,6 +16,7 @@ Below is a list of all prompt files available in this folder. Each file contains
 * BfexplorerMCPIntegrationSystemPrompt.md – MCP integration for Bfexplorer platform
 * BfexplorerStrategyExpertPrompt.md – Expert strategy configuration for Bfexplorer
 * FootballMatchFSharpCodeCreation.md – F# code generation for football analysis
+* Football_PreKick_MarketAnalysis_Prompt.md – Pre‑Kick/In‑Play market analysis prompt for football (expects match in‑play; uses `FootballMatchScoreData` and `MarketSelectionsPriceHistoryData`)
 * HorseRacingBaseFormDataAnalysis.md – Fundamental form data analysis
 * HorseRacingBetfairSpData.md – Betfair SP data analysis
 * HorseRacingBetfairSpDataR1.md – Optimized SP data analysis
@@ -260,6 +261,12 @@ Below is a list of all prompt files available in this folder. Each file contains
 - Specialized F# code generation for football match analysis
 - Integration with functional programming approaches for sports analytics
 - **Best for:** Football market analysis and functional programming integration
+
+#### [Football_PreKick_MarketAnalysis_Prompt.md](Football_PreKick_MarketAnalysis_Prompt.md)
+**Pre‑Kick/In‑Play Market Analysis Prompt**
+- Short pre-kick and in-play analysis using `FootballMatchScoreData` and `MarketSelectionsPriceHistoryData`.
+- **Note:** Requires the match to be **in‑play** (score context only available live).
+- **Best for:** Quick pre‑kick anomaly detection and favourite identification with traded price evidence.
 
 ## Specialized Analysis Tools
 

@@ -1,0 +1,1 @@
+copilot -p "Always retrieve an active market, then run the prompt @TheExpertHorseRacingLBBWBetOrDutch.md." --add-dir "E:\Projects\BetfairAiTrading\docs\Research\Experiment" --allow-all

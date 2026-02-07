@@ -1,7 +1,3 @@
-Imports BeloSoft.Bfexplorer.Domain
-Imports BeloSoft.Bfexplorer.Trading
-Imports Microsoft.FSharp.Core
-
 Public Class MyStrategyBotTrigger
     Implements IBotTrigger
 

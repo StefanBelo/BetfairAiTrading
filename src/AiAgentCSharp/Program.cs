@@ -30,12 +30,12 @@ try
 
     // Chat client
     IChatClient chatClient =
-        //AiAgentHelpers.CreateGithubChatClient("gpt-4.1");
+        AiAgentHelpers.CreateGithubChatClient("gpt-4.1");
         //AiAgentHelpers.CreateGithubChatClient("grok-code-fast-1");    
         //AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
         //AiAgentHelpers.CreateAiHubMixChatClient("gpt-4.1");
         //AiAgentHelpers.CreateAiHubMixChatClient("gpt-5-nano");
-        AiAgentHelpers.CreateCherryStudioChatClient("copilot:gpt-4.1");
+        //AiAgentHelpers.CreateCherryStudioChatClient("copilot:gpt-4.1");
         //AiAgentHelpers.CreateCherryStudioChatClient("github:gpt-4o");
         //AiAgentHelpers.CreateCherryStudioChatClient("aihubmix:gpt-4.1-nano");
         //AiAgentHelpers.CreateCherryStudioChatClient("aihubmix:kimi-k2-0711-preview");

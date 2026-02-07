@@ -5,6 +5,7 @@ from fast_agent import FastAgent
 fast = FastAgent("Bfexplorer Assistant")
 
 # Define the agent
+#@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="gpt-4.1", servers=["BfexplorerApp"])
 #@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="deepseek-chat", servers=["BfexplorerApp"])
 #@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="gemini-2.5-pro", servers=["BfexplorerApp"])
 #@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="generic.mistral-small:latest", servers=["BfexplorerApp"])

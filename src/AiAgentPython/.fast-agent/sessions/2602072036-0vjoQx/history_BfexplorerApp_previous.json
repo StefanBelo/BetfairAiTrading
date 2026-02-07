@@ -1,0 +1,182 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_j5Djuo0edaiwzQqNYYLJWDrn": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 294815.7312438, \"end_time\": 294818.1486136, \"duration_ms\": 2417.37}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/gpt-4.1\", \"input_tokens\": 1002, \"output_tokens\": 18, \"total_tokens\": 1020, \"timestamp\": 1770492988.8941615, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 1, \"current_context_tokens\": 1020, \"effective_input_tokens\": 1002, \"display_input_tokens\": 1002}, \"raw_usage\": {\"completion_tokens\": 18, \"prompt_tokens\": 1002, \"total_tokens\": 1020, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 0}}, \"summary\": {\"model\": \"openai/gpt-4.1\", \"turn_count\": 1, \"cumulative_input_tokens\": 1002, \"cumulative_output_tokens\": 18, \"cumulative_billing_tokens\": 1020, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 1020, \"context_window_size\": 1047576, \"context_usage_percentage\": 0.09736763728836857, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 1002}}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_j5Djuo0edaiwzQqNYYLJWDrn": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.253638009\"\n  StartTime: \"2026-02-07T20:00:00Z\"\n  EventType: \"Horse Racing\"\n  EventName: Southwell\n  MarketName: \"5f Hcap\"\n  TotalMatched: 49166.91\n  Status: Open\n  Selections[7]{SelectionId,Name,Price,TotalMatched,Status}:\n    92004296_0.00,Blueaway,2.64,19548.77,Active\n    84080024_0.00,\"He Bangs The Drums\",6.2,6534.29,Active\n    83686685_0.00,\"Sands Of Seve\",6.8,7251.68,Active\n    78000635_0.00,\"Life After Love\",7.4,4994.68,Active\n    86601999_0.00,\"Mythical Night\",9.6,3845.53,Active\n    83952851_0.00,\"Calabrian Soldato\",16,6330.02,Active\n    84038794_0.00,\"Rai Rogers\",55,661.91,Active"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_j5Djuo0edaiwzQqNYYLJWDrn\": {\"timing_ms\": 13.64, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The currently active market is:\n\n- Event: Horse Racing at Southwell\n- Market: 5f Hcap\n- Start Time: 2026-02-07 20:00:00 (UTC)\n- Total Matched: \u00a349,166.91\n- Status: Open\n\nActive runners in this market:\n1. Blueaway (Price: 2.64)\n2. He Bangs The Drums (Price: 6.2)\n3. Sands Of Seve (Price: 6.8)\n4. Life After Love (Price: 7.4)\n5. Mythical Night (Price: 9.6)\n6. Calabrian Soldato (Price: 16)\n7. Rai Rogers (Price: 55)\n\nIf you need more details or want to take any action on this market, just let me know!"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 294818.1888778, \"end_time\": 294821.1130444, \"duration_ms\": 2924.17}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/gpt-4.1\", \"input_tokens\": 1304, \"output_tokens\": 180, \"total_tokens\": 1484, \"timestamp\": 1770492991.8589373, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 1484, \"effective_input_tokens\": 1304, \"display_input_tokens\": 1304}, \"raw_usage\": {\"completion_tokens\": 180, \"prompt_tokens\": 1304, \"total_tokens\": 1484, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 0}}, \"summary\": {\"model\": \"openai/gpt-4.1\", \"turn_count\": 2, \"cumulative_input_tokens\": 2306, \"cumulative_output_tokens\": 198, \"cumulative_billing_tokens\": 2504, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 1484, \"context_window_size\": 1047576, \"context_usage_percentage\": 0.14166036640778332, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 2306}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "list my fav bet events."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_28pZEzo5uo7Et8nnpRaAyYoP": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_my_favourite_bet_events",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 294831.905383, \"end_time\": 294833.7342059, \"duration_ms\": 1828.82}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/gpt-4.1\", \"input_tokens\": 1496, \"output_tokens\": 22, \"total_tokens\": 1518, \"timestamp\": 1770493004.480088, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 1408, \"total_cache_tokens\": 1408, \"has_cache_activity\": true}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 1, \"current_context_tokens\": 1518, \"effective_input_tokens\": 88, \"display_input_tokens\": 1496}, \"raw_usage\": {\"completion_tokens\": 22, \"prompt_tokens\": 1496, \"total_tokens\": 1518, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 1408}}, \"summary\": {\"model\": \"openai/gpt-4.1\", \"turn_count\": 3, \"cumulative_input_tokens\": 3802, \"cumulative_output_tokens\": 220, \"cumulative_billing_tokens\": 4022, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 2, \"current_context_tokens\": 1518, \"context_window_size\": 1047576, \"context_usage_percentage\": 0.14490595431739559, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 1408, \"cache_hit_rate_percent\": 27.024952015355087, \"cumulative_effective_input_tokens\": 2394}}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_28pZEzo5uo7Et8nnpRaAyYoP": {
+          "content": [
+            {
+              "type": "text",
+              "text": "MyFavouriteBetEvents[8]: \"Events with my bets\",Cricket,Football,\"Football - Over/Under 2.5 Goals\",\"Greyhound Racing\",\"Horse Racing - All\",\"Horse Racing - GB and IE\",Tennis"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_28pZEzo5uo7Et8nnpRaAyYoP\": {\"timing_ms\": 19.29, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Your favourite bet events are:\n\n1. Events with my bets\n2. Cricket\n3. Football\n4. Football - Over/Under 2.5 Goals\n5. Greyhound Racing\n6. Horse Racing - All\n7. Horse Racing - GB and IE\n8. Tennis\n\nLet me know if you want to see favourite markets for any of these events!"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 294833.7745845, \"end_time\": 294835.9903404, \"duration_ms\": 2215.76}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/gpt-4.1\", \"input_tokens\": 1583, \"output_tokens\": 78, \"total_tokens\": 1661, \"timestamp\": 1770493006.736249, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 1408, \"total_cache_tokens\": 1408, \"has_cache_activity\": true}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 1661, \"effective_input_tokens\": 175, \"display_input_tokens\": 1583}, \"raw_usage\": {\"completion_tokens\": 78, \"prompt_tokens\": 1583, \"total_tokens\": 1661, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 1408}}, \"summary\": {\"model\": \"openai/gpt-4.1\", \"turn_count\": 4, \"cumulative_input_tokens\": 5385, \"cumulative_output_tokens\": 298, \"cumulative_billing_tokens\": 5683, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 2, \"current_context_tokens\": 1661, \"context_window_size\": 1047576, \"context_usage_percentage\": 0.15855651523135314, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 2816, \"cache_hit_rate_percent\": 34.337275941958296, \"cumulative_effective_input_tokens\": 2569}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

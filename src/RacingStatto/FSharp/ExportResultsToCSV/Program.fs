@@ -59,9 +59,6 @@ type CsvDataWrapper () =
     member this.Rank
         with get () = this.RacingStattoData.Rank
 
-    member this.AverageRank
-        with get () = this.RacingStattoData.AverageRank
-
     member _this.Odds
         with get () = raceRunnerData.SpPrice
 

@@ -3,7 +3,7 @@
 open System
 open FSharp.Interop.Excel
 
-type RacingStattoDataTypes = ExcelFile<"E:/Data/RacingStatto/060126.xlsx", "Runners", Range = "D5">
+type RacingStattoDataTypes = ExcelFile<"E:/Projects/Bfexplorer/Development/BetfairFramework/BeloSoft.Bfexplorer.HorseRacingStattoBots/Data/RacingStatto.xlsx", "Runners", Range = "D5">
 
 let file = new RacingStattoDataTypes ()
 

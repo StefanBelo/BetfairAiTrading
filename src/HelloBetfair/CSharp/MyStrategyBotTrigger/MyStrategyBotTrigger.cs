@@ -2,9 +2,12 @@
 using BeloSoft.Bfexplorer.Trading;
 using Microsoft.FSharp.Core;
 
+#pragma warning disable CS9113 // Parameter is unread.
+#pragma warning disable CS8603 // Possible null reference return.
+
 namespace MyStrategyBotTrigger
 {
-    public class MyStrategyBotTrigger(Market market, Selection selection, string botName, BotTriggerParameters botTriggerParameters, IMyBfexplorer myBfexplorer) 
+    public class MyStrategyBotTrigger(Market market, Selection selection, string botName, BotTriggerParameters botTriggerParameters, IMyBfexplorer myBfexplorer)
         : IBotTrigger
     {
         private (double FromPrice, double ToPrice) GetParameters()
@@ -25,7 +28,7 @@ namespace MyStrategyBotTrigger
             return MarketExtensionsModule.getFavouriteSelections(market)
                 .FirstOrDefault(s => s.LastPriceTraded >= fromPrice && s.LastPriceTraded <= toPrice);
         }
-
+        
         public TriggerResult Execute()
         {
             var mySelection = GetMySelection();
@@ -45,3 +48,6 @@ namespace MyStrategyBotTrigger
         }
     }
 }
+
+#pragma warning restore CS9113 // Parameter is unread.
+#pragma warning restore CS8603 // Possible null reference return.

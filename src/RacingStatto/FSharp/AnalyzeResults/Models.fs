@@ -55,6 +55,16 @@ type RaceRunnerData =
     member this.IsWinner
         with get () = this.Position = 1uy
 
+    member this.Profit
+        with get () = 
+            let liabilityPerOneUnit = this.SpPrice - 1.0
+
+            if this.IsWinner
+            then
+                liabilityPerOneUnit                
+            else
+                -liabilityPerOneUnit
+
 /// <summary>
 /// RaceWinnerData
 /// </summary>

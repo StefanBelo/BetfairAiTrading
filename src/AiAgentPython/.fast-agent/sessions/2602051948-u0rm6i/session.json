@@ -1,0 +1,16 @@
+{
+  "name": "2602051948-u0rm6i",
+  "created_at": "2026-02-05T19:48:24.737820",
+  "last_activity": "2026-02-05T19:48:24.813514",
+  "history_files": [
+    "history_BfexplorerApp.json"
+  ],
+  "metadata": {
+    "agent_name": "BfexplorerApp",
+    "model": "generic.xai/grok-3",
+    "last_history_by_agent": {
+      "BfexplorerApp": "history_BfexplorerApp.json"
+    },
+    "first_user_preview": "get active market."
+  }
+}

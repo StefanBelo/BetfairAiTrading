@@ -31,20 +31,24 @@ The expected per-runner payload (when available) is `horsePedigreeData`, typical
 - **Pedigree inputs:** Family, DosageProfile, DI, CD
 - **Derived features:** engineered metrics you define below
 For each runner:
-- **Missingness:** If `horsePedigreeData` is missing, mark runner as `PedigreeMissing=true` and set confidence low.
+- **Missingness:** If `horsePedigreeData` is missing, explicitly set `PedigreeData = Missing` and set confidence low.
 - **Consistency checks:**
   - If total points are very low (e.g., ≤ 6), treat DI/CD as noisy and downweight.
   - If fields are malformed/unparseable, set `PedigreeParseError=true` and exclude from pedigree-driven ranking.
 
 #### B. Pedigree Interpretation Principles (Distance Context)
-You must interpret DI and CD *relative to today’s distance*.
+You must interpret DI and CD *relative to today’s distance*, acknowledging that DI is a coarse metric and tracks vary.
 
 - **DI (Dosage Index):** a proxy for speed vs stamina balance.
   - Higher DI → speed-leaning pedigree
   - Lower DI → stamina-leaning pedigree
 - **CD (Center of Distribution):** another proxy for where the pedigree sits on the speed–stamina spectrum.
-- Middle (9f–12f): target DI 0.6 – 1.0, CD -0.2 – 0.1
-- Staying (≥ 14f): target DI < 0.6, CD < -0.2 (Stamina focus)
+
+**Distance-Specific Target Zones:**
+- **Sprint (< 7f):** Target DI 2.0 – 4.0+, CD > 0.6. (Pure Speed)
+- **Sprint/Mile (7f – 8f):** Target DI 1.0 – 2.0, CD 0.1 – 0.5. (Balanced-Speed)
+- **Middle (9f – 12f):** Target DI 0.6 – 1.0, CD -0.2 – 0.1. (Balanced-Stamina)
+- **Staying (> 12f):** Target DI < 0.6, CD < -0.2. (Stamina focus)
 #### C. Derived Features (you must compute these)
 Compute the following features for each runner with pedigree data:
 
@@ -123,7 +127,7 @@ Provide strategies in one or more of these forms:
 
 You must produce:
 - A **table** of all runners with:
-  - `name`, `price`
+  - `name`, `price`, `PedigreeData` (Values: 'Present' or 'Missing')
   - `Family`, `DosageProfile`, `DI`, `CD` (or missing)
   - derived features: `PedigreeBalanceScore`, `SpeedStaminaBucket`, `PedigreeConfidence`
    - `PedigreeProbabilityShare` (field-normalized to sum to 1.0)
@@ -131,12 +135,6 @@ You must produce:
   - `Rationale`: one short sentence tied to *specific* pedigree fields and confidence
 
 - A **short rules section** describing the strategy as if-then rules.
-
-- A **validation plan**:
-  - what historical dataset you’d need (past markets + PedigreeDataForHorses + BSP)
-  - labels (win, place, or price move)
-  - how you would test (time-based splits, avoid leakage)
-  - what would falsify the edge quickly
 
 ---
 
