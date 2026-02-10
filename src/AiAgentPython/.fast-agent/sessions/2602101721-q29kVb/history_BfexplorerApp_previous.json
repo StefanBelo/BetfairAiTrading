@@ -1,0 +1,39 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "who are you?"
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "I am an AI agent created to help you with tasks, answer questions, and provide information. I can assist with Betfair market monitoring, betting strategies, and other related activities, as well as general topics. How can I help you today?"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 76116.1700844, \"end_time\": 76119.0983683, \"duration_ms\": 2928.28}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/gpt-4.1\", \"input_tokens\": 1052, \"output_tokens\": 51, \"total_tokens\": 1103, \"timestamp\": 1770740503.76452, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 1103, \"effective_input_tokens\": 1052, \"display_input_tokens\": 1052}, \"raw_usage\": {\"completion_tokens\": 51, \"prompt_tokens\": 1052, \"total_tokens\": 1103, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 0}}, \"summary\": {\"model\": \"openai/gpt-4.1\", \"turn_count\": 1, \"cumulative_input_tokens\": 1052, \"cumulative_output_tokens\": 51, \"cumulative_billing_tokens\": 1103, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 0, \"current_context_tokens\": 1103, \"context_window_size\": 1047576, \"context_usage_percentage\": 0.10529069012653976, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 1052}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

@@ -120,7 +120,7 @@ Output **one markdown table only** first (no prose before it). After the table, 
 
 ### Table columns (in this order)
 
-| Runner | Price | MarketImpliedProb | Rating | StarRating | Form | RecentRuns | DaysSinceLastRun | BestSpeedRating | AverageSpeedRating | SpeedRatingTrend | SectionalBalanceScore | RunningStyleMatch | CourseDistanceRecord | SpeedDataConfidence | SpeedValueScore | SpeedProbabilityShare | AdjustedWinProb | EdgeScore | EV_Back_per_£1 | EV_Lay_per_£1_liability | EVScore | SuggestedAction | BaseFinding |
+| Runner | Price | SpeedProbabilityShare | AdjustedWinProb | SuggestedAction | BaseFinding |
 
 **BaseFinding** must be a single short sentence referencing specific computed metrics (e.g., “High AvgSpeed (104) + positive trend (+2.8) with 0.74 confidence; back EV +3.1%”).
 

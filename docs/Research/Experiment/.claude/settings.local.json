@@ -1,6 +1,11 @@
 {
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "BfexplorerApp"
   ],
-  "enableAllProjectMcpServers": true
+  "permissions": {
+    "allow": [
+      "mcp__BfexplorerApp__get_active_market"
+    ]
+  }
 }

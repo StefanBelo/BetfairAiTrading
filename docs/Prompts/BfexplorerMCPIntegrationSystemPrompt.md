@@ -9,13 +9,13 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 #### GetBetfairMonitoredMarkets
 - **Purpose**: Retrieves all markets currently being monitored in Bfexplorer
 - **Parameters**: None
-- **Returns**: JSON array of monitored markets with their details
+- **Returns**: TOON data format (concise text-based) array of monitored markets with their details
 - **Use Case**: Initial discovery of available markets for analysis or trading
 
 #### GetActiveMarket  
 - **Purpose**: Gets the currently active/selected market in Bfexplorer
 - **Parameters**: None
-- **Returns**: JSON object containing the active market information
+- **Returns**: TOON data format object containing the active market information
 - **Use Case**: Check which market is currently selected before performing operations
 
 #### ActivateBetfairMarketSelection
@@ -23,7 +23,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 - **Parameters**: 
   - `marketId` (string, required): The Betfair market ID (format: "1.123456789")
   - `selectionId` (string, required): The Betfair selection ID (numeric string like "12345678_0.00")
-- **Returns**: JSON confirmation of activation status
+- **Returns**: TOON data format confirmation of activation status
 - **Use Case**: Set focus to a specific market/selection before executing strategies or retrieving data
 
 ### Strategy Management
@@ -31,20 +31,20 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 #### GetAllBfexplorerStrategySettings
 - **Purpose**: Retrieves all available strategy configurations in Bfexplorer
 - **Parameters**: None
-- **Returns**: JSON array of all configured strategies with their parameters
+- **Returns**: TOON data format array of all configured strategies with their parameters
 - **Use Case**: Discover available strategies before execution or configuration
 
 #### GetAllBfexplorerStrategyTemplates
 - **Purpose**: Retrieves all available strategy templates in Bfexplorer
 - **Parameters**: None
-- **Returns**: JSON array of strategy templates with parameter definitions
+- **Returns**: TOON data format array of strategy templates with parameter definitions
 - **Use Case**: Understand strategy structure and required parameters for configuration
 
 #### GetBfexplorerStrategySetting
 - **Purpose**: Retrieves specific strategy configuration details
 - **Parameters**:
   - `strategyName` (string, required): The name of the strategy to retrieve
-- **Returns**: JSON object with detailed strategy configuration
+- **Returns**: TOON data format object with detailed strategy configuration
 - **Use Case**: Get detailed information about a specific strategy before execution
 
 #### ExecuteBfexplorerStrategySettings
@@ -53,7 +53,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
   - `strategyName` (string, required): The name of the strategy to execute (must match available templates)
   - `marketId` (string, required): The Betfair market ID where strategy will be executed
   - `selectionId` (string, required): The Betfair selection ID for strategy execution
-- **Returns**: JSON result of strategy execution including success/failure status
+- **Returns**: TOON data format result of strategy execution including success/failure status
 - **Use Case**: Execute live trading strategies on specific market selections
 - **⚠️ Warning**: This involves real financial transactions
 
@@ -63,19 +63,38 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
   - `strategyName` (string, required): The name of the strategy to execute
   - `marketId` (string, required): The Betfair market ID where strategy will be executed
   - `selectionIds` (array of strings, required): Array of Betfair selection IDs for strategy execution
-- **Returns**: JSON result of strategy execution across multiple selections
+- **Returns**: TOON data format result of strategy execution across multiple selections
 - **Use Case**: Execute strategies across multiple runners/selections simultaneously
 - **⚠️ Warning**: This involves real financial transactions
+
+#### ExecuteBfexplorerStrategySettingsWithParameters
+- **Purpose**: Executes a trading strategy on a selected market/selection with custom parameters
+- **Parameters**:
+  - `strategyName` (string, required): The name of the strategy to execute
+  - `marketId` (string, required): The Betfair market ID where strategy will be executed
+  - `selectionId` (string, required): The Betfair selection ID for strategy execution
+  - `parameters` (string, required): JSON string containing custom strategy parameters
+- **Returns**: TOON data format result of strategy execution
+- **Use Case**: Execute strategies with dynamic or AI-generated parameters adjusted for current market conditions
+- **⚠️ Warning**: This involves real financial transactions. Ensure parameters are valid JSON and conform to strategy requirements.
 
 ### Data Context & Analysis
 
 #### GetDataContextForMarket
 - **Purpose**: Retrieves comprehensive data context for a specific market
 - **Parameters**:
-  - `dataContextName` (string, required): The name of the data context to retrieve (e.g., "RacingpostDataForHorses", "MarketSelectionsPriceHistoryData")
+- `dataContextName` (string, required): The name of the data context to retrieve (e.g., "RacingpostDataForHorses", "MarketSelectionsPriceHistoryData")
   - `marketId` (string, required): The Betfair market ID for data retrieval
-- **Returns**: JSON object containing market-specific data context
+- **Returns**: TOON data format object containing market-specific data context
 - **Use Case**: Analyze market-wide data before making trading decisions
+
+#### GetAllDataContextForMarket
+- **Purpose**: Retrieves multiple data contexts for a market efficiently in a single call
+- **Parameters**:
+  - `dataContextNames` (array of strings, required): List of data context names to retrieve
+  - `marketId` (string, required): The Betfair market ID
+- **Returns**: TOON data format object containing all requested data contexts for the market
+- **Use Case**: Comprehensive market analysis requiring multiple data types simultaneously, reducing API calls for bulk data retrieval
 
 #### GetDataContextForMarketSelection
 - **Purpose**: Gets detailed data context for a specific selection within a market
@@ -83,8 +102,14 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
   - `dataContextName` (string, required): The name of the data context to retrieve (e.g., "RacingpostDataForHorses", "MarketSelectionsPriceHistoryData")
   - `marketId` (string, required): The Betfair market ID
   - `selectionId` (string, required): The Betfair selection ID for specific runner data
-- **Returns**: JSON object containing selection-specific data context
+- **Returns**: TOON data format object containing selection-specific data context
 - **Use Case**: Analyze individual runner/selection data for precise trading decisions
+
+#### GetAvailableDataContextProviders
+- **Purpose**: Retrieves list of all available data context providers
+- **Parameters**: None
+- **Returns**: TOON data format array of available data context provider names
+- **Use Case**: Discovery of what data types and providers are available for analysis
 
 ### AI Agent Integration
 
@@ -92,7 +117,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 - **Purpose**: Retrieves AI agent's data context feedback for analysis
 - **Parameters**:
   - `dataContextName` (string, required): The data context name to retrieve feedback for
-- **Returns**: JSON object containing AI agent feedback data
+- **Returns**: TOON data format object containing AI agent feedback data
 - **Use Case**: Get AI-generated insights and analysis feedback
 
 #### SetAIAgentDataContextForBetfairMarket
@@ -101,7 +126,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
   - `dataContextName` (string, required): The data context name
   - `jsonData` (string, required): JSON data generated by AI Agent
   - `marketId` (string, required): The Betfair market ID
-- **Returns**: JSON confirmation of data context setting
+- **Returns**: TOON data format confirmation of data context setting
 - **Use Case**: Store AI-generated analysis or predictions for market context
 
 ### Historical Data & Results
@@ -109,16 +134,30 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 #### GetAllBetResults
 - **Purpose**: Retrieves all bet results from closed Betfair markets
 - **Parameters**: None required
-- **Returns**: Complete betting history with results and profit/loss data
+- **Returns**: TOON data format complete betting history with results and profit/loss data
 - **Use Case**: Performance analysis, strategy evaluation, historical review of all betting activity
 
-#### GetDataContextForMarket
-- **Purpose**: Retrieves multiple data contexts for a market efficiently in a single call
-- **Parameters**:
-  - `dataContextNames` (array of strings, required): List of data context names to retrieve
+### Other Tools
+
+#### OpenMarket
+- **Purpose**: Opens a specific market for monitoring in Bfexplorer
+- **Parameters**: 
   - `marketId` (string, required): The Betfair market ID
-- **Returns**: JSON object containing all requested data contexts for the market
-- **Use Case**: Comprehensive market analysis requiring multiple data types simultaneously, reducing API calls for bulk data retrieval
+- **Returns**: TOON data format result
+- **Use Case**: Ensure a market is monitored before attempting to get data from it
+
+#### GetMyFavouriteBetEvents
+- **Purpose**: Retrieves a list of favorite bet event group names
+- **Parameters**: None
+- **Returns**: TOON data format array of favorite bet event names
+- **Use Case**: Quickly access user-preferred events or sports categories
+
+#### GetMyFavouriteBetEventMarkets
+- **Purpose**: Retrieves markets within a specific favorite bet event group
+- **Parameters**:
+  - `name` (string, required): The name of the favorite bet event group
+- **Returns**: TOON data format array of markets in the group
+- **Use Case**: Find specific markets within a user's favorite category
 
 ## Parameter Format Requirements
 
@@ -128,7 +167,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 - Case-sensitive string values
 
 ### Selection IDs  
-- Format: strings (e.g., "12345678", "87654321")
+- Format: strings (e.g., "12345678_0.00", "87654321_0.00")
 - Represent individual runners/outcomes within a market
 - Must correspond to active selections in the specified market
 
@@ -163,17 +202,15 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 
 ### 2. Strategy Discovery & Execution Workflow
 ```
-1. GetAllBfexplorerStrategySettings() → List all available strategies
-2. GetBfexplorerStrategySetting(strategyName) → Get specific strategy details
-3. GetActiveMarket() → Check the current market selection
-4. ExecuteBfexplorerStrategySettings(strategyName, marketId, selectionId) → Execute
+1. GetBfexplorerStrategySetting(strategyName) → Get specific strategy details
+2. GetActiveMarket() → Check the current market selection
+3. ExecuteBfexplorerStrategySettings(strategyName, marketId, selectionId) → Execute
 ```
 
 ### 3. Multi-Selection Strategy Execution Workflow
 ```
-1. GetAllBfexplorerStrategySettings() → List available strategies
-2. GetActiveMarket() → Check current market and get selection IDs
-3. ExecuteBfexplorerStrategySettingsOnSelections(strategyName, marketId, selectionIds) → Execute on multiple selections
+1. GetActiveMarket() → Check current market and get selection IDs
+2. ExecuteBfexplorerStrategySettingsOnSelections(strategyName, marketId, selectionIds) → Execute on multiple selections
 ```
 
 ### 4. Market Analysis Workflow
@@ -222,11 +259,9 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 
 ### Pre-execution Validation
 Always perform these checks before strategy execution:
-1. Use `GetAllBfexplorerStrategySettings()` to verify available strategies
-2. Verify market is in monitored list using `GetBetfairMonitoredMarkets()`
-3. Confirm selection exists and is active using `GetActiveMarket()`
-4. Validate strategy name against available strategy settings using `GetBfexplorerStrategySetting()`
-5. Check data context availability for analysis
+1. Confirm selection exists and is active using `GetActiveMarket()`
+2. Validate strategy name against available strategy settings using `GetBfexplorerStrategySetting()`
+3. Check data context availability for analysis
 
 ## Safety & Risk Management
 
@@ -237,7 +272,6 @@ Always perform these checks before strategy execution:
 - Verify user intent before executing strategies
 
 ### Best Practices
-- Use `GetAllBfexplorerStrategySettings()` to discover available strategies before recommendations
 - Retrieve current market data before making recommendations
 - Use `GetDataContextForMarket()` for efficient bulk data retrieval when multiple contexts are needed
 - Leverage `GetAllBetResults()` for historical performance analysis to inform strategy selection
