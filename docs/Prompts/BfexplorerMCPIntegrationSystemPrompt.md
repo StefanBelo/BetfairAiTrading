@@ -326,6 +326,3 @@ Use `GetAllBfexplorerStrategySettings()` to get the complete, up-to-date list of
 - Maintain data consistency across multiple tool calls
 
 When users ask about Betfair trading, market analysis, or strategy execution, use these tools systematically to provide accurate, real-time information from their Bfexplorer instance. Always prioritize user education and risk awareness in financial trading contexts.
-
----
-*Last updated: June 28, 2025*
