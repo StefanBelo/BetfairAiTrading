@@ -52,10 +52,16 @@ This directory contains community posts, articles, and real-world examples showc
 **Automate Betfair trading with AI prompts and Bfexplorer—no coding required!**
 
 ### Weekly Reports
+- [BetfairAiTrading Weekly Report - January 10, 2026](BetfairAiTrading_Weekly_Report_2026-01-10.md)
 - [BetfairAiTrading Weekly Report – January 2, 2026](BetfairAiTrading_Weekly_Report_2026-01-02.md)
 - [BetfairAiTrading Weekly Report - December 27, 2025 (Year in Review)](BetfairAiTrading_Weekly_Report_2025-12-27.md)
+- [Betfair AI Trading Weekly Report - December 20, 2025](BetfairAiTrading_Weekly_Report_2025-12-20.md)
+- [Betfair AI Trading Weekly Report - December 13, 2025](BetfairAiTrading_Weekly_Report_2025-12-13.md)
 - [Betfair AI Trading Weekly Report - December 6, 2025](BetfairAiTrading_Weekly_Report_2025-12-06.md)
 - [Betfair AI Trading Weekly Report - November 8, 2025](BetfairAiTrading_Weekly_Report_2025-11-08.md)
+- [Betfair AI Trading Weekly Report - November 29, 2025](BetfairAiTrading_Weekly_Report_2025-11-29.md)
+- [Betfair AI Trading Weekly Report - November 22, 2025](BetfairAiTrading_Weekly_Report_2025-11-22.md)
+- [Betfair AI Trading Weekly Report - November 15, 2025](BetfairAiTrading_Weekly_Report_2025-11-15.md)
 - [Betfair AI Trading Weekly Report - November 1, 2025](BetfairAiTrading_Weekly_Report_2025-11-01.md)
 - [Betfair AI Trading Weekly Report - October 25, 2025](BetfairAiTrading_Weekly_Report_2025-10-25.md)
 - [Betfair AI Trading Weekly Report - October 18, 2025](BetfairAiTrading_Weekly_Report_2025-10-18.md)
@@ -71,6 +77,29 @@ This directory contains community posts, articles, and real-world examples showc
 - [BetfairAiTrading Weekly Report - August 9, 2025](BetfairAiTrading_Weekly_Report_2025-08-09.md)
 - [BetfairAiTrading Weekly Report - August 2, 2025](BetfairAiTrading_Weekly_Report_2025-08-02.md)
 - [BetfairAiTrading Weekly Report - July 26, 2025](BetfairAiTrading_Weekly_Report_2025-07-26.md)
+
+### Additional Posts
+
+- [A Deep Dive into Value Betting](Post_ADeepDiveintoValueBetting.md)
+- [AI Agent Automation Betting Research](Post_AI_Agent_Automation_Betting_Research.md)
+- [Automating Late Goal Betting](Post_AutomatingLateGoalBetting.md)
+- [On4e Separation Data Retrieval Analysis](Post_On4eSeparation_Data_Retrieval_Analysis.md)
+- [Racing Statto Data Rule Discovery](Post_RacingStattoData_RuleDiscovery.md)
+- [MCP Data Exchange Formats Reddit Post](Post_mcp_data_exchange_formats_reddit_post.md)
+- [Model Probability or EV](Post_ModelProbabilityOrEV.md)
+- [Programmer Language History](ProgrammerLanguageHistory.md)
+- [Why I Choose F# For AI Assisted Betfair Trading](Why_I_Choose_FSharp_For_AI_Assisted_Betfair_Trading.md)
+- [Financial Signals Betting Reddit Post](FinancialSignalsBettingRedditPost.md)
+- [LinkedIn Betting Strategies Post](LinkedIn_Betting_Strategies_Post.md)
+- [Market Data Browser Announcement](MarketDataBrowser_Announcement.md)
+- [Market Data Context Overview Reddit Post](Market_Data_Context_Overview_Reddit_Post.md)
+- [Reddit Post: Free AI Agent Tools With MCP For Betfair](RedditPost_Free_AI_Agent_Tools_With_MCP_For_Betfair.md)
+- [Reddit Post: Openclaw Bfexplorer Tools](RedditPost_OpenclawBfexplorerTools.md)
+- [Reddit Post: What is LBBW v2 Model](RedditPost_What_is_LBBW_v2_Model.md)
+- [Reddit: Late Goal Strategy AI Agent](Reddit_LateGoalStrategy_AI_Agent.md)
+- [Reddit Post Timeform R2](reddit_post_timeform_r2.md)
+- [Reddit: Programming vs AI](Reddit_Programming-vs-AI.md)
+- [Reddit Trading Strategies](reddit_trading_strategies.md)
 
 ### Featured Posts & Articles
 

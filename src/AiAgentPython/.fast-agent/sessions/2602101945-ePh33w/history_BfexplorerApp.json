@@ -1,0 +1,39 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Can you subscriber to resource updates?"
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "I do not have the ability to subscribe to resource updates in a traditional sense (like receiving push notifications or automatic updates). However, I can periodically check or retrieve updated information from resources, services, or data sources you specify. In the context of Betfair and Bfexplorer, I can:\n\n- Monitor specific markets and selections.\n- Regularly pull latest data contexts, market status, strategy settings, and results.\n- Inform you about any changes when you ask.\n\nIf you want continuous updates, you can set up an automation or schedule to ask me to fetch the latest data from a resource at intervals, and I will provide the most up-to-date information available at that time.\n\nWould you like to set up such a monitoring cycle or specify what resource you want updates from?"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 84756.3787858, \"end_time\": 84760.0934563, \"duration_ms\": 3714.67}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/gpt-4.1\", \"input_tokens\": 1055, \"output_tokens\": 158, \"total_tokens\": 1213, \"timestamp\": 1770749144.7595973, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 1213, \"effective_input_tokens\": 1055, \"display_input_tokens\": 1055}, \"raw_usage\": {\"completion_tokens\": 158, \"prompt_tokens\": 1055, \"total_tokens\": 1213, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 0}}, \"summary\": {\"model\": \"openai/gpt-4.1\", \"turn_count\": 1, \"cumulative_input_tokens\": 1055, \"cumulative_output_tokens\": 158, \"cumulative_billing_tokens\": 1213, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 0, \"current_context_tokens\": 1213, \"context_window_size\": 1047576, \"context_usage_percentage\": 0.11579112159881479, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 1055}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_EE5966LpaC92FMGP7z9rAuIG": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 89061.0031637, \"end_time\": 89069.1850053, \"duration_ms\": 8181.84}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_EE5966LpaC92FMGP7z9rAuIG": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.253774585\"\n  StartTime: \"2026-02-10T18:00:00Z\"\n  EventType: Tennis\n  EventName: \"Cilic v Le Tien\"\n  MarketName: \"Match Odds\"\n  TotalMatched: 822652.44\n  Status: Open\n  Selections[2]{SelectionId,Name,Price,TotalMatched,Status}:\n    2263681_0.00,\"Marin Cilic\",1.2,514239.31,Active\n    42082091_0.00,\"Learner Tien\",6,308413.13,Active"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_EE5966LpaC92FMGP7z9rAuIG\": {\"timing_ms\": 10.93, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The active market is:\n\n- Event: Cilic v Le Tien (Tennis)\n- Market: Match Odds\n- Market ID: 1.253774585\n- Status: Open\n- Selections: Marin Cilic (1.2), Learner Tien (6)"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 89069.2184115, \"end_time\": 89070.7021159, \"duration_ms\": 1483.7}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

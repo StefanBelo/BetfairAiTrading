@@ -19,7 +19,7 @@ Welcome to Betfair AI Trading – an open, research-driven hub for applying AI a
 
 ---
 
-## 🆕 What's New (November 2025)
+## 🆕 What's New (February 2026)
 
 ### 🚀 Latest Developments
 - **New RacingStattoData Analysis Prompt**: Added specialized prompt for RacingStatto data evaluation with EV and Kelly fraction calculations for horse racing markets
@@ -28,17 +28,21 @@ Welcome to Betfair AI Trading – an open, research-driven hub for applying AI a
 - **BetfairSpData Systems**: Mathematical betting strategies using starting price data
 - **Platform Expert Templates**: Specialized configurations for ChatGPT, Claude, Gemini, and Grok
 - **PROMETHEIA Framework**: Advanced AI prompting methodology for enhanced performance
+- **Advanced EV Analysis Systems**: R10-R11 evolution with enhanced silent execution and feedback mechanisms
+- **Weight of Money Strategy Enhancements**: Advanced market sentiment analysis with automated execution thresholds
 
 ### 📈 Recent Community Highlights
-- **Weekly Reports**: Latest insights on AI model selection and live betting strategies
-- **New Analysis Systems**: R5 Favourite Analysis with probability-based metrics
-- **Enhanced MCP Integration**: Improved AI agent connectivity with BFExplorer
-- **Community Growth**: Expanding ecosystem of AI-powered trading tools
+- **Weekly Reports**: Latest insights through January 2026 on AI model selection, live betting strategies, and market analysis
+- **New Analysis Systems**: R5 Favourite Analysis with probability-based metrics and advanced automation
+- **Enhanced MCP Integration**: Improved AI agent connectivity with BFExplorer and multi-provider support
+- **Community Growth**: Expanding ecosystem with new posts, strategies, and collaborative discussions
+- **New Community Posts**: Comprehensive collection of latest insights on AI trading, strategy development, and market psychology
 
 ### 💻 Code Updates
 - **C# AI Agent**: Enhanced with latest AI providers and improved MCP integration
 - **Python AI Agent**: FastAgent-based automation with advanced model support
 - **F# Applications**: Robust trading applications with latest DevExpress updates
+- **Multi-Language Support**: Expanded implementations across Python, C#, TypeScript, and F#
 
 ## 🧠 AI Analysis Prompts (120+ Specialized Systems)
 
@@ -206,6 +210,7 @@ The **[Tutorials](docs/Prompts/Tutorials/)** folder provides advanced educationa
 **[📖 Complete Posts Index](docs/Posts/README.md)**
 
 #### Latest Community Highlights
+- **[Betfair AI Trading Weekly Report - January 10, 2026](docs/Posts/BetfairAiTrading_Weekly_Report_2026-01-10.md)** - Latest community insights on AI integration, market analysis, and trading strategies
 - **[Betfair AI Trading Weekly Report - August 2, 2025](docs/Posts/BetfairAiTrading_Weekly_Report_2025-08-02.md)** - Community insights on model selection, LLMs as study tools, and deriving place odds from win odds in horse racing
 - **[Betfair AI Trading Weekly Report - July 26, 2025](docs/Posts/BetfairAiTrading_Weekly_Report_2025-07-26.md)** - Community discussions on ML libraries, horse racing data structuring, and the evolution from traditional to agentic AI approaches
 
@@ -367,7 +372,7 @@ Pre-built strategies for multiple sports:
 
 ## 🌟 Community Impact
 
-### 📊 Current Statistics (September 2025)
+### 📊 Current Statistics (February 2026)
 - **120+ AI Analysis Prompts** - Comprehensive collection across all major sports
 - **Multi-Language Support** - Python, C#, TypeScript, and F# implementations
 - **Active Community** - Growing ecosystem of developers and traders
@@ -387,7 +392,7 @@ Pre-built strategies for multiple sports:
 
 ## 🎯 Project Status & Roadmap
 
-### ✅ Current Status (September 2025)
+### ✅ Current Status (February 2026)
 - **120+ AI Analysis Prompts**: Comprehensive collection for all major sports
 - **Multi-Language Support**: Python, C#, TypeScript, and F# implementations
 - **MCP Integration**: Seamless BFExplorer connectivity

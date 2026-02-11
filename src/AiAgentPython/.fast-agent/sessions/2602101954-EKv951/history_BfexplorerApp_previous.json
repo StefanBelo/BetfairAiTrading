@@ -1,0 +1,163 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_yBehkvW8uVbiaMQrZUYxdECo": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 85283.2888453, \"end_time\": 85285.9027347, \"duration_ms\": 2613.89}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/gpt-4.1\", \"input_tokens\": 1052, \"output_tokens\": 18, \"total_tokens\": 1070, \"timestamp\": 1770749670.568839, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 1024, \"total_cache_tokens\": 1024, \"has_cache_activity\": true}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 1, \"current_context_tokens\": 1070, \"effective_input_tokens\": 28, \"display_input_tokens\": 1052}, \"raw_usage\": {\"completion_tokens\": 18, \"prompt_tokens\": 1052, \"total_tokens\": 1070, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 1024}}, \"summary\": {\"model\": \"openai/gpt-4.1\", \"turn_count\": 1, \"cumulative_input_tokens\": 1052, \"cumulative_output_tokens\": 18, \"cumulative_billing_tokens\": 1070, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 1070, \"context_window_size\": 1047576, \"context_usage_percentage\": 0.10214056068485722, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 1024, \"cache_hit_rate_percent\": 49.32562620423892, \"cumulative_effective_input_tokens\": 28}}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_yBehkvW8uVbiaMQrZUYxdECo": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.253792542\"\n  StartTime: \"2026-02-10T19:15:00Z\"\n  EventType: \"Horse Racing\"\n  EventName: Newcastle\n  MarketName: \"6f Hcap\"\n  TotalMatched: 57827.78\n  Status: Open\n  Selections[9]{SelectionId,Name,Price,TotalMatched,Status}:\n    76174173_0.00,\"Dc Cogent\",4.4,12749.31,Active\n    24292276_0.00,\"Spartan Fighter\",5.1,20616.14,Active\n    74585731_0.00,\"Northern Attitude\",6.2,5992.4,Active\n    23658077_0.00,\"Judgment Call\",7.4,5575.37,Active\n    68425449_0.00,\"Phoenix Of Dreams\",10.5,3461.37,Active\n    334820_0.00,Blackjack,16,3360.43,Active\n    39381940_0.00,\"Showtime Mahomes\",20,2262.72,Active\n    35514507_0.00,\"Captain Vallo\",20,1599.88,Active\n    11773233_0.00,\"Brian The Snail\",29,2210.14,Active"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_yBehkvW8uVbiaMQrZUYxdECo\": {\"timing_ms\": 13.24, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The currently active Betfair market is:\n\n- Event: Horse Racing - Newcastle\n- Market: 6f Hcap\n- Start Time: 2026-02-10 19:15 UTC\n- Total Matched: \u00a357,827.78\n- Status: Open\n\nActive selections in this market:\n1. Dc Cogent (Price: 4.4, Matched: \u00a312,749.31)\n2. Spartan Fighter (Price: 5.1, Matched: \u00a320,616.14)\n3. Northern Attitude (Price: 6.2, Matched: \u00a35,992.40)\n4. Judgment Call (Price: 7.4, Matched: \u00a35,575.37)\n5. Phoenix Of Dreams (Price: 10.5, Matched: \u00a33,461.37)\n6. Blackjack (Price: 16, Matched: \u00a33,360.43)\n7. Showtime Mahomes (Price: 20, Matched: \u00a32,262.72)\n8. Captain Vallo (Price: 20, Matched: \u00a31,599.88)\n9. Brian The Snail (Price: 29, Matched: \u00a32,210.14)\n\nIf you need further details or want to interact with this market, let me know!"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 85285.9396845, \"end_time\": 85289.8550565, \"duration_ms\": 3915.37}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/gpt-4.1\", \"input_tokens\": 1393, \"output_tokens\": 280, \"total_tokens\": 1673, \"timestamp\": 1770749674.521307, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 1024, \"total_cache_tokens\": 1024, \"has_cache_activity\": true}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 1673, \"effective_input_tokens\": 369, \"display_input_tokens\": 1393}, \"raw_usage\": {\"completion_tokens\": 280, \"prompt_tokens\": 1393, \"total_tokens\": 1673, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 1024}}, \"summary\": {\"model\": \"openai/gpt-4.1\", \"turn_count\": 2, \"cumulative_input_tokens\": 2445, \"cumulative_output_tokens\": 298, \"cumulative_billing_tokens\": 2743, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 1673, \"context_window_size\": 1047576, \"context_usage_percentage\": 0.15970201684651042, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 2048, \"cache_hit_rate_percent\": 45.582016470064545, \"cumulative_effective_input_tokens\": 397}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "what is your llm context window?"
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "My context window (also known as \"context length\" or \"context size\") refers to the maximum amount of text\u2014measured in tokens\u2014that I can consider at one time while generating responses. For the current version (based on OpenAI GPT-4), my context window is approximately **128,000 tokens**.\n\nHere are some details:\n\n- **Tokens:** A token is roughly 4 characters or 1 word in English, depending on the language and content.\n- **128,000 tokens** is quite large; it allows me to process long conversations, documents, or multiple instructions without forgetting earlier parts of the interaction.\n- If the conversation length exceeds this limit, the oldest messages or content will be \"forgotten\" or pushed out of the active window, which means I may lose track of details shared earlier.\n\nLet me know if you want more technical info or comparisons with other language models!"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 85307.3839745, \"end_time\": 85313.0133329, \"duration_ms\": 5629.36}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/gpt-4.1\", \"input_tokens\": 1687, \"output_tokens\": 183, \"total_tokens\": 1870, \"timestamp\": 1770749697.679602, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 1664, \"total_cache_tokens\": 1664, \"has_cache_activity\": true}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 1870, \"effective_input_tokens\": 23, \"display_input_tokens\": 1687}, \"raw_usage\": {\"completion_tokens\": 183, \"prompt_tokens\": 1687, \"total_tokens\": 1870, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 1664}}, \"summary\": {\"model\": \"openai/gpt-4.1\", \"turn_count\": 3, \"cumulative_input_tokens\": 4132, \"cumulative_output_tokens\": 481, \"cumulative_billing_tokens\": 4613, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 1870, \"context_window_size\": 1047576, \"context_usage_percentage\": 0.17850733502867572, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 3712, \"cache_hit_rate_percent\": 47.322794492605816, \"cumulative_effective_input_tokens\": 420}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "\"# The Expert Horse Racing Speed Analyst (Optimized)\n\nUse this as the system/prompt template for *every* UK/IRE win market.\n\n## 1) Role, Inputs, Hard Constraints\n\n**Role:** Elite horse racing speed analyst + cautious Betfair trader.\n\n**Allowed inputs (only):**\n- Current market prices (`price`) and runner names from `GetActiveMarket`.\n- `AtTheRacesDataForHorses` from `GetAllDataContextForMarket`.\n\n**Hard constraints:**\n- Treat speed/sectionals as a weak-to-moderate prior.\n- Penalize missing/stale/low-sample data explicitly.\n- Never claim true probability; produce a conservative blended probability for EV.\n\n## 2) Data Calls (must do)\n\n1. `GetActiveMarket`  get `marketId`, market metadata, all selections (`selectionId`, `name`, `price`).\n2. `GetAllDataContextForMarket` with `dataContextNames: [\"AtTheRacesDataForHorses\"]`.\n\n## 3) Parsing, Data Quality, and Weighting\n\nFor each runner:\n\n**A. Availability flags**\n- If `atTheRacesHorseData` missing  `SpeedDataConfidence = 0` and `SuggestedAction = Ignore` unless price is extreme and you explicitly label it data-missing, no trade.\n\n**B. Sample size & recency**\n- `RecentRuns = count(RecentForm with SpeedRating)`.\n- If `RecentRuns < 3`  `LowSampleSize=true` and apply a confidence penalty.\n- `DaysSinceLastRun` from most recent `Date`.\n  - If `DaysSinceLastRun > 60`  `RecentlyInactive=true`.\n  - Runs older than 90 days get lower weight in averages.\n\n**C. Consistency**\n- Compute `SpeedRatingStdDev` over last up to 5 SpeedRatings.\n- If `SpeedRatingStdDev > 5`  `InconsistentForm=true`.\n- If most runs lack sectionals  `SectionalDataWeak=true`.\n\n## 4) Features (compute exactly these)\n\nAssume `SpeedRating` is a performance % where 100 is par (higher is faster).\n\n1. `BestSpeedRating` (0120): max SpeedRating in last 10 runs.\n2. `AverageSpeedRating` (0120): exponentially-weighted mean of last 5 SpeedRatings.\n3. `SpeedRatingTrend` (-10 to +10): linear regression slope over last 5 SpeedRatings (index 1..n by recency).\n4. `SectionalBalanceScore` (0100):\n   - For each run with all sectionals: compute `early_ratio` and `late_ratio`.\n   - Map todays market distance into bucket (Sprint 7f, Mile 7f1m, Middle 9f12f, Staying 14f).\n   - Target ratios:\n     - Sprint: early 0.350.40, late 0.300.33\n     - Mile: early 0.330.35, late 0.330.35\n     - Middle: early 0.300.33, late 0.350.38\n   - Distance from target = Euclidean distance to the *nearest* target point.\n   - Score = $100 \\cdot e^{-2.0 \\cdot distance}$, then average across runs.\n5. `RunningStyleMatch` (Suited/Neutral/Unsuited): dominant `RunningStyle` mapped to todays distance bucket.\n6. `CourseDistanceRecord` (0100):\n   - If no matching course+distance runs  50.\n   - Else mean SpeedRating at matching C&D, capped at 100.\n7. `StarRatingAdjustment` (01): $(StarRating - 1)/4$ (10, 51). If missing, use 0.5.\n8. `SpeedDataConfidence` (01):\n   - Start 1.0\n   - If missing data  0\n   - If `LowSampleSize`  0.5\n   - If `RecentlyInactive`  0.7\n   - If `InconsistentForm`  0.8\n   - If `SectionalDataWeak`  0.9\n   - Then (0.6 + 0.4StarRatingAdjustment) (keeps it conservative)\n9. `SpeedValueScore` (0100):\n   - `speed_component = 0.4*AverageSpeedRating + 0.3*BestSpeedRating + 0.2*SectionalBalanceScore + 0.1*CourseDistanceRecord`\n   - Trend tweak: if `SpeedRatingTrend > 2` add 3; if `< -2` subtract 3.\n   - Map to 0100 if needed (cap 0..100), then multiply by `SpeedDataConfidence`.\n10. `SpeedProbabilityShare` (01; sums to 1.0 across field):\n   - `weight = max(0, SpeedValueScore/100) * SpeedDataConfidence`\n   - `SpeedProbabilityShare = weight / sum(weight_all)` (if sum=0, set all to 0).\n\n## 5) Market Probability, Conservative Blend, and EV\n\nCompute market probabilities from prices and *normalize* across the field (avoid overround bias):\n\n- `MarketImpliedProbRaw = 1/price`\n- `MarketImpliedProb = MarketImpliedProbRaw / sum(MarketImpliedProbRaw_all)`\n\nCreate a conservative blended probability (speed never dominates):\n\n- `BlendWeight = min(0.35, 0.35 * SpeedDataConfidence)`\n- `AdjustedWinProb = (1-BlendWeight)*MarketImpliedProb + BlendWeight*SpeedProbabilityShare`\n\nCompute EV-like values (report as decimals, e.g. +0.03 = +3%):\n\n- `EV_Back_per_1 = AdjustedWinProb*price - 1`\n- `EV_Lay_per_1_liability = (1-AdjustedWinProb)/(price-1) - AdjustedWinProb`\n\nDefine a single sortable score:\n\n- `EVScore = 100 * max(EV_Back_per_1, EV_Lay_per_1_liability)`\n- Also compute `EdgeScore = SpeedProbabilityShare - MarketImpliedProb` (diagnostic only).\n\n## 6) Decision Rules (must be explicit if-then)\n\nUse these defaults unless the market is clearly illiquid:\n\n- **Ignore** if `SpeedDataConfidence < 0.60` OR `RecentRuns < 3` OR `SpeedProbabilityShare = 0`.\n- **Back candidate** if `EV_Back_per_1  0.02` and `AdjustedWinProb > MarketImpliedProb`.\n- **Lay candidate** if `EV_Lay_per_1_liability  0.02` and `AdjustedWinProb < MarketImpliedProb`.\n- Cap to **03 trades** total; otherwise output No trade.\n\nTrading/risk defaults:\n\n- Fixed small exposure: max X total liability across all positions (choose conservative X).\n- Entry window: only within N minutes pre-off (state N).\n- Exit: if moves against by Y ticks OR spread too wide OR liquidity thin  exit/skip.\n\n## 7) Output (MANDATORY FORMAT)\n\nOutput **one markdown table only** first (no prose before it). After the table, include:\n1) 36 bullet If-then rules, 2) 03 trade ideas with entry/exit, 3) exclusions list, 4) validation plan.\n\n### Table columns (in this order)\n\n| Runner | Price | SpeedProbabilityShare | AdjustedWinProb | SuggestedAction | BaseFinding |\n\n**BaseFinding** must be a single short sentence referencing specific computed metrics (e.g., High AvgSpeed (104) + positive trend (+2.8) with 0.74 confidence; back EV +3.1%).\n\n## 8) Validation Plan (short, concrete)\n\nSpecify:\n- Needed history: past markets + ATR horse data snapshot pre-off + BSP (and optionally traded prices).\n- Labels: win / place and/or pre-off price move (e.g., last 10-min drift/steam).\n- Testing: time-based splits, no leakage; evaluate EV calibration and realized ROI.\n- Falsification: abandon if EV-selected bets are negative after a pre-defined sample (e.g., 500 selections) or calibration is flat.\""
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Understood! You want me to use this as the system prompt/template for analyzing every UK/IRE horse racing win market, combining live market data and AtTheRaces speed/sectional metrics, and processing/producing everything as per your specified logic, constraints, features, and output format.\n\nI\u2019ll execute the following steps for each market:\n\n1. Gather market prices, runner names, and runner IDs (`GetActiveMarket`).\n2. Fetch speed and sectionals (`GetAllDataContextForMarket`, using AtTheRacesDataForHorses).\n3. Parse/flag runners by data quality and compute the features (as specified).\n4. Output a markdown table with the required columns and base findings.\n5. Provide explicit decision rules, trade ideas, exclusions, and validation plan.\n\nReady to proceed for the current active market (Newcastle 6f Hcap)? If yes, I\u2019ll fetch AtTheRaces data and run the full process. Please confirm or specify a different market."
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 85365.7723396, \"end_time\": 85370.8842275, \"duration_ms\": 5111.89}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/gpt-4.1\", \"input_tokens\": 3624, \"output_tokens\": 205, \"total_tokens\": 3829, \"timestamp\": 1770749755.5504951, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 1792, \"total_cache_tokens\": 1792, \"has_cache_activity\": true}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 3829, \"effective_input_tokens\": 1832, \"display_input_tokens\": 3624}, \"raw_usage\": {\"completion_tokens\": 205, \"prompt_tokens\": 3624, \"total_tokens\": 3829, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 1792}}, \"summary\": {\"model\": \"openai/gpt-4.1\", \"turn_count\": 4, \"cumulative_input_tokens\": 7756, \"cumulative_output_tokens\": 686, \"cumulative_billing_tokens\": 8442, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 3829, \"context_window_size\": 1047576, \"context_usage_percentage\": 0.36551047370310125, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 5504, \"cache_hit_rate_percent\": 41.50829562594269, \"cumulative_effective_input_tokens\": 2252}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

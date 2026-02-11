@@ -1,0 +1,81 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "get active market"
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_9KlNNRodx9iLvCZxTJOrbyY3": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 89455.1313094, \"end_time\": 89459.0642468, \"duration_ms\": 3932.94}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_9KlNNRodx9iLvCZxTJOrbyY3": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.253774585\"\n  StartTime: \"2026-02-10T18:00:00Z\"\n  EventType: Tennis\n  EventName: \"Cilic v Le Tien\"\n  MarketName: \"Match Odds\"\n  TotalMatched: 853044.96\n  Status: Closed\n  Selections[2]{SelectionId,Name,Price,TotalMatched,Status}:\n    2263681_0.00,\"Marin Cilic\",1.1,541265.92,Winner\n    42082091_0.00,\"Learner Tien\",11,311779.03,Loser"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_9KlNNRodx9iLvCZxTJOrbyY3\": {\"timing_ms\": 11.78, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Active market:\n\n```yaml\nMarketId: \"1.253774585\"\nEventType: Tennis\nEventName: \"Cilic v Le Tien\"\nMarketName: \"Match Odds\"\nStartTime: \"2026-02-10T18:00:00Z\"\nTotalMatched: 853044.96\nStatus: Closed\nSelections:\n  - SelectionId: \"2263681_0.00\"\n    Name: \"Marin Cilic\"\n    Price: 1.1\n    TotalMatched: 541265.92\n    Status: Winner\n  - SelectionId: \"42082091_0.00\"\n    Name: \"Learner Tien\"\n    Price: 11\n    TotalMatched: 311779.03\n    Status: Loser\n```"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 89459.0970886, \"end_time\": 89464.5284695, \"duration_ms\": 5431.38}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

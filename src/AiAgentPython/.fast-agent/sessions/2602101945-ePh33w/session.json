@@ -1,0 +1,16 @@
+{
+  "name": "2602101945-ePh33w",
+  "created_at": "2026-02-10T19:45:44.771628",
+  "last_activity": "2026-02-10T19:45:45.009876",
+  "history_files": [
+    "history_BfexplorerApp.json"
+  ],
+  "metadata": {
+    "agent_name": "BfexplorerApp",
+    "model": "generic.openai/gpt-4.1",
+    "last_history_by_agent": {
+      "BfexplorerApp": "history_BfexplorerApp.json"
+    },
+    "first_user_preview": "Can you subscriber to resource updates?"
+  }
+}
