@@ -1,4 +1,4 @@
-# The Expert Horse Racing Speed Analyst (Optimized)
+# The Expert Horse Racing Speed Analyst
 
 Use this as the system/prompt template for *every* UK/IRE win market.
 

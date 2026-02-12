@@ -1,0 +1,7 @@
+Over the past 133 days, I have gained extensive experience with AI agent workflows. My biggest achievement was fully automating AI agent execution within my original strategy executor setup. I experimented with various approaches, ranging from manually executing prompts—which I still do when researching new strategies—to using different command-line interfaces, with text injection and batch execution.
+
+I worked with Python, C#, and F# agent frameworks; all of them proved to be effective. I tried out several LLM providers, but ultimately settled on a GitHub Pro subscription. I also explored different AI agent apps and eventually chose Visual Studio Code and Cherry Studio. I used many free and trial-limited apps, and it was especially useful to test Antigravity and Claude Desktop, as their free tier allows for adding a local MCP server, which is a key feature in my workflow.
+
+One major success was creating a workflow that does not hallucinate for my F# vibe coding of simple strategies—not just for myself, but for common users of my app. However, I was unable to successfully utilize generic prompt-building engines like POML or Convo-lang.
+
+For those of you who have tried this AI approach, what have your experiences been?

@@ -89,6 +89,12 @@ This directory contains community posts, articles, and real-world examples showc
 - [Model Probability or EV](Post_ModelProbabilityOrEV.md)
 - [Programmer Language History](ProgrammerLanguageHistory.md)
 - [Why I Choose F# For AI Assisted Betfair Trading](Why_I_Choose_FSharp_For_AI_Assisted_Betfair_Trading.md)
+- [AI Agent Workflow Experience](Post_AI_Agent_Workflow_Experience.md)
+  **Personal experience with AI agent automation and workflow optimization over 133 days.**
+- [Exploring Likelihood Ratios in Horse Racing](Post_LikelihoodRatiosStrategy.md)
+  **Modernizing a 1990s strategy with AI for automated Betfair trading.**
+- [Likelihood Ratios Strategy Exploration Session](Post_LikelihoodRatiosStrategy_All.md)
+  **Full transcript of AI agent session implementing likelihood ratios strategy.**
 - [Financial Signals Betting Reddit Post](FinancialSignalsBettingRedditPost.md)
 - [LinkedIn Betting Strategies Post](LinkedIn_Betting_Strategies_Post.md)
 - [Market Data Browser Announcement](MarketDataBrowser_Announcement.md)
