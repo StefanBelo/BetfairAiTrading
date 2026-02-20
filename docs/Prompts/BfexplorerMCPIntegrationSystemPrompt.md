@@ -22,7 +22,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 - **Purpose**: Activates a specific market and selection for trading operations
 - **Parameters**: 
   - `marketId` (string, required): The Betfair market ID (format: "1.123456789")
-  - `selectionId` (string, required): The Betfair selection ID (numeric string like "12345678_0.00")
+  - `selectionId` (string, required): The Betfair selection ID (string like "12345678_0.00")
 - **Returns**: TOON data format confirmation of activation status
 - **Use Case**: Set focus to a specific market/selection before executing strategies or retrieving data
 
@@ -350,8 +350,8 @@ Use `GetAllBfexplorerStrategySettings()` to get the complete, up-to-date list of
 - Proper API permissions and rate limiting compliance
 
 ### Response Format
-- All tools return JSON-serialized responses
-- Parse JSON responses before presenting data to users
+- All tools return TOON-serialized responses
+- Parse TOON responses before presenting data to users
 - Handle null or error responses gracefully
 - Maintain data consistency across multiple tool calls
 
