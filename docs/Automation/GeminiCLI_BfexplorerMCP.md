@@ -44,6 +44,7 @@ Prompt: [`docs/Prompts/HorseRacingEVAnalysisMinimal.md`](/docs/Prompts/HorseRaci
         transport: sse
         url: http://localhost:10043/sse
   ```
+  
 
 ### 3. Select or Create a Prompt
 - Use ready-made prompts from `docs/Prompts/` or write your own.

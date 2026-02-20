@@ -26,6 +26,28 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 - **Returns**: TOON data format confirmation of activation status
 - **Use Case**: Set focus to a specific market/selection before executing strategies or retrieving data
 
+#### GetMarket
+- **Purpose**: Retrieves the betfair market being monitored in Bfexplorer
+- **Parameters**: 
+  - `marketId` (string, required): The betfair market id
+- **Returns**: TOON data format object containing the market information
+- **Use Case**: Get details about a specific market
+
+### Application Actions
+
+#### GetApplicationActions
+- **Purpose**: Retrieve the list of application actions/commands available in Bfexplorer
+- **Parameters**: None
+- **Returns**: TOON data format object listing avaiable actions
+- **Use Case**: Discover commands that can be executed to control the application state
+
+#### ExecuteApplicationAction
+- **Purpose**: Execute a specific application action/command in Bfexplorer
+- **Parameters**: 
+  - `id` (string, required): The action/command id
+- **Returns**: TOON data format result
+- **Use Case**: Perform application-level operations programmatically
+
 ### Strategy Management
 
 #### GetAllBfexplorerStrategySettings
@@ -80,13 +102,21 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 
 ### Data Context & Analysis
 
+#### GetDataContext
+- **Purpose**: Retrieves the data context for the betfair data in Bfexplorer
+- **Parameters**: 
+  - `dataContextName` (string, required): The data context name
+- **Returns**: TOON data format object containing the requested data context
+- **Use Case**: Retrieve general or global data context information not specific to a market ID
+
 #### GetDataContextForMarket
 - **Purpose**: Retrieves comprehensive data context for a specific market
 - **Parameters**:
-- `dataContextName` (string, required): The name of the data context to retrieve (e.g., "RacingpostDataForHorses", "MarketSelectionsPriceHistoryData")
+- `dataContextNames` (array of strings, required): List of data context names to retrieve
   - `marketId` (string, required): The Betfair market ID for data retrieval
 - **Returns**: TOON data format object containing market-specific data context
 - **Use Case**: Analyze market-wide data before making trading decisions
+- **Note**: This appears to be `GetAllDataContextForMarket` in the tool definitions, allowing retrieval of multiple contexts at once.
 
 #### GetAllDataContextForMarket
 - **Purpose**: Retrieves multiple data contexts for a market efficiently in a single call
@@ -99,7 +129,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 #### GetDataContextForMarketSelection
 - **Purpose**: Gets detailed data context for a specific selection within a market
 - **Parameters**:
-  - `dataContextName` (string, required): The name of the data context to retrieve (e.g., "RacingpostDataForHorses", "MarketSelectionsPriceHistoryData")
+- `dataContextNames` (array of strings, required): List of data context names to retrieve
   - `marketId` (string, required): The Betfair market ID
   - `selectionId` (string, required): The Betfair selection ID for specific runner data
 - **Returns**: TOON data format object containing selection-specific data context

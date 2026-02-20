@@ -68,13 +68,19 @@ Assume `SpeedRating` is a performance % where 100 is par (higher is faster).
    - If `InconsistentForm` → ×0.8
    - If `SectionalDataWeak` → ×0.9
    - Then ×(0.6 + 0.4·StarRatingAdjustment) (keeps it conservative)
+   - Then ×(0.7 + 0.3·DistanceSuitabilityScore)
 9. `SpeedValueScore` (0–100):
    - `speed_component = 0.4*AverageSpeedRating + 0.3*BestSpeedRating + 0.2*SectionalBalanceScore + 0.1*CourseDistanceRecord`
    - Trend tweak: if `SpeedRatingTrend > 2` add 3; if `< -2` subtract 3.
+   - Distance tweak: if `DistanceSuitabilityScore > 0.8` add 2; if `< 0.5` subtract 2.
    - Map to 0–100 if needed (cap 0..100), then multiply by `SpeedDataConfidence`.
 10. `SpeedProbabilityShare` (0–1; sums to 1.0 across field):
    - `weight = max(0, SpeedValueScore/100) * SpeedDataConfidence`
    - `SpeedProbabilityShare = weight / sum(weight_all)` (if sum=0, set all to 0).
+11. `DistanceSuitabilityScore` (0–1):
+   - Convert all distances to furlongs (1 mile = 8 furlongs).
+   - Compute average distance of last up to 5 runs with valid distances.
+   - Score = exp(-|average_past_distance - today_distance| / 2). If no data, 0.5.
 
 ## 5) Market Probability, Conservative Blend, and EV
 
@@ -102,7 +108,7 @@ Define a single sortable score:
 
 Use these defaults unless the market is clearly illiquid:
 
-- **Ignore** if `SpeedDataConfidence < 0.60` OR `RecentRuns < 3` OR `SpeedProbabilityShare = 0`.
+- **Ignore** if `RecentRuns < 3` OR `SpeedProbabilityShare = 0`.
 - **Back candidate** if `EV_Back_per_£1 ≥ 0.02` and `AdjustedWinProb > MarketImpliedProb`.
 - **Lay candidate** if `EV_Lay_per_£1_liability ≥ 0.02` and `AdjustedWinProb < MarketImpliedProb`.
 - Cap to **0–3 trades** total; otherwise output “No trade”.
@@ -120,9 +126,9 @@ Output **one markdown table only** first (no prose before it). After the table, 
 
 ### Table columns (in this order)
 
-| Runner | Price | SpeedProbabilityShare | AdjustedWinProb | SuggestedAction | BaseFinding |
+| Runner | Price | SpeedProbabilityShare | AdjustedWinProb | EVScore | EdgeScore | SuggestedAction | BaseFinding |
 
-**BaseFinding** must be a single short sentence referencing specific computed metrics (e.g., “High AvgSpeed (104) + positive trend (+2.8) with 0.74 confidence; back EV +3.1%”).
+**BaseFinding** must be a single short sentence referencing specific computed metrics (e.g., “High AvgSpeed (104) + positive trend (+2.8), distance match 0.9 with 0.74 confidence; back EV +3.1%”).
 
 ## 8) Validation Plan (short, concrete)
 

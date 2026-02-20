@@ -1,0 +1,9 @@
+services:
+  tuskbot:
+    image: ghcr.io/sandevgo/tuskbot:latest
+    volumes:
+      - tuskbot-data:/root/.tuskbot
+    command: start
+
+volumes:
+  tuskbot-data:

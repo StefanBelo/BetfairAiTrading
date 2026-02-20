@@ -98,10 +98,10 @@ Define a single sortable score:
 
 Use these defaults unless the market is clearly illiquid:
 
-- **Ignore** if `FormDataConfidence < 0.60` OR `RecentRuns < 3` OR `FormProbabilityShare = 0`.
-- **Back candidate** if `EV_Back_per_£1 ≥ 0.02` and `AdjustedWinProb > MarketImpliedProb`.
-- **Lay candidate** if `EV_Lay_per_£1_liability ≥ 0.02` and `AdjustedWinProb < MarketImpliedProb`.
-- Cap to **0–3 trades** total; otherwise output "No trade".
+**Ignore** if `RecentRuns < 3` OR `FormProbabilityShare = 0`.
+**Back candidate** if `AdjustedWinProb > MarketImpliedProb`.
+**Lay candidate** if `EV_Lay_per_£1_liability ≥ 0.02` and `AdjustedWinProb < MarketImpliedProb`.
+Cap to **0–3 trades** total; otherwise output "No trade".
 
 Trading/risk defaults:
 
@@ -116,7 +116,7 @@ Output **one markdown table only** first (no prose before it). After the table, 
 
 ### Table columns (in this order)
 
-| Runner | Price | FormProbabilityShare | AdjustedWinProb | SuggestedAction | BaseFinding |
+| Runner | Price | FormProbabilityShare | AdjustedWinProb | EVScore | EdgeScore | SuggestedAction | BaseFinding |
 
 **BaseFinding** must be a single short sentence referencing specific computed metrics (e.g., "Strong likelihood ratio (85) + low avg position (3.2) with 0.78 confidence; back EV +2.8%").
 
