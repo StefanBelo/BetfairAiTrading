@@ -1,0 +1,16 @@
+{
+  "name": "2602241835-9iURIh",
+  "created_at": "2026-02-24T18:35:57.422921",
+  "last_activity": "2026-02-24T18:35:57.583550",
+  "history_files": [
+    "history_BfexplorerApp.json"
+  ],
+  "metadata": {
+    "agent_name": "BfexplorerApp",
+    "model": "generic.copilot:gpt-4.1",
+    "last_history_by_agent": {
+      "BfexplorerApp": "history_BfexplorerApp.json"
+    },
+    "first_user_preview": "Get active market"
+  }
+}

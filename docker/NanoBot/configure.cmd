@@ -1,0 +1,1 @@
+uv tool install nanobot-ai

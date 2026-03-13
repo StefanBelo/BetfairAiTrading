@@ -1,52 +1,63 @@
-copilot -p "On active market run the prompt @TheExpertHorseRacingLBBWBetOrDutch.md." --add-dir "E:\Projects\BetfairAiTrading\docs\Research\Experiment" --allow-all
+AGENTS
+    
+    pip install --upgrade fast-agent-mcp
 
-fast-agent check
-pip install --upgrade fast-agent-mcp
+    fast-agent check
 
-https://github.com/chatanywhere/GPT_API_free
+
+GitHub Copilot
+    
+    copilot -p "On active market run the prompt @TheExpertHorseRacingLBBWBetOrDutch.md." --add-dir "E:\Projects\BetfairAiTrading\docs\Research\Experiment" --allow-all
+
+OpenClaw
+
+    # Skills for bfexplorer mcp
+    npx @filiksyos/mcptoskill@latest http://localhost:10043
 
 MCP
 
-uvx mcpo --port 10044 --server-type "sse" -- http://localhost:10043/sse
+    uvx mcpo --port 10044 --server-type "sse" -- http://localhost:10043/sse
 
-npx -y mcp-remote http://localhost:10043/sse
+    npx -y mcp-remote http://localhost:10043/sse
 
-npx @modelcontextprotocol/inspector
+    npx @modelcontextprotocol/inspector
 
-npx @mcpjam/inspector
+    npx @mcpjam/inspector
 
 STDIO
 
-cd E:\Examples\CSharp\MCP\csharp-sdk-main\samples\EverythingServer
+    cd E:\Examples\CSharp\MCP\csharp-sdk-main\samples\EverythingServer
 
-npx @modelcontextprotocol/inspector dotnet run
+    npx @modelcontextprotocol/inspector dotnet run
 
 Ollama 
 
-uvx mcpo --port 10044 --server-type "sse" -- http://localhost:10043/sse
+    uvx mcpo --port 10044 --server-type "sse" -- http://localhost:10043/sse
 
 MODELS
 
-https://github.com/features/models
+    https://github.com/chatanywhere/GPT_API_free
 
-https://github.com/marketplace?type=models
+    https://github.com/features/models
+
+    https://github.com/marketplace?type=models
 
 AI CODE AGENTS
 
-https://cloud.google.com/gemini/docs/codeassist/gemini-cli
+    https://cloud.google.com/gemini/docs/codeassist/gemini-cli
 
-    https://www.geminicli.app/docs/getting-started
+        https://www.geminicli.app/docs/getting-started
 
-https://www.anthropic.com/claude-code
+    https://www.anthropic.com/claude-code
 
-    https://medium.com/ai-insights-cobet/comprehensive-guide-to-setting-up-claude-code-on-windows-using-wsl-d3a3f3b5a128
+        https://medium.com/ai-insights-cobet/comprehensive-guide-to-setting-up-claude-code-on-windows-using-wsl-d3a3f3b5a128
 
-    mcp:
-        https://docs.anthropic.com/en/docs/claude-code/mcp
+        mcp:
+            https://docs.anthropic.com/en/docs/claude-code/mcp
 
-        http://192.168.1.103:10043/sse
+            http://192.168.1.103:10043/sse
 
-    https://github.com/getAsterisk/claudia
+        https://github.com/getAsterisk/claudia
 
 AutoGen
 

@@ -66,6 +66,8 @@
 - [AI Agent Horse Racing Analysis: The Power of Backtesting & Continuous Learning](Posts/Post_AIAgentBacktestingAndLearning.md) - Building adaptive AI agents that learn from results
 - [How I Became a Betfair Strategy Expert in Minutes](Posts/Post_BfexplorerStrategyExpert.md) - Real success story using AI strategy assistance
 - [Crowd Wisdom vs. Betting Value: Finding Edges in Efficient Markets](Posts/Post_CrowdWisdomVsBettingValue.md) - Deep analysis of market efficiency and systematic value identification
+- [Reflections on LLMs for Strategy Development: A 2026 Perspective](Posts/LLM_Strategy_Reflections_2026.md) - Insights on the evolving role of LLMs in trading and coding
+- [Betcode_LLM_Strategy_Reflections_2026.md](Posts/Betcode_LLM_Strategy_Reflections_2026.md) - Insights on the evolving role of LLMs in trading and coding
 
 ## Analysis Reports
 

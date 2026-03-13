@@ -1,0 +1,158 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_llTnHQAlIPcowVowStXm5sEF": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 495326.4017017, \"end_time\": 495328.7835499, \"duration_ms\": 2381.85}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_llTnHQAlIPcowVowStXm5sEF": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.254231326\"\n  StartTime: \"2026-02-20T13:52:00Z\"\n  EventType: \"Horse Racing\"\n  EventName: \"Ffos Las\"\n  MarketName: \"3m Hcap Chs\"\n  TotalMatched: 36353.58\n  Status: Open\n  Selections[7]{SelectionId,Name,Price,TotalMatched,Status}:\n    74823423_0.00,\"River Run Free\",3.35,10260.37,Active\n    65504440_0.00,\"River Voyage\",4.4,6391.49,Active\n    39152729_0.00,\"Haut Folin\",6,8542.32,Active\n    39882484_0.00,Esperti,6.4,6200.03,Active\n    50747288_0.00,\"Benny Baloo\",13,2614.57,Active\n    78584168_0.00,\"Steal The Moves\",21,1800.01,Active\n    23899478_0.00,\"Jaunty Viking\",36,544.75,Active"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_llTnHQAlIPcowVowStXm5sEF\": {\"timing_ms\": 70.1, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The active market is:\n\n- Event: Horse Racing - Ffos Las\n- Market: 3m Hcap Chs\n- Start Time: 2026-02-20 13:52 UTC\n- Status: Open\n- Total Matched: \u00a336,353.58\n\nSelections include: River Run Free, River Voyage, Haut Folin, Esperti, Benny Baloo, Steal The Moves, and Jaunty Viking."
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 495328.8797287, \"end_time\": 495330.3897031, \"duration_ms\": 1509.97}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "get commands"
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_y0jtnKLYWHhDaUpCZNUrSvSj": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_application_actions",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 495397.0682162, \"end_time\": 495398.9749228, \"duration_ms\": 1906.71}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_y0jtnKLYWHhDaUpCZNUrSvSj": {
+          "content": [
+            {
+              "type": "text",
+              "text": "MyFavouriteBetEvents[18]:\n  - ViewId: MainView\n    ActionsInfoData[20]{Id,Name,Description}:\n      MainEvents.Settings,Settings,\"\"\n      MainEvents.WatchMarketSelection,\"Watch this Selection\",\"\"\n      MainEvents.StartBot,\"Execute Strategy\",\"\"\n      MainEvents.StopBots,\"Cancel Strategies\",\"\"\n      MainEvents.MultipleMarketPlaceBets,\"Place Bets\",\"\"\n      MainEvents.CloseMarketBetPosition,\"Close Bet Position\",\"\"\n      MainEvents.CloseSelectionBetPosition,\"Close Selection Bet Position\",\"\"\n      MainEvents.CloseMarketBetPositionByDutching,\"Close Bet Position by Dutching\",\"\"\n      MainEvents.BackDutching,\"Back Dutching\",\"\"\n      MainEvents.LayDutching,\"Lay Dutching\",\"\"\n      MainEvents.MultipleMarketDutching,\"Multiple Market Dutching\",\"\"\n      MainEvents.AddWorkspace,Add,\"\"\n      MainEvents.DeleteWorkspace,Delete,\"\"\n      MainEvents.SaveWorkspace,Save,\"\"\n      MainEvents.StartBfexplorerSpreadsheet,Spreadsheet,\"\"\n      MainEvents.MyTools,\"My Tools\",\"\"\n      MainEvents.BetfairServisInfo,\"Betfair Exchange API Status\",\"\"\n      MainEvents.MySubscriptionDetails,\"My Subscription Details\",\"\"\n      MainEvents.BetfairChargesInfo,\"Betfair Charges Info\",\"\"\n      MainEvents.ReloadAccountFunds,\"Reload my account funds\",\"\"\n  - ViewId: BfexplorerConsoleView\n    ActionsInfoData[3]{Id,Name,Description}:\n      BfexplorerConsoleEvents.OpenScript,Open,\"Open your script code.\"\n      BfexplorerConsoleEvents.Execute,Execute,\"Execute the script code.\"\n      BfexplorerConsoleEvents.Terminate,Terminate,\"Terminate the script execution.\"\n  - ViewId: OutputView\n    ActionsInfoData[2]{Id,Name,Description}:\n      OutputEvents.DeleteAll,\"Delete All\",\"Delete all messages\"\n      OutputEvents.Save,Save,\"Save all messages to csv file.\"\n  - ViewId: MarketBotsView\n    ActionsInfoData[3]{Id,Name,Description}:\n      MarketBotsEvents.Stop,Cancel,\"Cancel the strategy execution.\"\n      MarketBotsEvents.StopAll,\"Cancel All\",\"Cancel all strategy execution.\"\n      MarketBotsEvents.BotParameters,\"Strategy Parameters\",\"Show the strategy parameters.\"\n  - ViewId: MyBetPositionView\n    ActionsInfoData[2]{Id,Name,Description}:\n      MyBetPositionEvents.Close,Close,\"Close my bet position on selected markets/events.\"\n      MyBetPositionEvents.CloseAll,\"Close All\",\"Close my bet position on all markets.\"\n  - ViewId: MarketBetsView\n    ActionsInfoData[3]{Id,Name,Description}:\n      MarketBetsEvents.CancelAll,\"Cancel All\",\"Cancel all unmatched bets.\"\n      MarketBetsEvents.Cancel,Cancel,\"Cancel the selected unmatched bet.\"\n      MarketBetsEvents.Update,Update,\"Update the selected unmatched bet.\"\n  - ViewId: MarketSelectionsView\n    ActionsInfoData[5]{Id,Name,Description}:\n      MarketSelectionsEvents.CloseSelectionBetPosition,\"Close Selection Bet Position\",\"\"\n      MarketSelectionsEvents.CloseMarketBetPosition,\"Close Market Bet Position\",\"\"\n      MarketSelectionsEvents.WatchMarketSelection,\"Watch this Selection\",\"\"\n      MarketSelectionsEvents.AddMarketSelectionToBotExecutor,\"Add Market Selection to Strategy Executor\",\"\"\n      MarketSelectionsEvents.UpdateBetEventTraderSelections,\"Update Bet Event Trader Selections\",\"\"\n  - ViewId: TradeMarketSelectionView\n    ActionsInfoData[2]{Id,Name,Description}:\n      TradeMarketSelectionEvents.CancelAll,\"Cancel All\",\"Cancel all unmatched bets\"\n      TradeMarketSelectionEvents.StopAndCancelAll,\"Cancel All Strategies\",\"Cancel all strategies and all unmatched bets on the selection.\"\n  - ViewId: WebBrowserView\n    ActionsInfoData[5]{Id,Name,Description}:\n      WebBrowserEvents.Add,Add,\"Add a new web page.\"\n      WebBrowserEvents.Update,Update,\"Update the web page.\"\n      WebBrowserEvents.Delete,Delete,\"Delete the web page.\"\n      WebBrowserEvents.Reload,Reload,\"Reload the web page.\"\n      WebBrowserEvents.Open,Open,\"Open in web browser.\"\n  - ViewId: WatchedSelectionsView\n    ActionsInfoData[3]{Id,Name,Description}:\n      WatchedSelectionsEvents.CloseSelectedSelectionBetPosition,\"Close Selection Bet Position\",\"\"\n      WatchedSelectionsEvents.ShowMarketSelection,\"Show the market selection\",\"\"\n      WatchedSelectionsEvents.DeleteMarketSelection,\"Delete the market selection\",\"\"\n  - ViewId: MyResultsView\n    ActionsInfoData[2]{Id,Name,Description}:\n      MyResultsEvents.Load,Load,\"Load my results.\"\n      MyResultsEvents.Save,Save,\"Save my results to csv file.\"\n  - ViewId: BotExecutorForSelectionsView\n    ActionsInfoData[6]{Id,Name,Description}:\n      BotExecutorForSelectionsEvents.ApplyBot,\"Apply Strategy\",\"Apply your strategy to selected market/s.\"\n      BotExecutorForSelectionsEvents.Delete,Delete,\"Delete selected market/s.\"\n      BotExecutorForSelectionsEvents.StartBotExecutor,Start,\"Start the strategy executor.\"\n      BotExecutorForSelectionsEvents.Reload,Reload,\"Reload market status.\"\n      BotExecutorForSelectionsEvents.ShowMarketOutputMessages,\"Show Output Messages\",\"\"\n      BotExecutorForSelectionsEvents.ShowMyStrategyResults,\"Show My Strategy Results\",\"Show my strategy results for settled markets.\"\n  - ViewId: BotExecutorView\n    ActionsInfoData[3]{Id,Name,Description}:\n      BotExecutorEvents.Delete,Delete,\"Delete selected market/s.\"\n      BotExecutorEvents.ShowMarketOutputMessages,\"Show Output Messages\",\"\"\n      BotExecutorEvents.ShowMyStrategyResults,\"Show My Strategy Results\",\"Show my strategy results for settled markets.\"\n  - ViewId: OpenMarketsView\n    ActionsInfoData[4]{Id,Name,Description}:\n      OpenMarketsEvents.CloseMarkets,Close,\"Close selected market/s.\"\n      OpenMarketsEvents.StartBot,\"Execute Strategy\",\"Execute the strategy on the selected open market/s.\"\n      OpenMarketsEvents.ShowMarketOutputMessages,\"Show Output Messages\",\"\"\n      OpenMarketsEvents.ShowMyStrategyResults,\"Show My Strategy Results\",\"Show my strategy results for settled markets.\"\n  - ViewId: BetEventTraderView\n    ActionsInfoData[7]{Id,Name,Description}:\n      BetEventTraderEvents.CloseMarket,Close,\"\"\n      BetEventTraderEvents.BetEventMarkets,Markets,\"Open the bet event associated markets.\"\n      BetEventTraderEvents.OpenBetfairEventWebPage,Betfair,\"\"\n      BetEventTraderEvents.GoToNextOpenMarket,\"Go to Next Open Market\",\"Go to the next open market.\"\n      BetEventTraderEvents.CloseBetEvent,\"Close Bet Event\",\"Close all open markets for this bet event.\"\n      BetEventTraderEvents.CloseBetEventAndOpenNext,\"Close Bet Event and Open Next\",\"Close all open markets for this bet event and open a next one from Event Browser.\"\n      BetEventTraderEvents.CloseMarketAndOpenNext,\"Close Market and Open Next\",\"Close the market from this bet event and open a next one from Event Browser.\"\n  - ViewId: BetEventView\n    ActionsInfoData[15]{Id,Name,Description}:\n      BetEventEvents.CloseMarket,Close,\"\"\n      BetEventEvents.BetEventMarkets,Markets,\"Open the bet event associated markets.\"\n      BetEventEvents.OpenBetfairEventWebPage,Betfair,\"\"\n      BetEventEvents.GoToNextOpenMarket,\"Go to Next Open Market\",\"Go to the next open market.\"\n      BetEventEvents.CloseBetEvent,\"Close Bet Event\",\"Close all open markets for this bet event.\"\n      BetEventEvents.CloseBetEventAndOpenNext,\"Close Bet Event and Open Next\",\"Close all open markets for this bet event and open a next one from Event Browser.\"\n      BetEventEvents.CloseMarketAndOpenNext,\"Close Market and Open Next\",\"Close the market from this bet event and open a next one from Event Browser.\"\n      BetEventEvents.CloseSelectionBetPosition,\"Close Selection Bet Position\",\"\"\n      BetEventEvents.CloseMarketBetPosition,\"Close Market Bet Position\",\"\"\n      BetEventEvents.CloseMarketBetPositionByDutching,\"Close Market Bet Position by Dutching\",\"\"\n      BetEventEvents.WatchMarketSelection,\"Watch this Selection\",\"\"\n      BetEventEvents.AddMarketSelectionToBotExecutor,\"Add Market Selection to Strategy Executor\",\"\"\n      BetEventEvents.ShowMarketData,\"Show Market Data\",\"\"\n      BetEventEvents.ShowSelectionData,\"Show Selection Data\",\"\"\n      BetEventEvents.ShowMarketOutputMessages,\"Show Output Messages\",\"\"\n  - ViewId: MyBotsView\n    ActionsInfoData[7]{Id,Name,Description}:\n      MyBotsEvents.AddBot,Add,\"Add a new strategy.\"\n      MyBotsEvents.StartBot,Execute,\"Execute the strategy.\"\n      MyBotsEvents.CloneBot,Clone,\"Clone the selected strategy.\"\n      MyBotsEvents.UpdateBot,Update,\"Update the strategy.\"\n      MyBotsEvents.DeleteBot,Delete,\"Delete the strategy.\"\n      MyBotsEvents.SaveBots,Save,\"Save strategy settings.\"\n      MyBotsEvents.LoadBots,Load,\"Load strategy settings.\"\n  - ViewId: BetEventBrowserView\n    ActionsInfoData[9]{Id,Name,Description}:\n      BetEventBrowserEvents.Reload,Reload,\"Reload betfair events to the Event Browser view.\"\n      BetEventBrowserEvents.AddMyBetEvent,\"Add my bet event\",\"\"\n      BetEventBrowserEvents.UpdateMyBetEvent,\"Update my bet event\",\"\"\n      BetEventBrowserEvents.SaveMyBetEvent,Save,\"Save the current bet event.\"\n      BetEventBrowserEvents.LoadMyBetEvent,Load,\"Load a bet event.\"\n      BetEventBrowserEvents.DeleteMyBetEvent,\"Delete my bet event\",\"\"\n      BetEventBrowserEvents.Open,Open,\"Open the selected event/s for monitoring to Bet Event view.\"\n      BetEventBrowserEvents.ExecuteInBotExecutor,\"Execute in Strategy Executor\",\"Execute the strategy in the Strategy Executor at a particular time.\"\n      BetEventBrowserEvents.BetEventMarkets,Markets,\"Open the bet event associated markets.\""
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_y0jtnKLYWHhDaUpCZNUrSvSj\": {\"timing_ms\": 20.76, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Here are some available commands:\n\n- Settings\n- Watch this Selection\n- Execute Strategy\n- Cancel Strategies\n- Place Bets\n- Close Bet Position\n- Close Selection Bet Position\n- Back Dutching / Lay Dutching\n- Add/Delete/Save Workspace\n- Spreadsheet\n- My Tools\n- Betfair Exchange API Status\n- My Subscription Details\n- Betfair Charges Info\n- Reload my account funds\n\nLet me know if you want details or to run a specific command."
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 495399.0160106, \"end_time\": 495400.9764769, \"duration_ms\": 1960.47}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

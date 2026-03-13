@@ -1,0 +1,16 @@
+{
+  "name": "2602201318-XgLuOM",
+  "created_at": "2026-02-20T13:18:09.163540",
+  "last_activity": "2026-02-20T13:18:09.297869",
+  "history_files": [
+    "history_BfexplorerApp.json"
+  ],
+  "metadata": {
+    "agent_name": "BfexplorerApp",
+    "model": "generic.openai:gpt-4.1",
+    "last_history_by_agent": {
+      "BfexplorerApp": "history_BfexplorerApp.json"
+    },
+    "first_user_preview": "Get active market."
+  }
+}

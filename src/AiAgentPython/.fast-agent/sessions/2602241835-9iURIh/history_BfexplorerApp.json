@@ -1,0 +1,81 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market"
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_BXzhTrB9qRN3rGfBir1RQjSc": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 10923.7983386, \"end_time\": 10925.9822261, \"duration_ms\": 2183.89}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_BXzhTrB9qRN3rGfBir1RQjSc": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.254375781\"\n  StartTime: \"2026-02-24T17:30:00Z\"\n  EventType: \"Horse Racing\"\n  EventName: Southwell\n  MarketName: \"6f Hcap\"\n  TotalMatched: 282917.44\n  Status: Closed\n  Selections[10]{SelectionId,Name,Price,TotalMatched,Status}:\n    66993572_0.00,\"Yorkshire Glory\",1.01,139653.64,Winner\n    65217682_0.00,\"Forever Noah\",250,65997.34,Loser\n    35528107_0.00,\"Ramon Di Loria\",1000,25623.92,Loser\n    1500122_0.00,\"Dubai Magic\",1000,16506.95,Loser\n    34000565_0.00,Asadjumeirah,1000,9812.86,Loser\n    68685626_0.00,\"Dr Ali\",530,6278.67,Loser\n    65071307_0.00,\"Kipp Kelly\",580,5526.53,Loser\n    18423669_0.00,\"Walking On Clouds\",1000,9839.85,Loser\n    3324325_0.00,\"My Boy Jack\",1000,2326.55,Loser\n    39257924_0.00,Alyara,1000,1351.09,Loser"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_BXzhTrB9qRN3rGfBir1RQjSc\": {\"timing_ms\": 31.69, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The active market is:\n\n- Event: Horse Racing - Southwell\n- Market: 6f Hcap\n- Market ID: 1.254375781\n- Status: Closed\n- Start Time: 2026-02-24 17:30 UTC\n\nSelections include Yorkshire Glory (Winner), Forever Noah, Ramon Di Loria, and others."
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 10926.2291456, \"end_time\": 10928.1100868, \"duration_ms\": 1880.94}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

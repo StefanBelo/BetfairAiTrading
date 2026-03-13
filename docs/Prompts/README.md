@@ -4,93 +4,106 @@
 
 Below is a list of all prompt files available in this folder. Each file contains a specialized prompt for AI-powered analysis, strategy development, or automation in Betfair trading and horse racing. The folder is regularly updated with new prompts and strategy templates. For the latest additions, see the full file list below:
 
-### Strategy & Analysis Prompts
-* BetfairMarketAnalysisCandleStickData.md – Candlestick pattern analysis for Betfair markets
-* BetfairMarketAnalysisCandleStickDataR2.md – Enhanced candlestick analysis
-* BetfairMarketAnalysisCandleStickDataR3.md – Comprehensive candlestick analysis
-* BetfairMarketAnalysisCandleStickDataR4_Favourite.md – Favourite-focused candlestick analysis
-* BetfairMarketAnalysisCandleStickDataR5_Favourite.md – Advanced favourite candlestick analysis
-* BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md – Silent favourite candlestick analysis
-* BetfairMarketAnalysisPrompt.md – Comprehensive market analysis framework
-* BetfairTradingStrategyExecutionPrompt.md – Trading strategy execution and management
-* BfexplorerMCPIntegrationSystemPrompt.md – MCP integration for Bfexplorer platform
-* BfexplorerStrategyExpertPrompt.md – Expert strategy configuration for Bfexplorer
-* FootballMatchFSharpCodeCreation.md – F# code generation for football analysis
-* Football_PreKick_MarketAnalysis_Prompt.md – Pre‑Kick/In‑Play market analysis prompt for football (expects match in‑play; uses `FootballMatchScoreData` and `MarketSelectionsPriceHistoryData`)
-* HorseRacingBaseFormDataAnalysis.md – Fundamental form data analysis
-* HorseRacingBetfairSpData.md – Betfair SP data analysis
-* HorseRacingBetfairSpDataR1.md – Optimized SP data analysis
-* HorseRacingBetfairSpDataR1_Favourite.md – Favourite-only SP data analysis
-* HorseRacingBetfairSpDataR1_Favourite_Silent.md – Silent favourite SP data analysis
-* HorseRacingBetfairSpDataR1_Favourite_Silent_CN.md – Chinese silent favourite SP data analysis
-* HorseRacingBetfairSpDataR1_Favourite_Silent_CN2.md – Chinese silent favourite SP data analysis R2
-* HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md – Slovak silent favourite SP data analysis
-* HorseRacingCombinedEVAnalysis.md – Dual-method expected value analysis
-* HorseRacingCombinedEVAnalysisWithAutomatedBetting.md – Automated combined analysis and betting
-* HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md – Combined analysis with structured output
-* HorseRacingEVAnalysisFavouriteR10_NoLayRules.md – Favourite analysis, no lay betting
-* HorseRacingEVAnalysisFavouriteR3.md – Favourite R3 analysis
-* HorseRacingEVAnalysisFavouriteR3_Silent.md – Silent favourite R3 analysis
-* HorseRacingEVAnalysisFavouriteR4.md – Advanced favourite analysis
-* HorseRacingEVAnalysisFavouriteR5.md – Multi-context favourite analysis
-* HorseRacingEVAnalysisFavouriteR6.md – EV range favourite analysis
-* HorseRacingEVAnalysisFavouriteR6_Silent.md – Silent EV range favourite analysis
-* HorseRacingEVAnalysisFavouriteR7_Silent.md – Optimized silent favourite analysis
-* HorseRacingEVAnalysisFavouriteR8.md – Advanced favourite analysis
-* HorseRacingEVAnalysisFavouriteR8_Silent.md – Silent advanced favourite analysis
-* HorseRacingEVAnalysisFavouriteR9_Silent.md – Advanced silent favourite analysis
-* HorseRacingEVAnalysisMinimal.md – Minimal EV analysis
-* HorseRacingEVAnalysisMinimalExecution.md – Minimal EV analysis with execution
-* HorseRacingEVAnalysisNumericalData.md – Numerical EV analysis
-* HorseRacingEVAnalysisPrompt.md – General EV analysis prompt
-* HorseRacingEVAnalysisR1.md – R1 EV analysis
-* HorseRacingEVAnalysisR10_Silent.md – Silent R10 EV analysis
-* HorseRacingEVAnalysisR11.md – R11 EV analysis
-* HorseRacingEVAnalysisR11_Feedback.md – R11 feedback analysis
-* HorseRacingEVAnalysisR1_Silent.md – Silent R1 EV analysis
-* HorseRacingEVAnalysisR2.md – R2 EV analysis
-* HorseRacingEVAnalysisR3.md – R3 EV analysis
-* HorseRacingEVAnalysisWithBetting.md – EV analysis with betting logic
-* HorseRacingEVAnalysisWithBetting_TradingData.md – EV analysis with trading data
-* HorseRacingEVAnalysisWithConservativeBetting.md – Conservative EV analysis with betting
-* HorseRacingEVAnalysisWithConservativeTradingData.md – Conservative EV analysis with trading data
-* HorseRacingEVAnalysisWithDutchBetting.md – Dutch betting EV analysis
-* HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md – Dutch betting with OLBG tips
-* HorseRacingEVAtTheRacesData.md – At The Races data analysis
-* HorseRacingEVAtTheRacesData_ExpertView.md – Expert view At The Races analysis
-* HorseRacingEVRankingsTableOnly.md – Rankings table only analysis
-* HorseRacingExecutionOnlyNoReports.md – Execution-only, no reports
-* HorseRacingExpectedValueAnalysis.md – Expected value analysis
-* HorseRacingRacingStattoData.md – RacingStatto data evaluation with EV and Kelly calculations
-* HorseRacingSemanticAnalysis.md – Semantic analysis
-* HorseRacingSemanticAnalysisR2.md – Semantic analysis R2
-* HorseRacingSilentEVAnalysisWithAutomatedExecution.md – Silent EV analysis with automated execution
-* HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md – Silent EV analysis for top 3 favorites
-* HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md – Silent OLBG EV analysis for top 3 favorites
-* HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md – Silent OLBG EV analysis with 10 Euro betting
-* HorseRacingStrategyR1.md – Strategy R1
-* HorseRacingStrategyR1_Analyze.md – Strategy R1 analysis
-* HorseRacingStrategyR2.md – Strategy R2
-* HorseRacingStrategyR3.md – Strategy R3
-* HorseRacingStrategyR3_DS.md – Strategy R3 DS
-* HorseRacingStrategyR4.md – Strategy R4
-* HorseRacingStrategyR4_Ideas.md – Strategy R4 ideas
-* HorseRacingStrategyR5.md – Strategy R5
-* HorseRacingStrategyR5_Ideas.md – Strategy R5 ideas
-* HorseRacingStrategyR5_Trade_Ideas.md – Strategy R5 trade ideas
-* HorseRacingStrategyR6.md – Strategy R6
-* HorseRacingStrategyR6_DS.md – Strategy R6 DS
-* HorseRacingValueIntelligence.md – Value intelligence analysis
-* HorseRacingWinToBePlacedData.md – Win to be placed data analysis
-* HorseRacingWinToBePlacedData_Favourite.md – Favourite win to be placed data
-* HorseRacingWinToBePlacedData_Favourite_Silent.md – Silent favourite win to be placed data
-* TradedPricesEVAnalysis.md – Traded prices EV analysis
-* TradedPricesEVPlusAnalysis.md – Enhanced traded prices EV analysis
-* TradedPricesEVPlusGpt5OptAnalysis.md – GPT-5 optimized traded prices analysis
-* TradingChartCreation.md – Trading chart creation
-* WeightOfMoneyAnalysisPrompt.md – Weight of money analysis prompt
-* WeightOfMoneyStrategy.md – Weight of money strategy
-* WeightOfMoneyStrategyR1.md – Weight of money strategy R1
+### All Prompt Files
+
+- [BetfairMarketAnalysisCandleStickData.md](BetfairMarketAnalysisCandleStickData.md)
+- [BetfairMarketAnalysisCandleStickDataR2.md](BetfairMarketAnalysisCandleStickDataR2.md)
+- [BetfairMarketAnalysisCandleStickDataR3.md](BetfairMarketAnalysisCandleStickDataR3.md)
+- [BetfairMarketAnalysisCandleStickDataR4_Favourite.md](BetfairMarketAnalysisCandleStickDataR4_Favourite.md)
+- [BetfairMarketAnalysisCandleStickDataR5_Favourite.md](BetfairMarketAnalysisCandleStickDataR5_Favourite.md)
+- [BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md](BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md)
+- [BetfairMarketAnalysisPrompt.md](BetfairMarketAnalysisPrompt.md)
+- [BetfairTradingStrategyExecutionPrompt.md](BetfairTradingStrategyExecutionPrompt.md)
+- [BfexplorerMCPIntegrationSystemPrompt.md](BfexplorerMCPIntegrationSystemPrompt.md)
+- [BfexplorerStrategyExpertPrompt.md](BfexplorerStrategyExpertPrompt.md)
+- [FootballMatchFSharpCodeCreation.md](FootballMatchFSharpCodeCreation.md)
+- [FootballMatchOddsAnalysisPrompt.md](FootballMatchOddsAnalysisPrompt.md)
+- [Football_PreKick_MarketAnalysis_Prompt.md](Football_PreKick_MarketAnalysis_Prompt.md)
+- [HorseRacingBaseFormDataAnalysis.md](HorseRacingBaseFormDataAnalysis.md)
+- [HorseRacingBetfairRaceInfoData.md](HorseRacingBetfairRaceInfoData.md)
+- [HorseRacingBetfairSpData.md](HorseRacingBetfairSpData.md)
+- [HorseRacingBetfairSpDataR1.md](HorseRacingBetfairSpDataR1.md)
+- [HorseRacingBetfairSpDataR1_Favourite.md](HorseRacingBetfairSpDataR1_Favourite.md)
+- [HorseRacingBetfairSpDataR1_Favourite_Silent.md](HorseRacingBetfairSpDataR1_Favourite_Silent.md)
+- [HorseRacingBetfairSpDataR1_Favourite_Silent_CN.md](HorseRacingBetfairSpDataR1_Favourite_Silent_CN.md)
+- [HorseRacingBetfairSpDataR1_Favourite_Silent_CN2.md](HorseRacingBetfairSpDataR1_Favourite_Silent_CN2.md)
+- [HorseRacingBetfairSpDataR1_Favourite_Silent_RU.md](HorseRacingBetfairSpDataR1_Favourite_Silent_RU.md)
+- [HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md](HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md)
+- [HorseRacingBetfairSpDataR1_Favourite.md](HorseRacingBetfairSpDataR1_Favourite.md)
+- [HorseRacingBetfairSpDataR1.md](HorseRacingBetfairSpDataR1.md)
+- [HorseRacingBetfairSpData.md](HorseRacingBetfairSpData.md)
+- [HorseRacingBookmakersOdds.md](HorseRacingBookmakersOdds.md)
+- [HorseRacingCombinedEVAnalysis.md](HorseRacingCombinedEVAnalysis.md)
+- [HorseRacingCombinedEVAnalysisWithAutomatedBetting.md](HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
+- [HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md](HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md)
+- [HorseRacingEVAnalysisFavouriteR10_NoLayRules.md](HorseRacingEVAnalysisFavouriteR10_NoLayRules.md)
+- [HorseRacingEVAnalysisFavouriteR3.md](HorseRacingEVAnalysisFavouriteR3.md)
+- [HorseRacingEVAnalysisFavouriteR3_Silent.md](HorseRacingEVAnalysisFavouriteR3_Silent.md)
+- [HorseRacingEVAnalysisFavouriteR4.md](HorseRacingEVAnalysisFavouriteR4.md)
+- [HorseRacingEVAnalysisFavouriteR5.md](HorseRacingEVAnalysisFavouriteR5.md)
+- [HorseRacingEVAnalysisFavouriteR6.md](HorseRacingEVAnalysisFavouriteR6.md)
+- [HorseRacingEVAnalysisFavouriteR6_Silent.md](HorseRacingEVAnalysisFavouriteR6_Silent.md)
+- [HorseRacingEVAnalysisFavouriteR7_Silent.md](HorseRacingEVAnalysisFavouriteR7_Silent.md)
+- [HorseRacingEVAnalysisFavouriteR8.md](HorseRacingEVAnalysisFavouriteR8.md)
+- [HorseRacingEVAnalysisFavouriteR8_Silent.md](HorseRacingEVAnalysisFavouriteR8_Silent.md)
+- [HorseRacingEVAnalysisFavouriteR9_Silent.md](HorseRacingEVAnalysisFavouriteR9_Silent.md)
+- [HorseRacingEVAnalysisMinimal.md](HorseRacingEVAnalysisMinimal.md)
+- [HorseRacingEVAnalysisMinimalExecution.md](HorseRacingEVAnalysisMinimalExecution.md)
+- [HorseRacingEVAnalysisNumericalData.md](HorseRacingEVAnalysisNumericalData.md)
+- [HorseRacingEVAnalysisPrompt.md](HorseRacingEVAnalysisPrompt.md)
+- [HorseRacingEVAnalysisR1.md](HorseRacingEVAnalysisR1.md)
+- [HorseRacingEVAnalysisR10_Silent.md](HorseRacingEVAnalysisR10_Silent.md)
+- [HorseRacingEVAnalysisR11.md](HorseRacingEVAnalysisR11.md)
+- [HorseRacingEVAnalysisR11_Feedback.md](HorseRacingEVAnalysisR11_Feedback.md)
+- [HorseRacingEVAnalysisR1_Silent.md](HorseRacingEVAnalysisR1_Silent.md)
+- [HorseRacingEVAnalysisR2.md](HorseRacingEVAnalysisR2.md)
+- [HorseRacingEVAnalysisR3.md](HorseRacingEVAnalysisR3.md)
+- [HorseRacingEVAnalysisWithBetting.md](HorseRacingEVAnalysisWithBetting.md)
+- [HorseRacingEVAnalysisWithBetting_TradingData.md](HorseRacingEVAnalysisWithBetting_TradingData.md)
+- [HorseRacingEVAnalysisWithConservativeBetting.md](HorseRacingEVAnalysisWithConservativeBetting.md)
+- [HorseRacingEVAnalysisWithConservativeTradingData.md](HorseRacingEVAnalysisWithConservativeTradingData.md)
+- [HorseRacingEVAnalysisWithDutchBetting.md](HorseRacingEVAnalysisWithDutchBetting.md)
+- [HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md](HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md)
+- [HorseRacingEVAtTheRacesData.md](HorseRacingEVAtTheRacesData.md)
+- [HorseRacingEVAtTheRacesDataR1_ExpertView.md](HorseRacingEVAtTheRacesDataR1_ExpertView.md)
+- [HorseRacingEVAtTheRacesDataR2_ExpertView.md](HorseRacingEVAtTheRacesDataR2_ExpertView.md)
+- [HorseRacingEVAtTheRacesDataR5_ExpertView.md](HorseRacingEVAtTheRacesDataR5_ExpertView.md)
+- [HorseRacingEVRankingsTableOnly.md](HorseRacingEVRankingsTableOnly.md)
+- [HorseRacingExecutionOnlyNoReports.md](HorseRacingExecutionOnlyNoReports.md)
+- [HorseRacingExpectedValueAnalysis.md](HorseRacingExpectedValueAnalysis.md)
+- [HorseRacingFavouriteValueAnalysis.md](HorseRacingFavouriteValueAnalysis.md)
+- [HorseRacingRacingStattoData.md](HorseRacingRacingStattoData.md)
+- [HorseRacingSaveBetfairSpDataToCsvFile.md](HorseRacingSaveBetfairSpDataToCsvFile.md)
+- [HorseRacingSemanticAnalysis.md](HorseRacingSemanticAnalysis.md)
+- [HorseRacingSemanticAnalysisR2.md](HorseRacingSemanticAnalysisR2.md)
+- [HorseRacingSilentEVAnalysisWithAutomatedExecution.md](HorseRacingSilentEVAnalysisWithAutomatedExecution.md)
+- [HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md)
+- [HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md)
+- [HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md](HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md)
+- [HorseRacingStrategyR1.md](HorseRacingStrategyR1.md)
+- [HorseRacingStrategyR1_Analyze.md](HorseRacingStrategyR1_Analyze.md)
+- [HorseRacingStrategyR2.md](HorseRacingStrategyR2.md)
+- [HorseRacingStrategyR3.md](HorseRacingStrategyR3.md)
+- [HorseRacingStrategyR3_DS.md](HorseRacingStrategyR3_DS.md)
+- [HorseRacingStrategyR4.md](HorseRacingStrategyR4.md)
+- [HorseRacingStrategyR4_Ideas.md](HorseRacingStrategyR4_Ideas.md)
+- [HorseRacingStrategyR5.md](HorseRacingStrategyR5.md)
+- [HorseRacingStrategyR5_Ideas.md](HorseRacingStrategyR5_Ideas.md)
+- [HorseRacingStrategyR5_Trade.md](HorseRacingStrategyR5_Trade.md)
+- [HorseRacingStrategyR5_Trade_Ideas.md](HorseRacingStrategyR5_Trade_Ideas.md)
+- [HorseRacingStrategyR6.md](HorseRacingStrategyR6.md)
+- [HorseRacingStrategyR6_DS.md](HorseRacingStrategyR6_DS.md)
+- [HorseRacingValueIntelligence.md](HorseRacingValueIntelligence.md)
+- [HorseRacingWinToBePlacedData.md](HorseRacingWinToBePlacedData.md)
+- [HorseRacingWinToBePlacedData_Favourite.md](HorseRacingWinToBePlacedData_Favourite.md)
+- [HorseRacingWinToBePlacedData_Favourite_Silent.md](HorseRacingWinToBePlacedData_Favourite_Silent.md)
+- [TradedPricesEVAnalysis.md](TradedPricesEVAnalysis.md)
+- [TradedPricesEVPlusAnalysis.md](TradedPricesEVPlusAnalysis.md)
+- [TradedPricesEVPlusGpt5OptAnalysis.md](TradedPricesEVPlusGpt5OptAnalysis.md)
+- [TradingChartCreation.md](TradingChartCreation.md)
+- [WeightOfMoneyAnalysisPrompt.md](WeightOfMoneyAnalysisPrompt.md)
+- [WeightOfMoneyStrategy.md](WeightOfMoneyStrategy.md)
+- [WeightOfMoneyStrategyR1.md](WeightOfMoneyStrategyR1.md)
 
 ## Market Analysis & Trading Systems
 
@@ -725,6 +738,7 @@ Use **BetfairMarketAnalysisPrompt.md** when:
 - Want structured analysis with clear summary tables and trading strategies
 - Looking for market-wide pattern recognition and professional activity indicators
 - Require actionable trading recommendations with profit/loss parameters
+- **Best for:** Real-time market analysis, professional trading opportunities, and comprehensive market intelligence
 
 ### For Favourite-Focused Analysis
 Use **HorseRacingEVAnalysisFavouriteR6.md** when:

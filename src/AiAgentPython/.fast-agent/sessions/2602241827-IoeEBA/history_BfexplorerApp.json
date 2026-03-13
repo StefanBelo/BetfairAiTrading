@@ -1,0 +1,99 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_lcL8xGuWKWKfZn2AddXh9DLs": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 10417.1418443, \"end_time\": 10419.5431229, \"duration_ms\": 2401.28}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"github:gpt-4o\", \"input_tokens\": 1123, \"output_tokens\": 18, \"total_tokens\": 1141, \"timestamp\": 1771954048.8463254, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 1, \"current_context_tokens\": 1141, \"effective_input_tokens\": 1123, \"display_input_tokens\": 1123}, \"raw_usage\": {\"completion_tokens\": 18, \"prompt_tokens\": 1123, \"total_tokens\": 1141, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 0}}, \"summary\": {\"model\": \"github:gpt-4o\", \"turn_count\": 1, \"cumulative_input_tokens\": 1123, \"cumulative_output_tokens\": 18, \"cumulative_billing_tokens\": 1141, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 1141, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 1123}}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_lcL8xGuWKWKfZn2AddXh9DLs": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.254375781\"\n  StartTime: \"2026-02-24T17:30:00Z\"\n  EventType: \"Horse Racing\"\n  EventName: Southwell\n  MarketName: \"6f Hcap\"\n  TotalMatched: 146270.14\n  Status: Open\n  Selections[10]{SelectionId,Name,Price,TotalMatched,Status}:\n    66993572_0.00,\"Yorkshire Glory\",3,69203.44,Active\n    65217682_0.00,\"Forever Noah\",4.2,34239.78,Active\n    35528107_0.00,\"Ramon Di Loria\",5.9,13733.55,Active\n    1500122_0.00,\"Dubai Magic\",15.5,10675.76,Active\n    34000565_0.00,Asadjumeirah,14,5962.06,Active\n    68685626_0.00,\"Dr Ali\",24,2402.56,Active\n    65071307_0.00,\"Kipp Kelly\",28,2614.02,Active\n    18423669_0.00,\"Walking On Clouds\",36,5568.03,Active\n    3324325_0.00,\"My Boy Jack\",80,1226.96,Active\n    39257924_0.00,Alyara,140,643.93,Active"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_lcL8xGuWKWKfZn2AddXh9DLs\": {\"timing_ms\": 13.53, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "I hit an internal error while calling the model: generic request failed for model 'github:gpt-4o' (code: validation_failed) (status=400): Error code: 400 - {'error': {'message': 'Message 2: content is required', 'type': 'invalid_request_error', 'code': 'validation_failed'}}. See fast-agent-error for additional details."
+        }
+      ],
+      "channels": {
+        "fast-agent-error": [
+          {
+            "type": "text",
+            "text": "generic request failed for model 'github:gpt-4o' (code: validation_failed) (status=400): Error code: 400 - {'error': {'message': 'Message 2: content is required', 'type': 'invalid_request_error', 'code': 'validation_failed'}}"
+          }
+        ],
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 10419.7813815, \"end_time\": 10430.7931044, \"duration_ms\": 11011.72}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"github:gpt-4o\", \"input_tokens\": 1123, \"output_tokens\": 18, \"total_tokens\": 1141, \"timestamp\": 1771954048.8463254, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 1141, \"effective_input_tokens\": 1123, \"display_input_tokens\": 1123}, \"raw_usage\": {\"completion_tokens\": 18, \"prompt_tokens\": 1123, \"total_tokens\": 1141, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 0}}, \"summary\": {\"model\": \"github:gpt-4o\", \"turn_count\": 1, \"cumulative_input_tokens\": 1123, \"cumulative_output_tokens\": 18, \"cumulative_billing_tokens\": 1141, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 0, \"current_context_tokens\": 1141, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 1123}}"
+          }
+        ]
+      },
+      "stop_reason": "error",
+      "is_template": false
+    }
+  ]
+}

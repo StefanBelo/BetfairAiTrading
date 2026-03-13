@@ -1,0 +1,8 @@
+npm install -g openclaw@latest
+
+npm view openclaw@latest version
+
+https://github.com/openclaw/openclaw
+
+openclaw gateway start
+openclaw dashboard

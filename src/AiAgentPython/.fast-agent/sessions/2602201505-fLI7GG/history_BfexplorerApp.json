@@ -1,0 +1,81 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_PRQlTOTg7HGuhtWeBuVVXc6e": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 501621.5837414, \"end_time\": 501623.1659369, \"duration_ms\": 1582.2}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_PRQlTOTg7HGuhtWeBuVVXc6e": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.254231326\"\n  StartTime: \"2026-02-20T13:52:00Z\"\n  EventType: \"Horse Racing\"\n  EventName: \"Ffos Las\"\n  MarketName: \"3m Hcap Chs\"\n  TotalMatched: 427831.98\n  Status: Closed\n  Selections[7]{SelectionId,Name,Price,TotalMatched,Status}:\n    74823423_0.00,\"River Run Free\",85,144528.5,Loser\n    65504440_0.00,\"River Voyage\",1.02,85123.09,Winner\n    39882484_0.00,Esperti,1000,39978.83,Loser\n    39152729_0.00,\"Haut Folin\",1000,55424.43,Loser\n    50747288_0.00,\"Benny Baloo\",1000,22737.84,Loser\n    78584168_0.00,\"Steal The Moves\",480,74324.39,Loser\n    23899478_0.00,\"Jaunty Viking\",1000,5714.88,Loser"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_PRQlTOTg7HGuhtWeBuVVXc6e\": {\"timing_ms\": 11.89, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The active market is:\n\n- Event: Horse Racing - Ffos Las\n- Market: 3m Hcap Chs\n- Market ID: 1.254231326\n- Status: Closed\n- Total Matched: \u00a3427,831.98\n\nSelections include River Run Free, River Voyage (Winner), Esperti, Haut Folin, Benny Baloo, Steal The Moves, and Jaunty Viking."
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 501623.1998395, \"end_time\": 501624.4800218, \"duration_ms\": 1280.18}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

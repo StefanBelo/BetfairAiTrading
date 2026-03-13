@@ -1,0 +1,5 @@
+https://github.com/HKUDS/nanobot
+
+uv tool install nanobot-ai
+
+uv tool run nanobot onboard

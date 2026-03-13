@@ -5,6 +5,8 @@ This folder contains short idea notes, integration specs, and experiment summari
 Files:
 
 - `BFExplorer_ResidualLiquidityGate.md` — Summary of Maurice Berk's "Two Markets, One Race" article and a concrete BFExplorer integration plan for a residual-liquidity gating signal.
+- `SectionalTimesAndMargins.md` — Notes on Alan Potts' article about sectional times and strategic ideas for pace and margin analysis.
+- `FineFormMasterFormula.md` — Research summary of the Fine Form Master Formula thread, highlighting rules, filters, and staking discussions.
 
 Usage:
 

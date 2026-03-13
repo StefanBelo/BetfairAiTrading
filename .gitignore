@@ -367,3 +367,4 @@ reddit_post.md
 src/AiAgentPython/Test.http
 .claude/settings.local.json
 .mcp.json
+docker/TuskBot/env.text

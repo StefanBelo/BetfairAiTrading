@@ -137,6 +137,8 @@ This directory contains community posts, articles, and real-world examples showc
 - [Crowd Wisdom vs. Betting Value: Finding Edges in Efficient Markets](Post_CrowdWisdomVsBettingValue.md)
 - [Post: AI Performance - Capitalism vs Communism](Post_AIPerformanceCapitalismVsCommunism.md)
 - [Native Language Prompt Engineering: Slovak vs English Results](Post_NativeLanguagePromptEngineering.md)
+- [Reflections on LLMs for Strategy Development: A 2026 Perspective](LLM_Strategy_Reflections_2026.md)
+  **Insights on the evolving role of LLMs in trading and coding, summarizing recent community discussions and practical experiments with the latest models.**
 
 ### Reddit Community Posts
 - [Reddit Post: Dutching 3 +EV Horses vs Backing Only the Top EV (No formulas)](RedditPost_StakingForTop3PositiveEV_NoFormulas.md)
@@ -446,11 +448,10 @@ This directory contains community posts, articles, and real-world examples showc
 ## What You'll Find Here
 
 ### Real User Experiences
-- Success stories from community members
-- Practical implementation examples
-- Lessons learned and optimization tips
-- Before/after comparisons of trading approaches
-- **Live Strategy Execution**: Real-time automated betting based on comprehensive EV analysis
+- [AI Agent Horse Racing Analysis: The Power of Backtesting & Continuous Learning](Post_AIAgentBacktestingAndLearning.md) - Building adaptive AI agents that learn from results
+- [How I Became a Betfair Strategy Expert in Minutes](Post_BfexplorerStrategyExpert.md) - Real success story using AI strategy assistance
+- [Crowd Wisdom vs. Betting Value: Finding Edges in Efficient Markets](Post_CrowdWisdomVsBettingValue.md) - Deep analysis of market efficiency and systematic value identification
+- [Reflections on LLMs for Strategy Development: A 2026 Perspective](LLM_Strategy_Reflections_2026.md) - Insights on the evolving role of LLMs in trading and coding
 
 ### Strategy Combinations
 - Complex multi-strategy setups explained

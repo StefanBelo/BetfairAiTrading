@@ -1,0 +1,158 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_uiYLe05GhBbNjvgLf1PrhahH": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 11006.5004609, \"end_time\": 11008.0263144, \"duration_ms\": 1525.85}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_uiYLe05GhBbNjvgLf1PrhahH": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.254375912\"\n  StartTime: \"2026-02-24T17:42:00Z\"\n  EventType: \"Horse Racing\"\n  EventName: Newcastle\n  MarketName: \"1m Hcap\"\n  TotalMatched: 86017.99\n  Status: Open\n  Selections[8]{SelectionId,Name,Price,TotalMatched,Status}:\n    65732735_0.00,\"Dream Illusion\",2.46,45316.46,Active\n    41111_0.00,Corundum,4.7,14398.98,Active\n    85725311_0.00,\"Asian Journey\",7.4,7436.31,Active\n    47575593_0.00,\"Jack Sparowe\",8.2,7960.73,Active\n    3246793_0.00,\"Union Island\",17,6038.21,Active\n    924665_0.00,Wyvern,21,3114.67,Active\n    74399368_0.00,\"Mini Mac\",80,1189.91,Active\n    68425400_0.00,\"Rock Armour\",120,562.68,Active"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_uiYLe05GhBbNjvgLf1PrhahH\": {\"timing_ms\": 13.32, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The active market is:\n\n- Event: Horse Racing at Newcastle\n- Market: 1m Hcap\n- Market ID: 1.254375912\n- Status: Open\n- Start Time: 2026-02-24 17:42 UTC\n\nSelections include Dream Illusion, Corundum, Asian Journey, Jack Sparowe, Union Island, Wyvern, Mini Mac, and Rock Armour."
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 11008.2596672, \"end_time\": 11010.8599153, \"duration_ms\": 2600.25}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "List fav bet events."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_h3Au6X4eMiOv2skAofUnysDA": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_my_favourite_bet_events",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 11038.1319728, \"end_time\": 11040.1047801, \"duration_ms\": 1972.81}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_h3Au6X4eMiOv2skAofUnysDA": {
+          "content": [
+            {
+              "type": "text",
+              "text": "MyFavouriteBetEvents[8]: \"Events with my bets\",Cricket,Football,\"Football - Over/Under 2.5 Goals\",\"Greyhound Racing\",\"Horse Racing - All\",\"Horse Racing - GB and IE\",Tennis"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_h3Au6X4eMiOv2skAofUnysDA\": {\"timing_ms\": 46.92, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Your favourite bet events are:\n\n- Events with my bets\n- Cricket\n- Football\n- Football - Over/Under 2.5 Goals\n- Greyhound Racing\n- Horse Racing - All\n- Horse Racing - GB and IE\n- Tennis"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 11040.1718714, \"end_time\": 11042.5627001, \"duration_ms\": 2390.83}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}
