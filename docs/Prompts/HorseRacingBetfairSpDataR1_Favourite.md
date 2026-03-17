@@ -28,7 +28,7 @@
 - Skip selections missing price or marked inactive
 
 ### Step 2: Get Model Data  
-- Call `GetDataContextForMarket(dataContextName="BetfairSpData", marketId)`
+- Call `GetAllDataContextForMarket(dataContextName="BetfairSpData", marketId)`
 - Extract for each selection: eVforPriceOrBetfairSP, industryStartingPrice, price, betfairSP
 - Skip if industryStartingPrice ≤ 0 OR price ≤ 1
 - **Note**: BetfairSP is the primary accuracy benchmark per research findings

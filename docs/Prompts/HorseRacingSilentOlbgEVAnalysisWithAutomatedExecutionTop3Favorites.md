@@ -16,9 +16,9 @@ Instructions:
    - No reports during data collection
 
 2. **Multi-Context Data Collection**
-   - Retrieve the data context with the name 'OlbgRaceTipsData' for the betfair market using tool: GetDataContextForMarket
-   - Retrieve the data context with the name 'RacingpostDataForHorses' for the betfair market using tool: GetDataContextForMarket
-   - Retrieve the data context with the name 'MarketSelectionsTradedPricesData' for the betfair market using tool: GetDataContextForMarket
+   - Retrieve the data context with the name 'OlbgRaceTipsData' for the betfair market using tool: GetAllDataContextForMarket
+   - Retrieve the data context with the name 'RacingpostDataForHorses' for the betfair market using tool: GetAllDataContextForMarket
+   - Retrieve the data context with the name 'MarketSelectionsTradedPricesData' for the betfair market using tool: GetAllDataContextForMarket
    - Focus on 'tipsterData' field from OLBG context, 'horsesData' field from racing post context, and price movement/volume data from traded prices context
    - SILENT data collection - no outputs during this phase
 

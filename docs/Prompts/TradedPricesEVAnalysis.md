@@ -7,7 +7,7 @@
 ### STEP-BY-STEP AUTOMATED EXECUTION:
 
 1. **AUTOMATICALLY** get the active Betfair market using: `GetActiveMarket`
-2. **AUTOMATICALLY** retrieve trading data using: `GetDataContextForMarket` with dataContextName "MarketSelectionsTradedPricesData"
+2. **AUTOMATICALLY** retrieve trading data using: `GetAllDataContextForMarket` with dataContextName "MarketSelectionsTradedPricesData"
 3. **AUTOMATICALLY** perform EV analysis on the retrieved data
 4. **AUTOMATICALLY** format and display results in the specified table format
 5. **AUTOMATICALLY** provide strategic recommendations
@@ -26,7 +26,7 @@ EXECUTE THIS AUTOMATED ANALYSIS NOW:
    - Extract marketId from response
 
 2. **STEP 2 - GET TRADING DATA (EXECUTE IMMEDIATELY):**
-    - Use GetDataContextForMarket tool
+    - Use GetAllDataContextForMarket tool
     - Parameters: marketId from Step 1, dataContextName "MarketSelectionsTradedPricesData"
     - Parse the trading data for all selections
 
@@ -108,7 +108,7 @@ STORE RESULT: Extract marketId for next step
 
 ### Command 2: Get Trading Context
 ```
-EXECUTE NOW: Use BfexplorerApp MCP tool: GetDataContextForMarket 
+EXECUTE NOW: Use BfexplorerApp MCP tool: GetAllDataContextForMarket 
 PARAMETERS: marketId=[from Command 1], dataContextName="MarketSelectionsTradedPricesData"
 STORE RESULT: Parse trading data for analysis
 ```

@@ -44,7 +44,7 @@ Purpose: Retrieve current market information
 
 #### Step 2: Retrieve Multi-Context Data
 ```
-Use: GetDataContextForMarket
+Use: GetAllDataContextForMarket
 Parameters: 
 - dataContextNames: ["RacingpostDataForHorses", "HorsesBaseBetfairFormData", "MarketSelectionsTradedPricesData"]
 - marketId: [from Step 1]

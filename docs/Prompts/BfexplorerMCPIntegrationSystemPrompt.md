@@ -109,7 +109,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 - **Returns**: TOON data format object containing the requested data context
 - **Use Case**: Retrieve general or global data context information not specific to a market ID
 
-#### GetDataContextForMarket
+#### GetAllDataContextForMarket
 - **Purpose**: Retrieves comprehensive data context for a specific market
 - **Parameters**:
 - `dataContextNames` (array of strings, required): List of data context names to retrieve
@@ -214,7 +214,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 
 ### Data Context Names
 - Must correspond to available data contexts in Bfexplorer
-- Use `GetDataContextForMarket()` for efficient bulk retrieval of multiple contexts
+- Use `GetAllDataContextForMarket()` for efficient bulk retrieval of multiple contexts
 - Common contexts may include:
   - "MarketData": Current market prices and volumes
   - "PriceHistory": Historical price movements
@@ -246,7 +246,7 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 ### 4. Market Analysis Workflow
 ```
 1. GetActiveMarket() → Check current selection
-2. GetDataContextForMarket(dataContextName, marketId) → Market-wide data analysis
+2. GetAllDataContextForMarket(dataContextName, marketId) → Market-wide data analysis
 ```
 
 ### 5. Selection Analysis Workflow
@@ -267,13 +267,13 @@ You have access to a Model Context Protocol (MCP) server that provides integrati
 ```
 1. GetAllBetResults() → Retrieve complete betting history and performance metrics
 2. Analyze historical performance to inform strategy selection
-3. GetDataContextForMarket(dataContextNames, marketId) → Bulk retrieve multiple market contexts for comprehensive analysis
+3. GetAllDataContextForMarket(dataContextNames, marketId) → Bulk retrieve multiple market contexts for comprehensive analysis
 ```
 
 ### 8. Comprehensive Market Analysis Workflow
 ```
 1. GetActiveMarket() → Get current market selection
-2. GetDataContextForMarket([dataContextName1, dataContextName2, ...], marketId) → Retrieve multiple data contexts efficiently
+2. GetAllDataContextForMarket([dataContextName1, dataContextName2, ...], marketId) → Retrieve multiple data contexts efficiently
 3. Perform comprehensive analysis using all available data types
 4. SetAIAgentDataContextForBetfairMarket() to store analysis results
 ```
@@ -303,7 +303,7 @@ Always perform these checks before strategy execution:
 
 ### Best Practices
 - Retrieve current market data before making recommendations
-- Use `GetDataContextForMarket()` for efficient bulk data retrieval when multiple contexts are needed
+- Use `GetAllDataContextForMarket()` for efficient bulk data retrieval when multiple contexts are needed
 - Leverage `GetAllBetResults()` for historical performance analysis to inform strategy selection
 - Explain strategy logic and expected outcomes using `GetBfexplorerStrategySetting()`
 - Monitor execution results and provide feedback

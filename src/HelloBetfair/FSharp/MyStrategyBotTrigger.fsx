@@ -14,8 +14,8 @@ type MyStrategyBotTrigger (market : Market, selection : Selection, botName : str
     inherit BotTriggerBase (market, selection, botName, botTriggerParameters, myBfexplorer)
 
     let getMySelection () =
-        let fromPrice = defaultArg (botTriggerParameters.GetParameter<float> ("FromPrice")) 2.5
-        let toPrice = defaultArg (botTriggerParameters.GetParameter<float> ("ToPrice")) 3.0
+        let fromPrice = defaultArg (botTriggerParameters.GetParameter<float> "FromPrice") 2.5
+        let toPrice = defaultArg (botTriggerParameters.GetParameter<float> "ToPrice") 3.0
 
         getFavouriteSelections market
         |> List.tryFind (fun mySelection -> 

@@ -6,7 +6,7 @@ NEW (Auto Execution with Confirmation): When a single selection (the favorite) f
 
 ## 1. Data Fetch
 1. GetActiveMarket
-2. GetDataContextForMarket("MarketSelectionsCandleStickData") → includes: candleStickData[], backLayRatio = backVolume/(backVolume+layVolume)
+2. GetAllDataContextForMarket("MarketSelectionsCandleStickData") → includes: candleStickData[], backLayRatio = backVolume/(backVolume+layVolume)
 
 ## 2. Core Formulas
 Probability = (1/Price)*100

@@ -52,7 +52,7 @@ module BfexplorerApp =
         Volume: float
     }
 
-    let GetDataContextForMarket (contextNames: string[], marketId: string) = 
+    let GetAllDataContextForMarket (contextNames: string[], marketId: string) = 
         // Implementation would call MCP server
         [||]
 
@@ -119,7 +119,7 @@ let calculateEnhancedEV (horse:HorseData) =
 // Main execution logic
 let executeStrategy (marketId:string) =
     // Get required data contexts
-    let dataContexts = BfexplorerApp.GetDataContextForMarket([|"RacingpostDataForHorses"; "HorsesBaseBetfairFormData"; "MarketSelectionsTradedPricesData"|], marketId)
+    let dataContexts = BfexplorerApp.GetAllDataContextForMarket([|"RacingpostDataForHorses"; "HorsesBaseBetfairFormData"; "MarketSelectionsTradedPricesData"|], marketId)
     
     // Transform data into HorseData records
     let horses = dataContexts |> Array.map (fun ctx ->

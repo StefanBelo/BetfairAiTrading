@@ -143,7 +143,7 @@ Both implementations have access to these BfexplorerApp MCP tools:
 - `ActivateBetfairMarketSelection`: Activate specific market/selection
 
 ### Data Retrieval
-- `GetDataContextForMarket`: Retrieve market-specific data
+- `GetAllDataContextForMarket`: Retrieve market-specific data
 - `GetDataContextForMarketSelection`: Get selection-specific information
 
 ### Strategy Execution

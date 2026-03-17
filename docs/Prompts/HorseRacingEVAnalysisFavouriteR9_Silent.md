@@ -6,7 +6,7 @@
 
 **Data Retrieval & Validation**:
 1.  **Get Market**: Use `GetActiveMarket` to get the active market and selections.
-2.  **Get Horse Data**: Use `GetDataContextForMarket` with `['TimeformDataForHorses', 'RacingpostDataForHorses']`.
+2.  **Get Horse Data**: Use `GetAllDataContextForMarket` with `['TimeformDataForHorses', 'RacingpostDataForHorses']`.
 3.  **Validation**: Proceed only if data completeness is ≥80% for all horses.
 
 **Configuration**:

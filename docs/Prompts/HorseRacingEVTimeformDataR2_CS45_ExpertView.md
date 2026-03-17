@@ -21,7 +21,7 @@ Use `GetActiveMarket` to retrieve the active market object. This endpoint return
 **Note:** The market endpoint does NOT reliably include matched volumes, multi-layer best-back/best-lay prices, or detailed odds history. If those fields are present, use them; otherwise set to `null` and note in provenance.
 
 ### Step 2: Get Timeform Horse Data
-Use `GetDataContextForMarket` with `dataContextName = "TimeformFullDataForHorses"` for the same `marketId`. This endpoint returns a `selectionsData` array where each element contains:
+Use `GetAllDataContextForMarket` with `dataContextName = "TimeformFullDataForHorses"` for the same `marketId`. This endpoint returns a `selectionsData` array where each element contains:
 - `selectionId` (string)
 - `name` (string)
 - `data` (object) with:

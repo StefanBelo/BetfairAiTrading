@@ -13,7 +13,7 @@ Instructions:
    - Make no preliminary reports during data collection
 
 2. **Trading Data Collection**
-   - Retrieve the data context with the name 'MarketSelectionsTradedPricesData' for the betfair market using tool: GetDataContextForMarket
+   - Retrieve the data context with the name 'MarketSelectionsTradedPricesData' for the betfair market using tool: GetAllDataContextForMarket
    - Focus exclusively on the 'tradedPricesData' field for each selection
    - Do not make any reports during data collection phase
 

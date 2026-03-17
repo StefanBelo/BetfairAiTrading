@@ -15,7 +15,7 @@ Leverages research showing BSP provides superior value to forecast prices, espec
 Call `GetActiveMarket()` → Extract marketId and selections [selectionId, name, price]. Skip inactive selections.
 
 ### Step 2: Enrich with BetfairSpData  
-Call `GetDataContextForMarket(dataContextName="BetfairSpData", marketId)` → Extract per selection:
+Call `GetAllDataContextForMarket(dataContextName="BetfairSpData", marketId)` → Extract per selection:
 - eVforPriceOrBetfairSP (originalEv)
 - industryStartingPrice (forecast price)
 - betfairSP (if available)

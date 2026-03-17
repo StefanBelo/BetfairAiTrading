@@ -13,7 +13,7 @@ Instructions:
    - Make no preliminary reports during data collection
 
 2. **Performance Data Collection**
-   - Retrieve the data context with the name 'RacingpostDataForHorses' for the betfair market using tool: GetDataContextForMarket
+   - Retrieve the data context with the name 'RacingpostDataForHorses' for the betfair market using tool: GetAllDataContextForMarket
    - Focus exclusively on the 'horsesData' field
    - Do not make any reports during data collection phase
 

@@ -5,7 +5,7 @@
 ## 1. Data Retrieval & Validation Framework
 
 1. **Get Market Data**: Use `GetActiveMarket` for `marketId` and selections with odds
-2. **Get Horse Data**: Use `GetDataContextForMarket` with `dataContextNames: ["AtTheRacesDataForHorses"]`
+2. **Get Horse Data**: Use `GetAllDataContextForMarket` with `dataContextNames: ["AtTheRacesDataForHorses"]`
 3. **Data Validation**: Ensure data completeness across all horses before proceeding
 
 ### Data Sources Summary:

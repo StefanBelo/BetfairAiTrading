@@ -29,7 +29,7 @@ Purpose: Retrieve current market information including:
 
 #### Step 2: Retrieve Racing Post Data
 ```
-Use: GetDataContextForMarket
+Use: GetAllDataContextForMarket
 Parameters: 
 - dataContextName: "RacingpostDataForHorses" 
 - marketId: [from Step 1]

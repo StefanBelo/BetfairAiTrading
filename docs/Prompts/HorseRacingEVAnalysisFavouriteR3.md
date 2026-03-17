@@ -8,7 +8,7 @@ First, identify the active horse racing market using the `GetActiveMarket` tool.
 
 ## Step 2: Retrieve Detailed Horse Information
 
-With the `marketId` from the previous step, use the `GetDataContextForMarket` tool with `dataContextNames` set to `['TimeformDataForHorses']`. This will return detailed Timeform analysis for each horse in the `timeformHorseData` field, including:
+With the `marketId` from the previous step, use the `GetAllDataContextForMarket` tool with `dataContextNames` set to `['TimeformDataForHorses']`. This will return detailed Timeform analysis for each horse in the `timeformHorseData` field, including:
 
 - `horseWinnerLastTimeOut`, `horseInForm`, `horseBeatenFavouriteLTO`
 - `suitedByGoing`, `suitedByCourse`, `suitedByDistance`

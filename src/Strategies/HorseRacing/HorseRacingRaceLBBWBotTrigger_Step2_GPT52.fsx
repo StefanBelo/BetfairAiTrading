@@ -430,7 +430,7 @@ type HorseRacingRaceLBBWBotTrigger (market : Market, selection : Selection, botN
         async {
             let bfexplorer = myBfexplorer.BfexplorerService.Bfexplorer
 
-            match! bfexplorer.GetDataContextForMarket ([| "DbJockeysResults"; "DbHorsesResults"; "RacingpostDataForHorses"; "TimeformDataForHorses" |], market) with
+            match! bfexplorer.GetAllDataContextForMarket ([| "DbJockeysResults"; "DbHorsesResults"; "RacingpostDataForHorses"; "TimeformDataForHorses" |], market) with
             | DataResult.Success marketDataContext -> 
 
                 let result = evaluate market (marketDataContext.SelectionsData |> List.map mapToMySelectionData)

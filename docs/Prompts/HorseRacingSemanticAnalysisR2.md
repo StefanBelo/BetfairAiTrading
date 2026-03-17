@@ -14,7 +14,7 @@ Begin with a concise checklist (3-7 bullets) of the main processing steps to be 
    - Use `GetActiveMarket` to retrieve the current active market.
 
 2. **Obtain Racing Post and Timeform Data:**
-   - Use `GetDataContextForMarket` with `dataContextNames`: `["RacingpostDataForHorses", "TimeformDataForHorses"]` and the marketId from Step 1.
+   - Use `GetAllDataContextForMarket` with `dataContextNames`: `["RacingpostDataForHorses", "TimeformDataForHorses"]` and the marketId from Step 1.
 
 3. **Global Semantic Sign Extraction:**
    - Collect all `raceDescription` entries for all horses in the market from Racing Post data.

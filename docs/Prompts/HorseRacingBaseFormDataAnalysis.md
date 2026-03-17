@@ -13,7 +13,7 @@ Instructions:
    - Make no preliminary reports during data collection
 
 2. **Form Data Collection**
-   - Retrieve the data context with the name 'HorsesBaseBetfairFormData' for the betfair market using tool: GetDataContextForMarket
+   - Retrieve the data context with the name 'HorsesBaseBetfairFormData' for the betfair market using tool: GetAllDataContextForMarket
    - Focus on the core metrics: forecastPrice, form, officialRating, and weight for each horse
    - Do not make any reports during data collection phase
 

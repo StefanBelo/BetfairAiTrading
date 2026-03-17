@@ -19,7 +19,7 @@ If you cannot access tools in this environment, output ONLY:
 2. `GetAllDataContextForMarket` with:
    `dataContextNames = ["DbJockeysResults","DbHorsesResults","RacingpostDataForHorses","TimeformDataForHorses"]`
    - IMPORTANT: call this **exactly once** per evaluation (no per-runner calls).
-   - If your MCP server exposes the bulk-call as `GetDataContextForMarket` (with `dataContextNames` array), use that equivalent.
+   - If your MCP server exposes the bulk-call as `GetAllDataContextForMarket` (with `dataContextNames` array), use that equivalent.
 3. `SetAIAgentDataContextForMarket` (or `SetAIAgentDataContextForBetfairMarket` if that is the exposed tool)
 
 ---

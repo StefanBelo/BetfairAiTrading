@@ -211,9 +211,9 @@ Shows which horses are attracting smart money versus public sentiment.
 **Data Retrieval Workflow:**
 1. First use `GetActiveMarket` to get the current active market data
 2. Then retrieve specific data contexts using:
-   - `GetDataContextForMarket` - for individual market-level data contexts
+   - `GetAllDataContextForMarket` - for individual market-level data contexts
    - `GetDataContextForMarketSelection` - for individual selection-level data contexts
-   - `GetDataContextForMarket` - to combine multiple data contexts for comprehensive analysis
+   - `GetAllDataContextForMarket` - to combine multiple data contexts for comprehensive analysis
 
 **Data Formats:**
 - Market ID format: "1.245954717"

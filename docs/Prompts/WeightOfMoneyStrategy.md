@@ -231,7 +231,7 @@ Calculate confidence score by summing points from each factor:
 2. **Extract market details**: Get marketId and market information
 
 ### Step 2: Get Weight of Money Data
-1. **Retrieve WeightOfMoneyData**: Use GetDataContextForMarket with:
+1. **Retrieve WeightOfMoneyData**: Use GetAllDataContextForMarket with:
    - dataContextName: "WeightOfMoneyData"
    - marketId: [from Step 1]
 2. **Parse data structure**: Extract for all selections:
@@ -311,7 +311,7 @@ Execution Status: [Success/Failed]
 
 ### Automated Execution Sequence:
 1. **Get Active Market**: Use GetActiveMarket to retrieve current market
-2. **Get Weight of Money Data**: Use GetDataContextForMarket with dataContextName "WeightOfMoneyData"
+2. **Get Weight of Money Data**: Use GetAllDataContextForMarket with dataContextName "WeightOfMoneyData"
 3. **Parse Complete Data**: Extract averageBackTraded, averageLayTraded, tradedPrices, and offeredPrices
 4. **Filter Favorites**: Identify the 3 selections with lowest current odds (favorites)
 5. **Analysis Phase**: Run comprehensive analysis including:

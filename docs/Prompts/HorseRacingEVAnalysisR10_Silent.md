@@ -12,7 +12,7 @@ This strategy analyzes horse racing markets to identify the best Expected Value 
 
 ## Data Retrieval & Validation
 - **Market Data**: Use `GetActiveMarket` to fetch active market and selections.
-- **Horse Data**: Use `GetDataContextForMarket` with `['TimeformDataForHorses', 'RacingpostDataForHorses']`.
+- **Horse Data**: Use `GetAllDataContextForMarket` with `['TimeformDataForHorses', 'RacingpostDataForHorses']`.
 - **Validation**: Proceed only if data completeness ≥80% for top 3 favourites. Skip if incomplete.
 
 **Configuration**:

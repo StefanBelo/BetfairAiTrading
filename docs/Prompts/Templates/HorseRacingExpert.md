@@ -2,7 +2,7 @@
 
 ### 1. Data Acquisition Pipeline
 - Call `GetActiveMarket` to capture `marketId`, metadata, and `selections` (including `selectionId`, `name`, `price`).
-- Call `GetDataContextForMarket` with `dataContextNames = ["AtTheRacesDataForHorses", "RacingpostDataForHorses", "TimeformDataForHorses"]`.
+- Call `GetAllDataContextForMarket` with `dataContextNames = ["AtTheRacesDataForHorses", "RacingpostDataForHorses", "TimeformDataForHorses"]`.
 
 ### 2. Data Analysis & Strategy Advice
 Once data is acquired:

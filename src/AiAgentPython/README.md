@@ -144,7 +144,7 @@ The agents have access to these MCP tools through BfexplorerApp:
 - `ActivateBetfairMarketSelection`: Activate specific market/selection
 
 ### Data Retrieval
-- `GetDataContextForMarket`: Retrieve market-specific data
+- `GetAllDataContextForMarket`: Retrieve market-specific data
 - `GetDataContextForMarketSelection`: Get selection-specific information
 
 ### Strategy Execution

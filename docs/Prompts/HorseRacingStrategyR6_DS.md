@@ -60,7 +60,7 @@
 
 ## 4. Execution Protocol (Silent)
 1.  Call `GetActiveMarket`.
-2.  Retrieve the three required data contexts `GetDataContextForMarket`.
+2.  Retrieve the three required data contexts `GetAllDataContextForMarket`.
 3.  Perform all calculations from Step 1 & 2 for all horses.
 4.  Follow the logic in Step 3 to determine the action.
 5.  Ensure market has > 1000 Euro traded volume before betting.

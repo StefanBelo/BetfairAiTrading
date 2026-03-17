@@ -1027,7 +1027,7 @@ Use **HorseRacingStrategyR5_Trade_Ideas.md** when:
 
 All prompts are designed to work with the BFExplorer API and MCP integration, accessing:
 - Real-time market data via `GetActiveMarket`
-- Horse racing data via `GetDataContextForMarket`:
+- Horse racing data via `GetAllDataContextForMarket`:
   - `RacingpostDataForHorses` - Performance and form data
   - `MarketSelectionsTradedPricesData` - Trading patterns and market confidence
   - `OlbgRaceTipsData` - Expert tipster consensus and recommendations

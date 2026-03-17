@@ -14,7 +14,7 @@
 - Treat any missing advanced pricing fields as `null`; record in provenance if unavailable.
 
 ### Timeform Enrichments
-- Call `GetDataContextForMarket` with `dataContextName = "TimeformFullDataForHorses"`.
+- Call `GetAllDataContextForMarket` with `dataContextName = "TimeformFullDataForHorses"`.
 - Expect `selectionsData[]` containing `expertView` text, `timeformHorseData` booleans, and `ratingStars` (0-5).
 
 ### Completeness Guard

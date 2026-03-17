@@ -4,7 +4,7 @@
 Call `GetActiveMarket` (no parameters) to get the `marketId` and selections (horses) with their current prices.
 
 ## Step 2: Retrieve BetfairSpData for All Selections
-Call `GetDataContextForMarket` with:
+Call `GetAllDataContextForMarket` with:
 - `dataContextName`: "BetfairSpData"
 - `marketId`: (from Step 1)
 

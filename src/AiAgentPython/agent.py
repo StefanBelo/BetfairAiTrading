@@ -23,7 +23,7 @@ Instructions:
 
 1. **Silent Data Collection**
    - Retrieve active betfair market using tool: GetActiveMarket
-   - Retrieve racing data using tool: GetDataContextForMarket with 'RacingpostDataForHorses'
+   - Retrieve racing data using tool: GetAllDataContextForMarket with 'RacingpostDataForHorses'
    - No interim reports during data collection
 
 2. **Silent Analysis**

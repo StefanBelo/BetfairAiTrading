@@ -13,8 +13,8 @@ Instructions:
    - No reports during data collection
 
 2. **Multi-Context Data Collection**
-   - Retrieve the data context with the name 'MarketSelectionsTradedPricesData' for the betfair market using tool: GetDataContextForMarket
-   - Retrieve the data context with the name 'RacingpostDataForHorses' for the betfair market using tool: GetDataContextForMarket
+   - Retrieve the data context with the name 'MarketSelectionsTradedPricesData' for the betfair market using tool: GetAllDataContextForMarket
+   - Retrieve the data context with the name 'RacingpostDataForHorses' for the betfair market using tool: GetAllDataContextForMarket
    - Focus on 'tradedPricesData' field from trading context and 'horsesData' field from racing post context
    - No reports during data collection phase
 

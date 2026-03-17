@@ -13,8 +13,8 @@ Instructions:
    - Make no preliminary reports during data collection
 
 2. **Dual Data Source Collection**
-   - Retrieve the data context with the name 'MarketSelectionsTradedPricesData' for the betfair market using tool: GetDataContextForMarket
-   - Retrieve the data context with the name 'RacingpostDataForHorses' for the betfair market using tool: GetDataContextForMarket
+   - Retrieve the data context with the name 'MarketSelectionsTradedPricesData' for the betfair market using tool: GetAllDataContextForMarket
+   - Retrieve the data context with the name 'RacingpostDataForHorses' for the betfair market using tool: GetAllDataContextForMarket
    - Focus on 'tradedPricesData' field for trading analysis AND 'horsesData' field for performance analysis
    - Do not make any reports during data collection phase
 

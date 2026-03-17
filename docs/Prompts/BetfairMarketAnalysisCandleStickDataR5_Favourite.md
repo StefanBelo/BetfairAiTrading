@@ -4,7 +4,7 @@ Objective: Select exactly one action on the current favourite (lowest price): Be
 
 ## 1. Inputs
 1. Active market: GetActiveMarket
-2. Candles & BLR: GetDataContextForMarket("MarketSelectionsCandleStickData")
+2. Candles & BLR: GetAllDataContextForMarket("MarketSelectionsCandleStickData")
 
 ## 2. Metrics (Favourite)
 - Price = latest close

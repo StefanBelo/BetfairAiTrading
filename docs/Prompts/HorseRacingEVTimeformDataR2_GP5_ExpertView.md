@@ -9,7 +9,7 @@ Purpose: Prompt for automated EV assessment using Betfair market data and Timefo
 
 ## 1. Data Pipeline
 - **Market snapshot:** Call `GetActiveMarket` → capture `marketId`, metadata, and `selections` (`selectionId`, `name`, `price`, `status`). Treat any missing advanced pricing fields as `null`; record in provenance if unavailable.
-- **Timeform enrichments:** Call `GetDataContextForMarket` with `dataContextNames = ["TimeformFullDataForHorses"]`. Expect `selectionsData[]` with `expertView` text and `timeformHorseData` booleans plus `ratingStars` (0-5).
+- **Timeform enrichments:** Call `GetAllDataContextForMarket` with `dataContextNames = ["TimeformFullDataForHorses"]`. Expect `selectionsData[]` with `expertView` text and `timeformHorseData` booleans plus `ratingStars` (0-5).
 - **Completeness guard:** Compute ratio of selections containing both `expertView` and `timeformHorseData`. If < 0.80, continue but flag in provenance. When data missing, propagate `null` in derived metrics.
 
 ## 2. Sentiment Scoring (Expert View)

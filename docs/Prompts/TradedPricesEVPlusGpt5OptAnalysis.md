@@ -14,7 +14,7 @@ Begin with a concise checklist (3-7 bullets) of the main processing steps to be 
    - Use `GetActiveMarket` to retrieve the current active market.
 
 2. **Obtain Trading Data:**
-   - Use `GetDataContextForMarket` with `dataContextNames`: `["MarketSelectionsTradedPricesData", "RacingpostDataForHorses"]` and the marketId from Step 1.
+   - Use `GetAllDataContextForMarket` with `dataContextNames`: `["MarketSelectionsTradedPricesData", "RacingpostDataForHorses"]` and the marketId from Step 1.
 
 3. **EV Metrics Computation:**
    - For each selection:

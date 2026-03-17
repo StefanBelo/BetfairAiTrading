@@ -47,7 +47,7 @@ Silently analyze Betfair market weight of money data, identify highest confidenc
 
 ### Execute Silently (No Intermediate Output):
 1. Get active market (GetActiveMarket)
-2. Get weight of money data (GetDataContextForMarket with "WeightOfMoneyData")
+2. Get weight of money data (GetAllDataContextForMarket with "WeightOfMoneyData")
 3. Parse complete data: averageBackTraded, averageLayTraded, tradedPrices, offeredPrices
 4. Identify 3 favorites (lowest odds)
 5. For each favorite, calculate:

@@ -196,7 +196,7 @@ Calculate confidence score by summing points from each factor:
 2. **Extract market details**: Get marketId, market name, and event information
 
 ### Step 2: Get Weight of Money Data
-1. **Retrieve WeightOfMoneyData**: Use GetDataContextForMarket with:
+1. **Retrieve WeightOfMoneyData**: Use GetAllDataContextForMarket with:
    - dataContextName: "WeightOfMoneyData"
    - marketId: [from Step 1]
 2. **Parse data structure**: Extract for all selections:
@@ -239,7 +239,7 @@ Calculate confidence score by summing points from each factor:
 
 ### Analysis Execution Sequence:
 1. **Get Active Market**: Use GetActiveMarket to retrieve current market information
-2. **Get Weight of Money Data**: Use GetDataContextForMarket with dataContextName "WeightOfMoneyData"
+2. **Get Weight of Money Data**: Use GetAllDataContextForMarket with dataContextName "WeightOfMoneyData"
 3. **Apply Analysis Framework**: Process each selection using the confidence scoring system
 4. **Generate Comprehensive Report**: Create predictions table and trading opportunities analysis
 5. **Provide Strategic Insights**: Highlight key patterns and market inefficiencies
