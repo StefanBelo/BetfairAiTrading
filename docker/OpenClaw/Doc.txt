@@ -6,3 +6,5 @@ https://github.com/openclaw/openclaw
 
 openclaw gateway start
 openclaw dashboard
+
+https://www.meta-intelligence.tech/en/insight-openclaw-windows-uninstall

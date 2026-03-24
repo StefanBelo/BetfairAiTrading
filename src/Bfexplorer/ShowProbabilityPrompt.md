@@ -1,0 +1,1 @@
+For an active market, show a markdown table with selection name, price, and probability to win. Calculate the book value and report it.
