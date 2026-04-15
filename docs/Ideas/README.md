@@ -7,6 +7,7 @@ Files:
 - `BFExplorer_ResidualLiquidityGate.md` — Summary of Maurice Berk's "Two Markets, One Race" article and a concrete BFExplorer integration plan for a residual-liquidity gating signal.
 - `SectionalTimesAndMargins.md` — Notes on Alan Potts' article about sectional times and strategic ideas for pace and margin analysis.
 - `FineFormMasterFormula.md` — Research summary of the Fine Form Master Formula thread, highlighting rules, filters, and staking discussions.
+- `CrisisOpportunitiesBfexplorerStrategies.md` — Analysis of Maurice Berk's "Crises Create Opportunities" article with 8 actionable strategy ideas for BFExplorer, including market segmentation, edge degradation detection, data quality monitoring, safe deployments, and operational resilience.
 
 Usage:
 

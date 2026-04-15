@@ -8,7 +8,7 @@
         /// <summary>
         /// ActiveBetfairMarket
         /// </summary>
-        public const string ActiveBetfairMarket = "Get me an active betfair market in BfexplorerApp.";
+        public const string ActiveBetfairMarket = "Get active market.";
 
         /// <summary>
         /// HorseRacingStrategy

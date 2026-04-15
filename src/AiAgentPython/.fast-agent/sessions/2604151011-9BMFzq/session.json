@@ -1,0 +1,17 @@
+{
+  "name": "2604151011-9BMFzq",
+  "created_at": "2026-04-15T10:11:39.425016",
+  "last_activity": "2026-04-15T10:11:48.715903",
+  "history_files": [
+    "history_BfexplorerApp_previous.json",
+    "history_BfexplorerApp.json"
+  ],
+  "metadata": {
+    "agent_name": "BfexplorerApp",
+    "model": "generic.openai/gpt-4.1",
+    "last_history_by_agent": {
+      "BfexplorerApp": "history_BfexplorerApp.json"
+    },
+    "first_user_preview": "Get active market."
+  }
+}

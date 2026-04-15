@@ -1,0 +1,88 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "115729976": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 1296.8658899, \"end_time\": 1306.8994629, \"duration_ms\": 10033.57, \"ttft_ms\": 10026.74, \"time_to_response_ms\": 10026.74}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/google/gemma-4-e4b\", \"input_tokens\": 2093, \"output_tokens\": 663, \"total_tokens\": 2756, \"timestamp\": 1776264053.2023838, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 1, \"current_context_tokens\": 2756, \"effective_input_tokens\": 2093, \"display_input_tokens\": 2093}, \"raw_usage\": {\"completion_tokens\": 663, \"prompt_tokens\": 2093, \"total_tokens\": 2756, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": null, \"reasoning_tokens\": 644, \"rejected_prediction_tokens\": null}, \"prompt_tokens_details\": null}, \"summary\": {\"model\": \"openai/google/gemma-4-e4b\", \"turn_count\": 1, \"cumulative_input_tokens\": 2093, \"cumulative_output_tokens\": 663, \"cumulative_billing_tokens\": 2756, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 2756, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 2093}}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "115729976": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.256748420\"\n  StartTime: \"2026-04-15T15:00:00Z\"\n  EventType: \"Horse Racing\"\n  EventName: Beverley\n  MarketName: \"2m Hcap\"\n  TotalMatched: 23973.63\n  Status: Open\n  Selections[5]{SelectionId,Name,Price,TotalMatched,Status}:\n    \"46556\",Anniversary,2.36,11419.95,Active\n    \"51320271\",\"Sax Appeal\",5.1,3877.42,Active\n    \"39422450\",\"Charging Thunder\",5.9,3800.13,Active\n    \"20713165\",\"Elysian Flame\",7.2,2863.69,Active\n    \"36127694\",Wahraan,14,2012.42,Active"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"115729976\": {\"timing_ms\": 7.66, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 1307.2056872, \"end_time\": 1307.63295, \"duration_ms\": 427.26}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/google/gemma-4-e4b\", \"input_tokens\": 2381, \"output_tokens\": 1, \"total_tokens\": 2382, \"timestamp\": 1776264053.9359605, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 2382, \"effective_input_tokens\": 2381, \"display_input_tokens\": 2381}, \"raw_usage\": {\"completion_tokens\": 1, \"prompt_tokens\": 2381, \"total_tokens\": 2382, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": null, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": null}, \"prompt_tokens_details\": null}, \"summary\": {\"model\": \"openai/google/gemma-4-e4b\", \"turn_count\": 2, \"cumulative_input_tokens\": 4474, \"cumulative_output_tokens\": 664, \"cumulative_billing_tokens\": 5138, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 2382, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 4474}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

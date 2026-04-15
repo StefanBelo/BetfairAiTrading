@@ -1,0 +1,93 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "158805928": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 879.0175632, \"end_time\": 890.6567655, \"duration_ms\": 11639.2, \"ttft_ms\": 11632.28, \"time_to_response_ms\": 11632.28}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/google/gemma-4-e4b\", \"input_tokens\": 2093, \"output_tokens\": 780, \"total_tokens\": 2873, \"timestamp\": 1776263636.9597144, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 1, \"current_context_tokens\": 2873, \"effective_input_tokens\": 2093, \"display_input_tokens\": 2093}, \"raw_usage\": {\"completion_tokens\": 780, \"prompt_tokens\": 2093, \"total_tokens\": 2873, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": null, \"reasoning_tokens\": 761, \"rejected_prediction_tokens\": null}, \"prompt_tokens_details\": null}, \"summary\": {\"model\": \"openai/google/gemma-4-e4b\", \"turn_count\": 1, \"cumulative_input_tokens\": 2093, \"cumulative_output_tokens\": 780, \"cumulative_billing_tokens\": 2873, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 2873, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 2093}}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "158805928": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.256748420\"\n  StartTime: \"2026-04-15T15:00:00Z\"\n  EventType: \"Horse Racing\"\n  EventName: Beverley\n  MarketName: \"2m Hcap\"\n  TotalMatched: 18499.71\n  Status: Open\n  Selections[5]{SelectionId,Name,Price,TotalMatched,Status}:\n    \"46556\",Anniversary,2.22,9612.11,Active\n    \"51320271\",\"Sax Appeal\",5.5,2621.67,Active\n    \"39422450\",\"Charging Thunder\",6.2,2447.58,Active\n    \"20713165\",\"Elysian Flame\",7,2437.04,Active\n    \"36127694\",Wahraan,15,1381.3,Active"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"158805928\": {\"timing_ms\": 5.82, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The current active market is:\n\n**Event:** Beverley (Horse Racing)\n**Market Name:** 2m Hcap\n**Market ID:** 1.256748420\n**Status:** Open\n**Start Time:** 2026-04-15T15:00:00Z\n**Total Matched:** 18,499.71\n\n**Available Selections:**\n*   Anniversary (ID: 46556): Price 2.22 | Total Matched: 9,612.11\n*   Sax Appeal (ID: 51320271): Price 5.5 | Total Matched: 2,621.67\n*   Charging Thunder (ID: 39422450): Price 6.2 | Total Matched: 2,447.58\n*   Elysian Flame (ID: 20713165): Price 7 | Total Matched: 2,437.04\n*   Wahraan (ID: 36127694): Price 15 | Total Matched: 1,381.3"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 890.9803644, \"end_time\": 897.6937593, \"duration_ms\": 6713.39, \"ttft_ms\": 2917.35, \"time_to_response_ms\": 2917.35}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/google/gemma-4-e4b\", \"input_tokens\": 2377, \"output_tokens\": 457, \"total_tokens\": 2834, \"timestamp\": 1776263643.996756, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 2834, \"effective_input_tokens\": 2377, \"display_input_tokens\": 2377}, \"raw_usage\": {\"completion_tokens\": 457, \"prompt_tokens\": 2377, \"total_tokens\": 2834, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": null, \"reasoning_tokens\": 175, \"rejected_prediction_tokens\": null}, \"prompt_tokens_details\": null}, \"summary\": {\"model\": \"openai/google/gemma-4-e4b\", \"turn_count\": 2, \"cumulative_input_tokens\": 4470, \"cumulative_output_tokens\": 1237, \"cumulative_billing_tokens\": 5707, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 2834, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 4470}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

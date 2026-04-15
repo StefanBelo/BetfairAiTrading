@@ -1,0 +1,17 @@
+{
+  "name": "2604151033-rUGBTp",
+  "created_at": "2026-04-15T10:33:39.161922",
+  "last_activity": "2026-04-15T10:33:52.644775",
+  "history_files": [
+    "history_BfexplorerApp_previous.json",
+    "history_BfexplorerApp.json"
+  ],
+  "metadata": {
+    "agent_name": "BfexplorerApp",
+    "model": "generic.openai/gpt-4.1",
+    "last_history_by_agent": {
+      "BfexplorerApp": "history_BfexplorerApp.json"
+    },
+    "first_user_preview": "Get active market."
+  }
+}

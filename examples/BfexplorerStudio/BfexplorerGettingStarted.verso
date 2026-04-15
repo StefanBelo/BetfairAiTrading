@@ -1,0 +1,16 @@
+{
+  "verso": "1.0",
+  "metadata": {
+    "modified": "2026-04-14T19:39:57.5682068+00:00",
+    "defaultKernel": "csharp",
+    "activeLayout": "notebook"
+  },
+  "cells": [
+    {
+      "id": "47ef2845-9bef-45b8-be30-3c82604a6352",
+      "type": "code",
+      "language": "fsharp",
+      "source": "#I @\u0022E:\\Projects\\Bfexplorer\\Development\\Applications\\BeloSoft.Bfexplorer.App\\bin\\Debug\\net10.0-windows\u0022\r\n\r\n#r \u0022BeloSoft.Data.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Domain.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Interoperability.dll\u0022\r\n\r\nopen BeloSoft.Data\r\nopen BeloSoft.Bfexplorer.Domain\r\nopen BeloSoft.Bfexplorer.Interoperability\r\n\r\nasync {    \r\n    let doGetActiveMarket () =\r\n        let bfexplorerApplication = Services.CreateBfexplorerApplicationClient ()\r\n\r\n        task {\r\n            try\r\n                let! marketResult = bfexplorerApplication.GetActiveMarket ()\r\n\r\n                return DataResult.Success marketResult\r\n            with\r\n            | ex -\u003E return DataResult.Failure ex.Message\r\n        }\r\n        |\u003E Async.AwaitTask\r\n\r\n    match! doGetActiveMarket () with\r\n    | DataResult.Success marketResult -\u003E printfn \u0022The active market in bfexplorer: %s\u0022 marketResult.MarketId\r\n    | DataResult.Failure errorMessage -\u003E printfn \u0022Error: %s\u0022 errorMessage\r\n}\r\n|\u003E Async.RunSynchronously\r\n"
+    }
+  ]
+}

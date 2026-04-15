@@ -1,0 +1,51 @@
+{
+  "verso": "1.0",
+  "metadata": {
+    "title": "Untitled",
+    "created": "2026-04-13T14:09:03.5969184+00:00",
+    "modified": "2026-04-14T19:29:16.3279866+00:00",
+    "defaultKernel": "fsharp",
+    "activeLayout": "notebook"
+  },
+  "cells": [
+    {
+      "id": "fdb708ac-343d-4ead-ad64-b30bf49758e4",
+      "type": "code",
+      "language": "fsharp",
+      "source": "#r \u0022BeloSoft.Data.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Domain.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Service.Core.dll\u0022\r\n\r\n#r \u0022BeloSoft.Betfair.WebAPI.Selenium.dll\u0022\r\n\r\nopen System.Collections.Generic\r\n\r\nopen BeloSoft.Data\r\nopen BeloSoft.Bfexplorer.Domain\r\nopen BeloSoft.Bfexplorer.Domain.Data\r\nopen BeloSoft.Bfexplorer.Service\r\n\r\nopen BeloSoft.Betfair.WebAPI.Selenium.Models\r\n\r\nlet iBfexplorer = (bfexplorer :\u003E IBfexplorerConsole).Bfexplorer\r\n\r\nlet result =\r\n    let market = iBfexplorer.ActiveMarket\r\n    let selection = iBfexplorer.ActiveSelection\r\n\r\n    iBfexplorer.GetDataContextForMarketSelection([| \u0022MarketSelectionsTradedPricesData\u0022; \u0022MarketSelectionsPriceHistoryData\u0022 |], market, selection) \r\n    |\u003E Async.RunSynchronously\r\n\r\nif result.IsSuccess\r\nthen\r\n    let data = result.SuccessResult\r\n\r\n    for selectionData in data.SelectionsData do\r\n        printfn \u0022%s - %A\u0022 selectionData.Name selectionData.Data\r\n    \r\n    let activeSelectionData = data.SelectionsData.[0]\r\n    let timePriceVolumes = activeSelectionData.Data.[\u0022timePriceVolumes\u0022] :?\u003E TimePriceVolume []\r\n\r\n    Variables.Set(\u0022selection\u0022, activeSelectionData.Selection)\r\n    Variables.Set(\u0022timePriceVolumes\u0022, timePriceVolumes)"
+    },
+    {
+      "id": "dfabf845-ada2-4c64-b82b-5415e0c34bab",
+      "type": "code",
+      "language": "fsharp",
+      "source": "#r \u0022nuget: Plotly.NET\u0022\r\n\r\nopen Plotly.NET\r\n\r\nlet chartHtml =\r\n    timePriceVolumes \r\n    |\u003E Array.map (fun d -\u003E d.Time, d.Price)\r\n    |\u003E Chart.Line\r\n    |\u003E Chart.withTraceInfo(Name = \u0022Price\u0022, ShowLegend = true)\r\n    |\u003E Chart.withLineStyle(Color = Color.fromRGB 75 192 192)\r\n    |\u003E Chart.withTitle selection.Name\r\n    |\u003E Chart.withXAxisStyle(TitleText = \u0022Time\u0022)\r\n    |\u003E Chart.withYAxisStyle(TitleText = \u0022Price\u0022)\r\n    |\u003E Chart.withSize(Width = 900, Height = 600)\r\n    |\u003E GenericChart.toEmbeddedHTML\r\n\r\nchartHtml"
+    }
+  ],
+  "layouts": {
+    "dashboard": {
+      "cells": {
+        "fdb708ac-343d-4ead-ad64-b30bf49758e4": {
+          "row": 0,
+          "col": 0,
+          "width": 6,
+          "height": 4,
+          "visible": true
+        },
+        "dfabf845-ada2-4c64-b82b-5415e0c34bab": {
+          "row": 0,
+          "col": 6,
+          "width": 6,
+          "height": 4,
+          "visible": true
+        },
+        "3ddd8aa6-98a3-4058-b7af-12dc1086b160": {
+          "row": 4,
+          "col": 0,
+          "width": 6,
+          "height": 4,
+          "visible": true
+        }
+      }
+    }
+  }
+}

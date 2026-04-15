@@ -1,0 +1,37 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_Upwa5akIKzTmZXR6r84gBXMQ": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 480146.3519986, \"end_time\": 480147.6026338, \"duration_ms\": 1250.64, \"ttft_ms\": 1243.68, \"time_to_response_ms\": 1243.68}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    }
+  ]
+}

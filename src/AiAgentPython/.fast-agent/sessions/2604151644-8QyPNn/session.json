@@ -1,0 +1,17 @@
+{
+  "name": "2604151644-8QyPNn",
+  "created_at": "2026-04-15T16:44:24.997227",
+  "last_activity": "2026-04-15T16:44:32.868299",
+  "history_files": [
+    "history_BfexplorerApp_previous.json",
+    "history_BfexplorerApp.json"
+  ],
+  "metadata": {
+    "agent_name": "BfexplorerApp",
+    "model": "generic.openai/google/gemma-4-e4b",
+    "last_history_by_agent": {
+      "BfexplorerApp": "history_BfexplorerApp.json"
+    },
+    "first_user_preview": "Get active market."
+  }
+}

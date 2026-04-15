@@ -1,0 +1,93 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "846748386": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 1332.7411811, \"end_time\": 1335.425038, \"duration_ms\": 2683.86, \"ttft_ms\": 2676.82, \"time_to_response_ms\": 2676.82}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/google/gemma-4-e4b\", \"input_tokens\": 2093, \"output_tokens\": 149, \"total_tokens\": 2242, \"timestamp\": 1776264081.7279518, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 1, \"current_context_tokens\": 2242, \"effective_input_tokens\": 2093, \"display_input_tokens\": 2093}, \"raw_usage\": {\"completion_tokens\": 149, \"prompt_tokens\": 2093, \"total_tokens\": 2242, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": null, \"reasoning_tokens\": 130, \"rejected_prediction_tokens\": null}, \"prompt_tokens_details\": null}, \"summary\": {\"model\": \"openai/google/gemma-4-e4b\", \"turn_count\": 1, \"cumulative_input_tokens\": 2093, \"cumulative_output_tokens\": 149, \"cumulative_billing_tokens\": 2242, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 2242, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 2093}}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "846748386": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.256748420\"\n  StartTime: \"2026-04-15T15:00:00Z\"\n  EventType: \"Horse Racing\"\n  EventName: Beverley\n  MarketName: \"2m Hcap\"\n  TotalMatched: 24773.76\n  Status: Open\n  Selections[5]{SelectionId,Name,Price,TotalMatched,Status}:\n    \"46556\",Anniversary,2.32,11964.07,Active\n    \"51320271\",\"Sax Appeal\",5.1,3960.14,Active\n    \"39422450\",\"Charging Thunder\",6,3928.58,Active\n    \"20713165\",\"Elysian Flame\",7.2,2894.53,Active\n    \"36127694\",Wahraan,14.5,2026.42,Active"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"846748386\": {\"timing_ms\": 6.43, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The currently active market is for **Beverley - 2m Hcap** (Horse Racing).\n\nHere are the details:\n*   **Market ID:** `1.256748420`\n*   **Status:** Open\n*   **Total Matched:** 24,773.76 EUR\n\n**Available Selections:**\n| Selection Name | Selection ID | Price | Total Matched | Status |\n| :--- | :--- | :--- | :--- | :--- |\n| Anniversary | `46556` | 2.32 | 11,964.07 | Active |\n| Sax Appeal | `51320271` | 5.1 | 3,960.14 | Active |\n| Charging Thunder | `39422450` | 6 | 3,928.58 | Active |\n| Elysian Flame | `20713165` | 7.2 | 2,894.53 | Active |\n| Wahraan | `36127694` | 14.5 | 2,026.42 | Active |\n\nDo you want to perform an action on this market, such as setting a strategy or opening it for monitoring?"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 1335.7071879, \"end_time\": 1342.9528569, \"duration_ms\": 7245.67, \"ttft_ms\": 3268.18, \"time_to_response_ms\": 3268.18}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/google/gemma-4-e4b\", \"input_tokens\": 2381, \"output_tokens\": 506, \"total_tokens\": 2887, \"timestamp\": 1776264089.2558436, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 2887, \"effective_input_tokens\": 2381, \"display_input_tokens\": 2381}, \"raw_usage\": {\"completion_tokens\": 506, \"prompt_tokens\": 2381, \"total_tokens\": 2887, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": null, \"reasoning_tokens\": 204, \"rejected_prediction_tokens\": null}, \"prompt_tokens_details\": null}, \"summary\": {\"model\": \"openai/google/gemma-4-e4b\", \"turn_count\": 2, \"cumulative_input_tokens\": 4474, \"cumulative_output_tokens\": 655, \"cumulative_billing_tokens\": 5129, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 2887, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 4474}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

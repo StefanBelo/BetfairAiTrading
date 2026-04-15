@@ -98,5 +98,26 @@ namespace AiAgentCSharp
         {
             return CreateChatClient("CHERRYSTUDIO_API_KEY", "http://localhost:23333/v1", model);
         }
+
+        /// <summary>
+        /// CreateCopilotProxyChatClient
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public static IChatClient CreateCopilotProxyChatClient(string model)
+        {
+            // Actually no API key is used
+            return CreateChatClient("CHERRYSTUDIO_API_KEY", "http://127.0.0.1:8080/v1", model);
+        }
+
+        /// <summary>
+        /// CreateLMStudioProxyChatClient
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public static IChatClient CreateLMStudioProxyChatClient(string model)
+        {
+            return CreateChatClient("LMSTUDIO_API_KEY", "http://127.0.0.1:1234/v1", model);
+        }
     }
 }

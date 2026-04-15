@@ -51,7 +51,18 @@ Based on your comprehensive analysis:
 - **Discipline:** Adhere strictly to the data-driven workflow. Do not let market sentiment or personal bias influence your conclusions.
 
 ## 4. Expected Output
-- A clear, structured report for the given market.
-- Actionable advice on whether to bet, trade, or avoid the market.
-- Specific strategy recommendations, including potential entry/exit points if applicable.
-- A summary of the key evidence supporting your recommendation.
+Provide a clear, structured report for the given market using the markdown table below as the required output format. Each selection (horse) should be represented as one row.
+
+| Selection | Composite Score | Implied Odds | Market Odds | Value Score (%) | Recommendation | Confidence | Key Evidence |
+|---|---:|---:|---:|---:|---|---:|---:|
+| Example Horse | 68.4 | 1.47 | 3.50 | 57.9 | Value Bet (Back) | Medium | high topSpeed; timeformTopRated |
+
+Notes on columns:
+- **Selection:** Horse name.
+- **Composite Score:** `(Horse Score * 0.8) + (Jockey Score * 0.2)` (normalized 0–100).
+- **Implied Odds:** Odds derived from `Composite Score` (e.g., score 100→1.0, 50→2.0).
+- **Market Odds:** Current market odds from `GetActiveMarket`.
+- **Value Score (%):** `((Market Odds - Implied Odds) / Market Odds) * 100` — positive indicates value.
+- **Recommendation:** Short label (e.g., `Value Bet (Back)`, `No Bet`, `Trade`, `Lay Place`).
+- **Confidence:** `Low` / `Medium` / `High` — based on data strength and agreement across sources.
+- **Key Evidence:** Very brief bullet of the main data points supporting the score (ratings, recent form, timeform flags, notable comments).

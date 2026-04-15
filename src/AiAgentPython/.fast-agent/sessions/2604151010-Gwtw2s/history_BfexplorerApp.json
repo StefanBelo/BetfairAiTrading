@@ -1,0 +1,81 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_8PcumENfqHARh3TbeRL4hDRm": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 480824.7938861, \"end_time\": 480828.7141691, \"duration_ms\": 3920.28, \"ttft_ms\": 3897.22, \"time_to_response_ms\": 3897.22}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_8PcumENfqHARh3TbeRL4hDRm": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.256754876\"\n  StartTime: \"2026-04-15T12:22:00Z\"\n  EventType: \"Horse Racing\"\n  EventName: Leopardstown\n  MarketName: \"1m2f Mdn\"\n  TotalMatched: 4337.3\n  Status: Open\n  Selections[9]{SelectionId,Name,Price,TotalMatched,Status}:\n    \"96921681\",Eretria,2.88,1739.76,Active\n    \"90021341\",Knowinmeknowinyou,4.8,648.12,Active\n    \"45399308\",\"Pink Coral\",6.8,702.45,Active\n    \"3662150\",\"Camelot Queen\",10.5,409.97,Active\n    \"136365\",Sangreal,12.5,363.69,Active\n    \"42551978\",Serendipia,17,235.98,Active\n    \"67636928\",Altura,19.5,152.13,Active\n    \"396667\",\"Musical Chimes\",38.24,60.27,Active\n    \"91444237\",\"Freedom And Light\",95.6,24.89,Active"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_8PcumENfqHARh3TbeRL4hDRm\": {\"timing_ms\": 11.83, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The active market is:\n\n- Event: Horse Racing at Leopardstown\n- Market: 1m2f Mdn\n- Market ID: 1.256754876\n- Status: Open\n- Selections: Eretria, Knowinmeknowinyou, Pink Coral, Camelot Queen, Sangreal, Serendipia, Altura, Musical Chimes, Freedom And Light\n\nLet me know what you want to do next."
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 480829.0121588, \"end_time\": 480832.0537123, \"duration_ms\": 3041.55, \"ttft_ms\": 1346.78, \"time_to_response_ms\": 1346.78}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

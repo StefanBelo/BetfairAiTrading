@@ -5,9 +5,9 @@
 module HorseRacingBotTrigger
 
 //#I @"C:\Program Files\BeloSoft\Bfexplorer\"
-#I @"E:\Projects\Bfexplorer\Development\Applications\BeloSoft.Bfexplorer.App\bin\Debug\net9.0-windows\"
+#I @"E:\Projects\Bfexplorer\Development\Applications\BeloSoft.Bfexplorer.App\bin\Debug\net10.0-windows\"
 
-#r "DevExpress.Spreadsheet.v25.1.Core.dll"
+#r "DevExpress.Spreadsheet.v25.2.Core.dll"
 
 #r "BeloSoft.Data.dll"
 #r "BeloSoft.Betfair.API.dll"
@@ -430,7 +430,7 @@ type HorseRacingRaceLBBWBotTrigger (market : Market, selection : Selection, botN
         async {
             let bfexplorer = myBfexplorer.BfexplorerService.Bfexplorer
 
-            match! bfexplorer.GetAllDataContextForMarket ([| "DbJockeysResults"; "DbHorsesResults"; "RacingpostDataForHorses"; "TimeformDataForHorses" |], market) with
+            match! bfexplorer.GetDataContextForMarket ([| "DbJockeysResults"; "DbHorsesResults"; "RacingpostDataForHorses"; "TimeformDataForHorses" |], market) with
             | DataResult.Success marketDataContext -> 
 
                 let result = evaluate market (marketDataContext.SelectionsData |> List.map mapToMySelectionData)

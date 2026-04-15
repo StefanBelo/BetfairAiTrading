@@ -1,14 +1,12 @@
 ﻿using AiAgentCSharp;
 using Microsoft.Extensions.AI;
 using ModelContextProtocol.Client;
-//using System.Net;
+using System.Diagnostics;
+
+var watch = Stopwatch.StartNew();
 
 try
 {
-    //HttpClient.DefaultProxy = new WebProxy("http://127.0.0.1:8888", true);
-
-    Console.WriteLine("\n\nTools available:");
-
     // MCP Client
     McpClient mcpClient = await McpClient.CreateAsync(
             new HttpClientTransport(
@@ -23,14 +21,20 @@ try
 
     var tools = await mcpClient.ListToolsAsync();
 
+    #if UseShowTools
+    Console.WriteLine("\n\nTools available:");
+
     foreach (var tool in tools)
     {
         Console.WriteLine($"\t{tool}");
     }
+    #endif
 
     // Chat client
     IChatClient chatClient =
-        AiAgentHelpers.CreateGithubChatClient("gpt-4.1");
+        AiAgentHelpers.CreateLMStudioProxyChatClient("google/gemma-4-e4b");
+        //AiAgentHelpers.CreateCopilotProxyChatClient("gpt-4.1");
+        //AiAgentHelpers.CreateGithubChatClient("gpt-4.1");
         //AiAgentHelpers.CreateGithubChatClient("grok-code-fast-1");    
         //AiAgentHelpers.CreateDeepSeekChatClient("deepseek-chat");
         //AiAgentHelpers.CreateAiHubMixChatClient("gpt-4.1");
@@ -45,20 +49,41 @@ try
     Console.WriteLine($"\n\nQuestion: {prompt}\n\nResponse:\n\n");
 
     // Get the response
-    List<ChatResponseUpdate> updates = [];
+    List<ChatMessage> chatMessage = new()
+        {
+            new ChatMessage(ChatRole.System, "You are a helpful AI Agent executing betting/trading strategies on bfexplorer."),    
+            new ChatMessage(ChatRole.User, "Get active market.")
+        };
 
     var chatOptions = new ChatOptions { Tools = [.. tools] };
 
-    await foreach (var update in chatClient.GetStreamingResponseAsync(prompt, chatOptions))
+    #if DEBUG
+    List<ChatResponseUpdate> updates = [];
+    #endif
+
+    #if UseStreaming
+    await foreach (var update in chatClient.GetStreamingResponseAsync(chatMessage, chatOptions))
     {
         Console.Write(update);
 
+        #if DEBUG
         updates.Add(update);
+        #endif
     }
+    #else
+    var chatResponse = await chatClient.GetResponseAsync(chatMessage, chatOptions);
 
-    Console.WriteLine("\nEnd of the execution.");
+    if (chatResponse != null)
+    {
+        Console.Write(chatResponse.Text);
+    }
+    #endif
 }
-catch(Exception ex)
+catch (Exception ex)
 {
     Console.WriteLine($"\nException: {ex.Message}");
 }
+
+watch.Stop();
+
+Console.WriteLine($"\n\nExecution time: {watch.Elapsed.TotalSeconds:0.00} s");

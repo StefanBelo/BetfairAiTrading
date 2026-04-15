@@ -1,0 +1,43 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "564784178": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 1315.4522476, \"end_time\": 1318.3714063, \"duration_ms\": 2919.16, \"ttft_ms\": 2911.84, \"time_to_response_ms\": 2911.84}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/google/gemma-4-e4b\", \"input_tokens\": 2093, \"output_tokens\": 181, \"total_tokens\": 2274, \"timestamp\": 1776264064.6743524, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 1, \"current_context_tokens\": 2274, \"effective_input_tokens\": 2093, \"display_input_tokens\": 2093}, \"raw_usage\": {\"completion_tokens\": 181, \"prompt_tokens\": 2093, \"total_tokens\": 2274, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": null, \"reasoning_tokens\": 162, \"rejected_prediction_tokens\": null}, \"prompt_tokens_details\": null}, \"summary\": {\"model\": \"openai/google/gemma-4-e4b\", \"turn_count\": 1, \"cumulative_input_tokens\": 2093, \"cumulative_output_tokens\": 181, \"cumulative_billing_tokens\": 2274, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 2274, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 2093}}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    }
+  ]
+}
