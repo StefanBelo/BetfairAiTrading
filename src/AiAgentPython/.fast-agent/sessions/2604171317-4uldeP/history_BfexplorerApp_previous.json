@@ -14,7 +14,7 @@
       "role": "assistant",
       "content": [],
       "tool_calls": {
-        "call_Upwa5akIKzTmZXR6r84gBXMQ": {
+        "call_smpkza6DQamTswlFIrDNEZDQ": {
           "method": "tools/call",
           "params": {
             "name": "BfexplorerApp__get_active_market",
@@ -26,7 +26,7 @@
         "fast-agent-timing": [
           {
             "type": "text",
-            "text": "{\"start_time\": 480146.3519986, \"end_time\": 480147.6026338, \"duration_ms\": 1250.64, \"ttft_ms\": 1243.68, \"time_to_response_ms\": 1243.68}"
+            "text": "{\"start_time\": 86493.0923516, \"end_time\": 86495.1457569, \"duration_ms\": 2053.41, \"ttft_ms\": 2046.43, \"time_to_response_ms\": 2046.43}"
           }
         ]
       },

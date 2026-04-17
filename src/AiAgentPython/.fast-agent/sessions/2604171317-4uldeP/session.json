@@ -1,14 +1,14 @@
 {
-  "name": "2604150959-eN6oSE",
-  "created_at": "2026-04-15T09:59:12.709828",
-  "last_activity": "2026-04-15T09:59:14.637727",
+  "name": "2604171317-4uldeP",
+  "created_at": "2026-04-17T13:17:47.717842",
+  "last_activity": "2026-04-17T13:17:50.269227",
   "history_files": [
     "history_BfexplorerApp_previous.json",
     "history_BfexplorerApp.json"
   ],
   "metadata": {
     "agent_name": "BfexplorerApp",
-    "model": "generic.openai/gpt-4.1",
+    "model": "generic.0fc0e51e-3bec-4033-b2c9-1c69af62d4a3:gpt-4.1",
     "last_history_by_agent": {
       "BfexplorerApp": "history_BfexplorerApp.json"
     },

@@ -21,8 +21,12 @@ This directory contains community posts, articles, and real-world examples showc
   - "HorseRacingR5_Analysis" data context for structured analysis storage
   - Silent execution version for automated deployment with minimal output
 
-
 ## Available Posts
+### [Introducing Bfexplorer Studio: Code, Analyze, and Automate Betfair Trading — No IDE Required](BfexplorerStudioPost.md)
+**Test, automate, and analyze Betfair trading strategies in a multi-language interactive environment—no IDE required. Direct access to bfexplorer and Betfair APIs, instant code execution, and seamless workflow automation.**
+
+![Bfexplorer Studio Screenshot](../../examples/BfexplorerStudio/images/BfexplorerStudio.png)
+
 
 ### [Beginner’s Guide to Machine Learning in Horse Racing on Betfair: A Humble Reality Check](Post_Beginners_Guide_to_ML_in_Horse_Racing.md)
 **A realistic guide for newcomers to ML in betting, emphasizing the challenges of execution and why most fail. Includes sections on data barriers, skill requirements, and a practical first step.**
@@ -164,8 +168,8 @@ This directory contains community posts, articles, and real-world examples showc
 - [Reddit Post: Betfair SP Data Tracking Without Programming](Reddit_BetfairSpData_NoProgramming.md)
   **How anyone can update Betfair Starting Prices for horse racing in a CSV file—no coding required!**
 
-
-
+- [Reddit Post: Community Attitudes Toward Performance Discussions (.NET vs Python)](RedditPost_CommunityPerformanceDiscussion.md)
+  **A comparative look at how .NET and Python communities respond to questions about code performance, including openness, moderation, and cultural differences.**
 
 ### [Grok LLM Bookmakers Odds Experience](GrokLLM_BookmakersOddsExperience.md)
 **How Grok LLM proactively updated my codebase when testing a new data context for bookmaker odds.**

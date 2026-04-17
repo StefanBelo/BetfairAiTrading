@@ -3,20 +3,29 @@
   "metadata": {
     "title": "Untitled",
     "created": "2026-04-13T14:09:03.5969184+00:00",
-    "modified": "2026-04-14T10:58:01.066646+00:00",
+    "modified": "2026-04-16T14:53:22.0459438+00:00",
     "defaultKernel": "fsharp",
     "activeLayout": "notebook"
   },
   "cells": [
     {
+      "id": "516fa470-2824-49bd-bc5c-3de4af54a417",
+      "type": "code",
+      "language": "fsharp",
+      "source": "#I @\u0022E:\\Projects\\Bfexplorer\\Development\\Applications\\BeloSoft.Bfexplorer.App\\bin\\Debug\\net10.0-windows\u0022\r\n\r\n#r \u0022BeloSoft.Data.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Domain.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Service.Core.dll\u0022\r\n\r\n#r \u0022BeloSoft.Betfair.WebAPI.Selenium.dll\u0022\r\n\r\nopen System.Collections.Generic\r\n\r\nopen BeloSoft.Data\r\nopen BeloSoft.Bfexplorer.Domain\r\nopen BeloSoft.Bfexplorer.Domain.Data\r\nopen BeloSoft.Bfexplorer.Service\r\n\r\nopen BeloSoft.Betfair.WebAPI.Selenium.Models"
+    },
+    {
       "id": "fdb708ac-343d-4ead-ad64-b30bf49758e4",
       "type": "code",
       "language": "fsharp",
-      "source": "#r \u0022BeloSoft.Data.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Domain.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Service.Core.dll\u0022\r\n\r\n#r \u0022BeloSoft.Betfair.WebAPI.Selenium.dll\u0022\r\n\r\nopen System.Collections.Generic\r\n\r\nopen BeloSoft.Data\r\nopen BeloSoft.Bfexplorer.Domain\r\nopen BeloSoft.Bfexplorer.Domain.Data\r\nopen BeloSoft.Bfexplorer.Service\r\n\r\nopen BeloSoft.Betfair.WebAPI.Selenium.Models\r\n\r\nlet result =\r\n    let iBfexplorer = (bfexplorer :\u003E IBfexplorerConsole).Bfexplorer\r\n    let market = iBfexplorer.ActiveMarket\r\n\r\n    iBfexplorer.GetDataContextForMarket([| \u0022MarketSelectionsTradedPricesData\u0022; \u0022MarketSelectionsPriceHistoryData\u0022 |], market) \r\n    |\u003E Async.RunSynchronously\r\n\r\nmatch result with\r\n| DataResult.Success marketDataContext -\u003E\r\n\r\n    for selectionData in marketDataContext.SelectionsData do\r\n        printfn \u0022%s - %A\u0022 selectionData.Name selectionData.Data.Keys\r\n    \r\n    let favouriteSelectionData = \r\n        marketDataContext.SelectionsData\r\n        |\u003E List.sortBy (fun selectionData -\u003E selectionData.Selection.LastPriceTraded)\r\n        |\u003E List.head\r\n\r\n    let timePriceVolumes = favouriteSelectionData.Data.[\u0022timePriceVolumes\u0022] :?\u003E TimePriceVolume []\r\n\r\n    Variables.Set(\u0022selection\u0022, favouriteSelectionData.Selection)\r\n    Variables.Set(\u0022timePriceVolumes\u0022, timePriceVolumes)\r\n\r\n| DataResult.Failure errorMessage -\u003E printfn \u0022%s\u0022 errorMessage",
+      "source": "let result =\r\n    let iBfexplorer = (bfexplorer :\u003E IBfexplorerConsole).Bfexplorer\r\n    let market = iBfexplorer.ActiveMarket\r\n\r\n    iBfexplorer.GetDataContextForMarket([| \u0022MarketSelectionsTradedPricesData\u0022; \u0022MarketSelectionsPriceHistoryData\u0022 |], market) \r\n    |\u003E Async.RunSynchronously\r\n\r\nmatch result with\r\n| DataResult.Success marketDataContext -\u003E\r\n\r\n    for selectionData in marketDataContext.SelectionsData do\r\n        printfn \u0022%s - %A\u0022 selectionData.Name selectionData.Data.Keys\r\n    \r\n    let favouriteSelectionData = \r\n        marketDataContext.SelectionsData\r\n        |\u003E List.sortBy (fun selectionData -\u003E selectionData.Selection.LastPriceTraded)\r\n        |\u003E List.head\r\n\r\n    let timePriceVolumes = favouriteSelectionData.Data.[\u0022timePriceVolumes\u0022] :?\u003E TimePriceVolume []\r\n\r\n    Variables.Set(\u0022selection\u0022, favouriteSelectionData.Selection)\r\n    Variables.Set(\u0022timePriceVolumes\u0022, timePriceVolumes)\r\n\r\n| DataResult.Failure errorMessage -\u003E printfn \u0022%s\u0022 errorMessage",
       "outputs": [
         {
           "mimeType": "text/plain",
-          "content": "Cerro Blanco - seq [\u0022tradedPricesData\u0022; \u0022timePriceVolumes\u0022]\r\nWield - seq [\u0022tradedPricesData\u0022; \u0022timePriceVolumes\u0022]\r\nMakerstoun - seq [\u0022tradedPricesData\u0022; \u0022timePriceVolumes\u0022]\r\nBig Snoopy - seq [\u0022tradedPricesData\u0022; \u0022timePriceVolumes\u0022]\r\nGalba - seq [\u0022tradedPricesData\u0022; \u0022timePriceVolumes\u0022]\r\nPowder Monkey - seq [\u0022tradedPricesData\u0022; \u0022timePriceVolumes\u0022]\r\nAlpine Culture - seq [\u0022tradedPricesData\u0022; \u0022timePriceVolumes\u0022]\r\nKimbara - seq [\u0022tradedPricesData\u0022; \u0022timePriceVolumes\u0022]\r\n"
+          "content": "System.TypeLoadException: Could not load type \u0027FSI_0009\u0027 from assembly \u0027FSI-ASSEMBLY-MULTI, Version=0.0.0.32766, Culture=neutral, PublicKeyToken=null\u0027.",
+          "isError": true,
+          "errorName": "TypeLoadException",
+          "errorStackTrace": "   at \u003CStartupCode$FSI_0010\u003E.$FSI_0010.main@() in E:\\Projects\\Bfexplorer\\Development\\Applications\\BeloSoft.Bfexplorer.App\\bin\\Debug\\net10.0-windows\\input.fsx:line 19\r\n   at \u003CStartupCode$FSI_0010\u003E.$FSI_0010.main@() in E:\\Projects\\Bfexplorer\\Development\\Applications\\BeloSoft.Bfexplorer.App\\bin\\Debug\\net10.0-windows\\input.fsx:line 19\r\n   at InvokeStub_$FSI_0010.main@(Object, Object, IntPtr*)\r\n   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)"
         }
       ]
     },

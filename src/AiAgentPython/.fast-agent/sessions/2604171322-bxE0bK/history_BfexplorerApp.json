@@ -1,0 +1,98 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "I'll get the currently active market for you."
+        }
+      ],
+      "tool_calls": {
+        "call_00_mCePJBGJSlWA3ImHa2amYZuz": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 86776.5321988, \"end_time\": 86780.1278414, \"duration_ms\": 3595.64, \"ttft_ms\": 2011.96, \"time_to_response_ms\": 2011.96}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"deepseek:deepseek-chat\", \"input_tokens\": 2485, \"output_tokens\": 44, \"total_tokens\": 2529, \"timestamp\": 1776424952.5246217, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 1, \"current_context_tokens\": 2529, \"effective_input_tokens\": 2485, \"display_input_tokens\": 2485}, \"raw_usage\": {\"completion_tokens\": 44, \"prompt_tokens\": 2485, \"total_tokens\": 2529, \"completion_tokens_details\": null, \"prompt_tokens_details\": {\"audio_tokens\": null, \"cached_tokens\": 0}, \"prompt_cache_hit_tokens\": 0, \"prompt_cache_miss_tokens\": 2485}, \"summary\": {\"model\": \"deepseek:deepseek-chat\", \"turn_count\": 1, \"cumulative_input_tokens\": 2485, \"cumulative_output_tokens\": 44, \"cumulative_billing_tokens\": 2529, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 2529, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 2485}}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_00_mCePJBGJSlWA3ImHa2amYZuz": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.256853532\"\n  StartTime: \"2026-04-17T12:45:00Z\"\n  EventType: \"Horse Racing\"\n  EventName: Ayr\n  MarketName: \"2m Hcap Hrd\"\n  TotalMatched: 55677.52\n  Status: Open\n  Selections[15]{SelectionId,Name,Price,TotalMatched,Status}:\n    \"63615622\",\"Castle Ivers\",5.3,11172.88,Active\n    \"64669413\",\"Lance Les Des\",7.2,7079.39,Active\n    \"79170089\",\"Triple Crown Ted\",7.8,7780.26,Active\n    \"69980163\",\"Secret Force\",9.6,12604.42,Active\n    \"75121116\",\"Bibe Mus\",13,3031.75,Active\n    \"69041351\",\"The Gray Ghost\",15,2812.19,Active\n    \"74010993\",\"Newtown Rambler\",16.5,1476.58,Active\n    \"68650182\",\"Magna Victor\",18,2344.24,Active\n    \"77441869\",\"Caballo De Guerra\",19.5,1555.53,Active\n    \"42803735\",\"Berties Ballet\",23,1502.62,Active\n    \"13658917\",Tuppence,42,1722.95,Active\n    \"41503347\",\"Ginger Mail\",44,865.49,Active\n    \"35701727\",\"Ravenscraig Castle\",46,808.57,Active\n    \"82292379\",\"Belaya River\",80,507.87,Active\n    \"55140443\",\"Dance Thief\",120,412.71,Active"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_00_mCePJBGJSlWA3ImHa2amYZuz\": {\"timing_ms\": 7.25, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The active market is a Horse Racing market at Ayr for the \"2m Hcap Hrd\" race starting on April 17, 2026 at 12:45 UTC.\n\n**Market Details:**\n- **Market ID:** 1.256853532\n- **Event:** Ayr (Horse Racing)\n- **Market:** 2m Hcap Hrd\n- **Start Time:** 2026-04-17T12:45:00Z\n- **Total Matched:** \u00a355,677.52\n- **Status:** Open\n\n**Selections (15 horses):**\n1. Castle Ivers - 5.3\n2. Lance Les Des - 7.2  \n3. Triple Crown Ted - 7.8\n4. Secret Force - 9.6\n5. Bibe Mus - 13.0\n6. The Gray Ghost - 15.0\n7. Newtown Rambler - 16.5\n8. Magna Victor - 18.0\n9. Caballo De Guerra - 19.5\n10. Berties Ballet - 23.0\n11. Tuppence - 42.0\n12. Ginger Mail - 44.0\n13. Ravenscraig Castle - 46.0\n14. Belaya River - 80.0\n15. Dance Thief - 120.0\n\nThe market is currently active and open for trading with 15 selections available."
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 86780.5141989, \"end_time\": 86792.0035754, \"duration_ms\": 11489.38, \"ttft_ms\": 1416.39, \"time_to_response_ms\": 1416.39}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"deepseek:deepseek-chat\", \"input_tokens\": 2936, \"output_tokens\": 306, \"total_tokens\": 3242, \"timestamp\": 1776424964.4022558, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 2432, \"total_cache_tokens\": 2432, \"has_cache_activity\": true}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 3242, \"effective_input_tokens\": 504, \"display_input_tokens\": 2936}, \"raw_usage\": {\"completion_tokens\": 306, \"prompt_tokens\": 2936, \"total_tokens\": 3242, \"completion_tokens_details\": null, \"prompt_tokens_details\": {\"audio_tokens\": null, \"cached_tokens\": 2432}, \"prompt_cache_hit_tokens\": 2432, \"prompt_cache_miss_tokens\": 504}, \"summary\": {\"model\": \"deepseek:deepseek-chat\", \"turn_count\": 2, \"cumulative_input_tokens\": 5421, \"cumulative_output_tokens\": 350, \"cumulative_billing_tokens\": 5771, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 3242, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 2432, \"cache_hit_rate_percent\": 30.969056411562462, \"cumulative_effective_input_tokens\": 2989}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

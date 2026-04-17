@@ -1,0 +1,48 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "I'll get the currently active market for you."
+        }
+      ],
+      "tool_calls": {
+        "call_00_mCePJBGJSlWA3ImHa2amYZuz": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 86776.5321988, \"end_time\": 86780.1278414, \"duration_ms\": 3595.64, \"ttft_ms\": 2011.96, \"time_to_response_ms\": 2011.96}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"deepseek:deepseek-chat\", \"input_tokens\": 2485, \"output_tokens\": 44, \"total_tokens\": 2529, \"timestamp\": 1776424952.5246217, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 1, \"current_context_tokens\": 2529, \"effective_input_tokens\": 2485, \"display_input_tokens\": 2485}, \"raw_usage\": {\"completion_tokens\": 44, \"prompt_tokens\": 2485, \"total_tokens\": 2529, \"completion_tokens_details\": null, \"prompt_tokens_details\": {\"audio_tokens\": null, \"cached_tokens\": 0}, \"prompt_cache_hit_tokens\": 0, \"prompt_cache_miss_tokens\": 2485}, \"summary\": {\"model\": \"deepseek:deepseek-chat\", \"turn_count\": 1, \"cumulative_input_tokens\": 2485, \"cumulative_output_tokens\": 44, \"cumulative_billing_tokens\": 2529, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 2529, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 2485}}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    }
+  ]
+}

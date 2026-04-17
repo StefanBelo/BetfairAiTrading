@@ -1,0 +1,81 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "call_smpkza6DQamTswlFIrDNEZDQ": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 86493.0923516, \"end_time\": 86495.1457569, \"duration_ms\": 2053.41, \"ttft_ms\": 2046.43, \"time_to_response_ms\": 2046.43}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "call_smpkza6DQamTswlFIrDNEZDQ": {
+          "content": [
+            {
+              "type": "text",
+              "text": "ActiveBetfairMarket:\n  MarketId: \"1.256853532\"\n  StartTime: \"2026-04-17T12:45:00Z\"\n  EventType: \"Horse Racing\"\n  EventName: Ayr\n  MarketName: \"2m Hcap Hrd\"\n  TotalMatched: 54665.02\n  Status: Open\n  Selections[15]{SelectionId,Name,Price,TotalMatched,Status}:\n    \"63615622\",\"Castle Ivers\",5.3,11010.79,Active\n    \"64669413\",\"Lance Les Des\",7,6751.32,Active\n    \"79170089\",\"Triple Crown Ted\",7.4,7545.68,Active\n    \"69980163\",\"Secret Force\",9.8,12491.11,Active\n    \"75121116\",\"Bibe Mus\",13.5,2979.7,Active\n    \"69041351\",\"The Gray Ghost\",14,2780.02,Active\n    \"74010993\",\"Newtown Rambler\",16.5,1450.97,Active\n    \"68650182\",\"Magna Victor\",18,2336.63,Active\n    \"77441869\",\"Caballo De Guerra\",18.5,1547.16,Active\n    \"42803735\",\"Berties Ballet\",23,1502.62,Active\n    \"13658917\",Tuppence,42,1705.99,Active\n    \"41503347\",\"Ginger Mail\",46,856.32,Active\n    \"35701727\",\"Ravenscraig Castle\",46,806.8,Active\n    \"82292379\",\"Belaya River\",75,499.95,Active\n    \"55140443\",\"Dance Thief\",120,399.89,Active"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"call_smpkza6DQamTswlFIrDNEZDQ\": {\"timing_ms\": 5.99, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The active market is:\n\n- Event: Horse Racing at Ayr\n- Market: 2m Hcap Hrd\n- Start Time: 2026-04-17 12:45 UTC\n- Status: Open\n- Total Matched: \u00a354,665.02\n- Selections: 15 runners (e.g., Castle Ivers, Lance Les Des, Triple Crown Ted, etc.)\n\nLet me know if you need details on a specific selection or want to execute a strategy."
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 86495.5491104, \"end_time\": 86497.725532, \"duration_ms\": 2176.42, \"ttft_ms\": 1250.14, \"time_to_response_ms\": 1250.14}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}
