@@ -1,89 +1,78 @@
 {
   "verso": "1.0",
   "metadata": {
-    "modified": "2026-04-16T18:03:14.4871438+00:00",
-    "defaultKernel": "csharp",
+    "title": "Untitled",
+    "created": "2026-04-13T14:09:03.5969184+00:00",
+    "modified": "2026-04-21T14:49:45.0605575+00:00",
+    "defaultKernel": "fsharp",
     "activeLayout": "notebook"
   },
   "cells": [
     {
-      "id": "6177e455-b3a3-435f-b402-1091ba129fbc",
+      "id": "97597b1f-3e54-47be-a690-283c97c9b015",
       "type": "markdown",
-      "source": "# Setup assemblies and namespaces\n\nLoad the Bfexplorer and Betfair assemblies required for the notebook and open the main F# namespaces used by the subsequent code cells."
+      "source": "# Bfexplorer Dependencies and Imports\n\nLoads the required Bfexplorer assemblies and imports the namespaces needed for the notebook. This code cell adds references to \u0060BeloSoft.Data.dll\u0060, \u0060BeloSoft.Bfexplorer.Domain.dll\u0060, and \u0060BeloSoft.Bfexplorer.Service.Core.dll\u0060, then opens \u0060System.Collections.Generic\u0060 and the relevant \u0060BeloSoft\u0060 namespaces so later market, selection, bet, and service API code can compile."
     },
     {
-      "id": "3740632f-beef-4658-acac-47e0ebe802d3",
+      "id": "516fa470-2824-49bd-bc5c-3de4af54a417",
       "type": "code",
       "language": "fsharp",
-      "source": "//#I @\u0022E:\\Projects\\Bfexplorer\\Development\\Applications\\BeloSoft.Bfexplorer.App\\bin\\Debug\\net10.0-windows\u0022\r\n\r\n#r \u0022BeloSoft.Data.dll\u0022\r\n#r \u0022BeloSoft.Betfair.API.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.API.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Host.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Domain.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Service.Core.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Service.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Interoperability.dll\u0022\r\n\r\nopen BeloSoft.Data\r\nopen BeloSoft.Bfexplorer\r\nopen BeloSoft.Bfexplorer.Service\r\nopen BeloSoft.Bfexplorer.Domain\r\nopen BeloSoft.Bfexplorer.Interoperability"
+      "source": "#I @\u0022E:\\Projects\\Bfexplorer\\Development\\Applications\\BeloSoft.Bfexplorer.App\\bin\\Debug\\net10.0-windows\u0022\r\n\r\n#r \u0022BeloSoft.Data.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Domain.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Service.Core.dll\u0022\r\n\r\nopen System.Collections.Generic\r\n\r\nopen BeloSoft.Data\r\nopen BeloSoft.Bfexplorer.Domain\r\nopen BeloSoft.Bfexplorer.Domain.Data\r\nopen BeloSoft.Bfexplorer.Service"
     },
     {
-      "id": "44a8731d-4555-4037-84cd-59b61039bbe0",
+      "id": "e6bce836-68e4-444b-bb97-251a3d6eee13",
       "type": "markdown",
-      "source": "# Login and account balance\n\nCreate a Bfexplorer service instance, log in with saved Betfair credentials, and retrieve the account balance for display."
+      "source": "# Market Display Helpers\n\nDescribes the F# market helper functions in the following code cell. \u0060showMarket\u0060 accepts a \u0060Market\u0060, prints its \u0060MarketFullName\u0060, retrieves active selections using \u0060getActiveSelections\u0060, and formats each selection with name, last traded price, and total matched volume. \u0060showBets\u0060 enumerates \u0060market.Bets\u0060, formats each bet with its associated selection name and bet details, and includes a conditional branch for the empty-bet case."
     },
     {
-      "id": "0cc836c8-94c1-41cd-ab54-02f47a2470bd",
+      "id": "7d808462-adef-44fc-839b-fd5e8c9d0dae",
       "type": "code",
       "language": "fsharp",
-      "source": "let bfexplorerService = BfexplorerService (UiApplication = BfexplorerHost (), initializeBotManager = false)\r\n\r\nmatch GetMyBetfairCredentials () with\r\n| Some (username, password) -\u003E\r\n\r\n    async {\r\n        match! bfexplorerService.Login (username, password) with\r\n        | DataSuccessFailure.Success _ -\u003E\r\n\r\n            let! resultAccountFunds = bfexplorerService.GetAccountFunds ()\r\n\r\n            printfn \u0022%s\\n\u0022 \u003C|\r\n                match resultAccountFunds with\r\n                | DataResult.Success accountFunds -\u003E sprintf \u0022My account balance %.2f\u0022 accountFunds.AvailableToBetBalance\r\n                | DataResult.Failure errorMessage -\u003E errorMessage\r\n            \r\n        | DataSuccessFailure.Failure (_, _, errorMessage) -\u003E printfn \u0022Failed to login: %s\u0022 errorMessage\r\n    }\r\n    |\u003E Async.RunSynchronously\r\n\r\n| None -\u003E printfn \u0022Please set your credentials to the enviroment variables: BETFAIR_USERNAME, BETFAIR_PASSWORD.\u0022\r\n",
+      "source": "let showMarket (market : Market) =\r\n    printfn \u0022%s\\n\u0022 market.MarketFullName\r\n\r\n    getActiveSelections market\r\n    |\u003E Seq.map (fun selection -\u003E sprintf \u0022%s ~ %.2f | %.2f\u0022 selection.Name selection.LastPriceTraded selection.TotalMatched)\r\n    |\u003E String.concat \u0022\\n\u0022\r\n    |\u003E printfn \u0022%s\\n\u0022\r\n\r\nlet showBets (market : Market) =   \r\n    let bets =\r\n        market.Bets\r\n        |\u003E Seq.toList\r\n        |\u003E List.map (fun bet -\u003E sprintf \u0022%s ~ %A\u0022 bet.Selection.Name bet)\r\n\r\n    if bets.IsEmpty\r\n    then\r\n        printfn \u0022No bets were placed.\\n\u0022\r\n    else\r\n        printfn \u0022All placed bets:\\n%s\\n\u0022 (bets |\u003E String.concat \u0022\\n\u0022)\r\n\r\nlet showRunningBots (market : Market) =   \r\n    let runningBots =\r\n        market.RunningBots\r\n        |\u003E Seq.toList\r\n        |\u003E List.map (fun bot -\u003E sprintf \u0022%s ~ %A\u0022 bot.Name bot.Status)\r\n\r\n    if runningBots.IsEmpty\r\n    then\r\n        printfn \u0022No bots are running.\\n\u0022\r\n    else\r\n        printfn \u0022All running bots:\\n%s\\n\u0022 (runningBots |\u003E String.concat \u0022\\n\u0022)\r\n\r\nlet execute (iBfexplorerConsole : IBfexplorerConsole) =\r\n    let market = iBfexplorerConsole.ActiveMarket        \r\n\r\n    showMarket market\r\n    showBets market\r\n    showRunningBots market"
+    },
+    {
+      "id": "3010d7c5-bc1f-4bc1-9a31-eebeb5e0c373",
+      "type": "markdown",
+      "source": "# Display and Host Execution\n\nExplains the final display and execution flow. The adjacent F# code defines \u0060showMarket\u0060 and \u0060showBets\u0060 helpers for formatting market and bet data, then invokes \u0060execute\u0060 on \u0060bfexploreHost\u0060 cast to \u0060IBfexplorerConsole\u0060 to run the Bfexplorer host and print active market information and running bots."
+    },
+    {
+      "id": "275a8785-9c9e-4e1e-bad7-d2a9bb601263",
+      "type": "code",
+      "language": "fsharp",
+      "source": "execute (bfexplorerHost :\u003E IBfexplorerConsole)",
       "outputs": [
         {
           "mimeType": "text/plain",
-          "content": "My account balance 467.68\n\r\n"
-        }
-      ]
-    },
-    {
-      "id": "e6e0a4b5-6df9-4a48-8d1d-a1c835953b96",
-      "type": "markdown",
-      "source": "# Active market lookup\n\nUse the Bfexplorer application client to fetch the currently active market ID and print it."
-    },
-    {
-      "id": "47ef2845-9bef-45b8-be30-3c82604a6352",
-      "type": "code",
-      "language": "fsharp",
-      "source": "async {    \r\n    let doGetActiveMarket () =\r\n        let bfexplorerApplication = Services.CreateBfexplorerApplicationClient ()\r\n\r\n        task {\r\n            try\r\n                let! marketResult = bfexplorerApplication.GetActiveMarket ()\r\n\r\n                return DataResult.Success marketResult\r\n            with\r\n            | ex -\u003E return DataResult.Failure ex.Message\r\n        }\r\n        |\u003E Async.AwaitTask\r\n\r\n    match! doGetActiveMarket () with\r\n    | DataResult.Success marketResult -\u003E \r\n\r\n        let marketId = marketResult.MarketId\r\n\r\n        Variables.Set(\u0022marketId\u0022, marketId) \r\n        \r\n        printfn \u0022The active market in bfexplorer: %s\u0022 marketId\r\n\r\n    | DataResult.Failure errorMessage -\u003E printfn \u0022Error: %s\u0022 errorMessage\r\n}\r\n|\u003E Async.RunSynchronously\r\n",
-      "outputs": [
-        {
-          "mimeType": "text/plain",
-          "content": "The active market in bfexplorer: 1.256799695\r\n"
-        }
-      ]
-    },
-    {
-      "id": "78049a38-3648-4742-89c1-7135a157e862",
-      "type": "markdown",
-      "source": "# Market data retrieval\n\nDefine a helper to print market and selection details, then fetch market data for the active market ID and display the market name plus latest prices."
-    },
-    {
-      "id": "5f6df58e-72d2-4e91-b552-079b4817acbe",
-      "type": "code",
-      "language": "fsharp",
-      "source": "let showMarket (market : Market) =\r\n    printfn \u0022%s\\n\u0022 market.MarketFullName\r\n\r\n    getActiveSelections market\r\n    |\u003E Seq.map (fun selection -\u003E sprintf \u0022%s ~ %.2f | %.2f\u0022 selection.Name selection.LastPriceTraded selection.TotalMatched)\r\n    |\u003E String.concat \u0022\\n\u0022\r\n    |\u003E printfn \u0022%s\u0022\r\n\r\nprintfn \u0022Get market data for: %s\u0022 marketId\r\n\r\nasync {\r\n    match! bfexplorerService.GetMarket marketId with\r\n    | DataResult.Success myMarket -\u003E \r\n    \r\n        Variables.Set(\u0022myMarket\u0022, myMarket) \r\n        showMarket myMarket\r\n\r\n    | DataResult.Failure errorMessage -\u003E printfn \u0022Failed to get market: %s\u0022 errorMessage\r\n}\r\n|\u003E Async.RunSynchronously",
-      "outputs": [
-        {
-          "mimeType": "text/plain",
-          "content": "Get market data for: 1.256799695\r\nHereford 16th Apr - 20:30 2m NHF\n\r\nOykel Bridge ~ 3.10 | 15729.69\nMy Mate Aj ~ 3.25 | 15891.59\nHercules Honour ~ 10.00 | 5905.38\nRight Royal Rascal ~ 15.50 | 3242.55\nSky Grove ~ 17.00 | 1923.84\nBound For Glory ~ 20.00 | 1479.24\nThe Hostage ~ 21.00 | 1310.07\nKappa Des Mottes ~ 44.00 | 660.24\nJim Santiago Bowie ~ 75.00 | 397.43\nHes Tailor Made ~ 170.00 | 211.10\nAutumn Air ~ 230.00 | 266.77\r\n"
-        }
-      ]
-    },
-    {
-      "id": "cba52ab5-9ddc-4933-ae46-c74125931e1b",
-      "type": "markdown",
-      "source": "# Market update\n\nRefresh the stored market data by calling \u0060UpdateMarket\u0060 on \u0060bfexplorerService\u0060, then re-display the updated market and selection prices."
-    },
-    {
-      "id": "851d1c70-3177-4aba-9a3d-0d8dc3d439e1",
-      "type": "code",
-      "language": "fsharp",
-      "source": "async {\r\n    match! bfexplorerService.UpdateMarket myMarket with\r\n    | Result.Success -\u003E showMarket myMarket\r\n    | Result.Failure errorMessage -\u003E printfn \u0022Failed to update market: %s\u0022 errorMessage\r\n}\r\n|\u003E Async.RunSynchronously",
-      "outputs": [
-        {
-          "mimeType": "text/plain",
-          "content": "Hereford 16th Apr - 20:30 2m NHF\n\r\nOykel Bridge ~ 3.10 | 15775.64\nMy Mate Aj ~ 3.20 | 15912.70\nHercules Honour ~ 10.00 | 5905.38\nRight Royal Rascal ~ 15.50 | 3305.35\nSky Grove ~ 17.50 | 1926.14\nBound For Glory ~ 21.00 | 1493.69\nThe Hostage ~ 21.00 | 1312.37\nKappa Des Mottes ~ 44.00 | 660.24\nJim Santiago Bowie ~ 75.00 | 397.43\nHes Tailor Made ~ 170.00 | 211.34\nAutumn Air ~ 230.00 | 266.77\r\n"
+          "content": "Yarmouth 21st Apr - 16:45 6f Hcap\n\r\nFenlander ~ 1000.00 | 130044.94\nCaragio ~ 1.01 | 100502.18\nMy Mate Kev ~ 1000.00 | 47310.77\nDark Side Thunder ~ 1000.00 | 19156.90\nIronist ~ 610.00 | 18818.54\nBill Plumb ~ 1000.00 | 13202.57\n\r\nAll placed bets:\nFenlander ~ Back: 10.00 @ 2.72, Matched\n\r\nAll running bots:\nTake 10% profit ~ WaitingForOperation\n\r\n"
         }
       ]
     }
-  ]
+  ],
+  "layouts": {
+    "dashboard": {
+      "cells": {
+        "fdb708ac-343d-4ead-ad64-b30bf49758e4": {
+          "row": 0,
+          "col": 3,
+          "width": 8,
+          "height": 14,
+          "visible": true
+        },
+        "dfabf845-ada2-4c64-b82b-5415e0c34bab": {
+          "row": 0,
+          "col": 6,
+          "width": 6,
+          "height": 4,
+          "visible": true
+        },
+        "3ddd8aa6-98a3-4058-b7af-12dc1086b160": {
+          "row": 4,
+          "col": 0,
+          "width": 6,
+          "height": 4,
+          "visible": true
+        }
+      }
+    }
+  }
 }

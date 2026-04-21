@@ -1,0 +1,54 @@
+{
+  "verso": "1.0",
+  "metadata": {
+    "modified": "2026-04-21T14:27:22.8422726+00:00",
+    "defaultKernel": "csharp",
+    "activeLayout": "notebook"
+  },
+  "cells": [
+    {
+      "id": "24815858-5f63-4a89-98df-29d49cae1d3a",
+      "type": "markdown",
+      "source": "# Bfexplorer Bot Sample Setup\n\nThis notebook configures the environment and loads the required assemblies for the Bfexplorer bot sample. It ensures the correct libraries are referenced before defining and running the bot code."
+    },
+    {
+      "id": "0d173f67-c985-46dd-9413-fb783def5b29",
+      "type": "code",
+      "language": "fsharp",
+      "source": "#I @\u0022E:\\Projects\\Bfexplorer\\Development\\Applications\\BeloSoft.Bfexplorer.App\\bin\\Debug\\net10.0-windows\\\u0022\r\n//#I @\u0022C:\\Program Files\\BeloSoft\\Bfexplorer\\\u0022\r\n\r\n//#r \u0022DevExpress.Spreadsheet.v25.2.Core.dll\u0022\r\n\r\n#r \u0022BeloSoft.Data.dll\u0022\r\n#r \u0022BeloSoft.Betfair.API.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Domain.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Trading.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Service.Core.dll\u0022\r\n\r\nopen System\r\nopen System.ComponentModel.DataAnnotations\r\n\r\nopen BeloSoft.Bfexplorer.Domain\r\nopen BeloSoft.Bfexplorer.Trading\r\nopen BeloSoft.Bfexplorer.Service"
+    },
+    {
+      "id": "88e6e018-f701-41b8-a871-97a1c6b6f680",
+      "type": "markdown",
+      "source": "# Strategy Bot Parameter and Implementation Overview\n\nDescribes the custom bot parameter class \u0060MyTestStrategyBotParameters\u0060, its configuration fields, and the \u0060MyTestStrategyBot\u0060 implementation that uses these parameters to initialize and run the strategy within the Bfexplorer environment."
+    },
+    {
+      "id": "f1652c7f-f9cb-47dc-982c-e739a46deb68",
+      "type": "code",
+      "language": "fsharp",
+      "source": "/// \u003Csummary\u003E\r\n/// MyTestStrategyBotParameters\r\n/// \u003C/summary\u003E\r\ntype MyTestStrategyBotParameters () =\r\n    inherit BotParameters ()\r\n\r\n    [\u003CRequired\u003E]\r\n    [\u003CDisplay (GroupName = StrategyGroup, Description = StrategyNameDescription)\u003E]\r\n    member val StrategyName : string = String.Empty with get, set\r\n\r\n    [\u003CDisplay (GroupName = TimeGroup, Description = \u0022Data retrieval and start time.\u0022)\u003E]\r\n    member val StartTimeSpan : TimeSpan = TimeSpan.FromMinutes 1.0 with get, set\r\n    \r\n/// \u003Csummary\u003E\r\n/// MyTestStrategyBot\r\n/// \u003C/summary\u003E\r\ntype MyTestStrategyBot (market : Market, parameters : MyTestStrategyBotParameters, bfexplorerService : IBfexplorerService) as this =\r\n    inherit MarketBaseBot (market, parameters, bfexplorerService)\r\n\r\n    do\r\n        this.Status \u003C- BotStatus.WaitingForEntryCriteria\r\n\r\n    let getMySelection (time : DateTime) =\r\n        let fromTime = time.Add -parameters.StartTimeSpan\r\n\r\n        let mySelection, totalTradedVolume =\r\n            getActiveSelections market\r\n            |\u003E List.map (fun selection -\u003E\r\n                    let totalTradedVolume =\r\n                        selection.PriceTradedHistory.TradedPrices\r\n                        |\u003E Seq.filter (fun timePriceTraded -\u003E timePriceTraded.Time \u003E= fromTime)\r\n                        |\u003E Seq.sumBy (fun timePriceTraded -\u003E timePriceTraded.Volume)\r\n\r\n                    selection, totalTradedVolume\r\n                )\r\n            |\u003E List.sortByDescending (fun (_selection, totalTradedVolume) -\u003E totalTradedVolume)\r\n            |\u003E List.head\r\n\r\n        if totalTradedVolume \u003E 0.0\r\n        then\r\n            Some mySelection\r\n        else\r\n            None\r\n\r\n    let startMyBot (selection : Selection) =\r\n        let botName = parameters.StrategyName\r\n\r\n        if not (String.IsNullOrEmpty botName)\r\n        then\r\n            let message =\r\n                match bfexplorerService.CreateMyBot (botName, market, selection) with\r\n                | Some (bot, _) -\u003E\r\n\r\n                    addBot bot market\r\n                    sprintf \u0022The strategy %s has been started.\u0022 botName\r\n\r\n                | None -\u003E sprintf \u0022Failed to create the strategy \u0027%s\u0027.\u0022 botName\r\n\r\n            this.OutputMessage message\r\n\r\n    /// \u003Csummary\u003E\r\n    /// Execute\r\n    /// \u003C/summary\u003E\r\n    override this.Execute () =\r\n        match this.Status with\r\n        | BotStatus.WaitingForEntryCriteria -\u003E\r\n\r\n            if this.EvaluateCriteria ()\r\n            then\r\n                this.Status \u003C- BotStatus.WaitingForOperation\r\n\r\n        | BotStatus.WaitingForOperation -\u003E\r\n\r\n            if this.CanExecuteTimeDelayOperation parameters.StartTimeSpan\r\n            then\r\n                getMySelection DateTime.Now |\u003E Option.iter startMyBot\r\n\r\n                this.Status \u003C- BotStatus.ExecutionEnded\r\n\r\n        | _ -\u003E ()\r\n"
+    },
+    {
+      "id": "10d773be-d399-4f01-84e6-ff363e09e93b",
+      "type": "markdown",
+      "source": "# Strategy Bot Implementation Details\n\nDescribes the F# strategy bot implementation, including parameter definitions, expected behavior, and the execution flow for the sample scenario."
+    },
+    {
+      "id": "da60f311-b9c4-49d0-88c9-4e566b485673",
+      "type": "code",
+      "language": "fsharp",
+      "source": "let setupMyTestStrategyBot (iBfexplorerConsole : IBfexplorerConsole) =\r\n    let market = iBfexplorerConsole.ActiveMarket    \r\n    let myTestStrategyBotParameters = MyTestStrategyBotParameters (\r\n            Name = \u0022My test strategy bot\u0022,\r\n            StrategyName = \u0022Bet 10 Euro\u0022\r\n        )    \r\n    let iBfexplorerService = iBfexplorerConsole.BfexplorerService\r\n    \r\n    let bot = MyTestStrategyBot (market, myTestStrategyBotParameters, iBfexplorerService)\r\n\r\n    iBfexplorerService.UiApplication.Execute (fun () -\u003E addBot bot market)"
+    },
+    {
+      "id": "f3a1701a-c1e8-4313-a05b-2f7b410b7975",
+      "type": "markdown",
+      "source": "# Bot Initialization Verification\n\nSummarizes the final bot setup command and the verification steps for ensuring successful initialization and execution within the Bfexplorer environment."
+    },
+    {
+      "id": "80387b5f-497c-4156-9a29-2cac27a7e89b",
+      "type": "code",
+      "language": "fsharp",
+      "source": "setupMyTestStrategyBot (bfexplorerHost :\u003E IBfexplorerConsole)"
+    }
+  ]
+}

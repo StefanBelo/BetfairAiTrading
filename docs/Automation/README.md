@@ -1,43 +1,17 @@
-# AI Automation Documentation
+# Automation Documentation
 
-This directory contains comprehensive guides on implementing AI-powered automation for Betfair trading using BFExplorer.
+This folder contains guides for implementing AI-powered automation for Betfair trading using Bfexplorer.
 
-## New: AI Agent Execution Approaches
+## Key Guides
 
-### [AI Agent Execution Approaches](AI_Agent_Execution_Approaches.md)
-**Comparison of Automation Methods**
-- Overview of Python scripting, C# integration, CLI tools, and text injection approaches for AI agent execution
-- Pros and cons of each method for strategy automation and debugging
-- Practical guidance for choosing the best approach for your workflow
-- **Best for:** Developers evaluating automation and debugging strategies
+- **AI_Agent_Execution_Approaches.md**: Comparison of automation methods (Python, C#, CLI, text injection) for AI agent execution.
+- **HowToStartWithAgenticBfexplorerApp.md**: Complete setup guide for agentic Bfexplorer applications and MCP servers.
+- **TheRiseOfAIAgentsInAutomatedBetting.md**: Overview of AI agents in sports betting and technical architecture.
+- **AIAgentYourBetfairTradingAssistant.md**: Step-by-step guide to building your own AI trading assistant.
+- **AIAgentIntegrationToBfexplorerApp.md**: Integration approaches for AI agents and Bfexplorer.
+- **BuildingInteractiveTradingCharts.md**: Guide to building interactive trading charts.
 
-## Comprehensive Setup Guide
-
-### [Getting Started with Agentic Bfexplorer App](HowToStartWithAgenticBfexplorerApp.md)
-**🤖 Revolutionary AI-Powered Trading Platform**
-- Complete guide to MCP Servers and Agentic Applications
-- Understanding how AI democratizes professional-level trading
-- Detailed installation and configuration instructions
-- Professional AI analysis prompts library and usage examples
-- **Best for:** Complete setup and understanding of the full system
-
-## Core Automation Guides
-
-### [The Rise of AI Agents in Automated Betting on Betfair Exchange with BFExplorer](TheRiseOfAIAgentsInAutomatedBetting.md)
-**Foundation Guide to AI Trading Automation**
-- Overview of AI agents in sports betting and trading
-- Technical architecture and implementation approaches
-- Integration strategies with BFExplorer platform
-- Future trends and opportunities in automated trading
-- **Best for:** Understanding the big picture of AI automation in betting
-
-### [BFExplorer AI Agent: Your Betfair Trading Assistant](AIAgentYourBetfairTradingAssistant.md)
-**Practical AI Assistant Implementation**
-- Step-by-step guide to building your own AI trading assistant
-- Practical integration with BFExplorer workflows
-- Real-world examples and use cases
-- Customization and optimization strategies
-- **Best for:** Hands-on implementation of AI trading assistance
+See each file for detailed instructions and best practices.
 
 ### [AI Agent Integration to BfexplorerApp](AIAgentIntegrationToBfexplorerApp.md)
 **Two Approaches for Automated Betting Strategies**

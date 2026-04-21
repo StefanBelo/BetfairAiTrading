@@ -1,43 +1,29 @@
-# Documentation Index
 
-## Quick Start
+# Betfair AI Trading Documentation
 
-## For Beginners
+This documentation folder contains guides, research, automation instructions, strategy documentation, and AI prompts for Betfair AI trading using Bfexplorer.
 
-- [How Non-Developers Can Update Code with AI Assistance](NonDevelopers.md)
+## Main Sections
 
-## How to Test
+- **Automation/**: Guides and documentation for automating Betfair trading with AI agents and Bfexplorer.
+- **Ideas/**: Research notes, integration ideas, and experiment summaries for new features and strategies.
+- **Posts/**: Blog-style posts and community discussions.
+- **Prompts/**: 100+ specialized AI prompts for market analysis, strategy development, and automation.
+- **Research/**: In-depth research documents and technical analysis for Betfair trading and strategy development.
+- **Strategies/**: Comprehensive documentation for all Bfexplorer strategies, organized by sport and type.
+- **TestingStrategy.md**: Guide to testing strategies in the Bfexplorer environment.
+- **NonDevelopers.md**: How non-developers can update code with AI assistance.
 
-- [Testing Strategy](TestingStrategy.md)
+## Quick Links
 
-## AI Agents
+- [Automation Guides](Automation/README.md)
+- [Strategy Documentation](Strategies/README.md)
+- [AI Prompts Index](Prompts/README.md)
+- [Research Index](Research/README.md)
 
-- [Getting Started with Agentic Bfexplorer App](Automation/HowToStartWithAgenticBfexplorerApp.md) - **🌟 COMPLETE SETUP GUIDE** for revolutionary AI-powered trading
-- [The Rise of AI Agents in Automated Betting on Betfair Exchange with BFExplorer](Automation/TheRiseOfAIAgentsInAutomatedBetting.md)
-- [BFExplorer AI Agent: Your Betfair Trading Assistant](Automation/AIAgentYourBetfairTradingAssistant.md)
-- [AI Agent Integration to BfexplorerApp](Automation/AIAgentIntegrationToBfexplorerApp.md) - Two approaches for automated betting strategies
-- [Building Interactive Trading Charts: A Guide for Everyone](Automation/BuildingInteractiveTradingCharts.md)
+## Getting Started
 
-## AI Analysis Prompts
-
-**[📖 Complete Prompts Index](Prompts/README.md)** - *100+ specialized AI prompts for comprehensive Betfair market analysis*
-
-### Latest Advanced Strategies (R6 Generation)
-- [Real-Time Betfair Market Analysis](Prompts/BetfairMarketAnalysisPrompt.md) - Professional-grade market analysis with trading recommendations and pattern recognition
-- [Horse Racing Strategy R6 - Optimized](Prompts/HorseRacingStrategyR6.md) - Silent execution with enhanced composite scoring and 4-factor analysis
-- [Horse Racing Strategy R6 - Direct Signal](Prompts/HorseRacingStrategyR6_DS.md) - Ultra-minimal output with direct execution signals only
-- [Horse Racing EV Analysis Favourite R6](Prompts/HorseRacingEVAnalysisFavouriteR6.md) - EV range strategy with Timeform professional data integration
-- [Horse Racing EV Analysis Favourite R6 Silent](Prompts/HorseRacingEVAnalysisFavouriteR6_Silent.md) - Silent favourite analysis with EV range control
-
-### Horse Racing Analysis
-- [Horse Racing Base Form Data Analysis](Prompts/HorseRacingBaseFormDataAnalysis.md) - Core betting metrics analysis using fundamental handicapping principles
-- [Horse Racing Combined Expected Value Analysis](Prompts/HorseRacingCombinedEVAnalysis.md) - Dual methodology combining prediction scores with semantic analysis
-- [Horse Racing Combined EV Analysis with Automated Betting](Prompts/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md) - Enhanced dual analysis with automatic execution
-- [Horse Racing Combined EV Analysis with Data Export](Prompts/HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md) - Structured data output for integration
-- [Horse Racing Expected Value Analysis](Prompts/HorseRacingExpectedValueAnalysis.md) - Semantic-only analysis approach
-- [Horse Racing EV Analysis with Conservative Betting](Prompts/HorseRacingEVAnalysisWithConservativeBetting.md) - Risk-managed favorite evaluation with smart execution
-- [Horse Racing EV Analysis with Conservative Trading Data](Prompts/HorseRacingEVAnalysisWithConservativeTradingData.md) - Enhanced conservative betting with trading data
-- [Horse Racing EV Analysis with Dutch Betting](Prompts/HorseRacingEVAnalysisWithDutchBetting.md) - Automated Dutch betting strategy with risk diversification
+See the README.md in each subfolder for more details on available files and usage instructions.
 - [Horse Racing EV Analysis with Dutch Betting (OLBG Tips)](Prompts/HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md) - Community tips integration
 - [Horse Racing EV Analysis with Betting](Prompts/HorseRacingEVAnalysisWithBetting.md) - Single selection betting automation
 - [Horse Racing EV Analysis with Trading Data](Prompts/HorseRacingEVAnalysisWithBetting_TradingData.md) - Enhanced with trading data

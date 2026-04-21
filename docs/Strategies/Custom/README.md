@@ -1,43 +1,26 @@
 # Custom Strategies
 
-## Overview
-This directory contains custom and specialized Bfexplorer strategies that don't fit into the standard categories. These strategies often implement unique logic, custom algorithms, or specialized functionality for specific trading scenarios.
+This folder contains custom and specialized Bfexplorer strategies that implement unique logic, custom algorithms, or specialized functionality for specific trading scenarios.
 
-## Available Strategies
+## Files
 
-### Development & Testing Strategies
-- **[My Csharp Test Bot](My-Csharp-Test-Bot.md)** - Custom C# testing strategy template for development and testing within the Bfexplorer framework
+- **My-Csharp-Test-Bot.md**: Custom C# testing strategy template.
+- **C-Sharp-Update-SP-Prices.md**: Utility for updating Starting Price (SP) information.
+- **C-Sharp-Show-Selection-SP-Prices.md**: Display utility for SP information.
+- **C-Sharp-No-Exposure-Trigger-Bot.md**: Executes strategies only when no current market exposure exists.
+- **My-Lay-Strategy.md**: Comprehensive laying strategy with market indicators.
+- **My-Back-Strategy.md**: Comprehensive backing strategy with market indicators.
+- **My-Race-Time-Back.md**: Horse racing backing strategy using race time predictions.
+- **Bookmaker-Price-Bot.md**: Analyzes bookmaker price movements for arbitrage.
+- **Ladbrokes-Bot.md**: Specialized strategy for Ladbrokes price analysis.
+- **Price-Move-Bot.md**: Advanced price movement analysis.
+- **Ladbrokes-Lay-Bot.md**: Laying strategy for Ladbrokes.
+- **Ladbrokes-In-Running-Bot.md**: Live race trading with Ladbrokes price analysis.
+- **Ladbrokes-In-Running-SP-Bot.md**: In-running strategy using SP data.
+- **Greyhound-Back-Bot.md**: Backing strategy for greyhound racing.
+- **Greyhound-Lay-Bot.md**: Laying strategy for greyhound racing.
 
-### Data Management Strategies
-- **[C# - Update SP prices](C-Sharp-Update-SP-Prices.md)** - Utility for updating Starting Price (SP) information within Bfexplorer
-- **[C# - Show Selection SP prices](C-Sharp-Show-Selection-SP-Prices.md)** - Display utility for visualizing Starting Price information
-
-### Risk Management Strategies
-- **[C# - No Exposure Trigger Bot](C-Sharp-No-Exposure-Trigger-Bot.md)** - Executes strategies only when no current market exposure exists
-
-### Advanced Betting Strategies
-- **[My Lay Strategy](My-Lay-Strategy.md)** - Comprehensive laying strategy with multiple market indicators and price movement triggers
-- **[My Back Strategy](My-Back-Strategy.md)** - Comprehensive backing strategy with multiple market indicators and price movement triggers
-- **[My Race Time Back](My-Race-Time-Back.md)** - Horse racing backing strategy using race time predictions and industry price comparisons
-
-### Bookmaker Integration Strategies
-- **[Bookmaker Price Bot](Bookmaker-Price-Bot.md)** - Analyzes bookmaker price movements and identifies arbitrage opportunities
-- **[Ladbrokes Bot](Ladbrokes-Bot.md)** - Specialized strategy for Ladbrokes price analysis and cross-platform trading
-- **[Price Move Bot](Price-Move-Bot.md)** - Advanced price movement analysis across multiple platforms
-- **[Ladbrokes Lay Bot](Ladbrokes-Lay-Bot.md)** - Laying strategy targeting overvalued selections on Ladbrokes
-- **[Ladbrokes In-Running Bot](Ladbrokes-In-Running-Bot.md)** - Live race trading with Ladbrokes price analysis
-- **[Ladbrokes In-Running SP Bot](Ladbrokes-In-Running-SP-Bot.md)** - In-running strategy using Starting Price data analysis
-
-### Greyhound Racing Strategies
-- **[Greyhound Back Bot](Greyhound-Back-Bot.md)** - Backing strategy for greyhound racing with trap position analysis
-- **[Greyhound Lay Bot](Greyhound-Lay-Bot.md)** - Laying strategy for greyhound racing markets
-
-## Strategy Categories
-
-### C# Custom Implementations
-These strategies are implemented in C# and provide custom functionality:
-- Development and testing frameworks
-- Data management utilities
+See each file for details and usage instructions.
 - Advanced display and visualization tools
 
 ### Multi-Trigger Strategies

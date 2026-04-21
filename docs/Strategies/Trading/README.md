@@ -1,43 +1,16 @@
 # Trading Strategies
 
-This directory contains specialized trading strategies for position management, risk control, and profit optimization on Betfair markets. These strategies focus on managing open positions and implementing sophisticated trading techniques.
+This folder contains specialized trading strategies for position management, risk control, and profit optimization on Betfair markets using Bfexplorer.
 
-## Available Strategies
+## Files
 
-### Position Management Strategies
+- **Close-Selection-Bet-Position-at-Odds.md**: Strategy for closing selection positions at specific odds targets.
+- **Close-Selection-Bet-Position.md**: Core strategy for closing betting positions on selections.
+- **Trailing-Stop-Loss-on-Market.md**: Implements trailing stop-loss functionality across entire markets.
 
-#### [Close Selection Bet Position](Close-Selection-Bet-Position.md)
-Core strategy for closing betting positions on specific selections, allowing traders to lock in profits or minimize losses before market settlement.
+## Usage
 
-**Key Features:**
-- Automated position closing
-- Profit/loss calculation
-- Risk management controls
-- Real-time position monitoring
-
-#### [Close Selection Bet Position at Odds](Close-Selection-Bet-Position-at-Odds.md)
-Advanced position closing strategy that closes selection positions when specific odds targets are reached, enabling precise profit-taking and loss-cutting.
-
-**Key Features:**
-- Target odds-based execution
-- Automated trigger mechanisms
-- Flexible odds criteria
-- Performance tracking
-
-#### [Trailing Stop Loss on Market](Trailing-Stop-Loss-on-Market.md)
-Sophisticated risk management strategy that implements trailing stop-loss functionality across entire markets, protecting profits while allowing for continued upside.
-
-**Key Features:**
-- Dynamic stop-loss adjustment
-- Market-wide risk management
-- Profit protection mechanisms
-- Automated trailing functionality
-
-## Strategy Categories
-
-### Risk Management
-Strategies focused on protecting capital and managing downside risk:
-- **Stop-loss implementation**: Automatic loss limitation
+Each file documents a specific trading strategy, including its logic, parameters, and usage examples. Use these strategies to automate position management and risk control in your Betfair trading workflows.
 - **Profit protection**: Lock in gains as positions move favorably  
 - **Position sizing**: Appropriate stake management
 - **Exposure control**: Manage total market exposure

@@ -1,0 +1,133 @@
+{
+  "verso": "1.0",
+  "metadata": {
+    "modified": "2026-04-21T14:24:43.0811324+00:00",
+    "defaultKernel": "csharp",
+    "activeLayout": "notebook"
+  },
+  "cells": [
+    {
+      "id": "bf46bf03-9ef8-4387-8ae0-996bcbbb9d27",
+      "type": "markdown",
+      "source": "# References and Imports\n\nLoads BFexplorer-related assemblies, configures the assembly search path, and opens the F# namespaces required by the notebook."
+    },
+    {
+      "id": "84d682af-1f59-4e9c-a27f-d04bb81a58a9",
+      "type": "code",
+      "language": "fsharp",
+      "source": "#I @\u0022E:\\Projects\\Bfexplorer\\Development\\Applications\\BeloSoft.Bfexplorer.App\\bin\\Debug\\net10.0-windows\\\u0022\r\n//#I @\u0022C:\\Program Files\\BeloSoft\\Bfexplorer\\\u0022\r\n\r\n#r \u0022DevExpress.Spreadsheet.v25.2.Core.dll\u0022\r\n\r\n#r \u0022BeloSoft.Data.dll\u0022\r\n#r \u0022BeloSoft.Betfair.API.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Domain.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Trading.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Service.Core.dll\u0022\r\n\r\nopen System\r\n\r\nopen BeloSoft.Bfexplorer.Domain\r\nopen BeloSoft.Bfexplorer.Trading\r\nopen BeloSoft.Bfexplorer.Service"
+    },
+    {
+      "id": "154624ec-d1ba-478f-b5eb-ca8d07fd70db",
+      "type": "markdown",
+      "source": "# ShowTurnoverPerMinute Trigger Definition\n\nDescribes the \u0060ShowTurnoverPerMinute\u0060 bot trigger type, showing how it inherits from \u0060BotTriggerBase\u0060, uses \u0060BotTriggerParameters\u0060, and evaluates turnover for a market selection."
+    },
+    {
+      "id": "38763934-62bd-488d-91e8-27409391a055",
+      "type": "code",
+      "language": "fsharp",
+      "source": "/// \u003Csummary\u003E\r\n/// ShowTurnoverPerMinute\r\n/// \u003C/summary\u003E\r\ntype ShowTurnoverPerMinute (market : Market, selection : Selection, botName : string, botTriggerParameters : BotTriggerParameters, myBfexplorer : IMyBfexplorer) as this =\r\n    inherit BotTriggerBase (market, selection, botName, botTriggerParameters, myBfexplorer)\r\n         \r\n    let timeSpanToCheck = defaultArg (botTriggerParameters.GetParameter\u003Cfloat\u003E \u0022TimeSpanToCheck\u0022) 1.0\r\n    \r\n    let mutable timeToCheck = DateTime.MinValue\r\n\r\n    let canReport time =\r\n        let status = time \u003E= timeToCheck\r\n\r\n        if status\r\n        then\r\n            timeToCheck \u003C- time.AddMinutes timeSpanToCheck\r\n\r\n        status\r\n\r\n    let reportTurnover (time : DateTime) =\r\n        let fromTime = time.AddMinutes -timeSpanToCheck\r\n\r\n        getActiveSelections market\r\n        |\u003E List.map (fun selection -\u003E\r\n                let totalTradedVolumePerMinute =\r\n                    selection.PriceTradedHistory.TradedPrices\r\n                    |\u003E Seq.filter (fun timePriceTraded -\u003E timePriceTraded.Time \u003E= fromTime)\r\n                    |\u003E Seq.sumBy (fun timePriceTraded -\u003E timePriceTraded.Volume)\r\n\r\n                sprintf \u0022%s: %.2f\u0022 selection.Name totalTradedVolumePerMinute\r\n            )\r\n        |\u003E String.concat \u0022\\n\u0022\r\n        |\u003E this.Report\r\n\r\n    interface IBotTrigger with\r\n\r\n        /// \u003Csummary\u003E\r\n        /// Execute\r\n        /// \u003C/summary\u003E\r\n        member _this.Execute () =\r\n            let time = DateTime.Now\r\n\r\n            if canReport time\r\n            then\r\n                reportTurnover time\r\n            \r\n            TriggerResult.WaitingForOperation\r\n            \r\n        /// \u003Csummary\u003E\r\n        /// EndExecution\r\n        /// \u003C/summary\u003E\r\n        member _this.EndExecution () =\r\n            ()\r\n"
+    },
+    {
+      "id": "e120cb71-6041-4024-8bd6-39fd8598d6d8",
+      "type": "markdown",
+      "source": "# MyTestStrategyBotTrigger Definition\n\nDescribes the \u0060MyTestStrategyBotTrigger\u0060 type, a custom trigger derived from \u0060BotTriggerBase\u0060 that uses a configurable \u0060TimeSpanToExecute\u0060 parameter and executes a test strategy when the scheduled time is reached."
+    },
+    {
+      "id": "649c8abe-a65c-4ec4-a122-2136944afb53",
+      "type": "code",
+      "language": "fsharp",
+      "source": "/// \u003Csummary\u003E\r\n/// MyTestStrategyBotTrigger\r\n/// \u003C/summary\u003E\r\ntype MyTestStrategyBotTrigger (market : Market, selection : Selection, botName : string, botTriggerParameters : BotTriggerParameters, myBfexplorer : IMyBfexplorer) as this =\r\n    inherit BotTriggerBase (market, selection, botName, botTriggerParameters, myBfexplorer)\r\n         \r\n    let timeSpanToExecute = defaultArg (botTriggerParameters.GetParameter\u003Cfloat\u003E \u0022TimeSpanToExecute\u0022) 1.0\r\n    \r\n    let mutable aTimeToExecute : DateTime option = None\r\n\r\n    let canExecute time =        \r\n        match aTimeToExecute with\r\n        | Some timeToExecute -\u003E\r\n            let status = timeToExecute \u003E= time\r\n\r\n            if status\r\n            then\r\n                aTimeToExecute \u003C- None\r\n\r\n            status\r\n\r\n        | None -\u003E aTimeToExecute \u003C- Some (time.AddMinutes timeSpanToExecute); false\r\n\r\n    let getMySelection (time : DateTime) =\r\n        let fromTime = time.AddMinutes -timeSpanToExecute\r\n\r\n        let mySelection, totalTradedVolume =\r\n            getActiveSelections market\r\n            |\u003E List.map (fun selection -\u003E\r\n                    let totalTradedVolume =\r\n                        selection.PriceTradedHistory.TradedPrices\r\n                        |\u003E Seq.filter (fun timePriceTraded -\u003E timePriceTraded.Time \u003E= fromTime)\r\n                        |\u003E Seq.sumBy (fun timePriceTraded -\u003E timePriceTraded.Volume)\r\n\r\n                    selection, totalTradedVolume\r\n                )\r\n            |\u003E List.sortByDescending (fun (_selection, totalTradedVolume) -\u003E totalTradedVolume)\r\n            |\u003E List.head\r\n\r\n        if totalTradedVolume \u003E 0.0\r\n        then\r\n            Some mySelection\r\n        else\r\n            None\r\n        \r\n    interface IBotTrigger with\r\n\r\n        /// \u003Csummary\u003E\r\n        /// Execute\r\n        /// \u003C/summary\u003E\r\n        member _this.Execute () =\r\n            let time = DateTime.Now\r\n\r\n            if canExecute time\r\n            then\r\n                match getMySelection time with\r\n                | Some mySelection -\u003E \r\n\r\n                    TriggerResult.ExecuteMyActionBotOnMarketSelectionAndContinueToExecute (\r\n                            \u0022Bet 10 Euro\u0022, \r\n                            market, mySelection, \r\n                            List.empty, \r\n                            false\r\n                        )\r\n\r\n                | None -\u003E TriggerResult.EndExecutionWithMessage \u0022Nothing has been traded!\u0022\r\n            else            \r\n                TriggerResult.WaitingForOperation\r\n            \r\n        /// \u003Csummary\u003E\r\n        /// EndExecution\r\n        /// \u003C/summary\u003E\r\n        member _this.EndExecution () =\r\n            ()\r\n"
+    },
+    {
+      "id": "873d1091-b94a-44ab-ba04-a88ff2976ec7",
+      "type": "markdown",
+      "source": "# Bot Trigger Setup Utilities\n\nDescribes the helper functions that create an \u0060IMyBfexplorer\u0060 wrapper and configure the \u0060myBotTrigger\u0060 instance from the BFexplorer console and selected market."
+    },
+    {
+      "id": "44771a23-c4d2-4a42-9f83-b65c5969cd02",
+      "type": "code",
+      "language": "fsharp",
+      "source": "let createIMyBfexplorer (market, iBfexplorerConsole : IBfexplorerConsole) =\r\n    let iBfexplorerService = iBfexplorerConsole.BfexplorerService\r\n\r\n    { \r\n        new IMyBfexplorer with\r\n            \r\n            member _.OpenBetEvent\r\n                with get () = iBfexplorerService.Bfexplorer.GetOpenBetEvent market\r\n\r\n            member _.BfexplorerService\r\n                with get () = iBfexplorerService\r\n    }\r\n\r\nlet setupMyBotTrigger (iBfexplorerConsole : IBfexplorerConsole) =\r\n    let market = iBfexplorerConsole.ActiveMarket\r\n    let selection = iBfexplorerConsole.ActiveSelection\r\n    let botTriggerParameters = BotTriggerParameters (String.Empty, String.Empty)    \r\n    let myBfexplorer = createIMyBfexplorer (market, iBfexplorerConsole)\r\n\r\n    ShowTurnoverPerMinute (market, selection, \u0022Show the turnover per minute\u0022, botTriggerParameters, myBfexplorer)\r\n\r\nlet setupMyTestStrategyBotTrigger (iBfexplorerConsole : IBfexplorerConsole) =\r\n    let market = iBfexplorerConsole.ActiveMarket\r\n    let selection = iBfexplorerConsole.ActiveSelection\r\n    let botTriggerParameters = BotTriggerParameters (String.Empty, String.Empty)    \r\n    let myBfexplorer = createIMyBfexplorer (market, iBfexplorerConsole)\r\n\r\n    MyTestStrategyBotTrigger (market, selection, \u0022My test strategy bot trigger\u0022, botTriggerParameters, myBfexplorer)    \r\n"
+    },
+    {
+      "id": "d6b746e3-1773-4732-93fd-76b475a9ca8f",
+      "type": "markdown",
+      "source": "# Instantiate the Bot Trigger\n\nDescribes the creation of \u0060myBotTrigger\u0060 by invoking the setup function with the current BFexplorer console and returning the configured trigger instance."
+    },
+    {
+      "id": "b61ef445-32fa-43b1-aad3-17af3647521b",
+      "type": "code",
+      "language": "fsharp",
+      "source": "let myBotTrigger = setupMyBotTrigger (bfexplorerHost :\u003E IBfexplorerConsole)\r\n\r\nmyBotTrigger",
+      "outputs": [
+        {
+          "mimeType": "text/plain",
+          "content": "FSI_0011\u002BShowTurnoverPerMinute"
+        }
+      ]
+    },
+    {
+      "id": "653e088c-818c-47af-8dba-730a396e087e",
+      "type": "markdown",
+      "source": "# Execute Bot Trigger Helper\n\nDescribes the helper function that executes a bot trigger on the BFexplorer UI thread, waits for the result, and prints the returned \u0060TriggerResult\u0060."
+    },
+    {
+      "id": "25cb58e3-819a-4c3e-80c6-939c491278e0",
+      "type": "code",
+      "language": "fsharp",
+      "source": "let executeBotTrigger (botTrigger : IBotTrigger, iBfexplorerConsole : IBfexplorerConsole) =    \r\n    let triggerResult = \r\n        let uiApplication = iBfexplorerConsole.BfexplorerService.UiApplication\r\n\r\n        uiApplication.ExecuteAndReturn\u003CTriggerResult\u003E (fun () -\u003E botTrigger.Execute ())\r\n        |\u003E Async.RunSynchronously\r\n\r\n    printfn \u0022%A\u0022 triggerResult"
+    },
+    {
+      "id": "12e1ca98-35e2-4618-aad7-dc26c6860b68",
+      "type": "markdown",
+      "source": "# Run the Created Bot Trigger\n\nDescribes execution of \u0060myBotTrigger\u0060 using the helper function and records the trigger result from the BFexplorer service."
+    },
+    {
+      "id": "89782cac-9851-46a2-9ca9-d8a3db91c22b",
+      "type": "code",
+      "language": "fsharp",
+      "source": "executeBotTrigger (myBotTrigger, bfexplorerHost :\u003E IBfexplorerConsole)",
+      "outputs": [
+        {
+          "mimeType": "text/plain",
+          "content": "WaitingForOperation\r\n"
+        }
+      ]
+    },
+    {
+      "id": "314dd21e-f279-48d0-bc58-1f637062180f",
+      "type": "markdown",
+      "source": "# Setup MyTestStrategyBotTrigger Instance\n\nDescribes the creation of \u0060myTestStrategyBotTrigger\u0060 using the custom strategy setup function and returns the configured trigger object."
+    },
+    {
+      "id": "3e495781-4a92-4e2f-96ed-574ddd4c6f56",
+      "type": "code",
+      "language": "fsharp",
+      "source": "let myTestStrategyBotTrigger = setupMyTestStrategyBotTrigger (bfexplorerHost :\u003E IBfexplorerConsole)\r\n\r\nmyTestStrategyBotTrigger",
+      "outputs": [
+        {
+          "mimeType": "text/plain",
+          "content": "FSI_0012\u002BMyTestStrategyBotTrigger"
+        }
+      ]
+    },
+    {
+      "id": "4912dadc-eade-439c-b1fa-b635fd560b09",
+      "type": "markdown",
+      "source": "# Execute MyTestStrategyBotTrigger\n\nDescribes the execution of the custom strategy bot trigger and logs the outcome of that trigger action."
+    },
+    {
+      "id": "ffc3da37-9d59-471a-a7bb-6706e4602a38",
+      "type": "code",
+      "language": "fsharp",
+      "source": "executeBotTrigger (myTestStrategyBotTrigger, bfexplorerHost :\u003E IBfexplorerConsole)",
+      "outputs": [
+        {
+          "mimeType": "text/plain",
+          "content": "ExecuteMyActionBotOnMarketSelectionAndContinueToExecute\n  (\u0022Bet 10 Euro\u0022, Pontefract 21st Apr - 16:27 1m2f Hcap, Marhaba Ghaiyyath, [],\n   false)\r\n"
+        }
+      ]
+    }
+  ]
+}

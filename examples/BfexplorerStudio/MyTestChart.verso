@@ -19,7 +19,7 @@
       "id": "1fc65fbd-e8e6-4ec1-afe4-44e5aba37e5d",
       "type": "code",
       "language": "python",
-      "source": "import sys\r\nimport subprocess\r\nimport importlib.util\r\n\r\nrequired_packages = [\u0022seaborn\u0022, \u0022pandas\u0022, \u0022matplotlib\u0022]\r\n\r\nfor package in required_packages:\r\n    if importlib.util.find_spec(package) is None:\r\n        subprocess.check_call([sys.executable, \u0022-m\u0022, \u0022pip\u0022, \u0022install\u0022, package])\r\n"
+      "source": "#!pip install seaborn pandas matplotlib\r\n\r\n\u0027\u0027\u0027\r\nimport sys\r\nimport subprocess\r\nimport importlib.util\r\n\r\nrequired_packages = [\u0022seaborn\u0022, \u0022pandas\u0022, \u0022matplotlib\u0022]\r\n\r\nfor package in required_packages:\r\n    if importlib.util.find_spec(package) is None:\r\n        # Use Windows cmd to run pip install\r\n        subprocess.check_call([\u0022cmd\u0022, \u0022/c\u0022, f\u0022pip install {package}\u0022])\r\n\u0027\u0027\u0027"
     },
     {
       "id": "a9f04773-3376-4b16-a235-83e5d09e097d",

@@ -1,15 +1,12 @@
 # Ideas — Research & Integration Notes
 
-This folder contains short idea notes, integration specs, and experiment summaries intended to guide development and prototyping.
+This folder contains idea notes, integration specs, and experiment summaries to guide development and prototyping for Betfair AI trading.
 
-Files:
+## Files
 
-- `BFExplorer_ResidualLiquidityGate.md` — Summary of Maurice Berk's "Two Markets, One Race" article and a concrete BFExplorer integration plan for a residual-liquidity gating signal.
-- `SectionalTimesAndMargins.md` — Notes on Alan Potts' article about sectional times and strategic ideas for pace and margin analysis.
-- `FineFormMasterFormula.md` — Research summary of the Fine Form Master Formula thread, highlighting rules, filters, and staking discussions.
-- `CrisisOpportunitiesBfexplorerStrategies.md` — Analysis of Maurice Berk's "Crises Create Opportunities" article with 8 actionable strategy ideas for BFExplorer, including market segmentation, edge degradation detection, data quality monitoring, safe deployments, and operational resilience.
+- **BFExplorer_ResidualLiquidityGate.md**: Residual-liquidity gating signal integration plan.
+- **SectionalTimesAndMargins.md**: Sectional times and margin analysis ideas.
+- **FineFormMasterFormula.md**: Fine Form Master Formula research summary.
+- **CrisisOpportunitiesBfexplorerStrategies.md**: Strategy ideas for operational resilience and market segmentation.
 
-Usage:
-
-- Use these notes as lightweight specs for prototyping; they are not formal design documents.
-- Add more idea files or link back to experiments and notebooks in `docs/Research` as prototypes are implemented.
+Use these notes as lightweight specs for prototyping and reference. Add new idea files as needed.

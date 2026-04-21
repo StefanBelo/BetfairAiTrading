@@ -1,0 +1,89 @@
+{
+  "verso": "1.0",
+  "metadata": {
+    "modified": "2026-04-21T06:45:54.6029973+00:00",
+    "defaultKernel": "csharp",
+    "activeLayout": "notebook"
+  },
+  "cells": [
+    {
+      "id": "6177e455-b3a3-435f-b402-1091ba129fbc",
+      "type": "markdown",
+      "source": "# Setup assemblies and namespaces\n\nLoad the Bfexplorer and Betfair assemblies required for the notebook and open the main F# namespaces used by the subsequent code cells."
+    },
+    {
+      "id": "3740632f-beef-4658-acac-47e0ebe802d3",
+      "type": "code",
+      "language": "fsharp",
+      "source": "//#I @\u0022E:\\Projects\\Bfexplorer\\Development\\Applications\\BeloSoft.Bfexplorer.App\\bin\\Debug\\net10.0-windows\u0022\r\n\r\n#r \u0022BeloSoft.Data.dll\u0022\r\n#r \u0022BeloSoft.Betfair.API.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.API.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Host.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Domain.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Service.Core.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Service.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Interoperability.dll\u0022\r\n\r\nopen BeloSoft.Data\r\nopen BeloSoft.Bfexplorer\r\nopen BeloSoft.Bfexplorer.Service\r\nopen BeloSoft.Bfexplorer.Domain\r\nopen BeloSoft.Bfexplorer.Interoperability"
+    },
+    {
+      "id": "44a8731d-4555-4037-84cd-59b61039bbe0",
+      "type": "markdown",
+      "source": "# Login and account balance\n\nCreate a Bfexplorer service instance, log in with saved Betfair credentials, and retrieve the account balance for display."
+    },
+    {
+      "id": "0cc836c8-94c1-41cd-ab54-02f47a2470bd",
+      "type": "code",
+      "language": "fsharp",
+      "source": "let bfexplorerService = BfexplorerService (UiApplication = BfexplorerHost (), initializeBotManager = false)\r\n\r\nmatch GetMyBetfairCredentials () with\r\n| Some (username, password) -\u003E\r\n\r\n    let doLogin () = async {\r\n        if bfexplorerService.ServiceStatus.IsAuthorized\r\n        then\r\n            return Result.Success\r\n        else \r\n            match! bfexplorerService.Login (username, password) with\r\n            | DataSuccessFailure.Success _ -\u003E return Result.Success\r\n            | DataSuccessFailure.Failure (_, _, errorMessage) -\u003E return Result.Failure errorMessage\r\n    }\r\n\r\n    async {\r\n        match! doLogin () with\r\n        | Result.Success -\u003E\r\n\r\n            let! resultAccountFunds = bfexplorerService.GetAccountFunds ()\r\n\r\n            printfn \u0022%s\\n\u0022 \u003C|\r\n                match resultAccountFunds with\r\n                | DataResult.Success accountFunds -\u003E sprintf \u0022My account balance %.2f\u0022 accountFunds.AvailableToBetBalance\r\n                | DataResult.Failure errorMessage -\u003E errorMessage\r\n            \r\n        | Result.Failure errorMessage -\u003E printfn \u0022Failed to login: %s\u0022 errorMessage\r\n    }\r\n    |\u003E Async.RunSynchronously\r\n\r\n| None -\u003E printfn \u0022Please set your credentials to the enviroment variables: BETFAIR_USERNAME, BETFAIR_PASSWORD.\u0022\r\n",
+      "outputs": [
+        {
+          "mimeType": "text/plain",
+          "content": "My account balance 467.68\n\r\n"
+        }
+      ]
+    },
+    {
+      "id": "e6e0a4b5-6df9-4a48-8d1d-a1c835953b96",
+      "type": "markdown",
+      "source": "# Active market lookup\n\nUse the Bfexplorer application client to fetch the currently active market ID and print it."
+    },
+    {
+      "id": "47ef2845-9bef-45b8-be30-3c82604a6352",
+      "type": "code",
+      "language": "fsharp",
+      "source": "async {    \r\n    let doGetActiveMarket () =\r\n        let bfexplorerApplication = Services.CreateBfexplorerApplicationClient ()\r\n\r\n        task {\r\n            try\r\n                let! marketResult = bfexplorerApplication.GetActiveMarket ()\r\n\r\n                return DataResult.Success marketResult\r\n            with\r\n            | ex -\u003E return DataResult.Failure ex.Message\r\n        }\r\n        |\u003E Async.AwaitTask\r\n\r\n    match! doGetActiveMarket () with\r\n    | DataResult.Success marketResult -\u003E \r\n\r\n        let marketId = marketResult.MarketId\r\n\r\n        Variables.Set(\u0022marketId\u0022, marketId) \r\n        \r\n        printfn \u0022The active market in bfexplorer: %s\u0022 marketId\r\n\r\n    | DataResult.Failure errorMessage -\u003E printfn \u0022Error: %s\u0022 errorMessage\r\n}\r\n|\u003E Async.RunSynchronously\r\n",
+      "outputs": [
+        {
+          "mimeType": "text/plain",
+          "content": "The active market in bfexplorer: 1.257042670\r\n"
+        }
+      ]
+    },
+    {
+      "id": "78049a38-3648-4742-89c1-7135a157e862",
+      "type": "markdown",
+      "source": "# Market data retrieval\n\nDefine a helper to print market and selection details, then fetch market data for the active market ID and display the market name plus latest prices."
+    },
+    {
+      "id": "5f6df58e-72d2-4e91-b552-079b4817acbe",
+      "type": "code",
+      "language": "fsharp",
+      "source": "let showMarket (market : Market) =\r\n    printfn \u0022%s\\n\u0022 market.MarketFullName\r\n\r\n    getActiveSelections market\r\n    |\u003E Seq.map (fun selection -\u003E sprintf \u0022%s ~ %.2f | %.2f\u0022 selection.Name selection.LastPriceTraded selection.TotalMatched)\r\n    |\u003E String.concat \u0022\\n\u0022\r\n    |\u003E printfn \u0022%s\u0022\r\n\r\nprintfn \u0022Get market data for: %s\u0022 marketId\r\n\r\nasync {\r\n    match! bfexplorerService.GetMarket marketId with\r\n    | DataResult.Success myMarket -\u003E \r\n    \r\n        Variables.Set(\u0022myMarket\u0022, myMarket) \r\n        showMarket myMarket\r\n\r\n    | DataResult.Failure errorMessage -\u003E printfn \u0022Failed to get market: %s\u0022 errorMessage\r\n}\r\n|\u003E Async.RunSynchronously",
+      "outputs": [
+        {
+          "mimeType": "text/plain",
+          "content": "Get market data for: 1.257042670\r\nPontefract 21st Apr - 14:42 5f Nov Stks\n\r\nJolly Good Fellows ~ 4.70 | 1037.44\nSea Mirage ~ 5.10 | 913.60\nClaret And Blues ~ 6.40 | 616.86\nMargarets Pearl ~ 7.00 | 654.54\nToo Many Spirits ~ 8.00 | 246.23\nCydney Sweenie ~ 10.00 | 344.15\nUbettanotblink ~ 20.00 | 72.12\nVillage Hall ~ 28.00 | 63.84\r\n"
+        }
+      ]
+    },
+    {
+      "id": "cba52ab5-9ddc-4933-ae46-c74125931e1b",
+      "type": "markdown",
+      "source": "# Market update\n\nRefresh the stored market data by calling \u0060UpdateMarket\u0060 on \u0060bfexplorerService\u0060, then re-display the updated market and selection prices."
+    },
+    {
+      "id": "851d1c70-3177-4aba-9a3d-0d8dc3d439e1",
+      "type": "code",
+      "language": "fsharp",
+      "source": "async {\r\n    match! bfexplorerService.UpdateMarket myMarket with\r\n    | Result.Success -\u003E showMarket myMarket\r\n    | Result.Failure errorMessage -\u003E printfn \u0022Failed to update market: %s\u0022 errorMessage\r\n}\r\n|\u003E Async.RunSynchronously",
+      "outputs": [
+        {
+          "mimeType": "text/plain",
+          "content": "Pontefract 21st Apr - 14:42 5f Nov Stks\n\r\nJolly Good Fellows ~ 4.70 | 1037.44\nSea Mirage ~ 5.10 | 913.60\nClaret And Blues ~ 6.40 | 616.86\nMargarets Pearl ~ 7.00 | 654.54\nToo Many Spirits ~ 8.00 | 246.23\nCydney Sweenie ~ 10.00 | 344.15\nUbettanotblink ~ 20.00 | 72.12\nVillage Hall ~ 28.00 | 63.84\r\n"
+        }
+      ]
+    }
+  ]
+}

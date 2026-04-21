@@ -2,8 +2,8 @@ import sys
 import subprocess
 import importlib.util
 
-import time
-start = time.perf_counter()
+#import time
+#start = time.perf_counter()
 
 required_packages = ["seaborn", "pandas", "matplotlib"]
 
@@ -37,12 +37,11 @@ ax2.set_title("Volume")
 ax2.set_ylabel("Volume")
 ax2.set_xlabel("Time")
 
-
 fig.autofmt_xdate()
 plt.tight_layout()
 plt.savefig('E:\Temp\output.png')
 
-#plt.show()
+plt.show()
 
-end = time.perf_counter()
-print(f"Execution time: {(end - start):.2f} s")
+#end = time.perf_counter()
+#print(f"Execution time: {(end - start):.2f} s")
