@@ -1,1 +1,0 @@
-jQuery().select2&&$('[data-toggle="select2"]').select2();

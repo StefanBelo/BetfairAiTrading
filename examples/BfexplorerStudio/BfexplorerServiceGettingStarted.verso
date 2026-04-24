@@ -15,7 +15,7 @@
       "id": "3740632f-beef-4658-acac-47e0ebe802d3",
       "type": "code",
       "language": "fsharp",
-      "source": "//#I @\u0022E:\\Projects\\Bfexplorer\\Development\\Applications\\BeloSoft.Bfexplorer.App\\bin\\Debug\\net10.0-windows\u0022\r\n\r\n#r \u0022BeloSoft.Data.dll\u0022\r\n#r \u0022BeloSoft.Betfair.API.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.API.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Host.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Domain.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Service.Core.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Service.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Interoperability.dll\u0022\r\n\r\nopen BeloSoft.Data\r\nopen BeloSoft.Bfexplorer\r\nopen BeloSoft.Bfexplorer.Service\r\nopen BeloSoft.Bfexplorer.Domain\r\nopen BeloSoft.Bfexplorer.Interoperability"
+      "source": "#I @\u0022E:\\Projects\\Bfexplorer\\Development\\Applications\\BeloSoft.Bfexplorer.App\\bin\\Debug\\net10.0-windows\u0022\r\n\r\n#r \u0022BeloSoft.Data.dll\u0022\r\n#r \u0022BeloSoft.Betfair.API.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.API.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Host.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Domain.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Service.Core.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Service.dll\u0022\r\n#r \u0022BeloSoft.Bfexplorer.Interoperability.dll\u0022\r\n\r\nopen BeloSoft.Data\r\nopen BeloSoft.Bfexplorer\r\nopen BeloSoft.Bfexplorer.Service\r\nopen BeloSoft.Bfexplorer.Domain\r\nopen BeloSoft.Bfexplorer.Interoperability"
     },
     {
       "id": "44a8731d-4555-4037-84cd-59b61039bbe0",
@@ -47,7 +47,7 @@
       "outputs": [
         {
           "mimeType": "text/plain",
-          "content": "The active market in bfexplorer: 1.257042670\r\n"
+          "content": "The active market in bfexplorer: 1.257165307\r\n"
         }
       ]
     },
@@ -64,7 +64,7 @@
       "outputs": [
         {
           "mimeType": "text/plain",
-          "content": "Get market data for: 1.257042670\r\nPontefract 21st Apr - 14:42 5f Nov Stks\n\r\nJolly Good Fellows ~ 4.70 | 1037.44\nSea Mirage ~ 5.10 | 913.60\nClaret And Blues ~ 6.40 | 616.86\nMargarets Pearl ~ 7.00 | 654.54\nToo Many Spirits ~ 8.00 | 246.23\nCydney Sweenie ~ 10.00 | 344.15\nUbettanotblink ~ 20.00 | 72.12\nVillage Hall ~ 28.00 | 63.84\r\n"
+          "content": "Get market data for: 1.257165307\r\nWarwick 23rd Apr - 17:00 2m Hcap Chs\n\r\nLunar Ocean ~ 4.90 | 75688.62\nZoeman ~ 4.00 | 44379.97\nForcetoreckonwith ~ 2.98 | 36840.47\nBlackijo Dagrostis ~ 14.00 | 12812.30\nGolden Millie ~ 10.00 | 8539.86\nLone Soldier ~ 30.00 | 8260.84\nIronica De Thaix ~ 44.00 | 6524.80\r\n"
         }
       ]
     },
@@ -81,7 +81,7 @@
       "outputs": [
         {
           "mimeType": "text/plain",
-          "content": "Pontefract 21st Apr - 14:42 5f Nov Stks\n\r\nJolly Good Fellows ~ 4.70 | 1037.44\nSea Mirage ~ 5.10 | 913.60\nClaret And Blues ~ 6.40 | 616.86\nMargarets Pearl ~ 7.00 | 654.54\nToo Many Spirits ~ 8.00 | 246.23\nCydney Sweenie ~ 10.00 | 344.15\nUbettanotblink ~ 20.00 | 72.12\nVillage Hall ~ 28.00 | 63.84\r\n"
+          "content": "Warwick 23rd Apr - 17:00 2m Hcap Chs\n\r\nLunar Ocean ~ 5.00 | 76279.63\nZoeman ~ 3.55 | 44884.69\nForcetoreckonwith ~ 3.25 | 37338.82\nBlackijo Dagrostis ~ 14.50 | 12905.87\nGolden Millie ~ 12.50 | 8635.26\nLone Soldier ~ 34.00 | 8306.79\nIronica De Thaix ~ 50.00 | 6623.19\r\n"
         }
       ]
     }

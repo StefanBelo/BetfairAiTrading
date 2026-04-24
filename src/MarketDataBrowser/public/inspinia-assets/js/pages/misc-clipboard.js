@@ -1,1 +1,0 @@
-let elements=document.querySelectorAll("[data-clipboard-target]");elements&&0<elements.length&&new ClipboardJS(elements);

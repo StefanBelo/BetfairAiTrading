@@ -12,12 +12,14 @@ let printIBfexplorerConsoleMembers () =
     let t = typeof<IBfexplorerConsole>
     let members = t.GetMembers(BindingFlags.Public ||| BindingFlags.Instance)
     members |> Array.sortBy (fun m -> m.Name) |> Array.iter (fun m -> 
-        let returnType = 
+        let aReturnType = 
             match m with
-            | :? PropertyInfo as p -> p.PropertyType.FullName
-            | :? MethodInfo as meth -> meth.ReturnType.FullName
-            | _ -> ""
-        printfn "%s (%A) : %s" m.Name m.MemberType returnType
+            | :? PropertyInfo as p -> Some p.PropertyType
+            | :? MethodInfo as meth -> Some meth.ReturnType
+            | _ -> None
+
+        aReturnType 
+        |> Option.iter (fun returnType-> printfn "%s (%A) : %A" m.Name m.MemberType returnType)
     )
 
-printIBfexplorerConsoleMembers() ;;
+printIBfexplorerConsoleMembers()

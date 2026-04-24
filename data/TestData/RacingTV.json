@@ -1,2250 +1,1733 @@
 {
-    "meta": {
-        "status": 200,
-        "code": "OK"
+    "market": {
+        "marketId": "1.257165321",
+        "startTime": "2026-04-23T18:02:00+02:00",
+        "eventType": "Horse Racing",
+        "eventName": "Warwick",
+        "marketName": "2m4f Hcap Chs",
+        "status": "Open"
     },
-    "sort": "Price",
-    "race": {
-        "id": 671013,
-        "title": "Bluegrass Relite Maiden Hurdle",
-        "title_full": "Bluegrass Relite Maiden Hurdle (Turf) 4YO+ 2m 1f 105y Winner: €7,200 (20 runners)",
-        "track_condition": "Yielding (Good To Yielding In Places)",
-        "slug": "bluegrass-relite-maiden-hurdle/671013",
-        "ip_hints_overall_pace": "Strong",
-        "analyst_verdict": "BARLEY LANE cemented a very solid start to his career when third at Naas in January and with more to come upped slightly in trip, he looks the answer. Powerful Paddy will doubtless be popular having shaped well on debut for Willie Mullins recently, with Combs also of interest.",
-        "draw_comment": null,
-        "start_time_scheduled": "2026-03-17T13:18:00+00:00",
-        "displays_odds": true,
-        "displays_barriers": false,
-        "displays_premium_data": false,
-        "status": {
-            "state": "scheduled"
-        },
-        "first_prize": {
-            "currency": "eur",
-            "amount": 7200.0,
-            "formatted": "€7,200.00 EUR"
-        },
-        "race_type": "Hurdle",
-        "race_class": null,
-        "eligibility_age": {
-            "start": 4,
-            "end": null
-        },
-        "distance": 3845,
-        "track_type": "Turf",
-        "eligibility_formatted": "4YO+",
-        "distance_formatted": "2m 1f 105y",
-        "rating_limit": null,
-        "rating_limit_range": null,
-        "prize_text": "Winner: €7,200.00",
-        "runner_count_text": "20 runners",
-        "race_number": 1,
-        "has_timeform_data": true,
-        "best_book": 130,
-        "ip_hints_specific_pace": "There is a chance of a pace burnout early, and Dubhain and Out Of Aces are two who could suffer: Such a hotly-contested pace as is on the cards here may be to the benefit of Hey Now and Keep Em Quite who can be expected to be ridden with restraint.",
-        "ip_hints_individual_pace": "Ozark's Walk traded at 10% or less of Betfair SP twice and 25% or less of Betfair SP on 3 of its last 5 starts: Powerful Paddy traded at 10% or less of Betfair SP and 25% or less of Betfair SP on 2 of its last 5 starts.",
-        "meeting": {
-            "id": 154149,
-            "track_condition": "Yielding (Good to Yielding in places)",
-            "date": "2026-03-17",
-            "status": {
-                "state": "dormant"
-            },
-            "weather_icon": "partly_cloudy",
-            "track": {
-                "id": 205,
-                "name": "Down Royal",
-                "slug": "/down-royal",
-                "tv_channel": "RTV",
-                "rtv": true,
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
+    "selectionsData": [
+        {
+            "selectionId": "75497751",
+            "name": "Claim Du Brizais",
+            "data": {
+                "racingTvHorseData": {
+                    "name": "Claim Du Brizais",
+                    "age": 6,
+                    "horseSex": "Mare",
+                    "weight": "11-2",
+                    "daysSinceLastRun": 28,
+                    "focusHorse": true,
+                    "apprenticeClaim": 0,
+                    "timeformStarRating": 5,
+                    "timeformRating": "115p",
+                    "timeformTippedPlace": 1,
+                    "analystComment": "Bumper/hurdles winner who bettered what he achieved on first 3 runs over fences when third in a 9-runner C&D handicap last month. Looks ready to strike on that evidence and he remains open to improvement in this sphere.",
+                    "form": "133763",
+                    "prompts": {
+                        "jockey": "Harry Skelton has a 33.33% Strike Rate over the last 14 days."
+                    },
+                    "statistics": [
+                        {
+                            "raceType": "Chase",
+                            "wins": 0,
+                            "seconds": 0,
+                            "thirds": 2,
+                            "fourths": 0,
+                            "total": 4
+                        },
+                        {
+                            "raceType": "Hurdle",
+                            "wins": 1,
+                            "seconds": 0,
+                            "thirds": 1,
+                            "fourths": 1,
+                            "total": 3
+                        },
+                        {
+                            "raceType": "NH Flat",
+                            "wins": 1,
+                            "seconds": 0,
+                            "thirds": 2,
+                            "fourths": 0,
+                            "total": 3
+                        }
+                    ],
+                    "performances": [
+                        {
+                            "date": "2026-03-26T00:00:00",
+                            "trackName": "WARWICK",
+                            "raceDistance": 4400,
+                            "raceClass": "5",
+                            "raceType": "Chase",
+                            "raceGoing": "Good (Good to Soft in places)",
+                            "groupText": "C5Hc",
+                            "weight": "11-13",
+                            "rating": "96",
+                            "handicap": true,
+                            "finishPosition": 3,
+                            "raceRunnerCount": 9,
+                            "distanceBeatenCumulative": 3,
+                            "inPlayEffort": 0.33,
+                            "commentFull": "back up in trip, shaped well under another ride that hardly saw the jockey throw everything at her; mid-division, jumped fine, went third last, shaken up flat, ran on, at no stage feeling the whip; she can do better still as a chaser and should be winning soon."
+                        },
+                        {
+                            "date": "2026-03-08T00:00:00",
+                            "trackName": "WARWICK",
+                            "raceDistance": 3574,
+                            "raceClass": "4",
+                            "raceType": "Chase",
+                            "raceGoing": "Good to Soft (Good in places)",
+                            "groupText": "C4Hc",
+                            "weight": "11-1",
+                            "rating": "98",
+                            "handicap": true,
+                            "finishPosition": 6,
+                            "raceRunnerCount": 6,
+                            "distanceBeatenCumulative": 16.75,
+                            "inPlayEffort": 0.1,
+                            "commentFull": "is entitled to be sharper for this effort after 5 months off, though essentially continues to underachieve as a chaser; in rear, not always fluent, struggling from seventh, never dangerous."
+                        },
+                        {
+                            "date": "2025-09-26T00:00:00",
+                            "trackName": "WORCESTER",
+                            "raceDistance": 3630,
+                            "raceClass": "5",
+                            "raceType": "Chase",
+                            "raceGoing": "Good",
+                            "groupText": "C5Hc",
+                            "weight": "12-0",
+                            "rating": "100",
+                            "handicap": true,
+                            "finishPosition": 7,
+                            "raceRunnerCount": 11,
+                            "distanceBeatenCumulative": 24.05,
+                            "inPlayEffort": 0.08,
+                            "commentFull": "shouldn't be written off despite 2 somewhat underwhelming runs so far over fences, considerately handled here once it was clear she wouldn't reach the principals, particularly after hitting 3 out (jumped okay otherwise)."
+                        },
+                        {
+                            "date": "2025-08-29T00:00:00",
+                            "trackName": "FONTWELL PARK",
+                            "raceDistance": 3905,
+                            "raceClass": "4",
+                            "raceType": "Chase",
+                            "raceGoing": "Good to Soft",
+                            "groupText": "C4Hc",
+                            "weight": "11-6",
+                            "rating": "102",
+                            "handicap": true,
+                            "finishPosition": 3,
+                            "raceRunnerCount": 4,
+                            "distanceBeatenCumulative": 8.5,
+                            "inPlayEffort": 0.2
+                        },
+                        {
+                            "date": "2025-07-20T00:00:00",
+                            "trackName": "STRATFORD-ON-AVON",
+                            "raceDistance": 4108,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good (Good to Firm in places)",
+                            "groupText": "C5Hc",
+                            "weight": "11-12",
+                            "rating": "103",
+                            "handicap": true,
+                            "finishPosition": 3,
+                            "raceRunnerCount": 6,
+                            "distanceBeatenCumulative": 11.5,
+                            "inPlayEffort": 0.39,
+                            "commentFull": "ran to just a similar level to last time, her opening mark on the stiff side based on that win, if not her bumper form, shaping as though in need of less emphasis on speed, too; in touch, outpaced entering straight, merely plugged on."
+                        },
+                        {
+                            "date": "2025-06-13T00:00:00",
+                            "trackName": "NEWTON ABBOT",
+                            "raceDistance": 3687,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Soft",
+                            "groupText": "C4",
+                            "weight": "11-0",
+                            "rating": "-",
+                            "finishPosition": 1,
+                            "raceRunnerCount": 5,
+                            "distanceBeatenCumulative": 0.2,
+                            "inPlayEffort": 1.04,
+                            "commentFull": "left a disappointing hurdling debut behind dropped in trip 5 weeks on, collaring her better-fancied stable companion in receipt of plenty of weight; waited with, closing when not fluent last, led under pressure dying strides."
+                        },
+                        {
+                            "date": "2025-05-06T00:00:00",
+                            "trackName": "FAKENHAM",
+                            "raceDistance": 4401,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good",
+                            "groupText": "C4",
+                            "weight": "11-6",
+                            "rating": "-",
+                            "finishPosition": 4,
+                            "raceRunnerCount": 5,
+                            "distanceBeatenCumulative": 44.75,
+                            "inPlayEffort": 0.62,
+                            "commentFull": "looked the the pick on bumper form but proved a disappointment on her hurdling debut, beaten by more than lack of stamina up in trip; tracked pace, shaken up approaching 3 out, weakened quickly."
+                        },
+                        {
+                            "date": "2025-04-21T00:00:00",
+                            "trackName": "FAKENHAM",
+                            "raceDistance": 3523,
+                            "raceClass": "4",
+                            "raceType": "NH Flat",
+                            "raceGoing": "Good",
+                            "groupText": "C4",
+                            "weight": "11-2",
+                            "rating": "-",
+                            "finishPosition": 1,
+                            "raceRunnerCount": 9,
+                            "distanceBeatenCumulative": 3.25,
+                            "inPlayEffort": 1.29,
+                            "commentFull": "had undergone a breathing operation since last seen and confirmed bumper debut promise this time with a tongue strap also applied; in touch, challenged home turn, quickened to lead straight, drew clear; likely to make her mark over hurdles next season."
+                        },
+                        {
+                            "date": "2025-02-21T00:00:00",
+                            "trackName": "WARWICK",
+                            "raceDistance": 3520,
+                            "raceClass": "5",
+                            "raceType": "NH Flat",
+                            "raceGoing": "Soft (Good to Soft in places)",
+                            "groupText": "C5G",
+                            "weight": "11-2",
+                            "rating": "-",
+                            "finishPosition": 3,
+                            "raceRunnerCount": 8,
+                            "distanceBeatenCumulative": 23,
+                            "inPlayEffort": 0.47,
+                            "commentFull": "was worryingly weak in the market and rather flattered to deceive, having missed 4 months since finishing a much closer third at Aintree, lack of fitness presumably to blame on more testing ground; held up, not settle fully, steady headway back straight, threatened briefly home turn, faltered, finished tired."
+                        },
+                        {
+                            "date": "2024-10-27T00:00:00",
+                            "trackName": "AINTREE",
+                            "raceDistance": 3729,
+                            "raceClass": "2",
+                            "raceType": "NH Flat",
+                            "raceGoing": "Good (Good to Soft in places)",
+                            "groupText": "C2G",
+                            "weight": "11-1",
+                            "rating": "-",
+                            "finishPosition": 3,
+                            "raceRunnerCount": 12,
+                            "distanceBeatenCumulative": 5.75,
+                            "inPlayEffort": 0.29
+                        }
+                    ]
                 }
-            },
-            "races": [
-                {
-                    "id": 671013,
-                    "title": "Bluegrass Relite Maiden Hurdle",
-                    "title_full": "Bluegrass Relite Maiden Hurdle (Turf) 4YO+ 2m 1f 105y Winner: €7,200 (20 runners)",
-                    "track_condition": "Yielding (Good To Yielding In Places)",
-                    "slug": "bluegrass-relite-maiden-hurdle/671013",
-                    "ip_hints_overall_pace": "Strong",
-                    "analyst_verdict": "BARLEY LANE cemented a very solid start to his career when third at Naas in January and with more to come upped slightly in trip, he looks the answer. Powerful Paddy will doubtless be popular having shaped well on debut for Willie Mullins recently, with Combs also of interest.",
-                    "draw_comment": null,
-                    "start_time_scheduled": "2026-03-17T13:18:00+00:00",
-                    "displays_odds": true,
-                    "displays_barriers": false,
-                    "displays_premium_data": false,
-                    "status": {
-                        "state": "scheduled"
-                    },
-                    "first_prize": {
-                        "currency": "eur",
-                        "amount": 7200.0,
-                        "formatted": "€7,200.00 EUR"
-                    },
-                    "race_type": "Hurdle",
-                    "race_class": null,
-                    "eligibility_age": {
-                        "start": 4,
-                        "end": null
-                    },
-                    "distance": 3845,
-                    "track_type": "Turf",
-                    "eligibility_formatted": "4YO+",
-                    "distance_formatted": "2m 1f 105y",
-                    "rating_limit": null,
-                    "rating_limit_range": null,
-                    "prize_text": "Winner: €7,200.00",
-                    "runner_count_text": "20 runners",
-                    "race_number": 1,
-                    "has_timeform_data": true,
-                    "best_book": 130,
-                    "ip_hints_specific_pace": "There is a chance of a pace burnout early, and Dubhain and Out Of Aces are two who could suffer: Such a hotly-contested pace as is on the cards here may be to the benefit of Hey Now and Keep Em Quite who can be expected to be ridden with restraint.",
-                    "ip_hints_individual_pace": "Ozark's Walk traded at 10% or less of Betfair SP twice and 25% or less of Betfair SP on 3 of its last 5 starts: Powerful Paddy traded at 10% or less of Betfair SP and 25% or less of Betfair SP on 2 of its last 5 starts."
-                },
-                {
-                    "id": 670345,
-                    "title": "Albert Bartlett Triple Crown Series at Punchestown Festival 2026 Qualifier Novice Handicap Hurdle",
-                    "title_full": "Albert Bartlett Triple Crown Series at Punchestown Festival 2026 Qualifier Novice Handicap Hurdle (Turf) 4YO+ 2m 4f 86y Winner: €9,000 (19 runners)",
-                    "track_condition": "Yielding (Good To Yielding In Places)",
-                    "slug": "albert-bartlett-triple-crown-series-at-punchestown-festival-2026-qualifier-novice-handicap-hurdle/670345",
-                    "ip_hints_overall_pace": "Even",
-                    "analyst_verdict": "NEEDS MUST looked sure to play a hand in the finish when departing 2 out at Punchestown 6 weeks ago so must be considered off 1 lb lower. Welluknow and Campbell Black are also shortlisted in a competitive affair.",
-                    "draw_comment": null,
-                    "start_time_scheduled": "2026-03-17T13:53:00+00:00",
-                    "displays_odds": true,
-                    "displays_barriers": false,
-                    "displays_premium_data": false,
-                    "status": {
-                        "state": "scheduled"
-                    },
-                    "first_prize": {
-                        "currency": "eur",
-                        "amount": 9000.0,
-                        "formatted": "€9,000.00 EUR"
-                    },
-                    "race_type": "Hurdle",
-                    "race_class": null,
-                    "eligibility_age": {
-                        "start": 4,
-                        "end": null
-                    },
-                    "distance": 4486,
-                    "track_type": "Turf",
-                    "eligibility_formatted": "4YO+",
-                    "distance_formatted": "2m 4f 86y",
-                    "rating_limit": null,
-                    "rating_limit_range": null,
-                    "prize_text": "Winner: €9,000.00",
-                    "runner_count_text": "19 runners",
-                    "race_number": 2,
-                    "has_timeform_data": true,
-                    "best_book": 132,
-                    "ip_hints_specific_pace": "Irish Champ and Accustomed could capitalise from a more forward position than most: Of the better-fancied horses, Campbell Black is most likely to be ridden furthest from the pace.",
-                    "ip_hints_individual_pace": "Good Option traded at 25% or less of Betfair SP and 50% or less of Betfair SP 3 times on 4 of its last 4 starts: Accustomed traded at 25% or less of Betfair SP and 50% or less of Betfair SP on 2 of its last 5 starts."
-                },
-                {
-                    "id": 670346,
-                    "title": "Bluegrass Respire Handicap Hurdle (0 100) (Div 1)",
-                    "title_full": "Bluegrass Respire Handicap Hurdle (0 100) (Div 1) (Turf) 4YO+ 2m 4f 86y Winner: €6,000 (19 runners)",
-                    "track_condition": "Yielding (Good To Yielding In Places)",
-                    "slug": "bluegrass-respire-handicap-hurdle-0-100-div-1/670346",
-                    "ip_hints_overall_pace": "Even",
-                    "analyst_verdict": "ASWELLASABENTLEY looked a bit unlucky not to go even closer when third here last time and gets the vote for Gavin Cromwell and Keith Donoghue. A market move for Gordon Elliott's new recruit Coppola would make him a potential threat. Jaynemax is respected on the back of her recent Leopardstown second, while Oliver McKiernan's Somersby Roost would also need considering if getting a run.",
-                    "draw_comment": null,
-                    "start_time_scheduled": "2026-03-17T14:28:00+00:00",
-                    "displays_odds": true,
-                    "displays_barriers": false,
-                    "displays_premium_data": false,
-                    "status": {
-                        "state": "scheduled"
-                    },
-                    "first_prize": {
-                        "currency": "eur",
-                        "amount": 6000.0,
-                        "formatted": "€6,000.00 EUR"
-                    },
-                    "race_type": "Hurdle",
-                    "race_class": null,
-                    "eligibility_age": {
-                        "start": 4,
-                        "end": null
-                    },
-                    "distance": 4486,
-                    "track_type": "Turf",
-                    "eligibility_formatted": "4YO+",
-                    "distance_formatted": "2m 4f 86y",
-                    "rating_limit": {
-                        "start": null,
-                        "end": 100
-                    },
-                    "rating_limit_range": "0-100",
-                    "prize_text": "Winner: €6,000.00",
-                    "runner_count_text": "19 runners",
-                    "race_number": 3,
-                    "has_timeform_data": true,
-                    "best_book": 139,
-                    "ip_hints_specific_pace": "Of those forecasted with a better chance, Sunwalk and Bruno From Mars could be the most susceptible in a race in which competition for the lead looks plentiful: There is a chance of a pace burnout early, and Political Stance and Rockstown Girl are two who may benefit from being produced later.",
-                    "ip_hints_individual_pace": "Sunwalk traded at 10% or less of Betfair SP and 50% or less of Betfair SP twice on 3 of its last 5 starts: Political Stance traded at 10% or less of Betfair SP and 50% or less of Betfair SP on 2 of its last 4 starts."
-                },
-                {
-                    "id": 670347,
-                    "title": "Bluegrass Respire Handicap Hurdle (0 100) (Div 2)",
-                    "title_full": "Bluegrass Respire Handicap Hurdle (0 100) (Div 2) (Turf) 4YO+ 2m 4f 86y Winner: €6,000 (20 runners)",
-                    "track_condition": "Yielding (Good To Yielding In Places)",
-                    "slug": "bluegrass-respire-handicap-hurdle-0-100-div-2/670347",
-                    "ip_hints_overall_pace": "Even",
-                    "analyst_verdict": "There were clear signs that BUTTON ROCK is getting the hang of things when fifth at Clonmel on his latest start in December and, with improvement anticipated now back up in trip for this handicap debut, he gets the nod. Fool Me Once's latest effort was hardly inspiring but he is on a good mark judged on bits and pieces of form, while Rebel Cowgirl has to be taken seriously on the back of her breakthrough success at Punchestown. Pleasureofpressure also enters calculations.",
-                    "draw_comment": null,
-                    "start_time_scheduled": "2026-03-17T15:03:00+00:00",
-                    "displays_odds": true,
-                    "displays_barriers": false,
-                    "displays_premium_data": false,
-                    "status": {
-                        "state": "scheduled"
-                    },
-                    "first_prize": {
-                        "currency": "eur",
-                        "amount": 6000.0,
-                        "formatted": "€6,000.00 EUR"
-                    },
-                    "race_type": "Hurdle",
-                    "race_class": null,
-                    "eligibility_age": {
-                        "start": 4,
-                        "end": null
-                    },
-                    "distance": 4486,
-                    "track_type": "Turf",
-                    "eligibility_formatted": "4YO+",
-                    "distance_formatted": "2m 4f 86y",
-                    "rating_limit": {
-                        "start": null,
-                        "end": 100
-                    },
-                    "rating_limit_range": "0-100",
-                    "prize_text": "Winner: €6,000.00",
-                    "runner_count_text": "20 runners",
-                    "race_number": 4,
-                    "has_timeform_data": true,
-                    "best_book": 142,
-                    "ip_hints_specific_pace": "There is a chance of a pace burnout early, and Rebel Cowgirl and Kanog Bay are two who could suffer: Such a hotly-contested pace as is on the cards here may be to the benefit of Pleasureofpressure and Dolly Watkins who can be expected to be ridden with restraint.",
-                    "ip_hints_individual_pace": "What's It To Ya traded at 10% or less of Betfair SP and 50% or less of Betfair SP on 2 of its last 4 starts: Bella Union traded at 25% or less of Betfair SP and 50% or less of Betfair SP twice on 3 of its last 5 starts."
-                },
-                {
-                    "id": 670348,
-                    "title": "Bluegrass Racehorse Cube Chase",
-                    "title_full": "Bluegrass Racehorse Cube Chase (Turf) 5YO+ 3m 2f 50y Winner: €9,600 (5 runners)",
-                    "track_condition": "Good To Yielding",
-                    "slug": "bluegrass-racehorse-cube-chase/670348",
-                    "ip_hints_overall_pace": "Very Weak",
-                    "analyst_verdict": "GERRI COLOMBE ran his most encouraging race of the campaign when runner-up in last month's Bobbyjo and can build on that and prove too strong for returning Grand National hero Nick Rockett.",
-                    "draw_comment": null,
-                    "start_time_scheduled": "2026-03-17T15:38:00+00:00",
-                    "displays_odds": true,
-                    "displays_barriers": false,
-                    "displays_premium_data": false,
-                    "status": {
-                        "state": "scheduled"
-                    },
-                    "first_prize": {
-                        "currency": "eur",
-                        "amount": 9600.0,
-                        "formatted": "€9,600.00 EUR"
-                    },
-                    "race_type": "Chase",
-                    "race_class": null,
-                    "eligibility_age": {
-                        "start": 5,
-                        "end": null
-                    },
-                    "distance": 5770,
-                    "track_type": "Turf",
-                    "eligibility_formatted": "5YO+",
-                    "distance_formatted": "3m 2f 50y",
-                    "rating_limit": null,
-                    "rating_limit_range": null,
-                    "prize_text": "Winner: €9,600.00",
-                    "runner_count_text": "5 runners",
-                    "race_number": 5,
-                    "has_timeform_data": true,
-                    "best_book": 105,
-                    "ip_hints_specific_pace": "In a race that lacks confirmed pace-forcers, Nick Rockett could get the run of things.",
-                    "ip_hints_individual_pace": "Gerri Colombe traded at 10% or less of Betfair SP and 25% or less of Betfair SP on 2 of its last 4 starts."
-                },
-                {
-                    "id": 670349,
-                    "title": "Bluegrass High Performance Rated Novice Chase",
-                    "title_full": "Bluegrass High Performance Rated Novice Chase (Turf) 5YO+ 2m 4f 86y Winner: €12,000 (8 runners)",
-                    "track_condition": "Good To Yielding",
-                    "slug": "bluegrass-high-performance-rated-novice-chase/670349",
-                    "ip_hints_overall_pace": "Very Weak",
-                    "analyst_verdict": "Having won a C\u0026D maiden on Boxing Day, SLANAGAIBHGOLEIR shaped as though still in top form at Gowran and he looks the way to go on these terms. I Am Lorenzo and Ayiko are feared most.",
-                    "draw_comment": null,
-                    "start_time_scheduled": "2026-03-17T16:13:00+00:00",
-                    "displays_odds": true,
-                    "displays_barriers": false,
-                    "displays_premium_data": false,
-                    "status": {
-                        "state": "scheduled"
-                    },
-                    "first_prize": {
-                        "currency": "eur",
-                        "amount": 12000.0,
-                        "formatted": "€12,000.00 EUR"
-                    },
-                    "race_type": "Chase",
-                    "race_class": null,
-                    "eligibility_age": {
-                        "start": 5,
-                        "end": null
-                    },
-                    "distance": 4486,
-                    "track_type": "Turf",
-                    "eligibility_formatted": "5YO+",
-                    "distance_formatted": "2m 4f 86y",
-                    "rating_limit": null,
-                    "rating_limit_range": null,
-                    "prize_text": "Winner: €12,000.00",
-                    "runner_count_text": "8 runners",
-                    "race_number": 6,
-                    "has_timeform_data": true,
-                    "best_book": 113,
-                    "ip_hints_specific_pace": "In a race that lacks confirmed pace-forcers, I Am Lorenzo could get the run of things: Of the better-fancied horses, Ayiko is most likely to be ridden furthest from the pace.",
-                    "ip_hints_individual_pace": null
-                },
-                {
-                    "id": 670350,
-                    "title": "Bluegrass Resolve Cube Hunters Chase",
-                    "title_full": "Bluegrass Resolve Cube Hunters Chase (Turf) 5YO+ 2m 4f 86y Winner: €6,601 (8 runners)",
-                    "track_condition": "Good To Yielding",
-                    "slug": "bluegrass-resolve-cube-hunters-chase/670350",
-                    "ip_hints_overall_pace": "Strong",
-                    "analyst_verdict": "The well-bred CAUSE FOR COMMENT has more to offer in hunters and can strike on the back of his pointing win last month. Ballyphilip and unexposed Sledgehammer are a couple of the other likely sorts.",
-                    "draw_comment": null,
-                    "start_time_scheduled": "2026-03-17T16:48:00+00:00",
-                    "displays_odds": true,
-                    "displays_barriers": false,
-                    "displays_premium_data": false,
-                    "status": {
-                        "state": "scheduled"
-                    },
-                    "first_prize": {
-                        "currency": "eur",
-                        "amount": 6601.0,
-                        "formatted": "€6,601.00 EUR"
-                    },
-                    "race_type": "Chase",
-                    "race_class": null,
-                    "eligibility_age": {
-                        "start": 5,
-                        "end": null
-                    },
-                    "distance": 4486,
-                    "track_type": "Turf",
-                    "eligibility_formatted": "5YO+",
-                    "distance_formatted": "2m 4f 86y",
-                    "rating_limit": null,
-                    "rating_limit_range": null,
-                    "prize_text": "Winner: €6,601.00",
-                    "runner_count_text": "8 runners",
-                    "race_number": 7,
-                    "has_timeform_data": true,
-                    "best_book": 115,
-                    "ip_hints_specific_pace": "There is a chance of a pace burnout early, and Cause For Comment is one who could suffer as a result: A strong early pace seems highly likely. Sledgehammer could be suited if held up as expected.",
-                    "ip_hints_individual_pace": "Cause For Comment traded at 25% or less of Betfair SP and 50% or less of Betfair SP on 2 of its last 3 starts."
-                },
-                {
-                    "id": 670351,
-                    "title": "Bluegrass Mare Prepare Mares Flat Race",
-                    "title_full": "Bluegrass Mare Prepare Mares Flat Race (Turf) 4YO+ 2m 1f 105y Winner: €6,601 (13 runners)",
-                    "track_condition": "Yielding (Good To Yielding In Places)",
-                    "slug": "bluegrass-mare-prepare-mares-flat-race/670351",
-                    "ip_hints_overall_pace": "Even",
-                    "analyst_verdict": "SURFIN USA has been off a long time since her encouraging debut second at Sligo but she's capable of better despite that absence and looks the way to go. Newcomers Lizzie Twigg and Viva Laa Vida are interesting rivals.",
-                    "draw_comment": null,
-                    "start_time_scheduled": "2026-03-17T17:22:00+00:00",
-                    "displays_odds": true,
-                    "displays_barriers": false,
-                    "displays_premium_data": false,
-                    "status": {
-                        "state": "scheduled"
-                    },
-                    "first_prize": {
-                        "currency": "eur",
-                        "amount": 6601.0,
-                        "formatted": "€6,601.00 EUR"
-                    },
-                    "race_type": "Bumper",
-                    "race_class": null,
-                    "eligibility_age": {
-                        "start": 4,
-                        "end": null
-                    },
-                    "distance": 3845,
-                    "track_type": "Turf",
-                    "eligibility_formatted": "4YO+",
-                    "distance_formatted": "2m 1f 105y",
-                    "rating_limit": null,
-                    "rating_limit_range": null,
-                    "prize_text": "Winner: €6,601.00",
-                    "runner_count_text": "13 runners",
-                    "race_number": 8,
-                    "has_timeform_data": true,
-                    "best_book": 125,
-                    "ip_hints_specific_pace": "A decent pace still shouldn’t detract from the chances of those who race on or near the front end such as Surfin Usa: Louve D'arc might not benefit from being ridden as far back as usual for all the gallop is likely to be a reasonable one.",
-                    "ip_hints_individual_pace": "Louve D'arc traded at 25% or less of Betfair SP and 50% or less of Betfair SP on 2 of its last 2 starts."
+            }
+        },
+        {
+            "selectionId": "65709250",
+            "name": "Move With The Beat",
+            "data": {
+                "racingTvHorseData": {
+                    "name": "Move With The Beat",
+                    "age": 7,
+                    "horseSex": "Gelding",
+                    "weight": "12-0",
+                    "daysSinceLastRun": 22,
+                    "focusHorse": false,
+                    "apprenticeClaim": 5,
+                    "timeformStarRating": 3,
+                    "timeformRating": "115",
+                    "analystComment": "Multiple point winner who has found some improvement to win 2 of his last 3 starts, most recently landing a Wincanton handicap chase (2½m, good) in a first-time tongue strap (retained here). 4 lb rise fair enough and likely to give another good account.",
+                    "form": "5RF141",
+                    "prompts": {},
+                    "statistics": [
+                        {
+                            "raceType": "Chase",
+                            "wins": 2,
+                            "seconds": 0,
+                            "thirds": 0,
+                            "fourths": 1,
+                            "total": 8
+                        },
+                        {
+                            "raceType": "Hurdle",
+                            "wins": 0,
+                            "seconds": 0,
+                            "thirds": 0,
+                            "fourths": 2,
+                            "total": 4
+                        }
+                    ],
+                    "performances": [
+                        {
+                            "date": "2026-04-01T00:00:00",
+                            "trackName": "WINCANTON",
+                            "raceDistance": 4435,
+                            "raceClass": "5",
+                            "raceType": "Chase",
+                            "raceGoing": "Good",
+                            "groupText": "C5Hc",
+                            "weight": "12-0",
+                            "rating": "105",
+                            "handicap": true,
+                            "finishPosition": 1,
+                            "raceRunnerCount": 7,
+                            "distanceBeatenCumulative": 0.75,
+                            "inPlayEffort": 1.16,
+                            "commentFull": "proved he isn't reliant on dominating as he got back on the up, the fitting of a tongue strap possibly a difference-maker for all he was probably idling above all to be able to continue pulling out enough to hold off the determined runner-up, possibly idling if anything; tracked pace, not settle fully, jumped on 3 out, tackled from next, ridden out; he's still got age on his side, unlike many at this level of handicap chase."
+                        },
+                        {
+                            "date": "2026-02-26T00:00:00",
+                            "trackName": "TAUNTON",
+                            "raceDistance": 4770,
+                            "raceClass": "4",
+                            "raceType": "Chase",
+                            "raceGoing": "Good to Soft (Soft in places)",
+                            "groupText": "C4Hc",
+                            "weight": "11-12",
+                            "rating": "108",
+                            "handicap": true,
+                            "finishPosition": 4,
+                            "raceRunnerCount": 7,
+                            "distanceBeatenCumulative": 18,
+                            "inPlayEffort": 0.18,
+                            "commentFull": "wasn't disgraced but never threatened to follow up from Ludlow in a race he was unable to dominate in the same way; prominent, lost place when mistake ninth, shaken up 4 out, no extra from 2 out."
+                        },
+                        {
+                            "date": "2026-01-15T00:00:00",
+                            "trackName": "LUDLOW",
+                            "raceDistance": 4411,
+                            "raceClass": "5",
+                            "raceType": "Chase",
+                            "raceGoing": "Good to Soft (Soft in places)",
+                            "groupText": "C5Hc",
+                            "weight": "11-12",
+                            "rating": "103",
+                            "handicap": true,
+                            "finishPosition": 1,
+                            "raceRunnerCount": 12,
+                            "distanceBeatenCumulative": 2,
+                            "inPlayEffort": 1.1,
+                            "commentFull": "made amends for his Taunton mishap from a 6 lb higher mark, again going with plenty of zest back down in trip and seeming to do only what was required after the last; made running, went with enthusiasm, pressed on approaching 4 out, in command before last, idled near finish; he's shown no signs of giving trouble at the start since Hereford and will continue to take plenty of beating at a similar level."
+                        },
+                        {
+                            "date": "2025-12-30T00:00:00",
+                            "trackName": "TAUNTON",
+                            "raceDistance": 5063,
+                            "raceClass": "4",
+                            "raceType": "Chase",
+                            "raceGoing": "Good",
+                            "groupText": "C4Hc",
+                            "weight": "11-5",
+                            "rating": "97",
+                            "handicap": true,
+                            "raceRunnerCount": 10,
+                            "distanceBeatenCumulative": 34.85,
+                            "inPlayEffort": 0.73,
+                            "commentFull": "jumped off without issue this time and was in the process of showing improved form when departing, still in with every chance when landing steeply at the last, likely to make amends if he can stay on his best behaviour; in touch, travelled fluently, close up 3 out, upsides when fell last."
+                        },
+                        {
+                            "date": "2025-12-10T00:00:00",
+                            "trackName": "HEREFORD",
+                            "raceDistance": 4594,
+                            "raceClass": "5",
+                            "raceType": "Chase",
+                            "raceGoing": "Good to Soft",
+                            "groupText": "C5Hc",
+                            "weight": "11-11",
+                            "rating": "97",
+                            "handicap": true,
+                            "raceRunnerCount": 13,
+                            "distanceBeatenCumulative": 35.5,
+                            "inPlayEffort": 0.02,
+                            "commentFull": "refused to race and must now be treated with caution for all he's clearly interesting from this sort of mark."
+                        },
+                        {
+                            "date": "2025-11-17T00:00:00",
+                            "trackName": "EXETER",
+                            "raceDistance": 5334,
+                            "raceClass": "5",
+                            "raceType": "Chase",
+                            "raceGoing": "Good to Soft (Good in places)",
+                            "groupText": "C5Hc",
+                            "weight": "11-13",
+                            "rating": "99",
+                            "handicap": true,
+                            "finishPosition": 5,
+                            "raceRunnerCount": 10,
+                            "distanceBeatenCumulative": 15.3,
+                            "inPlayEffort": 0.14,
+                            "commentFull": "a multiple point winner since leaving Emma Lavelle, shaped better than the distance beaten suggests back under Rules, understandably unable to sustain a strong gallop and likely to last longer next time; made running, went with enthusiasm, headed 4 out, tied up after next; capable of better."
+                        },
+                        {
+                            "date": "2024-10-31T00:00:00",
+                            "trackName": "STRATFORD-ON-AVON",
+                            "raceDistance": 4965,
+                            "raceClass": "5",
+                            "raceType": "Chase",
+                            "raceGoing": "Good to Soft (Good in places)",
+                            "groupText": "C5Hc",
+                            "weight": "11-10",
+                            "rating": "100",
+                            "handicap": true,
+                            "raceRunnerCount": 16,
+                            "distanceBeatenCumulative": 71.1,
+                            "inPlayEffort": 0.05,
+                            "commentFull": "was upped markedly in trip from his chasing debut but didn't get the chance to show his suitability to it, early evidence suggesting his jumping needs plenty of work; held up, untidy fifth, eighth, fell eleventh."
+                        },
+                        {
+                            "date": "2024-10-22T00:00:00",
+                            "trackName": "EXETER",
+                            "raceDistance": 3849,
+                            "raceClass": "5",
+                            "raceType": "Chase",
+                            "raceGoing": "Good to Soft (Good in places)",
+                            "groupText": "C5Hc",
+                            "weight": "12-0",
+                            "rating": "100",
+                            "handicap": true,
+                            "raceRunnerCount": 12,
+                            "distanceBeatenCumulative": 54.6,
+                            "inPlayEffort": 0.49,
+                            "commentFull": "was strong in the betting for a stable showing better signs recently but was held back by a jolting error making his first chase/handicap start 6 months off; handy, lost place when bad mistake seventh, not persevered with, pulled up before 4 out; almost certainly capable of better, with 2 points wins and a pedigree not short of chasers to recommend him."
+                        },
+                        {
+                            "date": "2024-04-19T00:00:00",
+                            "trackName": "EXETER",
+                            "raceDistance": 3681,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good",
+                            "groupText": "C4",
+                            "weight": "11-4",
+                            "rating": "-",
+                            "finishPosition": 4,
+                            "raceRunnerCount": 9,
+                            "distanceBeatenCumulative": 11.5,
+                            "inPlayEffort": 0.09,
+                            "commentFull": "showed more than previously down in trip and has yet to contest a handicap; mid-field, untidy fifth, progress home turn, shaken up 3 out, beaten when clouted last."
+                        },
+                        {
+                            "date": "2024-03-22T00:00:00",
+                            "trackName": "NEWBURY",
+                            "raceDistance": 4518,
+                            "raceClass": "3",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Soft (Soft in places)",
+                            "groupText": "C3",
+                            "weight": "11-2",
+                            "rating": "-",
+                            "finishPosition": 6,
+                            "raceRunnerCount": 8,
+                            "distanceBeatenCumulative": 33.05,
+                            "inPlayEffort": 0.12,
+                            "commentFull": "isn't yet the finished article; waited with, not settle fully, headway to lead out wide before straight, headed soon after 3 out, dropped away, made effort earlier than ideal."
+                        },
+                        {
+                            "date": "2024-03-09T00:00:00",
+                            "trackName": "HEREFORD",
+                            "raceDistance": 4327,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Soft (Soft in Places)",
+                            "groupText": "C4",
+                            "weight": "11-7",
+                            "rating": "-",
+                            "raceRunnerCount": 13,
+                            "distanceBeatenCumulative": 128.15,
+                            "inPlayEffort": 0.02,
+                            "commentFull": "jinked and unseated rider at the first."
+                        },
+                        {
+                            "date": "2024-02-06T00:00:00",
+                            "trackName": "TAUNTON",
+                            "raceDistance": 4181,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good (Good to Soft in places)",
+                            "groupText": "C4",
+                            "weight": "11-2",
+                            "rating": "-",
+                            "finishPosition": 4,
+                            "raceRunnerCount": 10,
+                            "distanceBeatenCumulative": 26.2,
+                            "inPlayEffort": 0.09,
+                            "commentFull": "(£10,000 3-y-o: by Doyen: fourth foal: dam (h59) lightly-raced half-sister to useful hurdler/smart chaser (2m/17f winner) Crossbow Creek and useful hurdler/chaser (stayed 23f) Mwaleshi) a dual point winner, should learn from the experience; mid-division, not always fluent, in touch after 3 out, left behind from next."
+                        }
+                    ]
                 }
-            ]
-        }
-    },
-    "smart_stats": [
-        {
-            "runner": null,
-            "race": "Bluegrass Relite Maiden Hurdle",
-            "value": "26%",
-            "text": "Gordon Elliott's strike rate at DOWN ROYAL since the start of the 2021/22 season",
-            "scratched": null,
-            "withdrawn": null,
-            "race_displays_odds": true
-        },
-        {
-            "runner": "Powerful Paddy",
-            "race": "Bluegrass Relite Maiden Hurdle",
-            "value": "61%",
-            "text": "Mr P. W. Mullins's strike rate on hurdling favourites",
-            "scratched": false,
-            "withdrawn": false,
-            "race_displays_odds": true
-        }
-    ],
-    "runners": [
-        {
-            "id": 8429280,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 482055,
-            "horse_name": "All For Brooke",
-            "owner_name": "Keep The Faith Bloodstock Limited",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": 322,
-            "timeform_star_rating": 2,
-            "focus_horse": false,
-            "jockey_id": 125,
-            "jockey_name": "Phillip Enright",
-            "apprentice_claim": 0,
-            "trainer_id": 1271,
-            "trainer_name": "O McKiernan",
-            "form": "90-",
-            "form_figure": null,
-            "age": 5,
-            "timeform_rating": "0",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Twentieth of 24 in bumper (150/1) at Punchestown (good to soft). Off 10 months. Makes hurdles debut. Tongue strap on for 1st time. RESERVE.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "0",
-            "equipment_text": "z\u003csup\u003e1\u003c/sup\u003e",
-            "format_weight": "11-4",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 22,
-            "cloth_number": 22,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Phillip Enright",
-                "slug": "/p-t-enright"
-            },
-            "trainer": {
-                "name": "O McKiernan",
-                "slug": "/o-mc-kiernan"
-            },
-            "horse": {
-                "id": 482055,
-                "name": "All For Brooke",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/all-for-brooke-ireland",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "g",
-                "age": 5,
-                "age_days": 1901,
-                "dam_name": "Shop Dj",
-                "sire_name": "Marcel",
-                "dam_sire_name": "Dushyantor"
-            },
-            "silk": {
-                "id": 5056918,
-                "press_association_file": {
-                    "filename": "20260317dro131822.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCSFppU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--39dd14253dbfce3cc580ffbfda9c7d14896efbe6/20260317dro131822.svg"
-                },
-                "filename": "s180326/20260317dro131822.svg",
-                "crc32": 761563106
             }
         },
         {
-            "id": 8429258,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 435418,
-            "horse_name": "Arctic Craft",
-            "owner_name": "Neil Gault",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": 115,
-            "timeform_star_rating": 2,
-            "focus_horse": false,
-            "jockey_id": 8186,
-            "jockey_name": "Mr N Gault",
-            "apprentice_claim": 7,
-            "trainer_id": 2362,
-            "trainer_name": "S Millar",
-            "form": "P7714-7",
-            "form_figure": null,
-            "age": 9,
-            "timeform_rating": "-",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Landed a weak bumper in October 2024. Seventh of 8 in bumper at Punchestown (17f, soft, 66/1) 115 days ago. Switches from bumpers to hurdles.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "-",
-            "equipment_text": "",
-            "format_weight": "11-12",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 1,
-            "cloth_number": 1,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Mr N Gault",
-                "slug": "/mr-neil-gault"
-            },
-            "trainer": {
-                "name": "S Millar",
-                "slug": "/s-millar"
-            },
-            "horse": {
-                "id": 435418,
-                "name": "Arctic Craft",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/arctic-craft-ireland",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "g",
-                "age": 9,
-                "age_days": 3362,
-                "dam_name": "Giftcraft",
-                "sire_name": "Arctic Cosmos",
-                "dam_sire_name": "Presenting"
-            },
-            "silk": {
-                "id": 5056878,
-                "press_association_file": {
-                    "filename": "20260317dro131801.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCRDlpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--fde7936cbc4a05f00fecea0642a204c614135e1d/20260317dro131801.svg"
-                },
-                "filename": "s180326/20260317dro131801.svg",
-                "crc32": 1481829827
+            "selectionId": "9993045",
+            "name": "Two To Tango",
+            "data": {
+                "racingTvHorseData": {
+                    "name": "Two To Tango",
+                    "age": 8,
+                    "horseSex": "Gelding",
+                    "weight": "11-13",
+                    "daysSinceLastRun": 26,
+                    "focusHorse": false,
+                    "apprenticeClaim": 0,
+                    "timeformStarRating": 3,
+                    "timeformRating": "114",
+                    "timeformTippedPlace": 3,
+                    "analystComment": "Winless following 11 attempts over hurdles but off the mark at fourth attempt in this sphere, gamely seeing off his 4 rivals with first-time cheekpieces enlisted at Stratford (19f, good to soft). 4 lb rise tolerable and will be a threat if again responding positively to the headgear.",
+                    "form": "3-23221",
+                    "prompts": {
+                        "stride": "Two To Tango has finished 1st for Average Stride Length in 3 of their last 6 starts."
+                    },
+                    "statistics": [
+                        {
+                            "raceType": "Chase",
+                            "wins": 1,
+                            "seconds": 2,
+                            "thirds": 1,
+                            "fourths": 0,
+                            "total": 4
+                        },
+                        {
+                            "raceType": "Hurdle",
+                            "wins": 0,
+                            "seconds": 3,
+                            "thirds": 5,
+                            "fourths": 0,
+                            "total": 11
+                        },
+                        {
+                            "raceType": "NH Flat",
+                            "wins": 0,
+                            "seconds": 0,
+                            "thirds": 1,
+                            "fourths": 0,
+                            "total": 2
+                        }
+                    ],
+                    "performances": [
+                        {
+                            "date": "2026-03-28T00:00:00",
+                            "trackName": "STRATFORD-ON-AVON",
+                            "raceDistance": 4278,
+                            "raceClass": "4",
+                            "raceType": "Chase",
+                            "raceGoing": "Good (Good to Soft in places)",
+                            "groupText": "C4Hc",
+                            "weight": "11-8",
+                            "rating": "104",
+                            "handicap": true,
+                            "finishPosition": 1,
+                            "raceRunnerCount": 5,
+                            "distanceBeatenCumulative": 0.2,
+                            "inPlayEffort": 1.05,
+                            "commentFull": "had been placed numerous times but finally got off the mark after 3 months off, first-time cheekpieces seemingly the catalyst having knuckled down when challenged on the run-in (rider lost whip before last); tracked pace, chased leader before sixth, edged ahead home turn, quickened clear approaching last, tackled run-in, kept on gamely."
+                        },
+                        {
+                            "date": "2025-12-28T00:00:00",
+                            "trackName": "LEICESTER",
+                            "raceDistance": 3501,
+                            "raceClass": "4",
+                            "raceType": "Chase",
+                            "raceGoing": "Good to Soft",
+                            "groupText": "C4Hc",
+                            "weight": "11-4",
+                            "rating": "105",
+                            "handicap": true,
+                            "finishPosition": 2,
+                            "raceRunnerCount": 6,
+                            "distanceBeatenCumulative": 6.5,
+                            "inPlayEffort": 0.24,
+                            "commentFull": "again ran well and his consistency is hard to knock, though he found the winner in a different league; in touch, challenged 3 out, left behind by winner between last 2."
+                        },
+                        {
+                            "date": "2025-12-04T00:00:00",
+                            "trackName": "LEICESTER",
+                            "raceDistance": 3501,
+                            "raceClass": "4",
+                            "raceType": "Chase",
+                            "raceGoing": "Good (Soft in places)",
+                            "groupText": "C4Hc",
+                            "weight": "11-2",
+                            "rating": "105",
+                            "handicap": true,
+                            "finishPosition": 2,
+                            "raceRunnerCount": 3,
+                            "distanceBeatenCumulative": 3,
+                            "inPlayEffort": 0.41,
+                            "commentFull": "has taken pretty well to chasing and would have given the winner more to think about had he landed running at the last, likely that he'll be suited by a return to further, too; in touch, blundered 5 out, outpaced next, left second 3 out, rallied next, closing when lost momentum last."
+                        },
+                        {
+                            "date": "2025-11-20T00:00:00",
+                            "trackName": "WINCANTON",
+                            "raceDistance": 3449,
+                            "raceClass": "4",
+                            "raceType": "Chase",
+                            "raceGoing": "Good",
+                            "groupText": "C4Hc",
+                            "weight": "11-7",
+                            "rating": "105",
+                            "handicap": true,
+                            "finishPosition": 3,
+                            "raceRunnerCount": 8,
+                            "distanceBeatenCumulative": 4.25,
+                            "inPlayEffort": 0.5,
+                            "commentFull": "after 6 months off, matched his hurdles form on debut over fences despite taking a bit of time to warm to his task; raced well off the pace, slow sixth, good progress approaching 3 out, kept on."
+                        },
+                        {
+                            "date": "2025-05-21T00:00:00",
+                            "trackName": "WARWICK",
+                            "raceDistance": 4180,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good",
+                            "groupText": "C4",
+                            "weight": "11-4",
+                            "rating": "-",
+                            "finishPosition": 2,
+                            "raceRunnerCount": 6,
+                            "distanceBeatenCumulative": 11,
+                            "inPlayEffort": 0.65,
+                            "commentFull": "after 10 weeks off, added yet another placing to his record but will remain vulnerable to less-exposed sorts; prominent, ridden when not fluent 2 out, left behind by winner flat."
+                        },
+                        {
+                            "date": "2025-03-10T00:00:00",
+                            "trackName": "PLUMPTON",
+                            "raceDistance": 4514,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good (Good to Soft in places)",
+                            "groupText": "C4Hc",
+                            "weight": "11-10",
+                            "rating": "104",
+                            "handicap": true,
+                            "finishPosition": 3,
+                            "raceRunnerCount": 7,
+                            "distanceBeatenCumulative": 3.5,
+                            "inPlayEffort": 0.66,
+                            "commentFull": "bounced back to form following a breathing operation but a breakthrough win is proving elusive; tracked pace, led soon after 3 out, headed last, no extra final 100 yds."
+                        },
+                        {
+                            "date": "2025-02-04T00:00:00",
+                            "trackName": "TAUNTON",
+                            "raceDistance": 4181,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Soft (Good to Soft in places)",
+                            "groupText": "C5Hc",
+                            "weight": "12-0",
+                            "rating": "105",
+                            "handicap": true,
+                            "finishPosition": 5,
+                            "raceRunnerCount": 12,
+                            "distanceBeatenCumulative": 23.5,
+                            "inPlayEffort": 0.3,
+                            "commentFull": "found run of good form coming to a halt, some old jumping issues resurfacing; raced wide, in touch, not fluent second, flattened fifth, shaken up home turn, not quicken approaching usual 2 out."
+                        },
+                        {
+                            "date": "2024-12-30T00:00:00",
+                            "trackName": "TAUNTON",
+                            "raceDistance": 4181,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Soft (Good in places)",
+                            "groupText": "C4Hc",
+                            "weight": "11-5",
+                            "rating": "105",
+                            "handicap": true,
+                            "finishPosition": 2,
+                            "raceRunnerCount": 8,
+                            "distanceBeatenCumulative": 5.5,
+                            "inPlayEffort": 0.5,
+                            "commentFull": "again ran well, placed on 6 of his 8 starts over hurdles now, a first success surely just around the corner; mid-field, hit second, smooth headway before 3 out, shaken up home turn, went second 2 out, keeping on when pecked last, no match for winner."
+                        },
+                        {
+                            "date": "2024-11-30T00:00:00",
+                            "trackName": "DONCASTER",
+                            "raceDistance": 3648,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good (Good to Soft in places)",
+                            "groupText": "C4Hc",
+                            "weight": "11-0",
+                            "rating": "105",
+                            "handicap": true,
+                            "finishPosition": 3,
+                            "raceRunnerCount": 7,
+                            "distanceBeatenCumulative": 3.75,
+                            "inPlayEffort": 0.24,
+                            "commentFull": "again ran creditably and is proving consistent, earning the bronze medal for a third outing in a row; mid-field early but settled towards in rear after third, headway after 3 out, plugged on; it would be no surprise to see him back up in trip."
+                        },
+                        {
+                            "date": "2024-11-04T00:00:00",
+                            "trackName": "PLUMPTON",
+                            "raceDistance": 3495,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good",
+                            "groupText": "C4Hc",
+                            "weight": "11-2",
+                            "rating": "106",
+                            "handicap": true,
+                            "finishPosition": 3,
+                            "raceRunnerCount": 6,
+                            "distanceBeatenCumulative": 5.7,
+                            "inPlayEffort": 0.42,
+                            "commentFull": "kept mistakes to a minimum this time but was no better than the result despite finding some trouble; held up, took closer order before 3 out, short of room leaving back straight, driven soon after, held when untidy last."
+                        },
+                        {
+                            "date": "2024-10-17T00:00:00",
+                            "trackName": "WINCANTON",
+                            "raceDistance": 3350,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good",
+                            "groupText": "C4Hc",
+                            "weight": "11-3",
+                            "rating": "106",
+                            "handicap": true,
+                            "finishPosition": 3,
+                            "raceRunnerCount": 10,
+                            "distanceBeatenCumulative": 3,
+                            "inPlayEffort": 0.14,
+                            "commentFull": "after 4 months off, shaped as well as could be expected faced with such a test of speed, though he still lacks polish in the jumping department; mid-division, not always fluent, some headway before 2 out, left in a place on landing there, kept on gradually."
+                        },
+                        {
+                            "date": "2024-06-06T00:00:00",
+                            "trackName": "UTTOXETER",
+                            "raceDistance": 4387,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good (Good to Firm in places)",
+                            "groupText": "C4Hc",
+                            "weight": "11-12",
+                            "rating": "108",
+                            "handicap": true,
+                            "finishPosition": 5,
+                            "raceRunnerCount": 9,
+                            "distanceBeatenCumulative": 13.55,
+                            "inPlayEffort": 0.14,
+                            "commentFull": "found to have bled last time, possibly needed the run 9 weeks on and made more than his share of errors again; mid-field, travelled smoothly, mistake third, effort when not fluent 2 out, mistake last, no extra."
+                        },
+                        {
+                            "date": "2024-03-31T00:00:00",
+                            "trackName": "PLUMPTON",
+                            "raceDistance": 4514,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good (Good to Soft in places)",
+                            "groupText": "C4Hc",
+                            "weight": "11-12",
+                            "rating": "108",
+                            "handicap": true,
+                            "raceRunnerCount": 10,
+                            "distanceBeatenCumulative": 35.25,
+                            "inPlayEffort": 0.19,
+                            "commentFull": "into handicaps after just 2 runs, ran poorly after 10 weeks off, let down by his jumping; held up, mistake seventh, clouted eighth, ridden after, lost place, behind when slow ninth, pulled up."
+                        },
+                        {
+                            "date": "2024-01-23T00:00:00",
+                            "trackName": "NEWBURY",
+                            "raceDistance": 3589,
+                            "raceClass": "3",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Soft (Soft in places)",
+                            "groupText": "C3",
+                            "weight": "11-8",
+                            "rating": "-",
+                            "finishPosition": 2,
+                            "raceRunnerCount": 16,
+                            "distanceBeatenCumulative": 8,
+                            "inPlayEffort": 0.66,
+                            "commentFull": "did no better for hurdling debut, well positioned but lacking a turn of foot over the shorter trip; tracked pace, took keen hold, ridden early in straight, second when mistake 2 out, left behind by winner soon after."
+                        },
+                        {
+                            "date": "2023-11-29T00:00:00",
+                            "trackName": "HEREFORD",
+                            "raceDistance": 4327,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good (Good to Firm in places)",
+                            "groupText": "C4",
+                            "weight": "11-0",
+                            "rating": "-",
+                            "finishPosition": 3,
+                            "raceRunnerCount": 8,
+                            "distanceBeatenCumulative": 5.75,
+                            "inPlayEffort": 0.08,
+                            "commentFull": "fair in bumpers, ran to a similar level sent hurdling after 8 months off and should learn from the experience; mid-division, hit fourth, not fluent 4 out, headway before 2 out, pushed along there, one paced."
+                        },
+                        {
+                            "date": "2023-04-10T00:00:00",
+                            "trackName": "CHEPSTOW",
+                            "raceDistance": 3531,
+                            "raceClass": "5",
+                            "raceType": "NH Flat",
+                            "raceGoing": "Good to Soft",
+                            "groupText": "C5G",
+                            "weight": "11-2",
+                            "rating": "-",
+                            "finishPosition": 5,
+                            "raceRunnerCount": 9,
+                            "distanceBeatenCumulative": 6,
+                            "inPlayEffort": 0.08,
+                            "commentFull": "ran to a similar level as on debut; prominent, travelled well, pushed along 3f out, outpaced final 1f."
+                        },
+                        {
+                            "date": "2023-02-26T00:00:00",
+                            "trackName": "FONTWELL PARK",
+                            "raceDistance": 3902,
+                            "raceClass": "5",
+                            "raceType": "NH Flat",
+                            "raceGoing": "Good",
+                            "groupText": "C5",
+                            "weight": "11-7",
+                            "rating": "-",
+                            "finishPosition": 3,
+                            "raceRunnerCount": 9,
+                            "distanceBeatenCumulative": 12,
+                            "inPlayEffort": 0.2,
+                            "commentFull": "(by Kayf Tara: fifth foal: half-brother to 3 winners, including fairly useful hurdler/fair chaser Shiroccan Roll (17f winner, by Shirocco) and fair 19f hurdle winner Little Mix (by Sagamix): dam (h101) 2m hurdle winner) easy to back, nevertheless showed ability first time up; waited with, headway end of back straight, third when pushed along over 2f out, no further impression."
+                        }
+                    ]
+                }
             }
         },
         {
-            "id": 8429263,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 485502,
-            "horse_name": "Barley Lane",
-            "owner_name": "Fearghal \u0026 Bronagh Eastwood",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": 67,
-            "timeform_star_rating": 5,
-            "focus_horse": false,
-            "jockey_id": 10373,
-            "jockey_name": "Kieren Buckley",
-            "apprentice_claim": 0,
-            "trainer_id": 19023,
-            "trainer_name": "E \u0026 P Harty",
-            "form": "9-23",
-            "form_figure": null,
-            "age": 5,
-            "timeform_rating": "136p",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Promising type. 3/1, third of 25 in 2m novice hurdle at Naas (soft) 67 days ago, unsuited by drop in trip. Sets a good standard for the rest to aim at back up slightly in distance.",
-            "timeform_tipped_place": 1,
-            "reserve": false,
-            "format_timeform_rating": "136p",
-            "equipment_text": "",
-            "format_weight": "11-4",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 6,
-            "cloth_number": 6,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Kieren Buckley",
-                "slug": "/mr-kieren-buckley"
-            },
-            "trainer": {
-                "name": "E \u0026 P Harty",
-                "slug": "/eddie-harty"
-            },
-            "horse": {
-                "id": 485502,
-                "name": "Barley Lane",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/barley-lane-ireland",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "g",
-                "age": 5,
-                "age_days": 1901,
-                "dam_name": "Ile En Crise",
-                "sire_name": "Sholokhov",
-                "dam_sire_name": "Flemensfirth"
-            },
-            "silk": {
-                "id": 5056893,
-                "press_association_file": {
-                    "filename": "20260317dro131806.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCRmhpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--831cc15e73293c5c10c67bf4c13f06f206d78207/20260317dro131806.svg"
-                },
-                "filename": "s180326/20260317dro131806.svg",
-                "crc32": 1773777747
+            "selectionId": "13471934",
+            "name": "Sleeping Satellite",
+            "data": {
+                "racingTvHorseData": {
+                    "name": "Sleeping Satellite",
+                    "age": 8,
+                    "horseSex": "Gelding",
+                    "weight": "11-11",
+                    "daysSinceLastRun": 33,
+                    "focusHorse": false,
+                    "apprenticeClaim": 0,
+                    "timeformStarRating": 2,
+                    "timeformRating": "114",
+                    "analystComment": "Positively ridden to win twice over fences this season, latterly accounting for 5 rivals at Catterick in November. Respectable efforts in defeat since but the first-time cheekpieces will need to help eke out some improvement if he's to emerge on top here.",
+                    "form": "121345",
+                    "prompts": {
+                        "stride": "Sleeping Satellite has finished 1st for Average Stride Length in 3 of their last 6 starts."
+                    },
+                    "statistics": [
+                        {
+                            "raceType": "Chase",
+                            "wins": 2,
+                            "seconds": 2,
+                            "thirds": 1,
+                            "fourths": 1,
+                            "total": 10
+                        },
+                        {
+                            "raceType": "Hurdle",
+                            "wins": 1,
+                            "seconds": 1,
+                            "thirds": 1,
+                            "fourths": 2,
+                            "total": 7
+                        },
+                        {
+                            "raceType": "NH Flat",
+                            "wins": 1,
+                            "seconds": 0,
+                            "thirds": 0,
+                            "fourths": 0,
+                            "total": 1
+                        }
+                    ],
+                    "performances": [
+                        {
+                            "date": "2026-03-21T00:00:00",
+                            "trackName": "KELSO",
+                            "raceDistance": 4753,
+                            "raceClass": "2",
+                            "raceType": "Chase",
+                            "raceGoing": "Good to Soft",
+                            "groupText": "C2Hc",
+                            "weight": "11-1",
+                            "rating": "107",
+                            "handicap": true,
+                            "finishPosition": 5,
+                            "raceRunnerCount": 10,
+                            "distanceBeatenCumulative": 13.25,
+                            "inPlayEffort": 0.08,
+                            "commentFull": "has form at up to easy 2½m but almost certainly needs the emphasis less on stamina than this race afforded, acknowledging he finished weakly over shorter on his previous outing; chased leader, every chance 2 out, weakened."
+                        },
+                        {
+                            "date": "2026-02-21T00:00:00",
+                            "trackName": "NEWCASTLE",
+                            "raceDistance": 3595,
+                            "raceClass": "4",
+                            "raceType": "Chase",
+                            "raceGoing": "Good to Soft",
+                            "groupText": "C4Hc",
+                            "weight": "11-6",
+                            "rating": "108",
+                            "handicap": true,
+                            "finishPosition": 4,
+                            "raceRunnerCount": 6,
+                            "distanceBeatenCumulative": 13,
+                            "inPlayEffort": 0.14,
+                            "commentFull": "probably remains in form, wilting late on this return from 10 weeks off having made most until 2 out."
+                        },
+                        {
+                            "date": "2025-12-08T00:00:00",
+                            "trackName": "MUSSELBURGH",
+                            "raceDistance": 4468,
+                            "raceClass": "4",
+                            "raceType": "Chase",
+                            "raceGoing": "Soft",
+                            "groupText": "C4Hc",
+                            "weight": "11-9",
+                            "rating": "108",
+                            "handicap": true,
+                            "finishPosition": 3,
+                            "raceRunnerCount": 4,
+                            "distanceBeatenCumulative": 3.75,
+                            "inPlayEffort": 0.46,
+                            "commentFull": "remains in good form, though a 4 lb higher mark and the return to a right-handed track were enough to anchor him; jumped slightly left on occasions, led until fourth, remained prominent, led again circuit out, headed again 3 out, lost ground on leader next, rallied briefly run-in."
+                        },
+                        {
+                            "date": "2025-11-21T00:00:00",
+                            "trackName": "CATTERICK BRIDGE",
+                            "raceDistance": 4231,
+                            "raceClass": "4",
+                            "raceType": "Chase",
+                            "raceGoing": "Good (Good to Soft in places)",
+                            "groupText": "C4Hc",
+                            "weight": "11-1",
+                            "rating": "104",
+                            "handicap": true,
+                            "finishPosition": 1,
+                            "raceRunnerCount": 6,
+                            "distanceBeatenCumulative": 1.75,
+                            "inPlayEffort": 1.27,
+                            "commentFull": "has thrived since the tongue tie went on and made it 2 wins from his last 3 starts back up in trip, impressing with an accurate round of jumping; made all, jumped well, ridden after 2 out, kept on; unlikely to go up much for this."
+                        },
+                        {
+                            "date": "2025-10-27T00:00:00",
+                            "trackName": "BANGOR-ON-DEE",
+                            "raceDistance": 3817,
+                            "raceClass": "5",
+                            "raceType": "Chase",
+                            "raceGoing": "Good",
+                            "groupText": "C5Hc",
+                            "weight": "12-0",
+                            "rating": "104",
+                            "handicap": true,
+                            "finishPosition": 2,
+                            "raceRunnerCount": 9,
+                            "distanceBeatenCumulative": 9,
+                            "inPlayEffort": 0.48,
+                            "commentFull": "has responded well to the recent fitting of a tongue strap and shaped as if still in good form kept to the same tactics as when winning last time; made running, headed 3 out, held when left second again last."
+                        },
+                        {
+                            "date": "2025-10-06T00:00:00",
+                            "trackName": "STRATFORD-ON-AVON",
+                            "raceDistance": 4278,
+                            "raceClass": "5",
+                            "raceType": "Chase",
+                            "raceGoing": "Good (Good to Firm in places)",
+                            "groupText": "C5Hc",
+                            "weight": "12-0",
+                            "rating": "100",
+                            "handicap": true,
+                            "finishPosition": 1,
+                            "raceRunnerCount": 7,
+                            "distanceBeatenCumulative": 1.5,
+                            "inPlayEffort": 1.14,
+                            "commentFull": "proved much more tractable allowed his head this time (also tongue tied) and bounced back to his best to justify good support, prominent tactics surely the way to go with him from now on; made most, travelled smoothly, shaken up briefly after 2 out (usual 3 out), driven out to assert final 1f."
+                        },
+                        {
+                            "date": "2025-08-31T00:00:00",
+                            "trackName": "WORCESTER",
+                            "raceDistance": 4400,
+                            "raceClass": "4",
+                            "raceType": "Chase",
+                            "raceGoing": "Good",
+                            "groupText": "C4Hc",
+                            "weight": "11-8",
+                            "rating": "104",
+                            "handicap": true,
+                            "finishPosition": 8,
+                            "raceRunnerCount": 12,
+                            "distanceBeatenCumulative": 48,
+                            "inPlayEffort": 0.15,
+                            "commentFull": "was too free reverted to fences; mid-division, pulled way to front circuit out, headed eighth, mistake next, dropped away home turn."
+                        },
+                        {
+                            "date": "2025-07-16T00:00:00",
+                            "trackName": "UTTOXETER",
+                            "raceDistance": 3468,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good",
+                            "groupText": "C4Hc",
+                            "weight": "11-7",
+                            "rating": "107",
+                            "handicap": true,
+                            "finishPosition": 6,
+                            "raceRunnerCount": 8,
+                            "distanceBeatenCumulative": 19.25,
+                            "inPlayEffort": 0.03,
+                            "commentFull": "ended his time with Donald McCain out of sorts but probably needed this outing after 11 months off back hurdling, no surprise if his new yard manages to rejuvenate him in due course; soon behind, mistake third, made no impression."
+                        },
+                        {
+                            "date": "2024-09-01T00:00:00",
+                            "trackName": "WORCESTER",
+                            "raceDistance": 4400,
+                            "raceClass": "4",
+                            "raceType": "Chase",
+                            "raceGoing": "Good (Good to Firm in places)",
+                            "groupText": "C4Hc",
+                            "weight": "11-13",
+                            "rating": "109",
+                            "handicap": true,
+                            "finishPosition": 7,
+                            "raceRunnerCount": 7,
+                            "distanceBeatenCumulative": 41.2,
+                            "inPlayEffort": 0.14,
+                            "commentFull": "was again well below his chasing debut form, hitting the second when in rear and struggling from the end of the back straight; he's got plenty to prove at present."
+                        },
+                        {
+                            "date": "2024-06-28T00:00:00",
+                            "trackName": "CARTMEL",
+                            "raceDistance": 4654,
+                            "raceClass": "4",
+                            "raceType": "Chase",
+                            "raceGoing": "Good",
+                            "groupText": "C4Hc",
+                            "weight": "12-0",
+                            "rating": "110",
+                            "handicap": true,
+                            "finishPosition": 7,
+                            "raceRunnerCount": 7,
+                            "distanceBeatenCumulative": 62.7,
+                            "inPlayEffort": 0.16,
+                            "commentFull": "went backwards from his chasing bow, the jockey reporting that he spoiled his chance by hanging left throughout; waited with, blundered 5 out, lost touch from 3 out."
+                        },
+                        {
+                            "date": "2024-05-23T00:00:00",
+                            "trackName": "MARKET RASEN",
+                            "raceDistance": 4214,
+                            "raceClass": "4",
+                            "raceType": "Chase",
+                            "raceGoing": "Good",
+                            "groupText": "C4Hc",
+                            "weight": "11-6",
+                            "rating": "107",
+                            "handicap": true,
+                            "finishPosition": 2,
+                            "raceRunnerCount": 5,
+                            "distanceBeatenCumulative": 0.5,
+                            "inPlayEffort": 0.72,
+                            "commentFull": "a lightly-raced hurdler with the build for fences, shaped promisingly sent chasing, a wider route than the rail-skimming winner possibly the difference, and he shouldn't be long in landing a similar event; waited with, jumped soundly, went out wide, quickened 3 out, edged ahead soon after, headed soon after last, rallied, held close home."
+                        },
+                        {
+                            "date": "2024-03-30T00:00:00",
+                            "trackName": "CARLISLE",
+                            "raceDistance": 3740,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Soft (Heavy in places)",
+                            "groupText": "C4Hc",
+                            "weight": "11-13",
+                            "rating": "108",
+                            "handicap": true,
+                            "finishPosition": 4,
+                            "raceRunnerCount": 8,
+                            "distanceBeatenCumulative": 23.05,
+                            "inPlayEffort": 0.28,
+                            "commentFull": "turned in a flat performance after 4 months off, so many from the stable still not running their races for whatever reason; in touch, chased leaders home turn, not quicken 2 out, no extra run-in, lost third dying strides."
+                        },
+                        {
+                            "date": "2023-12-15T00:00:00",
+                            "trackName": "DONCASTER",
+                            "raceDistance": 3648,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Soft (Good in places)",
+                            "groupText": "C4Hc",
+                            "weight": "11-7",
+                            "rating": "108",
+                            "handicap": true,
+                            "finishPosition": 2,
+                            "raceRunnerCount": 14,
+                            "distanceBeatenCumulative": 5,
+                            "inPlayEffort": 0.25,
+                            "commentFull": "showed improved form, moving through the race as if ahead of his mark but bumping into one even better treated; waited with, travelled well, headway approaching 3 out, ridden next, kept on."
+                        },
+                        {
+                            "date": "2023-11-04T00:00:00",
+                            "trackName": "AYR",
+                            "raceDistance": 3520,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Soft (Good in places)",
+                            "groupText": "C4Hc",
+                            "weight": "11-6",
+                            "rating": "110",
+                            "handicap": true,
+                            "finishPosition": 4,
+                            "raceRunnerCount": 10,
+                            "distanceBeatenCumulative": 12.2,
+                            "inPlayEffort": 0.28,
+                            "commentFull": "shaped as though now needing more of a test making handicap debut after 8 months off; chased leaders, outpaced approaching 2 out, rallied briefly last; will be suited by 2½m."
+                        },
+                        {
+                            "date": "2023-03-18T00:00:00",
+                            "trackName": "NEWCASTLE",
+                            "raceDistance": 3710,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Heavy",
+                            "groupText": "C4",
+                            "weight": "11-12",
+                            "rating": "-",
+                            "finishPosition": 3,
+                            "raceRunnerCount": 4,
+                            "distanceBeatenCumulative": 15.5,
+                            "inPlayEffort": 0.23,
+                            "commentFull": "disappointed, surely more to it than a penalty; in touch, shaken up approaching 3 out, no response; he had looked capable of better again, worth remembering that he's bred to be suited by a fair bit further than 2m, a winning pointer, too."
+                        },
+                        {
+                            "date": "2023-02-06T00:00:00",
+                            "trackName": "CARLISLE",
+                            "raceDistance": 3740,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Soft (Soft in places)",
+                            "groupText": "C4",
+                            "weight": "11-5",
+                            "rating": "-",
+                            "finishPosition": 1,
+                            "raceRunnerCount": 11,
+                            "distanceBeatenCumulative": 2,
+                            "inPlayEffort": 1.34,
+                            "commentFull": "was strong in the betting and confirmed promise of hurdling debut, seeing things out much more strongly with that run under his belt, also facing less testing conditions; prominent, travelled well, jumped on 2 out, in command flat, driven out; he's highly likely to progress further."
+                        },
+                        {
+                            "date": "2022-12-30T00:00:00",
+                            "trackName": "HAYDOCK PARK",
+                            "raceDistance": 3444,
+                            "raceClass": "3",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Soft",
+                            "groupText": "C3",
+                            "weight": "11-0",
+                            "rating": "-",
+                            "finishPosition": 6,
+                            "raceRunnerCount": 11,
+                            "distanceBeatenCumulative": 16,
+                            "inPlayEffort": 0.31,
+                            "commentFull": "a winner on only start in bumpers, shaped as if better for the run sent hurdling, looking third best for a long way; prominent, close up before 3 out, not fluent there, no extra approaching last; will improve."
+                        },
+                        {
+                            "date": "2022-11-28T00:00:00",
+                            "trackName": "CATTERICK BRIDGE",
+                            "raceDistance": 3456,
+                            "raceClass": "5",
+                            "raceType": "NH Flat",
+                            "raceGoing": "Soft (Good to Soft in places)",
+                            "groupText": "C5",
+                            "weight": "11-2",
+                            "rating": "-",
+                            "finishPosition": 1,
+                            "raceRunnerCount": 5,
+                            "distanceBeatenCumulative": 0.5,
+                            "inPlayEffort": 1.26,
+                            "commentFull": "(£13,000 3-y-o, £85,000 4-y-o: by Mahler: sixth foal: half-brother to modest hurdler Dubh des Champs (3m winner, by Robin des Champs): dam unraced half-sister to useful hurdler (stayed 3m) Ballymak) successful on his sole outing in points, justified support switched to a bumper; close up soon after start, tackled leader 2f out, edged ahead final 1f, reduced advantage close home, driven out."
+                        }
+                    ]
+                }
             }
         },
         {
-            "id": 8429259,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 431900,
-            "horse_name": "Carrig Padraig",
-            "owner_name": "Over The Shough CP Syndicate",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": 157,
-            "timeform_star_rating": 3,
-            "focus_horse": false,
-            "jockey_id": 20251,
-            "jockey_name": "Keith Donoghue",
-            "apprentice_claim": 0,
-            "trainer_id": 634,
-            "trainer_name": "G P Cromwell",
-            "form": "806-651",
-            "form_figure": null,
-            "age": 7,
-            "timeform_rating": "0",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Career best when winning 9-runner bumper at Fairyhouse (12/1) 157 days ago, in control long way out. Makes hurdles debut after leaving Martin Paul Fitzgerald and joining successful yard.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "0",
-            "equipment_text": "H",
-            "format_weight": "11-12",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [
-                "in_form"
-            ],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 2,
-            "cloth_number": 2,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Keith Donoghue",
-                "slug": "/k-m-donoghue"
-            },
-            "trainer": {
-                "name": "G P Cromwell",
-                "slug": "/g-p-cromwell"
-            },
-            "horse": {
-                "id": 431900,
-                "name": "Carrig Padraig",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/carrig-padraig-ireland",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "g",
-                "age": 7,
-                "age_days": 2632,
-                "dam_name": "Millerina",
-                "sire_name": "Champs Elysees",
-                "dam_sire_name": "Milan"
-            },
-            "silk": {
-                "id": 5056888,
-                "press_association_file": {
-                    "filename": "20260317dro131802.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCRU5pU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6068ad06914eb74c16f1b1df8b5482f7b8b0c8e1/20260317dro131802.svg"
-                },
-                "filename": "s180326/20260317dro131802.svg",
-                "crc32": 1854238627
+            "selectionId": "83421525",
+            "name": "Caterpillar Girl",
+            "data": {
+                "racingTvHorseData": {
+                    "name": "Caterpillar Girl",
+                    "age": 5,
+                    "horseSex": "Mare",
+                    "weight": "11-0",
+                    "daysSinceLastRun": 35,
+                    "focusHorse": false,
+                    "apprenticeClaim": 0,
+                    "timeformStarRating": 2,
+                    "timeformRating": "0",
+                    "analystComment": "Decisive debut bumper winner here last spring but failed to shine in 3 starts over hurdles and needs to raise her game now switched to fences.",
+                    "form": "1550",
+                    "prompts": {
+                        "jockey": "J J Burke has a 27.03% Strike Rate over the last 14 days."
+                    },
+                    "statistics": [
+                        {
+                            "raceType": "Hurdle",
+                            "wins": 0,
+                            "seconds": 0,
+                            "thirds": 0,
+                            "fourths": 0,
+                            "total": 3
+                        },
+                        {
+                            "raceType": "NH Flat",
+                            "wins": 1,
+                            "seconds": 0,
+                            "thirds": 0,
+                            "fourths": 0,
+                            "total": 1
+                        }
+                    ],
+                    "performances": [
+                        {
+                            "date": "2026-03-19T00:00:00",
+                            "trackName": "LUDLOW",
+                            "raceDistance": 3469,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good (Good to Soft in places)",
+                            "groupText": "C4",
+                            "weight": "11-5",
+                            "rating": "-",
+                            "finishPosition": 11,
+                            "raceRunnerCount": 12,
+                            "distanceBeatenCumulative": 45.5,
+                            "inPlayEffort": 0.15,
+                            "commentFull": "ran even worse; raced wide, held up, jumped right first, struggling before 3 out."
+                        },
+                        {
+                            "date": "2025-11-11T00:00:00",
+                            "trackName": "HUNTINGDON",
+                            "raceDistance": 3471,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good",
+                            "groupText": "C4",
+                            "weight": "11-0",
+                            "rating": "-",
+                            "finishPosition": 5,
+                            "raceRunnerCount": 8,
+                            "distanceBeatenCumulative": 29.75,
+                            "inPlayEffort": 0.03,
+                            "commentFull": "was said to have bled; handy, took keen hold, carried head bit awkwardly throughout, shaken up home turn, left behind soon after."
+                        },
+                        {
+                            "date": "2025-10-22T00:00:00",
+                            "trackName": "WORCESTER",
+                            "raceDistance": 3520,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good (Good to Soft in places)",
+                            "groupText": "C4",
+                            "weight": "10-13",
+                            "rating": "-",
+                            "finishPosition": 5,
+                            "raceRunnerCount": 9,
+                            "distanceBeatenCumulative": 22.5,
+                            "inPlayEffort": 0.38,
+                            "commentFull": "a winner on only start in bumpers 6 months earlier, shaped as if better for the run/experience sent hurdling; chased leader, not settle fully, ran green approaching 3 out, no extra from next, not persevered with; open to improvement but may well be brought along gradually."
+                        },
+                        {
+                            "date": "2025-05-10T00:00:00",
+                            "trackName": "WARWICK",
+                            "raceDistance": 3520,
+                            "raceClass": "5",
+                            "raceType": "NH Flat",
+                            "raceGoing": "Good",
+                            "groupText": "C5G",
+                            "weight": "10-3",
+                            "rating": "-",
+                            "finishPosition": 1,
+                            "raceRunnerCount": 5,
+                            "distanceBeatenCumulative": 3.75,
+                            "inPlayEffort": 1.05,
+                            "commentFull": "(by Telescope: first foal: dam useful hurdler/chaser (17f-23f winner)) made a winning start, showing clear signs of greenness in front before coming decisively clear late on; chased leader, took keen hold, led entering straight, shaken up soon after, ran green approaching final 1f, drew clear final 100 yds, well on top finish."
+                        }
+                    ]
+                }
             }
         },
         {
-            "id": 8429266,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 556076,
-            "horse_name": "Codger's Rock",
-            "owner_name": "John Breslin \u0026 Mike Larkin",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": null,
-            "timeform_star_rating": 1,
-            "focus_horse": false,
-            "jockey_id": 20469,
-            "jockey_name": "Kevin Healy",
-            "apprentice_claim": 7,
-            "trainer_id": 21159,
-            "trainer_name": "C Collins",
-            "form": null,
-            "form_figure": null,
-            "age": 5,
-            "timeform_rating": "0",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Fascinating Rock gelding. Dam maiden on Flat.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "\u003cem\u003e(0)\u003c/em\u003e",
-            "equipment_text": "",
-            "format_weight": "11-4",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 8,
-            "cloth_number": 8,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Kevin Healy",
-                "slug": "/mr-k-p-healy-20469"
-            },
-            "trainer": {
-                "name": "C Collins",
-                "slug": "/c-m-collins"
-            },
-            "horse": {
-                "id": 556076,
-                "name": "Codger's Rock",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/codgers-rock-ireland",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "g",
-                "age": 5,
-                "age_days": 1901,
-                "dam_name": "Codger's Gift",
-                "sire_name": "Fascinating Rock",
-                "dam_sire_name": "Footstepsinthesand"
-            },
-            "silk": {
-                "id": 5056897,
-                "press_association_file": {
-                    "filename": "20260317dro131808.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCSHBpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--40fa781e56fff116ee39bee3096902a080b32214/20260317dro131808.svg"
-                },
-                "filename": "s180326/20260317dro131808.svg",
-                "crc32": 1256226345
-            }
-        },
-        {
-            "id": 8429274,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 440951,
-            "horse_name": "Combs",
-            "owner_name": "Mrs P Sloan",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": 327,
-            "timeform_star_rating": 4,
-            "focus_horse": false,
-            "jockey_id": 138,
-            "jockey_name": "Jack Kennedy",
-            "apprentice_claim": 0,
-            "trainer_id": 423,
-            "trainer_name": "G Elliott",
-            "form": "23334",
-            "form_figure": null,
-            "age": 4,
-            "timeform_rating": "128",
-            "timeform_original_rating": 120,
-            "analyst_comment": "Fairly useful winner at 12f on Flat. 11/1, creditable fourth of 8 in juvenile hurdle at Fairyhouse (soft) 62 days ago. Likely to give his running again but that may not suffice.",
-            "timeform_tipped_place": 3,
-            "reserve": false,
-            "format_timeform_rating": "128",
-            "equipment_text": "+",
-            "format_weight": "11-2",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [
-                "in_form"
-            ],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 16,
-            "cloth_number": 16,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Jack Kennedy",
-                "slug": "/j-w-kennedy"
-            },
-            "trainer": {
-                "name": "G Elliott",
-                "slug": "/g-elliott"
-            },
-            "horse": {
-                "id": 440951,
-                "name": "Combs",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/combs-ireland",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "g",
-                "age": 4,
-                "age_days": 1511,
-                "dam_name": "Indigo Lady",
-                "sire_name": "Dark Angel",
-                "dam_sire_name": "Sir Percy"
-            },
-            "silk": {
-                "id": 5056901,
-                "press_association_file": {
-                    "filename": "20260317dro131816.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCSTlpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--92a4bf2046d6c6d68f1b3540c3681703e95ffe65/20260317dro131816.svg"
-                },
-                "filename": "s180326/20260317dro131816.svg",
-                "crc32": 3982811737
-            }
-        },
-        {
-            "id": 8429267,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 488284,
-            "horse_name": "Dubhain",
-            "owner_name": "S F McElroy",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": 35,
-            "timeform_star_rating": 3,
-            "focus_horse": false,
-            "jockey_id": 471,
-            "jockey_name": "Sean Flanagan",
-            "apprentice_claim": 0,
-            "trainer_id": 1467,
-            "trainer_name": "S R B Crawford",
-            "form": "1-335",
-            "form_figure": null,
-            "age": 6,
-            "timeform_rating": "117p",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Placed both starts in bumpers and he's a promising type. 13/2, fifth of 9 in novice hurdle at Ayr (heavy) on hurdles bow 35 days ago. Tongue strap on first time and he's expected to build on that back in trip.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "117p",
-            "equipment_text": "z\u003csup\u003e1\u003c/sup\u003e",
-            "format_weight": "11-4",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 9,
-            "cloth_number": 9,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Sean Flanagan",
-                "slug": "/s-w-flanagan"
-            },
-            "trainer": {
-                "name": "S R B Crawford",
-                "slug": "/s-r-b-crawford"
-            },
-            "horse": {
-                "id": 488284,
-                "name": "Dubhain",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/dubhain-ireland",
-                "colors": [
-                    "br"
-                ],
-                "display_colors": [
-                    "Brown"
-                ],
-                "gender": "g",
-                "age": 6,
-                "age_days": 2129,
-                "dam_name": "Presentbreeze",
-                "sire_name": "Diamond Boy",
-                "dam_sire_name": "Presenting"
-            },
-            "silk": {
-                "id": 5056884,
-                "press_association_file": {
-                    "filename": "20260317dro131809.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCR05pU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9a222d45b37cbaa95128cb670add7ff4c299da71/20260317dro131809.svg"
-                },
-                "filename": "s180326/20260317dro131809.svg",
-                "crc32": 2764664511
-            }
-        },
-        {
-            "id": 8429260,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 350440,
-            "horse_name": "Ehteyat",
-            "owner_name": "M K Flannery",
-            "horse_sex": "Gelding",
-            "horse_country_code": "de",
-            "days_since_last_run": 15,
-            "timeform_star_rating": 3,
-            "focus_horse": false,
-            "jockey_id": 17480,
-            "jockey_name": "Conor Stone-Walsh",
-            "apprentice_claim": 0,
-            "trainer_id": 25856,
-            "trainer_name": "M K Flannery",
-            "form": "P32",
-            "form_figure": null,
-            "age": 7,
-            "timeform_rating": "121",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Fairly useful Flat winner and placed in a couple of big-field maiden hurdles in recent weeks, second at Leopardstown 2 weeks ago.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "121",
-            "equipment_text": "",
-            "format_weight": "11-12",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 3,
-            "cloth_number": 3,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Conor Stone-Walsh",
-                "slug": "/c-stone-walsh"
-            },
-            "trainer": {
-                "name": "M K Flannery",
-                "slug": "/michael-flannery"
-            },
-            "horse": {
-                "id": 350440,
-                "name": "Ehteyat",
-                "country_code": {
-                    "iso": "de",
-                    "racing": "GER"
-                },
-                "slug": "/ehteyat",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "g",
-                "age": 7,
-                "age_days": 2548,
-                "dam_name": "Ella Ransom",
-                "sire_name": "Toronado",
-                "dam_sire_name": "Ransom O'war"
-            },
-            "silk": {
-                "id": 5056880,
-                "press_association_file": {
-                    "filename": "20260317dro131803.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCRWxpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--66a706ca568a8e8428d7426fb5701df1d4cbc3db/20260317dro131803.svg"
-                },
-                "filename": "s180326/20260317dro131803.svg",
-                "crc32": 3144549337
-            }
-        },
-        {
-            "id": 8429261,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 365027,
-            "horse_name": "Good Show",
-            "owner_name": "Weld-Spec (Glasgow) Ltd",
-            "horse_sex": "Gelding",
-            "horse_country_code": "gb",
-            "days_since_last_run": 153,
-            "timeform_star_rating": 2,
-            "focus_horse": false,
-            "jockey_id": 16413,
-            "jockey_name": "Carl Millar",
-            "apprentice_claim": 5,
-            "trainer_id": 423,
-            "trainer_name": "G Elliott",
-            "form": "9",
-            "form_figure": null,
-            "age": 7,
-            "timeform_rating": "-p",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Useful at best on the Flat. First run since leaving Andrew Balding when ninth of 17 in novice hurdle (28/1) at Thurles on NH debut 40 days ago, unable to sustain effort. Should step up markedly on that.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "-p",
-            "equipment_text": "",
-            "format_weight": "11-12",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [
-                "in_form"
-            ],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 4,
-            "cloth_number": 4,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Carl Millar",
-                "slug": "/c-p-millar"
-            },
-            "trainer": {
-                "name": "G Elliott",
-                "slug": "/g-elliott"
-            },
-            "horse": {
-                "id": 365027,
-                "name": "Good Show",
-                "country_code": {
-                    "iso": "gb",
-                    "racing": "GBR"
-                },
-                "slug": "/good-show-b",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "g",
-                "age": 7,
-                "age_days": 2608,
-                "dam_name": "Maleficent Queen",
-                "sire_name": "Nathaniel",
-                "dam_sire_name": "Mount Nelson"
-            },
-            "silk": {
-                "id": 5056891,
-                "press_association_file": {
-                    "filename": "20260317dro131804.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCRTVpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--112c07e2cfddd15b13a27cf808e763f2cb3405ed/20260317dro131804.svg"
-                },
-                "filename": "s180326/20260317dro131804.svg",
-                "crc32": 2636282644
-            }
-        },
-        {
-            "id": 8429268,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 537027,
-            "horse_name": "Hey Now",
-            "owner_name": "John P McManus",
-            "horse_sex": "Gelding",
-            "horse_country_code": "gb",
-            "days_since_last_run": 92,
-            "timeform_star_rating": 3,
-            "focus_horse": false,
-            "jockey_id": 2640,
-            "jockey_name": "Simon Torrens",
-            "apprentice_claim": 0,
-            "trainer_id": 465,
-            "trainer_name": "A McNamara",
-            "form": "4",
-            "form_figure": null,
-            "age": 5,
-            "timeform_rating": "0",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Fourth of 15 in bumper at Naas (heavy, 10/1) on debut 92 days ago. Makes hurdles debut.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "0",
-            "equipment_text": "",
-            "format_weight": "11-4",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 10,
-            "cloth_number": 10,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Simon Torrens",
-                "slug": "/s-d-torrens"
-            },
-            "trainer": {
-                "name": "A McNamara",
-                "slug": "/andrew-mc-namara"
-            },
-            "horse": {
-                "id": 537027,
-                "name": "Hey Now",
-                "country_code": {
-                    "iso": "gb",
-                    "racing": "GBR"
-                },
-                "slug": "/hey-now-united-kingdom",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "g",
-                "age": 5,
-                "age_days": 1901,
-                "dam_name": "Distracted",
-                "sire_name": "Yorgunnabelucky",
-                "dam_sire_name": "Publisher"
-            },
-            "silk": {
-                "id": 5056895,
-                "press_association_file": {
-                    "filename": "20260317dro131810.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCSDlpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--664c4a9ae0f37db77656d3c90156245426b3746b/20260317dro131810.svg"
-                },
-                "filename": "s180326/20260317dro131810.svg",
-                "crc32": 247324746
-            }
-        },
-        {
-            "id": 8429262,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 324987,
-            "horse_name": "Imperial Fighter",
-            "owner_name": "Patrick J McKenna/Nigel O'Hare/Kabin Racing Syndicate",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": 11,
-            "timeform_star_rating": 1,
-            "focus_horse": false,
-            "jockey_id": 18920,
-            "jockey_name": "Liam McKenna",
-            "apprentice_claim": 5,
-            "trainer_id": 448,
-            "trainer_name": "P J McKenna",
-            "form": null,
-            "form_figure": null,
-            "age": 7,
-            "timeform_rating": "0",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Fair Flat winner, making jumps debut. Ninth of 13 in handicap at Dundalk (7/1) 11 days ago, very slowly away. Isn't certain to take to hurdling given profile.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "\u003cem\u003e(0)\u003c/em\u003e",
-            "equipment_text": "h",
-            "format_weight": "11-12",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 5,
-            "cloth_number": 5,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Liam McKenna",
-                "slug": "/liam-mckenna-68c5602f-e234-4e55-81ba-3e7f7e73c7d9"
-            },
-            "trainer": {
-                "name": "P J McKenna",
-                "slug": "/p-j-mc-kenna"
-            },
-            "horse": {
-                "id": 324987,
-                "name": "Imperial Fighter",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/imperial-fighter",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "g",
-                "age": 7,
-                "age_days": 2602,
-                "dam_name": "Endure",
-                "sire_name": "The Gurkha",
-                "dam_sire_name": "Green Desert"
-            },
-            "silk": {
-                "id": 5056882,
-                "press_association_file": {
-                    "filename": "20260317dro131805.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCRk5pU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c4e414b9f7cf56318f6e02795e33c19b984db7fc/20260317dro131805.svg"
-                },
-                "filename": "s180326/20260317dro131805.svg",
-                "crc32": 3118553651
-            }
-        },
-        {
-            "id": 8429269,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 552934,
-            "horse_name": "Keep Em Quite",
-            "owner_name": "William Devereux",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": 15,
-            "timeform_star_rating": 2,
-            "focus_horse": false,
-            "jockey_id": 20358,
-            "jockey_name": "Ben Harvey",
-            "apprentice_claim": 0,
-            "trainer_id": 21159,
-            "trainer_name": "C Collins",
-            "form": "6P-335",
-            "form_figure": null,
-            "age": 5,
-            "timeform_rating": "115",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Fifth of 16 in novice hurdle at Leopardstown (soft, 40/1) on NH debut 15 days ago.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "115",
-            "equipment_text": "",
-            "format_weight": "11-4",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 11,
-            "cloth_number": 11,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Ben Harvey",
-                "slug": "/ben-harvey-20358"
-            },
-            "trainer": {
-                "name": "C Collins",
-                "slug": "/c-m-collins"
-            },
-            "horse": {
-                "id": 552934,
-                "name": "Keep Em Quite",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/keep-em-quite-ireland",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "g",
-                "age": 5,
-                "age_days": 1901,
-                "dam_name": "Wall Of Silence",
-                "sire_name": "Jet Away",
-                "dam_sire_name": "Lahib"
-            },
-            "silk": {
-                "id": 5056903,
-                "press_association_file": {
-                    "filename": "20260317dro131811.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCSVJpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--bb4da241c57c7e289ae21f194636a3e2135bcc42/20260317dro131811.svg"
-                },
-                "filename": "s180326/20260317dro131811.svg",
-                "crc32": 3299354910
-            }
-        },
-        {
-            "id": 8429275,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 438383,
-            "horse_name": "Mayor Of Maghera",
-            "owner_name": "P J McBurney",
-            "horse_sex": "Gelding",
-            "horse_country_code": "gb",
-            "days_since_last_run": 15,
-            "timeform_star_rating": 1,
-            "focus_horse": false,
-            "jockey_id": 981,
-            "jockey_name": "Jack Gilligan",
-            "apprentice_claim": 5,
-            "trainer_id": 24453,
-            "trainer_name": "Gerald Quinn",
-            "form": "89",
-            "form_figure": null,
-            "age": 4,
-            "timeform_rating": "82",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Fair Flat winner. Twice-raced maiden over hurdles, 80/1, ninth of 16 in novice hurdle at Leopardstown (soft) 15 days ago.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "82",
-            "equipment_text": "",
-            "format_weight": "11-2",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 17,
-            "cloth_number": 17,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Jack Gilligan",
-                "slug": "/jack-gilligan"
-            },
-            "trainer": {
-                "name": "Gerald Quinn",
-                "slug": "/gerald-quinn"
-            },
-            "horse": {
-                "id": 438383,
-                "name": "Mayor Of Maghera",
-                "country_code": {
-                    "iso": "gb",
-                    "racing": "GBR"
-                },
-                "slug": "/mayor-of-maghera-united-kingdom",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "g",
-                "age": 4,
-                "age_days": 1449,
-                "dam_name": "Oh Simple Thing",
-                "sire_name": "Kessaar",
-                "dam_sire_name": "Compton Place"
-            },
-            "silk": {
-                "id": 5056907,
-                "press_association_file": {
-                    "filename": "20260317dro131817.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCR2hpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--de9659077ef11fcd23d0b050b9110f6af2a4df7a/20260317dro131817.svg"
-                },
-                "filename": "s180326/20260317dro131817.svg",
-                "crc32": 3942035689
-            }
-        },
-        {
-            "id": 8429278,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 461021,
-            "horse_name": "Out Of Aces",
-            "owner_name": "Annus Mirabilis Syndicate",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": 156,
-            "timeform_star_rating": 3,
-            "focus_horse": false,
-            "jockey_id": 20285,
-            "jockey_name": "R Deegan",
-            "apprentice_claim": 0,
-            "trainer_id": 1424,
-            "trainer_name": "J P O'Brien",
-            "form": "4",
-            "form_figure": null,
-            "age": 4,
-            "timeform_rating": "106p",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Fourth of 15 in juvenile hurdle at Cork (17.3f, good to soft, 16/5) on debut 156 days ago, going with enthusiasm and second when bad mistake last. Open to improvement.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "106p",
-            "equipment_text": "",
-            "format_weight": "10-8",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 20,
-            "cloth_number": 20,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "R Deegan",
-                "slug": "/r-deegan-20285"
-            },
-            "trainer": {
-                "name": "J P O'Brien",
-                "slug": "/joseph-p-o-brien"
-            },
-            "horse": {
-                "id": 461021,
-                "name": "Out Of Aces",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/out-of-aces-ireland",
-                "colors": [
-                    "br"
-                ],
-                "display_colors": [
-                    "Brown"
-                ],
-                "gender": "g",
-                "age": 4,
-                "age_days": 1478,
-                "dam_name": "Trap Queen",
-                "sire_name": "Wings Of Eagles",
-                "dam_sire_name": "Nayef"
-            },
-            "silk": {
-                "id": 5056916,
-                "press_association_file": {
-                    "filename": "20260317dro131820.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCSEppU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--f3f744e17a909815322446f52031d889bd2ec2e1/20260317dro131820.svg"
-                },
-                "filename": "s180326/20260317dro131820.svg",
-                "crc32": 1771077636
-            }
-        },
-        {
-            "id": 8429270,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 485845,
-            "horse_name": "Ozark's Walk",
-            "owner_name": "Stylebawn Syndicate",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": 65,
-            "timeform_star_rating": 1,
-            "focus_horse": false,
-            "jockey_id": 16004,
-            "jockey_name": "Brian Barry",
-            "apprentice_claim": 7,
-            "trainer_id": 32506,
-            "trainer_name": "R Dunne",
-            "form": "0-24200",
-            "form_figure": null,
-            "age": 6,
-            "timeform_rating": "-",
-            "timeform_original_rating": 0,
-            "analyst_comment": "50/1, fifteenth of 20 in novice hurdle at Punchestown (heavy) 65 days ago.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "-",
-            "equipment_text": "",
-            "format_weight": "11-4",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 12,
-            "cloth_number": 12,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Brian Barry",
-                "slug": "/mr-b-barry"
-            },
-            "trainer": {
-                "name": "R Dunne",
-                "slug": "/r-dunne"
-            },
-            "horse": {
-                "id": 485845,
-                "name": "Ozark's Walk",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/ozarks-walk-ireland",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "g",
-                "age": 6,
-                "age_days": 2267,
-                "dam_name": "Nurse Palm",
-                "sire_name": "Walk In The Park",
-                "dam_sire_name": "Stowaway"
-            },
-            "silk": {
-                "id": 5056905,
-                "press_association_file": {
-                    "filename": "20260317dro131812.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCSnhpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--85936402aef88f8e0a49ec8f9c8a8778428d174d/20260317dro131812.svg"
-                },
-                "filename": "s180326/20260317dro131812.svg",
-                "crc32": 3028524798
-            }
-        },
-        {
-            "id": 8429271,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 469935,
-            "horse_name": "Powerful Paddy",
-            "owner_name": "Wife \u0026 Kids Syndicate",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": 40,
-            "timeform_star_rating": 4,
-            "focus_horse": true,
-            "jockey_id": 1135,
-            "jockey_name": "Mr P W Mullins",
-            "apprentice_claim": 0,
-            "trainer_id": 1441,
-            "trainer_name": "W P Mullins",
-            "form": "3426-2",
-            "form_figure": null,
-            "age": 7,
-            "timeform_rating": "127p",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Promising individual. 6/4, first run since leaving A. McIntyre when second of 14 in novice hurdle at Thurles (20.4f, heavy) on hurdles bow 40 days ago. There should be plenty more to come for his leading yard.",
-            "timeform_tipped_place": 2,
-            "reserve": false,
-            "format_timeform_rating": "127p",
-            "equipment_text": "",
-            "format_weight": "11-4",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [
-                "BF"
-            ],
-            "icon_badges": [
-                "focus"
-            ],
-            "entry_number": 13,
-            "cloth_number": 13,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Mr P W Mullins",
-                "slug": "/mr-p-w-mullins"
-            },
-            "trainer": {
-                "name": "W P Mullins",
-                "slug": "/w-p-mullins"
-            },
-            "horse": {
-                "id": 469935,
-                "name": "Powerful Paddy",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/powerful-paddy-ireland",
-                "colors": [
-                    "gr"
-                ],
-                "display_colors": [
-                    "Grey"
-                ],
-                "gender": "g",
-                "age": 7,
-                "age_days": 2632,
-                "dam_name": "Nairobi",
-                "sire_name": "Jukebox Jury",
-                "dam_sire_name": "Un Desperado"
-            },
-            "silk": {
-                "id": 5056940,
-                "press_association_file": {
-                    "filename": "20260317dro131813.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCSlJpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--91cb2efa429473a37be8c8ac136e8db31ee84dd6/20260317dro131813.svg"
-                },
-                "filename": "s180326/20260317dro131813.svg",
-                "crc32": 4054508140
-            }
-        },
-        {
-            "id": 8429272,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 411793,
-            "horse_name": "Takenasred",
-            "owner_name": "J J Taylor",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": 67,
-            "timeform_star_rating": 3,
-            "focus_horse": false,
-            "jockey_id": 486,
-            "jockey_name": "J J Slevin",
-            "apprentice_claim": 0,
-            "trainer_id": 1467,
-            "trainer_name": "S R B Crawford",
-            "form": "45-0238",
-            "form_figure": null,
-            "age": 8,
-            "timeform_rating": "126",
-            "timeform_original_rating": 113,
-            "analyst_comment": "Fair hurdler. 9/1, bit below form eighth of 25 in novice hurdle at Naas (soft) 67 days ago. Limit looks fairly established.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "126",
-            "equipment_text": "H",
-            "format_weight": "11-4",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 14,
-            "cloth_number": 14,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "J J Slevin",
-                "slug": "/j-j-slevin"
-            },
-            "trainer": {
-                "name": "S R B Crawford",
-                "slug": "/s-r-b-crawford"
-            },
-            "horse": {
-                "id": 411793,
-                "name": "Takenasred",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/takenasred",
-                "colors": [
-                    "ch"
-                ],
-                "display_colors": [
-                    "Chestnut"
-                ],
-                "gender": "g",
-                "age": 8,
-                "age_days": 2904,
-                "dam_name": "Kizmehoney",
-                "sire_name": "Mount Nelson",
-                "dam_sire_name": "Exit To Nowhere"
-            },
-            "silk": {
-                "id": 5056899,
-                "press_association_file": {
-                    "filename": "20260317dro131814.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCSXRpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--fad8aec51c4e16c73bca9540434bfae6ad3ae6d5/20260317dro131814.svg"
-                },
-                "filename": "s180326/20260317dro131814.svg",
-                "crc32": 3579332128
-            }
-        },
-        {
-            "id": 8429273,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 539693,
-            "horse_name": "Thatsmyroadie",
-            "owner_name": "Coolquay Club Syndicate",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": 61,
-            "timeform_star_rating": 1,
-            "focus_horse": false,
-            "jockey_id": 1070,
-            "jockey_name": "P J O'Hanlon",
-            "apprentice_claim": 0,
-            "trainer_id": 742,
-            "trainer_name": "D A McLoughlin",
-            "form": "P0",
-            "form_figure": null,
-            "age": 6,
-            "timeform_rating": "-",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Eleventh of 16 in novice hurdle at Fairyhouse (heavy, 200/1) 61 days ago.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "-",
-            "equipment_text": "H",
-            "format_weight": "11-4",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 15,
-            "cloth_number": 15,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "P J O'Hanlon",
-                "slug": "/patrick-o-hanlon"
-            },
-            "trainer": {
-                "name": "D A McLoughlin",
-                "slug": "/d-a-mc-loughlin"
-            },
-            "horse": {
-                "id": 539693,
-                "name": "Thatsmyroadie",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/thatsmyroadie-ireland",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "g",
-                "age": 6,
-                "age_days": 2267,
-                "dam_name": "Gibbstown",
-                "sire_name": "Elusive Pimpernel",
-                "dam_sire_name": "Bob Back"
-            },
-            "silk": {
-                "id": 5056909,
-                "press_association_file": {
-                    "filename": "20260317dro131815.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCSmhpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--34eaeca1ac8095d928f024965f97c06321535396/20260317dro131815.svg"
-                },
-                "filename": "s180326/20260317dro131815.svg",
-                "crc32": 1086310472
-            }
-        },
-        {
-            "id": 8429276,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 525614,
-            "horse_name": "Three Leaf Clover",
-            "owner_name": "Readsland Racing",
-            "horse_sex": "Mare",
-            "horse_country_code": "ie",
-            "days_since_last_run": 61,
-            "timeform_star_rating": 1,
-            "focus_horse": false,
-            "jockey_id": 19119,
-            "jockey_name": "Alix Balfe",
-            "apprentice_claim": 7,
-            "trainer_id": 742,
-            "trainer_name": "D A McLoughlin",
-            "form": "00",
-            "form_figure": null,
-            "age": 5,
-            "timeform_rating": "-",
-            "timeform_original_rating": 0,
-            "analyst_comment": "250/1, tenth of 16 in novice hurdle at Fairyhouse (heavy) 61 days ago.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "-",
-            "equipment_text": "",
-            "format_weight": "10-11",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 18,
-            "cloth_number": 18,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Alix Balfe",
-                "slug": "/a-balfe"
-            },
-            "trainer": {
-                "name": "D A McLoughlin",
-                "slug": "/d-a-mc-loughlin"
-            },
-            "horse": {
-                "id": 525614,
-                "name": "Three Leaf Clover",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/three-leaf-clover-ireland",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "m",
-                "age": 5,
-                "age_days": 1901,
-                "dam_name": "World Citizen",
-                "sire_name": "Lucky Speed",
-                "dam_sire_name": "Basanta"
-            },
-            "silk": {
-                "id": 5056911,
-                "press_association_file": {
-                    "filename": "20260317dro131818.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCRzFpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--64610294dc47fc7699cc71b781be034af4f1ebaa/20260317dro131818.svg"
-                },
-                "filename": "s180326/20260317dro131818.svg",
-                "crc32": 1088759069
-            }
-        },
-        {
-            "id": 8429277,
-            "status": {
-                "state": "entered"
-            },
-            "withdrawn": false,
-            "horse_id": 392048,
-            "horse_name": "Whispering Hopes",
-            "owner_name": "Liam Lennon",
-            "horse_sex": "Mare",
-            "horse_country_code": "ie",
-            "days_since_last_run": 257,
-            "timeform_star_rating": 1,
-            "focus_horse": false,
-            "jockey_id": 20551,
-            "jockey_name": "Mr E P Powell",
-            "apprentice_claim": 7,
-            "trainer_id": 1411,
-            "trainer_name": "L Lennon",
-            "form": "F23F60",
-            "form_figure": null,
-            "age": 6,
-            "timeform_rating": "0?",
-            "timeform_original_rating": 100,
-            "analyst_comment": "Remains a maiden after 10 hurdle runs. First run since leaving Gordon Elliott when fourteenth of 20 in novice hurdle (150/1) at this course (17.2f, soft) 56 days ago.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "0?",
-            "equipment_text": "",
-            "format_weight": "10-11",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 19,
-            "cloth_number": 19,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Mr E P Powell",
-                "slug": "/mr-e-p-powell"
-            },
-            "trainer": {
-                "name": "L Lennon",
-                "slug": "/l-lennon"
-            },
-            "horse": {
-                "id": 392048,
-                "name": "Whispering Hopes",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/whispering-hopes",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "m",
-                "age": 6,
-                "age_days": 2197,
-                "dam_name": "Grandegrandegrande",
-                "sire_name": "Estidhkaar",
-                "dam_sire_name": "High Chaparral"
-            },
-            "silk": {
-                "id": 5056913,
-                "press_association_file": {
-                    "filename": "20260317dro131819.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCS0JpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--f6ad8b6e1858e28aa7776fc85b191dba9a3f2519/20260317dro131819.svg"
-                },
-                "filename": "s180326/20260317dro131819.svg",
-                "crc32": 2707865487
-            }
-        },
-        {
-            "id": 8429281,
-            "status": {
-                "state": "reserve"
-            },
-            "withdrawn": false,
-            "horse_id": 538694,
-            "horse_name": "Auntie Ida",
-            "owner_name": "Mrs Mary Turley",
-            "horse_sex": "Mare",
-            "horse_country_code": "ie",
-            "days_since_last_run": 30,
-            "timeform_star_rating": 1,
-            "focus_horse": false,
-            "jockey_id": null,
-            "jockey_name": null,
-            "apprentice_claim": 0,
-            "trainer_id": 17226,
-            "trainer_name": "Patrick Turley",
-            "form": "409",
-            "form_figure": null,
-            "age": 6,
-            "timeform_rating": "-",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Ninth of 15 in novice hurdle at Punchestown (19.5f, heavy, 150/1) 30 days ago. RESERVE.",
-            "timeform_tipped_place": null,
-            "reserve": true,
-            "format_timeform_rating": "-",
-            "equipment_text": "",
-            "format_weight": "10-11",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 23,
-            "cloth_number": 23,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": null,
-                "slug": null
-            },
-            "trainer": {
-                "name": "Patrick Turley",
-                "slug": "/patrick-turley"
-            },
-            "horse": {
-                "id": 538694,
-                "name": "Auntie Ida",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/auntie-ida-ireland",
-                "colors": [
-                    "ch"
-                ],
-                "display_colors": [
-                    "Chestnut"
-                ],
-                "gender": "m",
-                "age": 6,
-                "age_days": 2267,
-                "dam_name": "Bargy Lady",
-                "sire_name": "Malinas",
-                "dam_sire_name": "Yeats"
-            },
-            "silk": {
-                "id": 5056928,
-                "press_association_file": {
-                    "filename": "20260317dro131823.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCS2hpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d3263a53af7fa2bd951cd303624b0b654b5b92ab/20260317dro131823.svg"
-                },
-                "filename": "s180326/20260317dro131823.svg",
-                "crc32": 1650466406
-            }
-        },
-        {
-            "id": 8429279,
-            "status": {
-                "state": "reserve"
-            },
-            "withdrawn": false,
-            "horse_id": 440517,
-            "horse_name": "Dahab",
-            "owner_name": "Mrs Shauna Kelly",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": 11,
-            "timeform_star_rating": 2,
-            "focus_horse": false,
-            "jockey_id": null,
-            "jockey_name": null,
-            "apprentice_claim": 0,
-            "trainer_id": 26,
-            "trainer_name": "N C Kelly",
-            "form": "0-7",
-            "form_figure": null,
-            "age": 5,
-            "timeform_rating": "99",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Seventh of 12 in novice hurdle (50/1) at Ayr (soft) 11 days ago. RESERVE.",
-            "timeform_tipped_place": null,
-            "reserve": true,
-            "format_timeform_rating": "99",
-            "equipment_text": "",
-            "format_weight": "11-4",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 21,
-            "cloth_number": 21,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": null,
-                "slug": null
-            },
-            "trainer": {
-                "name": "N C Kelly",
-                "slug": "/n-c-kelly"
-            },
-            "horse": {
-                "id": 440517,
-                "name": "Dahab",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/dahab-ireland",
-                "colors": [
-                    "ch"
-                ],
-                "display_colors": [
-                    "Chestnut"
-                ],
-                "gender": "g",
-                "age": 5,
-                "age_days": 1815,
-                "dam_name": "Zman Awal",
-                "sire_name": "Saxon Warrior",
-                "dam_sire_name": "Dubawi"
-            },
-            "silk": {
-                "id": 5056923,
-                "press_association_file": {
-                    "filename": "20260317dro131821.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCS0ppU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--1e92e955405f15390ff03e84668f39cbcbca13fd/20260317dro131821.svg"
-                },
-                "filename": "s180326/20260317dro131821.svg",
-                "crc32": 1258297333
-            }
-        },
-        {
-            "id": 8429265,
-            "status": {
-                "state": "scratched"
-            },
-            "withdrawn": false,
-            "horse_id": 470062,
-            "horse_name": "Certamen",
-            "owner_name": "Sarah Ling \u0026 Sarah Buckley",
-            "horse_sex": "Gelding",
-            "horse_country_code": "ie",
-            "days_since_last_run": 150,
-            "timeform_star_rating": 2,
-            "focus_horse": false,
-            "jockey_id": 20274,
-            "jockey_name": "Non Runner",
-            "apprentice_claim": 0,
-            "trainer_id": 24889,
-            "trainer_name": "E Buckley",
-            "form": "40-56",
-            "form_figure": null,
-            "age": 5,
-            "timeform_rating": "114",
-            "timeform_original_rating": 0,
-            "analyst_comment": "Lightly-raced maiden under NH rules. Very good sixth of 16 in novice hurdle at Limerick (good to soft, 66/1) 150 days ago.",
-            "timeform_tipped_place": null,
-            "reserve": false,
-            "format_timeform_rating": "114",
-            "equipment_text": "",
-            "format_weight": "11-4",
-            "jockey_icon_badges": [],
-            "trainer_icon_badges": [],
-            "text_badges": [],
-            "icon_badges": [],
-            "entry_number": 7,
-            "cloth_number": 7,
-            "barrier_number": 0,
-            "starting_price": null,
-            "starting_price_favorite": null,
-            "jockey": {
-                "name": "Non Runner",
-                "slug": "/non-runner"
-            },
-            "trainer": {
-                "name": "E Buckley",
-                "slug": "/e-buckley-24888"
-            },
-            "horse": {
-                "id": 470062,
-                "name": "Certamen",
-                "country_code": {
-                    "iso": "ie",
-                    "racing": "IRE"
-                },
-                "slug": "/certamen-ireland",
-                "colors": [
-                    "b"
-                ],
-                "display_colors": [
-                    "Bay"
-                ],
-                "gender": "g",
-                "age": 5,
-                "age_days": 1901,
-                "dam_name": "Bobailin",
-                "sire_name": "Teofilo",
-                "dam_sire_name": "Vocalised"
-            },
-            "silk": {
-                "id": 5056886,
-                "press_association_file": {
-                    "filename": "20260317dro131807.svg",
-                    "path": "/onspace/media/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCRnhpU3dRPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c92aa2297f5df69e89b8c320c1922dfe2c1afd1a/20260317dro131807.svg"
-                },
-                "filename": "s180326/20260317dro131807.svg",
-                "crc32": 3390945100
+            "selectionId": "38561117",
+            "name": "Bahtiyar",
+            "data": {
+                "racingTvHorseData": {
+                    "name": "Bahtiyar",
+                    "age": 8,
+                    "horseSex": "Gelding",
+                    "weight": "10-2",
+                    "daysSinceLastRun": 1552,
+                    "focusHorse": false,
+                    "apprenticeClaim": 0,
+                    "timeformStarRating": 1,
+                    "timeformRating": "105",
+                    "analystComment": "Long-standing maiden who was a creditable third of 7 over 25f here when last seen in November but he's 9 lb 'wrong' at the weights and again looks vulnerable.",
+                    "form": "PP5333",
+                    "prompts": {},
+                    "statistics": [
+                        {
+                            "raceType": "Chase",
+                            "wins": 0,
+                            "seconds": 0,
+                            "thirds": 3,
+                            "fourths": 0,
+                            "total": 5
+                        },
+                        {
+                            "raceType": "Flat Turf",
+                            "wins": 0,
+                            "seconds": 0,
+                            "thirds": 0,
+                            "fourths": 0,
+                            "total": 4
+                        },
+                        {
+                            "raceType": "Hurdle",
+                            "wins": 0,
+                            "seconds": 2,
+                            "thirds": 5,
+                            "fourths": 3,
+                            "total": 23
+                        }
+                    ],
+                    "performances": [
+                        {
+                            "date": "2025-11-04T00:00:00",
+                            "trackName": "WARWICK",
+                            "raceDistance": 5600,
+                            "raceClass": "5",
+                            "raceType": "Chase",
+                            "raceGoing": "Good",
+                            "groupText": "C5Hc",
+                            "weight": "10-3",
+                            "rating": "75",
+                            "handicap": true,
+                            "finishPosition": 3,
+                            "raceRunnerCount": 7,
+                            "distanceBeatenCumulative": 7.25,
+                            "inPlayEffort": 0.2,
+                            "commentFull": "back in headgear, kept up his run of placings and would have finished somewhere around the runner-up with a smooth passage; dropped out, awkward second, progress 4 out, lost place when not clear run entering straight, driven 2 out, stayed on."
+                        },
+                        {
+                            "date": "2025-10-18T00:00:00",
+                            "trackName": "STRATFORD-ON-AVON",
+                            "raceDistance": 4965,
+                            "raceClass": "5",
+                            "raceType": "Chase",
+                            "raceGoing": "Good (Good to Firm in places)",
+                            "groupText": "C5Hc",
+                            "weight": "10-10",
+                            "rating": "77",
+                            "handicap": true,
+                            "finishPosition": 3,
+                            "raceRunnerCount": 7,
+                            "distanceBeatenCumulative": 18,
+                            "inPlayEffort": 0.11,
+                            "commentFull": "proved more tractable without headgear (albeit reportedly hung left again) and got back on track reverted to hold-up tactics, still plenty to do back straight before closing up late, took third run-in."
+                        },
+                        {
+                            "date": "2025-10-07T00:00:00",
+                            "trackName": "HUNTINGDON",
+                            "raceDistance": 5189,
+                            "raceClass": "5",
+                            "raceType": "Chase",
+                            "raceGoing": "Good (Good to Firm in places)",
+                            "groupText": "C5Hc",
+                            "weight": "10-7",
+                            "rating": "78",
+                            "handicap": true,
+                            "finishPosition": 3,
+                            "raceRunnerCount": 5,
+                            "distanceBeatenCumulative": 26.1,
+                            "inPlayEffort": 0.12,
+                            "commentFull": "looked a hard ride back up in trip (raced freely/hung left) and essentially isn't one to be interested in; led until thirteenth, pecked 4 out, left behind from home turn."
+                        },
+                        {
+                            "date": "2025-09-23T00:00:00",
+                            "trackName": "WARWICK",
+                            "raceDistance": 4400,
+                            "raceClass": "5",
+                            "raceType": "Chase",
+                            "raceGoing": "Good (Good to Firm in Places)",
+                            "groupText": "C5Hc",
+                            "weight": "10-6",
+                            "rating": "78",
+                            "handicap": true,
+                            "finishPosition": 5,
+                            "raceRunnerCount": 9,
+                            "distanceBeatenCumulative": 4.6,
+                            "inPlayEffort": 0.08,
+                            "commentFull": "matched his recent hurdles form second time up over fences, though isn't sure to reproduce this next time; mid-division, in contention home turn, one paced."
+                        },
+                        {
+                            "date": "2025-09-06T00:00:00",
+                            "trackName": "STRATFORD-ON-AVON",
+                            "raceDistance": 4965,
+                            "raceClass": "5",
+                            "raceType": "Chase",
+                            "raceGoing": "Good (Good to Firm in places)",
+                            "groupText": "C5Hc",
+                            "weight": "10-7",
+                            "rating": "78",
+                            "handicap": true,
+                            "raceRunnerCount": 9,
+                            "distanceBeatenCumulative": 13.45,
+                            "inPlayEffort": 0.02,
+                            "commentFull": "can have a line put through this chasing debut, pulled up due to a slipped saddle after the tenth when still towards rear."
+                        },
+                        {
+                            "date": "2025-07-20T00:00:00",
+                            "trackName": "STRATFORD-ON-AVON",
+                            "raceDistance": 5803,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good",
+                            "groupText": "C5Hc",
+                            "weight": "11-5",
+                            "rating": "80",
+                            "handicap": true,
+                            "raceRunnerCount": 6,
+                            "distanceBeatenCumulative": 30.5,
+                            "inPlayEffort": 0.17
+                        },
+                        {
+                            "date": "2025-07-04T00:00:00",
+                            "trackName": "BANGOR-ON-DEE",
+                            "raceDistance": 5092,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good (Good to Firm in places)",
+                            "groupText": "C5Hc",
+                            "weight": "10-6",
+                            "rating": "82",
+                            "handicap": true,
+                            "finishPosition": 3,
+                            "raceRunnerCount": 6,
+                            "distanceBeatenCumulative": 12,
+                            "inPlayEffort": 0.07,
+                            "commentFull": "ran better than last time back up in trip in first-time cheekpieces, but is a long-standing maiden; held up, headway before home turn, no further impression."
+                        },
+                        {
+                            "date": "2025-06-01T00:00:00",
+                            "trackName": "FAKENHAM",
+                            "raceDistance": 4401,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good",
+                            "groupText": "C5Hc",
+                            "weight": "11-9",
+                            "rating": "84",
+                            "handicap": true,
+                            "finishPosition": 5,
+                            "raceRunnerCount": 7,
+                            "distanceBeatenCumulative": 74.75,
+                            "inPlayEffort": 0.09,
+                            "commentFull": "ran badly; waited with, not fluent first, took slightly closer order fourth, lost ground after 4 out, beaten next."
+                        },
+                        {
+                            "date": "2025-05-11T00:00:00",
+                            "trackName": "LUDLOW",
+                            "raceDistance": 4675,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good",
+                            "groupText": "C5Hc",
+                            "weight": "11-3",
+                            "rating": "88",
+                            "handicap": true,
+                            "finishPosition": 4,
+                            "raceRunnerCount": 5,
+                            "distanceBeatenCumulative": 10,
+                            "inPlayEffort": 0.05,
+                            "commentFull": "after 6 months off, hasn't really fired for current connections; close up, not settle fully, not fluent fifth, lost place 4 out, some headway again next, mistake 2 out, no extra."
+                        },
+                        {
+                            "date": "2024-11-19T00:00:00",
+                            "trackName": "FAKENHAM",
+                            "raceDistance": 5155,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Soft (Good to Soft in places)",
+                            "groupText": "C5Hc",
+                            "weight": "11-10",
+                            "rating": "91",
+                            "handicap": true,
+                            "finishPosition": 4,
+                            "raceRunnerCount": 5,
+                            "distanceBeatenCumulative": 54,
+                            "inPlayEffort": 0.07,
+                            "commentFull": "ran even worse on his third start for the yard, returning to a longer trip not coming into it; held up, not fluent eighth, shaken up after 4 out, no response."
+                        },
+                        {
+                            "date": "2024-11-07T00:00:00",
+                            "trackName": "LUDLOW",
+                            "raceDistance": 4675,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good (Good to Soft in places)",
+                            "groupText": "C4Hc",
+                            "weight": "10-5",
+                            "rating": "94",
+                            "handicap": true,
+                            "finishPosition": 7,
+                            "raceRunnerCount": 10,
+                            "distanceBeatenCumulative": 14.25,
+                            "inPlayEffort": 0.07,
+                            "commentFull": "back up in trip, after just 7 days off, again ran below form; mid-field, took closer order out wide fifth, effort when not fluent 2 out, faded."
+                        },
+                        {
+                            "date": "2024-10-31T00:00:00",
+                            "trackName": "STRATFORD-ON-AVON",
+                            "raceDistance": 4108,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Soft (Good in places)",
+                            "groupText": "C5",
+                            "weight": "11-0",
+                            "rating": "-",
+                            "finishPosition": 5,
+                            "raceRunnerCount": 8,
+                            "distanceBeatenCumulative": 22.5,
+                            "inPlayEffort": 0.07,
+                            "commentFull": "back down markedly in trip and without a tongue strap this time, was below form on first outing since leaving Dan Skelton; pressed leader, took keen hold, led briefly fourth, led again fifth, headed 2 out, dropped away from early in straight."
+                        },
+                        {
+                            "date": "2024-09-24T00:00:00",
+                            "trackName": "FONTWELL PARK",
+                            "raceDistance": 5666,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Soft (Good in places)",
+                            "groupText": "C5Hc",
+                            "weight": "11-9",
+                            "rating": "94",
+                            "handicap": true,
+                            "finishPosition": 4,
+                            "raceRunnerCount": 12,
+                            "distanceBeatenCumulative": 12.5,
+                            "inPlayEffort": 0.66,
+                            "commentFull": "ran respectably upped further in trip, though remains a maiden; soon in mid-division, took strong hold, not fluent 3 out, some headway before next, blundered last, one paced."
+                        },
+                        {
+                            "date": "2024-08-27T00:00:00",
+                            "trackName": "STRATFORD-ON-AVON",
+                            "raceDistance": 4847,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Firm (Good in places)",
+                            "groupText": "C5Hc",
+                            "weight": "12-0",
+                            "rating": "93",
+                            "handicap": true,
+                            "finishPosition": 3,
+                            "raceRunnerCount": 16,
+                            "distanceBeatenCumulative": 6.25,
+                            "inPlayEffort": 0.16,
+                            "commentFull": "ran creditably refitted with a tongue strap (for first time for current yard), coming from further back than the first 2 and having no issue with the longer trip, the emphasis on speed admittedly; patiently ridden, took closer order 2 out, short of room leaving back straight, ridden before last, keeping on when untidy there."
+                        },
+                        {
+                            "date": "2024-07-18T00:00:00",
+                            "trackName": "WORCESTER",
+                            "raceDistance": 3520,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good",
+                            "groupText": "C5Hc",
+                            "weight": "11-4",
+                            "rating": "95",
+                            "handicap": true,
+                            "finishPosition": 5,
+                            "raceRunnerCount": 10,
+                            "distanceBeatenCumulative": 8.75,
+                            "inPlayEffort": 0.21,
+                            "commentFull": "is proving expensive to follow but had another valid excuse, left poorly placed reverted to more patient tactics; dropped out, still plenty to do usual 3 out, effort when hung left run-in, never dangerous."
+                        },
+                        {
+                            "date": "2024-06-25T00:00:00",
+                            "trackName": "NEWTON ABBOT",
+                            "raceDistance": 3687,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good (Good to Firm in places)",
+                            "groupText": "C5Hc",
+                            "weight": "11-7",
+                            "rating": "97",
+                            "handicap": true,
+                            "finishPosition": 5,
+                            "raceRunnerCount": 10,
+                            "distanceBeatenCumulative": 12.95,
+                            "inPlayEffort": 0.25,
+                            "commentFull": "has shaped quite encouragingly without quite clicking on most starts for this yard and did so again after 9 months off, typically a bit too headstrong; close up, took strong hold, challenged home turn, not fluent 2 out, no extra."
+                        },
+                        {
+                            "date": "2023-10-12T00:00:00",
+                            "trackName": "EXETER",
+                            "raceDistance": 3681,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Firm (Good in places)",
+                            "groupText": "C5Hc",
+                            "weight": "11-13",
+                            "rating": "98",
+                            "handicap": true,
+                            "finishPosition": 5,
+                            "raceRunnerCount": 15,
+                            "distanceBeatenCumulative": 12.6,
+                            "inPlayEffort": 0.31,
+                            "commentFull": "wasn't disgraced but needs to learn to settle, the refitting of a hood (not worn since joining the yard) likely to assist; raced clear, mistake fifth, reduced advantage end of back straight, ridden when pecked on landing 3 out, headed next, hung left, beaten when hit last."
+                        },
+                        {
+                            "date": "2023-09-09T00:00:00",
+                            "trackName": "STRATFORD-ON-AVON",
+                            "raceDistance": 3590,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good",
+                            "groupText": "C4Hc",
+                            "weight": "11-2",
+                            "rating": "98",
+                            "handicap": true,
+                            "raceRunnerCount": 6,
+                            "distanceBeatenCumulative": 19.7,
+                            "inPlayEffort": 0.32,
+                            "commentFull": "was beaten at short odds for the second time in as many starts for Skelton but can have a line put through this one; soon steadied, raced freely, saddle slipped before halfway, lost touch back straight, pulled up after 2 out."
+                        },
+                        {
+                            "date": "2023-08-24T00:00:00",
+                            "trackName": "STRATFORD-ON-AVON",
+                            "raceDistance": 3590,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good",
+                            "groupText": "C5Hc",
+                            "weight": "11-13",
+                            "rating": "97",
+                            "handicap": true,
+                            "finishPosition": 2,
+                            "raceRunnerCount": 11,
+                            "distanceBeatenCumulative": 0.5,
+                            "inPlayEffort": 0.75,
+                            "commentFull": "couldn't quite land a gamble but shaped well with the hood and tongue strap left off on his first start since having a second breathing operation, having left Harry Whittington in the 5 months since last seen; mid-field, took strong hold, went handy 3 out, led briefly last, kept on."
+                        },
+                        {
+                            "date": "2023-03-13T00:00:00",
+                            "trackName": "PLUMPTON",
+                            "raceDistance": 3495,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Soft (Heavy in places)",
+                            "groupText": "C5Hc",
+                            "weight": "12-1",
+                            "rating": "101",
+                            "handicap": true,
+                            "finishPosition": 3,
+                            "raceRunnerCount": 6,
+                            "distanceBeatenCumulative": 37.5,
+                            "inPlayEffort": 0.11,
+                            "commentFull": "was below form after 6 weeks off; chased leader, pushed along after 4 out, left behind from next."
+                        },
+                        {
+                            "date": "2023-01-29T00:00:00",
+                            "trackName": "SEDGEFIELD",
+                            "raceDistance": 3698,
+                            "raceClass": "5",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Soft (Soft In Places)",
+                            "groupText": "C5Hc",
+                            "weight": "12-0",
+                            "rating": "105",
+                            "handicap": true,
+                            "finishPosition": 6,
+                            "raceRunnerCount": 12,
+                            "distanceBeatenCumulative": 11.75,
+                            "inPlayEffort": 0.18,
+                            "commentFull": "ran to a similar level to last time having been well backed with a tongue strap reapplied; led, headed usual 2 out, faded."
+                        },
+                        {
+                            "date": "2022-12-26T00:00:00",
+                            "trackName": "MARKET RASEN",
+                            "raceDistance": 4100,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Soft",
+                            "groupText": "C4Hc",
+                            "weight": "11-6",
+                            "rating": "107",
+                            "handicap": true,
+                            "finishPosition": 5,
+                            "raceRunnerCount": 13,
+                            "distanceBeatenCumulative": 10.6,
+                            "inPlayEffort": 0.07,
+                            "commentFull": "in first-time hood, got back on track; mid-division, pushed along end of back straight, not fluent 2 out, weakened from last."
+                        },
+                        {
+                            "date": "2022-11-01T00:00:00",
+                            "trackName": "WARWICK",
+                            "raceDistance": 3520,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Soft",
+                            "groupText": "C4Hc",
+                            "weight": "11-6",
+                            "rating": "107",
+                            "handicap": true,
+                            "finishPosition": 6,
+                            "raceRunnerCount": 12,
+                            "distanceBeatenCumulative": 18.45,
+                            "inPlayEffort": 0.08,
+                            "commentFull": "who'd had a breathing operation, was below form switched to a handicap; held up, not fluent 4 out, ridden after next, made little impression."
+                        },
+                        {
+                            "date": "2022-09-30T00:00:00",
+                            "trackName": "FONTWELL PARK",
+                            "raceDistance": 3902,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good (Good to Firm in places)",
+                            "groupText": "C4",
+                            "weight": "10-12",
+                            "rating": "-",
+                            "finishPosition": 2,
+                            "raceRunnerCount": 4,
+                            "distanceBeatenCumulative": 7,
+                            "inPlayEffort": 0.4,
+                            "commentFull": "ran creditably but had his limitations exposed; chased leader, went on fifth, hit 3 out, not fluent 2 out, headed before last, no match for winner."
+                        },
+                        {
+                            "date": "2022-09-12T00:00:00",
+                            "trackName": "WORCESTER",
+                            "raceDistance": 3520,
+                            "raceClass": "4",
+                            "raceType": "Hurdle",
+                            "raceGoing": "Good to Soft",
+                            "groupText": "C4",
+                            "weight": "11-2",
+                            "rating": "-",
+                            "finishPosition": 3,
+                            "raceRunnerCount": 13,
+                            "distanceBeatenCumulative": 1,
+                            "inPlayEffort": 0.5,
+                            "commentFull": "ran to a fair level, as he'd done on his final outing in France (when tongue tied) for K. Herzog 7 months earlier; not settle fully, led briefly early, led again before fourth, tackled from 3 out, headed final 1f, no extra only dying strides; there doesn't look to be much of him, however."
+                        }
+                    ]
+                }
             }
         }
     ],
-    "last_winners": [
-        {
-            "year": "2025",
-            "horse_name": "Glenashling",
-            "horse_age": 6,
-            "horse_weight": 158,
-            "format_weight": "11-4",
-            "starting_price": {
-                "decimal": "15.00",
-                "fractional": "14/1",
-                "moneyline": "+1400"
-            },
-            "starting_price_favorite": null,
-            "jockey_name": "Conor Stone-Walsh",
-            "trainer_name": "G P Cromwell",
-            "runner_count": 15
+    "data": {
+        "racingTvRaceData": {
+            "trackCondition": "Good",
+            "ipHintsOverallPace": "Even",
+            "analystVerdict": "CLAIM DU BRIZAIS took a step firmly in the right direction in this sphere when third over C&D last time and he could be the answer if able to build on that, which seems likely. \r\nMoonshine Man is feared most on the back of a solid effort at Kempton but Two To Tango has to be respected following his Stratford breakthrough success and both Move With The Beat and Roger Rarebit also have claims in a competitive handicap.",
+            "raceType": "Chase",
+            "raceClass": "4",
+            "trackType": "Turf",
+            "eligibility": "5YO+",
+            "distance": "2m 4f",
+            "ipHintsSpecificPace": "There is a chance of a pace burnout early, and Moonshine Man is one who could suffer as a result: A proliferation of possible pace-forcers could set things up for those coming from further back:  Claim Du Brizais is one who may benefit.",
+            "ipHintsIndividualPace": "Moonshine Man traded at 25% or less of Betfair SP twice and 50% or less of Betfair SP on 3 of its last 5 starts: Bahtiyar traded at 25% or less of Betfair SP and 50% or less of Betfair SP twice on 3 of its last 5 starts."
         }
-    ],
-    "series": null,
-    "custom_tabs": []
+    }
 }
