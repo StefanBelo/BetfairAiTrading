@@ -1,3 +1,10 @@
+---
+title: "Football Draw Strategy"
+aliases: ["Football Draw Strategy"]
+type: strategy
+tags: [automation, football, strategy]
+---
+
 # Football Draw Strategy
 
 **Category:** Football  

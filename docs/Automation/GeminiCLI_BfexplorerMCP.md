@@ -1,3 +1,11 @@
+---
+title: "Using Gemini CLI with Bfexplorer App MCP Server for Automated Betfair Trading"
+aliases: ["Using Gemini CLI with Bfexplorer App MCP Server for Automated Betfair Trading"]
+type: guide
+tags: [automation, bfexplorer, ev-analysis, guide, horse-racing, mcp, python, silent-execution, trading]
+mcp_tools: [GetActiveMarket, GetAllDataContextForMarket]
+---
+
 # Using Gemini CLI with Bfexplorer App MCP Server for Automated Betfair Trading
 
 ![Gemini CLI Prompt Setup](/docs/Automation/images/BfexplorerAndGeminiCLI.png)

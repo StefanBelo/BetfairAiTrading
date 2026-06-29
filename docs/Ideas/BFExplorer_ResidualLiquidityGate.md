@@ -1,3 +1,11 @@
+---
+title: "Residual Liquidity Gate — Summary & BFExplorer Integration"
+aliases: ["Residual Liquidity Gate — Summary & BFExplorer Integration"]
+type: idea
+tags: [automation, bfexplorer, horse-racing, idea, mcp]
+mcp_tools: [GetActiveMarket, GetAllDataContextForMarket]
+---
+
 # Residual Liquidity Gate — Summary & BFExplorer Integration
 
 Date: 2026-02-19

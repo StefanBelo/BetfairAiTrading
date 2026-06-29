@@ -1,3 +1,10 @@
+---
+title: "How to Use AI Agents for Smarter Horse Racing Betting: A Beginner's Guide"
+aliases: ["How to Use AI Agents for Smarter Horse Racing Betting: A Beginner's Guide"]
+type: tutorial
+tags: [automation, ev-analysis, horse-racing, tutorial]
+---
+
 # How to Use AI Agents for Smarter Horse Racing Betting: A Beginner's Guide
 
 *Transform your betting with data-driven analysis and understand the power of Expected Value*

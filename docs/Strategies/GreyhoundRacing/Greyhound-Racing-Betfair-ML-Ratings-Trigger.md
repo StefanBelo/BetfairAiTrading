@@ -1,3 +1,10 @@
+---
+title: "Greyhound Racing Betfair ML Ratings Trigger"
+aliases: ["Greyhound Racing Betfair ML Ratings Trigger"]
+type: note
+tags: [automation, horse-racing, note]
+---
+
 # Greyhound Racing Betfair ML Ratings Trigger
 
 **Category:** Greyhound Racing  

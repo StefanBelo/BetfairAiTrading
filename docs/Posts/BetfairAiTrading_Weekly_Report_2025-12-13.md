@@ -1,3 +1,10 @@
+---
+title: "BetfairAiTrading Weekly Report (50)"
+aliases: ["BetfairAiTrading Weekly Report (50)"]
+type: post
+tags: [automation, football, market-sentiment, post, trading]
+---
+
 # BetfairAiTrading Weekly Report (50)
 
 ## Topic: Incorporating AI into Sports Betting (Group Discussion Summary)

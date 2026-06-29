@@ -1,3 +1,11 @@
+---
+title: "Tennis Player Serve Match Statistics Strategy"
+aliases: ["Tennis Player Serve Match Statistics Strategy"]
+type: strategy
+tags: [automation, bfexplorer, strategy, tennis, trading]
+mcp_tools: [PlaceBet]
+---
+
 # Tennis Player Serve Match Statistics Strategy
 
 ## Overview

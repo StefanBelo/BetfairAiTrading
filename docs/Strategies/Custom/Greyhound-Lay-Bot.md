@@ -1,3 +1,11 @@
+---
+title: "Greyhound Lay Bot"
+aliases: ["Greyhound Lay Bot"]
+type: note
+tags: [automation, horse-racing, note]
+mcp_tools: [PlaceBet]
+---
+
 # Greyhound Lay Bot
 
 ## Overview

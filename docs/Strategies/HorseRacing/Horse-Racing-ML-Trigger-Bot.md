@@ -1,3 +1,10 @@
+---
+title: "Horse Racing ML Trigger Bot"
+aliases: ["Horse Racing ML Trigger Bot"]
+type: note
+tags: [automation, bfexplorer, horse-racing, note]
+---
+
 # Horse Racing ML Trigger Bot
 
 ## Overview

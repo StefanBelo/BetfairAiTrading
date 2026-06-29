@@ -1,3 +1,11 @@
+---
+title: "Bookmaker Price Bot"
+aliases: ["Bookmaker Price Bot"]
+type: note
+tags: [automation, ev-analysis, horse-racing, note]
+mcp_tools: [PlaceBet]
+---
+
 # Bookmaker Price Bot
 
 ## Overview

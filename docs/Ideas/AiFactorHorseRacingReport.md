@@ -1,3 +1,10 @@
+---
+title: "AI Factor Horse Racing Selection Report Strategy"
+aliases: ["AI Factor Horse Racing Selection Report Strategy"]
+type: strategy
+tags: [automation, bfexplorer, horse-racing, strategy, trading]
+---
+
 # AI Factor Horse Racing Selection Report Strategy
 
 **Source transcript**: [Loom video](https://www.loom.com/share/7a08ef6546ce476fbb357529ec37ebf1)

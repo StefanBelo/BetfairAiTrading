@@ -1,3 +1,12 @@
+---
+title: "Horseracingexpert"
+aliases: ["Horseracingexpert"]
+type: template
+tags: [automation, ev-analysis, horse-racing, template, trading]
+mcp_tools: [GetActiveMarket, GetAllDataContextForMarket]
+data_contexts: [AtTheRacesDataForHorses, RacingpostDataForHorses, TimeformDataForHorses]
+---
+
 ## Horse Racing Expert Bettor: System Prompt Structure
 
 ### 1. Data Acquisition Pipeline

@@ -1,3 +1,10 @@
+---
+title: "Unlocking Smarter Betfair Trading: The Bfexplorer Agentic Approach"
+aliases: ["Unlocking Smarter Betfair Trading: The Bfexplorer Agentic Approach"]
+type: post
+tags: [automation, bfexplorer, football, horse-racing, post, tennis, trading]
+---
+
 # Unlocking Smarter Betfair Trading: The Bfexplorer Agentic Approach
 
 Dear Bfexplorer Subscriber,

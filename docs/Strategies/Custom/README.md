@@ -1,3 +1,10 @@
+---
+title: "Custom Strategies"
+aliases: ["Custom Strategies"]
+type: index
+tags: [automation, bfexplorer, horse-racing, index, trading]
+---
+
 # Custom Strategies
 
 This folder contains custom and specialized Bfexplorer strategies that implement unique logic, custom algorithms, or specialized functionality for specific trading scenarios.

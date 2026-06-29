@@ -1,3 +1,10 @@
+---
+title: "Stake Percentage Of Available Balance"
+aliases: ["Stake Percentage Of Available Balance"]
+type: note
+tags: [automation, dutching, note, staking, trading]
+---
+
 # Stake Percentage Of Available Balance
 
 ## Overview

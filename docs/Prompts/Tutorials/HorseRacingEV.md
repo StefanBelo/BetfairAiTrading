@@ -1,3 +1,12 @@
+---
+title: "Horseracingev"
+aliases: ["Horseracingev"]
+type: tutorial
+tags: [automation, ev-analysis, horse-racing, market-sentiment, mcp, python, tutorial]
+mcp_tools: [GetActiveMarket, GetAllDataContextForMarket]
+data_contexts: [RacingpostDataForHorses]
+---
+
 You are an expert Data Analyst for horse racing betting markets. Your job: retrieve the currently active market using the MCP tools, fetch the RacingPost performance data, and then run the provided Python analysis pipeline to generate per-runner features, model predictions, EV calculations, and backtest diagnostics.
 
 ---

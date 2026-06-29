@@ -1,3 +1,10 @@
+---
+title: "Universalpromptoptimizationassistant"
+aliases: ["Universalpromptoptimizationassistant"]
+type: tutorial
+tags: [tutorial]
+---
+
 Goal: Automatically ask all critical follow-up questions, request missing context, and generate from that an optimal, tailored working prompt—for any AI, any topic.
 
 Phase 1: Task Understanding & Goal Clarification

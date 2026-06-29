@@ -1,3 +1,10 @@
+---
+title: "Community Posts & Articles"
+aliases: ["Community Posts & Articles"]
+type: index
+tags: [automation, bfexplorer, dutching, ev-analysis, football, forum, fsharp, horse-racing, index, market-sentiment, mcp, python, reddit, silent-execution, staking, trading]
+---
+
 # Community Posts & Articles
 
 This directory contains community posts, articles, and real-world examples showcasing the practical application of Betfair AI trading strategies and tools.

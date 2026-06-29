@@ -1,3 +1,11 @@
+---
+title: "BFExplorer AI Agent: Your Betfair Trading Assistant"
+aliases: ["BFExplorer AI Agent: Your Betfair Trading Assistant"]
+type: note
+tags: [automation, bfexplorer, fsharp, horse-racing, mcp, note, trading]
+mcp_tools: [GetActiveMarket]
+---
+
 # BFExplorer AI Agent: Your Betfair Trading Assistant
 
 

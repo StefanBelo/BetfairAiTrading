@@ -1,3 +1,10 @@
+---
+title: "Trading Strategies"
+aliases: ["Trading Strategies"]
+type: index
+tags: [automation, bfexplorer, football, horse-racing, index, tennis, trading]
+---
+
 # Trading Strategies
 
 This folder contains specialized trading strategies for position management, risk control, and profit optimization on Betfair markets using Bfexplorer.

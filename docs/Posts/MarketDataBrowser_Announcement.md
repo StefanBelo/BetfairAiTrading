@@ -1,3 +1,10 @@
+---
+title: "🚀 Introducing Market Data Browser - A TradingView-Inspired Tool for Betfair Markets"
+aliases: ["🚀 Introducing Market Data Browser - A TradingView-Inspired Tool for Betfair Markets"]
+type: post
+tags: [horse-racing, post, trading]
+---
+
 # 🚀 Introducing Market Data Browser - A TradingView-Inspired Tool for Betfair Markets
 
 Hey everyone! 👋

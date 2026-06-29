@@ -1,3 +1,10 @@
+---
+title: "Reddit Post: AI-Driven Horse Racing Analysis Results"
+aliases: ["Reddit Post: AI-Driven Horse Racing Analysis Results"]
+type: post
+tags: [ev-analysis, horse-racing, post, reddit, trading]
+---
+
 # Reddit Post: AI-Driven Horse Racing Analysis Results
 
 ## Post Title

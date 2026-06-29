@@ -1,3 +1,10 @@
+---
+title: "🐎 Horse Racing EV Analysis R2 - Timeform Edition: Professional AI Racing Strategy"
+aliases: ["🐎 Horse Racing EV Analysis R2 - Timeform Edition: Professional AI Racing Strategy"]
+type: strategy
+tags: [automation, bfexplorer, ev-analysis, horse-racing, strategy, trading]
+---
+
 # 🐎 Horse Racing EV Analysis R2 - Timeform Edition: Professional AI Racing Strategy
 
 **Publication Date**: July 21, 2025  

@@ -1,3 +1,10 @@
+---
+title: "Close Market Bet Position Strategy"
+aliases: ["Close Market Bet Position Strategy"]
+type: strategy
+tags: [automation, dutching, strategy, trading]
+---
+
 # Close Market Bet Position Strategy
 
 ## Overview

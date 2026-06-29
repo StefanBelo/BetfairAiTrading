@@ -1,3 +1,9 @@
+---
+title: "Betfair AI Trading Weekly Report (44)"
+aliases: ["Betfair AI Trading Weekly Report (44)"]
+type: post
+tags: [horse-racing, post, trading]
+---
 
 # Betfair AI Trading Weekly Report (44)
 

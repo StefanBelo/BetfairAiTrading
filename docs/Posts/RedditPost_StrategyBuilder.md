@@ -1,3 +1,10 @@
+---
+title: "Redditpost Strategybuilder"
+aliases: ["Redditpost Strategybuilder"]
+type: strategy
+tags: [automation, bfexplorer, python, reddit, staking, strategy, trading]
+---
+
 ## My Experience with the Bfexplorer Strategy Builder (vs. Other Approaches)
 
 I wanted to share my recent experience using the Bfexplorer strategy builder, discuss how it works, and compare our approach to what I often see from others in the Betfair / trading community.

@@ -1,3 +1,10 @@
+---
+title: "Tennis Set Winning Trigger Strategy"
+aliases: ["Tennis Set Winning Trigger Strategy"]
+type: strategy
+tags: [automation, strategy, tennis, trading]
+---
+
 # Tennis Set Winning Trigger Strategy
 
 ## Overview

@@ -1,3 +1,10 @@
+---
+title: "My Timeform Strategy"
+aliases: ["My Timeform Strategy"]
+type: strategy
+tags: [automation, bfexplorer, horse-racing, staking, strategy, trading]
+---
+
 # My Timeform Strategy
 
 ## Overview

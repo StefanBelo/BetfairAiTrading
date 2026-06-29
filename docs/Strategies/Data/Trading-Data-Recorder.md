@@ -1,3 +1,10 @@
+---
+title: "Trading Data Recorder"
+aliases: ["Trading Data Recorder"]
+type: note
+tags: [automation, note, trading]
+---
+
 # Trading Data Recorder
 
 **Category:** Data  

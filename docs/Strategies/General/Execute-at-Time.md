@@ -1,3 +1,10 @@
+---
+title: "Execute at Time Strategy"
+aliases: ["Execute at Time Strategy"]
+type: strategy
+tags: [automation, football, horse-racing, scalping, strategy, trading]
+---
+
 # Execute at Time Strategy
 
 ## Overview

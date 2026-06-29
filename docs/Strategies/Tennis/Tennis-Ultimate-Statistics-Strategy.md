@@ -1,3 +1,11 @@
+---
+title: "Tennis Ultimate Statistics Strategy"
+aliases: ["Tennis Ultimate Statistics Strategy"]
+type: strategy
+tags: [automation, bfexplorer, ev-analysis, strategy, tennis, trading]
+mcp_tools: [PlaceBet]
+---
+
 # Tennis Ultimate Statistics Strategy
 
 ## Overview

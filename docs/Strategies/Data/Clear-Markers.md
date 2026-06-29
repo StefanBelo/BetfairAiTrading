@@ -1,3 +1,10 @@
+---
+title: "Clear Markers"
+aliases: ["Clear Markers"]
+type: note
+tags: [automation, note, trading]
+---
+
 # Clear Markers
 
 **Category:** Data  

@@ -1,3 +1,10 @@
+---
+title: "Data Strategy Documentation Index"
+aliases: ["Data Strategy Documentation Index"]
+type: index
+tags: [automation, back-lay, bfexplorer, horse-racing, index, market-sentiment, trading]
+---
+
 # Data Strategy Documentation Index
 
 This directory contains comprehensive documentation for all data-related Bfexplorer strategies. These strategies focus on data collection, analysis, visualization, and market monitoring rather than active betting.

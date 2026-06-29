@@ -1,3 +1,11 @@
+---
+title: "Football Statarea Strategy"
+aliases: ["Football Statarea Strategy"]
+type: strategy
+tags: [automation, football, strategy]
+mcp_tools: [PlaceBet]
+---
+
 # Football Statarea Strategy
 
 **Category:** Football  

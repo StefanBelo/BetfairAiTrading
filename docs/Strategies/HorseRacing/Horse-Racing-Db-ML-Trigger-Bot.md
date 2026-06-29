@@ -1,3 +1,10 @@
+---
+title: "Horse Racing Db-ML Trigger Bot"
+aliases: ["Horse Racing Db-ML Trigger Bot"]
+type: note
+tags: [automation, bfexplorer, ev-analysis, horse-racing, note, trading]
+---
+
 # Horse Racing Db-ML Trigger Bot
 
 ## Overview

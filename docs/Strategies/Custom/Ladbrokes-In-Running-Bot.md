@@ -1,3 +1,11 @@
+---
+title: "Ladbrokes In-Running Bot"
+aliases: ["Ladbrokes In-Running Bot"]
+type: note
+tags: [automation, horse-racing, note, trading]
+mcp_tools: [PlaceBet]
+---
+
 # Ladbrokes In-Running Bot
 
 ## Overview

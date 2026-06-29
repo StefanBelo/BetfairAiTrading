@@ -1,9 +1,8 @@
 ---
 title: "Hello Betfair: The Same Strategy in F#, C#, VB.NET, and an AI Prompt (bfexplorer)"
-published: false
-description: One simple bfexplorer strategy implemented four ways: direct F# scripting, compiled C#/VB.NET DLLs, and an AI/MCP prompt.
-tags: betfair, fsharp, csharp, dotnet, automation
-cover_image:
+aliases: ["Hello Betfair: The Same Strategy in F#, C#, VB.NET, and an AI Prompt (bfexplorer)"]
+type: strategy
+tags: [automation, bfexplorer, fsharp, mcp, strategy, trading]
 ---
 
 # Hello Betfair: The Same Strategy in F#, C#, VB.NET, and an AI Prompt (bfexplorer)

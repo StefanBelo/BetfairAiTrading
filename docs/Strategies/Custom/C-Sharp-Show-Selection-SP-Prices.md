@@ -1,3 +1,10 @@
+---
+title: "C# - Show Selection SP prices"
+aliases: ["C# - Show Selection SP prices"]
+type: note
+tags: [automation, bfexplorer, horse-racing, note]
+---
+
 # C# - Show Selection SP prices
 
 ## Overview

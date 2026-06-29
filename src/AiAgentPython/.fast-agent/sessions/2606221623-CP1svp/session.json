@@ -1,0 +1,17 @@
+{
+  "name": "2606221623-CP1svp",
+  "created_at": "2026-06-22T16:23:21.959852",
+  "last_activity": "2026-06-22T16:24:35.620503",
+  "history_files": [
+    "history_BfexplorerApp_previous.json",
+    "history_BfexplorerApp.json"
+  ],
+  "metadata": {
+    "agent_name": "BfexplorerApp",
+    "model": "generic.google/gemma-4-e4b",
+    "last_history_by_agent": {
+      "BfexplorerApp": "history_BfexplorerApp.json"
+    },
+    "first_user_preview": "Who are you?"
+  }
+}

@@ -1,3 +1,10 @@
+---
+title: "Using FSI MCP Tools to Create Better F# Code for Non-Developers"
+aliases: ["Using FSI MCP Tools to Create Better F# Code for Non-Developers"]
+type: guide
+tags: [automation, bfexplorer, football, fsharp, guide, mcp]
+---
+
 # Using FSI MCP Tools to Create Better F# Code for Non-Developers
 
 > **Main source:** [FSI MCP: Injecting AI Coding Agents into My F# REPL Workflow](https://jvaneyck.wordpress.com/2025/12/04/fsi-mcp-injecting-ai-coding-agents-into-my-f-repl-workflow/)

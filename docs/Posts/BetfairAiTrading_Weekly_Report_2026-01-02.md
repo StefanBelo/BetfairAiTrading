@@ -1,3 +1,10 @@
+---
+title: "BetfairAiTrading Weekly Report (1)"
+aliases: ["BetfairAiTrading Weekly Report (1)"]
+type: post
+tags: [automation, bfexplorer, football, fsharp, horse-racing, post, tennis, trading]
+---
+
 # BetfairAiTrading Weekly Report (1)
 
 ## Focus of This Report

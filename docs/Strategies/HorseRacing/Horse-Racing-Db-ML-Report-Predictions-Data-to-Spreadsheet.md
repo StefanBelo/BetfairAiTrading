@@ -1,3 +1,10 @@
+---
+title: "Horse Racing Db-ML Report Predictions Data to Spreadsheet"
+aliases: ["Horse Racing Db-ML Report Predictions Data to Spreadsheet"]
+type: post
+tags: [automation, bfexplorer, horse-racing, post]
+---
+
 # Horse Racing Db-ML Report Predictions Data to Spreadsheet
 
 ## Overview

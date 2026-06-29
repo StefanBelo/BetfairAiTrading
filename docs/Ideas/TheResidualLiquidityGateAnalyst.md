@@ -1,3 +1,12 @@
+---
+title: "The Residual Liquidity Gate Analyst"
+aliases: ["The Residual Liquidity Gate Analyst"]
+type: idea
+tags: [automation, horse-racing, idea]
+mcp_tools: [GetActiveMarket, GetAllDataContextForMarket]
+data_contexts: [AtTheRacesDataForHorses, MarketSelectionsPriceHistoryData]
+---
+
 # The Residual Liquidity Gate Analyst
 
 Use this as the system/prompt template for analyzing market micro-structure and liquidity regimes in UK/IRE horse racing markets to decide which automated strategies to enable.

@@ -1,3 +1,10 @@
+---
+title: "Tennis SofaScore Tipsters Strategy"
+aliases: ["Tennis SofaScore Tipsters Strategy"]
+type: strategy
+tags: [automation, bfexplorer, strategy, tennis, trading]
+---
+
 # Tennis SofaScore Tipsters Strategy
 
 ## Overview

@@ -1,3 +1,10 @@
+---
+title: "KellyBench Summary for Bfexplorer AI Agent Platform"
+aliases: ["KellyBench Summary for Bfexplorer AI Agent Platform"]
+type: research
+tags: [automation, bfexplorer, football, research, staking]
+---
+
 # KellyBench Summary for Bfexplorer AI Agent Platform
 
 Original article: https://www.gr.inc/releases/introducing-kellybench

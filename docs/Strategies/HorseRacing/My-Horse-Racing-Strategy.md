@@ -1,3 +1,10 @@
+---
+title: "My Horse Racing Strategy"
+aliases: ["My Horse Racing Strategy"]
+type: strategy
+tags: [automation, dutching, horse-racing, strategy]
+---
+
 # My Horse Racing Strategy
 
 **Category:** Horse Racing  

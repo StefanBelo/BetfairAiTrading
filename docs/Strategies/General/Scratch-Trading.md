@@ -1,3 +1,10 @@
+---
+title: "Scratch Trading Strategy"
+aliases: ["Scratch Trading Strategy"]
+type: strategy
+tags: [automation, football, horse-racing, strategy, trading]
+---
+
 # Scratch Trading Strategy
 
 ## Overview

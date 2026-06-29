@@ -1,3 +1,10 @@
+---
+title: "Betfair Scalping System — Strategy Overview"
+aliases: ["Betfair Scalping System — Strategy Overview"]
+type: strategy
+tags: [automation, bfexplorer, forum, horse-racing, market-sentiment, scalping, strategy, trading]
+---
+
 # Betfair Scalping System — Strategy Overview
 
 **Source:** [Betfair Scalping System — The UK Betting Forum](https://www.theukbettingforum.co.uk/XenForo/threads/betfair-scalping-system.71160/)

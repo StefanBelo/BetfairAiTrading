@@ -1,3 +1,10 @@
+---
+title: "Beginner’s Guide to Machine Learning in Horse Racing on Betfair: A Humble Reality Check"
+aliases: ["Beginner’s Guide to Machine Learning in Horse Racing on Betfair: A Humble Reality Check"]
+type: post
+tags: [automation, horse-racing, post, python, trading]
+---
+
 # Beginner’s Guide to Machine Learning in Horse Racing on Betfair: A Humble Reality Check
 
 If you are reading this, you are probably interested in applying Machine Learning (ML) to horse racing. I see many newcomers asking where to start, often with high hopes but little guidance. I want to offer a very honest, humble perspective, especially for those completely new to this field.

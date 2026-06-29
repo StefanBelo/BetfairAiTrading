@@ -1,3 +1,10 @@
+---
+title: "Tennis Record Statistics"
+aliases: ["Tennis Record Statistics"]
+type: note
+tags: [automation, note, tennis]
+---
+
 # Tennis Record Statistics
 
 **Category:** Tennis  

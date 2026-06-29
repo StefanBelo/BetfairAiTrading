@@ -1,3 +1,10 @@
+---
+title: "Show My Selections Trading Indicators"
+aliases: ["Show My Selections Trading Indicators"]
+type: note
+tags: [market-sentiment, note, trading]
+---
+
 # Show My Selections Trading Indicators
 
 ## Overview

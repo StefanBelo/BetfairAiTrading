@@ -1,3 +1,12 @@
+---
+title: "Betfair Market WeightOfMoneyData Analysis Prompt Template"
+aliases: ["Betfair Market WeightOfMoneyData Analysis Prompt Template"]
+type: prompt
+tags: [prompt, trading]
+mcp_tools: [GetAllDataContextForMarket]
+data_contexts: [WeightOfMoneyData]
+---
+
 # Betfair Market WeightOfMoneyData Analysis Prompt Template
 
 **Prompt:**

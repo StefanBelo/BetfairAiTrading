@@ -1,3 +1,10 @@
+---
+title: "Programming vs AI: The Future of Automated Trading"
+aliases: ["Programming vs AI: The Future of Automated Trading"]
+type: post
+tags: [automation, forum, fsharp, post, trading]
+---
+
 # Programming vs AI: The Future of Automated Trading
 
 Last week, I asked readers which programming languages they use to automate their trading activities on Betfair. I received responses from two individuals: one uses **Golang** and the other **C++**. Unfortunately, neither of them provided any example code for a simple trading strategy, which would have been helpful for those interested in other programming languages or looking to learn by comparing different approaches.

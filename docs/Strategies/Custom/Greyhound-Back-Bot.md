@@ -1,3 +1,11 @@
+---
+title: "Greyhound Back Bot"
+aliases: ["Greyhound Back Bot"]
+type: note
+tags: [automation, horse-racing, note, trading]
+mcp_tools: [PlaceBet]
+---
+
 # Greyhound Back Bot
 
 ## Overview

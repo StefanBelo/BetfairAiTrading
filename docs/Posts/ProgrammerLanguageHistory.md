@@ -1,3 +1,10 @@
+---
+title: "Programmers of r/BetfairAITrading — When Did You Start and What Language?"
+aliases: ["Programmers of r/BetfairAITrading — When Did You Start and What Language?"]
+type: post
+tags: [automation, fsharp, post, python, trading]
+---
+
 # Programmers of r/BetfairAITrading — When Did You Start and What Language?
 
 Quick question for the programmers here: **When did you start programming and which language did you use?**

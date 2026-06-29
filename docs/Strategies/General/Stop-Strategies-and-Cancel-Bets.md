@@ -1,3 +1,10 @@
+---
+title: "Stop Strategies and Cancel Bets Strategy"
+aliases: ["Stop Strategies and Cancel Bets Strategy"]
+type: strategy
+tags: [automation, strategy, trading]
+---
+
 # Stop Strategies and Cancel Bets Strategy
 
 ## Overview

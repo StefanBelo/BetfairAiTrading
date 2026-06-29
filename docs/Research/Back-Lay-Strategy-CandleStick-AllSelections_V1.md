@@ -1,3 +1,11 @@
+---
+title: "Back/Lay Selection Strategy (Candlestick Data, All Selections) — V1 with Internal Probability"
+aliases: ["Back/Lay Selection Strategy (Candlestick Data, All Selections) — V1 with Internal Probability"]
+type: strategy
+tags: [automation, market-sentiment, mcp, strategy]
+mcp_tools: [ExecuteStrategySettings, GetActiveMarket, GetAllDataContextForMarket]
+---
+
 # Back/Lay Selection Strategy (Candlestick Data, All Selections) — V1 with Internal Probability
 
 ## Objective

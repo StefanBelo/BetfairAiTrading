@@ -1,3 +1,10 @@
+---
+title: "Football Betfair Trading Strategy: Over/Under Goals Market"
+aliases: ["Football Betfair Trading Strategy: Over/Under Goals Market"]
+type: strategy
+tags: [automation, bfexplorer, football, strategy, trading]
+---
+
 # Football Betfair Trading Strategy: Over/Under Goals Market
 
 This approach focuses on identifying value, managing risk, and capitalizing on price movements during matches.

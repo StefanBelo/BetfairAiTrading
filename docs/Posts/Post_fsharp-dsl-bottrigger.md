@@ -1,3 +1,10 @@
+---
+title: "F# DSL for Betfair BotTrigger Strategies"
+aliases: ["F# DSL for Betfair BotTrigger Strategies"]
+type: post
+tags: [automation, fsharp, post, trading]
+---
+
 # F# DSL for Betfair BotTrigger Strategies
 
 I've been experimenting with F# computation expressions to build a domain-specific language (DSL) for Betfair trading strategies. The result is a much more readable and composable way to express strategy logic. For example, my core strategy now looks like this:

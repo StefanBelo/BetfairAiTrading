@@ -1,3 +1,10 @@
+---
+title: "Execute Strategies Strategy"
+aliases: ["Execute Strategies Strategy"]
+type: strategy
+tags: [automation, strategy, trading]
+---
+
 # Execute Strategies Strategy
 
 ## Overview

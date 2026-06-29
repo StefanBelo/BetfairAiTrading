@@ -1,3 +1,11 @@
+---
+title: "Redditpost Openclawbfexplorertools"
+aliases: ["Redditpost Openclawbfexplorertools"]
+type: post
+tags: [automation, bfexplorer, horse-racing, mcp, post]
+data_contexts: [OlbgRaceTipsData]
+---
+
 Title: How many tools is enough for OpenClaw to learn your daily workflow?
 
 I've been experimenting with agentic apps (think OpenClaw-style agents) to automate parts of my daily workflow. My current agentic app has 20 tools, 1 prompt, and 4 resources. Below are some thoughts on what matters, the trade-offs, and important security considerations — plus a concrete prompting example and a sample agent result to illustrate the point.

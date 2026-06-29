@@ -1,3 +1,10 @@
+---
+title: "Dutch Bet Aggregation"
+aliases: ["Dutch Bet Aggregation"]
+type: note
+tags: [dutching, note]
+---
+
 # Dutch Bet Aggregation
 
 ## Overview

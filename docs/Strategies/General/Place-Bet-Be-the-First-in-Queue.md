@@ -1,3 +1,11 @@
+---
+title: "Place Bet - Be the First in Queue Strategy"
+aliases: ["Place Bet - Be the First in Queue Strategy"]
+type: strategy
+tags: [automation, horse-racing, scalping, strategy]
+mcp_tools: [PlaceBet]
+---
+
 # Place Bet - Be the First in Queue Strategy
 
 ## Overview

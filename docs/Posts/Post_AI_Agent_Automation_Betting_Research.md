@@ -1,3 +1,10 @@
+---
+title: "How AI Agents and Automation Can Accelerate Betting Research"
+aliases: ["How AI Agents and Automation Can Accelerate Betting Research"]
+type: post
+tags: [automation, bfexplorer, football, forum, horse-racing, mcp, post, trading]
+---
+
 # How AI Agents and Automation Can Accelerate Betting Research
 
 Today, I asked my AI agent to scan the latest posts from a popular trading forum and summarize new ideas for automation in horse racing and football markets. The agent quickly grouped topics by strategy and gave opinions on their practical value.

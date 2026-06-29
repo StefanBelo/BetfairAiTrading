@@ -1,3 +1,10 @@
+---
+title: "Advanced Price and Volume Signals for Strategic Trading on the Betfair Exchange"
+aliases: ["Advanced Price and Volume Signals for Strategic Trading on the Betfair Exchange"]
+type: note
+tags: [automation, football, forum, fsharp, horse-racing, market-sentiment, note, scalping, tennis, trading]
+---
+
 # Advanced Price and Volume Signals for Strategic Trading on the Betfair Exchange
 
 ## Executive Summary

@@ -1,3 +1,10 @@
+---
+title: "BetfairAiTrading Weekly Report (45)"
+aliases: ["BetfairAiTrading Weekly Report (45)"]
+type: post
+tags: [automation, post, reddit, trading]
+---
+
 # BetfairAiTrading Weekly Report (45)
 
 ## Statistical Models vs Machine Learning Models for Betting

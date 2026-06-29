@@ -1,3 +1,11 @@
+---
+title: "Horseracingevanalysisprompt"
+aliases: ["Horseracingevanalysisprompt"]
+type: prompt
+tags: [ev-analysis, horse-racing, prompt]
+mcp_tools: [GetActiveMarket, GetAllDataContextForMarket]
+data_contexts: [TimeformDataForHorses]
+---
 
 ## Horse Racing EV Analysis Prompt
 

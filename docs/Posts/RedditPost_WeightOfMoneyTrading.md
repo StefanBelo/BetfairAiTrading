@@ -1,3 +1,10 @@
+---
+title: "Cracking the Weight of Money Code: How AI Turned Me Into a Market Psychology Expert"
+aliases: ["Cracking the Weight of Money Code: How AI Turned Me Into a Market Psychology Expert"]
+type: post
+tags: [automation, bfexplorer, market-sentiment, mcp, post, trading]
+---
+
 # Cracking the Weight of Money Code: How AI Turned Me Into a Market Psychology Expert
 
 Hey r/betfair and r/sportsbook,

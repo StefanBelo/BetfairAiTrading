@@ -1,3 +1,10 @@
+---
+title: "Getting Started with Agentic Bfexplorer App"
+aliases: ["Getting Started with Agentic Bfexplorer App"]
+type: note
+tags: [automation, bfexplorer, dutching, ev-analysis, football, horse-racing, market-sentiment, mcp, note, silent-execution, staking, tennis, trading]
+---
+
 # Getting Started with Agentic Bfexplorer App
 
 ## Revolutionizing Betfair Trading with AI Agents and MCP Servers

@@ -1,3 +1,10 @@
+---
+title: "Real-World Test: Python vs C# Performance for Betfair AI Agents"
+aliases: ["Real-World Test: Python vs C# Performance for Betfair AI Agents"]
+type: post
+tags: [automation, fsharp, post, python, trading]
+---
+
 # Real-World Test: Python vs C# Performance for Betfair AI Agents
 
 ## Introduction

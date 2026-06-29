@@ -1,3 +1,11 @@
+---
+title: "Back/Lay Selection Strategy (Candlestick Data, Top 3 Favourites)"
+aliases: ["Back/Lay Selection Strategy (Candlestick Data, Top 3 Favourites)"]
+type: strategy
+tags: [automation, market-sentiment, mcp, strategy]
+mcp_tools: [ExecuteStrategySettings, GetActiveMarket]
+---
+
 # Back/Lay Selection Strategy (Candlestick Data, Top 3 Favourites)
 
 ## Objective

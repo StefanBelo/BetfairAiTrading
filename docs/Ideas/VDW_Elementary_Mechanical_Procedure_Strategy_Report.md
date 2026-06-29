@@ -1,3 +1,10 @@
+---
+title: "Strategy Report: Applying the VDW Elementary Mechanical Procedure to Betfair AI Trading"
+aliases: ["Strategy Report: Applying the VDW Elementary Mechanical Procedure to Betfair AI Trading"]
+type: strategy
+tags: [dutching, forum, horse-racing, strategy, trading]
+---
+
 # Strategy Report: Applying the VDW Elementary Mechanical Procedure to Betfair AI Trading
 
 ## Overview

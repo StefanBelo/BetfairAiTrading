@@ -1,3 +1,10 @@
+---
+title: "Watch Favourite"
+aliases: ["Watch Favourite"]
+type: note
+tags: [automation, market-sentiment, note, trading]
+---
+
 # Watch Favourite
 
 **Category:** Data  

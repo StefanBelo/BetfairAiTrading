@@ -1,3 +1,10 @@
+---
+title: "Ideas — Research & Integration Notes"
+aliases: ["Ideas — Research & Integration Notes"]
+type: index
+tags: [bfexplorer, index, trading]
+---
+
 # Ideas — Research & Integration Notes
 
 This folder contains idea notes, integration specs, and experiment summaries to guide development and prototyping for Betfair AI trading.

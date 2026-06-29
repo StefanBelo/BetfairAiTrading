@@ -1,3 +1,10 @@
+---
+title: "Odds Prediction Trading Strategy: Concept, Challenges, and Execution"
+aliases: ["Odds Prediction Trading Strategy: Concept, Challenges, and Execution"]
+type: strategy
+tags: [automation, strategy, trading]
+---
+
 # Odds Prediction Trading Strategy: Concept, Challenges, and Execution
 
 ## Introduction

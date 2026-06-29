@@ -1,3 +1,10 @@
+---
+title: "Recommended Books and Papers on Betting, Trading, and Decision Science"
+aliases: ["Recommended Books and Papers on Betting, Trading, and Decision Science"]
+type: research
+tags: [football, fsharp, horse-racing, research, tennis, trading]
+---
+
 # Recommended Books and Papers on Betting, Trading, and Decision Science
 
 ## Betting Markets & Value

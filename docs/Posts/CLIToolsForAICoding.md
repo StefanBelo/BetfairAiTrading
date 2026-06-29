@@ -1,3 +1,10 @@
+---
+title: "CLI Tools for AI Coding (verified list)"
+aliases: ["CLI Tools for AI Coding (verified list)"]
+type: post
+tags: [automation, fsharp, post, python]
+---
+
 # CLI Tools for AI Coding (verified list)
 
 This file lists widely-used, verified command-line tools and frameworks that enable AI-assisted coding workflows. Each entry includes a short description, a usage/install hint, and authoritative documentation or repository links.

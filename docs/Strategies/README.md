@@ -1,3 +1,10 @@
+---
+title: "Bfexplorer Strategy Documentation"
+aliases: ["Bfexplorer Strategy Documentation"]
+type: index
+tags: [automation, bfexplorer, dutching, football, horse-racing, index, tennis, trading]
+---
+
 # Bfexplorer Strategy Documentation
 
 This section contains comprehensive documentation for all 122+ Bfexplorer strategies across multiple categories. Each strategy includes detailed parameter descriptions, usage examples, and best practices.

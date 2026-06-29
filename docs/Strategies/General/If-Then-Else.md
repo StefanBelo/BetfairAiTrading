@@ -1,3 +1,10 @@
+---
+title: "If Then Else Strategy"
+aliases: ["If Then Else Strategy"]
+type: strategy
+tags: [automation, strategy, trading]
+---
+
 # If Then Else Strategy
 
 ## Overview

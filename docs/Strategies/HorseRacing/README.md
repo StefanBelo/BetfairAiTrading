@@ -1,3 +1,10 @@
+---
+title: "Horse Racing Trading Strategies"
+aliases: ["Horse Racing Trading Strategies"]
+type: index
+tags: [automation, bfexplorer, ev-analysis, horse-racing, index, trading]
+---
+
 # Horse Racing Trading Strategies
 
 This directory contains specialized trading strategies designed for horse racing markets on the Betfair Exchange, leveraging data analysis and automated execution.

@@ -1,3 +1,10 @@
+---
+title: "Execute on a Selection - Quick Reference"
+aliases: ["Execute on a Selection - Quick Reference"]
+type: note
+tags: [automation, note, trading]
+---
+
 # Execute on a Selection - Quick Reference
 
 ## What it does

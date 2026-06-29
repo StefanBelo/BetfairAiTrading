@@ -1,3 +1,10 @@
+---
+title: "Execute on Selections Strategy"
+aliases: ["Execute on Selections Strategy"]
+type: strategy
+tags: [dutching, strategy, trading]
+---
+
 # Execute on Selections Strategy
 
 ## Overview

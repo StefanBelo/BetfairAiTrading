@@ -1,3 +1,9 @@
+---
+title: "Betfair AI Trading Documentation"
+aliases: ["Betfair AI Trading Documentation"]
+type: index
+tags: [automation, bfexplorer, ev-analysis, football, fsharp, horse-racing, index, mcp, python, silent-execution, tennis, trading]
+---
 
 # Betfair AI Trading Documentation
 
@@ -24,25 +30,25 @@ This documentation folder contains guides, research, automation instructions, st
 ## Getting Started
 
 See the README.md in each subfolder for more details on available files and usage instructions.
-- [Horse Racing EV Analysis with Dutch Betting (OLBG Tips)](Prompts/HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md) - Community tips integration
-- [Horse Racing EV Analysis with Betting](Prompts/HorseRacingEVAnalysisWithBetting.md) - Single selection betting automation
-- [Horse Racing EV Analysis with Trading Data](Prompts/HorseRacingEVAnalysisWithBetting_TradingData.md) - Enhanced with trading data
-- [Horse Racing Numerical Data Analysis](Prompts/HorseRacingEVAnalysisNumericalData.md) - Quantitative metrics focus
-- [Horse Racing EV Rankings Table Only](Prompts/HorseRacingEVRankingsTableOnly.md) - Quick rankings generation
-- [Horse Racing EV Analysis Minimal](Prompts/HorseRacingEVAnalysisMinimal.md) - Silent analysis with minimal output
-- [Horse Racing EV Analysis Minimal Execution](Prompts/HorseRacingEVAnalysisMinimalExecution.md) - Automated conservative betting with minimal reporting
-- [Horse Racing Execution Only No Reports](Prompts/HorseRacingExecutionOnlyNoReports.md) - Silent execution strategy with no analysis reports
-- [Horse Racing Silent EV Analysis with Automated Execution - Top 3 Favorites](Prompts/HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md) - Completely silent comprehensive EV analysis with trading data, executing only on top 3 favorites
-- [Horse Racing Silent OLBG EV Analysis with Automated Execution - Top 3 Favorites](Prompts/HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md) - Silent comprehensive EV analysis using OLBG expert tips data, executing only on top 3 favorites
+- [Horse Racing EV Analysis with Dutch Betting (OLBG Tips)](Prompts/HorseRacing/HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md) - Community tips integration
+- [Horse Racing EV Analysis with Betting](Prompts/HorseRacing/HorseRacingEVAnalysisWithBetting.md) - Single selection betting automation
+- [Horse Racing EV Analysis with Trading Data](Prompts/HorseRacing/HorseRacingEVAnalysisWithBetting_TradingData.md) - Enhanced with trading data
+- [Horse Racing Numerical Data Analysis](Prompts/HorseRacing/HorseRacingEVAnalysisNumericalData.md) - Quantitative metrics focus
+- [Horse Racing EV Rankings Table Only](Prompts/HorseRacing/HorseRacingEVRankingsTableOnly.md) - Quick rankings generation
+- [Horse Racing EV Analysis Minimal](Prompts/HorseRacing/HorseRacingEVAnalysisMinimal.md) - Silent analysis with minimal output
+- [Horse Racing EV Analysis Minimal Execution](Prompts/HorseRacing/HorseRacingEVAnalysisMinimalExecution.md) - Automated conservative betting with minimal reporting
+- [Horse Racing Execution Only No Reports](Prompts/HorseRacing/HorseRacingExecutionOnlyNoReports.md) - Silent execution strategy with no analysis reports
+- [Horse Racing Silent EV Analysis with Automated Execution - Top 3 Favorites](Prompts/HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md) - Completely silent comprehensive EV analysis with trading data, executing only on top 3 favorites
+- [Horse Racing Silent OLBG EV Analysis with Automated Execution - Top 3 Favorites](Prompts/HorseRacing/HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md) - Silent comprehensive EV analysis using OLBG expert tips data, executing only on top 3 favorites
 
 ### Football Code Generation
-- [Football Match F# Code Creation](Prompts/FootballMatchFSharpCodeCreation.md) - Generate F# code for football match analysis
+- [Football Match F# Code Creation](Prompts/Football/FootballMatchFSharpCodeCreation.md) - Generate F# code for football match analysis
 
 ### General Tools
-- [Real-Time Betfair Market Analysis](Prompts/BetfairMarketAnalysisPrompt.md) - Comprehensive market analysis with professional trading patterns and recommendations
-- [Trading Chart Creation](Prompts/TradingChartCreation.md) - Interactive financial chart creation from MCP time series data
-- [BFExplorer MCP Integration System Prompt](Prompts/BfexplorerMCPIntegrationSystemPrompt.md) - System integration guidance
-- [BFExplorer Strategy Expert Prompt](Prompts/BfexplorerStrategyExpertPrompt.md) - AI assistant for strategy selection and configuration
+- [Real-Time Betfair Market Analysis](Prompts/General/BetfairMarketAnalysisPrompt.md) - Comprehensive market analysis with professional trading patterns and recommendations
+- [Trading Chart Creation](Prompts/General/TradingChartCreation.md) - Interactive financial chart creation from MCP time series data
+- [BFExplorer MCP Integration System Prompt](Prompts/General/BfexplorerMCPIntegrationSystemPrompt.md) - System integration guidance
+- [BFExplorer Strategy Expert Prompt](Prompts/General/BfexplorerStrategyExpertPrompt.md) - AI assistant for strategy selection and configuration
 
 ## Community Posts
 

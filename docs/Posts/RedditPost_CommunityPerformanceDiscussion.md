@@ -1,3 +1,10 @@
+---
+title: "How Developer Communities Respond to Performance Discussions: .NET vs Python"
+aliases: ["How Developer Communities Respond to Performance Discussions: .NET vs Python"]
+type: post
+tags: [automation, fsharp, horse-racing, post, python, reddit, trading]
+---
+
 # How Developer Communities Respond to Performance Discussions: .NET vs Python
 
 Recently, I posted a question about improving code performance in Betfair trading applications, targeting both the .NET and Python developer communities on Reddit. The responses—and lack thereof—highlighted some fascinating differences in how these communities approach discussions about performance and openness to diverse opinions.

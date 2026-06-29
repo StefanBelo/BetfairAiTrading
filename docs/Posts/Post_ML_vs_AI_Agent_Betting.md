@@ -1,3 +1,11 @@
+---
+title: "Machine Learning vs. AI Agents in Sports Betting: A Paradigm Shift"
+aliases: ["Machine Learning vs. AI Agents in Sports Betting: A Paradigm Shift"]
+type: post
+tags: [automation, bfexplorer, ev-analysis, fsharp, horse-racing, post, python]
+mcp_tools: [GetActiveMarket]
+---
+
 # Machine Learning vs. AI Agents in Sports Betting: A Paradigm Shift
 
 In a previous post, we discussed the harsh reality of building a traditional Machine Learning (ML) system for Betfair from scratch. It involves data engineering, coding live pipelines, and managing databases. However, a new approach is emerging that dramatically changes this landscape: **AI Agents using Large Language Models (LLMs)** integrated effectively with betting software (like BfExplorer).

@@ -1,0 +1,13 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/src/">
+    <Project Path="src/AiAgentCSharp/AiAgentCSharp.csproj" />
+    <Project Path="src/HelloBetfair/CSharp/MyStrategyBotTrigger/MyStrategyBotTrigger.csproj" />
+    <Project Path="src/RacingStatto/FSharp/AnalyzeResults/AnalyzeResults.fsproj" />
+    <Project Path="src/RacingStatto/FSharp/ExportResultsToCSV/ExportResultsToCSV.fsproj" />
+  </Folder>
+</Solution>

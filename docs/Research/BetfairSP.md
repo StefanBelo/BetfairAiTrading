@@ -1,3 +1,10 @@
+---
+title: "Betfair SP (Starting Price) Research - Horse Racing Trading"
+aliases: ["Betfair SP (Starting Price) Research - Horse Racing Trading"]
+type: research
+tags: [automation, forum, horse-racing, market-sentiment, research, trading]
+---
+
 # Betfair SP (Starting Price) Research - Horse Racing Trading
 
 ## What is Betfair SP?

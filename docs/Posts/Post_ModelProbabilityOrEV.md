@@ -1,3 +1,10 @@
+---
+title: "Post Modelprobabilityorev"
+aliases: ["Post Modelprobabilityorev"]
+type: post
+tags: [ev-analysis, post, silent-execution, staking]
+---
+
 **Why Expected Value (EV) is the Only Way to Win on the Betfair Exchange**
 
 I see a lot of people say they just back the horse (or outcome) their model rates as most likely. But on the Betfair Exchange, that's a fatal error. **If you aren’t considering the odds and commission to find positive expected value (+EV), you’re GUARANTEED to lose long-term—even if your model is a world-class winner-picker.**

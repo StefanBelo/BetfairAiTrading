@@ -1,3 +1,10 @@
+---
+title: "Football Strategies"
+aliases: ["Football Strategies"]
+type: index
+tags: [automation, bfexplorer, football, index, trading]
+---
+
 # Football Strategies
 
 This directory contains Bfexplorer strategies specifically designed for football (soccer) betting and trading. These strategies leverage live match data, score analysis, and specialized football betting approaches.

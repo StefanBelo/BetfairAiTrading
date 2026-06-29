@@ -1,3 +1,11 @@
+---
+title: "Dutching Strategy (Candlestick Data, All Selections) — V1: Probability-Driven Dutch for 10 Euro"
+aliases: ["Dutching Strategy (Candlestick Data, All Selections) — V1: Probability-Driven Dutch for 10 Euro"]
+type: strategy
+tags: [automation, dutching, market-sentiment, mcp, strategy]
+mcp_tools: [ExecuteStrategySettings, ExecuteStrategySettingsOnSelections, GetActiveMarket, GetAllDataContextForMarket]
+---
+
 # Dutching Strategy (Candlestick Data, All Selections) — V1: Probability-Driven Dutch for 10 Euro
 
 ## Objective

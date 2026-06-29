@@ -1,3 +1,11 @@
+---
+title: "My Lay Strategy"
+aliases: ["My Lay Strategy"]
+type: strategy
+tags: [automation, strategy]
+mcp_tools: [PlaceBet]
+---
+
 # My Lay Strategy
 
 ## Overview

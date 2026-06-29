@@ -1,3 +1,10 @@
+---
+title: "SP Favourite Changed"
+aliases: ["SP Favourite Changed"]
+type: note
+tags: [automation, horse-racing, note]
+---
+
 # SP Favourite Changed
 
 ## Overview

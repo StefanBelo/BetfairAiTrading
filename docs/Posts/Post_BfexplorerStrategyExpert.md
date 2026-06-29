@@ -1,3 +1,10 @@
+---
+title: "🎯 How I Became a Betfair Strategy Expert in Minutes (Real Example)"
+aliases: ["🎯 How I Became a Betfair Strategy Expert in Minutes (Real Example)"]
+type: strategy
+tags: [automation, bfexplorer, strategy, tennis, trading]
+---
+
 # 🎯 How I Became a Betfair Strategy Expert in Minutes (Real Example)
 
 ## TL;DR: Used an AI assistant with the Bfexplorer Strategy Expert prompt to solve complex betting strategy combinations instantly.

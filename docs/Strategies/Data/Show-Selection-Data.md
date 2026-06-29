@@ -1,3 +1,10 @@
+---
+title: "Show Selection Data"
+aliases: ["Show Selection Data"]
+type: note
+tags: [automation, note, trading]
+---
+
 # Show Selection Data
 
 **Category:** Data  

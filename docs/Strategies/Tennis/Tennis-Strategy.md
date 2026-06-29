@@ -1,3 +1,10 @@
+---
+title: "Tennis Strategy"
+aliases: ["Tennis Strategy"]
+type: strategy
+tags: [automation, strategy, tennis, trading]
+---
+
 # Tennis Strategy
 
 **Category:** Tennis  

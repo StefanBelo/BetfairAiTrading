@@ -1,3 +1,10 @@
+---
+title: "Strategy Idea: Confidence Gate and Volume Management"
+aliases: ["Strategy Idea: Confidence Gate and Volume Management"]
+type: strategy
+tags: [automation, horse-racing, reddit, strategy, trading]
+---
+
 # Strategy Idea: Confidence Gate and Volume Management
 
 Based on the Hoofs Analysis Report for **Monday 23rd February 2026** (see original post [here](https://hoofs.substack.com/p/hoofs-analysis-report-monday-23rd?r=72oqzs)), several high‑level betting strategy concepts emerge that are worth considering for implementation within the BetfairAiTrading framework.

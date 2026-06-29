@@ -1,3 +1,10 @@
+---
+title: "Place Dutching Bets Strategy"
+aliases: ["Place Dutching Bets Strategy"]
+type: strategy
+tags: [dutching, football, horse-racing, strategy, tennis]
+---
+
 # Place Dutching Bets Strategy
 
 ## Overview

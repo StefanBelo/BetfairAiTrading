@@ -1,3 +1,10 @@
+---
+title: "Tennis Record Trade Data"
+aliases: ["Tennis Record Trade Data"]
+type: note
+tags: [automation, note, tennis, trading]
+---
+
 # Tennis Record Trade Data
 
 **Category:** Tennis  

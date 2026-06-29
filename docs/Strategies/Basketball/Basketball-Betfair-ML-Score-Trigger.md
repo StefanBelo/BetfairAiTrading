@@ -1,3 +1,10 @@
+---
+title: "Basketball Betfair ML Score Trigger"
+aliases: ["Basketball Betfair ML Score Trigger"]
+type: note
+tags: [automation, note, trading]
+---
+
 # Basketball Betfair ML Score Trigger
 
 **Category:** Basketball  

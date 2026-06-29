@@ -1,3 +1,10 @@
+---
+title: "Reddit Post: Football Strategy with Match Time Criteria"
+aliases: ["Reddit Post: Football Strategy with Match Time Criteria"]
+type: strategy
+tags: [automation, bfexplorer, football, reddit, strategy, trading]
+---
+
 # Reddit Post: Football Strategy with Match Time Criteria
 
 ## Title

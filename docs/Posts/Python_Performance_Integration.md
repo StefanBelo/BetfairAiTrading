@@ -1,3 +1,10 @@
+---
+title: "Python AI Agent Performance: FastAgent vs ModelContextProtocol.Core"
+aliases: ["Python AI Agent Performance: FastAgent vs ModelContextProtocol.Core"]
+type: post
+tags: [automation, fsharp, post, python]
+---
+
 # Python AI Agent Performance: FastAgent vs ModelContextProtocol.Core
 
 I recently benchmarked an AI agentic app across two platforms: the Python `FastAgent` library and the .NET `ModelContextProtocol.Core` stack. The result was interesting: the Python path ended up running almost twice as long as the .NET implementation for the same agent workload.

@@ -1,3 +1,10 @@
+---
+title: "Horse Racing EV Analysis Results - June 22, 2025"
+aliases: ["Horse Racing EV Analysis Results - June 22, 2025"]
+type: research
+tags: [ev-analysis, horse-racing, market-sentiment, research, trading]
+---
+
 # Horse Racing EV Analysis Results - June 22, 2025
 
 ## Executive Summary

@@ -1,3 +1,10 @@
+---
+title: "General Strategy Documentation Index"
+aliases: ["General Strategy Documentation Index"]
+type: index
+tags: [automation, bfexplorer, dutching, horse-racing, index, scalping, staking, trading]
+---
+
 # General Strategy Documentation Index
 
 This directory contains comprehensive documentation for all general Bfexplorer strategies. Each strategy is documented with detailed parameter descriptions, use cases, and examples.

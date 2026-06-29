@@ -1,3 +1,11 @@
+---
+title: "Horseracingstrategyresultsanalyzer"
+aliases: ["Horseracingstrategyresultsanalyzer"]
+type: strategy
+tags: [automation, ev-analysis, horse-racing, staking, strategy]
+data_contexts: [HorseRacingEVTimeformAnalysis]
+---
+
 ## Horse Racing Strategy Results Analyzer: System Prompt Structure
 
 ### 1. Data Acquisition Pipeline

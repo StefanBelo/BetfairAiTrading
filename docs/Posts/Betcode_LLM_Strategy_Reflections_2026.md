@@ -1,3 +1,10 @@
+---
+title: "Reflections on LLMs for Strategy Development: A 2026 Perspective"
+aliases: ["Reflections on LLMs for Strategy Development: A 2026 Perspective"]
+type: strategy
+tags: [automation, fsharp, strategy]
+---
+
 # Reflections on LLMs for Strategy Development: A 2026 Perspective
 
 **Summary of Discussion**

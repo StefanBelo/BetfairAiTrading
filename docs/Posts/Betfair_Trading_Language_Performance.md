@@ -1,3 +1,10 @@
+---
+title: "The Speed Debate: Programming Languages and Betfair Trading"
+aliases: ["The Speed Debate: Programming Languages and Betfair Trading"]
+type: post
+tags: [automation, forum, fsharp, post, python, trading]
+---
+
 # The Speed Debate: Programming Languages and Betfair Trading
 
 On a specialized Betfair trading forum, where many members claim impressive profits, there’s a notable overlap between successful traders and skilled programmers. Many are proficient in multiple programming languages, and some even develop their own tools. One member, who made a Python library for Betfair, claimed his code runs faster than most other Betfair apps, even those made with .NET or Java.

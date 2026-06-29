@@ -1,3 +1,10 @@
+---
+title: "My Show Offered And Traded Indicators"
+aliases: ["My Show Offered And Traded Indicators"]
+type: note
+tags: [automation, market-sentiment, note, trading]
+---
+
 # My Show Offered And Traded Indicators
 
 ## Overview

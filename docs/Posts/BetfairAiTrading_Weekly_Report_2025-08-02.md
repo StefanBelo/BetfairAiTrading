@@ -1,3 +1,9 @@
+---
+title: "Betfairaitrading Weekly Report 2025 08 02"
+aliases: ["Betfairaitrading Weekly Report 2025 08 02"]
+type: post
+tags: [automation, fsharp, horse-racing, post, trading]
+---
 
 Betfair AI Trading Weekly (31)
 

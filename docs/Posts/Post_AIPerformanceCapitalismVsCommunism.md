@@ -1,3 +1,10 @@
+---
+title: "The Real Problem with AI Performance: It's Not the Models, It's the Money"
+aliases: ["The Real Problem with AI Performance: It's Not the Models, It's the Money"]
+type: post
+tags: [automation, post]
+---
+
 # The Real Problem with AI Performance: It's Not the Models, It's the Money
 
 I've been seeing a lot of negative articles floating around about AI coding performance and model quality lately. As someone who's been deep in the trenches with various AI tools, I think we're missing the real issue here.

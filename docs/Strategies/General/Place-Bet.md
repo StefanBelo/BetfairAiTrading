@@ -1,3 +1,11 @@
+---
+title: "Place Bet Strategy"
+aliases: ["Place Bet Strategy"]
+type: strategy
+tags: [automation, horse-racing, strategy]
+mcp_tools: [PlaceBet]
+---
+
 # Place Bet Strategy
 
 ## Overview

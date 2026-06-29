@@ -1,3 +1,10 @@
+---
+title: "Weight of Money Analysis Report"
+aliases: ["Weight of Money Analysis Report"]
+type: post
+tags: [market-sentiment, post, trading]
+---
+
 # Weight of Money Analysis Report
 **Market**: Tipperary 2m7f Hcap Hrd  
 **Date**: July 3, 2025  

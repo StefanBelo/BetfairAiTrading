@@ -1,3 +1,12 @@
+---
+title: "3-Tick Back/Lay Trading Strategy (Traded Prices Data)"
+aliases: ["3-Tick Back/Lay Trading Strategy (Traded Prices Data)"]
+type: strategy
+tags: [automation, mcp, strategy, trading]
+mcp_tools: [ExecuteStrategySettings, GetActiveMarket, GetAllDataContextForMarket]
+data_contexts: [MarketSelectionsTradedPricesData]
+---
+
 # 3-Tick Back/Lay Trading Strategy (Traded Prices Data)
 
 ## Objective

@@ -1,3 +1,10 @@
+---
+title: "Original discussion: [The Power of the Market aka How a System Dies](https://www.theukbettingforum.co.uk/XenForo/threads/the-power-of-the-market-aka-how-a-system-dies.183411/)"
+aliases: ["Original discussion: [The Power of the Market aka How a System Dies](https://www.theukbettingforum.co.uk/XenForo/threads/the-power-of-the-market-aka-how-a-system-dies.183411/)"]
+type: strategy
+tags: [automation, bfexplorer, forum, strategy]
+---
+
 # Original discussion: [The Power of the Market aka How a System Dies](https://www.theukbettingforum.co.uk/XenForo/threads/the-power-of-the-market-aka-how-a-system-dies.183411/)
 # Power of the Market Meta-Strategy for bfexplorer Agentic Platform
 

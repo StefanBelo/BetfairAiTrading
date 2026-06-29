@@ -1,3 +1,10 @@
+---
+title: "Horse Racing Data Statistics"
+aliases: ["Horse Racing Data Statistics"]
+type: note
+tags: [automation, horse-racing, note]
+---
+
 # Horse Racing Data Statistics
 
 **Category:** Horse Racing  

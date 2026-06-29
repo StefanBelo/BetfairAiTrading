@@ -1,3 +1,10 @@
+---
+title: "York Sprint Handicap AI Strategy Analysis"
+aliases: ["York Sprint Handicap AI Strategy Analysis"]
+type: strategy
+tags: [automation, horse-racing, strategy]
+---
+
 # York Sprint Handicap AI Strategy Analysis
 ## Market: 1.245129754 - York 5f Handicap (28 June 2025)
 

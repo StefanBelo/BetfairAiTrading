@@ -1,3 +1,10 @@
+---
+title: "Horse Racing Star Rating Strategy"
+aliases: ["Horse Racing Star Rating Strategy"]
+type: strategy
+tags: [automation, horse-racing, strategy]
+---
+
 # Horse Racing Star Rating Strategy
 
 ## Overview

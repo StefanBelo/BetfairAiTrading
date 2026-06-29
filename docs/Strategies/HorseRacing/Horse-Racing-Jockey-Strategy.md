@@ -1,3 +1,10 @@
+---
+title: "Horse Racing Jockey Strategy"
+aliases: ["Horse Racing Jockey Strategy"]
+type: strategy
+tags: [automation, ev-analysis, horse-racing, strategy, trading]
+---
+
 # Horse Racing Jockey Strategy
 
 ## Overview

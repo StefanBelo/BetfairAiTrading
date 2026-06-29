@@ -1,3 +1,10 @@
+---
+title: "C# - No Exposure Trigger Bot"
+aliases: ["C# - No Exposure Trigger Bot"]
+type: note
+tags: [automation, bfexplorer, note]
+---
+
 # C# - No Exposure Trigger Bot
 
 ## Overview

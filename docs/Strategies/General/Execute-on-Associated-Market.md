@@ -1,3 +1,10 @@
+---
+title: "Execute on Associated Market Strategy"
+aliases: ["Execute on Associated Market Strategy"]
+type: strategy
+tags: [automation, football, strategy, trading]
+---
+
 # Execute on Associated Market Strategy
 
 ## Overview

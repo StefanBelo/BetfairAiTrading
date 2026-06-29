@@ -1,3 +1,10 @@
+---
+title: "The Hottest New Programming Language Is English"
+aliases: ["The Hottest New Programming Language Is English"]
+type: post
+tags: [automation, bfexplorer, football, fsharp, mcp, post, trading]
+---
+
 # The Hottest New Programming Language Is English
 
 Andrej Karpathy recently famously claimed, **"The hottest new programming language is English."** It’s a catchy phrase, but what does it actually look like in practice? It’s not just about writing code comments or documentation; it’s about controlling complex systems and executing logic using natural language instead of rigid syntax.

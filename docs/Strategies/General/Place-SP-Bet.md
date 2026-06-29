@@ -1,3 +1,10 @@
+---
+title: "Place SP Bet Strategy"
+aliases: ["Place SP Bet Strategy"]
+type: strategy
+tags: [automation, dutching, horse-racing, strategy]
+---
+
 # Place SP Bet Strategy
 
 ## Overview

@@ -1,3 +1,10 @@
+---
+title: "Expert Betfair Horse Racing Trader Role Prompt"
+aliases: ["Expert Betfair Horse Racing Trader Role Prompt"]
+type: prompt
+tags: [automation, ev-analysis, horse-racing, market-sentiment, prompt, python, scalping, trading]
+---
+
 # Expert Betfair Horse Racing Trader Role Prompt
 
 ## Core Identity

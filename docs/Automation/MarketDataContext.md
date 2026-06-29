@@ -1,3 +1,12 @@
+---
+title: "Market Data Context Documentation"
+aliases: ["Market Data Context Documentation"]
+type: guide
+tags: [automation, bfexplorer, guide, horse-racing, market-sentiment, reddit, silent-execution, trading]
+mcp_tools: [GetActiveMarket, GetAllDataContextForMarket]
+data_contexts: [MarketSelectionsPriceHistoryData, MarketSelectionsTradedPricesData, OlbgRaceTipsData, RacingpostDataForHorses, TimeformDataForHorses, WeightOfMoneyData]
+---
+
 # Market Data Context Documentation
 
 This document provides comprehensive documentation for the various data contexts available for Betfair markets in Bfexplorer. Each data context provides specific information that can be used for analysis, decision-making, and strategy development. These data contexts can be leveraged by AI agents for rapid strategy development, as described in our Reddit post about transitioning from traditional ML to agentic strategy development.

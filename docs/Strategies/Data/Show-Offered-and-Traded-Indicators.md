@@ -1,3 +1,10 @@
+---
+title: "Show Offered and Traded Indicators"
+aliases: ["Show Offered and Traded Indicators"]
+type: note
+tags: [automation, note, trading]
+---
+
 # Show Offered and Traded Indicators
 
 **Category:** Data  

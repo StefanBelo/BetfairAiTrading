@@ -1,3 +1,10 @@
+---
+title: "Betfair AI Trading Weekly Report (38)"
+aliases: ["Betfair AI Trading Weekly Report (38)"]
+type: post
+tags: [post, trading]
+---
+
 # Betfair AI Trading Weekly Report (38)
 
 ### When Your Model Loses Its Edge

@@ -1,3 +1,10 @@
+---
+title: "Place Bet - Fill or Kill Strategy"
+aliases: ["Place Bet - Fill or Kill Strategy"]
+type: strategy
+tags: [automation, scalping, strategy, trading]
+---
+
 # Place Bet - Fill or Kill Strategy
 
 ## Overview

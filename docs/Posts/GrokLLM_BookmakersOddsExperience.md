@@ -1,3 +1,10 @@
+---
+title: "Grokllm Bookmakersoddsexperience"
+aliases: ["Grokllm Bookmakersoddsexperience"]
+type: post
+tags: [bfexplorer, fsharp, post, reddit]
+---
+
 ## How Grok LLM Interacted With My Bfexplorer Project
 
 Today I added a new data context to my bfexplorer app, specifically for bookmaker odds analysis. To test this feature, I created a prompt and looked for ways to optimize it using Grok LLM.

@@ -1,3 +1,10 @@
+---
+title: "Behavioral Sink and Betting Strategy Insights"
+aliases: ["Behavioral Sink and Betting Strategy Insights"]
+type: strategy
+tags: [automation, strategy, trading]
+---
+
 # Behavioral Sink and Betting Strategy Insights
 
 *Date: February 25, 2026*

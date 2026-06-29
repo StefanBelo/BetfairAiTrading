@@ -1,3 +1,12 @@
+---
+title: "Back/Lay Trading Strategy (Price History Data)"
+aliases: ["Back/Lay Trading Strategy (Price History Data)"]
+type: strategy
+tags: [automation, mcp, strategy, trading]
+mcp_tools: [ExecuteStrategySettings, GetActiveMarket]
+data_contexts: [MarketSelectionsPriceHistoryData]
+---
+
 # Back/Lay Trading Strategy (Price History Data)
 
 ## Objective

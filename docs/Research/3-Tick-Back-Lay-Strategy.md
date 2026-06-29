@@ -1,3 +1,11 @@
+---
+title: "3-Tick Back/Lay Trading Strategy"
+aliases: ["3-Tick Back/Lay Trading Strategy"]
+type: strategy
+tags: [automation, bfexplorer, horse-racing, mcp, strategy, trading]
+mcp_tools: [ExecuteStrategySettings, GetActiveMarket, GetAllDataContextForMarket]
+---
+
 # 3-Tick Back/Lay Trading Strategy
 
 ## Objective

@@ -1,3 +1,10 @@
+---
+title: "Execute on a Selection Strategy"
+aliases: ["Execute on a Selection Strategy"]
+type: strategy
+tags: [automation, bfexplorer, fsharp, market-sentiment, strategy, trading]
+---
+
 # Execute on a Selection Strategy
 
 ## Overview

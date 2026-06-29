@@ -1,3 +1,10 @@
+---
+title: "Limit Action Bot Execution"
+aliases: ["Limit Action Bot Execution"]
+type: note
+tags: [automation, note]
+---
+
 # Limit Action Bot Execution
 
 **Category:** General Strategy  

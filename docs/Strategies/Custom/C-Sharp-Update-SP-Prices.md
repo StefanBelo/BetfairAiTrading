@@ -1,3 +1,10 @@
+---
+title: "C# - Update SP prices"
+aliases: ["C# - Update SP prices"]
+type: note
+tags: [automation, bfexplorer, horse-racing, note]
+---
+
 # C# - Update SP prices
 
 ## Overview

@@ -1,3 +1,11 @@
+---
+title: "Back/Lay Selection Strategy (Candlestick Data, All Selections)"
+aliases: ["Back/Lay Selection Strategy (Candlestick Data, All Selections)"]
+type: strategy
+tags: [automation, market-sentiment, mcp, strategy]
+mcp_tools: [ExecuteStrategySettings, GetActiveMarket, GetAllDataContextForMarket]
+---
+
 # Back/Lay Selection Strategy (Candlestick Data, All Selections)
 
 ## Objective

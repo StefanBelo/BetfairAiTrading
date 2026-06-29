@@ -1,3 +1,10 @@
+---
+title: "Repeat Until Strategy"
+aliases: ["Repeat Until Strategy"]
+type: strategy
+tags: [automation, horse-racing, staking, strategy, trading]
+---
+
 # Repeat Until Strategy
 
 ## Overview

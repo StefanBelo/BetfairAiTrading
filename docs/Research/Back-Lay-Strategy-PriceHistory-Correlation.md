@@ -1,3 +1,12 @@
+---
+title: "Back/Lay Trading Strategy (Price History Correlation)"
+aliases: ["Back/Lay Trading Strategy (Price History Correlation)"]
+type: strategy
+tags: [automation, mcp, strategy, trading]
+mcp_tools: [ExecuteStrategySettings, GetActiveMarket, PlaceBet]
+data_contexts: [MarketSelectionsPriceHistoryData]
+---
+
 # Back/Lay Trading Strategy (Price History Correlation)
 
 ## Objective

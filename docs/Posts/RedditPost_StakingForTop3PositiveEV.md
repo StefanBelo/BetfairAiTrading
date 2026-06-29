@@ -1,3 +1,10 @@
+---
+title: "Dutching 3 “Value” Horses vs Backing Only the Best One — Simple Guide"
+aliases: ["Dutching 3 “Value” Horses vs Backing Only the Best One — Simple Guide"]
+type: post
+tags: [dutching, horse-racing, post, staking]
+---
+
 # Dutching 3 “Value” Horses vs Backing Only the Best One — Simple Guide
 
 TL;DR

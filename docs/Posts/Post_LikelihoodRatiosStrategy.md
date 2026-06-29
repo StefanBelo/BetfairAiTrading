@@ -1,3 +1,11 @@
+---
+title: "Exploring Likelihood Ratios in Horse Racing: From Forum Insights to AI Agent Implementation"
+aliases: ["Exploring Likelihood Ratios in Horse Racing: From Forum Insights to AI Agent Implementation"]
+type: post
+tags: [automation, bfexplorer, ev-analysis, forum, horse-racing, post, trading]
+data_contexts: [AtTheRacesDataForHorses, RacingpostDataForHorses]
+---
+
 # Exploring Likelihood Ratios in Horse Racing: From Forum Insights to AI Agent Implementation
 
 ## Introduction

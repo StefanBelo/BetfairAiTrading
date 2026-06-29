@@ -1,3 +1,10 @@
+---
+title: "Betfair AI Trading Weekly Report (39)"
+aliases: ["Betfair AI Trading Weekly Report (39)"]
+type: post
+tags: [post, trading]
+---
+
 # Betfair AI Trading Weekly Report (39)
 
 ### How Much Data is Too Much When Building Your Model?

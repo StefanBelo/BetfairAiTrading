@@ -1,3 +1,10 @@
+---
+title: "Post Automatinglategoalbetting"
+aliases: ["Post Automatinglategoalbetting"]
+type: post
+tags: [automation, football, forum, post]
+---
+
 ## Automating Late Goal Betting Based on First Goal Timing in Football
 
 I have just read a forum post on one Betfair software provider, it is about football strategy. People there like football strategies even though the software is not providing football score. People just judge score by monitoring all overs market for a football match. One of the strategies is following:

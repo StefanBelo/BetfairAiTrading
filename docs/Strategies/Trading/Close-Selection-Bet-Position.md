@@ -1,3 +1,10 @@
+---
+title: "Close Selection Bet Position Strategy"
+aliases: ["Close Selection Bet Position Strategy"]
+type: strategy
+tags: [automation, scalping, strategy, trading]
+---
+
 # Close Selection Bet Position Strategy
 
 ## Overview

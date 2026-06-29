@@ -1,3 +1,11 @@
+---
+title: "Advanced Betfair Horse Racing Market Analysis Prompt"
+aliases: ["Advanced Betfair Horse Racing Market Analysis Prompt"]
+type: prompt
+tags: [automation, horse-racing, prompt, trading]
+data_contexts: [AtTheRacesDataForHorses, RacingpostDataForHorses, TimeformDataForHorses]
+---
+
 # Advanced Betfair Horse Racing Market Analysis Prompt
 
 ## OBJECTIVE

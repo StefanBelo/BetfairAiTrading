@@ -1,0 +1,216 @@
+{
+  "main": {
+    "id": "01ab37f760472c0a",
+    "type": "split",
+    "children": [
+      {
+        "id": "e6bd25a248765315",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a358699a0bcc5e0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "94ba2f1e63e28a8a",
+    "type": "split",
+    "children": [
+      {
+        "id": "863ff01b1d6a6762",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "70e0793f07d23208",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a7e6d14123ca29aa",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:football",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "byModifiedTime"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "06324b7415c6cf4c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 488.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "f9f825dd6c19f2e8",
+    "type": "split",
+    "children": [
+      {
+        "id": "5de5289b4b3f700b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "81fd7ae479ce7ea3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "68c90e39ebe94031",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "6b6819303d51ced9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b08173f3ad7f0fab",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "d0492073dc431595",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "marp-slides:Show Slide Preview": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "a358699a0bcc5e0f",
+  "lastOpenFiles": [
+    "Posts/README.md",
+    "Automation/README.md",
+    "Automation/AIAgentIntegrationToBfexplorerApp.md",
+    "Research/Bfexplorer/StrategyBuilder_ExecutiveSummary.md",
+    "Posts/BetfairAiTrading_Weekly_Report_2026-01-10.md",
+    "Posts/Post_ML_vs_AI_Agent_Betting.md",
+    "Research/Bfexplorer/EXECUTIVE_SUMMARY_WithInternetValidation.md",
+    "Research/Bfexplorer/BFExplorer_CurrentFeatures_vs_DevelopmentOpportunities_2026.md",
+    "Research/Bfexplorer/FeaturePriorityMatrix_2026.md",
+    "Prompts/Tutorials/HorseRacingEV.md",
+    "Using_FSI_MCP_Tools_for_FSharp_Code.md",
+    "Research/Experiments/BackPedigree_Task.md",
+    "Prompts/HorseRacing/HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md",
+    "Prompts/Templates/HorseRacingExpert.md",
+    "Prompts/Tutorials/HumanizeAiText.md",
+    "Prompts/Tutorials/PROMETHEIA.md",
+    "Prompts/Tutorials/SEO.md",
+    "Prompts/Tutorials/PromptOptimization.md",
+    "Research/Experiments/TheExpertRacingTvHorseRacingAnalyst.md",
+    "Prompts/General/BetfairMarketAnalysisCandleStickDataR4_Favourite.md",
+    "Posts/BetfairAiTrading_Weekly_Report_2025-08-02.md",
+    "Posts/Post_Beginners_Guide_to_ML_in_Horse_Racing.md",
+    "Posts/BfexplorerStudioPost.md",
+    "Strategies/HorseRacing/README.md",
+    "Strategies/HorseRacing/Horse-Racing-Db-ML-Trigger-Bot.md",
+    "Horse-Racing-Expert-Selections.md"
+  ]
+}

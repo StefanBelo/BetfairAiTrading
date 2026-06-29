@@ -1,3 +1,10 @@
+---
+title: "Sequence Execution Strategy"
+aliases: ["Sequence Execution Strategy"]
+type: strategy
+tags: [automation, strategy, trading]
+---
+
 # Sequence Execution Strategy
 
 ## Overview

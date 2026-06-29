@@ -1,3 +1,10 @@
+---
+title: "LinkedIn Post on Betting Strategies: Jim Simons' Research Papers"
+aliases: ["LinkedIn Post on Betting Strategies: Jim Simons' Research Papers"]
+type: post
+tags: [ev-analysis, fsharp, horse-racing, post, staking, trading]
+---
+
 # LinkedIn Post on Betting Strategies: Jim Simons' Research Papers
 
 ## Overview

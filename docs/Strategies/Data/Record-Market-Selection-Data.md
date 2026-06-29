@@ -1,3 +1,10 @@
+---
+title: "Record Market Selection Data"
+aliases: ["Record Market Selection Data"]
+type: note
+tags: [automation, note]
+---
+
 # Record Market Selection Data
 
 **Category:** Data  

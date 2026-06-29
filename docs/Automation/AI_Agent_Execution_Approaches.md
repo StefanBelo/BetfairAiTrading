@@ -1,3 +1,10 @@
+---
+title: "Using AI Agent Execution from Different Providers: Automation Approaches"
+aliases: ["Using AI Agent Execution from Different Providers: Automation Approaches"]
+type: guide
+tags: [automation, guide, python, trading]
+---
+
 # Using AI Agent Execution from Different Providers: Automation Approaches
 
 This document describes several approaches for integrating and executing AI agent workflows in Betfair trading automation, focusing on how different programming and CLI solutions can be leveraged for strategy execution and debugging.

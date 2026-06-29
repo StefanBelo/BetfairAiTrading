@@ -1,3 +1,10 @@
+---
+title: "Horse Racing Evaluate ML Trigger Bot"
+aliases: ["Horse Racing Evaluate ML Trigger Bot"]
+type: note
+tags: [automation, horse-racing, note, trading]
+---
+
 # Horse Racing Evaluate ML Trigger Bot
 
 ## Overview

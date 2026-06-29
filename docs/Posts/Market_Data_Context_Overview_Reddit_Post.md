@@ -1,3 +1,10 @@
+---
+title: "Market Data Context Overview - Reddit Post"
+aliases: ["Market Data Context Overview - Reddit Post"]
+type: post
+tags: [automation, horse-racing, market-sentiment, post, reddit, trading]
+---
+
 # Market Data Context Overview - Reddit Post
 
 **Title:** 8 Essential Data Contexts Available for Betfair Market Analysis 📊

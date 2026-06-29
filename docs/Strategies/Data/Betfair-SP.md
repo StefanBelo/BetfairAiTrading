@@ -1,3 +1,10 @@
+---
+title: "Betfair SP"
+aliases: ["Betfair SP"]
+type: note
+tags: [automation, horse-racing, note]
+---
+
 # Betfair SP
 
 **Category:** Data  

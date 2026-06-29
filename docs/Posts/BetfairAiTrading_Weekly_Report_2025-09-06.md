@@ -1,3 +1,10 @@
+---
+title: "Betfair AI Trading Weekly Report (36)"
+aliases: ["Betfair AI Trading Weekly Report (36)"]
+type: post
+tags: [automation, football, post, trading]
+---
+
 # Betfair AI Trading Weekly Report (36)
 
 ### Live Betting Models for Next-Goal Markets

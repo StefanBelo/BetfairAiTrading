@@ -1,3 +1,10 @@
+---
+title: "BetfairAiTrading Weekly Report (47)"
+aliases: ["BetfairAiTrading Weekly Report (47)"]
+type: post
+tags: [fsharp, horse-racing, post, trading]
+---
+
 # BetfairAiTrading Weekly Report (47)
 
 ## Topic Discussed

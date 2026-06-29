@@ -1,3 +1,10 @@
+---
+title: "Different Approaches to Data-Driven Horse Racing Strategy Building"
+aliases: ["Different Approaches to Data-Driven Horse Racing Strategy Building"]
+type: strategy
+tags: [ev-analysis, horse-racing, strategy]
+---
+
 # Different Approaches to Data-Driven Horse Racing Strategy Building
 
 I've been working on systematizing different approaches for calculating Expected Value (EV) in horse racing betting using data-driven methods. Here's what I've documented so far:

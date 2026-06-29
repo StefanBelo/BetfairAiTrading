@@ -1,3 +1,10 @@
+---
+title: "BetfairAiTrading Weekly Report (41)"
+aliases: ["BetfairAiTrading Weekly Report (41)"]
+type: post
+tags: [automation, forum, horse-racing, market-sentiment, post, trading]
+---
+
 # BetfairAiTrading Weekly Report (41)
 
 ## Topic: AI Strategy for Horse Racing Betting

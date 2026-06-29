@@ -1,3 +1,10 @@
+---
+title: "Concurrent Execution Strategy"
+aliases: ["Concurrent Execution Strategy"]
+type: strategy
+tags: [automation, strategy, trading]
+---
+
 # Concurrent Execution Strategy
 
 ## Overview

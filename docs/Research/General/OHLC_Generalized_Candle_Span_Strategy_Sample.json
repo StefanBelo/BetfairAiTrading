@@ -1,0 +1,525 @@
+{
+    "market": {
+        "marketId": "1.258019126",
+        "startTime": "2026-05-12T19:58:00+02:00",
+        "eventType": "Horse Racing",
+        "eventName": "Sligo",
+        "marketName": "2m4f Mdn Hrd",
+        "status": "Open"
+    },
+    "selectionsData": [
+        {
+            "selectionId": "91542652",
+            "name": "Speculateur",
+            "data": {
+                "candleStickData": [
+                    {
+                        "date": "2026-05-12T18:54:24+02:00",
+                        "high": 1.17,
+                        "open": 1.17,
+                        "close": 1.15,
+                        "low": 1.15,
+                        "volume": 2314.67
+                    },
+                    {
+                        "date": "2026-05-12T19:05:07+02:00",
+                        "high": 1.16,
+                        "open": 1.15,
+                        "close": 1.16,
+                        "low": 1.14,
+                        "volume": 1991.65
+                    },
+                    {
+                        "date": "2026-05-12T19:15:07+02:00",
+                        "high": 1.17,
+                        "open": 1.16,
+                        "close": 1.14,
+                        "low": 1.14,
+                        "volume": 2716.9
+                    },
+                    {
+                        "date": "2026-05-12T19:27:04+02:00",
+                        "high": 1.15,
+                        "open": 1.14,
+                        "close": 1.13,
+                        "low": 1.13,
+                        "volume": 6167.7
+                    },
+                    {
+                        "date": "2026-05-12T19:37:49+02:00",
+                        "high": 1.18,
+                        "open": 1.13,
+                        "close": 1.16,
+                        "low": 1.13,
+                        "volume": 10904.17
+                    },
+                    {
+                        "date": "2026-05-12T19:47:53+02:00",
+                        "high": 1.25,
+                        "open": 1.16,
+                        "close": 1.23,
+                        "low": 1.16,
+                        "volume": 48784.73
+                    }
+                ],
+                "backLayRatio": 0.4594933913405554
+            }
+        },
+        {
+            "selectionId": "98071765",
+            "name": "Thats It Paddy",
+            "data": {
+                "candleStickData": [
+                    {
+                        "date": "2026-05-12T18:55:34+02:00",
+                        "high": 23,
+                        "open": 23,
+                        "close": 19.5,
+                        "low": 18.5,
+                        "volume": 108.74
+                    },
+                    {
+                        "date": "2026-05-12T19:06:42+02:00",
+                        "high": 25,
+                        "open": 19.5,
+                        "close": 22,
+                        "low": 19.5,
+                        "volume": 81.84
+                    },
+                    {
+                        "date": "2026-05-12T19:19:45+02:00",
+                        "high": 23,
+                        "open": 22,
+                        "close": 23,
+                        "low": 22,
+                        "volume": 125.3
+                    },
+                    {
+                        "date": "2026-05-12T19:31:28+02:00",
+                        "high": 23,
+                        "open": 23,
+                        "close": 19.5,
+                        "low": 19.5,
+                        "volume": 220.29
+                    },
+                    {
+                        "date": "2026-05-12T19:41:38+02:00",
+                        "high": 20,
+                        "open": 19.5,
+                        "close": 17,
+                        "low": 15,
+                        "volume": 545.35
+                    },
+                    {
+                        "date": "2026-05-12T19:52:02+02:00",
+                        "high": 17,
+                        "open": 17,
+                        "close": 13.5,
+                        "low": 10.5,
+                        "volume": 1902.55
+                    }
+                ],
+                "backLayRatio": 0.6364942572941441
+            }
+        },
+        {
+            "selectionId": "424447",
+            "name": "Red Or White",
+            "data": {
+                "candleStickData": [
+                    {
+                        "date": "2026-05-12T18:55:34+02:00",
+                        "high": 36,
+                        "open": 30,
+                        "close": 36,
+                        "low": 28,
+                        "volume": 37.61
+                    },
+                    {
+                        "date": "2026-05-12T19:06:11+02:00",
+                        "high": 38,
+                        "open": 36,
+                        "close": 36,
+                        "low": 34,
+                        "volume": 31.7
+                    },
+                    {
+                        "date": "2026-05-12T19:18:08+02:00",
+                        "high": 36,
+                        "open": 36,
+                        "close": 32,
+                        "low": 32,
+                        "volume": 77.7
+                    },
+                    {
+                        "date": "2026-05-12T19:30:53+02:00",
+                        "high": 36,
+                        "open": 32,
+                        "close": 32,
+                        "low": 30,
+                        "volume": 207.52
+                    },
+                    {
+                        "date": "2026-05-12T19:41:00+02:00",
+                        "high": 32,
+                        "open": 32,
+                        "close": 27,
+                        "low": 25,
+                        "volume": 297.77
+                    },
+                    {
+                        "date": "2026-05-12T19:51:24+02:00",
+                        "high": 29,
+                        "open": 27,
+                        "close": 24,
+                        "low": 23,
+                        "volume": 785.94
+                    }
+                ],
+                "backLayRatio": 0.6724653732942474
+            }
+        },
+        {
+            "selectionId": "79242310",
+            "name": "Tradonthebay",
+            "data": {
+                "candleStickData": [
+                    {
+                        "date": "2026-05-12T18:47:23+02:00",
+                        "high": 55,
+                        "open": 48,
+                        "close": 48,
+                        "low": 42,
+                        "volume": 15.4
+                    },
+                    {
+                        "date": "2026-05-12T18:57:34+02:00",
+                        "high": 55,
+                        "open": 48,
+                        "close": 55,
+                        "low": 46,
+                        "volume": 18.9
+                    },
+                    {
+                        "date": "2026-05-12T19:09:40+02:00",
+                        "high": 60,
+                        "open": 55,
+                        "close": 60,
+                        "low": 50,
+                        "volume": 13.12
+                    },
+                    {
+                        "date": "2026-05-12T19:25:38+02:00",
+                        "high": 60,
+                        "open": 60,
+                        "close": 55,
+                        "low": 50,
+                        "volume": 89.29
+                    },
+                    {
+                        "date": "2026-05-12T19:39:02+02:00",
+                        "high": 55,
+                        "open": 55,
+                        "close": 44,
+                        "low": 40,
+                        "volume": 135.31
+                    },
+                    {
+                        "date": "2026-05-12T19:49:02+02:00",
+                        "high": 46,
+                        "open": 44,
+                        "close": 46,
+                        "low": 32,
+                        "volume": 897.7
+                    }
+                ],
+                "backLayRatio": 0.7881411931032363
+            }
+        },
+        {
+            "selectionId": "98360919",
+            "name": "The Great Deceiver",
+            "data": {
+                "candleStickData": [
+                    {
+                        "date": "2026-05-12T18:46:32+02:00",
+                        "high": 60,
+                        "open": 48,
+                        "close": 60,
+                        "low": 46,
+                        "volume": 28.56
+                    },
+                    {
+                        "date": "2026-05-12T19:07:32+02:00",
+                        "high": 60,
+                        "open": 60,
+                        "close": 50,
+                        "low": 46,
+                        "volume": 16.47
+                    },
+                    {
+                        "date": "2026-05-12T19:18:44+02:00",
+                        "high": 70,
+                        "open": 50,
+                        "close": 70,
+                        "low": 50,
+                        "volume": 10
+                    },
+                    {
+                        "date": "2026-05-12T19:30:09+02:00",
+                        "high": 180,
+                        "open": 70,
+                        "close": 75,
+                        "low": 70,
+                        "volume": 90.01
+                    },
+                    {
+                        "date": "2026-05-12T19:40:31+02:00",
+                        "high": 200,
+                        "open": 75,
+                        "close": 170,
+                        "low": 50,
+                        "volume": 76.67
+                    },
+                    {
+                        "date": "2026-05-12T19:50:43+02:00",
+                        "high": 170,
+                        "open": 170,
+                        "close": 80,
+                        "low": 60,
+                        "volume": 240.75
+                    }
+                ],
+                "backLayRatio": 0.5627057151406344
+            }
+        },
+        {
+            "selectionId": "96543483",
+            "name": "Cloonbonniffe",
+            "data": {
+                "candleStickData": [
+                    {
+                        "date": "2026-05-12T18:47:23+02:00",
+                        "high": 140,
+                        "open": 110,
+                        "close": 140,
+                        "low": 90,
+                        "volume": 6.29
+                    },
+                    {
+                        "date": "2026-05-12T19:07:32+02:00",
+                        "high": 140,
+                        "open": 140,
+                        "close": 80,
+                        "low": 65,
+                        "volume": 25.06
+                    },
+                    {
+                        "date": "2026-05-12T19:19:18+02:00",
+                        "high": 130,
+                        "open": 80,
+                        "close": 130,
+                        "low": 80,
+                        "volume": 11.93
+                    },
+                    {
+                        "date": "2026-05-12T19:30:00+02:00",
+                        "high": 220,
+                        "open": 130,
+                        "close": 120,
+                        "low": 100,
+                        "volume": 54.33
+                    },
+                    {
+                        "date": "2026-05-12T19:41:35+02:00",
+                        "high": 150,
+                        "open": 120,
+                        "close": 110,
+                        "low": 100,
+                        "volume": 76.59
+                    },
+                    {
+                        "date": "2026-05-12T19:51:42+02:00",
+                        "high": 120,
+                        "open": 110,
+                        "close": 38,
+                        "low": 36,
+                        "volume": 432.7
+                    }
+                ],
+                "backLayRatio": 0.686213559606822
+            }
+        },
+        {
+            "selectionId": "98360921",
+            "name": "Captain Boycott",
+            "data": {
+                "candleStickData": [
+                    {
+                        "date": "2026-05-12T18:04:27+02:00",
+                        "high": 180,
+                        "open": 120,
+                        "close": 180,
+                        "low": 110,
+                        "volume": 2
+                    },
+                    {
+                        "date": "2026-05-12T18:47:23+02:00",
+                        "high": 180,
+                        "open": 180,
+                        "close": 160,
+                        "low": 150,
+                        "volume": 1.28
+                    },
+                    {
+                        "date": "2026-05-12T19:09:40+02:00",
+                        "high": 170,
+                        "open": 160,
+                        "close": 150,
+                        "low": 120,
+                        "volume": 11.13
+                    },
+                    {
+                        "date": "2026-05-12T19:27:42+02:00",
+                        "high": 180,
+                        "open": 150,
+                        "close": 150,
+                        "low": 130,
+                        "volume": 46.36
+                    },
+                    {
+                        "date": "2026-05-12T19:38:51+02:00",
+                        "high": 270,
+                        "open": 150,
+                        "close": 120,
+                        "low": 110,
+                        "volume": 253.79
+                    },
+                    {
+                        "date": "2026-05-12T19:48:58+02:00",
+                        "high": 270,
+                        "open": 120,
+                        "close": 110,
+                        "low": 100,
+                        "volume": 169.96
+                    }
+                ],
+                "backLayRatio": 0.6494440556721872
+            }
+        },
+        {
+            "selectionId": "98360918",
+            "name": "Hardlee Trouble",
+            "data": {
+                "candleStickData": [
+                    {
+                        "date": "2026-05-12T18:47:23+02:00",
+                        "high": 210,
+                        "open": 210,
+                        "close": 200,
+                        "low": 200,
+                        "volume": 0.57
+                    },
+                    {
+                        "date": "2026-05-12T19:05:09+02:00",
+                        "high": 210,
+                        "open": 200,
+                        "close": 170,
+                        "low": 170,
+                        "volume": 5.83
+                    },
+                    {
+                        "date": "2026-05-12T19:15:20+02:00",
+                        "high": 170,
+                        "open": 170,
+                        "close": 160,
+                        "low": 130,
+                        "volume": 17.4
+                    },
+                    {
+                        "date": "2026-05-12T19:25:32+02:00",
+                        "high": 190,
+                        "open": 160,
+                        "close": 170,
+                        "low": 160,
+                        "volume": 42.6
+                    },
+                    {
+                        "date": "2026-05-12T19:38:24+02:00",
+                        "high": 180,
+                        "open": 170,
+                        "close": 160,
+                        "low": 160,
+                        "volume": 33.7
+                    },
+                    {
+                        "date": "2026-05-12T19:48:44+02:00",
+                        "high": 210,
+                        "open": 160,
+                        "close": 140,
+                        "low": 110,
+                        "volume": 166.46
+                    }
+                ],
+                "backLayRatio": 0.6400253198294245
+            }
+        },
+        {
+            "selectionId": "97460027",
+            "name": "Leva Thomasina",
+            "data": {
+                "candleStickData": [
+                    {
+                        "date": "2026-05-12T18:47:23+02:00",
+                        "high": 240,
+                        "open": 180,
+                        "close": 240,
+                        "low": 180,
+                        "volume": 0.65
+                    },
+                    {
+                        "date": "2026-05-12T19:03:36+02:00",
+                        "high": 330,
+                        "open": 240,
+                        "close": 300,
+                        "low": 240,
+                        "volume": 0.81
+                    },
+                    {
+                        "date": "2026-05-12T19:15:15+02:00",
+                        "high": 300,
+                        "open": 300,
+                        "close": 230,
+                        "low": 200,
+                        "volume": 3.55
+                    },
+                    {
+                        "date": "2026-05-12T19:25:32+02:00",
+                        "high": 400,
+                        "open": 230,
+                        "close": 400,
+                        "low": 230,
+                        "volume": 10.44
+                    },
+                    {
+                        "date": "2026-05-12T19:38:01+02:00",
+                        "high": 650,
+                        "open": 400,
+                        "close": 650,
+                        "low": 380,
+                        "volume": 15.92
+                    },
+                    {
+                        "date": "2026-05-12T19:48:47+02:00",
+                        "high": 770,
+                        "open": 650,
+                        "close": 430,
+                        "low": 400,
+                        "volume": 85.97
+                    }
+                ],
+                "backLayRatio": 0.6374823640068977
+            }
+        }
+    ]
+}

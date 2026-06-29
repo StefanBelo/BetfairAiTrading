@@ -1,3 +1,10 @@
+---
+title: "Show Selections Traded Volume"
+aliases: ["Show Selections Traded Volume"]
+type: note
+tags: [note, trading]
+---
+
 # Show Selections Traded Volume
 
 ## Overview

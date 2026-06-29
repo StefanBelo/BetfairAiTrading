@@ -1,3 +1,10 @@
+---
+title: ".NET Performance in Betfair Trading: Integrating with Faster Languages"
+aliases: [".NET Performance in Betfair Trading: Integrating with Faster Languages"]
+type: post
+tags: [automation, fsharp, post, python, trading]
+---
+
 # .NET Performance in Betfair Trading: Integrating with Faster Languages
 
 Recently, I ran a quick benchmark comparing Python and F# for a Betfair trading task. The results were clear: my F# code finished in 3 seconds, while the Python version took 10 seconds for the same operation. This lines up with what many developers observe statically typed, compiled languages like F# or C# often outperform dynamic, interpreted ones like Python, especially for property access and json operations.

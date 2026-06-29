@@ -1,3 +1,10 @@
+---
+title: "Basketball Strategies"
+aliases: ["Basketball Strategies"]
+type: index
+tags: [automation, bfexplorer, index, trading]
+---
+
 # Basketball Strategies
 
 This directory contains Bfexplorer strategies specifically designed for basketball betting and trading. These strategies leverage machine learning models and live match data for informed betting decisions.

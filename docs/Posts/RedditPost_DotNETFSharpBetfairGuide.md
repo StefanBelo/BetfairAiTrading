@@ -1,3 +1,10 @@
+---
+title: "Reddit Post: Getting Started with Betfair Programming - A .NET/F# Developer's Guide"
+aliases: ["Reddit Post: Getting Started with Betfair Programming - A .NET/F# Developer's Guide"]
+type: post
+tags: [automation, bfexplorer, football, fsharp, post, reddit, trading]
+---
+
 # Reddit Post: Getting Started with Betfair Programming - A .NET/F# Developer's Guide
 
 ## Reddit Post Version:

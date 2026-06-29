@@ -1,3 +1,11 @@
+---
+title: "Back/Lay Trading Strategy (Candlestick Data Correlation)"
+aliases: ["Back/Lay Trading Strategy (Candlestick Data Correlation)"]
+type: strategy
+tags: [automation, market-sentiment, mcp, strategy, trading]
+mcp_tools: [ExecuteStrategySettings, GetActiveMarket, PlaceBet]
+---
+
 # Back/Lay Trading Strategy (Candlestick Data Correlation)
 
 ## Objective

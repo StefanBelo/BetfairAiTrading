@@ -1,3 +1,10 @@
+---
+title: "Test Spreadsheet"
+aliases: ["Test Spreadsheet"]
+type: note
+tags: [note, trading]
+---
+
 # Test Spreadsheet
 
 ## Overview

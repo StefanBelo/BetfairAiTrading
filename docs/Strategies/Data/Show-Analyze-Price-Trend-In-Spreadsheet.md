@@ -1,3 +1,10 @@
+---
+title: "Show Analyze Price Trend In Spreadsheet"
+aliases: ["Show Analyze Price Trend In Spreadsheet"]
+type: note
+tags: [automation, bfexplorer, note, trading]
+---
+
 # Show Analyze Price Trend In Spreadsheet
 
 ## Overview

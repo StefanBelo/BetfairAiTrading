@@ -1,3 +1,10 @@
+---
+title: "Analysis — "A Complete Guide to Sports Betting" (Robot James)"
+aliases: ["Analysis — "A Complete Guide to Sports Betting" (Robot James)"]
+type: idea
+tags: [automation, bfexplorer, dutching, ev-analysis, football, horse-racing, idea, python, scalping, silent-execution, staking, trading]
+---
+
 # Analysis — "A Complete Guide to Sports Betting" (Robot James)
 
 **Source:** https://robotjames.substack.com/p/a-complete-guide-to-sports-betting

@@ -1,32 +1,40 @@
+---
+title: "Research"
+aliases: ["Research"]
+type: index
+tags: [back-lay, dutching, horse-racing, index, staking, trading]
+data_contexts: [AtTheRacesDataForHorses]
+---
+
 # Research
 
 This directory contains research documents and analysis for Betfair AI trading.
 
 ## Files
 
-- [AdvancedBetfairHorseRacingMarketAnalysisPrompt.md](AdvancedBetfairHorseRacingMarketAnalysisPrompt.md)
-- [AtTheRacesDataForHorses_AnalysisPrompt.md](AtTheRacesDataForHorses_AnalysisPrompt.md)
-- [Back-Lay-Strategy-PriceHistory.md](Back-Lay-Strategy-PriceHistory.md)
-- [Back-Lay-Strategy-PriceHistory-Correlation.md](Back-Lay-Strategy-PriceHistory-Correlation.md)
-- [Back-Lay-Strategy-CandleStick-AllSelections.md](Back-Lay-Strategy-CandleStick-AllSelections.md)
-- [Back-Lay-Strategy-CandleStick-AllSelections_V1.md](Back-Lay-Strategy-CandleStick-AllSelections_V1.md)
-- [Back-Lay-Strategy-CandleStick-Correlation.md](Back-Lay-Strategy-CandleStick-Correlation.md)
-- [Back-Lay-Strategy-CandleStick-Top3.md](Back-Lay-Strategy-CandleStick-Top3.md)
-- [BetfairSP.md](BetfairSP.md)
-- [CLIToolsForAICoding.md](CLIToolsForAICoding.md)
-- [EVStakingForTop3Selections.md](EVStakingForTop3Selections.md)
+- [AdvancedBetfairHorseRacing/HorseRacingMarketAnalysisPrompt.md](AdvancedBetfairHorseRacing/HorseRacingMarketAnalysisPrompt.md)
+- [HorseRacing/AtTheRacesDataForHorses_AnalysisPrompt.md](HorseRacing/AtTheRacesDataForHorses_AnalysisPrompt.md)
+- [General/Back-Lay-Strategy-PriceHistory.md](General/Back-Lay-Strategy-PriceHistory.md)
+- [General/Back-Lay-Strategy-PriceHistory-Correlation.md](General/Back-Lay-Strategy-PriceHistory-Correlation.md)
+- [General/Back-Lay-Strategy-CandleStick-AllSelections.md](General/Back-Lay-Strategy-CandleStick-AllSelections.md)
+- [General/Back-Lay-Strategy-CandleStick-AllSelections_V1.md](General/Back-Lay-Strategy-CandleStick-AllSelections_V1.md)
+- [General/Back-Lay-Strategy-CandleStick-Correlation.md](General/Back-Lay-Strategy-CandleStick-Correlation.md)
+- [General/Back-Lay-Strategy-CandleStick-Top3.md](General/Back-Lay-Strategy-CandleStick-Top3.md)
+- [General/BetfairSP.md](General/BetfairSP.md)
+- [General/CLIToolsForAICoding.md](General/CLIToolsForAICoding.md)
+- [HorseRacing/EVStakingForTop3Selections.md](HorseRacing/EVStakingForTop3Selections.md)
 - [HorseRacing.md](HorseRacing.md)
-- [HorseRacing2-RunnerDutchingLessonPrompt.md](HorseRacing2-RunnerDutchingLessonPrompt.md)
-- [HorseRacingEVAnalysisAnalyzes.md](HorseRacingEVAnalysisAnalyzes.md)
-- [HorseRacingExpertBettorSystemPrompt.md](HorseRacingExpertBettorSystemPrompt.md)
-- [HorseRacingTheResidualLiquidityGateAnalyst_V2.md](HorseRacingTheResidualLiquidityGateAnalyst_V2.md)
-- [HorseRacingTheResidualLiquidityGateAnalyst_V3.md](HorseRacingTheResidualLiquidityGateAnalyst_V3.md)
-- [HorseRacingTrifectaPrompt.md](HorseRacingTrifectaPrompt.md)
-- [HorseRacingWinnerRate.md](HorseRacingWinnerRate.md)
-- [HorseracingFalseFavouriteDetection.md](HorseracingFalseFavouriteDetection.md)
-- [Prompts.md](Prompts.md)
-- [3-Tick-Back-Lay-Strategy.md](3-Tick-Back-Lay-Strategy.md)
-- [3-Tick-Back-Lay-Strategy-TradedPrices.md](3-Tick-Back-Lay-Strategy-TradedPrices.md)
+- [HorseRacing/HorseRacing2-RunnerDutchingLessonPrompt.md](HorseRacing/HorseRacing2-RunnerDutchingLessonPrompt.md)
+- [HorseRacing/HorseRacingEVAnalysisAnalyzes.md](HorseRacing/HorseRacingEVAnalysisAnalyzes.md)
+- [HorseRacing/HorseRacingExpertBettorSystemPrompt.md](HorseRacing/HorseRacingExpertBettorSystemPrompt.md)
+- [HorseRacing/HorseRacingTheResidualLiquidityGateAnalyst_V2.md](HorseRacing/HorseRacingTheResidualLiquidityGateAnalyst_V2.md)
+- [HorseRacing/HorseRacingTheResidualLiquidityGateAnalyst_V3.md](HorseRacing/HorseRacingTheResidualLiquidityGateAnalyst_V3.md)
+- [HorseRacing/HorseRacingTrifectaPrompt.md](HorseRacing/HorseRacingTrifectaPrompt.md)
+- [HorseRacing/HorseRacingWinnerRate.md](HorseRacing/HorseRacingWinnerRate.md)
+- [HorseRacing/HorseracingFalseFavouriteDetection.md](HorseRacing/HorseracingFalseFavouriteDetection.md)
+- [General/Prompts.md](General/Prompts.md)
+- [General/3-Tick-Back-Lay-Strategy.md](General/3-Tick-Back-Lay-Strategy.md)
+- [General/3-Tick-General/Back-Lay-Strategy-TradedPrices.md](General/3-Tick-General/Back-Lay-Strategy-TradedPrices.md)
 
 ### RacingStatto Research Prompts
 - [RacingStattoData_Pattern_Prompt.md](RacingStatto/RacingStattoData_Pattern_Prompt.md)

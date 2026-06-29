@@ -5,6 +5,8 @@ from fast_agent import FastAgent
 fast = FastAgent("Bfexplorer Assistant")
 
 # Define the agent
+@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="generic.google/gemma-4-e4b", servers=["BfexplorerApp"])
+#@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="generic.copilot", servers=["BfexplorerApp"])
 #@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="gpt-4.1", servers=["BfexplorerApp"])
 #@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="deepseek-chat", servers=["BfexplorerApp"])
 #@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="gemini-2.5-pro", servers=["BfexplorerApp"])
@@ -12,7 +14,7 @@ fast = FastAgent("Bfexplorer Assistant")
 #@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="mistral-ai/Mistral-Nemo", servers=["BfexplorerApp"])
 #@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="generic.openai:gpt-4.1", servers=["BfexplorerApp"])
 #@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="generic.copilot:gpt-4.1", servers=["BfexplorerApp"])
-@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="generic.openai/gpt-4.1", servers=["BfexplorerApp"])
+#@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="generic.openai/gpt-4.1", servers=["BfexplorerApp"])
 #@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="generic.deepseek-chat", servers=["BfexplorerApp"])
 #@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="generic.xai/grok-3", servers=["BfexplorerApp"])
 #@fast.agent(name="BfexplorerApp", instruction="You are a helpful AI Agent", model="generic.deepseek/DeepSeek-V3-0324", servers=["BfexplorerApp"])

@@ -1,3 +1,11 @@
+---
+title: "Greyhound Racing Dutching Strategy"
+aliases: ["Greyhound Racing Dutching Strategy"]
+type: strategy
+tags: [automation, dutching, horse-racing, strategy]
+mcp_tools: [PlaceBet]
+---
+
 # Greyhound Racing Dutching Strategy
 
 **Category:** Greyhound Racing  

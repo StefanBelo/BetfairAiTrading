@@ -1,3 +1,10 @@
+---
+title: "Getting Started with Programming for Betfair: A Guide for .NET and F# Developers"
+aliases: ["Getting Started with Programming for Betfair: A Guide for .NET and F# Developers"]
+type: guide
+tags: [automation, bfexplorer, football, fsharp, guide, mcp, tennis, trading]
+---
+
 # Getting Started with Programming for Betfair: A Guide for .NET and F# Developers
 
 ### What is the Betfair Sports Exchange?

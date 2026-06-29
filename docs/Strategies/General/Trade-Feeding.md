@@ -1,3 +1,10 @@
+---
+title: "Trade Feeding"
+aliases: ["Trade Feeding"]
+type: note
+tags: [automation, note, trading]
+---
+
 # Trade Feeding
 
 **Category:** General Strategy  

@@ -1,3 +1,10 @@
+---
+title: "Football Strategy"
+aliases: ["Football Strategy"]
+type: strategy
+tags: [automation, football, strategy]
+---
+
 # Football Strategy
 
 **Category:** Football  

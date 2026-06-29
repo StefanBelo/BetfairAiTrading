@@ -1,3 +1,9 @@
+---
+title: "Betfair Apps Research & BFExplorer Positioning"
+aliases: ["Betfair Apps Research & BFExplorer Positioning"]
+type: research
+tags: [automation, bfexplorer, ev-analysis, fsharp, horse-racing, mcp, reddit, research, scalping, trading]
+---
 
 # Betfair Apps Research & BFExplorer Positioning
 

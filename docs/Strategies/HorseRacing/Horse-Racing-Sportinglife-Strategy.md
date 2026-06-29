@@ -1,3 +1,10 @@
+---
+title: "Horse Racing Sportinglife Strategy"
+aliases: ["Horse Racing Sportinglife Strategy"]
+type: strategy
+tags: [automation, horse-racing, strategy]
+---
+
 # Horse Racing Sportinglife Strategy
 
 **Category:** Horse Racing  

@@ -1,3 +1,9 @@
+---
+title: "BetfairAiTrading Weekly Report (49)"
+aliases: ["BetfairAiTrading Weekly Report (49)"]
+type: post
+tags: [automation, post, trading]
+---
 
 # BetfairAiTrading Weekly Report (49)
 

@@ -1,3 +1,10 @@
+---
+title: "Arbitrage in Motion: The Pre-Race Odds Comparison Strategy for Betfair Horse Racing"
+aliases: ["Arbitrage in Motion: The Pre-Race Odds Comparison Strategy for Betfair Horse Racing"]
+type: strategy
+tags: [automation, bfexplorer, horse-racing, strategy]
+---
+
 # Arbitrage in Motion: The Pre-Race Odds Comparison Strategy for Betfair Horse Racing
 
 In the final moments before a horse race begins, a valuable window of opportunity opens for the astute Betfair trader. This strategy, centered on comparative odds analysis between traditional bookmakers and the Betfair exchange, exploits market inefficiencies that frequently emerge in the 30-second countdown to the off.

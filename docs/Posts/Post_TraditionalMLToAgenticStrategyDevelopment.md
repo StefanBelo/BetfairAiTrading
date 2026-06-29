@@ -1,3 +1,10 @@
+---
+title: "The Death of Traditional Betting Strategy Development? AI Agents Are Changing Everything"
+aliases: ["The Death of Traditional Betting Strategy Development? AI Agents Are Changing Everything"]
+type: strategy
+tags: [automation, ev-analysis, fsharp, horse-racing, strategy]
+---
+
 # The Death of Traditional Betting Strategy Development? AI Agents Are Changing Everything
 
 ## TL;DR

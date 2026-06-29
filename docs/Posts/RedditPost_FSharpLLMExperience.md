@@ -1,3 +1,10 @@
+---
+title: "F# Programmers & LLMs: What's Your Experience? 🤖"
+aliases: ["F# Programmers & LLMs: What's Your Experience? 🤖"]
+type: post
+tags: [automation, fsharp, post, reddit, trading]
+---
+
 # F# Programmers & LLMs: What's Your Experience? 🤖
 
 Following up on my recent [F# bot generation experiment](https://www.reddit.com/r/BetfairAiTrading/comments/1n3cbjd/from_one_prompt_to_8_f_bot_variants_ai_code/) where I tested 4 different AI models to generate F# trading bots, I'm curious about the broader F# community's experience with LLMs.

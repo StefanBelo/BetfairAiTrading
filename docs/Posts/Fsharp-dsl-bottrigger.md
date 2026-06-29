@@ -1,3 +1,10 @@
+---
+title: "F# DSLs: what they are, why they matter, and how they improve Betfair BotTrigger strategies"
+aliases: ["F# DSLs: what they are, why they matter, and how they improve Betfair BotTrigger strategies"]
+type: post
+tags: [automation, bfexplorer, fsharp, post, trading]
+---
+
 # F# DSLs: what they are, why they matter, and how they improve Betfair BotTrigger strategies
 
 A domain‑specific language (DSL) is a small, focused language that expresses the concepts of a particular problem area directly. In F#, DSLs are often embedded inside the host language using computation expressions, records, and functions. This approach gives you the clarity of a custom language while keeping full access to the F# type system, tooling, and libraries.

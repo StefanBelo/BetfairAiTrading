@@ -4,6 +4,7 @@
 #r "BeloSoft.Bfexplorer.Domain.dll"
 #r "BeloSoft.Bfexplorer.Service.Core.dll"
 
+open BeloSoft.Data
 open BeloSoft.Bfexplorer.Domain
 open BeloSoft.Bfexplorer.Service
 
@@ -39,9 +40,29 @@ let showRunningBots (market : Market) =
     else
         printfn "All running bots:\n%s\n" (runningBots |> String.concat "\n")
 
+let showOpenMarkets (iBfexplorerConsole : IBfexplorerConsole) =
+    let closedMarkets, activeMarkets = 
+        iBfexplorerConsole.OpenMarkets |> List.partition (fun market -> market.MarketStatus = MarketStatus.Closed)
+
+    if not activeMarkets.IsEmpty
+    then
+        printfn "Active markets:\n"        
+        activeMarkets |> List.iter showMarket
+
+    if not closedMarkets.IsEmpty
+    then
+        printfn "Closed markets:\n"        
+        closedMarkets 
+        |> List.iter (fun market ->
+                match toOption market.SettledProfit with
+                | Some settledProfit -> printf "%s ~ %.2f" market.MarketFullName settledProfit
+                | None -> printf "%s" market.MarketFullName 
+            )
+
 let execute (iBfexplorerConsole : IBfexplorerConsole) =
     let market = iBfexplorerConsole.ActiveMarket        
 
     showMarket market
     showBets market
     showRunningBots market
+    showOpenMarkets iBfexplorerConsole

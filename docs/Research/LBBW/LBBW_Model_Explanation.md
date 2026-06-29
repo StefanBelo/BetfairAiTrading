@@ -1,3 +1,10 @@
+---
+title: "Lbbw Model Explanation"
+aliases: ["Lbbw Model Explanation"]
+type: research
+tags: [horse-racing, research]
+---
+
 Meaning of LBBW – Model Framework Explanation
 
 LBBW stands for “Last–Best–Base–Weight”, the analytical framework used to rate racehorses under the LBBW v2 model. It blends recency, peak performance, consistency, and handicap balance into a single quantified form index.

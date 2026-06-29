@@ -1,3 +1,10 @@
+---
+title: "Betfair AI Trading Weekly Report (37)"
+aliases: ["Betfair AI Trading Weekly Report (37)"]
+type: post
+tags: [post, trading]
+---
+
 # Betfair AI Trading Weekly Report (37)
 
 ### AI in Sports Betting: Community Insights & Reflections

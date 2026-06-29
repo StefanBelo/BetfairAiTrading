@@ -1,3 +1,10 @@
+---
+title: "Tennis Data to Spreadsheet"
+aliases: ["Tennis Data to Spreadsheet"]
+type: note
+tags: [automation, bfexplorer, football, fsharp, note, tennis, trading]
+---
+
 # Tennis Data to Spreadsheet
 
 To test this program on the Betfair Exchange using Bfexplorer app, copy the following URI [Open Bfexplorer](bfexplorer://testStrategy?fileName=TennisDataToSpreadsheet.json) and open it in your web broswer.

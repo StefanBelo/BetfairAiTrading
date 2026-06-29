@@ -1,3 +1,10 @@
+---
+title: "Reddit Lategoalstrategy Ai Agent"
+aliases: ["Reddit Lategoalstrategy Ai Agent"]
+type: strategy
+tags: [automation, football, forum, strategy]
+---
+
 Title: Can We Automate a Late Goal Football Strategy Using AI Prompts?
 
 I have just read a forum post on one Betfair software provider, it is about football strategy. People there like football strategies even though the software is not providing football score. People just judge score by monitoring all overs market for a football match. One of the strategies is following:

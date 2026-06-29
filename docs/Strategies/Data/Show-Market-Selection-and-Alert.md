@@ -1,3 +1,10 @@
+---
+title: "Show Market Selection and Alert"
+aliases: ["Show Market Selection and Alert"]
+type: note
+tags: [automation, note]
+---
+
 # Show Market Selection and Alert
 
 **Category:** Data  

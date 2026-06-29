@@ -1,0 +1,198 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Who are you?"
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "I am a large language model, trained by Google. How can I help you today?"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 960983.1703895, \"end_time\": 960988.1609488, \"duration_ms\": 4990.56, \"ttft_ms\": 4720.01, \"time_to_response_ms\": 4720.01}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"google/gemma-4-e4b\", \"input_tokens\": 2084, \"output_tokens\": 246, \"total_tokens\": 2330, \"timestamp\": 1782138201.719538, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 2330, \"effective_input_tokens\": 2084, \"display_input_tokens\": 2084}, \"raw_usage\": {\"completion_tokens\": 246, \"prompt_tokens\": 2084, \"total_tokens\": 2330, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": null, \"reasoning_tokens\": 223, \"rejected_prediction_tokens\": null}, \"prompt_tokens_details\": null}, \"summary\": {\"model\": \"google/gemma-4-e4b\", \"turn_count\": 1, \"cumulative_input_tokens\": 2084, \"cumulative_output_tokens\": 246, \"cumulative_billing_tokens\": 2330, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 0, \"current_context_tokens\": 2330, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 2084}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get active market in bfexplorer."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "MtwjlsIZybp1BEfn5wq48sPH6nNweEjn": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 961004.5289726, \"end_time\": 961005.2841913, \"duration_ms\": 755.22, \"ttft_ms\": 725.4, \"time_to_response_ms\": 725.4}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"google/gemma-4-e4b\", \"input_tokens\": 2119, \"output_tokens\": 16, \"total_tokens\": 2135, \"timestamp\": 1782138218.843622, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 1, \"current_context_tokens\": 2135, \"effective_input_tokens\": 2119, \"display_input_tokens\": 2119}, \"raw_usage\": {\"completion_tokens\": 16, \"prompt_tokens\": 2119, \"total_tokens\": 2135, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": null, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": null}, \"prompt_tokens_details\": null}, \"summary\": {\"model\": \"google/gemma-4-e4b\", \"turn_count\": 2, \"cumulative_input_tokens\": 4203, \"cumulative_output_tokens\": 262, \"cumulative_billing_tokens\": 4465, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 2135, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 4203}}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "MtwjlsIZybp1BEfn5wq48sPH6nNweEjn": {
+          "content": [
+            {
+              "type": "text",
+              "text": "activeBetfairMarket:\n  marketId: \"1.259327649\"\n  startTime: \"2026-06-22T14:15:00Z\"\n  eventType: \"Horse Racing\"\n  eventName: Musselburgh\n  marketName: \"7f Hcap\"\n  totalMatched: 203041.99\n  status: Suspended\n  selections[9]{selectionId,name,price,totalMatched,status}:\n    \"64092143\",Qazaq,1000,73849.43,Active\n    \"35807318\",Yaaser,1000,32827.12,Active\n    \"2068018\",\"Carolus Magnus\",1.16,27977.25,Active\n    \"59363303\",\"Finn Ironside\",1000,11868.87,Active\n    \"86285667\",\"Supreme Clarets\",6.2,16761.49,Active\n    \"35958507\",Patontheback,1000,13517.74,Active\n    \"16553604\",Viviana,1000,18035.26,Active\n    \"48531488\",\"Concert Boy\",1000,4795.31,Active\n    \"193356\",\"Due Respect\",1000,3409.49,Active"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"MtwjlsIZybp1BEfn5wq48sPH6nNweEjn\": {\"timing_ms\": 11.47, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The currently active market in Bfexplorer is for **Musselburgh** (Horse Racing) named **\"7f Hcap\"**.\n\nHere are the details:\n*   **Market ID:** `1.259327649`\n*   **Status:** Suspended\n*   **Total Matched:** 203,041.99\n\nThe market includes several selections, such as:\n*   **Qazaq** (ID: 64092143) - Price: 1000\n*   **Yaaser** (ID: 35807318) - Price: 1000\n*   **Carolus Magnus** (ID: 2068018) - Price: 1.16\n*   **Finn Ironside** (ID: 59363303) - Price: 1000\n*   ... and others.\n\nIs there anything specific you would like to do with this market, such as checking data context or executing a strategy?"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 961005.386146, \"end_time\": 961011.3304623, \"duration_ms\": 5944.32, \"ttft_ms\": 2645.89, \"time_to_response_ms\": 2645.89}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"google/gemma-4-e4b\", \"input_tokens\": 2540, \"output_tokens\": 391, \"total_tokens\": 2931, \"timestamp\": 1782138224.89061, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 2931, \"effective_input_tokens\": 2540, \"display_input_tokens\": 2540}, \"raw_usage\": {\"completion_tokens\": 391, \"prompt_tokens\": 2540, \"total_tokens\": 2931, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": null, \"reasoning_tokens\": 151, \"rejected_prediction_tokens\": null}, \"prompt_tokens_details\": null}, \"summary\": {\"model\": \"google/gemma-4-e4b\", \"turn_count\": 3, \"cumulative_input_tokens\": 6743, \"cumulative_output_tokens\": 653, \"cumulative_billing_tokens\": 7396, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 2931, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 6743}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Whos seems to win the race?"
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "As an AI agent, I cannot predict the outcome of a sporting event like a horse race; those results depend on many real-time factors that are impossible to predict with certainty.\n\nHowever, based purely on the *betting odds* provided in the market data, we can look at what the general betting public is currently expecting:\n\n1.  **Lowest Odds (The Market Favorite):**\n    *   **Carolus Magnus** has the lowest displayed price (**1.16**) among the listed selections. In betting terms, lower odds generally indicate that the market believes this selection is the most likely winner.\n\n2.  **High Betting Volume:**\n    *   You can also look at `totalMatched`. This figure shows how much money has been bet on a selection so far. While not a predictor of winning, high betting volume suggests strong interest and confidence from bettors in that specific horse.\n\n***Disclaimer:*** *Please remember that low odds only mean the market expects a result; they do not guarantee a win. Betting involves risk.*\n\nIf you are looking for more advanced analysis or predictions, I recommend utilizing the **AI Agent Data Context** features within Bfexplorer, as those tools are designed to analyze historical performance and complex betting data patterns."
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 961027.4250217, \"end_time\": 961037.9110168, \"duration_ms\": 10486.0, \"ttft_ms\": 6840.16, \"time_to_response_ms\": 6840.16}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"google/gemma-4-e4b\", \"input_tokens\": 2793, \"output_tokens\": 699, \"total_tokens\": 3492, \"timestamp\": 1782138251.4711404, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 3492, \"effective_input_tokens\": 2793, \"display_input_tokens\": 2793}, \"raw_usage\": {\"completion_tokens\": 699, \"prompt_tokens\": 2793, \"total_tokens\": 3492, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": null, \"reasoning_tokens\": 438, \"rejected_prediction_tokens\": null}, \"prompt_tokens_details\": null}, \"summary\": {\"model\": \"google/gemma-4-e4b\", \"turn_count\": 4, \"cumulative_input_tokens\": 9536, \"cumulative_output_tokens\": 1352, \"cumulative_billing_tokens\": 10888, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 3492, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 9536}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Judging but lowest price traded?"
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Based on the data from the active market, the selection with the lowest traded price (the current market favorite) is:\n\n**Carolus Magnus**\n*   **Price:** 1.16\n\nThis low price suggests that the general betting consensus views this horse as having the highest probability of winning compared to the other runners."
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 961054.7696663, \"end_time\": 961062.0549487, \"duration_ms\": 7285.28, \"ttft_ms\": 6291.19, \"time_to_response_ms\": 6291.19}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"google/gemma-4-e4b\", \"input_tokens\": 3065, \"output_tokens\": 466, \"total_tokens\": 3531, \"timestamp\": 1782138275.6150906, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 3531, \"effective_input_tokens\": 3065, \"display_input_tokens\": 3065}, \"raw_usage\": {\"completion_tokens\": 466, \"prompt_tokens\": 3065, \"total_tokens\": 3531, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": null, \"reasoning_tokens\": 394, \"rejected_prediction_tokens\": null}, \"prompt_tokens_details\": null}, \"summary\": {\"model\": \"google/gemma-4-e4b\", \"turn_count\": 5, \"cumulative_input_tokens\": 12601, \"cumulative_output_tokens\": 1818, \"cumulative_billing_tokens\": 14419, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 3531, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 12601}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

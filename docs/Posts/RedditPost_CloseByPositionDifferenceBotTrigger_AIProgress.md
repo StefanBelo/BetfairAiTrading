@@ -1,3 +1,10 @@
+---
+title: "Reddit Post: From One Prompt to 8 F# Bot Variants - AI Code Generation Experiment"
+aliases: ["Reddit Post: From One Prompt to 8 F# Bot Variants - AI Code Generation Experiment"]
+type: prompt
+tags: [automation, fsharp, horse-racing, prompt, reddit, trading]
+---
+
 # Reddit Post: From One Prompt to 8 F# Bot Variants - AI Code Generation Experiment
 
 ## Post Title Options:

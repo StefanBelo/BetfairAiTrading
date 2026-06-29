@@ -1,3 +1,10 @@
+---
+title: "Trailing Stop Loss Strategy"
+aliases: ["Trailing Stop Loss Strategy"]
+type: strategy
+tags: [automation, horse-racing, strategy, trading]
+---
+
 # Trailing Stop Loss Strategy
 
 ## Overview

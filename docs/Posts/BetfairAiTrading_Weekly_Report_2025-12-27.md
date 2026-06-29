@@ -1,3 +1,10 @@
+---
+title: "BetfairAiTrading Weekly Report (52)"
+aliases: ["BetfairAiTrading Weekly Report (52)"]
+type: post
+tags: [automation, bfexplorer, ev-analysis, football, fsharp, horse-racing, market-sentiment, mcp, post, python, reddit, staking, tennis, trading]
+---
+
 # BetfairAiTrading Weekly Report (52)
 
 ## Year in Review: The Most Discussed Topic of 2025

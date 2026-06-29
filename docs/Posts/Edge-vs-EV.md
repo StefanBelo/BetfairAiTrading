@@ -1,3 +1,10 @@
+---
+title: "Edge vs. Expected Value (EV) in Betting: Which Should You Use?"
+aliases: ["Edge vs. Expected Value (EV) in Betting: Which Should You Use?"]
+type: post
+tags: [automation, ev-analysis, post]
+---
+
 # Edge vs. Expected Value (EV) in Betting: Which Should You Use?
 
 When analyzing betting opportunities, two key concepts often come up: **edge** and **expected value (EV)**. Understanding the difference between them—and knowing which to use—can make a big difference in your betting results.

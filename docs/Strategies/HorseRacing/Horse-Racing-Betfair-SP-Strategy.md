@@ -1,3 +1,10 @@
+---
+title: "Horse Racing Betfair SP Strategy"
+aliases: ["Horse Racing Betfair SP Strategy"]
+type: strategy
+tags: [automation, horse-racing, strategy, trading]
+---
+
 # Horse Racing Betfair SP Strategy
 
 **Category:** Horse Racing  

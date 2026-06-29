@@ -1,3 +1,10 @@
+---
+title: "Close Selection Bet Position at Odds Strategy"
+aliases: ["Close Selection Bet Position at Odds Strategy"]
+type: strategy
+tags: [automation, strategy, trading]
+---
+
 # Close Selection Bet Position at Odds Strategy
 
 ## Overview

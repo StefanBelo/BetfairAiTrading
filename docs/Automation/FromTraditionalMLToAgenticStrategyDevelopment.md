@@ -1,3 +1,11 @@
+---
+title: "From Traditional ML to Agentic Strategy Development: A Paradigm Shift in Betting Strategy Creation"
+aliases: ["From Traditional ML to Agentic Strategy Development: A Paradigm Shift in Betting Strategy Creation"]
+type: strategy
+tags: [automation, bfexplorer, ev-analysis, football, fsharp, horse-racing, python, strategy, trading]
+mcp_tools: [PlaceBet]
+---
+
 # From Traditional ML to Agentic Strategy Development: A Paradigm Shift in Betting Strategy Creation
 
 ## Introduction

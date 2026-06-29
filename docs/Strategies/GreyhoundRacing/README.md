@@ -1,3 +1,10 @@
+---
+title: "Greyhound Racing Strategies"
+aliases: ["Greyhound Racing Strategies"]
+type: index
+tags: [automation, bfexplorer, dutching, horse-racing, index, trading]
+---
+
 # Greyhound Racing Strategies
 
 This directory contains Bfexplorer strategies specifically designed for greyhound racing betting and trading. These strategies leverage machine learning ratings, specialized analysis, and automated execution for greyhound markets.

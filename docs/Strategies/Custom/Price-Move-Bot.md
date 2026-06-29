@@ -1,3 +1,11 @@
+---
+title: "Price Move Bot"
+aliases: ["Price Move Bot"]
+type: note
+tags: [automation, horse-racing, note, trading]
+mcp_tools: [PlaceBet]
+---
+
 # Price Move Bot
 
 ## Overview

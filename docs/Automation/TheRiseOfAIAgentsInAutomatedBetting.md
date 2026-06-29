@@ -1,3 +1,10 @@
+---
+title: "The Rise of AI Agents in Automated Betting on Betfair Exchange with BFExplorer"
+aliases: ["The Rise of AI Agents in Automated Betting on Betfair Exchange with BFExplorer"]
+type: note
+tags: [automation, bfexplorer, football, horse-racing, market-sentiment, note, scalping, trading]
+---
+
 # The Rise of AI Agents in Automated Betting on Betfair Exchange with BFExplorer
 
 ## Introduction

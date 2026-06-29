@@ -1,3 +1,12 @@
+---
+title: "Bfexplorer Data Providers"
+aliases: ["Bfexplorer Data Providers"]
+type: note
+tags: [automation, bfexplorer, horse-racing, market-sentiment, mcp, note, trading]
+mcp_tools: [GetAllDataContextForMarket]
+data_contexts: [MarketSelectionsPriceHistoryData, MarketSelectionsTradedPricesData, OlbgRaceTipsData, RacingpostDataForHorses, TimeformDataForHorses, WeightOfMoneyData]
+---
+
 # Bfexplorer Data Providers
 
 ![Bfexplorer My Data Providers](/docs/Automation/images/BfexplorerMyDataProviders.png)

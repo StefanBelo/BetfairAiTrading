@@ -1,3 +1,11 @@
+---
+title: "My Back Strategy"
+aliases: ["My Back Strategy"]
+type: strategy
+tags: [automation, strategy]
+mcp_tools: [PlaceBet]
+---
+
 # My Back Strategy
 
 ## Overview

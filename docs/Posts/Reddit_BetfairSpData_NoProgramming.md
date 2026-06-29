@@ -1,3 +1,10 @@
+---
+title: "Betfair Horse Racing Data: No Programming Needed!"
+aliases: ["Betfair Horse Racing Data: No Programming Needed!"]
+type: post
+tags: [horse-racing, post]
+---
+
 # Betfair Horse Racing Data: No Programming Needed!
 
 Want to track Betfair Starting Prices (SP) for horse racing, but don't know how to code? With our simple prompt, you can automatically update a CSV file with the latest Betfair SPs for every horse in the current market—no programming required!

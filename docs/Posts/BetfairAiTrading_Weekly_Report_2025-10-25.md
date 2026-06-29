@@ -1,3 +1,10 @@
+---
+title: "BetfairAiTrading Weekly Report (43)"
+aliases: ["BetfairAiTrading Weekly Report (43)"]
+type: post
+tags: [automation, bfexplorer, horse-racing, market-sentiment, mcp, post, reddit, trading]
+---
+
 # BetfairAiTrading Weekly Report (43)
 
 ## Reddit Discussion Analysis: "How much is too much data in your betting model?"

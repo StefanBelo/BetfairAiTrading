@@ -1,3 +1,10 @@
+---
+title: "Trailing Stop Loss on Market"
+aliases: ["Trailing Stop Loss on Market"]
+type: note
+tags: [automation, note, trading]
+---
+
 # Trailing Stop Loss on Market
 
 ## Overview

@@ -1,3 +1,10 @@
+---
+title: "Show Selections Trading Indicators"
+aliases: ["Show Selections Trading Indicators"]
+type: note
+tags: [automation, note, trading]
+---
+
 # Show Selections Trading Indicators
 
 **Category:** Data  

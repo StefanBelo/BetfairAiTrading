@@ -1,3 +1,10 @@
+---
+title: "Geminicli Bfexplorermcp Redditpost"
+aliases: ["Geminicli Bfexplorermcp Redditpost"]
+type: post
+tags: [automation, bfexplorer, ev-analysis, horse-racing, mcp, post, python, trading]
+---
+
 ## Gemini CLI + Bfexplorer MCP: AI-Powered Betfair Trading (No Coding Needed)
 
 Want to automate Betfair trading with AI—no coding required? Gemini CLI now integrates with Bfexplorer App's MCP server, letting you run advanced betting strategies using simple natural language prompts.

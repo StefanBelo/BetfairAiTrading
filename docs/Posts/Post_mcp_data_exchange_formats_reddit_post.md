@@ -1,3 +1,10 @@
+---
+title: "Data Exchange Formats for MCP Servers: What Do You Use? 🔄💡"
+aliases: ["Data Exchange Formats for MCP Servers: What Do You Use? 🔄💡"]
+type: post
+tags: [automation, mcp, post]
+---
+
 # Data Exchange Formats for MCP Servers: What Do You Use? 🔄💡
 
 Hey everyone! I'm reaching out to the community to learn more about your real-world experiences with data exchange formats when building MCP (Model Context Protocol) servers.

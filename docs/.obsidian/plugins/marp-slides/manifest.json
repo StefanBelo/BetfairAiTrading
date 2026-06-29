@@ -1,0 +1,10 @@
+{
+  "id": "marp-slides",
+  "name": "Marp Slides",
+  "version": "0.46.1",
+  "minAppVersion": "0.15.0",
+  "description": "Create markdown-based Marp presentations in Obsidian",
+  "author": "Samuele Cozzi",
+  "authorUrl": "https://samuele-cozzi.web.app/",
+  "isDesktopOnly": false
+}

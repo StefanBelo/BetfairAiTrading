@@ -1,3 +1,10 @@
+---
+title: "Flow Control: Exceptions vs. Discriminated Unions & Computation Expressions in F"
+aliases: ["Flow Control: Exceptions vs. Discriminated Unions & Computation Expressions in F"]
+type: post
+tags: [bfexplorer, fsharp, post, python]
+---
+
 # Flow Control: Exceptions vs. Discriminated Unions & Computation Expressions in F#
 
 In most mainstream languages like C#, Java, or Python, error handling and flow control are managed using exceptions. In F#, however, we often use discriminated unions (like `Result` or custom types such as `DataResult`) and computation expressions (like `asyncFlow`) to make error handling explicit and composable.

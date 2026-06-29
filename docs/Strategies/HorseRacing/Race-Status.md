@@ -1,3 +1,10 @@
+---
+title: "Race Status"
+aliases: ["Race Status"]
+type: note
+tags: [automation, horse-racing, note]
+---
+
 # Race Status
 
 **Category:** Horse Racing  

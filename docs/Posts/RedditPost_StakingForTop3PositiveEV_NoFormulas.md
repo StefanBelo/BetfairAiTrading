@@ -1,3 +1,10 @@
+---
+title: "Dutching 3 +EV Horses vs Backing Only the Top EV — What’s Your Go-To?"
+aliases: ["Dutching 3 +EV Horses vs Backing Only the Top EV — What’s Your Go-To?"]
+type: post
+tags: [dutching, ev-analysis, horse-racing, post, staking]
+---
+
 # Dutching 3 +EV Horses vs Backing Only the Top EV — What’s Your Go-To?
 
 TL;DR

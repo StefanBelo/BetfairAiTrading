@@ -1,3 +1,10 @@
+---
+title: "Reddit Post: The Hidden Truth About Betting Strategies - Why 90% Fail After 30 Days"
+aliases: ["Reddit Post: The Hidden Truth About Betting Strategies - Why 90% Fail After 30 Days"]
+type: post
+tags: [automation, bfexplorer, horse-racing, mcp, post, reddit, trading]
+---
+
 # Reddit Post: The Hidden Truth About Betting Strategies - Why 90% Fail After 30 Days
 
 ## Title: 🚨 Reality Check: Your Betting Strategy is Probably Failing (And You Don't Even Know It)

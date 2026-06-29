@@ -1,3 +1,10 @@
+---
+title: "Post Adeepdiveintovaluebetting"
+aliases: ["Post Adeepdiveintovaluebetting"]
+type: post
+tags: [ev-analysis, horse-racing, post]
+---
+
 ### **[Strategy] Why I'm LAYING the 2/1 Favourite (and Backing a 90/1 Longshot) - A Deep Dive into Value Betting**
 
 I was analyzing a race earlier today and someone asked me a brilliant question: *"Why are you recommending a LAY on the horse with the highest score?"*

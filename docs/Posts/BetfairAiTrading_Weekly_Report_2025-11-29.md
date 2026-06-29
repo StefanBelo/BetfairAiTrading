@@ -1,3 +1,10 @@
+---
+title: "BetfairAiTrading Weekly Report: Value Betting Analysis"
+aliases: ["BetfairAiTrading Weekly Report: Value Betting Analysis"]
+type: post
+tags: [automation, ev-analysis, post, reddit, trading]
+---
+
 # BetfairAiTrading Weekly Report: Value Betting Analysis
 
 **Date:** 2025-11-29

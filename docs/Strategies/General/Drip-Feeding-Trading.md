@@ -1,3 +1,11 @@
+---
+title: "Drip Feeding Trading"
+aliases: ["Drip Feeding Trading"]
+type: note
+tags: [automation, note, scalping, trading]
+mcp_tools: [PlaceBet]
+---
+
 # Drip Feeding Trading
 
 ## Overview

@@ -1,3 +1,10 @@
+---
+title: "Semantic Analysis of Horse Racing Form Data: Decoding the Stories Behind the Statistics"
+aliases: ["Semantic Analysis of Horse Racing Form Data: Decoding the Stories Behind the Statistics"]
+type: post
+tags: [horse-racing, post, python, trading]
+---
+
 # Semantic Analysis of Horse Racing Form Data: Decoding the Stories Behind the Statistics
 
 **Date:** June 28, 2025  

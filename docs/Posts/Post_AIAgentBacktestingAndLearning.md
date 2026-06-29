@@ -1,3 +1,10 @@
+---
+title: "AI Agent Horse Racing Analysis: The Power of Backtesting & Continuous Learning"
+aliases: ["AI Agent Horse Racing Analysis: The Power of Backtesting & Continuous Learning"]
+type: tutorial
+tags: [automation, bfexplorer, ev-analysis, horse-racing, mcp, trading, tutorial]
+---
+
 # AI Agent Horse Racing Analysis: The Power of Backtesting & Continuous Learning
 
 ---

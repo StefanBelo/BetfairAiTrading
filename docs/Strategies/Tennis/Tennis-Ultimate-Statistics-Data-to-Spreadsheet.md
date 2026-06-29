@@ -1,3 +1,10 @@
+---
+title: "Tennis Ultimate Statistics Data to Spreadsheet"
+aliases: ["Tennis Ultimate Statistics Data to Spreadsheet"]
+type: note
+tags: [automation, bfexplorer, note, tennis, trading]
+---
+
 # Tennis Ultimate Statistics Data to Spreadsheet
 
 ## Overview

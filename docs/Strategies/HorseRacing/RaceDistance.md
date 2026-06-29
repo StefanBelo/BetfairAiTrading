@@ -1,3 +1,10 @@
+---
+title: "The Distance Advantage: A Specialized Betfair Horse Racing Strategy"
+aliases: ["The Distance Advantage: A Specialized Betfair Horse Racing Strategy"]
+type: strategy
+tags: [automation, bfexplorer, horse-racing, staking, strategy, trading]
+---
+
 # The Distance Advantage: A Specialized Betfair Horse Racing Strategy
 
 In the world of horse racing betting, the specialists often outperform the generalists. This strategy focuses on exploiting one of racing's most fundamental variables: race distance.

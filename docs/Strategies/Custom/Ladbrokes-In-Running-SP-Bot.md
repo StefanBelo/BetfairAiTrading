@@ -1,3 +1,10 @@
+---
+title: "Ladbrokes In-Running SP Bot"
+aliases: ["Ladbrokes In-Running SP Bot"]
+type: note
+tags: [automation, horse-racing, note, trading]
+---
+
 # Ladbrokes In-Running SP Bot
 
 ## Overview

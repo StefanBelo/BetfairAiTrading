@@ -1,3 +1,11 @@
+---
+title: "Why I Choose F# for AI-Assisted Betfair Strategy Development"
+aliases: ["Why I Choose F# for AI-Assisted Betfair Strategy Development"]
+type: strategy
+tags: [automation, football, fsharp, python, reddit, strategy, trading]
+mcp_tools: [PlaceBet]
+---
+
 # Why I Choose F# for AI-Assisted Betfair Strategy Development
 
 **Date:** January 14, 2026  

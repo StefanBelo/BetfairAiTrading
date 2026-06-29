@@ -1,3 +1,10 @@
+---
+title: "My Csharp Test Bot"
+aliases: ["My Csharp Test Bot"]
+type: note
+tags: [automation, bfexplorer, note, trading]
+---
+
 # My Csharp Test Bot
 
 ## Overview

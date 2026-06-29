@@ -1,3 +1,10 @@
+---
+title: "Crowd Wisdom vs. Betting Value: Finding Edges in Efficient Markets"
+aliases: ["Crowd Wisdom vs. Betting Value: Finding Edges in Efficient Markets"]
+type: post
+tags: [automation, ev-analysis, horse-racing, market-sentiment, post, silent-execution, trading]
+---
+
 # Crowd Wisdom vs. Betting Value: Finding Edges in Efficient Markets
 
 *How systematic analysis can identify value opportunities despite the collective intelligence of betting exchanges*

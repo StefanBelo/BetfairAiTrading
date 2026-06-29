@@ -1,3 +1,10 @@
+---
+title: "Andrew David Stake Small Win Big Football Strategy - Working Note"
+aliases: ["Andrew David Stake Small Win Big Football Strategy - Working Note"]
+type: strategy
+tags: [automation, bfexplorer, football, staking, strategy]
+---
+
 # Andrew David Stake Small Win Big Football Strategy - Working Note
 
 **Date:** March 25, 2026

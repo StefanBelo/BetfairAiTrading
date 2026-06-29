@@ -1,3 +1,10 @@
+---
+title: "Using Cli Ai Agents Batch Mode Reddit"
+aliases: ["Using Cli Ai Agents Batch Mode Reddit"]
+type: post
+tags: [automation, fsharp, mcp, post, python, trading]
+---
+
 Title: My Current AI Betfair Trading Agent Stack (What I Use Now, Alternatives I’m Weighing, and Questions for You)
 
 I’m running an agentic Betfair trading workflow from the terminal. This rewrite makes explicit: (1) what I use today, (2) what I could switch to (and why/why not), and (3) what I want community feedback on.

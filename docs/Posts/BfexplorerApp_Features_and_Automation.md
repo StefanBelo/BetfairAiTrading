@@ -1,3 +1,9 @@
+---
+title: "Bfexplorer App Features via MCP Data Retrieval"
+aliases: ["Bfexplorer App Features via MCP Data Retrieval"]
+type: post
+tags: [automation, bfexplorer, dutching, mcp, post, trading]
+---
 
 # Bfexplorer App Features via MCP Data Retrieval
 

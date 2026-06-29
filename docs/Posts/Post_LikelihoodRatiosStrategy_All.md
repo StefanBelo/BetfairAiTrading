@@ -1,3 +1,12 @@
+---
+title: "Post_LikelihoodRatiosStrategy_All.md"
+aliases: ["Post_LikelihoodRatiosStrategy_All.md"]
+type: strategy
+tags: [automation, bfexplorer, ev-analysis, forum, fsharp, horse-racing, mcp, python, strategy, trading]
+mcp_tools: [GetActiveMarket, GetAllDataContextForMarket]
+data_contexts: [AtTheRacesDataForHorses, RacingpostDataForHorses, TimeformDataForHorses]
+---
+
 # Post_LikelihoodRatiosStrategy_All.md
 
 ## Session Transcript: Likelihood Ratios Strategy Exploration

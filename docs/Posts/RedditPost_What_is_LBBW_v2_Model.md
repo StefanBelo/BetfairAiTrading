@@ -1,3 +1,10 @@
+---
+title: "What is the LBBW v2 Model? A New Era for Horse Racing Analysis"
+aliases: ["What is the LBBW v2 Model? A New Era for Horse Racing Analysis"]
+type: post
+tags: [forum, fsharp, horse-racing, post]
+---
+
 # What is the LBBW v2 Model? A New Era for Horse Racing Analysis
 
 **Forget gut feeling—here’s how the LBBW v2 model is changing the game for serious racing analysts and traders.**

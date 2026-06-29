@@ -1,3 +1,10 @@
+---
+title: "Reddit Post: What AI Agents & Models Are You Actually Using?"
+aliases: ["Reddit Post: What AI Agents & Models Are You Actually Using?"]
+type: post
+tags: [automation, post, reddit, trading]
+---
+
 # Reddit Post: What AI Agents & Models Are You Actually Using?
 
 ## Post Title

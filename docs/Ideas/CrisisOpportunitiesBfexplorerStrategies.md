@@ -1,3 +1,10 @@
+---
+title: "Crisis Creates Opportunities: Strategy Ideas from Maurice Berk's Article"
+aliases: ["Crisis Creates Opportunities: Strategy Ideas from Maurice Berk's Article"]
+type: strategy
+tags: [automation, bfexplorer, ev-analysis, horse-racing, strategy, trading]
+---
+
 # Crisis Creates Opportunities: Strategy Ideas from Maurice Berk's Article
 
 **Source:** [Crises Create Opportunities - Algorithmic Sports Betting](https://algorithmicsportsbetting.substack.com/p/crises-create-opportunities)  

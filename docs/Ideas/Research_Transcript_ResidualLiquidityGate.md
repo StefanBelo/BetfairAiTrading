@@ -1,3 +1,11 @@
+---
+title: "Research Transcript: Residual Liquidity Gate Strategy"
+aliases: ["Research Transcript: Residual Liquidity Gate Strategy"]
+type: strategy
+tags: [automation, bfexplorer, fsharp, horse-racing, strategy, trading]
+data_contexts: [AtTheRacesDataForHorses, MarketSelectionsPriceHistoryData, MarketSelectionsTradedPricesData, WeightOfMoneyData]
+---
+
 # Research Transcript: Residual Liquidity Gate Strategy
 **Date:** 2026-02-20
 **Project:** Betfair AI Trading - Residual Liquidity Gate Integration

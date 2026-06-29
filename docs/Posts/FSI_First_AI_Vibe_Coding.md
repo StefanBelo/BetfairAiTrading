@@ -1,3 +1,10 @@
+---
+title: "FSI First: Why AI Should Query Types Directly When Vibe Coding"
+aliases: ["FSI First: Why AI Should Query Types Directly When Vibe Coding"]
+type: post
+tags: [automation, bfexplorer, football, fsharp, mcp, post, trading]
+---
+
 # FSI First: Why AI Should Query Types Directly When Vibe Coding
 
 **Date:** December 27, 2025  

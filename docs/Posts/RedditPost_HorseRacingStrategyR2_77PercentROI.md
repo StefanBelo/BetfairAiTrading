@@ -1,3 +1,10 @@
+---
+title: "Reddit Post: Horse Racing AI Strategy Delivers 77.6% ROI in Single Day"
+aliases: ["Reddit Post: Horse Racing AI Strategy Delivers 77.6% ROI in Single Day"]
+type: strategy
+tags: [automation, ev-analysis, horse-racing, reddit, strategy, trading]
+---
+
 # Reddit Post: Horse Racing AI Strategy Delivers 77.6% ROI in Single Day
 
 ## Post Title Options:

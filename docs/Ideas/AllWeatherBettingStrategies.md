@@ -1,3 +1,10 @@
+---
+title: "Betting Strategy Ideas from "Today's All Weather Racing" Forum Thread"
+aliases: ["Betting Strategy Ideas from "Today's All Weather Racing" Forum Thread"]
+type: strategy
+tags: [automation, ev-analysis, forum, fsharp, horse-racing, staking, strategy, trading]
+---
+
 # Betting Strategy Ideas from "Today's All Weather Racing" Forum Thread
 
 This article summarises insights and strategy ideas drawn from the UK Betting Forum thread titled *"Today's All Weather Racing"* (started November 2014). The original posts (chiefly by user **Dave**) focus on all‑weather (AW) racing, providing a practical example of how an enthusiastic punter analyses cards and selects horses.

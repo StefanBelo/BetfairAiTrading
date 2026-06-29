@@ -1,3 +1,10 @@
+---
+title: "Automating Tennis Betting with the OpenMyTennisMarketsByScore Bot"
+aliases: ["Automating Tennis Betting with the OpenMyTennisMarketsByScore Bot"]
+type: note
+tags: [automation, bfexplorer, fsharp, note, tennis]
+---
+
 # Automating Tennis Betting with the OpenMyTennisMarketsByScore Bot
 
 To test this strategy on the Betfair Exchange using Bfexplorer app, copy the following URI [Open Bfexplorer](bfexplorer://testStrategy?fileName=TennisOpenMyMarketsByScore.json) and open it in your web broswer.

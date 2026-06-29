@@ -1,3 +1,10 @@
+---
+title: "Tutorial: Building Effective AI Prompts for Horse Racing Betting Strategies"
+aliases: ["Tutorial: Building Effective AI Prompts for Horse Racing Betting Strategies"]
+type: tutorial
+tags: [automation, ev-analysis, horse-racing, tutorial]
+---
+
 # Tutorial: Building Effective AI Prompts for Horse Racing Betting Strategies
 **Reference:** [Google Workspace AI Prompt Guide](https://workspace.google.com/resources/ai/writing-effective-prompts/)
 

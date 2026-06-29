@@ -1,3 +1,10 @@
+---
+title: "Execute Till Target Profit Strategy"
+aliases: ["Execute Till Target Profit Strategy"]
+type: strategy
+tags: [automation, staking, strategy, trading]
+---
+
 # Execute Till Target Profit Strategy
 
 ## Overview

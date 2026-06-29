@@ -1,3 +1,10 @@
+---
+title: "My attempt to use Gemini CLI to write a simple F# trading strategy"
+aliases: ["My attempt to use Gemini CLI to write a simple F# trading strategy"]
+type: strategy
+tags: [automation, fsharp, strategy, trading]
+---
+
 # My attempt to use Gemini CLI to write a simple F# trading strategy
 
 I've been experimenting with the Gemini CLI to see if it could help automate some of my F# coding for a Betfair trading bot. I wanted it to create a simple strategy script.

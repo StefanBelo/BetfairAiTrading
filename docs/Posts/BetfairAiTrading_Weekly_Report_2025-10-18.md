@@ -1,3 +1,10 @@
+---
+title: "BetfairAiTrading Weekly Report (42)"
+aliases: ["BetfairAiTrading Weekly Report (42)"]
+type: post
+tags: [automation, horse-racing, post, trading]
+---
+
 # BetfairAiTrading Weekly Report (42)
 
 ## Topic: Horse Racing Modelling Metrics & Retraining Frequency

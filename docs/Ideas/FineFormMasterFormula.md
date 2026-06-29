@@ -1,3 +1,10 @@
+---
+title: "Research: Fine Form Master Formula"
+aliases: ["Research: Fine Form Master Formula"]
+type: idea
+tags: [automation, ev-analysis, forum, fsharp, horse-racing, idea, staking]
+---
+
 # Research: Fine Form Master Formula
 
 This document summarises ideas and concepts drawn from the UK Betting Forum thread

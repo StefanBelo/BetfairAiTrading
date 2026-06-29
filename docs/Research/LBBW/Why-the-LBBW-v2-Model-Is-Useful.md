@@ -1,3 +1,10 @@
+---
+title: "Why The Lbbw V2 Model Is Useful"
+aliases: ["Why The Lbbw V2 Model Is Useful"]
+type: research
+tags: [forum, fsharp, horse-racing, research]
+---
+
 Why the LBBW v2 Model Is Changing How We Analyse Races
 
 Most racing posts online just throw out a few 'form picks' or 'fancies' without structure. The LBBW v2 model flips that completely — it’s a form-based algorithmic framework that assigns objective scores (0–5) to every runner based on measurable criteria rather than gut feeling.

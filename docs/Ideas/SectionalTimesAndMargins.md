@@ -1,3 +1,10 @@
+---
+title: "Research: Sectional Times and Margins (Alan Potts)"
+aliases: ["Research: Sectional Times and Margins (Alan Potts)"]
+type: idea
+tags: [automation, horse-racing, idea]
+---
+
 # Research: Sectional Times and Margins (Alan Potts)
 
 This note summarises ideas gleaned from the Simon Nott article "Professional Punter Alan Potts on Sectional Times and Margins" and suggests potential betting strategy concepts.

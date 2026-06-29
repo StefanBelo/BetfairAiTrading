@@ -1,3 +1,10 @@
+---
+title: "Betfairaitrading Weekly Report 2025 08 30"
+aliases: ["Betfairaitrading Weekly Report 2025 08 30"]
+type: post
+tags: [automation, ev-analysis, post, trading]
+---
+
 ## Betfair AI Trading Weekly Report (35)
 
 ### Summary

@@ -1,3 +1,11 @@
+---
+title: "Separating Data Retrieval & Analysis: on4e Port Approach"
+aliases: ["Separating Data Retrieval & Analysis: on4e Port Approach"]
+type: post
+tags: [automation, ev-analysis, fsharp, horse-racing, post, staking]
+data_contexts: [RacingpostDataForHorses, TimeformDataForHorses]
+---
+
 # Separating Data Retrieval & Analysis: on4e Port Approach
 
 Short post on the design choice to separate "base" horse racing data retrieval from the analysis rules that evaluate this data into a strategy prompt (the on4e port). This pattern is common in mature data systems and offers clarity, flexibility, and repeatable analysis.

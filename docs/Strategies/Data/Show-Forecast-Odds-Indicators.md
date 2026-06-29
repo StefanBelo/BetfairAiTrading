@@ -1,3 +1,10 @@
+---
+title: "Show Forecast Odds Indicators"
+aliases: ["Show Forecast Odds Indicators"]
+type: note
+tags: [note, trading]
+---
+
 # Show Forecast Odds Indicators
 
 ## Overview

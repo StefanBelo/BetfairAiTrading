@@ -1,3 +1,10 @@
+---
+title: "Converging Factors - Strategy Summary"
+aliases: ["Converging Factors - Strategy Summary"]
+type: strategy
+tags: [automation, bfexplorer, ev-analysis, forum, horse-racing, staking, strategy]
+---
+
 # Converging Factors - Strategy Summary
 
 ## Source

@@ -1,3 +1,10 @@
+---
+title: "Post Ai Agent Workflow Experience"
+aliases: ["Post Ai Agent Workflow Experience"]
+type: post
+tags: [automation, fsharp, mcp, post, python]
+---
+
 Over the past 133 days, I have gained extensive experience with AI agent workflows. My biggest achievement was fully automating AI agent execution within my original strategy executor setup. I experimented with various approaches, ranging from manually executing prompts—which I still do when researching new strategies—to using different command-line interfaces, with text injection and batch execution.
 
 I worked with Python, C#, and F# agent frameworks; all of them proved to be effective. I tried out several LLM providers, but ultimately settled on a GitHub Pro subscription. I also explored different AI agent apps and eventually chose Visual Studio Code and Cherry Studio. I used many free and trial-limited apps, and it was especially useful to test Antigravity and Claude Desktop, as their free tier allows for adding a local MCP server, which is a key feature in my workflow.

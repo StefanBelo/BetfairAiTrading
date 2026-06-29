@@ -1,3 +1,10 @@
+---
+title: "Slovak vs English Prompts: Same Results! 🧠💬"
+aliases: ["Slovak vs English Prompts: Same Results! 🧠💬"]
+type: prompt
+tags: [automation, prompt]
+---
+
 # Slovak vs English Prompts: Same Results! 🧠💬
 
 Hey everyone! I recently conducted a fascinating experiment that completely changed how I think about prompt engineering, and I wanted to share it with you.

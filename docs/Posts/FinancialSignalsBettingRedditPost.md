@@ -1,3 +1,10 @@
+---
+title: "Using Financial Signals and Price/Volume Datasets for Betting and Trading Signals"
+aliases: ["Using Financial Signals and Price/Volume Datasets for Betting and Trading Signals"]
+type: post
+tags: [automation, forum, market-sentiment, post, python, trading]
+---
+
 # Using Financial Signals and Price/Volume Datasets for Betting and Trading Signals
 
 ## Why Financial Signals Matter in Betting

@@ -1,3 +1,11 @@
+---
+title: "Ladbrokes Bot"
+aliases: ["Ladbrokes Bot"]
+type: note
+tags: [automation, horse-racing, note]
+mcp_tools: [PlaceBet]
+---
+
 # Ladbrokes Bot
 
 ## Overview

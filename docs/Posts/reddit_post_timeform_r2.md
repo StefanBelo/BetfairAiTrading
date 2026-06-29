@@ -1,3 +1,10 @@
+---
+title: "🐎🤖 NEW: Horse Racing EV Analysis R2 - Timeform Edition"
+aliases: ["🐎🤖 NEW: Horse Racing EV Analysis R2 - Timeform Edition"]
+type: post
+tags: [automation, bfexplorer, ev-analysis, horse-racing, post, trading]
+---
+
 # 🐎🤖 NEW: Horse Racing EV Analysis R2 - Timeform Edition
 
 **TL;DR**: Just released our most sophisticated horse racing AI strategy yet - integrating Timeform's professional 75+ year racing expertise with advanced Expected Value calculations.

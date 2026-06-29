@@ -1,3 +1,10 @@
+---
+title: "The Fine Form Master Formula – Betting Strategy Ideas"
+aliases: ["The Fine Form Master Formula – Betting Strategy Ideas"]
+type: strategy
+tags: [ev-analysis, forum, horse-racing, staking, strategy, trading]
+---
+
 # The Fine Form Master Formula – Betting Strategy Ideas
 
 ## Core Principles

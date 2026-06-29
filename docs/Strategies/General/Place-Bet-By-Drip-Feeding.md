@@ -1,3 +1,11 @@
+---
+title: "Place Bet By Drip Feeding"
+aliases: ["Place Bet By Drip Feeding"]
+type: note
+tags: [automation, note, trading]
+mcp_tools: [PlaceBet]
+---
+
 # Place Bet By Drip Feeding
 
 ## Overview

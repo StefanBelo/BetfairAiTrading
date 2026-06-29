@@ -1,3 +1,10 @@
+---
+title: "Tennis Trading Strategies"
+aliases: ["Tennis Trading Strategies"]
+type: index
+tags: [automation, index, tennis, trading]
+---
+
 # Tennis Trading Strategies
 
 This section contains comprehensive guides for implementing tennis-specific trading strategies on Betfair markets.

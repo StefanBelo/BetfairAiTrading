@@ -1,3 +1,10 @@
+---
+title: "My Spreadsheet Ladder"
+aliases: ["My Spreadsheet Ladder"]
+type: note
+tags: [automation, note, scalping, trading]
+---
+
 # My Spreadsheet Ladder
 
 ## Overview

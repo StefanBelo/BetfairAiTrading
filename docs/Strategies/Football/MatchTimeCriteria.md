@@ -1,3 +1,10 @@
+---
+title: "Football Strategy: Match Time Criteria"
+aliases: ["Football Strategy: Match Time Criteria"]
+type: strategy
+tags: [bfexplorer, football, strategy, trading]
+---
+
 # Football Strategy: Match Time Criteria
 
 This document describes how to configure and use a football trading strategy that depends on the correct match time and other match parameters in Bfexplorer.

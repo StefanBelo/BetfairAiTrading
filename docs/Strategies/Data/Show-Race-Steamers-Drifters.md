@@ -1,3 +1,10 @@
+---
+title: "Show Race Steamers &amp; Drifters"
+aliases: ["Show Race Steamers &amp; Drifters"]
+type: note
+tags: [horse-racing, market-sentiment, note, trading]
+---
+
 # Show Race Steamers &amp; Drifters
 
 ## Overview

@@ -1,3 +1,10 @@
+---
+title: "Betfair AI Trading - Weekly Report"
+aliases: ["Betfair AI Trading - Weekly Report"]
+type: post
+tags: [automation, horse-racing, post, reddit, trading]
+---
+
 # Betfair AI Trading - Weekly Report
 ## Week of January 10, 2026
 

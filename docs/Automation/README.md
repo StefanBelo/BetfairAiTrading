@@ -1,3 +1,10 @@
+---
+title: "Automation Documentation"
+aliases: ["Automation Documentation"]
+type: index
+tags: [automation, bfexplorer, index, mcp, python, trading]
+---
+
 # Automation Documentation
 
 This folder contains guides for implementing AI-powered automation for Betfair trading using Bfexplorer.

@@ -1,3 +1,10 @@
+---
+title: "Finding Profitable Horse Racing Rules with RacingStattoData"
+aliases: ["Finding Profitable Horse Racing Rules with RacingStattoData"]
+type: post
+tags: [automation, horse-racing, post]
+---
+
 # Finding Profitable Horse Racing Rules with RacingStattoData
 
 In this post, I describe my process for identifying potentially profitable betting rules using historical race results and RacingStattoData. The goal is to find simple, selective rules that could be used to back 1-2 horses per race, maximizing both selectivity and odds.

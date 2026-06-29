@@ -1,3 +1,12 @@
+---
+title: "The Residual Liquidity Gate Analyst V2"
+aliases: ["The Residual Liquidity Gate Analyst V2"]
+type: idea
+tags: [automation, ev-analysis, horse-racing, idea]
+mcp_tools: [GetActiveMarket, GetAllDataContextForMarket]
+data_contexts: [AtTheRacesDataForHorses, MarketSelectionsPriceHistoryData]
+---
+
 # The Residual Liquidity Gate Analyst V2
 
 Use this as the system/prompt template for analyzing market micro-structure, liquidity regimes, and expected value (EV) in UK/IRE horse racing markets to decide which automated strategies to enable and whether to back, lay, or ignore each runner.

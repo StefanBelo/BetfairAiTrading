@@ -1,3 +1,12 @@
+---
+title: "AI Analysis Prompts for Betfair Trading"
+aliases: ["AI Analysis Prompts for Betfair Trading"]
+type: index
+tags: [automation, bfexplorer, ev-analysis, football, fsharp, horse-racing, index, market-sentiment, mcp, silent-execution, staking, trading]
+mcp_tools: [GetActiveMarket, GetAllDataContextForMarket]
+data_contexts: [FootballMatchScoreData, HorseRacingEVAnalysisResults, HorseRacingOlbgEVAnalysisResults, MarketSelectionsPriceHistoryData, MarketSelectionsTradedPricesData, OlbgRaceTipsData, RacingpostDataForHorses]
+---
+
 # AI Analysis Prompts for Betfair Trading
 
 ## Prompt Files Index
@@ -6,104 +15,101 @@ Below is a list of all prompt files available in this folder. Each file contains
 
 ### All Prompt Files
 
-- [BetfairMarketAnalysisCandleStickData.md](BetfairMarketAnalysisCandleStickData.md)
-- [BetfairMarketAnalysisCandleStickDataR2.md](BetfairMarketAnalysisCandleStickDataR2.md)
-- [BetfairMarketAnalysisCandleStickDataR3.md](BetfairMarketAnalysisCandleStickDataR3.md)
-- [BetfairMarketAnalysisCandleStickDataR4_Favourite.md](BetfairMarketAnalysisCandleStickDataR4_Favourite.md)
-- [BetfairMarketAnalysisCandleStickDataR5_Favourite.md](BetfairMarketAnalysisCandleStickDataR5_Favourite.md)
-- [BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md](BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md)
-- [BetfairMarketAnalysisPrompt.md](BetfairMarketAnalysisPrompt.md)
-- [BetfairTradingStrategyExecutionPrompt.md](BetfairTradingStrategyExecutionPrompt.md)
-- [BfexplorerMCPIntegrationSystemPrompt.md](BfexplorerMCPIntegrationSystemPrompt.md)
-- [BfexplorerStrategyExpertPrompt.md](BfexplorerStrategyExpertPrompt.md)
-- [FootballMatchFSharpCodeCreation.md](FootballMatchFSharpCodeCreation.md)
-- [FootballMatchOddsAnalysisPrompt.md](FootballMatchOddsAnalysisPrompt.md)
-- [Football_PreKick_MarketAnalysis_Prompt.md](Football_PreKick_MarketAnalysis_Prompt.md)
-- [HorseRacingBaseFormDataAnalysis.md](HorseRacingBaseFormDataAnalysis.md)
-- [HorseRacingBetfairRaceInfoData.md](HorseRacingBetfairRaceInfoData.md)
-- [HorseRacingBetfairSpData.md](HorseRacingBetfairSpData.md)
-- [HorseRacingBetfairSpDataR1.md](HorseRacingBetfairSpDataR1.md)
-- [HorseRacingBetfairSpDataR1_Favourite.md](HorseRacingBetfairSpDataR1_Favourite.md)
-- [HorseRacingBetfairSpDataR1_Favourite_Silent.md](HorseRacingBetfairSpDataR1_Favourite_Silent.md)
-- [HorseRacingBetfairSpDataR1_Favourite_Silent_CN.md](HorseRacingBetfairSpDataR1_Favourite_Silent_CN.md)
-- [HorseRacingBetfairSpDataR1_Favourite_Silent_CN2.md](HorseRacingBetfairSpDataR1_Favourite_Silent_CN2.md)
-- [HorseRacingBetfairSpDataR1_Favourite_Silent_RU.md](HorseRacingBetfairSpDataR1_Favourite_Silent_RU.md)
-- [HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md](HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md)
-- [HorseRacingBetfairSpDataR1_Favourite.md](HorseRacingBetfairSpDataR1_Favourite.md)
-- [HorseRacingBetfairSpDataR1.md](HorseRacingBetfairSpDataR1.md)
-- [HorseRacingBetfairSpData.md](HorseRacingBetfairSpData.md)
-- [HorseRacingBookmakersOdds.md](HorseRacingBookmakersOdds.md)
-- [HorseRacingCombinedEVAnalysis.md](HorseRacingCombinedEVAnalysis.md)
-- [HorseRacingCombinedEVAnalysisWithAutomatedBetting.md](HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
-- [HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md](HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md)
-- [HorseRacingEVAnalysisFavouriteR10_NoLayRules.md](HorseRacingEVAnalysisFavouriteR10_NoLayRules.md)
-- [HorseRacingEVAnalysisFavouriteR3.md](HorseRacingEVAnalysisFavouriteR3.md)
-- [HorseRacingEVAnalysisFavouriteR3_Silent.md](HorseRacingEVAnalysisFavouriteR3_Silent.md)
-- [HorseRacingEVAnalysisFavouriteR4.md](HorseRacingEVAnalysisFavouriteR4.md)
-- [HorseRacingEVAnalysisFavouriteR5.md](HorseRacingEVAnalysisFavouriteR5.md)
-- [HorseRacingEVAnalysisFavouriteR6.md](HorseRacingEVAnalysisFavouriteR6.md)
-- [HorseRacingEVAnalysisFavouriteR6_Silent.md](HorseRacingEVAnalysisFavouriteR6_Silent.md)
-- [HorseRacingEVAnalysisFavouriteR7_Silent.md](HorseRacingEVAnalysisFavouriteR7_Silent.md)
-- [HorseRacingEVAnalysisFavouriteR8.md](HorseRacingEVAnalysisFavouriteR8.md)
-- [HorseRacingEVAnalysisFavouriteR8_Silent.md](HorseRacingEVAnalysisFavouriteR8_Silent.md)
-- [HorseRacingEVAnalysisFavouriteR9_Silent.md](HorseRacingEVAnalysisFavouriteR9_Silent.md)
-- [HorseRacingEVAnalysisMinimal.md](HorseRacingEVAnalysisMinimal.md)
-- [HorseRacingEVAnalysisMinimalExecution.md](HorseRacingEVAnalysisMinimalExecution.md)
-- [HorseRacingEVAnalysisNumericalData.md](HorseRacingEVAnalysisNumericalData.md)
-- [HorseRacingEVAnalysisPrompt.md](HorseRacingEVAnalysisPrompt.md)
-- [HorseRacingEVAnalysisR1.md](HorseRacingEVAnalysisR1.md)
-- [HorseRacingEVAnalysisR10_Silent.md](HorseRacingEVAnalysisR10_Silent.md)
-- [HorseRacingEVAnalysisR11.md](HorseRacingEVAnalysisR11.md)
-- [HorseRacingEVAnalysisR11_Feedback.md](HorseRacingEVAnalysisR11_Feedback.md)
-- [HorseRacingEVAnalysisR1_Silent.md](HorseRacingEVAnalysisR1_Silent.md)
-- [HorseRacingEVAnalysisR2.md](HorseRacingEVAnalysisR2.md)
-- [HorseRacingEVAnalysisR3.md](HorseRacingEVAnalysisR3.md)
-- [HorseRacingEVAnalysisWithBetting.md](HorseRacingEVAnalysisWithBetting.md)
-- [HorseRacingEVAnalysisWithBetting_TradingData.md](HorseRacingEVAnalysisWithBetting_TradingData.md)
-- [HorseRacingEVAnalysisWithConservativeBetting.md](HorseRacingEVAnalysisWithConservativeBetting.md)
-- [HorseRacingEVAnalysisWithConservativeTradingData.md](HorseRacingEVAnalysisWithConservativeTradingData.md)
-- [HorseRacingEVAnalysisWithDutchBetting.md](HorseRacingEVAnalysisWithDutchBetting.md)
-- [HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md](HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md)
-- [HorseRacingEVAtTheRacesData.md](HorseRacingEVAtTheRacesData.md)
-- [HorseRacingEVAtTheRacesDataR1_ExpertView.md](HorseRacingEVAtTheRacesDataR1_ExpertView.md)
-- [HorseRacingEVAtTheRacesDataR2_ExpertView.md](HorseRacingEVAtTheRacesDataR2_ExpertView.md)
-- [HorseRacingEVAtTheRacesDataR5_ExpertView.md](HorseRacingEVAtTheRacesDataR5_ExpertView.md)
-- [HorseRacingEVRankingsTableOnly.md](HorseRacingEVRankingsTableOnly.md)
-- [HorseRacingExecutionOnlyNoReports.md](HorseRacingExecutionOnlyNoReports.md)
-- [HorseRacingExpectedValueAnalysis.md](HorseRacingExpectedValueAnalysis.md)
-- [HorseRacingFavouriteValueAnalysis.md](HorseRacingFavouriteValueAnalysis.md)
-- [HorseRacingRacingStattoData.md](HorseRacingRacingStattoData.md)
-- [HorseRacingSaveBetfairSpDataToCsvFile.md](HorseRacingSaveBetfairSpDataToCsvFile.md)
-- [HorseRacingSemanticAnalysis.md](HorseRacingSemanticAnalysis.md)
-- [HorseRacingSemanticAnalysisR2.md](HorseRacingSemanticAnalysisR2.md)
-- [HorseRacingSilentEVAnalysisWithAutomatedExecution.md](HorseRacingSilentEVAnalysisWithAutomatedExecution.md)
-- [HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md)
-- [HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md)
-- [HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md](HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md)
-- [HorseRacingStrategyR1.md](HorseRacingStrategyR1.md)
-- [HorseRacingStrategyR1_Analyze.md](HorseRacingStrategyR1_Analyze.md)
-- [HorseRacingStrategyR2.md](HorseRacingStrategyR2.md)
-- [HorseRacingStrategyR3.md](HorseRacingStrategyR3.md)
-- [HorseRacingStrategyR3_DS.md](HorseRacingStrategyR3_DS.md)
-- [HorseRacingStrategyR4.md](HorseRacingStrategyR4.md)
-- [HorseRacingStrategyR4_Ideas.md](HorseRacingStrategyR4_Ideas.md)
-- [HorseRacingStrategyR5.md](HorseRacingStrategyR5.md)
-- [HorseRacingStrategyR5_Ideas.md](HorseRacingStrategyR5_Ideas.md)
-- [HorseRacingStrategyR5_Trade.md](HorseRacingStrategyR5_Trade.md)
-- [HorseRacingStrategyR5_Trade_Ideas.md](HorseRacingStrategyR5_Trade_Ideas.md)
-- [HorseRacingStrategyR6.md](HorseRacingStrategyR6.md)
-- [HorseRacingStrategyR6_DS.md](HorseRacingStrategyR6_DS.md)
-- [HorseRacingValueIntelligence.md](HorseRacingValueIntelligence.md)
-- [HorseRacingWinToBePlacedData.md](HorseRacingWinToBePlacedData.md)
-- [HorseRacingWinToBePlacedData_Favourite.md](HorseRacingWinToBePlacedData_Favourite.md)
-- [HorseRacingWinToBePlacedData_Favourite_Silent.md](HorseRacingWinToBePlacedData_Favourite_Silent.md)
-- [TradedPricesEVAnalysis.md](TradedPricesEVAnalysis.md)
-- [TradedPricesEVPlusAnalysis.md](TradedPricesEVPlusAnalysis.md)
-- [TradedPricesEVPlusGpt5OptAnalysis.md](TradedPricesEVPlusGpt5OptAnalysis.md)
-- [TradingChartCreation.md](TradingChartCreation.md)
-- [WeightOfMoneyAnalysisPrompt.md](WeightOfMoneyAnalysisPrompt.md)
-- [WeightOfMoneyStrategy.md](WeightOfMoneyStrategy.md)
-- [WeightOfMoneyStrategyR1.md](WeightOfMoneyStrategyR1.md)
+- [General/BetfairMarketAnalysisCandleStickData.md](General/BetfairMarketAnalysisCandleStickData.md)
+- [General/BetfairMarketAnalysisCandleStickDataR2.md](General/BetfairMarketAnalysisCandleStickDataR2.md)
+- [General/BetfairMarketAnalysisCandleStickDataR3.md](General/BetfairMarketAnalysisCandleStickDataR3.md)
+- [General/BetfairMarketAnalysisCandleStickDataR4_Favourite.md](General/BetfairMarketAnalysisCandleStickDataR4_Favourite.md)
+- [General/BetfairMarketAnalysisCandleStickDataR5_Favourite.md](General/BetfairMarketAnalysisCandleStickDataR5_Favourite.md)
+- [General/BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md](General/BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md)
+- [General/BetfairMarketAnalysisPrompt.md](General/BetfairMarketAnalysisPrompt.md)
+- [General/BetfairTradingStrategyExecutionPrompt.md](General/BetfairTradingStrategyExecutionPrompt.md)
+- [General/BfexplorerMCPIntegrationSystemPrompt.md](General/BfexplorerMCPIntegrationSystemPrompt.md)
+- [General/BfexplorerStrategyExpertPrompt.md](General/BfexplorerStrategyExpertPrompt.md)
+- [Football/FootballMatchFSharpCodeCreation.md](Football/FootballMatchFSharpCodeCreation.md)
+- [Football/FootballMatchOddsAnalysisPrompt.md](Football/FootballMatchOddsAnalysisPrompt.md)
+- [Football_PreKick_MarketAnalysis_Prompt.md](Football/Football_PreKick_MarketAnalysis_Prompt.md)
+- [HorseRacing/HorseRacingBaseFormDataAnalysis.md](HorseRacing/HorseRacingBaseFormDataAnalysis.md)
+- [HorseRacing/HorseRacingBetfairRaceInfoData.md](HorseRacing/HorseRacingBetfairRaceInfoData.md)
+- [HorseRacing/HorseRacingBetfairSpData.md](HorseRacing/HorseRacingBetfairSpData.md)
+- [HorseRacing/HorseRacingBetfairSpDataR1.md](HorseRacing/HorseRacingBetfairSpDataR1.md)
+- [HorseRacing/HorseRacingBetfairSpDataR1_Favourite.md](HorseRacing/HorseRacingBetfairSpDataR1_Favourite.md)
+- [HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent.md](HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent.md)
+- [HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent_CN.md](HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent_CN.md)
+- [HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent_CN2.md](HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent_CN2.md)
+- [HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent_RU.md](HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent_RU.md)
+- [HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md](HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md)
+- [HorseRacing/HorseRacingBookmakersOdds.md](HorseRacing/HorseRacingBookmakersOdds.md)
+- [HorseRacing/HorseRacingCombinedEVAnalysis.md](HorseRacing/HorseRacingCombinedEVAnalysis.md)
+- [HorseRacing/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md](HorseRacing/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
+- [HorseRacing/HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md](HorseRacing/HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md)
+- [HorseRacing/HorseRacingEVAnalysisFavouriteR10_NoLayRules.md](HorseRacing/HorseRacingEVAnalysisFavouriteR10_NoLayRules.md)
+- [HorseRacing/HorseRacingEVAnalysisFavouriteR3.md](HorseRacing/HorseRacingEVAnalysisFavouriteR3.md)
+- [HorseRacing/HorseRacingEVAnalysisFavouriteR3_Silent.md](HorseRacing/HorseRacingEVAnalysisFavouriteR3_Silent.md)
+- [HorseRacing/HorseRacingEVAnalysisFavouriteR4.md](HorseRacing/HorseRacingEVAnalysisFavouriteR4.md)
+- [HorseRacing/HorseRacingEVAnalysisFavouriteR5.md](HorseRacing/HorseRacingEVAnalysisFavouriteR5.md)
+- [HorseRacing/HorseRacingEVAnalysisFavouriteR6.md](HorseRacing/HorseRacingEVAnalysisFavouriteR6.md)
+- [HorseRacing/HorseRacingEVAnalysisFavouriteR6_Silent.md](HorseRacing/HorseRacingEVAnalysisFavouriteR6_Silent.md)
+- [HorseRacing/HorseRacingEVAnalysisFavouriteR7_Silent.md](HorseRacing/HorseRacingEVAnalysisFavouriteR7_Silent.md)
+- [HorseRacing/HorseRacingEVAnalysisFavouriteR8.md](HorseRacing/HorseRacingEVAnalysisFavouriteR8.md)
+- [HorseRacing/HorseRacingEVAnalysisFavouriteR8_Silent.md](HorseRacing/HorseRacingEVAnalysisFavouriteR8_Silent.md)
+- [HorseRacing/HorseRacingEVAnalysisFavouriteR9_Silent.md](HorseRacing/HorseRacingEVAnalysisFavouriteR9_Silent.md)
+- [HorseRacing/HorseRacingEVAnalysisMinimal.md](HorseRacing/HorseRacingEVAnalysisMinimal.md)
+- [HorseRacing/HorseRacingEVAnalysisMinimalExecution.md](HorseRacing/HorseRacingEVAnalysisMinimalExecution.md)
+- [HorseRacing/HorseRacingEVAnalysisNumericalData.md](HorseRacing/HorseRacingEVAnalysisNumericalData.md)
+- [HorseRacing/HorseRacingEVAnalysisPrompt.md](HorseRacing/HorseRacingEVAnalysisPrompt.md)
+- [HorseRacing/HorseRacingEVAnalysisR1.md](HorseRacing/HorseRacingEVAnalysisR1.md)
+- [HorseRacing/HorseRacingEVAnalysisR10_Silent.md](HorseRacing/HorseRacingEVAnalysisR10_Silent.md)
+- [HorseRacing/HorseRacingEVAnalysisR11.md](HorseRacing/HorseRacingEVAnalysisR11.md)
+- [HorseRacing/HorseRacingEVAnalysisR11_Feedback.md](HorseRacing/HorseRacingEVAnalysisR11_Feedback.md)
+- [HorseRacing/HorseRacingEVAnalysisR1_Silent.md](HorseRacing/HorseRacingEVAnalysisR1_Silent.md)
+- [HorseRacing/HorseRacingEVAnalysisR2.md](HorseRacing/HorseRacingEVAnalysisR2.md)
+- [HorseRacing/HorseRacingEVAnalysisR3.md](HorseRacing/HorseRacingEVAnalysisR3.md)
+- [HorseRacing/HorseRacingEVAnalysisWithBetting.md](HorseRacing/HorseRacingEVAnalysisWithBetting.md)
+- [HorseRacing/HorseRacingEVAnalysisWithBetting_TradingData.md](HorseRacing/HorseRacingEVAnalysisWithBetting_TradingData.md)
+- [HorseRacing/HorseRacingEVAnalysisWithConservativeBetting.md](HorseRacing/HorseRacingEVAnalysisWithConservativeBetting.md)
+- [HorseRacing/HorseRacingEVAnalysisWithConservativeTradingData.md](HorseRacing/HorseRacingEVAnalysisWithConservativeTradingData.md)
+- [HorseRacing/HorseRacingEVAnalysisWithDutchBetting.md](HorseRacing/HorseRacingEVAnalysisWithDutchBetting.md)
+- [HorseRacing/HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md](HorseRacing/HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md)
+- [HorseRacing/HorseRacingEVAtTheRacesData.md](HorseRacing/HorseRacingEVAtTheRacesData.md)
+- [HorseRacing/HorseRacingEVAtTheRacesDataR1_ExpertView.md](HorseRacing/HorseRacingEVAtTheRacesDataR1_ExpertView.md)
+- [HorseRacing/HorseRacingEVAtTheRacesDataR2_ExpertView.md](HorseRacing/HorseRacingEVAtTheRacesDataR2_ExpertView.md)
+- [HorseRacing/HorseRacingEVAtTheRacesDataR5_ExpertView.md](HorseRacing/HorseRacingEVAtTheRacesDataR5_ExpertView.md)
+- [HorseRacing/HorseRacingEVRankingsTableOnly.md](HorseRacing/HorseRacingEVRankingsTableOnly.md)
+- [HorseRacing/HorseRacingExecutionOnlyNoReports.md](HorseRacing/HorseRacingExecutionOnlyNoReports.md)
+- [HorseRacing/HorseRacingExpectedValueAnalysis.md](HorseRacing/HorseRacingExpectedValueAnalysis.md)
+- [HorseRacing/HorseRacingFavouriteValueAnalysis.md](HorseRacing/HorseRacingFavouriteValueAnalysis.md)
+- [HorseRacing/HorseRacingRacingStattoData.md](HorseRacing/HorseRacingRacingStattoData.md)
+- [HorseRacing/HorseRacingSaveBetfairSpDataToCsvFile.md](HorseRacing/HorseRacingSaveBetfairSpDataToCsvFile.md)
+- [HorseRacing/HorseRacingSemanticAnalysis.md](HorseRacing/HorseRacingSemanticAnalysis.md)
+- [HorseRacing/HorseRacingSemanticAnalysisR2.md](HorseRacing/HorseRacingSemanticAnalysisR2.md)
+- [HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecution.md](HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecution.md)
+- [HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md)
+- [HorseRacing/HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacing/HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md)
+- [HorseRacing/HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md](HorseRacing/HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md)
+- [HorseRacing/HorseRacingStrategyR1.md](HorseRacing/HorseRacingStrategyR1.md)
+- [HorseRacing/HorseRacingStrategyR1_Analyze.md](HorseRacing/HorseRacingStrategyR1_Analyze.md)
+- [HorseRacing/HorseRacingStrategyR2.md](HorseRacing/HorseRacingStrategyR2.md)
+- [HorseRacing/HorseRacingStrategyR3.md](HorseRacing/HorseRacingStrategyR3.md)
+- [HorseRacing/HorseRacingStrategyR3_DS.md](HorseRacing/HorseRacingStrategyR3_DS.md)
+- [HorseRacing/HorseRacingStrategyR4.md](HorseRacing/HorseRacingStrategyR4.md)
+- [HorseRacing/HorseRacingStrategyR4_Ideas.md](HorseRacing/HorseRacingStrategyR4_Ideas.md)
+- [HorseRacing/HorseRacingStrategyR5.md](HorseRacing/HorseRacingStrategyR5.md)
+- [HorseRacing/HorseRacingStrategyR5_Ideas.md](HorseRacing/HorseRacingStrategyR5_Ideas.md)
+- [HorseRacing/HorseRacingStrategyR5_Trade.md](HorseRacing/HorseRacingStrategyR5_Trade.md)
+- [HorseRacing/HorseRacingStrategyR5_Trade_Ideas.md](HorseRacing/HorseRacingStrategyR5_Trade_Ideas.md)
+- [HorseRacing/HorseRacingStrategyR6.md](HorseRacing/HorseRacingStrategyR6.md)
+- [HorseRacing/HorseRacingStrategyR6_DS.md](HorseRacing/HorseRacingStrategyR6_DS.md)
+- [HorseRacing/HorseRacingValueIntelligence.md](HorseRacing/HorseRacingValueIntelligence.md)
+- [HorseRacing/HorseRacingWinToBePlacedData.md](HorseRacing/HorseRacingWinToBePlacedData.md)
+- [HorseRacing/HorseRacingWinToBePlacedData_Favourite.md](HorseRacing/HorseRacingWinToBePlacedData_Favourite.md)
+- [HorseRacing/HorseRacingWinToBePlacedData_Favourite_Silent.md](HorseRacing/HorseRacingWinToBePlacedData_Favourite_Silent.md)
+- [General/TradedPricesEVAnalysis.md](General/TradedPricesEVAnalysis.md)
+- [General/TradedPricesEVPlusAnalysis.md](General/TradedPricesEVPlusAnalysis.md)
+- [General/TradedPricesEVPlusGpt5OptAnalysis.md](General/TradedPricesEVPlusGpt5OptAnalysis.md)
+- [General/TradingChartCreation.md](General/TradingChartCreation.md)
+- [General/WeightOfMoneyAnalysisPrompt.md](General/WeightOfMoneyAnalysisPrompt.md)
+- [General/WeightOfMoneyStrategy.md](General/WeightOfMoneyStrategy.md)
+- [General/WeightOfMoneyStrategyR1.md](General/WeightOfMoneyStrategyR1.md)
 
 ## Market Analysis & Trading Systems
 
@@ -114,7 +120,7 @@ Below is a list of all prompt files available in this folder. Each file contains
 - Comprehensive betting logic with sophisticated NO BET conditions
 - **Best for:** Comprehensive analysis with multiple data source validation
 
-#### [HorseRacingStrategyR5_Ideas.md](HorseRacingStrategyR5_Ideas.md)
+#### [HorseRacing/HorseRacingStrategyR5_Ideas.md](HorseRacing/HorseRacingStrategyR5_Ideas.md)
 **Strategy R5 - Advanced Multi-Context Analysis System**
 - Revolutionary three-context integration: Racing form data, base Betfair form, and trading patterns
 - Enhanced evaluation framework with weighted scoring and confidence assessment
@@ -122,7 +128,7 @@ Below is a list of all prompt files available in this folder. Each file contains
 - Updated JSON output format with "HorseRacingR5_Analysis" data context
 - **Best for:** Maximum analytical depth with triple data source validation and enhanced decision-making
 
-#### [HorseRacingStrategyR5.md](HorseRacingStrategyR5.md)
+#### [HorseRacing/HorseRacingStrategyR5.md](HorseRacing/HorseRacingStrategyR5.md)
 **Strategy R5 - Silent Execution Version**
 - Silent implementation of R5 strategy with no intermediate reporting
 - Performs complete three-context analysis internally
@@ -130,7 +136,7 @@ Below is a list of all prompt files available in this folder. Each file contains
 - Uses "HorseRacingR5_Analysis" data context for silent data storage
 - **Best for:** Automated silent execution with full R5 analytical power and minimal output
 
-#### [HorseRacingStrategyR6.md](HorseRacingStrategyR6.md)
+#### [HorseRacing/HorseRacingStrategyR6.md](HorseRacing/HorseRacingStrategyR6.md)
 **Strategy R6 - Enhanced Performance Framework**
 - Advanced evolution of R5 strategy with improved performance metrics
 - Enhanced decision-making algorithms with refined threshold management
@@ -138,7 +144,7 @@ Below is a list of all prompt files available in this folder. Each file contains
 
 ### Enhanced EV Analysis Systems
 
-#### [HorseRacingEVAnalysisR11.md](HorseRacingEVAnalysisR11.md) ⭐ **LATEST**
+#### [HorseRacing/HorseRacingEVAnalysisR11.md](HorseRacing/HorseRacingEVAnalysisR11.md) ⭐ **LATEST**
 **R11 Best Horse Strategy - Optimized Silent Execution**
 - Latest optimized framework with streamlined semantic analysis and evolution scoring
 - Silent mode operation with comprehensive decision data logging via `SetAIAgentDataContextForBetfairMarket`
@@ -147,13 +153,13 @@ Below is a list of all prompt files available in this folder. Each file contains
 - Combines Timeform ratings, Racing Post analysis, and contextual performance evolution
 - **Best for:** Production-ready automated execution with comprehensive data collection
 
-#### [HorseRacingEVAnalysisR10_Silent.md](HorseRacingEVAnalysisR10_Silent.md)
+#### [HorseRacing/HorseRacingEVAnalysisR10_Silent.md](HorseRacing/HorseRacingEVAnalysisR10_Silent.md)
 **R10 Silent Analysis Framework**
 - High-performance silent execution with minimal output
 - Advanced EV calculations with dynamic adjustment factors
 - **Best for:** Automated execution with performance optimization focus
 
-#### [HorseRacingEVAnalysisR1.md](HorseRacingEVAnalysisR1.md) - [HorseRacingEVAnalysisR3.md](HorseRacingEVAnalysisR3.md)
+#### [HorseRacing/HorseRacingEVAnalysisR1.md](HorseRacing/HorseRacingEVAnalysisR1.md) - [HorseRacing/HorseRacingEVAnalysisR3.md](HorseRacing/HorseRacingEVAnalysisR3.md)
 **EV Analysis Evolution Series**
 - Progressive development of Expected Value analysis methodologies
 - Each iteration adds refinements to scoring, thresholds, and decision logic
@@ -161,7 +167,7 @@ Below is a list of all prompt files available in this folder. Each file contains
 
 ### Favorite-Focused Analysis Systems
 
-#### [HorseRacingEVAnalysisFavouriteR6.md](HorseRacingEVAnalysisFavouriteR6.md) - [HorseRacingEVAnalysisFavouriteR10_NoLayRules.md](HorseRacingEVAnalysisFavouriteR10_NoLayRules.md)
+#### [HorseRacing/HorseRacingEVAnalysisFavouriteR6.md](HorseRacing/HorseRacingEVAnalysisFavouriteR6.md) - [HorseRacing/HorseRacingEVAnalysisFavouriteR10_NoLayRules.md](HorseRacing/HorseRacingEVAnalysisFavouriteR10_NoLayRules.md)
 **Favorite Analysis Series**
 - Specialized analysis focusing on market favorites with enhanced risk assessment
 - Progressive refinements from R3 through R10 with varying execution modes
@@ -171,7 +177,7 @@ Below is a list of all prompt files available in this folder. Each file contains
 
 ### Betfair SP Data Analysis Systems
 
-#### [HorseRacingBetfairSpData.md](HorseRacingBetfairSpData.md) - [HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md](HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md)
+#### [HorseRacing/HorseRacingBetfairSpData.md](HorseRacing/HorseRacingBetfairSpData.md) - [HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md](HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md)
 **Starting Price Data Analysis**
 - Mathematical betting strategies using Betfair's starting price data and forecast models
 - R1 series includes favorite-focused analysis with silent execution options
@@ -180,13 +186,13 @@ Below is a list of all prompt files available in this folder. Each file contains
 
 ### Combined Analysis Approaches
 
-#### [HorseRacingCombinedEVAnalysis.md](HorseRacingCombinedEVAnalysis.md)
+#### [HorseRacing/HorseRacingCombinedEVAnalysis.md](HorseRacing/HorseRacingCombinedEVAnalysis.md)
 **Multi-Methodology Integration**
 - Combines multiple analysis approaches for maximum accuracy
 - Integrated EV calculation with form analysis and market intelligence
 - **Best for:** Comprehensive analysis requiring multiple validation methods
 
-#### [HorseRacingCombinedEVAnalysisWithAutomatedBetting.md](HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
+#### [HorseRacing/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md](HorseRacing/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
 **Automated Combined Analysis**
 - Combines comprehensive analysis with automated betting execution
 - Multi-source validation with automatic trade execution
@@ -194,13 +200,13 @@ Below is a list of all prompt files available in this folder. Each file contains
 
 ### Silent Execution & Automated Systems
 
-#### [HorseRacingSilentEVAnalysisWithAutomatedExecution.md](HorseRacingSilentEVAnalysisWithAutomatedExecution.md)
+#### [HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecution.md](HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecution.md)
 **Silent Automated Execution**
 - Complete silent operation with automated betting execution
 - Minimal output with comprehensive internal analysis
 - **Best for:** Production trading systems requiring minimal user interaction
 
-#### [HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md)
+#### [HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md)
 **Top 3 Favorites Silent Analysis**
 - Focus on top 3 market favorites with silent automated execution
 - Reduced complexity for high-frequency trading scenarios
@@ -210,13 +216,13 @@ Below is a list of all prompt files available in this folder. Each file contains
 
 ### Betfair Market Analysis Tools
 
-#### [BetfairMarketAnalysisPrompt.md](BetfairMarketAnalysisPrompt.md)
+#### [General/BetfairMarketAnalysisPrompt.md](General/BetfairMarketAnalysisPrompt.md)
 **Comprehensive Market Analysis Framework**
 - Advanced market structure analysis and opportunity identification
 - Multi-timeframe analysis with volume and price action integration
 - **Best for:** Deep market analysis and trading opportunity assessment
 
-#### [BetfairMarketAnalysisCandleStickData.md](BetfairMarketAnalysisCandleStickData.md) - [BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md](BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md)
+#### [General/BetfairMarketAnalysisCandleStickData.md](General/BetfairMarketAnalysisCandleStickData.md) - [General/BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md](General/BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md)
 **Candlestick & Technical Analysis Series**
 - Technical analysis integration with Betfair market data
 - Candlestick pattern recognition and price action analysis
@@ -225,13 +231,13 @@ Below is a list of all prompt files available in this folder. Each file contains
 
 ### Trading Strategy Execution
 
-#### [BetfairTradingStrategyExecutionPrompt.md](BetfairTradingStrategyExecutionPrompt.md)
+#### [General/BetfairTradingStrategyExecutionPrompt.md](General/BetfairTradingStrategyExecutionPrompt.md)
 **Strategy Execution Framework**
 - Comprehensive trading strategy implementation and execution management
 - Risk management and position sizing integration
 - **Best for:** Professional trading strategy deployment and management
 
-#### [TradedPricesEVAnalysis.md](TradedPricesEVAnalysis.md) - [TradedPricesEVPlusGpt5OptAnalysis.md](TradedPricesEVPlusGpt5OptAnalysis.md)
+#### [General/TradedPricesEVAnalysis.md](General/TradedPricesEVAnalysis.md) - [General/TradedPricesEVPlusGpt5OptAnalysis.md](General/TradedPricesEVPlusGpt5OptAnalysis.md)
 **Traded Price Analysis Systems**
 - Analysis of historical traded prices for value identification
 - EV+ optimization with advanced modeling (GPT-5 optimized version available)
@@ -239,7 +245,7 @@ Below is a list of all prompt files available in this folder. Each file contains
 
 ### Weight of Money Analysis
 
-#### [WeightOfMoneyAnalysisPrompt.md](WeightOfMoneyAnalysisPrompt.md) - [WeightOfMoneyStrategyR1.md](WeightOfMoneyStrategyR1.md)
+#### [General/WeightOfMoneyAnalysisPrompt.md](General/WeightOfMoneyAnalysisPrompt.md) - [General/WeightOfMoneyStrategyR1.md](General/WeightOfMoneyStrategyR1.md)
 **Market Money Flow Analysis**
 - Analysis of betting volume and money flow patterns
 - Strategy development based on market sentiment and positioning
@@ -249,13 +255,13 @@ Below is a list of all prompt files available in this folder. Each file contains
 
 ### Platform Integration
 
-#### [BfexplorerMCPIntegrationSystemPrompt.md](BfexplorerMCPIntegrationSystemPrompt.md)
+#### [General/BfexplorerMCPIntegrationSystemPrompt.md](General/BfexplorerMCPIntegrationSystemPrompt.md)
 **MCP Integration Framework**
 - Model Context Protocol integration for Bfexplorer platform
 - System-level integration for automated trading workflows
 - **Best for:** Technical integration and automation setup
 
-#### [BfexplorerStrategyExpertPrompt.md](BfexplorerStrategyExpertPrompt.md)
+#### [General/BfexplorerStrategyExpertPrompt.md](General/BfexplorerStrategyExpertPrompt.md)
 **Bfexplorer Strategy Development**
 - Expert-level strategy development for Bfexplorer platform
 - Advanced configuration and optimization techniques
@@ -263,13 +269,13 @@ Below is a list of all prompt files available in this folder. Each file contains
 
 ### Data Visualization & Analysis Tools
 
-#### [TradingChartCreation.md](TradingChartCreation.md)
+#### [General/TradingChartCreation.md](General/TradingChartCreation.md)
 **Chart Creation & Visualization**
 - Trading chart generation and data visualization tools
 - Custom chart creation for analysis and presentation
 - **Best for:** Data visualization and analytical chart creation
 
-#### [FootballMatchFSharpCodeCreation.md](FootballMatchFSharpCodeCreation.md)
+#### [Football/FootballMatchFSharpCodeCreation.md](Football/FootballMatchFSharpCodeCreation.md)
 **F# Code Generation for Football Analysis**
 - Specialized F# code generation for football match analysis
 - Integration with functional programming approaches for sports analytics
@@ -285,13 +291,13 @@ Below is a list of all prompt files available in this folder. Each file contains
 
 ### Base Data Analysis
 
-#### [HorseRacingBaseFormDataAnalysis.md](HorseRacingBaseFormDataAnalysis.md)
+#### [HorseRacing/HorseRacingBaseFormDataAnalysis.md](HorseRacing/HorseRacingBaseFormDataAnalysis.md)
 **Base Form Data Processing**
 - Fundamental form data analysis and processing framework
 - Core data validation and preparation for advanced analysis
 - **Best for:** Data preprocessing and foundational analysis workflows
 
-#### [HorseRacingWinToBePlacedData.md](HorseRacingWinToBePlacedData.md) - [HorseRacingWinToBePlacedData_Favourite_Silent.md](HorseRacingWinToBePlacedData_Favourite_Silent.md)
+#### [HorseRacing/HorseRacingWinToBePlacedData.md](HorseRacing/HorseRacingWinToBePlacedData.md) - [HorseRacing/HorseRacingWinToBePlacedData_Favourite_Silent.md](HorseRacing/HorseRacingWinToBePlacedData_Favourite_Silent.md)
 **Win-to-Place Analysis**
 - Analysis of win probability to place probability conversion
 - Favorite-focused variants with silent execution options
@@ -299,13 +305,13 @@ Below is a list of all prompt files available in this folder. Each file contains
 
 ### Minimal & Execution-Only Systems
 
-#### [HorseRacingEVAnalysisMinimal.md](HorseRacingEVAnalysisMinimal.md) - [HorseRacingEVAnalysisMinimalExecution.md](HorseRacingEVAnalysisMinimalExecution.md)
+#### [HorseRacing/HorseRacingEVAnalysisMinimal.md](HorseRacing/HorseRacingEVAnalysisMinimal.md) - [HorseRacing/HorseRacingEVAnalysisMinimalExecution.md](HorseRacing/HorseRacingEVAnalysisMinimalExecution.md)
 **Minimal Analysis Frameworks**
 - Streamlined analysis for high-frequency execution
 - Execution-focused versions with minimal analytical overhead
 - **Best for:** High-speed trading and minimal resource usage scenarios
 
-#### [HorseRacingExecutionOnlyNoReports.md](HorseRacingExecutionOnlyNoReports.md)
+#### [HorseRacing/HorseRacingExecutionOnlyNoReports.md](HorseRacing/HorseRacingExecutionOnlyNoReports.md)
 **Pure Execution Framework**
 - Execution-only system with no analytical reporting
 - Maximum speed and minimal output for automated systems
@@ -313,7 +319,7 @@ Below is a list of all prompt files available in this folder. Each file contains
 
 ### Semantic & Advanced Analysis
 
-#### [HorseRacingSemanticAnalysis.md](HorseRacingSemanticAnalysis.md) - [HorseRacingSemanticAnalysisR2.md](HorseRacingSemanticAnalysisR2.md)
+#### [HorseRacing/HorseRacingSemanticAnalysis.md](HorseRacing/HorseRacingSemanticAnalysis.md) - [HorseRacing/HorseRacingSemanticAnalysisR2.md](HorseRacing/HorseRacingSemanticAnalysisR2.md)
 **Semantic Form Analysis**
 - Natural language processing of racing form descriptions
 - Advanced semantic understanding of performance narratives
@@ -345,29 +351,29 @@ Many prompts in this collection have been validated with real market data:
 
 ## Getting Started
 
-1. **For Beginners**: Start with `HorseRacingEVAnalysisMinimal.md` or basic strategy prompts
-2. **For Advanced Users**: Explore `HorseRacingEVAnalysisR11.md` for latest optimization techniques
+1. **For Beginners**: Start with `HorseRacing/HorseRacingEVAnalysisMinimal.md` or basic strategy prompts
+2. **For Advanced Users**: Explore `HorseRacing/HorseRacingEVAnalysisR11.md` for latest optimization techniques
 3. **For Automation**: Use silent execution variants with automated betting integration
 4. **For Analysis**: Combine multiple approaches using combined analysis prompts
 5. **For Platform Integration**: Review MCP integration and Bfexplorer-specific prompts
 
 All prompts are designed for integration with the Bfexplorer trading platform and MCP (Model Context Protocol) for seamless AI-powered trading automation.
 
-#### [HorseRacingStrategyR5_Trade.md](HorseRacingStrategyR5_Trade.md)
+#### [HorseRacing/HorseRacingStrategyR5_Trade.md](HorseRacing/HorseRacingStrategyR5_Trade.md)
 **Strategy R5 - Trading Implementation**
 - R5 strategy optimized for trading execution rather than straight betting
 - Incorporates trading-specific logic and execution patterns
 - Uses "HorseRacingR5_Trade" data context for trading-focused analysis
 - **Best for:** Automated trading execution with R5 analytical framework
 
-#### [HorseRacingStrategyR6.md](HorseRacingStrategyR6.md)
+#### [HorseRacing/HorseRacingStrategyR6.md](HorseRacing/HorseRacingStrategyR6.md)
 **Strategy R6 - Optimized Silent Execution**
 - Silent mode optimization with enhanced composite scoring
 - Advanced decision logic with 4-factor analysis: Semantic Form (35%), Value (25%), Prediction (25%), Stability (15%)
 - Supports both backing and laying strategies with exact 10 Euro execution
 - **Best for:** Silent automated execution with optimized analytical precision
 
-#### [HorseRacingStrategyR6_DS.md](HorseRacingStrategyR6_DS.md)
+#### [HorseRacing/HorseRacingStrategyR6_DS.md](HorseRacing/HorseRacingStrategyR6_DS.md)
 **Strategy R6 - Direct Signal Implementation**
 - Ultra-minimal output with direct execution signals only
 - Single line status reporting: "Executed [Back/Lay] on [HorseName]" or "No action taken"
@@ -376,7 +382,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 
 ### Market Analysis and Real-Time Trading
 
-#### [BetfairMarketAnalysisPrompt.md](BetfairMarketAnalysisPrompt.md)
+#### [General/BetfairMarketAnalysisPrompt.md](General/BetfairMarketAnalysisPrompt.md)
 **Comprehensive Real-Time Market Analysis with Trading Recommendations**
 - Professional-grade market analysis with price movement tracking and volume indicators
 - Advanced trading pattern identification and professional betting activity detection
@@ -386,52 +392,52 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Market inefficiency detection and arbitrage opportunity assessment
 - **Best for:** Real-time market analysis, professional trading opportunities, and comprehensive market intelligence
 
-#### [HorseRacingSaveBetfairSpDataToCsvFile.md](HorseRacingSaveBetfairSpDataToCsvFile.md)
+#### [HorseRacing/HorseRacingSaveBetfairSpDataToCsvFile.md](HorseRacing/HorseRacingSaveBetfairSpDataToCsvFile.md)
 **Betfair SP Data CSV Update (No Programming Needed)**
 - Run this prompt to automatically update Betfair Starting Prices for all horses in the current market.
 - No coding required—just execute and your CSV is updated for analysis or record-keeping.
 
 ### Favourite-Focused Analysis Systems
 
-#### [HorseRacingEVAnalysisFavouriteR3.md](HorseRacingEVAnalysisFavouriteR3.md)
+#### [HorseRacing/HorseRacingEVAnalysisFavouriteR3.md](HorseRacing/HorseRacingEVAnalysisFavouriteR3.md)
 **Favourite R3 - Enhanced EV Analysis**
 - Specialized analysis focusing on market favourite performance evaluation
 - Combines Timeform professional analysis with Racing Post comprehensive data
 - Enhanced EV calculations with competitive field strength assessment
 - **Best for:** Market favourite evaluation with professional-grade data integration
 
-#### [HorseRacingEVAnalysisFavouriteR3_Silent.md](HorseRacingEVAnalysisFavouriteR3_Silent.md)
+#### [HorseRacing/HorseRacingEVAnalysisFavouriteR3_Silent.md](HorseRacing/HorseRacingEVAnalysisFavouriteR3_Silent.md)
 **Favourite R3 - Silent Mode Implementation**
 - Silent execution version of Favourite R3 analysis
 - Automated favourite evaluation with minimal output
 - **Best for:** Silent automated favourite analysis and execution
 
-#### [HorseRacingEVAnalysisFavouriteR4.md](HorseRacingEVAnalysisFavouriteR4.md)
+#### [HorseRacing/HorseRacingEVAnalysisFavouriteR4.md](HorseRacing/HorseRacingEVAnalysisFavouriteR4.md)
 **Favourite R4 - Advanced Favourite Analysis System**
 - Enhanced favourite-focused analysis with improved evaluation criteria
 - Advanced competitive field assessment for favourite value identification
 - **Best for:** Advanced favourite evaluation with enhanced analytical depth
 
-#### [HorseRacingEVAnalysisFavouriteR5.md](HorseRacingEVAnalysisFavouriteR5.md)
+#### [HorseRacing/HorseRacingEVAnalysisFavouriteR5.md](HorseRacing/HorseRacingEVAnalysisFavouriteR5.md)
 **Favourite R5 - Multi-Context Favourite Analysis**
 - Multi-context integration for comprehensive favourite evaluation
 - Enhanced decision-making framework for favourite-based strategies
 - **Best for:** Comprehensive favourite analysis with multiple data source validation
 
-#### [HorseRacingEVAnalysisFavouriteR6.md](HorseRacingEVAnalysisFavouriteR6.md)
+#### [HorseRacing/HorseRacingEVAnalysisFavouriteR6.md](HorseRacing/HorseRacingEVAnalysisFavouriteR6.md)
 **Favourite R6 - EV Range Strategy Edition**
 - Advanced favourite analysis with EV range criteria implementation
 - Timeform professional racing analysis integration with Racing Post data
 - Specific EV threshold execution for controlled risk management
 - **Best for:** Favourite evaluation with precise EV range control and professional data integration
 
-#### [HorseRacingEVAnalysisFavouriteR6_Silent.md](HorseRacingEVAnalysisFavouriteR6_Silent.md)
+#### [HorseRacing/HorseRacingEVAnalysisFavouriteR6_Silent.md](HorseRacing/HorseRacingEVAnalysisFavouriteR6_Silent.md)
 **Favourite R6 - Silent EV Range Implementation**
 - Silent execution version of R6 favourite analysis with EV range criteria
 - Automated favourite evaluation with threshold-based execution control
 - **Best for:** Silent automated favourite analysis with EV range risk management
 
-#### [HorseRacingEVAnalysisFavouriteR7_Silent.md](HorseRacingEVAnalysisFavouriteR7_Silent.md)
+#### [HorseRacing/HorseRacingEVAnalysisFavouriteR7_Silent.md](HorseRacing/HorseRacingEVAnalysisFavouriteR7_Silent.md)
 **Favourite R7 - Optimized Silent EV Analysis with Performance Tracking**
 - Latest evolution with simplified 100-point scoring system and dynamic EV thresholds
 - Enhanced data validation requiring ≥80% completeness before analysis
@@ -440,19 +446,19 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Silent execution with market volatility considerations and error handling
 - **Best for:** Optimized automated favourite analysis with continuous performance improvement and robust error handling
 
-#### [HorseRacingEVAnalysisFavouriteR8.md](HorseRacingEVAnalysisFavouriteR8.md)
+#### [HorseRacing/HorseRacingEVAnalysisFavouriteR8.md](HorseRacing/HorseRacingEVAnalysisFavouriteR8.md)
 **Favourite R8 - Advanced EV Analysis System**
 - Enhanced favourite evaluation with improved analytical framework
 - Advanced market assessment and value identification capabilities
 - **Best for:** Next-generation favourite analysis with enhanced precision
 
-#### [HorseRacingEVAnalysisFavouriteR8_Silent.md](HorseRacingEVAnalysisFavouriteR8_Silent.md)
+#### [HorseRacing/HorseRacingEVAnalysisFavouriteR8_Silent.md](HorseRacing/HorseRacingEVAnalysisFavouriteR8_Silent.md)
 **Favourite R8 - Silent Implementation**
 - Silent execution version of R8 favourite analysis system
 - Automated favourite evaluation with enhanced analytical precision
 - **Best for:** Silent automated favourite analysis with R8 improvements
 
-#### [HorseRacingEVAnalysisFavouriteR9_Silent.md](HorseRacingEVAnalysisFavouriteR9_Silent.md)
+#### [HorseRacing/HorseRacingEVAnalysisFavouriteR9_Silent.md](HorseRacing/HorseRacingEVAnalysisFavouriteR9_Silent.md)
 **Favourite R9 - Advanced Silent Analysis System**
 - Latest evolution of silent favourite analysis with enhanced capabilities
 - Advanced market evaluation and automated execution framework
@@ -460,7 +466,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 
 ### Combined Analysis Approaches
 
-#### [HorseRacingCombinedEVAnalysis.md](HorseRacingCombinedEVAnalysis.md)
+#### [HorseRacing/HorseRacingCombinedEVAnalysis.md](HorseRacing/HorseRacingCombinedEVAnalysis.md)
 **Dual-Method Expected Value Analysis**
 - Combines quantitative prediction scores with semantic analysis of race descriptions
 - Provides both semantic-only and combined probability assessments
@@ -468,27 +474,27 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Includes methodology weighting guidelines and quality control checks
 - **Best for:** Maximum accuracy and confidence in betting recommendations
 
-#### [HorseRacingCombinedEVAnalysisWithAutomatedBetting.md](HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
+#### [HorseRacing/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md](HorseRacing/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md)
 **Dual-Method Analysis with Automated Execution**
 - Enhanced version of combined analysis with automatic betting execution
 - Backs the highest EV horse when both methodologies show positive value
 - Includes comprehensive validation and execution reporting
 - **Best for:** Automated high-confidence betting with dual validation
 
-#### [HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md](HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md)
+#### [HorseRacing/HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md](HorseRacing/HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md)
 **Dual-Method Analysis with Structured Data Export**
 - Provides analysis in both human-readable and machine-readable formats
 - Includes detailed tables and JSON output for further processing
 - **Best for:** Data integration and systematic record keeping
 
-#### [HorseRacingExpectedValueAnalysis.md](HorseRacingExpectedValueAnalysis.md)
+#### [HorseRacing/HorseRacingExpectedValueAnalysis.md](HorseRacing/HorseRacingExpectedValueAnalysis.md)
 **Semantic-Only Expected Value Analysis**
 - Focuses purely on qualitative interpretation of race descriptions
 - Deep semantic analysis of performance patterns and indicators
 - Provides insights into trends that may not be captured in statistical models
 - **Best for:** Identifying value based on recent form narratives and behavioral patterns
 
-#### [HorseRacingRacingStattoData.md](HorseRacingRacingStattoData.md)
+#### [HorseRacing/HorseRacingRacingStattoData.md](HorseRacing/HorseRacingRacingStattoData.md)
 **RacingStatto Data Evaluation with EV and Kelly Calculations**
 - Integrates RacingStatto ranking data (timeRank, fastestTimeRank, rank, averageRank)
 - Computes composite true probabilities from reciprocal ranks
@@ -497,21 +503,21 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 
 ### Betting Strategy Variants
 
-#### [HorseRacingEVAnalysisWithConservativeBetting.md](HorseRacingEVAnalysisWithConservativeBetting.md)
+#### [HorseRacing/HorseRacingEVAnalysisWithConservativeBetting.md](HorseRacing/HorseRacingEVAnalysisWithConservativeBetting.md)
 **Conservative Expected Value Analysis with Smart Execution**
 - Conservative approach focusing only on market favorites with demonstrated value
 - Automatically backs favorite when it meets criteria, lays favorite when it doesn't
 - Prioritizes capital preservation and consistent value identification
 - **Best for:** Risk-averse betting with systematic favorite evaluation
 
-#### [HorseRacingEVAnalysisWithConservativeTradingData.md](HorseRacingEVAnalysisWithConservativeTradingData.md)
+#### [HorseRacing/HorseRacingEVAnalysisWithConservativeTradingData.md](HorseRacing/HorseRacingEVAnalysisWithConservativeTradingData.md)
 **Conservative EV Analysis with Trading Data Integration**
 - Enhanced conservative betting analysis incorporating trading pattern data
 - Focuses on market favorites with comprehensive trading data analysis
 - Combines trading patterns with conservative execution strategies
 - **Best for:** Conservative betting with enhanced trading data insights
 
-#### [HorseRacingEVAnalysisWithDutchBetting.md](HorseRacingEVAnalysisWithDutchBetting.md)
+#### [HorseRacing/HorseRacingEVAnalysisWithDutchBetting.md](HorseRacing/HorseRacingEVAnalysisWithDutchBetting.md)
 **Expected Value Analysis with Automated Dutch Betting**
 - Combines semantic performance analysis with mathematical EV calculations
 - Automatically selects three most qualified horses for Dutch betting strategy
@@ -519,56 +525,56 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Provides risk diversification across multiple value selections
 - **Best for:** Automated multi-horse betting with risk management and value optimization
 
-#### [HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md](HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md)
+#### [HorseRacing/HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md](HorseRacing/HorseRacingEVAnalysisWithDutchBetting_OlbgTips.md)
 **Dutch Betting with External Tips Integration**
 - Incorporates OLBG (Online Betting Guide) tips into Dutch betting strategy
 - Combines AI analysis with community expert opinions
 - **Best for:** Leveraging community wisdom alongside AI analysis
 
-#### [HorseRacingEVAnalysisR1.md](HorseRacingEVAnalysisR1.md)
+#### [HorseRacing/HorseRacingEVAnalysisR1.md](HorseRacing/HorseRacingEVAnalysisR1.md)
 **Expected Value Analysis with Conditional Betting**
 - Performs semantic analysis of race descriptions to estimate "true" probabilities.
 - Calculates Expected Value (EV) for each horse.
 - Executes a "Bet 10 Euro" strategy only on horses with positive EV and an estimated probability > 20%.
 - **Best for:** Value betting with a focus on higher probability selections.
 
-#### [HorseRacingEVAnalysisR1_Silent.md](HorseRacingEVAnalysisR1_Silent.md)
+#### [HorseRacing/HorseRacingEVAnalysisR1_Silent.md](HorseRacing/HorseRacingEVAnalysisR1_Silent.md)
 **Expected Value Analysis R1 - Silent Implementation**
 - Silent execution version of R1 EV analysis with conditional betting
 - Automated execution with minimal output for systematic betting
 - **Best for:** Silent automated EV-based betting with R1 methodology
 
-#### [HorseRacingEVAnalysisR2.md](HorseRacingEVAnalysisR2.md)
+#### [HorseRacing/HorseRacingEVAnalysisR2.md](HorseRacing/HorseRacingEVAnalysisR2.md)
 **Expected Value Analysis R2 - Enhanced Evaluation System**
 - Advanced EV analysis with improved evaluation methodology
 - Enhanced probability assessment and value identification
 - **Best for:** Improved EV analysis with enhanced precision and reliability
 
-#### [HorseRacingEVAnalysisR3.md](HorseRacingEVAnalysisR3.md)
+#### [HorseRacing/HorseRacingEVAnalysisR3.md](HorseRacing/HorseRacingEVAnalysisR3.md)
 **Expected Value Analysis R3 - Multi-Factor Analysis System**
 - Comprehensive EV analysis incorporating multiple evaluation factors
 - Advanced analytical framework with enhanced decision-making logic
 - **Best for:** Sophisticated EV analysis with comprehensive market evaluation
 
-#### [HorseRacingEVAnalysisR10_Silent.md](HorseRacingEVAnalysisR10_Silent.md)
+#### [HorseRacing/HorseRacingEVAnalysisR10_Silent.md](HorseRacing/HorseRacingEVAnalysisR10_Silent.md)
 **Expected Value Analysis R10 - Advanced Silent System**
 - Latest evolution of EV analysis with advanced silent execution capabilities
 - Enhanced analytical framework with improved accuracy and execution
 - **Best for:** Cutting-edge silent EV analysis with maximum analytical sophistication
 
-#### [HorseRacingEVAnalysisWithBetting.md](HorseRacingEVAnalysisWithBetting.md)
+#### [HorseRacing/HorseRacingEVAnalysisWithBetting.md](HorseRacing/HorseRacingEVAnalysisWithBetting.md)
 **Expected Value Analysis with Single Selection Betting**
 - Semantic analysis combined with automated single selection betting
 - **Best for:** Focused betting on highest value individual selections
 
-#### [HorseRacingEVAnalysisWithBetting_TradingData.md](HorseRacingEVAnalysisWithBetting_TradingData.md)
+#### [HorseRacing/HorseRacingEVAnalysisWithBetting_TradingData.md](HorseRacing/HorseRacingEVAnalysisWithBetting_TradingData.md)
 **EV Analysis with Trading Data Integration**
 - Enhanced betting analysis incorporating additional trading data sources
 - **Best for:** Comprehensive market analysis with multiple data streams
 
 ### BetfairSpData Analysis Systems
 
-#### [HorseRacingBetfairSpData.md](HorseRacingBetfairSpData.md)
+#### [HorseRacing/HorseRacingBetfairSpData.md](HorseRacing/HorseRacingBetfairSpData.md)
 **BetfairSpData Optimal Betting Strategy**
 - Comprehensive betting strategy using BetfairSpData context for value identification
 - Combines original Expected Value metrics with user-calculated EV analysis
@@ -576,7 +582,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Value betting focus with diversification rules and price comparison analysis
 - **Best for:** Mathematical approach to value betting using Betfair's starting price data and forecast models
 
-#### [HorseRacingBetfairSpDataR1.md](HorseRacingBetfairSpDataR1.md)
+#### [HorseRacing/HorseRacingBetfairSpDataR1.md](HorseRacing/HorseRacingBetfairSpDataR1.md)
 **BetfairSpData R1 - AI Agent Optimized Strategy**
 - Advanced optimization of BetfairSpData analysis with transparent metrics and deterministic logic
 - Enhanced probability calculations combining forecast and market probabilities
@@ -585,7 +591,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Comprehensive candidate qualification criteria with multi-factor validation
 - **Best for:** Professional-grade betting strategy with mathematical rigor and AI optimization
 
-#### [HorseRacingBetfairSpDataR1_Favourite.md](HorseRacingBetfairSpDataR1_Favourite.md)
+#### [HorseRacing/HorseRacingBetfairSpDataR1_Favourite.md](HorseRacing/HorseRacingBetfairSpDataR1_Favourite.md)
 **BetfairSpData R1 - Favourite-Only Strategy**
 - Specialized strategy analyzing all horses but betting exclusively on the market favourite
 - Binary execution logic: Back favourite if candidate criteria met, Lay if not
@@ -594,14 +600,14 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Fixed 10 Euro betting with automated execution based on favourite's candidate status
 - **Best for:** Conservative favourite-focused strategy with systematic value-based execution
 
-#### [HorseRacingBetfairSpDataR1_Favourite_Silent.md](HorseRacingBetfairSpDataR1_Favourite_Silent.md)
+#### [HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent.md](HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent.md)
 **BetfairSpData R1 - Silent Favourite Strategy**
 - Silent execution version of favourite-only BetfairSpData strategy
 - Automated favourite evaluation with minimal output
 - Background processing for systematic favourite betting
 - **Best for:** Automated favourite betting without user interaction
 
-#### [HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md](HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md)
+#### [HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md](HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent_SK.md)
 **BetfairSpData R1 - Slovak Silent Favourite Strategy**
 - Slovak language version of silent favourite BetfairSpData strategy
 - Localized automated favourite evaluation and execution
@@ -609,7 +615,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 
 ### Specialized Analysis Tools
 
-#### [WeightOfMoneyAnalysisPrompt.md](WeightOfMoneyAnalysisPrompt.md)
+#### [General/WeightOfMoneyAnalysisPrompt.md](General/WeightOfMoneyAnalysisPrompt.md)
 **Weight of Money Market Analysis**
 - Comprehensive framework for analyzing Betfair market liquidity distribution
 - Price movement prediction based on backing vs laying volume analysis
@@ -617,39 +623,39 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Market inefficiency detection and arbitrage opportunity assessment
 - **Best for:** Real-time market analysis, price movement prediction, and trading opportunity identification
 
-#### [HorseRacingBaseFormDataAnalysis.md](HorseRacingBaseFormDataAnalysis.md)
+#### [HorseRacing/HorseRacingBaseFormDataAnalysis.md](HorseRacing/HorseRacingBaseFormDataAnalysis.md)
 **Core Betting Metrics Analysis**
 - Analyzes fundamental handicapping metrics: Forecast Price, Form, Official Rating, and Weight
 - Price movement analysis and market confidence indicators
 - Form pattern recognition and performance evaluation
 - **Best for:** Fundamental analysis based on core racing metrics and traditional handicapping principles
 
-#### [HorseRacingEVAnalysisNumericalData.md](HorseRacingEVAnalysisNumericalData.md)
+#### [HorseRacing/HorseRacingEVAnalysisNumericalData.md](HorseRacing/HorseRacingEVAnalysisNumericalData.md)
 **Numerical Data Focused Analysis**
 - Emphasizes quantitative metrics and statistical analysis
 - **Best for:** Data-driven analysis with focus on numerical performance indicators
 
-#### [HorseRacingEVRankingsTableOnly.md](HorseRacingEVRankingsTableOnly.md)
+#### [HorseRacing/HorseRacingEVRankingsTableOnly.md](HorseRacing/HorseRacingEVRankingsTableOnly.md)
 **Quick Rankings Table Generation**
 - Simplified output focusing on essential EV rankings
 - **Best for:** Rapid analysis when only rankings are needed
 
-#### [HorseRacingEVAnalysisMinimal.md](HorseRacingEVAnalysisMinimal.md)
+#### [HorseRacing/HorseRacingEVAnalysisMinimal.md](HorseRacing/HorseRacingEVAnalysisMinimal.md)
 **Minimal EV Analysis with Silent Execution**
 - Silent analysis with minimal output and conservative betting approach
 - **Best for:** Quiet operation with essential analysis only
 
-#### [HorseRacingEVAnalysisMinimalExecution.md](HorseRacingEVAnalysisMinimalExecution.md)
+#### [HorseRacing/HorseRacingEVAnalysisMinimalExecution.md](HorseRacing/HorseRacingEVAnalysisMinimalExecution.md)
 **Minimal EV Analysis with Strategy Execution**
 - Silent analysis with automated favorite evaluation and execution
 - **Best for:** Automated conservative betting with minimal reporting
 
-#### [HorseRacingExecutionOnlyNoReports.md](HorseRacingExecutionOnlyNoReports.md)
+#### [HorseRacing/HorseRacingExecutionOnlyNoReports.md](HorseRacing/HorseRacingExecutionOnlyNoReports.md)
 **Silent Execution Strategy with No Analysis Reports**
 - Pure execution strategy with no analysis output or reports
 - **Best for:** Silent automated execution without analysis documentation
 
-#### [HorseRacingSilentEVAnalysisWithAutomatedExecution.md](HorseRacingSilentEVAnalysisWithAutomatedExecution.md)
+#### [HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecution.md](HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecution.md)
 **Silent Comprehensive EV Analysis with Trading Data - All Horses**
 - Completely silent comprehensive Expected Value analysis using trading patterns and performance data
 - Combines trading pattern interpretation with semantic performance analysis for optimal betting opportunity identification
@@ -660,7 +666,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingEVAnalysisResults"
 - **Best for:** Automated silent operation with full field analysis and unrestricted selection
 
-#### [HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md)
+#### [HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md)
 **Silent Comprehensive EV Analysis with Trading Data - Top 3 Favorites Only**
 - Completely silent comprehensive Expected Value analysis using trading patterns and performance data
 - Combines trading pattern interpretation with semantic performance analysis for optimal betting opportunity identification
@@ -672,7 +678,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingEVAnalysisResults"
 - **Best for:** Automated silent operation with risk management through favorites constraint and dual-source validation
 
-#### [HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md)
+#### [HorseRacing/HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md](HorseRacing/HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md)
 **Silent Comprehensive EV Analysis with OLBG Expert Tips - Top 3 Favorites Only**
 - Completely silent comprehensive Expected Value analysis using OLBG expert tipster consensus and performance data
 - Combines professional tipster analysis with semantic performance analysis for expert-guided betting opportunities
@@ -685,7 +691,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 - Stores comprehensive analysis data silently in JSON format using dataContextName "HorseRacingOlbgEVAnalysisResults"
 - **Best for:** Leveraging professional tipster expertise with automated silent execution and favorites risk management
 
-#### [HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md](HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md)
+#### [HorseRacing/HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md](HorseRacing/HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md)
 **Silent OLBG EV Analysis with Fixed 10 Euro Betting - Top 3 Favorites Only**
 - Completely silent comprehensive Expected Value analysis using OLBG expert tipster consensus
 - Fixed 10 Euro betting execution on best value selection among top 3 favorites
@@ -698,20 +704,20 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 
 ### Football Analysis
 
-#### [FootballMatchFSharpCodeCreation.md](FootballMatchFSharpCodeCreation.md)
+#### [Football/FootballMatchFSharpCodeCreation.md](Football/FootballMatchFSharpCodeCreation.md)
 **Football Match F# Code Generation**
 - Generates F# code for football match analysis and trading strategies
 - **Best for:** Developers creating custom football analysis applications
 
 ### System Integration
 
-#### [BfexplorerMCPIntegrationSystemPrompt.md](BfexplorerMCPIntegrationSystemPrompt.md)
+#### [General/BfexplorerMCPIntegrationSystemPrompt.md](General/BfexplorerMCPIntegrationSystemPrompt.md)
 **BFExplorer Integration Guide**
 - System-level prompt for integrating AI analysis with BFExplorer
 - Technical guidance for MCP (Model Context Protocol) integration
 - **Best for:** Setting up automated AI analysis workflows
 
-#### [BfexplorerStrategyExpertPrompt.md](BfexplorerStrategyExpertPrompt.md)
+#### [General/BfexplorerStrategyExpertPrompt.md](General/BfexplorerStrategyExpertPrompt.md)
 **BFExplorer Strategy Expert System**
 - Comprehensive AI assistant prompt for strategy selection and configuration
 - Expert knowledge of all 60+ BFExplorer strategy templates and parameters
@@ -722,7 +728,7 @@ All prompts are designed for integration with the Bfexplorer trading platform an
 ## Usage Recommendations
 
 ### For Fundamental Analysis
-Use **HorseRacingBaseFormDataAnalysis.md** when:
+Use **HorseRacing/HorseRacingBaseFormDataAnalysis.md** when:
 - You want traditional handicapping approach with AI enhancement
 - Focus on core metrics: price movement, form, rating, and weight
 - Looking for fundamental value based on proven racing metrics
@@ -730,7 +736,7 @@ Use **HorseRacingBaseFormDataAnalysis.md** when:
 - Want to understand market confidence through price movements
 
 ### For Real-Time Market Analysis and Trading
-Use **BetfairMarketAnalysisPrompt.md** when:
+Use **General/BetfairMarketAnalysisPrompt.md** when:
 - You need comprehensive real-time market analysis with trading recommendations
 - Want to identify professional betting patterns and volume indicators
 - Seeking specific back/lay/trade opportunities with tick-level targets
@@ -741,7 +747,7 @@ Use **BetfairMarketAnalysisPrompt.md** when:
 - **Best for:** Real-time market analysis, professional trading opportunities, and comprehensive market intelligence
 
 ### For Favourite-Focused Analysis
-Use **HorseRacingEVAnalysisFavouriteR6.md** when:
+Use **HorseRacing/HorseRacingEVAnalysisFavouriteR6.md** when:
 - You want specialized analysis focusing on market favourite performance
 - Need EV range criteria for controlled risk management
 - Want professional-grade Timeform and Racing Post data integration
@@ -749,28 +755,28 @@ Use **HorseRacingEVAnalysisFavouriteR6.md** when:
 - Prefer favourite-based strategies with precise threshold control
 
 ### For Silent Favourite Analysis
-Use **HorseRacingEVAnalysisFavouriteR6_Silent.md** when:
+Use **HorseRacing/HorseRacingEVAnalysisFavouriteR6_Silent.md** when:
 - You want silent automated favourite evaluation with EV range control
 - Need minimal output automated favourite analysis
 - Prefer threshold-based execution with favourite-focused strategies
 - Want automated favourite assessment with risk management constraints
 
 ### For Optimized Silent Execution
-Use **HorseRacingStrategyR6.md** when:
+Use **HorseRacing/HorseRacingStrategyR6.md** when:
 - You want optimized silent execution with enhanced composite scoring
 - Need advanced 4-factor analysis with weighted decision criteria
 - Prefer both backing and laying capability in silent mode
 - Want automated execution with analytical precision optimization
 
 ### For Ultra-Minimal Automated Trading
-Use **HorseRacingStrategyR6_DS.md** when:
+Use **HorseRacing/HorseRacingStrategyR6_DS.md** when:
 - You need ultra-minimal output with direct execution signals only
 - Want single line status reporting for trading systems
 - Prefer minimal noise automated execution with direct feedback
 - Need simple success/failure reporting for automated trading
 
 ### For Conservative Risk Management
-Use **HorseRacingEVAnalysisWithConservativeBetting.md** when:
+Use **HorseRacing/HorseRacingEVAnalysisWithConservativeBetting.md** when:
 - Capital preservation is the primary goal
 - You want systematic favorite evaluation
 - Looking for consistent value identification over frequent betting
@@ -778,35 +784,35 @@ Use **HorseRacingEVAnalysisWithConservativeBetting.md** when:
 - Want automatic execution of both back and lay strategies
 
 ### For Maximum Accuracy
-Use **HorseRacingCombinedEVAnalysis.md** when:
+Use **HorseRacing/HorseRacingCombinedEVAnalysis.md** when:
 - High-stakes betting decisions
 - You have access to both prediction scores and race descriptions
 - You want validation across multiple methodologies
 - Maximum confidence is required
 
 ### For Automated Execution
-Use **HorseRacingCombinedEVAnalysisWithAutomatedBetting.md** when:
+Use **HorseRacing/HorseRacingCombinedEVAnalysisWithAutomatedBetting.md** when:
 - You want high-confidence automated betting
 - Both prediction scores and semantic data are available
 - Seeking systematic execution with dual validation
 - Want comprehensive reporting of automated decisions
 
 ### For Specialized Insights
-Use **HorseRacingExpectedValueAnalysis.md** when:
+Use **HorseRacing/HorseRacingExpectedValueAnalysis.md** when:
 - Prediction scores are unavailable or unreliable
 - You want to focus on recent form narratives
 - Looking for value that statistical models might miss
 - Analyzing behavioral and tactical factors
 
 ### For RacingStatto Data Analysis
-Use **HorseRacingRacingStattoData.md** when:
+Use **HorseRacing/HorseRacingRacingStattoData.md** when:
 - You have RacingStatto ranking data available
 - Want to compute EV and Kelly fractions for optimal staking
 - Seeking quantitative analysis based on professional racing statistics
 - Need normalized true probabilities from multiple rank metrics
 
 ### For Automated Dutch Betting
-Use **HorseRacingEVAnalysisWithDutchBetting.md** when:
+Use **HorseRacing/HorseRacingEVAnalysisWithDutchBetting.md** when:
 - You want risk diversification across multiple selections
 - Seeking automated execution of Dutch betting strategies
 - Looking for comprehensive market coverage with multiple value horses
@@ -814,7 +820,7 @@ Use **HorseRacingEVAnalysisWithDutchBetting.md** when:
 - Requiring systematic approach to profit optimization across selections
 
 ### For Silent Automated Execution with Risk Management (⭐ PROVEN PERFORMANCE)
-Use **HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md** when:
+Use **HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md** when:
 - You want completely silent automated operation with no intermediate outputs
 - Capital preservation through favorites-only execution is required  
 - Seeking comprehensive dual-source analysis (trading data + performance)
@@ -824,7 +830,7 @@ Use **HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md** when:
 - **PROVEN: Strategy R1 variant achieved 83.3% strike rate with 115-150% ROI (June 2025)**
 
 ### For Silent Automated Execution with Full Field Analysis
-Use **HorseRacingSilentEVAnalysisWithAutomatedExecution.md** when:
+Use **HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecution.md** when:
 - You want completely silent automated operation with no restrictions
 - Seeking maximum opportunity identification across all horses in the race
 - Want comprehensive dual-source analysis without favorites limitation
@@ -833,7 +839,7 @@ Use **HorseRacingSilentEVAnalysisWithAutomatedExecution.md** when:
 - Want detailed analysis stored silently with full race coverage
 
 ### For Expert-Guided Silent Execution
-Use **HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md** when:
+Use **HorseRacing/HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md** when:
 - You want to leverage professional tipster expertise in automated betting
 - Seeking silent operation with expert consensus validation
 - Want combination of tipster analysis with performance data
@@ -842,56 +848,56 @@ Use **HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md** wh
 - Want comprehensive OLBG tipster analysis stored for historical reference
 
 ### For Quick Analysis
-Use **HorseRacingEVRankingsTableOnly.md** when:
+Use **HorseRacing/HorseRacingEVRankingsTableOnly.md** when:
 - Time constraints require rapid assessment
 - You need only essential EV rankings
 - Making smaller stake decisions
 - Want simplified output format
 
 ### For Data Integration
-Use **HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md** when:
+Use **HorseRacing/HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md** when:
 - Need structured data export
 - Building automated trading systems
 - Require machine-readable analysis output
 - Want to maintain detailed records for analysis
 
 ### For Numerical Focus
-Use **HorseRacingEVAnalysisNumericalData.md** when:
+Use **HorseRacing/HorseRacingEVAnalysisNumericalData.md** when:
 - Emphasizing quantitative metrics
 - Statistical analysis is preferred
 - Working with data-heavy approaches
 - Want to complement semantic analysis with hard numbers
 
 ### For Professional Trading Execution
-Use **BetfairTradingStrategyExecutionPrompt.md** when:
+Use **General/BetfairTradingStrategyExecutionPrompt.md** when:
 - You need advanced position management and trading strategy execution
 - Want professional-grade risk management for trading operations
 - Seeking comprehensive entry/exit criteria and portfolio optimization
 - Need systematic trading strategy implementation with advanced controls
 
 ### For Weight of Money Trading
-Use **WeightOfMoneyStrategy.md** when:
+Use **General/WeightOfMoneyStrategy.md** when:
 - You want to trade based on market liquidity patterns and flow analysis
 - Seeking automated trading execution based on weight of money principles
 - Need market flow interpretation for trading opportunity identification
 - Want to leverage liquidity imbalances for trading profits
 
 ### For Advanced Weight of Money Trading
-Use **WeightOfMoneyStrategyR1.md** when:
+Use **General/WeightOfMoneyStrategyR1.md** when:
 - You need professional-grade weight of money analysis with R1-level precision
 - Want enhanced market flow analysis and advanced trading pattern recognition
 - Seeking optimized execution logic for sophisticated weight of money strategies
 - Need proven analytical framework applied to liquidity-based trading
 
 ### For R5 Trading Implementation
-Use **HorseRacingStrategyR5_Trade.md** when:
+Use **HorseRacing/HorseRacingStrategyR5_Trade.md** when:
 - You want R5 analytical power optimized specifically for trading execution
 - Need trading-specific logic and execution patterns rather than straight betting
 - Want automated trading with comprehensive three-context analysis
 - Prefer trading-focused data storage and analysis tracking
 
 ### For R5 Trading Development
-Use **HorseRacingStrategyR5_Trade_Ideas.md** when:
+Use **HorseRacing/HorseRacingStrategyR5_Trade_Ideas.md** when:
 - You're developing or optimizing R5-based trading strategies
 - Need comprehensive analysis output for trading strategy refinement
 - Want detailed reasoning and methodology for trading decisions
@@ -901,42 +907,42 @@ Use **HorseRacingStrategyR5_Trade_Ideas.md** when:
 
 ### Candlestick Data Analysis Systems
 
-#### [BetfairMarketAnalysisCandleStickData.md](BetfairMarketAnalysisCandleStickData.md)
+#### [General/BetfairMarketAnalysisCandleStickData.md](General/BetfairMarketAnalysisCandleStickData.md)
 **Candlestick Pattern Analysis for Betfair Markets**
 - Technical analysis using candlestick patterns and volume data
 - Price movement analysis with momentum indicators
 - Trading strategy recommendations based on chart patterns
 - **Best for:** Technical traders seeking pattern-based market analysis
 
-#### [BetfairMarketAnalysisCandleStickDataR2.md](BetfairMarketAnalysisCandleStickDataR2.md)
+#### [General/BetfairMarketAnalysisCandleStickDataR2.md](General/BetfairMarketAnalysisCandleStickDataR2.md)
 **Enhanced Candlestick Analysis R2**
 - Advanced candlestick pattern recognition with improved algorithms
 - Multi-timeframe analysis and pattern confirmation
 - Enhanced volume analysis and market momentum assessment
 - **Best for:** Advanced technical analysis with pattern validation
 
-#### [BetfairMarketAnalysisCandleStickDataR3.md](BetfairMarketAnalysisCandleStickDataR3.md)
+#### [General/BetfairMarketAnalysisCandleStickDataR3.md](General/BetfairMarketAnalysisCandleStickDataR3.md)
 **Comprehensive Candlestick Analysis R3**
 - Comprehensive technical analysis framework with multiple indicators
 - Advanced pattern recognition and market structure analysis
 - Integrated volume and price action analysis
 - **Best for:** Professional-grade technical analysis and trading signals
 
-#### [BetfairMarketAnalysisCandleStickDataR4_Favourite.md](BetfairMarketAnalysisCandleStickDataR4_Favourite.md)
+#### [General/BetfairMarketAnalysisCandleStickDataR4_Favourite.md](General/BetfairMarketAnalysisCandleStickDataR4_Favourite.md)
 **Favourite-Focused Candlestick Analysis R4**
 - Candlestick analysis specifically focused on market favourites
 - Technical analysis for favourite performance evaluation
 - Pattern recognition for favourite selection validation
 - **Best for:** Technical analysis of market favourite performance
 
-#### [BetfairMarketAnalysisCandleStickDataR5_Favourite.md](BetfairMarketAnalysisCandleStickDataR5_Favourite.md)
+#### [General/BetfairMarketAnalysisCandleStickDataR5_Favourite.md](General/BetfairMarketAnalysisCandleStickDataR5_Favourite.md)
 **Advanced Favourite Candlestick Analysis R5**
 - Advanced technical analysis for market favourites with enhanced algorithms
 - Multi-factor pattern analysis and market structure evaluation
 - Comprehensive favourite performance assessment
 - **Best for:** Professional technical analysis of favourite selections
 
-#### [BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md](BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md)
+#### [General/BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md](General/BetfairMarketAnalysisCandleStickDataR5_Favourite_Silent.md)
 **Silent Favourite Candlestick Analysis R5**
 - Silent execution version of R5 favourite candlestick analysis
 - Automated technical analysis with minimal output
@@ -945,7 +951,7 @@ Use **HorseRacingStrategyR5_Trade_Ideas.md** when:
 
 ### Chart Creation and Visualization
 
-#### [TradingChartCreation.md](TradingChartCreation.md)
+#### [General/TradingChartCreation.md](General/TradingChartCreation.md)
 **Interactive Financial Chart Creation**
 - Create interactive financial charts from MCP time series data
 - Candlestick charts with volume analysis and technical indicators
@@ -957,7 +963,7 @@ Use **HorseRacingStrategyR5_Trade_Ideas.md** when:
 
 ### Core Semantic Analysis
 
-#### [HorseRacingSemanticAnalysis.md](HorseRacingSemanticAnalysis.md)
+#### [HorseRacing/HorseRacingSemanticAnalysis.md](HorseRacing/HorseRacingSemanticAnalysis.md)
 **AI-Powered Semantic Interpretation of Racing Form Data**
 - Deep semantic analysis of horse racing form descriptions
 - Natural language processing of performance narratives
@@ -965,7 +971,7 @@ Use **HorseRacingStrategyR5_Trade_Ideas.md** when:
 - Normalized semantic scoring and expected value calculations
 - **Best for:** Qualitative analysis of racing form data beyond numerical metrics
 
-#### [HorseRacingSemanticAnalysisR2.md](HorseRacingSemanticAnalysisR2.md)
+#### [HorseRacing/HorseRacingSemanticAnalysisR2.md](HorseRacing/HorseRacingSemanticAnalysisR2.md)
 **Enhanced Semantic Analysis R2**
 - Advanced semantic analysis with improved natural language processing
 - Enhanced pattern recognition in racing form descriptions
@@ -976,7 +982,7 @@ Use **HorseRacingStrategyR5_Trade_Ideas.md** when:
 
 ### Automated Traded Prices EV Analysis
 
-#### [TradedPricesEVAnalysis.md](TradedPricesEVAnalysis.md)
+#### [General/TradedPricesEVAnalysis.md](General/TradedPricesEVAnalysis.md)
 **Automated Expected Value Analysis from Trading Data**
 - Real-time analysis of traded prices and market movements
 - Expected value calculations based on trading patterns
@@ -984,14 +990,14 @@ Use **HorseRacingStrategyR5_Trade_Ideas.md** when:
 - Strategic recommendations based on price movement analysis
 - **Best for:** Real-time market analysis using actual traded data
 
-#### [TradedPricesEVPlusAnalysis.md](TradedPricesEVPlusAnalysis.md)
+#### [General/TradedPricesEVPlusAnalysis.md](General/TradedPricesEVPlusAnalysis.md)
 **Enhanced Traded Prices EV Analysis**
 - Advanced analysis combining traded prices with additional market data
 - Multi-factor expected value assessment
 - Enhanced strategic recommendations with risk assessment
 - **Best for:** Comprehensive market analysis with multiple data sources
 
-#### [TradedPricesEVPlusGpt5OptAnalysis.md](TradedPricesEVPlusGpt5OptAnalysis.md)
+#### [General/TradedPricesEVPlusGpt5OptAnalysis.md](General/TradedPricesEVPlusGpt5OptAnalysis.md)
 **GPT-5 Optimized Traded Prices Analysis**
 - GPT-5 optimized analysis of traded prices and market data
 - Advanced AI processing for market pattern recognition
@@ -1002,21 +1008,21 @@ Use **HorseRacingStrategyR5_Trade_Ideas.md** when:
 
 ### Place Betting Analysis Systems
 
-#### [HorseRacingWinToBePlacedData.md](HorseRacingWinToBePlacedData.md)
+#### [HorseRacing/HorseRacingWinToBePlacedData.md](HorseRacing/HorseRacingWinToBePlacedData.md)
 **Win to Be Placed Data Analysis**
 - Analysis of place betting markets and win-to-place conversion
 - Expected value calculations for place betting opportunities
 - Market efficiency assessment for place betting
 - **Best for:** Place betting analysis and value identification
 
-#### [HorseRacingWinToBePlacedData_Favourite.md](HorseRacingWinToBePlacedData_Favourite.md)
+#### [HorseRacing/HorseRacingWinToBePlacedData_Favourite.md](HorseRacing/HorseRacingWinToBePlacedData_Favourite.md)
 **Favourite-Focused Place Betting Analysis**
 - Place betting analysis specifically for market favourites
 - Favourite performance evaluation in place markets
 - Value assessment for favourite place betting opportunities
 - **Best for:** Favourite-focused place betting strategies
 
-#### [HorseRacingWinToBePlacedData_Favourite_Silent.md](HorseRacingWinToBePlacedData_Favourite_Silent.md)
+#### [HorseRacing/HorseRacingWinToBePlacedData_Favourite_Silent.md](HorseRacing/HorseRacingWinToBePlacedData_Favourite_Silent.md)
 **Silent Favourite Place Betting Analysis**
 - Silent execution version of favourite place betting analysis
 - Automated place betting evaluation for favourites
@@ -1081,25 +1087,25 @@ Each prompt provides:
 
 The [Templates](Templates/) directory contains AI platform-specific expert system templates for horse racing analysis:
 
-#### [HorseRacingExpert_ChatGPT.md](Templates/HorseRacingExpert_ChatGPT.md)
+#### [HorseRacing/HorseRacingExpert_ChatGPT.md](Templates/HorseRacingExpert_ChatGPT.md)
 **ChatGPT Horse Racing Expert Template**
 - Specialized system prompt for ChatGPT optimization
 - Platform-specific instructions for optimal ChatGPT performance
 - **Best for:** Setting up ChatGPT as a horse racing analysis expert
 
-#### [HorseRacingExpert_Claude.md](Templates/HorseRacingExpert_Claude.md)
+#### [HorseRacing/HorseRacingExpert_Claude.md](Templates/HorseRacingExpert_Claude.md)
 **Claude Horse Racing Expert Template**
 - Optimized system prompt for Claude AI platform
 - Claude-specific analytical approaches and formatting
 - **Best for:** Configuring Claude for horse racing expertise
 
-#### [HorseRacingExpert_Gemini.md](Templates/HorseRacingExpert_Gemini.md)
+#### [HorseRacing/HorseRacingExpert_Gemini.md](Templates/HorseRacingExpert_Gemini.md)
 **Gemini Horse Racing Expert Template**
 - Google Gemini-optimized expert system configuration
 - Platform-specific analytical frameworks and output formatting
 - **Best for:** Setting up Gemini for horse racing analysis expertise
 
-#### [HorseRacingExpert_Grok.md](Templates/HorseRacingExpert_Grok.md)
+#### [HorseRacing/HorseRacingExpert_Grok.md](Templates/HorseRacingExpert_Grok.md)
 **Grok Horse Racing Expert Template**
 - X.ai Grok-optimized system prompt and configuration
 - Grok-specific analytical capabilities and interaction patterns
@@ -1150,43 +1156,43 @@ When creating new prompts:
 
 | Use Case | Risk Level | Automation | Performance Record | Best Prompt |
 |----------|------------|------------|-------------------|-------------|
-| Real-time market analysis & trading | Medium | Manual | Professional patterns | BetfairMarketAnalysisPrompt.md |
-| Maximum accuracy betting | Medium | Manual | 83.3% strike rate* | HorseRacingCombinedEVAnalysis.md |
-| Conservative automated betting | Low | Full | Stable ROI | HorseRacingEVAnalysisWithConservativeBetting.md |
-| Silent automated execution (favorites only) | Low-Medium | Full | **83.3% strike rate, 115-150% ROI** | HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md |
-| Silent automated execution (all horses) | Medium-High | Full | High potential | HorseRacingSilentEVAnalysisWithAutomatedExecution.md |
-| Expert tips integration | Medium | Full | Expert validated | HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md |
-| Fixed stake expert betting | Low-Medium | Full | Expert guided | HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md |
-| Multi-horse Dutch betting | Medium | Full | Risk diversified | HorseRacingEVAnalysisWithDutchBetting.md |
-| Advanced multi-context analysis | Medium | Manual | Enhanced evaluation | HorseRacingStrategyR4_Ideas.md |
-| Silent comprehensive market analysis | Medium | Full | Automated execution | HorseRacingStrategyR4.md |
-| Optimized data structure analysis | Medium | Full | Structured decisions | HorseRacingStrategyR3_DS.md |
-| **Revolutionary triple-context analysis** | **Medium-High** | **Manual** | **Maximum analytical depth** | **HorseRacingStrategyR5_Ideas.md** |
-| **Silent triple-context execution** | **Medium** | **Full** | **Automated R5 power** | **HorseRacingStrategyR5.md** |
-| **R5 Trading Implementation** | **Medium** | **Full** | **Trading-optimized R5** | **HorseRacingStrategyR5_Trade.md** |
-| **R5 Trading Development** | **Medium-High** | **Manual** | **Trading strategy development** | **HorseRacingStrategyR5_Trade_Ideas.md** |
-| **R6 Optimized Silent Execution** | **Medium** | **Full** | **Enhanced composite scoring** | **HorseRacingStrategyR6.md** |
-| **R6 Ultra-Minimal Execution** | **Low-Medium** | **Full** | **Direct signal feedback** | **HorseRacingStrategyR6_DS.md** |
-| **Favourite R6 EV Range Analysis** | **Medium** | **Manual** | **Professional favourite analysis** | **HorseRacingEVAnalysisFavouriteR6.md** |
-| **Favourite R6 Silent Execution** | **Low-Medium** | **Full** | **Silent favourite automation** | **HorseRacingEVAnalysisFavouriteR6_Silent.md** |
-| **BetfairSpData Mathematical Analysis** | **Medium** | **Manual** | **Mathematical value betting** | **HorseRacingBetfairSpData.md** |
-| **BetfairSpData R1 Optimized** | **Medium-High** | **Manual** | **AI-optimized mathematical approach** | **HorseRacingBetfairSpDataR1.md** |
-| **BetfairSpData Favourite-Only** | **Low-Medium** | **Full** | **Conservative favourite strategy** | **HorseRacingBetfairSpDataR1_Favourite.md** |
-| **BetfairSpData Silent Favourite** | **Low-Medium** | **Full** | **Automated favourite betting** | **HorseRacingBetfairSpDataR1_Favourite_Silent.md** |
-| **Professional trading execution** | **Medium-High** | **Full** | **Advanced position management** | **BetfairTradingStrategyExecutionPrompt.md** |
-| **Weight of money trading** | **Medium** | **Full** | **Liquidity-based trading** | **WeightOfMoneyStrategy.md** |
-| **Advanced weight of money trading** | **Medium-High** | **Full** | **Professional WoM trading** | **WeightOfMoneyStrategyR1.md** |
-| **Candlestick Technical Analysis** | **Medium** | **Manual** | **Pattern-based trading** | **BetfairMarketAnalysisCandleStickData.md** |
-| **Enhanced Candlestick Analysis** | **Medium-High** | **Manual** | **Advanced pattern recognition** | **BetfairMarketAnalysisCandleStickDataR2.md** |
-| **Interactive Chart Creation** | **Low** | **Manual** | **Visual market analysis** | **TradingChartCreation.md** |
-| **Semantic Form Analysis** | **Medium** | **Manual** | **Qualitative performance analysis** | **HorseRacingSemanticAnalysis.md** |
-| **Automated Traded Prices EV** | **Medium** | **Full** | **Real-time market analysis** | **TradedPricesEVAnalysis.md** |
-| **Win to Place Analysis** | **Medium** | **Manual** | **Place betting evaluation** | **HorseRacingWinToBePlacedData.md** |
-| Quick analysis only | Low | None | Analysis only | HorseRacingEVRankingsTableOnly.md |
-| Fundamental handicapping | Medium | Manual | Traditional approach | HorseRacingBaseFormDataAnalysis.md |
-| Data export and integration | Medium | Manual | Structured output | HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md |
-| Pure semantic analysis | Medium | Manual | Qualitative focus | HorseRacingExpectedValueAnalysis.md |
-| RacingStatto data evaluation | Medium | Manual | Quantitative EV analysis | HorseRacingRacingStattoData.md |
+| Real-time market analysis & trading | Medium | Manual | Professional patterns | General/BetfairMarketAnalysisPrompt.md |
+| Maximum accuracy betting | Medium | Manual | 83.3% strike rate* | HorseRacing/HorseRacingCombinedEVAnalysis.md |
+| Conservative automated betting | Low | Full | Stable ROI | HorseRacing/HorseRacingEVAnalysisWithConservativeBetting.md |
+| Silent automated execution (favorites only) | Low-Medium | Full | **83.3% strike rate, 115-150% ROI** | HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecutionTop3Favorites.md |
+| Silent automated execution (all horses) | Medium-High | Full | High potential | HorseRacing/HorseRacingSilentEVAnalysisWithAutomatedExecution.md |
+| Expert tips integration | Medium | Full | Expert validated | HorseRacing/HorseRacingSilentOlbgEVAnalysisWithAutomatedExecutionTop3Favorites.md |
+| Fixed stake expert betting | Low-Medium | Full | Expert guided | HorseRacing/HorseRacingSilentOlbgEVAnalysisWithBetting10Euro.md |
+| Multi-horse Dutch betting | Medium | Full | Risk diversified | HorseRacing/HorseRacingEVAnalysisWithDutchBetting.md |
+| Advanced multi-context analysis | Medium | Manual | Enhanced evaluation | HorseRacing/HorseRacingStrategyR4_Ideas.md |
+| Silent comprehensive market analysis | Medium | Full | Automated execution | HorseRacing/HorseRacingStrategyR4.md |
+| Optimized data structure analysis | Medium | Full | Structured decisions | HorseRacing/HorseRacingStrategyR3_DS.md |
+| **Revolutionary triple-context analysis** | **Medium-High** | **Manual** | **Maximum analytical depth** | **HorseRacing/HorseRacingStrategyR5_Ideas.md** |
+| **Silent triple-context execution** | **Medium** | **Full** | **Automated R5 power** | **HorseRacing/HorseRacingStrategyR5.md** |
+| **R5 Trading Implementation** | **Medium** | **Full** | **Trading-optimized R5** | **HorseRacing/HorseRacingStrategyR5_Trade.md** |
+| **R5 Trading Development** | **Medium-High** | **Manual** | **Trading strategy development** | **HorseRacing/HorseRacingStrategyR5_Trade_Ideas.md** |
+| **R6 Optimized Silent Execution** | **Medium** | **Full** | **Enhanced composite scoring** | **HorseRacing/HorseRacingStrategyR6.md** |
+| **R6 Ultra-Minimal Execution** | **Low-Medium** | **Full** | **Direct signal feedback** | **HorseRacing/HorseRacingStrategyR6_DS.md** |
+| **Favourite R6 EV Range Analysis** | **Medium** | **Manual** | **Professional favourite analysis** | **HorseRacing/HorseRacingEVAnalysisFavouriteR6.md** |
+| **Favourite R6 Silent Execution** | **Low-Medium** | **Full** | **Silent favourite automation** | **HorseRacing/HorseRacingEVAnalysisFavouriteR6_Silent.md** |
+| **BetfairSpData Mathematical Analysis** | **Medium** | **Manual** | **Mathematical value betting** | **HorseRacing/HorseRacingBetfairSpData.md** |
+| **BetfairSpData R1 Optimized** | **Medium-High** | **Manual** | **AI-optimized mathematical approach** | **HorseRacing/HorseRacingBetfairSpDataR1.md** |
+| **BetfairSpData Favourite-Only** | **Low-Medium** | **Full** | **Conservative favourite strategy** | **HorseRacing/HorseRacingBetfairSpDataR1_Favourite.md** |
+| **BetfairSpData Silent Favourite** | **Low-Medium** | **Full** | **Automated favourite betting** | **HorseRacing/HorseRacingBetfairSpDataR1_Favourite_Silent.md** |
+| **Professional trading execution** | **Medium-High** | **Full** | **Advanced position management** | **General/BetfairTradingStrategyExecutionPrompt.md** |
+| **Weight of money trading** | **Medium** | **Full** | **Liquidity-based trading** | **General/WeightOfMoneyStrategy.md** |
+| **Advanced weight of money trading** | **Medium-High** | **Full** | **Professional WoM trading** | **General/WeightOfMoneyStrategyR1.md** |
+| **Candlestick Technical Analysis** | **Medium** | **Manual** | **Pattern-based trading** | **General/BetfairMarketAnalysisCandleStickData.md** |
+| **Enhanced Candlestick Analysis** | **Medium-High** | **Manual** | **Advanced pattern recognition** | **General/BetfairMarketAnalysisCandleStickDataR2.md** |
+| **Interactive Chart Creation** | **Low** | **Manual** | **Visual market analysis** | **General/TradingChartCreation.md** |
+| **Semantic Form Analysis** | **Medium** | **Manual** | **Qualitative performance analysis** | **HorseRacing/HorseRacingSemanticAnalysis.md** |
+| **Automated Traded Prices EV** | **Medium** | **Full** | **Real-time market analysis** | **General/TradedPricesEVAnalysis.md** |
+| **Win to Place Analysis** | **Medium** | **Manual** | **Place betting evaluation** | **HorseRacing/HorseRacingWinToBePlacedData.md** |
+| Quick analysis only | Low | None | Analysis only | HorseRacing/HorseRacingEVRankingsTableOnly.md |
+| Fundamental handicapping | Medium | Manual | Traditional approach | HorseRacing/HorseRacingBaseFormDataAnalysis.md |
+| Data export and integration | Medium | Manual | Structured output | HorseRacing/HorseRacingCombinedEVAnalysisWithTableAndJSONOutput.md |
+| Pure semantic analysis | Medium | Manual | Qualitative focus | HorseRacing/HorseRacingExpectedValueAnalysis.md |
+| RacingStatto data evaluation | Medium | Manual | Quantitative EV analysis | HorseRacing/HorseRacingRacingStattoData.md |
 
 *Performance data from June 2025 testing with Strategy R1 implementation
 

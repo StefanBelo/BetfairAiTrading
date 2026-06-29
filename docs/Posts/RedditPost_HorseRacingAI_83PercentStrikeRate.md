@@ -1,3 +1,10 @@
+---
+title: "🏇 Horse Racing AI Strategy Results - 83% Strike Rate!"
+aliases: ["🏇 Horse Racing AI Strategy Results - 83% Strike Rate!"]
+type: strategy
+tags: [automation, ev-analysis, horse-racing, staking, strategy]
+---
+
 # 🏇 Horse Racing AI Strategy Results - 83% Strike Rate! 
 
 ## TLDR: 5 Winners from 6 Bets = 83.3% Success Rate

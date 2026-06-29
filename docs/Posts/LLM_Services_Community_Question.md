@@ -1,3 +1,10 @@
+---
+title: "Community Question: Paid and Free LLM Services Usage"
+aliases: ["Community Question: Paid and Free LLM Services Usage"]
+type: post
+tags: [automation, mcp, post, trading]
+---
+
 # Community Question: Paid and Free LLM Services Usage
 
 Hello everyone,

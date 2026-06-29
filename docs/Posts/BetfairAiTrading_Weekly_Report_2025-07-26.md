@@ -1,3 +1,10 @@
+---
+title: "Betfairaitrading Weekly Report 2025 07 26"
+aliases: ["Betfairaitrading Weekly Report 2025 07 26"]
+type: post
+tags: [automation, football, fsharp, horse-racing, post, reddit, trading]
+---
+
 Betfair AI Trading Weekly (30)
 
 1. ML apps and/or ML libraries

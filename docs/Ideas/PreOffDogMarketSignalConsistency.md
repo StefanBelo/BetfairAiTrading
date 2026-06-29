@@ -1,3 +1,10 @@
+---
+title: "Strategy Idea: Consistency of Pre-Off Dog Market Signals"
+aliases: ["Strategy Idea: Consistency of Pre-Off Dog Market Signals"]
+type: strategy
+tags: [strategy]
+---
+
 # Strategy Idea: Consistency of Pre-Off Dog Market Signals
 
 ## Summary

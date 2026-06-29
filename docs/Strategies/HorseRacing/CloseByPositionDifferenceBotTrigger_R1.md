@@ -1,3 +1,10 @@
+---
+title: "CloseByPositionDifferenceBotTrigger Strategy"
+aliases: ["CloseByPositionDifferenceBotTrigger Strategy"]
+type: strategy
+tags: [automation, bfexplorer, fsharp, horse-racing, strategy, trading]
+---
+
 # CloseByPositionDifferenceBotTrigger Strategy
 
 ![CloseByPositionDifferenceBotTrigger_GC_R1](/docs/Strategies/HorseRacing/images/CloseByPositionDifferenceBotTrigger_GC_R1.png)

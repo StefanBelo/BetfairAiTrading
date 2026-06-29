@@ -1,3 +1,11 @@
+---
+title: "My Race Time Back"
+aliases: ["My Race Time Back"]
+type: note
+tags: [automation, bfexplorer, horse-racing, note]
+mcp_tools: [PlaceBet]
+---
+
 # My Race Time Back
 
 ## Overview

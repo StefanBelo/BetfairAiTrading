@@ -1,3 +1,10 @@
+---
+title: "Testing strategies"
+aliases: ["Testing strategies"]
+type: tutorial
+tags: [automation, bfexplorer, fsharp, horse-racing, trading, tutorial]
+---
+
 # Testing strategies
 
 ## Requirements

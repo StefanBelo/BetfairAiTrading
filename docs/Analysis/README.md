@@ -1,3 +1,10 @@
+---
+title: "Analysis Reports"
+aliases: ["Analysis Reports"]
+type: index
+tags: [automation, ev-analysis, horse-racing, index, market-sentiment, silent-execution, trading]
+---
+
 # Analysis Reports
 
 This folder contains detailed analysis reports from AI-driven betting strategies and performance evaluations.

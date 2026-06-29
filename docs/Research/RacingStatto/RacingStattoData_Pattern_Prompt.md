@@ -1,3 +1,10 @@
+---
+title: "RacingStattoData Pattern Identification Prompt"
+aliases: ["RacingStattoData Pattern Identification Prompt"]
+type: prompt
+tags: [automation, horse-racing, prompt]
+---
+
 # RacingStattoData Pattern Identification Prompt
 
 ## Objective

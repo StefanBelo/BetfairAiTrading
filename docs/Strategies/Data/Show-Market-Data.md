@@ -1,3 +1,10 @@
+---
+title: "Show Market Data"
+aliases: ["Show Market Data"]
+type: note
+tags: [automation, note, trading]
+---
+
 # Show Market Data
 
 **Category:** Data  

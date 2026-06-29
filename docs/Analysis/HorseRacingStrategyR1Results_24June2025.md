@@ -1,3 +1,10 @@
+---
+title: "Horse Racing Strategy R1 - Performance Report & Analysis"
+aliases: ["Horse Racing Strategy R1 - Performance Report & Analysis"]
+type: strategy
+tags: [automation, ev-analysis, horse-racing, staking, strategy, trading]
+---
+
 # Horse Racing Strategy R1 - Performance Report & Analysis
 ## Data Analysis Date: June 24, 2025
 

@@ -1,3 +1,10 @@
+---
+title: "Reddit Post: The Evolution of My Betfair AI Trading App - From Simple Testing to Full AI Automation"
+aliases: ["Reddit Post: The Evolution of My Betfair AI Trading App - From Simple Testing to Full AI Automation"]
+type: tutorial
+tags: [automation, reddit, trading, tutorial]
+---
+
 # Reddit Post: The Evolution of My Betfair AI Trading App - From Simple Testing to Full AI Automation
 
 ## Original Text:

@@ -1,3 +1,10 @@
+---
+title: "How do you structure Back/Lay strategies on Betfair? (Steam / Drift / Scalping / Hedge)"
+aliases: ["How do you structure Back/Lay strategies on Betfair? (Steam / Drift / Scalping / Hedge)"]
+type: post
+tags: [automation, football, fsharp, post, scalping, tennis, trading]
+---
+
 # How do you structure Back/Lay strategies on Betfair? (Steam / Drift / Scalping / Hedge)
 
 I'm experimenting with a set of Back and Lay strategies and I want to learn how other Betfair traders run them in live markets — especially how you pick and tune parameters.

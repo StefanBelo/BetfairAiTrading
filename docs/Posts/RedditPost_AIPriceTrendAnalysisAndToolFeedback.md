@@ -1,3 +1,10 @@
+---
+title: "My AI Agent is Analyzing Betfair Price Trends Like a Pro Trader - Should it Execute Trades Directly?"
+aliases: ["My AI Agent is Analyzing Betfair Price Trends Like a Pro Trader - Should it Execute Trades Directly?"]
+type: post
+tags: [automation, bfexplorer, mcp, post, trading]
+---
+
 # My AI Agent is Analyzing Betfair Price Trends Like a Pro Trader - Should it Execute Trades Directly?
 
 Hey fellow Betfair traders and tech enthusiasts,

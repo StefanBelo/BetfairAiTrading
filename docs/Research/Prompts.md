@@ -1,7 +1,9 @@
 ---
-title: Horse Race Winner Prediction - Quantitative Analysis
-description: Predict horse race winners using Bfexplorer tools with data-driven composite scoring
-purpose: Determine the most likely race winner based on multiple performance metrics
+title: "Horse Race Winner Prediction Model"
+aliases: ["Horse Race Winner Prediction Model"]
+type: research
+tags: [automation, horse-racing, market-sentiment, research]
+data_contexts: [MarketSelectionsTradedPricesData, RacingpostDataForHorses]
 ---
 
 # Horse Race Winner Prediction Model

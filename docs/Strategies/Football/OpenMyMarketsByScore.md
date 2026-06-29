@@ -1,3 +1,10 @@
+---
+title: "Football Score-Based Market Opener Guide"
+aliases: ["Football Score-Based Market Opener Guide"]
+type: guide
+tags: [automation, bfexplorer, football, guide, trading]
+---
+
 # Football Score-Based Market Opener Guide
 
 To test this strategy on the Betfair Exchange using Bfexplorer app, copy the following URI [Open Bfexplorer](bfexplorer://testStrategy?fileName=FootballTradeOverUnder.json) and open it in your web broswer.

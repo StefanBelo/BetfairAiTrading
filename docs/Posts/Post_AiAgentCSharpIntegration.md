@@ -1,3 +1,10 @@
+---
+title: "🎉 Success! AiAgentCSharp Integration Finally Working with Multiple LLM Providers"
+aliases: ["🎉 Success! AiAgentCSharp Integration Finally Working with Multiple LLM Providers"]
+type: post
+tags: [automation, bfexplorer, ev-analysis, fsharp, horse-racing, mcp, post, python, trading]
+---
+
 # 🎉 Success! AiAgentCSharp Integration Finally Working with Multiple LLM Providers
 
 **TL;DR**: After struggling with MCP (Model Context Protocol) integration in C#, I finally got my AiAgentCSharp working flawlessly with GitHub AI, DeepSeek, and AiHubMix! Huge thanks to u/elbrunoc for the code examples that made the breakthrough possible.

@@ -1,3 +1,10 @@
+---
+title: "Analysis of "HFT: Can Python execute faster than C#?" by Liam Pauling"
+aliases: ["Analysis of "HFT: Can Python execute faster than C#?" by Liam Pauling"]
+type: post
+tags: [automation, fsharp, horse-racing, mcp, post, python, trading]
+---
+
 # Analysis of "HFT: Can Python execute faster than C#?" by Liam Pauling
 
 **Original article:** [HFT: Can python execute faster than C#?](https://betcode.substack.com/p/hft-can-python-execute-faster-than)

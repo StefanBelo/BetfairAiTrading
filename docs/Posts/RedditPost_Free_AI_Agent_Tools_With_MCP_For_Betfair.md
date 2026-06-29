@@ -1,3 +1,10 @@
+---
+title: "Redditpost Free Ai Agent Tools With Mcp For Betfair"
+aliases: ["Redditpost Free Ai Agent Tools With Mcp For Betfair"]
+type: post
+tags: [automation, mcp, post, trading]
+---
+
 ## Free AI Agent Tools (Free Tiers) You Can Use for Betfair AI Trading + MCP
 
 If you’re building Betfair AI trading workflows, the biggest unlock right now is using an **AI agent UI/CLI** that can call an **MCP server** (so the model can pull live market context and optionally trigger actions).

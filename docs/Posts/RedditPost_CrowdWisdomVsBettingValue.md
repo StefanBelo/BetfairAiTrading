@@ -1,3 +1,10 @@
+---
+title: "Crowd Wisdom vs. Betting Value: Why Edges Still Exist on Betfair"
+aliases: ["Crowd Wisdom vs. Betting Value: Why Edges Still Exist on Betfair"]
+type: post
+tags: [automation, ev-analysis, horse-racing, market-sentiment, post]
+---
+
 # Crowd Wisdom vs. Betting Value: Why Edges Still Exist on Betfair
 
 When betting on Betfair, you're wagering against thousands of other bettors whose collective wisdom forms the odds. This raises the question: **Can you find value when betting against such powerful crowd intelligence?**

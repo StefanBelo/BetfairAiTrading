@@ -1,3 +1,10 @@
+---
+title: "Tick Offset Strategy"
+aliases: ["Tick Offset Strategy"]
+type: strategy
+tags: [automation, scalping, strategy, trading]
+---
+
 # Tick Offset Strategy
 
 ## Overview

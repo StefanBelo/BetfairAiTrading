@@ -1,3 +1,10 @@
+---
+title: "Race Data to Spreadsheet"
+aliases: ["Race Data to Spreadsheet"]
+type: note
+tags: [automation, horse-racing, note]
+---
+
 # Race Data to Spreadsheet
 
 **Category:** Horse Racing  

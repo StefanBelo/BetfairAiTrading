@@ -1,3 +1,10 @@
+---
+title: "Using FSI MCP Tools: F# Coding Made Easy for Non-Developers"
+aliases: ["Using FSI MCP Tools: F# Coding Made Easy for Non-Developers"]
+type: post
+tags: [football, fsharp, mcp, post]
+---
+
 # Using FSI MCP Tools: F# Coding Made Easy for Non-Developers
 
 Are you not a coder, but want to tweak or understand F# scripts for Betfair or other .NET projects? FSI MCP tools let you ask questions about your code and get instant, clear answers—no programming experience needed!

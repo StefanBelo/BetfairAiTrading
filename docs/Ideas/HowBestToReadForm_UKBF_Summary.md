@@ -1,3 +1,10 @@
+---
+title: "How Best to Read Form: UK Betting Forum Insights (Pages 1–10)"
+aliases: ["How Best to Read Form: UK Betting Forum Insights (Pages 1–10)"]
+type: idea
+tags: [automation, forum, fsharp, horse-racing, idea]
+---
+
 # How Best to Read Form: UK Betting Forum Insights (Pages 1–10)
 
 ## Summary of Best Ideas & Strategies

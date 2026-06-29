@@ -1,3 +1,10 @@
+---
+title: "How Non-Developers Can Update Code with AI Assistance"
+aliases: ["How Non-Developers Can Update Code with AI Assistance"]
+type: note
+tags: [automation, bfexplorer, football, fsharp, note]
+---
+
 # How Non-Developers Can Update Code with AI Assistance
 
 In today's rapidly evolving technological landscape, many non-developers find themselves needing to modify or create code. Whether you're updating a betting script, customizing a website template, or adjusting automation tools, AI language models can bridge the gap between your functional needs and technical implementation. This guide will help you effectively communicate with AI assistants to modify code, even if you have limited programming knowledge.

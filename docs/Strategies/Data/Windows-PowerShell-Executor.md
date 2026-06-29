@@ -1,3 +1,10 @@
+---
+title: "Windows PowerShell Executor"
+aliases: ["Windows PowerShell Executor"]
+type: note
+tags: [automation, bfexplorer, note, trading]
+---
+
 # Windows PowerShell Executor
 
 **Category:** Data  
