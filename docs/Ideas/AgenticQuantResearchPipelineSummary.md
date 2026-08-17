@@ -1,31 +1,4 @@
 ---
-title: "Ideas — Research & Integration Notes"
-aliases: ["Ideas — Research & Integration Notes"]
-type: index
-tags: [bfexplorer, index, trading]
----
-
-# Ideas — Research & Integration Notes
-
-This folder contains idea notes, integration specs, and experiment summaries to guide development and prototyping for Betfair AI trading.
-
-## Files
-
-This folder contains idea notes, integration specs, and experiment summaries to guide development and prototyping for Betfair AI trading.
-
-- **AgenticQuantResearchPipelineSummary.md**: Summary of building an agentic quant research pipeline (Source: Antonio Marrazzo).
-- **BFExplorer_ResidualLiquidityGate.md**: Residual-liquidity gating signal integration plan.
-- **SectionalTimesAndMargins.md**: Sectional times and margin analysis ideas.
-- **FineFormMasterFormula.md**: Fine Form Master Formula research summary.
-- **CrisisOpportunitiesBfexplorerStrategies.md**: Strategy ideas for operational resilience and market segmentation.
-
-Use these notes as lightweight specs for prototyping and reference. Add new idea files as needed.
-
-## New Research Concepts
-
-The following summary was added from `AgenticQuantResearchPipelineSummary.md`:
-
----
 source: https://antoniomarrazzo.substack.com/p/how-i-would-build-an-agentic-quant?utm_source=multiple-personal-recommendations-email&utm_medium=email&triedRedirect=true
 date: 2026-07-08
 tags: [quantitative_finance, agentic_systems, quant_research, betfair]

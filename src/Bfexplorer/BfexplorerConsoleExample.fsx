@@ -5,7 +5,7 @@
 module BfexplorerScript
 
 #I @"C:\Program Files\BeloSoft\Bfexplorer\"
-//#I @"E:\Projects\Bfexplorer\Development\Applications\BeloSoft.Bfexplorer.App\bin\Debug\net9.0-windows\"
+//#I @"E:\Projects\Bfexplorer\Development\Applications\BeloSoft.Bfexplorer.App\bin\Debug\net10.0-windows\"
 
 #r "DevExpress.Spreadsheet.v25.2.Core.dll"
 
@@ -13,6 +13,7 @@ module BfexplorerScript
 #r "BeloSoft.Bfexplorer.Domain.dll"
 #r "BeloSoft.Bfexplorer.Service.Core.dll"
 
+open BeloSoft.Data
 open BeloSoft.Bfexplorer.Service
 
 /// <summary>
@@ -24,6 +25,8 @@ let Execute (bfexplorerConsole : IBfexplorerConsole) =
         bfexplorerConsole.Bfexplorer.OutputMessage message
 
     async {        
-        do! report "Hello from the BfexplorerConsole script!"
+        match! bfexplorerConsole.Bfexplorer.OpenMarket "1.261142591" with
+        | DataResult.Success market -> do! report market.MarketFullName
+        | DataResult.Failure errorMessage -> do! report errorMessage
     }
     |> Async.RunSynchronously
