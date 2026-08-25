@@ -29,4 +29,4 @@ let Execute (bfexplorerConsole : IBfexplorerConsole) =
         | DataResult.Success market -> do! report market.MarketFullName
         | DataResult.Failure errorMessage -> do! report errorMessage
     }
-    |> Async.RunSynchronously
+    |> Async.RunSynchronously    
