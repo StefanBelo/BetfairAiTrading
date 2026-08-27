@@ -72,11 +72,11 @@ Open a New Chat and, in the right pane, click on the Tool icon. In the Integrati
 
 Click the Save button.
 
-![LMStudio_MCP](/docs/Automation/images/LMStudio_MCP.png)
+![LMStudio_MCP](/docs/Automation/images/LMStudion_MCP.png)
 
 *Note: When using `bfexplorer` in a prompt, ensure that bfexplorer is active.*
 
-![LMStudio_MCP](/docs/Automation/images/LMStudion_MCP_Integrations.png)
+![LMStudion_MCP_Integrations](/docs/Automation/images/LMStudion_MCP_Integrations.png)
 
 ## 🍒 Cherry Studio Setup
 
