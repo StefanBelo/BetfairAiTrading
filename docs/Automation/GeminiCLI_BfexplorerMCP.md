@@ -49,8 +49,8 @@ Prompt: [`docs/Prompts/HorseRacingEVAnalysisMinimal.md`](/docs/Prompts/HorseRaci
   mcp:
     servers:
       BfexplorerApp:
-        transport: sse
-        url: http://localhost:10043/sse
+        transport: http
+        url: http://localhost:10043/
   ```
   
 

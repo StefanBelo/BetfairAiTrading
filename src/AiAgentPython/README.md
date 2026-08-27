@@ -86,8 +86,8 @@ default_model: "deepseek-chat"  # Or your preferred model
 mcp:
     servers:
         BfexplorerApp:
-            transport: sse
-            url: http://localhost:10043/sse
+            transport: http
+            url: http://localhost:10043/
 ```
 
 #### 2. API Keys (`fastagent.secrets.yaml`)

@@ -27,7 +27,7 @@ type BotTriggerExample (market : Market, selection : Selection, botName : string
         /// Execute
         /// </summary>
         member this.Execute () =
-            TriggerResult.EndExecution
+            TriggerResult.EndExecutionWithMessage "Test"
 
         /// <summary>
         /// EndExecution

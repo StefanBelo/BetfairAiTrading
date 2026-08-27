@@ -116,8 +116,8 @@ default_model: "deepseek-chat"
 mcp:
     servers:
         BfexplorerApp:
-            transport: sse
-            url: http://localhost:10043/sse
+            transport: http
+            url: http://localhost:10043/
 ```
 
 #### API Keys Setup

@@ -64,8 +64,8 @@ dotnet user-secrets set "AIHUBMIX_API_KEY" "your-aihubmix-api-key"
 ### MCP Server Connection
 
 The application connects to the BfexplorerApp MCP server at:
-- **Endpoint**: `http://localhost:10043/sse`
-- **Transport**: Server-Sent Events (SSE)
+- **Endpoint**: `http://localhost:10043/`
+- **Transport**: Server-Sent Events (SSE), Streamable HTTP 
 - **Protocol**: Model Context Protocol v0.3.0-preview.4
 
 ## Usage
@@ -91,7 +91,7 @@ IMcpClient mcpClient = await McpClientFactory.CreateAsync(
     new SseClientTransport(
         new SseClientTransportOptions
         {
-            Endpoint = new Uri("http://localhost:10043/sse"),
+            Endpoint = new Uri("http://localhost:10043/"),
             TransportMode = HttpTransportMode.StreamableHttp
         }
     )
@@ -202,7 +202,7 @@ This means that while you can see the available MCP tools, the AI models cannot 
 ### Debug Steps
 
 1. Check if BfexplorerApp MCP server is running
-2. Verify the endpoint URL is correct (`http://localhost:10043/sse`)
+2. Verify the endpoint URL is correct (`http://localhost:10043/`)
 3. Ensure proper API key configuration
 4. Review console output for connection status
 5. Try different AI models if one is not working

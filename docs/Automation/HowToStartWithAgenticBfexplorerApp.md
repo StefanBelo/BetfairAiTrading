@@ -155,8 +155,8 @@ After starting the application:
 
 You can verify that both servers are running correctly:
 
-**MCP SSE Server:**
-- Endpoint: `http://localhost:10043/sse`
+**MCP Server:**
+- Endpoint: `http://localhost:10043/`
 - Purpose: Real-time data streaming to AI agents
 
 **REST API Server:**
@@ -187,7 +187,7 @@ You can now connect various AI agent clients to leverage the MCP Server:
 Cherry Studio offers the simplest setup process:
 1. Install Cherry Studio
 2. Navigate to MCP Server settings
-3. Add new MCP server with endpoint: `http://localhost:10043/sse`
+3. Add new MCP server with endpoint: `http://localhost:10043/`
 4. Save configuration and connect
 
 #### GitHub Copilot Configuration
@@ -200,8 +200,8 @@ For GitHub Copilot integration, add this configuration to your settings:
         "inputs": [],
         "servers": {
             "BfexplorerApp": {
-                "type": "sse",
-                "url": "http://localhost:10043/sse"
+                "type": "http",
+                "url": "http://localhost:10043/"
             }
         }
     }
