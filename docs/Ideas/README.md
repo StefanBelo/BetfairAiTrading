@@ -14,10 +14,42 @@ This folder contains idea notes, integration specs, and experiment summaries to 
 This folder contains idea notes, integration specs, and experiment summaries to guide development and prototyping for Betfair AI trading.
 
 - **AgenticQuantResearchPipelineSummary.md**: Summary of building an agentic quant research pipeline (Source: Antonio Marrazzo).
+- **AiFactorHorseRacingReport.md**: Horse racing factor analysis report.
+- **AllWeatherBettingStrategies.md**: Strategies applicable in various weather conditions.
+- **Andrew_David_Multi_Sequence_Staking_Plan.md**: Multi-sequence staking plan research.
+- **BehavioralSinkBettingStrategies.md**: Strategies based on behavioral finance principles.
+- **BetfairScalpingSystem.md**: Scalping system implementation notes for Betfair.
+- **bet_sizing_strategies.md**: Various bet sizing strategies explored.
 - **BFExplorer_ResidualLiquidityGate.md**: Residual-liquidity gating signal integration plan.
-- **SectionalTimesAndMargins.md**: Sectional times and margin analysis ideas.
-- **FineFormMasterFormula.md**: Fine Form Master Formula research summary.
+- **Big_Odds_Winners_Summary.md**: Summary of big odds winners analysis.
+- **Books_AlgorithmicSportsBetting_Summary.md**: Algorithmic sports betting summary from books/literature.
+- **ChaosTheoryBettingStrategies.md**: Strategies derived from chaos theory principles.
+- **Converging_Factors_StrategySummary.md**: Summary of converging factor strategies.
 - **CrisisOpportunitiesBfexplorerStrategies.md**: Strategy ideas for operational resilience and market segmentation.
+- **Double_Qualifiers_Strategy.md**: Research on double qualifiers strategy.
+- **FineFormMasterFormula.md**: Fine Form Master Formula research summary.
+- **FineFormMasterFormula_StrategySummary.md**: Summary of the Fine Form Master Formula strategy.
+- **GameTheory_BetfairStrategy.md**: Strategy based on game theory principles for Betfair.
+- **HowBestToReadForm_UKBF_Summary.md**: Guide on reading UK/BF form data.
+- **Out_Of_The_Ordinary_System.md**: Research on out-of-the-ordinary market systems.
+- **PowerOfMarketMetaStrategy.md**: Strategy exploring the power of market meta-analysis.
+- **PreOffDogMarketSignalConsistency.md**: Signal consistency analysis for pre-off dog markets.
+- **ProblemsWithProbability_AgenticSummary.md**: Agentic summary on probability problems in betting.
+- **Research_Transcript_ResidualLiquidityGate.md**: Transcript of residual liquidity gate research.
+- **RobotJames_CompleteGuide_Strategies.md**: Complete guide to strategies from Robot James.
+- **SectionalTimesAndMargins.md**: Sectional times and margin analysis ideas.
+- **Signal_In_The_Wires_Liam_Pauling.md**: Signal analysis notes by Liam Pauling.
+- **SmartBash2026_AI_Strategy_Insights.md**: AI strategy insights from SmartBash 2026.
+- **SportsBettingForProfit2a_Handicapping_Summary.md**: Handicapping summary for sports betting profit.
+- **Strategy_ConfidenceGate.md**: Strategy implementation using a confidence gate.
+- **Tennis_Strategy_Research.md**: Research notes on tennis betting strategies.
+- **The Art of Player Strength Models - SharpsResearch.md**: Analysis on player strength models (Sharps).
+- **The Shape of Fear - Deriving Market Regimes from Skew.md**: Market regime derivation using fear/skew analysis.
+- **TheResidualLiquidityGateAnalyst.md**: Detailed analyst notes for residual liquidity gate.
+- **TheResidualLiquidityGateAnalyst_V1.md**: Version 1 analyst notes for residual liquidity gate.
+- **VDW_Elementary_Mechanical_Procedure_Strategy_Report.md**: Strategy report on VDW mechanical procedures.
+- **Volatility_Term_Structure_Arbitrage_Betfair.md**: Arbitrage strategy using volatility term structure.
+- **Your First HFT Alpha - Flow Prediction and Order-Book Imbalance.md**: High-Frequency Trading alpha research.
 
 Use these notes as lightweight specs for prototyping and reference. Add new idea files as needed.
 
