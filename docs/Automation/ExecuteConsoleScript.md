@@ -5,7 +5,7 @@ tags: [bfexplorer, agentic-app, data-analysis, betting-strategy]
 aliases: Execute Console Script Documentation
 ---
 
-# Executing Console Scripts in BFExplorer Agentic App
+# Executing Console Scripts in Bfexplorer Agentic App
 
 I have integrated a new tool into the bfexplorer agentic application: **"Execute Console Script."** This grants AI agents full autonomy to execute data analysis scripts directly on live data from within the bfexplorer application. Here is documentation detailing its first usage scenario.
 
