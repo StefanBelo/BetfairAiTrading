@@ -1,0 +1,17 @@
+{
+  "name": "2609160955-TGQIQy",
+  "created_at": "2026-09-16T09:55:42.315519",
+  "last_activity": "2026-09-16T09:55:49.668131",
+  "history_files": [
+    "history_BfexplorerApp_previous.json",
+    "history_BfexplorerApp.json"
+  ],
+  "metadata": {
+    "agent_name": "BfexplorerApp",
+    "model": "generic.google/gemma-4-e4b",
+    "last_history_by_agent": {
+      "BfexplorerApp": "history_BfexplorerApp.json"
+    },
+    "first_user_preview": "Get the active market and list the two horses with the highest traded volume."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Get the active market and list the two horses with the highest traded volume."
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [],
+      "tool_calls": {
+        "JIKqL7XycK3ZqQQ906as00thEF4s2JzO": {
+          "method": "tools/call",
+          "params": {
+            "name": "BfexplorerApp__get_active_market",
+            "arguments": {}
+          }
+        }
+      },
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 130306.7765127, \"end_time\": 130316.4684038, \"duration_ms\": 9691.89, \"ttft_ms\": 9659.32, \"time_to_response_ms\": 9659.32}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"google/gemma-4-e4b\", \"input_tokens\": 2411, \"output_tokens\": 603, \"total_tokens\": 3014, \"timestamp\": 1789545342.0597298, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 1, \"current_context_tokens\": 3014, \"effective_input_tokens\": 2411, \"display_input_tokens\": 2411}, \"raw_usage\": {\"completion_tokens\": 603, \"prompt_tokens\": 2411, \"total_tokens\": 3014, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": null, \"reasoning_tokens\": 583, \"rejected_prediction_tokens\": null}, \"prompt_tokens_details\": null}, \"summary\": {\"model\": \"google/gemma-4-e4b\", \"turn_count\": 1, \"cumulative_input_tokens\": 2411, \"cumulative_output_tokens\": 603, \"cumulative_billing_tokens\": 3014, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 3014, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 2411}}"
+          }
+        ]
+      },
+      "stop_reason": "toolUse",
+      "is_template": false
+    },
+    {
+      "role": "user",
+      "content": [],
+      "tool_results": {
+        "JIKqL7XycK3ZqQQ906as00thEF4s2JzO": {
+          "content": [
+            {
+              "type": "text",
+              "text": "activeBetfairMarket:\n  marketId: \"1.262425289\"\n  startTime: \"2026-09-16T12:45:00Z\"\n  eventType: \"Horse Racing\"\n  eventName: Sandown\n  marketName: \"5f Hcap\"\n  totalMatched: 5320.11\n  status: Open\n  selections[11]{selectionId,name,price,totalMatched,status}:\n    \"72693638\",\"Hint Of Humour\",5.2,889.69,Active\n    \"12186699\",\"Good Earth\",5.4,1280.77,Active\n    \"98819620\",Ardnamurchan,7.8,649.62,Active\n    \"24711302\",\"Level Up\",8.6,583.22,Active\n    \"90190178\",\"Zoustar Dreams\",9.6,671.62,Active\n    \"41492693\",\"Cabeza De Llave\",10.5,431.95,Active\n    \"87999530\",\"Control Room\",13,391.49,Active\n    \"28702291\",\"Secret Handsheikh\",22,211.19,Active\n    \"36866226\",\"Harry Brown\",23,119.5,Active\n    \"5849405\",\"Just Dreaming\",34,82.19,Active\n    \"88668986\",\"Bellini Spirit\",130.01,8.83,Active"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "channels": {
+        "fast-agent-tool-timing": [
+          {
+            "type": "text",
+            "text": "{\"JIKqL7XycK3ZqQQ906as00thEF4s2JzO\": {\"timing_ms\": 101.02, \"transport_channel\": \"post-sse\"}}"
+          }
+        ],
+        "mcp-ui": []
+      },
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The active market is **Sandown - 5f Hcap** (Market ID: `1.262425289`).\n\nThe two horses with the highest traded volume (`totalMatched`) are:\n\n1.  **Good Earth**: 1280.77\n2.  **Hint Of Humour**: 889.69"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 130317.0358003, \"end_time\": 130324.0713201, \"duration_ms\": 7035.52, \"ttft_ms\": 5916.92, \"time_to_response_ms\": 5916.92}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"google/gemma-4-e4b\", \"input_tokens\": 2863, \"output_tokens\": 486, \"total_tokens\": 3349, \"timestamp\": 1789545349.6626828, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 3349, \"effective_input_tokens\": 2863, \"display_input_tokens\": 2863}, \"raw_usage\": {\"completion_tokens\": 486, \"prompt_tokens\": 2863, \"total_tokens\": 3349, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": null, \"reasoning_tokens\": 402, \"rejected_prediction_tokens\": null}, \"prompt_tokens_details\": null}, \"summary\": {\"model\": \"google/gemma-4-e4b\", \"turn_count\": 2, \"cumulative_input_tokens\": 5274, \"cumulative_output_tokens\": 1089, \"cumulative_billing_tokens\": 6363, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 1, \"current_context_tokens\": 3349, \"context_window_size\": null, \"context_usage_percentage\": null, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 5274}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

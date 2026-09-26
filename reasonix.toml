@@ -9,16 +9,11 @@ default_model = "deepseek-flash"
 [agent]
 # system_prompt = """..."""   # omit to use the built-in prompt for this version
 # system_prompt_file = "prompts/system.md"   # overrides system_prompt when set
-max_steps         = 0   # executor tool-call rounds; 0 = no limit
-planner_max_steps = 12   # planner read-only tool-call rounds; 0 = no limit
 temperature       = 0.0
 auto_plan   = "off"   # off|on; off keeps plan mode manual
 # reasoning_language = "zh"   # visible reasoning language: auto|zh|en
 # auto_plan_classifier = "deepseek-flash"   # optional; only used for borderline tasks
-soft_compact_ratio  = 0.5   # notice only; keeps cache-first prefix intact
 compact_ratio       = 0.8   # try compacting when prompt reaches this fraction
-compact_force_ratio = 0.9   # force compacting at this high-water mark
-cold_resume_prune   = true   # elide stale tool results when reopening a session past the provider cache window
 # planner_model = "mimo"   # optional: enable two-model collaboration
 # subagent_model = "deepseek-pro"   # optional default for runAs=subagent skills
 # subagent_models = { review = "deepseek-pro", security_review = "deepseek-pro" }   # per-skill overrides
