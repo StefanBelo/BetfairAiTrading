@@ -1,0 +1,452 @@
+{
+  "market": {
+    "marketId": "1.262908142",
+    "startTime": "2026-09-27T14:49:00+02:00",
+    "eventType": "Horse Racing",
+    "eventName": "Ffos Las",
+    "marketName": "5f Nursery",
+    "status": "Open"
+  },
+  "selectionsData": [
+    {
+      "selectionId": "97901298",
+      "name": "Rhodes Runner",
+      "data": {
+        "horseDetail": {
+          "age": 2,
+          "gender": "Filly",
+          "pastRaces": [
+            {
+              "date": "2026-09-19T13:00:00Z",
+              "distance": 1337,
+              "inPlayMaxPrice": 5.9,
+              "inPlayMinPrice": 1.01,
+              "position": "1/8",
+              "price": 6.53
+            },
+            {
+              "date": "2026-09-07T15:57:00Z",
+              "distance": 1121,
+              "inPlayMaxPrice": 960,
+              "inPlayMinPrice": 4.9,
+              "position": "2/7",
+              "price": 4.9
+            },
+            {
+              "date": "2026-08-27T13:37:00Z",
+              "distance": 1320,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 7.2,
+              "position": "4/7",
+              "price": 5.5
+            },
+            {
+              "date": "2026-08-08T13:30:00Z",
+              "distance": 1540,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 12,
+              "position": "6/7",
+              "price": 24.21
+            },
+            {
+              "date": "2026-07-23T14:10:00Z",
+              "distance": 1431,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 5,
+              "position": "4/5",
+              "price": 7.6
+            },
+            {
+              "date": "2026-07-02T17:03:00Z",
+              "distance": 1540,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 2.42,
+              "position": "2/8",
+              "price": 3.19
+            }
+          ],
+          "weight": 135
+        }
+      }
+    },
+    {
+      "selectionId": "3444094",
+      "name": "Knock Three Times",
+      "data": {
+        "horseDetail": {
+          "age": 2,
+          "gender": "Filly",
+          "pastRaces": [
+            {
+              "date": "2026-09-12T14:08:00Z",
+              "distance": 1110,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 8.8,
+              "position": "4/10",
+              "price": 9
+            },
+            {
+              "date": "2026-08-01T18:15:00Z",
+              "distance": 1320,
+              "inPlayMaxPrice": 1,
+              "inPlayMinPrice": 1001,
+              "position": "5/7",
+              "price": 5.21
+            },
+            {
+              "date": "2026-07-15T17:50:00Z",
+              "distance": 1320,
+              "inPlayMaxPrice": 5.6,
+              "inPlayMinPrice": 1.01,
+              "position": "1/5",
+              "price": 5.6
+            },
+            {
+              "date": "2026-06-27T15:23:00Z",
+              "distance": 1100,
+              "inPlayMaxPrice": 950,
+              "inPlayMinPrice": 5.2,
+              "position": "4/6",
+              "price": 4.8
+            },
+            {
+              "date": "2026-05-23T13:35:00Z",
+              "distance": 1320,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 6.4,
+              "position": "2/9",
+              "price": 9
+            },
+            {
+              "date": "2026-05-09T12:38:00Z",
+              "distance": 1338,
+              "inPlayMaxPrice": 32,
+              "inPlayMinPrice": 1.01,
+              "position": "2/7",
+              "price": 37.88
+            }
+          ],
+          "weight": 133
+        }
+      }
+    },
+    {
+      "selectionId": "99505035",
+      "name": "Naval Cop",
+      "data": {
+        "horseDetail": {
+          "age": 2,
+          "gender": "Filly",
+          "pastRaces": [
+            {
+              "date": "2026-09-12T14:20:00Z",
+              "distance": 1115,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 5.4,
+              "position": "3/9",
+              "price": 9.78
+            },
+            {
+              "date": "2026-08-31T12:45:00Z",
+              "distance": 1116,
+              "inPlayMaxPrice": 14.5,
+              "inPlayMinPrice": 1.01,
+              "position": "1/5",
+              "price": 12.34
+            },
+            {
+              "date": "2026-07-26T14:00:00Z",
+              "distance": 1103,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 6,
+              "position": "5/6",
+              "price": 10
+            },
+            {
+              "date": "2026-07-10T14:20:00Z",
+              "distance": 1320,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 4,
+              "position": "6/8",
+              "price": 8.8
+            },
+            {
+              "date": "2026-06-13T12:55:00Z",
+              "distance": 1110,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 110,
+              "position": "4/5",
+              "price": 7.48
+            }
+          ],
+          "weight": 125
+        }
+      }
+    },
+    {
+      "selectionId": "98072041",
+      "name": "Perigord Noir",
+      "data": {
+        "horseDetail": {
+          "age": 2,
+          "gender": "Gelding",
+          "pastRaces": [
+            {
+              "date": "2026-09-12T14:08:00Z",
+              "distance": 1110,
+              "inPlayMaxPrice": 200,
+              "inPlayMinPrice": 6.8,
+              "position": "3/10",
+              "price": 7.63
+            },
+            {
+              "date": "2026-08-29T16:15:00Z",
+              "distance": 1116,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 8.2,
+              "position": "2/6",
+              "price": 8.2
+            },
+            {
+              "date": "2026-07-31T15:45:00Z",
+              "distance": 1320,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 100,
+              "position": "14/18",
+              "price": 196.64
+            },
+            {
+              "date": "2026-06-12T12:08:00Z",
+              "distance": 1110,
+              "inPlayMaxPrice": 830,
+              "inPlayMinPrice": 19.5,
+              "position": "4/9",
+              "price": 22
+            },
+            {
+              "date": "2026-05-23T17:00:00Z",
+              "distance": 1332,
+              "inPlayMaxPrice": 8.6,
+              "inPlayMinPrice": 4,
+              "position": "4/12",
+              "price": 7.8
+            },
+            {
+              "date": "2026-05-04T13:00:00Z",
+              "distance": 1320,
+              "inPlayMaxPrice": 80,
+              "inPlayMinPrice": 30,
+              "position": "3/9",
+              "price": 55
+            }
+          ],
+          "weight": 131
+        }
+      }
+    },
+    {
+      "selectionId": "98494112",
+      "name": "Wolfs Gallop",
+      "data": {
+        "horseDetail": {
+          "age": 2,
+          "gender": "Gelding",
+          "pastRaces": [
+            {
+              "date": "2026-08-13T18:58:00Z",
+              "distance": 1106,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 5.2,
+              "position": "8/9",
+              "price": 8.17
+            },
+            {
+              "date": "2026-07-29T17:27:00Z",
+              "distance": 1100,
+              "inPlayMaxPrice": 4.2,
+              "inPlayMinPrice": 3.85,
+              "position": "4/6",
+              "price": 3.67
+            },
+            {
+              "date": "2026-06-27T16:45:00Z",
+              "distance": 1121,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 11,
+              "position": "3/8",
+              "price": 36
+            },
+            {
+              "date": "2026-06-11T13:35:00Z",
+              "distance": 1108,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 5,
+              "position": "3/9",
+              "price": 17.95
+            },
+            {
+              "date": "2026-05-16T16:27:00Z",
+              "distance": 1103,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 36,
+              "position": "7/9",
+              "price": 50
+            }
+          ],
+          "weight": 128
+        }
+      }
+    },
+    {
+      "selectionId": "99436969",
+      "name": "Blondie Larry",
+      "data": {
+        "horseDetail": {
+          "age": 2,
+          "gender": "Colt",
+          "pastRaces": [
+            {
+              "date": "2026-07-16T14:15:00Z",
+              "distance": 1116,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 1.71,
+              "position": "2/9",
+              "price": 2
+            },
+            {
+              "date": "2026-06-27T16:45:00Z",
+              "distance": 1121,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 4.4,
+              "position": "2/8",
+              "price": 29
+            },
+            {
+              "date": "2026-06-11T13:35:00Z",
+              "distance": 1108,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 160,
+              "position": "5/9",
+              "price": 11.39
+            }
+          ],
+          "weight": 133
+        }
+      }
+    },
+    {
+      "selectionId": "97489329",
+      "name": "Niewiadoma",
+      "data": {
+        "horseDetail": {
+          "age": 2,
+          "gender": "Filly",
+          "pastRaces": [
+            {
+              "date": "2026-09-15T13:23:00Z",
+              "distance": 1317,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 2.68,
+              "position": "4/7",
+              "price": 6.6
+            },
+            {
+              "date": "2026-08-20T13:25:00Z",
+              "distance": 1320,
+              "inPlayMaxPrice": 770,
+              "inPlayMinPrice": 500,
+              "position": "18/20",
+              "price": 689.8
+            },
+            {
+              "date": "2026-07-18T14:37:00Z",
+              "distance": 1134,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 36,
+              "position": "17/24",
+              "price": 55
+            },
+            {
+              "date": "2026-06-17T13:30:00Z",
+              "distance": 1100,
+              "inPlayMaxPrice": 450,
+              "inPlayMinPrice": 6.2,
+              "position": "25/27",
+              "price": 179.58
+            },
+            {
+              "date": "2026-05-15T14:30:00Z",
+              "distance": 1100,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 15,
+              "position": "9/10",
+              "price": 6.67
+            },
+            {
+              "date": "2026-04-18T12:37:00Z",
+              "distance": 1100,
+              "inPlayMaxPrice": 6.2,
+              "inPlayMinPrice": 1.01,
+              "position": "1/6",
+              "price": 7.67
+            }
+          ],
+          "weight": 133
+        }
+      }
+    },
+    {
+      "selectionId": "99181594",
+      "name": "Defiant Dream",
+      "data": {
+        "horseDetail": {
+          "age": 2,
+          "gender": "Filly",
+          "pastRaces": [
+            {
+              "date": "2026-09-17T15:20:00Z",
+              "distance": 1336,
+              "inPlayMaxPrice": 950,
+              "inPlayMinPrice": 120,
+              "position": "11/12",
+              "price": 120
+            },
+            {
+              "date": "2026-08-09T13:41:00Z",
+              "distance": 1116,
+              "inPlayMaxPrice": 40,
+              "inPlayMinPrice": 17.5,
+              "position": "5/8",
+              "price": 24.25
+            },
+            {
+              "date": "2026-07-24T16:52:00Z",
+              "distance": 1336,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 180,
+              "position": "6/10",
+              "price": 24.95
+            },
+            {
+              "date": "2026-06-17T17:15:00Z",
+              "distance": 1100,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 12,
+              "position": "2/5",
+              "price": 95
+            },
+            {
+              "date": "2026-06-04T18:40:00Z",
+              "distance": 1321,
+              "inPlayMaxPrice": 980,
+              "inPlayMinPrice": 140,
+              "position": "9/10",
+              "price": 160
+            }
+          ],
+          "weight": 113
+        }
+      }
+    }
+  ]
+}
