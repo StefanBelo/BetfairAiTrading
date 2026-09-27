@@ -20,6 +20,3 @@ My current approach utilizes Betfair's Timeform data combined with the following
 *"Act as an expert horse racing handicapper to analyze a race and provide detailed ratings for each participating horse."*
 
 Below, you will find the raw data followed by the resulting horse ratings.
-
-
-

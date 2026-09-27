@@ -1,0 +1,317 @@
+{
+  "market": {
+    "marketId": "1.262908153",
+    "startTime": "2026-09-27T15:59:00+02:00",
+    "eventType": "Horse Racing",
+    "eventName": "Ffos Las",
+    "marketName": "2m Hcap",
+    "status": "Open"
+  },
+  "selectionsData": [
+    {
+      "selectionId": "10059946",
+      "name": "Campeona",
+      "data": {
+        "horseDetail": {
+          "age": 3,
+          "gender": "Filly",
+          "pastRaces": [
+            {
+              "date": "2026-09-05T16:05:00Z",
+              "distance": 3518,
+              "inPlayMaxPrice": 950,
+              "inPlayMinPrice": 4,
+              "position": "3/6",
+              "price": 4
+            },
+            {
+              "date": "2026-08-16T17:15:00Z",
+              "distance": 3767,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 2,
+              "position": "2/5",
+              "price": 2.52
+            },
+            {
+              "date": "2026-08-01T17:15:00Z",
+              "distance": 3588,
+              "inPlayMaxPrice": 5.1,
+              "inPlayMinPrice": 1.01,
+              "position": "1/3",
+              "price": 1.6
+            },
+            {
+              "date": "2026-07-23T18:40:00Z",
+              "distance": 3520,
+              "inPlayMaxPrice": 1.41,
+              "inPlayMinPrice": 1.01,
+              "position": "1/3",
+              "price": 1.28
+            },
+            {
+              "date": "2026-07-15T15:01:00Z",
+              "distance": 3080,
+              "inPlayMaxPrice": 5,
+              "inPlayMinPrice": 1.01,
+              "position": "1/5",
+              "price": 1.25
+            },
+            {
+              "date": "2026-07-01T19:53:00Z",
+              "distance": 2557,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 1.3,
+              "position": "2/7",
+              "price": 2.48
+            }
+          ],
+          "weight": 132
+        }
+      }
+    },
+    {
+      "selectionId": "44463252",
+      "name": "Queenie St Clair",
+      "data": {
+        "horseDetail": {
+          "age": 6,
+          "gender": "Mare",
+          "pastRaces": [
+            {
+              "date": "2026-04-18T13:20:00Z",
+              "distance": 3520,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 16.5,
+              "position": "6/8",
+              "price": 16.5
+            },
+            {
+              "date": "2026-03-21T14:10:00Z",
+              "distance": 3571,
+              "inPlayMaxPrice": 32,
+              "inPlayMinPrice": 1.01,
+              "position": "1/15",
+              "price": 26
+            },
+            {
+              "date": "2026-02-28T13:35:00Z",
+              "distance": 3589,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 3.15,
+              "position": "5/6",
+              "price": 3.34
+            },
+            {
+              "date": "2026-02-22T16:20:00Z",
+              "distance": 3902,
+              "inPlayMaxPrice": 6.2,
+              "inPlayMinPrice": 1.01,
+              "position": "1/6",
+              "price": 6.8
+            },
+            {
+              "date": "2026-02-03T14:45:00Z",
+              "distance": 3624,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 3.6,
+              "position": "3/7",
+              "price": 3.33
+            },
+            {
+              "date": "2025-12-26T15:45:00Z",
+              "distance": 3350,
+              "inPlayMaxPrice": 34,
+              "inPlayMinPrice": 1.01,
+              "position": "1/12",
+              "price": 19.5
+            }
+          ],
+          "weight": 127
+        }
+      }
+    },
+    {
+      "selectionId": "82712663",
+      "name": "CARTHUSIAN",
+      "data": {
+        "horseDetail": {
+          "age": 4,
+          "gender": "Gelding",
+          "pastRaces": [
+            {
+              "date": "2026-09-19T16:25:00Z",
+              "distance": 3167,
+              "inPlayMaxPrice": 14,
+              "inPlayMinPrice": 1.01,
+              "position": "1/10",
+              "price": 13.07
+            },
+            {
+              "date": "2026-07-14T18:40:00Z",
+              "distance": 3705,
+              "inPlayMaxPrice": 430,
+              "inPlayMinPrice": 40,
+              "position": "4/7",
+              "price": 6.4
+            },
+            {
+              "date": "2026-07-07T19:00:00Z",
+              "distance": 3520,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 15,
+              "position": "7/11",
+              "price": 7.6
+            },
+            {
+              "date": "2026-06-26T18:55:00Z",
+              "distance": 3596,
+              "inPlayMaxPrice": 14,
+              "inPlayMinPrice": 11.5,
+              "position": "9/11",
+              "price": 14
+            },
+            {
+              "date": "2026-06-12T18:20:00Z",
+              "distance": 3120,
+              "inPlayMaxPrice": 21,
+              "inPlayMinPrice": 15,
+              "position": "7/18",
+              "price": 19.6
+            },
+            {
+              "date": "2026-05-24T16:40:00Z",
+              "distance": 3080,
+              "inPlayMaxPrice": 980,
+              "inPlayMinPrice": 60,
+              "position": "11/24",
+              "price": 80
+            }
+          ],
+          "weight": 142
+        }
+      }
+    },
+    {
+      "selectionId": "81824005",
+      "name": "A Daughters Love",
+      "data": {
+        "horseDetail": {
+          "age": 3,
+          "gender": "Filly",
+          "pastRaces": [
+            {
+              "date": "2026-09-21T14:44:00Z",
+              "distance": 3080,
+              "inPlayMaxPrice": 34,
+              "inPlayMinPrice": 19,
+              "position": "6/9",
+              "price": 21
+            },
+            {
+              "date": "2026-09-10T15:17:00Z",
+              "distance": 2646,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 12,
+              "position": "8/14",
+              "price": 7.55
+            },
+            {
+              "date": "2026-08-21T18:57:00Z",
+              "distance": 3124,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 3.35,
+              "position": "4/6",
+              "price": 3.42
+            },
+            {
+              "date": "2026-08-12T17:10:00Z",
+              "distance": 2629,
+              "inPlayMaxPrice": 550,
+              "inPlayMinPrice": 1.86,
+              "position": "2/6",
+              "price": 3.1
+            },
+            {
+              "date": "2026-08-04T16:30:00Z",
+              "distance": 2629,
+              "inPlayMaxPrice": 21,
+              "inPlayMinPrice": 1.01,
+              "position": "1/10",
+              "price": 12.47
+            },
+            {
+              "date": "2026-07-25T15:10:00Z",
+              "distance": 2631,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 70,
+              "position": "14/15",
+              "price": 60
+            }
+          ],
+          "weight": 121
+        }
+      }
+    },
+    {
+      "selectionId": "36676169",
+      "name": "No Ordinary Joe",
+      "data": {
+        "horseDetail": {
+          "age": 10,
+          "gender": "Gelding",
+          "pastRaces": [
+            {
+              "date": "2026-09-12T12:55:00Z",
+              "distance": 2237,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 36,
+              "position": "4/5",
+              "price": 25.99
+            },
+            {
+              "date": "2026-09-02T18:00:00Z",
+              "distance": 2419,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 450,
+              "position": "4/6",
+              "price": 481.19
+            },
+            {
+              "date": "2026-08-05T18:50:00Z",
+              "distance": 2419,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 290,
+              "position": "9/10",
+              "price": 415.13
+            },
+            {
+              "date": "2026-05-24T14:28:00Z",
+              "distance": 4387,
+              "inPlayMaxPrice": 160,
+              "inPlayMinPrice": 5,
+              "position": "6/11",
+              "price": 8.2
+            },
+            {
+              "date": "2026-05-09T12:15:00Z",
+              "distance": 3444,
+              "inPlayMaxPrice": 1000,
+              "inPlayMinPrice": 28,
+              "position": "13/16",
+              "price": 48
+            },
+            {
+              "date": "2026-04-25T16:15:00Z",
+              "distance": 4358,
+              "inPlayMaxPrice": 25,
+              "inPlayMinPrice": 1.01,
+              "position": "1/10",
+              "price": 18.5
+            }
+          ],
+          "weight": 132
+        }
+      }
+    }
+  ]
+}
