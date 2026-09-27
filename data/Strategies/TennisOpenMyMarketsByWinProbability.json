@@ -1,0 +1,16 @@
+{
+    "BetEvents": [
+        "TennisInPlayNow.betevents"
+    ],
+    "Scripts": [
+        "/Strategies/Tennis/OpenMyTennisMarketsByWinProbability.fsx"
+    ],
+    "Strategies": [
+    ],
+    "Execute": {
+        "BetEvent": "Tennis - In-Play Now",
+        "StrategyOrScriptName": "OpenMyTennisMarketsByWinProbability.fsx",
+        "TimeSpanInSeconds": -30,
+        "IsConsoleScript": true
+    }
+}

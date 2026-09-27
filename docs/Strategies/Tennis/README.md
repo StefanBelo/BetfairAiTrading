@@ -54,6 +54,7 @@ Advanced strategy combining player serving statistics with match-level data for 
 ### Legacy Data Strategies
 - **[Tennis Data to Spreadsheet](DataToSpreadsheet.md)** - Automated data collection and export
 - **[Tennis Score-Based Market Opener Guide](OpenMyMarketsByScore.md)** - Automated market opening based on match scores
+- **[Tennis Win-Probability Market Opener Guide](OpenMyMarketsByWinProbability.md)** - Market opening gated by an external live win-probability / break-point feed ([Live Tennis API](https://livetennisapi.com), vendor-authored)
 
 ## Strategy Categories
 
