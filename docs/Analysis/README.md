@@ -17,6 +17,7 @@ This folder contains detailed analysis reports from AI-driven betting strategies
 - **[HorseRacingStrategyR2Results_25June2025.md](HorseRacingStrategyR2Results_25June2025.md)** - Strategy R2 comprehensive analysis with 28.6% strike rate across 21 races delivering 77.6% ROI and detailed component performance evaluation
 
 ### Advanced Strategy Evolution
+- **[HorseRacingAIStrategyTradeResults_03-04October2026.md](HorseRacingAIStrategyTradeResults_03-04October2026.md)** - Executed-results review of the AI `Trade x profit` runs (25 × TradeV2 + 8 × VDW) over 33 markets on 3-4 October 2026, cross-referenced against Bfexplorer bet results and settled winners. Includes two counterfactuals (*bet-only* on the same dedicated selections held to the result: &minus;&pound;868.60 vs &plus;&pound;15.50 traded; and `Rank 1` Back-only at &pound;100: &plus;&pound;1,226.00, of which &plus;&pound;1,025.00 needs no model at all), model-vs-market calibration, and five execution-control defects.
 - **Strategy R4** - Multi-context integration framework with enhanced evaluation and confidence scoring
 - **Strategy R5** - Revolutionary three-context analysis system integrating racing form data, base Betfair form, and trading patterns with advanced NO BET logic and "HorseRacingR5_Analysis" data storage
 - **Strategy R5 Silent** - Silent execution version performing complete analysis internally with minimal output for automated deployment

@@ -1,0 +1,371 @@
+# Reasonix configuration.
+# Resolution order: flag > ./reasonix.toml > ~/AppData/Roaming/reasonix/config.toml > built-in defaults.
+# Fields marked user/global only are not overridden by ./reasonix.toml.
+# Secrets are named via api_key_env and stored in Reasonix's global .env; never put keys here.
+
+config_version = 12   # schema marker for diagnostics; old versions may ignore it
+default_model = "deepseek/deepseek-v4-flash"
+language      = "en"   # ui/model language; empty = auto-detect from $LANG / $REASONIX_LANG
+credentials_store = "auto"   # legacy compatibility; provider keys are saved in Reasonix's global .env
+
+[ui]
+theme = "auto"   # auto|dark|light; CLI colors only; REASONIX_THEME can override per run
+# theme_style = "graphite"   # graphite|aurora|slate|carbon|nocturne|amber and legacy aliases
+# shortcut_layout = "desktop"   # classic|desktop; compatibility setting; Shift+Tab cycles read-only/workspace/YOLO/plan; Ctrl+Y toggles YOLO
+# cursor_shape = "bar"   # block|underline|bar; text input cursor shape
+# show_reasoning = true   # CLI: show thinking text by default; false = collapsed (toggle with Ctrl+O)
+show_turn_usage = true   # CLI/TUI: show per-request token and cost receipts in the transcript
+
+[desktop]
+language = "en"   # desktop UI language; empty/auto = browser/OS auto-detect
+layout_style = "workbench"   # desktop layout: workbench|creation; legacy classic migrates to workbench
+theme = "light"   # desktop only: auto|dark|light
+terminal_theme = "auto"   # integrated terminal: auto|dark|light; auto follows the desktop app
+theme_style = "nocturne"   # desktop accent palette
+# external_opener = "vscode"   # desktop Open control: installed application id
+close_behavior = "background"   # desktop: quit|background when the window close button is clicked
+status_bar_style = "icon"   # desktop: icon|text metric labels in the bottom status bar
+status_bar_style_initialized = true   # icon default upgrade applied; preserve later user choices
+status_bar_items = ["model", "cache", "cache_avg", "session_tokens", "turn_tokens", "turn_cost", "session_turns", "context", "compact", "cost", "balance"]   # desktop: ordered visible bottom status bar items
+default_tool_approval_mode = "workspace-write"   # desktop: read-only/workspace-write/danger-full-access default for new sessions
+check_updates = true   # desktop: check for new versions on startup
+telemetry = true   # desktop: anonymous launch ping + scrubbed next-launch native crash diagnostics; never content
+metrics = false   # desktop: aggregate quality/lifecycle metrics (anonymous signal/bucket counts); never content
+provider_access = ["deepseek", "LM Studio", "AiHubMix"]   # desktop settings: providers shown on Settings > Model > Access
+session_experience = "standard"   # desktop: standard|deep transcript experience
+expand_thinking = true   # desktop: legacy reasoning display alias; use reasoning_display_mode
+reasoning_display_mode = "auto"   # desktop: hidden|summary|auto|expanded reasoning presentation
+display_mode = "standard"   # desktop: standard|compact transcript display mode
+conversation_width = "full"   # desktop: standard|full transcript width; empty = standard
+
+[billing]
+# display_currency = "auto"   # auto|CNY|USD; display only — does not rewrite provider list prices
+
+[notifications]
+enabled = false   # system notifications for CLI and desktop turns; default off
+turn_done = true   # notify when a turn finishes
+approval_request = true   # notify when a tool approval is waiting
+ask_request = true   # notify when a question is waiting
+
+[network]
+proxy_mode = "auto"   # auto|env|custom|off; auto currently uses env proxy
+# proxy_url  = "socks5://127.0.0.1:7890"   # optional custom override
+# no_proxy   = "localhost,127.0.0.1,.local"   # honored for proxy_mode = "custom"
+
+[network.proxy]
+type = "socks5"   # http|https|socks5|socks5h
+# server = "127.0.0.1"
+# port = 7890
+# username = ""
+# password = "${REASONIX_PROXY_PASSWORD}"   # optional; supports ${VAR} expansion
+
+[environment]
+enabled = true   # inject a stable startup environment summary into the model prompt
+offline = false   # declare that outbound network access is unavailable; prevents futile retries
+# [environment.tools]
+# go = "/opt/homebrew/bin/go"   # trusted executable path; workspace-local paths are not auto-executed
+
+[agent]
+# system_prompt = """..."""   # omit to use the built-in prompt for this version
+# system_prompt_file = "prompts/system.md"   # project paths stay in <workspace>; user paths may fall back to <reasonix home>
+temperature       = 0.0
+reasoning_language = "en"   # visible reasoning language: auto|zh|en
+compact_ratio       = 0.8   # sole auto trigger; presets 0.70/0.80/0.85 (default 0.80)
+# keep                = ["errors"]   # deprecated compatibility field; ignored at runtime
+# recent_keep         = 2   # deprecated compatibility field; ignored at runtime
+# plan_mode_read_only_commands = ["gh issue view"]   # legacy compatibility only; Plan bash uses Permissions
+planner_model = "deepseek/deepseek-v4-pro"   # low-frequency planner (two-model collaboration)
+vision_model = "deepseek/deepseek-v4-flash-vision-exp"   # image understanding fallback: auto or provider/model
+# subagent_model = "deepseek-pro"   # optional default for runAs=subagent skills
+# subagent_models = { review = "deepseek-pro", security_review = "deepseek-pro" }   # per-skill overrides
+# subagent_effort = "high"   # optional default effort for subagents
+# subagent_efforts = { review = "max", task = "high" }   # per-tool/skill effort overrides
+# max_subagent_depth = 2   # nested subagent delegation depth; set 1 to disable nested delegation
+# max_subagent_concurrency = 6   # session-wide sub-agent concurrency (task/fleet/skills)
+# max_parallel_writers = 3   # concurrent writers with non-overlapping write_paths
+# output_style = "explanatory"   # explanatory | learning | concise | custom; empty = default
+
+[[providers]]
+name        = "deepseek-flash"
+kind        = "openai"
+base_url    = "https://api.deepseek.com"
+models      = ["deepseek-v4-flash", "deepseek-v4-flash-vision-exp", "deepseek-flash"]
+default     = "deepseek-v4-flash"
+api_key_env = "DEEPSEEK_API_KEY"
+balance_url = "https://api.deepseek.com/user/balance"   # optional; wallet-balance endpoint shown in the status bar
+context_window = 1000000   # tokens; compaction triggers near this limit
+# max_output_tokens = 0       # recommended: official DeepSeek omits the field (server 384K ceiling)
+# max_output_tokens = 32768   # optional cost cap
+# max_output_tokens = 65536   # optional cost cap
+# max_output_tokens = 131072  # optional cost cap
+price       = { cache_hit = 0.014, input = 0.44, output = 1.32, currency = "$" }   # provider-wide fallback, per 1M tokens
+prices      = { "deepseek-flash" = { "cache_hit" = 0.006, "currency" = "$", "input" = 0.3, "output" = 1.2 }, "deepseek-v4-flash-vision-exp" = { "cache_hit" = 0.014, "currency" = "$", "input" = 0.44, "output" = 1.32 } }   # per-model prices, per 1M tokens
+billing_currency = "USD"   # frozen list-price currency; independent of display_currency
+thinking    = "enabled"
+vision_models = ["deepseek-v4-flash-vision-exp"]   # models in this provider that accept image input
+supported_efforts = ["disabled", "low", "high", "max"]   # custom /effort levels exposed by this provider; overrides the built-in Kind/BaseURL default
+default_effort    = "high"   # used when /effort is auto or unset; must be one of supported_efforts
+
+[[providers]]
+"models" = ["deepseek-v4-pro", "deepseek-flash"]
+name        = "deepseek-pro"
+kind        = "openai"
+base_url    = "https://api.deepseek.com"
+model       = "deepseek-v4-pro"
+api_key_env = "DEEPSEEK_API_KEY"
+balance_url = "https://api.deepseek.com/user/balance"   # optional; wallet-balance endpoint shown in the status bar
+context_window = 1000000   # tokens; compaction triggers near this limit
+# max_output_tokens = 0       # recommended: official DeepSeek omits the field (server 384K ceiling)
+# max_output_tokens = 32768   # optional cost cap
+# max_output_tokens = 65536   # optional cost cap
+# max_output_tokens = 131072  # optional cost cap
+price       = { cache_hit = 0.044, input = 1.32, output = 3.96, currency = "$" }   # provider-wide fallback, per 1M tokens
+billing_currency = "USD"   # frozen list-price currency; independent of display_currency
+thinking    = "enabled"
+supported_efforts = ["disabled", "high", "max"]   # custom /effort levels exposed by this provider; overrides the built-in Kind/BaseURL default
+default_effort    = "high"   # used when /effort is auto or unset; must be one of supported_efforts
+[providers.prices]
+"deepseek-flash" = { "cache_hit" = 0.006, "currency" = "$", "input" = 0.3, "output" = 1.2 }
+
+[[providers]]
+name        = "mimo-pro"
+kind        = "openai"
+base_url    = "https://token-plan-cn.xiaomimimo.com/v1"
+models      = ["mimo-v2.5-pro", "mimo-v2.5", "mimo-v2.6-pro", "mimo-v2.6-flash"]
+default     = "mimo-v2.5-pro"
+api_key_env = "MIMO_API_KEY"
+context_window = 1000000   # tokens; compaction triggers near this limit
+# max_output_tokens = 0       # recommended: official DeepSeek omits the field (server 384K ceiling)
+# max_output_tokens = 32768   # optional cost cap
+# max_output_tokens = 65536   # optional cost cap
+# max_output_tokens = 131072  # optional cost cap
+price       = { cache_hit = 0.025, input = 3, output = 6, currency = "¥" }   # provider-wide fallback, per 1M tokens
+prices      = { "mimo-v2.5" = { "cache_hit" = 0.02, "currency" = "¥", "input" = 1, "output" = 2 }, "mimo-v2.5-pro" = { "cache_hit" = 0.025, "currency" = "¥", "input" = 3, "output" = 6 }, "mimo-v2.6-flash" = { "cache_hit" = 0.02, "currency" = "¥", "input" = 1.0, "output" = 2.0 }, "mimo-v2.6-pro" = { "cache_hit" = 0.025, "currency" = "¥", "input" = 3.0, "output" = 6.0 } }   # per-model prices, per 1M tokens
+billing_currency = "CNY"   # frozen list-price currency; independent of display_currency
+vision_models = ["mimo-v2.5", "mimo-v2.6-pro", "mimo-v2.6-flash"]   # models in this provider that accept image input
+no_proxy    = true   # reach this base_url directly, never via the proxy
+
+[[providers]]
+name        = "mimo-flash"
+kind        = "openai"
+base_url    = "https://token-plan-cn.xiaomimimo.com/v1"
+models      = ["mimo-v2.5-pro", "mimo-v2.5", "mimo-v2.6-pro", "mimo-v2.6-flash"]
+default     = "mimo-v2.5"
+api_key_env = "MIMO_API_KEY"
+context_window = 1000000   # tokens; compaction triggers near this limit
+# max_output_tokens = 0       # recommended: official DeepSeek omits the field (server 384K ceiling)
+# max_output_tokens = 32768   # optional cost cap
+# max_output_tokens = 65536   # optional cost cap
+# max_output_tokens = 131072  # optional cost cap
+price       = { cache_hit = 0.02, input = 1, output = 2, currency = "¥" }   # provider-wide fallback, per 1M tokens
+prices      = { "mimo-v2.5" = { "cache_hit" = 0.02, "currency" = "¥", "input" = 1, "output" = 2 }, "mimo-v2.5-pro" = { "cache_hit" = 0.025, "currency" = "¥", "input" = 3, "output" = 6 }, "mimo-v2.6-flash" = { "cache_hit" = 0.02, "currency" = "¥", "input" = 1.0, "output" = 2.0 }, "mimo-v2.6-pro" = { "cache_hit" = 0.025, "currency" = "¥", "input" = 3.0, "output" = 6.0 } }   # per-model prices, per 1M tokens
+billing_currency = "CNY"   # frozen list-price currency; independent of display_currency
+vision_models = ["mimo-v2.5", "mimo-v2.6-pro", "mimo-v2.6-flash"]   # models in this provider that accept image input
+no_proxy    = true   # reach this base_url directly, never via the proxy
+
+[[providers]]
+name        = "deepseek"
+kind        = "openai"
+base_url    = "https://api.deepseek.com"
+models      = ["deepseek-v4-flash", "deepseek-v4-pro", "deepseek-v4-flash-vision-exp", "deepseek-flash"]
+default     = "deepseek-v4-flash"
+api_key_env = "DEEPSEEK_API_KEY"
+balance_url = "https://api.deepseek.com/user/balance"   # optional; wallet-balance endpoint shown in the status bar
+context_window = 1000000   # tokens; compaction triggers near this limit
+# max_output_tokens = 0       # recommended: official DeepSeek omits the field (server 384K ceiling)
+# max_output_tokens = 32768   # optional cost cap
+# max_output_tokens = 65536   # optional cost cap
+# max_output_tokens = 131072  # optional cost cap
+prices      = { "deepseek-v4-flash" = { cache_hit = 0.014, input = 0.44, output = 1.32, currency = "$" }, "deepseek-v4-flash-vision-exp" = { cache_hit = 0.014, input = 0.44, output = 1.32, currency = "$" }, "deepseek-v4-pro" = { cache_hit = 0.044, input = 1.32, output = 3.96, currency = "$" } }   # per-model prices, per 1M tokens
+billing_currency = "USD"   # frozen list-price currency; independent of display_currency
+vision_models = ["deepseek-v4-flash-vision-exp"]   # models in this provider that accept image input
+
+[[providers]]
+name        = "LM Studio"
+kind        = "anthropic"
+base_url    = "http://localhost:1234/v1"
+models      = ["google/gemma-4-e4b", "google/gemma-4-12b"]
+default     = "google/gemma-4-e4b"
+api_key_env = "LM_STUDIO_API_KEY"
+# max_output_tokens = 0       # recommended: official DeepSeek omits the field (server 384K ceiling)
+# max_output_tokens = 32768   # optional cost cap
+# max_output_tokens = 65536   # optional cost cap
+# max_output_tokens = 131072  # optional cost cap
+
+[[providers]]
+name        = "AiHubMix"
+kind        = "openai"
+base_url    = "https://aihubmix.com/v1"
+models      = ["AiHubmix-Phi-4-mini-reasoning", "ByteDance-Seed/Seed-OSS-36B-Instruct", "DeepSeek-OCR", "DeepSeek-R1", "DeepSeek-V3", "DeepSeek-V3-Fast", "DeepSeek-V3.1-Terminus", "DeepSeek-V3.1-Think", "ERNIE-X1.1-Preview", "Qwen/QwQ-32B", "Qwen/Qwen2.5-VL-32B-Instruct", "Qwen/Qwen2.5-VL-72B-Instruct", "ahm-Phi-3-5-vision-instruct", "aihub-Phi-4", "aihub-Phi-4-mini-instruct", "aihub-Phi-4-multimodal-instruct", "aihubmix-Cohere-command-r", "aihubmix-command-r-08-2024", "aihubmix-command-r-plus", "aihubmix-command-r-plus-08-2024", "aihubmix-router", "anthropic-opus-4-6", "auto", "bai-qwen3-vl-235b-a22b-instruct", "baidu/ERNIE-4.5-300B-A47B", "cc-MiniMax-M2", "cc-deepseek-v3.1", "cc-ernie-4.5-300b-a47b", "cc-glm-5", "cc-glm-5-turbo", "cc-glm-5.1", "cc-kimi-k2-instruct", "cc-kimi-k2-instruct-0905", "cc-minimax-m2", "cc-minimax-m2.1", "cc-minimax-m2.5", "cc-minimax-m2.5-highspeed", "cc-minimax-m2.7", "cc-minimax-m2.7-highspeed", "cc-minimax-m3", "claude-3-7-sonnet", "claude-3-haiku-20240229", "claude-3-haiku-20240307", "claude-3-haiku@20240307", "claude-3-sonnet-20240229", "claude-fable-5", "claude-haiku-4-5", "claude-opus-4-1", "claude-opus-4-5", "claude-opus-4-5-think", "claude-opus-4-6", "claude-opus-4-6-think", "claude-opus-4-7", "claude-opus-4-7-think", "claude-opus-4-8", "claude-opus-4-8-think", "claude-sonnet-4-5", "claude-sonnet-4-5-think", "claude-sonnet-4-6", "claude-sonnet-4-6-think", "claude-sonnet-5", "cloudflare-glm-5.2", "codex-mini-latest", "coding-glm-4.6", "coding-glm-4.6-free", "coding-glm-4.7", "coding-glm-4.7-free", "coding-glm-5", "coding-glm-5-free", "coding-glm-5-turbo", "coding-glm-5-turbo-free", "coding-glm-5.1", "coding-glm-5.1-free", "coding-glm-5.2", "coding-glm-5.2-free", "coding-kimi-k3", "coding-kimi-k3-free", "coding-minimax-m2", "coding-minimax-m2-free", "coding-minimax-m2.1", "coding-minimax-m2.1-free", "coding-minimax-m2.5", "coding-minimax-m2.5-free", "coding-minimax-m2.5-highspeed", "coding-minimax-m2.7", "coding-minimax-m2.7-free", "coding-minimax-m2.7-highspeed", "coding-minimax-m3", "coding-minimax-m3-free", "coding-xiaomi-mimo-v2-omni", "coding-xiaomi-mimo-v2-pro", "coding-xiaomi-mimo-v2.5", "coding-xiaomi-mimo-v2.5-pro", "cohere-command-a", "command", "command-a-03-2025", "command-a-plus-05-2026", "command-r", "command-r-08-2024", "command-r-plus", "command-r-plus-08-2024", "deepinfra-gemma-4-26b-a4b-it", "deepseek-r1-distill-llama-70b", "deepseek-v3.2", "deepseek-v3.2-think", "deepseek-v4-flash", "deepseek-v4-pro", "doubao-seed-1-6", "doubao-seed-1-6-flash", "doubao-seed-1-6-lite", "doubao-seed-1-6-thinking", "doubao-seed-1-8", "doubao-seed-2-0-code-preview", "doubao-seed-2-0-lite-260215", "doubao-seed-2-0-lite-260428", "doubao-seed-2-0-mini", "doubao-seed-2-0-mini-260428", "doubao-seed-2-0-pro", "doubao-seed-2-1-pro", "doubao-seed-2-1-turbo", "ernie-4.5", "ernie-4.5-0.3b", "ernie-4.5-turbo-128k-preview", "ernie-4.5-turbo-latest", "ernie-4.5-turbo-vl", "ernie-5.0", "ernie-5.0-thinking-exp", "ernie-5.0-thinking-preview", "ernie-5.1", "ernie-x1-turbo", "gemini-2.5-flash", "gemini-2.5-flash-image", "gemini-2.5-flash-lite", "gemini-2.5-flash-lite-nothink", "gemini-2.5-flash-lite-preview-09-2025", "gemini-2.5-flash-lite-preview-09-2025-nothink", "gemini-2.5-flash-nothink", "gemini-2.5-flash-preview-05-20-nothink", "gemini-2.5-flash-preview-05-20-search", "gemini-2.5-flash-preview-09-2025", "gemini-2.5-flash-search", "gemini-2.5-pro", "gemini-2.5-pro-exp-03-25", "gemini-2.5-pro-preview-03-25", "gemini-2.5-pro-preview-03-25-search", "gemini-2.5-pro-preview-05-06", "gemini-2.5-pro-preview-05-06-search", "gemini-2.5-pro-preview-06-05", "gemini-2.5-pro-preview-06-05-search", "gemini-2.5-pro-search", "gemini-3-flash-preview", "gemini-3-flash-preview-free", "gemini-3-flash-preview-search", "gemini-3-pro-image", "gemini-3-pro-image-preview", "gemini-3.1-flash-image", "gemini-3.1-flash-image-preview", "gemini-3.1-flash-lite", "gemini-3.1-flash-lite-image", "gemini-3.1-flash-lite-nothink", "gemini-3.1-flash-lite-preview", "gemini-3.1-flash-lite-preview-nothink", "gemini-3.1-pro-preview", "gemini-3.1-pro-preview-customtools", "gemini-3.1-pro-preview-search", "gemini-3.5-flash", "gemma-4-26b-a4b-it", "gemma-4-31b-it", "glm-4.5v", "glm-4.6", "glm-4.6v", "glm-4.7", "glm-4.7-flash-free", "glm-5", "glm-5-turbo", "glm-5.1", "glm-5.2", "glm-5v-turbo", "gpt-4.1", "gpt-4.1-free", "gpt-4.1-mini", "gpt-4.1-mini-free", "gpt-4.1-nano", "gpt-4.1-nano-free", "gpt-4o", "gpt-4o-2024-11-20", "gpt-4o-audio-preview", "gpt-4o-free", "gpt-4o-mini", "gpt-4o-mini-2024-07-18", "gpt-4o-mini-audio-preview", "gpt-4o-mini-search-preview", "gpt-4o-search-preview", "gpt-4o-transcribe-diarize", "gpt-4o-zh", "gpt-5", "gpt-5-chat-latest", "gpt-5-codex", "gpt-5-mini", "gpt-5-nano", "gpt-5-pro", "gpt-5.1", "gpt-5.1-chat-latest", "gpt-5.1-codex", "gpt-5.1-codex-max", "gpt-5.1-codex-mini", "gpt-5.2", "gpt-5.2-chat-latest", "gpt-5.2-codex", "gpt-5.2-high", "gpt-5.2-low", "gpt-5.2-pro", "gpt-5.3-chat-latest", "gpt-5.3-codex", "gpt-5.4", "gpt-5.4-high", "gpt-5.4-low", "gpt-5.4-mini", "gpt-5.4-nano", "gpt-5.4-pro", "gpt-5.5", "gpt-5.5-free", "gpt-5.5-pro", "gpt-5.6-luna", "gpt-5.6-sol", "gpt-5.6-terra", "gpt-audio-1.5", "gpt-chat-latest", "gpt-image-2", "gpt-image-2-free", "gpt-oss-120b", "gpt-oss-20b", "grok-2-vision-1212", "grok-4", "grok-4-1-fast-non-reasoning", "grok-4-1-fast-reasoning", "grok-4-20-non-reasoning", "grok-4-20-reasoning", "grok-4-fast-non-reasoning", "grok-4-fast-reasoning", "grok-4.20-beta-0309-non-reasoning", "grok-4.20-beta-0309-reasoning", "grok-4.20-multi-agent-0309", "grok-4.20-multi-agent-beta-0309", "grok-4.3", "grok-4.5", "grok-build-0.1", "grok-code-fast-1", "grok-vision-beta", "hy3", "hy3-preview", "inclusionAI/Ling-1T", "inclusionAI/Ling-flash-2.0", "inclusionAI/Ling-mini-2.0", "inclusionAI/Ring-1T", "inclusionAI/Ring-flash-2.0", "jina-deepsearch-v1", "k2.6-code-preview-free", "kat-dev", "kimi-for-coding-free", "kimi-k2-0711", "kimi-k2-instruct", "kimi-k2-thinking", "kimi-k2-turbo-preview", "kimi-k2.5", "kimi-k2.6", "kimi-k2.7-code", "kimi-k2.7-code-highspeed", "kimi-k3", "llama-4-maverick", "llama-4-scout", "llama2-70b-4096", "llama2-70b-40960", "longcat-2.0", "mai-image-2.5", "mai-image-2.5-flash", "mimo-v2-flash", "mimo-v2-flash-free", "mimo-v2-omni", "mimo-v2-pro", "minimax-m2", "minimax-m2.1", "minimax-m2.5", "minimax-m2.5-highspeed", "minimax-m2.7", "minimax-m3", "mistral-large-3", "mm-minimax-m2.7-highspeed", "nvidia-nemotron-3-super-120b-a12b", "o1", "o1-2024-12-17", "o1-preview", "o1-pro", "o3", "o3-mini", "o3-pro", "o4-mini", "qwen-mt-plus", "qwen-mt-turbo", "qwen-plus-2025-04-28", "qwen-plus-latest", "qwen-turbo", "qwen-turbo-2024-11-01", "qwen-turbo-2025-04-28", "qwen-turbo-latest", "qwen2.5-vl-72b-instruct", "qwen3-0.6b", "qwen3-1.7b", "qwen3-14b", "qwen3-235b-a22b", "qwen3-235b-a22b-instruct-2507", "qwen3-235b-a22b-thinking-2507", "qwen3-4b", "qwen3-8b", "qwen3-coder-30b-a3b-instruct", "qwen3-coder-480b-a35b-instruct", "qwen3-coder-flash", "qwen3-coder-next", "qwen3-coder-plus", "qwen3-coder-plus-2025-07-22", "qwen3-max", "qwen3-max-2026-01-23", "qwen3-max-preview", "qwen3-next-80b-a3b-instruct", "qwen3-next-80b-a3b-thinking", "qwen3-vl-235b-a22b-instruct", "qwen3-vl-235b-a22b-thinking", "qwen3-vl-30b-a3b-instruct", "qwen3-vl-30b-a3b-thinking", "qwen3-vl-flash", "qwen3-vl-flash-2026-01-22", "qwen3-vl-plus", "qwen3.5-122b-a10b", "qwen3.5-27b", "qwen3.5-35b-a3b", "qwen3.5-397b-a17b", "qwen3.5-flash", "qwen3.5-plus", "qwen3.6-27b", "qwen3.6-35b-a3b", "qwen3.6-flash", "qwen3.6-max-preview", "qwen3.6-plus", "qwen3.6-plus-preview-free", "qwen3.7-max", "qwen3.7-plus", "step-3.5-flash", "step-3.7-flash", "xiaomi-mimo-v2-omni-free", "xiaomi-mimo-v2-pro-free", "xiaomi-mimo-v2.5", "xiaomi-mimo-v2.5-free", "xiaomi-mimo-v2.5-pro", "xiaomi-mimo-v2.5-pro-free", "zai-glm-5-turbo"]
+default     = "AiHubmix-Phi-4-mini-reasoning"
+api_key_env = "AIHUBMIX_API_KEY"
+# max_output_tokens = 0       # recommended: official DeepSeek omits the field (server 384K ceiling)
+# max_output_tokens = 32768   # optional cost cap
+# max_output_tokens = 65536   # optional cost cap
+# max_output_tokens = 131072  # optional cost cap
+vision_models = ["Qwen/Qwen2.5-VL-32B-Instruct", "Qwen/Qwen2.5-VL-72B-Instruct", "ahm-Phi-3-5-vision-instruct", "aihub-Phi-4-multimodal-instruct", "bai-qwen3-vl-235b-a22b-instruct", "coding-xiaomi-mimo-v2-omni", "ernie-4.5-turbo-vl", "gpt-4o", "gpt-4o-2024-11-20", "gpt-4o-free", "gpt-4o-mini", "gpt-4o-mini-2024-07-18", "gpt-4o-mini-search-preview", "gpt-4o-search-preview", "gpt-4o-transcribe-diarize", "gpt-4o-zh", "grok-2-vision-1212", "grok-vision-beta", "mimo-v2-omni", "qwen2.5-vl-72b-instruct", "qwen3-vl-235b-a22b-instruct", "qwen3-vl-235b-a22b-thinking", "qwen3-vl-30b-a3b-instruct", "qwen3-vl-30b-a3b-thinking", "qwen3-vl-flash", "qwen3-vl-flash-2026-01-22", "qwen3-vl-plus", "xiaomi-mimo-v2-omni-free"]   # models in this provider that accept image input
+
+[tools]
+enabled = []   # empty = all built-in tools
+bash_timeout_seconds = 120   # foreground safety cap; set 0 for no tool-local cap
+mcp_startup_timeout_seconds = 30   # background initialize + tools/list safety cap; per-plugin overrides may raise it
+mcp_call_timeout_seconds = 300   # default MCP call safety cap; per-plugin/tool overrides may raise it
+
+[tools.background_jobs]
+stalled_warning_seconds = 900   # heads-up once per background job after this many quiet seconds; a quiet job is not necessarily stuck; 0 disables
+
+[tools.shell]
+# prefer = "auto"   # auto|bash|powershell|pwsh; empty/default = auto-detect
+# path   = "/opt/homebrew/bin/bash"   # absolute path to the shell executable; empty = PATH lookup
+
+[lsp]
+enabled = true   # language server tools; servers launch lazily when used
+# [lsp.servers.go]
+# command = "gopls"
+# args = []
+# extensions = [".go"]
+
+[browser]
+enabled = false   # browser tools for CLI/Serve sessions; the browser attaches on first use
+
+[skills]
+# paths = ["~/my-skills", "../shared/skills"]   # extra custom skill roots
+# excluded_paths = ["~/.agents/skills"]   # hide convention roots without deleting folders
+# disable_implicit_invocation = false   # keep skills available for automatic model invocation
+# max_depth = 3   # nested scan depth; set 1 for legacy root-only discovery
+# disabled_skills = ["review"]   # hide noisy or unwanted skills
+
+[permissions]
+# Per-call gating. mode = writer fallback when no rule matches: ask|allow|deny.
+# Readers always default to allow. Precedence: deny > ask > allow > fallback.
+# Rules are "Tool" or "Tool(specifier)"; e.g. Bash(go test:*), Edit(src/**).
+mode  = "ask"
+# deny = ["Bash(rm -rf*)", "Bash(git push*)"]   # hard-blocked in every mode
+# allow = ["Bash(go test:*)", "Bash(git status:*)"]   # never prompted
+# ask = ["Edit(src/**)"]   # force a prompt even if otherwise allowed
+
+[sandbox]
+# Confine tool blast radius. File-writers (write_file/edit_file/multi_edit/move_file)
+# may only write under workspace_root (empty = current dir) and allow_write extras.
+# bash = "enforce" jails each command in an OS sandbox when available;
+# without one, restricted permission modes refuse bash execution. Empty defaults to enforce.
+# macOS uses Seatbelt, Linux uses bubblewrap, and Windows uses a restricted token/AppContainer.
+# network allows sandboxed bash egress.
+# workspace_root = ""            # default: current working directory
+# allow_write = ["/tmp"]          # extra dirs writers may also modify
+# forbid_read = []                  # dirs the agent cannot read or list
+bash    = "off"
+network = true
+
+[statusline]
+# A custom status line: a command whose first stdout line replaces the built-in
+# data row. It receives {"model","contextUsed","contextWindow","cwd"} as JSON on stdin.
+# command = "my-statusline.sh"
+
+# Bot gateway: multi-channel IM bot for QQ, Feishu/Lark, and WeChat.
+[bot]
+enabled = false
+# model = ""   # empty = default_model
+tool_approval_mode = "read-only"   # read-only|workspace-write|danger-full-access
+max_steps = 25
+debounce_ms = 1500
+queue_mode = "steer"   # steer|followup|collect|interrupt
+queue_cap = 20
+queue_drop = "summarize"   # summarize|old|new
+ignore_self_messages = true   # ignore bot echo by returned message_id and configured self user ids
+
+[bot.self_user_ids]
+qq = []
+feishu = []
+weixin = []
+dingtalk = []
+
+[bot.control]
+enabled = false   # local loopback HTTP API for status/send; requires Bearer token
+addr = "127.0.0.1:37913"
+token_env = "REASONIX_BOT_CONTROL_TOKEN"
+
+[bot.pairing]
+enabled = true
+request_ttl_minutes = 60
+max_pending_per_platform = 3
+
+[bot.allowlist]
+enabled = true
+allow_all = false
+qq_users = []
+feishu_users = []
+weixin_users = []
+dingtalk_users = []
+qq_approvers = []
+feishu_approvers = []
+weixin_approvers = []
+dingtalk_approvers = []
+qq_admins = []
+feishu_admins = []
+weixin_admins = []
+dingtalk_admins = []
+qq_groups = []
+feishu_groups = []
+weixin_groups = []
+dingtalk_groups = []
+
+[bot.qq]
+enabled = false
+app_id = ""
+app_secret_env = "QQ_BOT_APP_SECRET"
+sandbox = false
+
+[bot.feishu]
+enabled = false
+app_id = ""
+domain = "feishu"
+app_secret_env = "FEISHU_BOT_APP_SECRET"
+verification_token = ""
+mode = "webhook"
+webhook_port = 8080
+require_mention = true
+
+[bot.weixin]
+enabled = false
+account_id = "default"
+token_env = "WEIXIN_BOT_TOKEN"
+api_base = "https://ilinkai.weixin.qq.com"
+
+[bot.dingtalk]
+enabled = false
+client_id = ""
+client_secret = ""
+client_id_env = ""
+secret_env = ""
+bot_name = ""
+require_mention = true
+
+[secrets]   # credential protection; user/global only, ./reasonix.toml cannot override
+# filter_subprocess_env = false   # opt-in; stripping tokens breaks gh, HTTPS git push, npm publish
+# protect_sensitive_files = false   # opt-in; hiding credential files can break legitimate edit workflows
+
+# External MCP servers. type: "stdio" (default, a subprocess) | "http" | "sse".
+# ${VAR} / ${VAR:-default} are expanded from the environment in command/args/env/url/headers.
+
+[[plugins]]
+name    = "fslangmcp"
+type    = "stdio"
+command = "fslangmcp"
+
+[[plugins]]
+name    = "bfexplorer"
+type    = "http"
+url     = "http://localhost:10043/"
+auto_start = true
+
+[[plugins]]
+name    = "luma-mcp"
+command = "npx"
+args    = ["-y", "luma-mcp"]
+env     = { CUSTOM_API_KEY = "sk-lm-PFCfLDHJ:BK6VuMwvdGEQRVXItYFk", CUSTOM_BASE_URL = "http://localhost:1234/v1", CUSTOM_MODEL_NAME = "google/gemma-4-e4b", CUSTOM_TIMEOUT_MS = "120000", MODEL_PROVIDER = "custom" }
+
+[[plugins]]
+name    = "sagefs"
+type    = "http"
+url     = "http://localhost:37749/"
